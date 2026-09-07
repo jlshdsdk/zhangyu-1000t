@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 函数极限与连续 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第1章 函数极限与连续<span class="top-count">（42题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a><a class="nav-no" href="#q37">37</a><a class="nav-no" href="#q38">38</a><a class="nav-no" href="#q39">39</a><a class="nav-no" href="#q40">40</a><a class="nav-no" href="#q41">41</a><a class="nav-no" href="#q42">42</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{x \to 0}\left(\frac{\arcsin x}{x}\right)^{\frac{1}{x^2}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\lim\limits_{x \to 0}\left(\dfrac{\arcsin x}{x}\right)^{\frac{1}{\sin^2 x}} = \lim\limits_{x \to 0}\left(1+\dfrac{\arcsin x - x}{x}\right)^{\frac{1}{\sin^2 x}} = \exp\left\{\lim\limits_{x \to 0}\dfrac{\arcsin x - x}{x\sin^2 x}\right\}$，其中
+$$\lim_{x \to 0}\frac{\arcsin x - x}{x\sin^2 x} = \lim_{x \to 0}\frac{\arcsin x - x}{x^3} = \lim_{x \to 0}\frac{\dfrac{1}{\sqrt{1-x^2}} - 1}{3x^2} = \lim_{x \to 0}\frac{1 - \sqrt{1-x^2}}{3x^2\sqrt{1-x^2}}$$
+$$= \lim_{x \to 0}\frac{\dfrac{1}{2}x^2}{3x^2\sqrt{1-x^2}} = \frac{1}{6}.$$
+故 $\lim\limits_{x \to 0}\left(\dfrac{\arcsin x}{x}\right)^{\frac{1}{\sin^2 x}} = \mathrm{e}^{\frac{1}{6}}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\mathrm{e}^{\frac{1}{6}}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{x \to 0}\frac{1}{x}\int_{0}^{x}(1+\sin 2t)^{\frac{1}{t}}\,\mathrm{d}t=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由定积分中值定理，存在 $\theta \in (0,1)$，使得
+$$\int_0^x (1+\sin 2t)^{\frac{1}{t}}\mathrm{d}t = (1+\sin 2\theta x)^{\frac{1}{\theta x}} \cdot x,$$
+于是
+$$\frac{1}{x}\int_0^x (1+\sin 2t)^{\frac{1}{t}}\mathrm{d}t = \left[(1+\sin 2\theta x)^{\frac{1}{\theta x}}\right]^2,$$
+故
+$$\lim_{x \to 0}\frac{1}{x}\int_0^x (1+\sin 2t)^{\frac{1}{t}}\mathrm{d}t = \lim_{x \to 0}\left[(1+\sin 2\theta x)^{\frac{1}{\theta x}}\right]^2 = \mathrm{e}^2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\mathrm{e}^2$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{x \to +\infty}(x^{\frac{1}{x}}-1)^{\frac{2}{\ln x}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式 $= \mathrm{e}^{\lim\limits_{x \to +\infty}\frac{2\ln(\mathrm{e}^{\frac{2}{x}\ln x} - 1)}{\ln x}}$，其中
+$$\lim_{x \to +\infty}\frac{2\ln(\mathrm{e}^{\frac{2}{x}\ln x} - 1)}{\ln x} \xlongequal{\text{洛必达法则}} \lim_{x \to +\infty} 2 \cdot \frac{\mathrm{e}^{\frac{2}{x}\ln x} \cdot \left(\dfrac{2}{x} - \dfrac{2}{x}\ln x\right)}{\mathrm{e}^{\frac{2}{x}\ln x} - 1}$$
+$$= 4 \cdot \lim_{x \to +\infty}\frac{\mathrm{e}^{\frac{2}{x}\ln x} \cdot (1 - \ln x)}{x(\mathrm{e}^{\frac{2}{x}\ln x} - 1)} = 4 \cdot \lim_{x \to +\infty}\frac{1 - \ln x}{x \cdot \dfrac{2}{x}\ln x} = -2.$$
+故原式 $= \mathrm{e}^{-2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\mathrm{e}^{-2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $\lim_{x \to 0}\frac{\int_{0}^{x}[\mathrm{e}^{(t-x)^2}-1]\sin t\,\mathrm{d}t}{x^2(\mathrm{e}^{x^2}-1)}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\int_0^x [\mathrm{e}^{(t-x)^2} - 1]\sin t\,\mathrm{d}t \xlongequal{u = x - t} \int_0^x (\mathrm{e}^{u^2} - 1)\sin(x - u)\,\mathrm{d}u$，故
+原式 $= \lim\limits_{x \to 0}\dfrac{\int_0^x (\mathrm{e}^{u^2} - 1)\sin(x - u)\,\mathrm{d}u}{x^4}$
+$$= \lim_{x \to 0}\frac{\sin x \int_0^x (\mathrm{e}^{u^2} - 1)\cos u\,\mathrm{d}u - \cos x \int_0^x (\mathrm{e}^{u^2} - 1)\sin u\,\mathrm{d}u}{x^4}$$
+$$= \lim_{x \to 0}\frac{\cos x \int_0^x (\mathrm{e}^{u^2} - 1)\cos u\,\mathrm{d}u + \sin x(\mathrm{e}^{x^2} - 1)\cos x + \sin x \int_0^x (\mathrm{e}^{u^2} - 1)\sin u\,\mathrm{d}u - \cos x(\mathrm{e}^{x^2} - 1)\sin x}{4x^3}$$
+$$= \lim_{x \to 0}\frac{\int_0^x (\mathrm{e}^{u^2} - 1)\cos(x - u)\,\mathrm{d}u}{4x^3}$$
+$$\xlongequal{\text{第一积分中值定理}} \lim_{x \to 0}\frac{\cos(x - \xi)\int_0^x (\mathrm{e}^{u^2} - 1)\,\mathrm{d}u}{4x^3} = \frac{1}{12},$$
+其中 $\xi$ 介于 $0, x$ 之间.
+【注】① 通过换元及三角公式恒等变形，将 $x$ 移出积分号，是解决本题的关键.
+② 当 $x \to 0$ 时，在积分号下作 $\mathrm{e}^{(t-x)^2} - 1 \sim (t - x)^2$ 是没有依据的，不得分.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\lim_{x \to 0}\left[1+2x+3x^2+\frac{f(x)}{x}\right]^{\frac{1}{x}}=\mathrm{e}^5$，则 $\lim_{x \to 0}\left[1+\frac{f(x)}{x}\right]^{\frac{1}{x}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由已知 $\lim\limits_{x \to 0}\left[1 + 2x + 3x^2 + \dfrac{f(x)}{x}\right]^{\frac{1}{x}} = \mathrm{e}^{\lim\limits_{x \to 0}\frac{1}{x}\ln\left[1 + 2x + 3x^2 + \frac{f(x)}{x}\right]}$
+$$= \mathrm{e}^{\lim\limits_{x \to 0}\frac{2x + 3x^2 + \frac{f(x)}{x}}{x}} = \mathrm{e}^{2 + \lim\limits_{x \to 0}\frac{f(x)}{x^2}} = \mathrm{e}^5,$$
+可知 $\lim\limits_{x \to 0}\dfrac{f(x)}{x^2} = 3$.
+所以 $\lim\limits_{x \to 0}\left[1 + \dfrac{f(x)}{x}\right]^{\frac{1}{x}} = \mathrm{e}^{\lim\limits_{x \to 0}\frac{1}{x}\ln\left[1 + \frac{f(x)}{x}\right]} = \mathrm{e}^{\lim\limits_{x \to 0}\frac{f(x)}{x^2}} = \mathrm{e}^3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\mathrm{e}^3$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在点 $x=3$ 的邻域内可微，且 $\lim_{x \to 3}f(x)=0$，$\lim_{x \to 3}f'(x)=4\,016$. 求
+$$\lim_{x \to 3}\frac{\int_{3}^{x}\left[t\int_{t}^{3}f(s)\,\mathrm{d}s\right]\mathrm{d}t}{(3-x)^3}.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】利用洛必达法则求之（本题重点考查变上限积分求导及洛必达法则运用）.
+【解析】
+$$\lim_{x \to 3}\frac{\int_3^x \left[t\int_t^3 f(s)\,\mathrm{d}s\right]\mathrm{d}t}{(3 - x)^3} = \lim_{x \to 3}\frac{x\int_x^3 f(s)\,\mathrm{d}s}{-3(3 - x)^2}$$
+$$= \lim_{x \to 3}\frac{\int_x^3 f(s)\,\mathrm{d}s - xf(x)}{6(3 - x)} = \lim_{x \to 3}\frac{-f(x) - f(x) - xf'(x)}{-6}$$
+$$= \lim_{x \to 3}\frac{2f(x) + xf'(x)}{6} = \frac{3 \cdot 4016}{6} = 2008.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$，$g(x)$ 在点 $x=0$ 的某邻域内连续，且当 $x \to 0$ 时，$f(x)$ 与 $g(x)$ 为等价无穷小，则当 $x \to 0$ 时，$\int_{0}^{x}f(t)(1-\cos t)\,\mathrm{d}t$ 是 $\int_{0}^{x}t^2g(t)\,\mathrm{d}t$ 的（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">等价无穷小</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">同阶但非等价无穷小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">高阶无穷小</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">低阶无穷小</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，知 $\lim\limits_{x \to 0}\dfrac{f(x)}{g(x)} = 1$，
+$$\lim_{x \to 0}\frac{\int_0^x f(t)(1 - \cos t)\,\mathrm{d}t}{\int_0^x t^2 g(t)\,\mathrm{d}t} = \lim_{x \to 0}\frac{f(x)(1 - \cos x)}{x^2 g(x)}$$
+$$= \lim_{x \to 0}\frac{f(x)}{g(x)} \cdot \frac{\dfrac{x^2}{2}}{x^2} = \frac{1}{2}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$a\int_{0}^{x^2}\cos t^2\,\mathrm{d}t$ 与 $\sin x-b\ln(1+x)$ 是等价无穷小，则 $(a,b)=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(1,2)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(-1,2)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\left(\frac{1}{2},1\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\left(-\frac{1}{2},1\right)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x \to 0$ 时，由于 $\lim\limits_{x \to 0}\cos x^2 = 1$，因此 $\int_0^{x^2}\cos t^2\,\mathrm{d}t \sim x^2$，又
+$$\sin x = x + o(x^2),\ b\ln(1 + x) = bx - \frac{b}{2}x^2 + o(x^2).$$
+于是 $\sin x - b\ln(1 + x) = (1 - b)x + \dfrac{b}{2}x^2 + o(x^2)$. 故 $b = 1, a = \dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设当 $x \to 0$ 时，$\int_{0}^{x}(\mathrm{e}^{t\cos t^2}-\mathrm{e}^t)\,\mathrm{d}t$ 与 $ax^b$ 是等价无穷小量，则 $(a,b)=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\left(-\frac{1}{6},3\right)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\left(-\frac{1}{24},4\right)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\left(-\frac{1}{2},5\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\left(-\frac{1}{12},6\right)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $t \to 0$ 时，
+$$\mathrm{e}^{t\cos t^2} - \mathrm{e}^t = \mathrm{e}^t(\mathrm{e}^{t\cos t^2 - t} - 1) \sim t(\cos t^2 - 1) \sim t\left(-\frac{1}{2}t^4\right) = -\frac{1}{2}t^5,$$
+于是当 $x \to 0$ 时，
+$$\int_0^x (\mathrm{e}^{t\cos t^2} - \mathrm{e}^t)\,\mathrm{d}t \sim \int_0^x \left(-\frac{1}{2}t^5\right)\mathrm{d}t = -\frac{1}{12}x^6.$$
+故 $(a, b) = \left(-\dfrac{1}{12}, 6\right)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\lim_{x \to 3}\frac{x^3-3x^2+hx^2+x-3hx-3}{x+a}=25$，则 $ab=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $x^3 - 3x^2 + bx^2 + x - 3bx - 3 = (x - 3)(x^2 + bx + 1)$，显然当 $x = 3$ 时，原极限分子为 0，则分母亦应为 0，因此，当 $x = 3$ 时，$x + a = 0$，即 $a = -3$，从而
+$$\lim_{x \to 3}\frac{x^3 - 3x^2 + bx^2 + x - 3bx - 3}{x + a} = \lim_{x \to 3}(x^2 + bx + 1) = 25,$$
+即 $10 + 3b = 25$，故 $b = 5$. 则 $ab = -15$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-15$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $0&lt;|x|&lt;1$ 上有定义，且满足 $\lim_{x \to 0}\left[\cos x+\frac{f(x)}{x}\right]^{\frac{1}{x^2}}=\mathrm{e}^{-1}$，求 $\lim_{x \to 0}\frac{f(x)}{\sin^3 x}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设 $\lim\limits_{x \to 0}\left[\cos x + \dfrac{f(x)}{x}\right]^{\frac{1}{x^2}} = \mathrm{e}^{-1}$ 可得，$\lim\limits_{x \to 0}\dfrac{\ln\left[\cos x + \dfrac{f(x)}{x}\right]}{x^2} = -1$.
+由极限存在与无穷小量的关系知，上式可改写成 $\dfrac{\ln\left[\cos x + \dfrac{f(x)}{x}\right]}{x^2} = -1 + o(x)$，其中 $o(x)$ 满足 $\lim\limits_{x \to 0}o(x) = 0$，故
+$$\frac{f(x)}{x} = \mathrm{e}^{x^2[o(x) - 1]} - \cos x,$$
+$$\lim_{x \to 0}\frac{f(x)}{\sin^3 x} = \lim_{x \to 0}\frac{f(x)}{x^3} = \lim_{x \to 0}\frac{\mathrm{e}^{x^2[o(x) - 1]} - \cos x}{x^2} = \lim_{x \to 0}\frac{\mathrm{e}^{x^2[o(x) - 1]} - 1}{x^2} + \lim_{x \to 0}\frac{1 - \cos x}{x^2}$$
+$$= \lim_{x \to 0}\frac{\mathrm{e}^{x^2[o(x) - 1]} - 1}{x^2[o(x) - 1]} \cdot \lim_{x \to 0}[o(x) - 1] + \frac{1}{2}$$
+$$= -1 + \frac{1}{2} = -\frac{1}{2}.$$
+【注】① 由于此题未注明 $f(x)$ 可导，因此不能直接利用洛必达法则进行计算，而是利用等价无穷小计算.
+② 此题也可由 $\lim\limits_{x \to 0}\dfrac{\ln\left[\cos x + \dfrac{f(x)}{x}\right]}{x^2} = -1$，利用 $\ln(1 + x) \sim x(x \to 0)$，得
+$$\lim_{x \to 0}\frac{\cos x + \dfrac{f(x)}{x} - 1}{x^2} = -1,$$
+从而得到 $\lim\limits_{x \to 0}\left[\dfrac{f(x)}{x^3} - \dfrac{1 - \cos x}{x^2}\right] = -1$. 求出 $\lim\limits_{x \to 0}\dfrac{f(x)}{x^3} = -\dfrac{1}{2}$，也就得到所求结果了.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在点 $x=0$ 处连续，$f(0)=\frac{1}{2}$，且函数 $g(x)=\begin{cases}\frac{1}{x}\sin\frac{x}{2}, &amp; x&lt;0,\\ x+\frac{1}{2}, &amp; x\geqslant 0,\end{cases}$ 则
+$\lim_{x \to 0}\frac{xf(x)+g(x)\int_{0}^{2x}\cos t^2\,\mathrm{d}t}{xg(x)}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由积分中值定理，知
+$$\int_0^{2x}\cos t^2\,\mathrm{d}t = 2x\cos \xi^2\ (\xi \text{ 介于 } 0, 2x \text{ 之间；当 } x \to 0 \text{ 时，有 } \xi \to 0).$$
+$$\text{原式} = \lim_{x \to 0}\frac{xf(x) + g(x) \cdot 2x\cos \xi^2}{xg(x)} = \lim_{x \to 0}\frac{f(x) + g(x) \cdot 2\cos \xi^2}{g(x)} = 3.$$
+【注】这里用到 $g(x)$ 在点 $x = 0$ 处的连续性，$\lim\limits_{x \to 0}g(x) = \dfrac{1}{2} = g(0)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$3$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$f(x)=\lim_{n \to \infty}n^x\left[\left(1+\frac{1}{n}\right)^n-\mathrm{e}\right]$ 在 $x=1$ 处（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">左极限存在，右极限不存在</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">左极限不存在，右极限存在</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">左、右极限都存在，但不相等</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">连续</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f(x) = \lim_{n \to \infty} n^x\left[\mathrm{e}^{n\ln\left(1 + \frac{1}{n}\right)} - \mathrm{e}\right]$$
+$$= \lim_{n \to \infty} n^x\left[\mathrm{e}^{n\ln\left(1 + \frac{1}{n}\right) - 1} - 1\right] \cdot \mathrm{e}$$
+$$= \lim_{n \to \infty} n^x\left\{\mathrm{e}^{n\left[\frac{1}{n} - \frac{1}{2n^2} + o\left(\frac{1}{n^2}\right)\right] - 1} - 1\right\} \cdot \mathrm{e}$$
+$$= \lim_{n \to \infty} n^x\left[\mathrm{e}^{-\frac{1}{2n} + o\left(\frac{1}{n}\right)} - 1\right] \cdot \mathrm{e}$$
+$$= \lim_{n \to \infty} n^x\left[-\frac{1}{2n} + o\left(\frac{1}{n}\right)\right] \cdot \mathrm{e}$$
+$$= \lim_{n \to \infty}\left[-\frac{\mathrm{e}}{2} \cdot \frac{1}{n^{1 - x}} + \mathrm{e} \cdot n^x \cdot o\left(\frac{1}{n}\right)\right]$$
+$$= \begin{cases} 0, &amp; x &lt; 1, \\ -\dfrac{\mathrm{e}}{2}, &amp; x = 1, \\ -\infty, &amp; x &gt; 1, \end{cases}$$
+易知 $f(x)$ 在 $x = 1$ 处左极限存在，右极限不存在.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $\lim_{x \to +\infty}\left[\frac{x^{x+1}}{(1+x)^x}-\frac{x}{\mathrm{e}}\right]$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\lim\limits_{x \to +\infty}\left[\dfrac{x^{x+1}}{(1 + x)^x} - \dfrac{x}{\mathrm{e}}\right] = \lim\limits_{x \to +\infty}\left[\dfrac{x}{\left(1 + \dfrac{1}{x}\right)^x} - \dfrac{x}{\mathrm{e}}\right] = \lim\limits_{x \to +\infty}\dfrac{x\left[\mathrm{e} - \left(1 + \dfrac{1}{x}\right)^x\right]}{\mathrm{e}\left(1 + \dfrac{1}{x}\right)^x}$
+$$= \frac{1}{\mathrm{e}^2}\lim_{x \to +\infty}\frac{\mathrm{e} - \left(1 + \dfrac{1}{x}\right)^x}{\dfrac{1}{x}} \xlongequal{\frac{1}{x} = u} \frac{1}{\mathrm{e}^2}\lim_{u \to 0^+}\frac{\mathrm{e} - (1 + u)^{\frac{1}{u}}}{u}$$
+$$= -\frac{1}{\mathrm{e}^2}\lim_{u \to 0^+}\frac{\mathrm{e}^{\frac{1}{u}\ln(1 + u)} - \mathrm{e}}{u} = -\frac{\mathrm{e}}{\mathrm{e}^2}\lim_{u \to 0^+}\frac{\mathrm{e}^{\frac{1}{u}\ln(1 + u) - 1} - 1}{u}$$
+$$= -\frac{1}{\mathrm{e}}\lim_{u \to 0^+}\frac{\dfrac{1}{u}\ln(1 + u) - 1}{u} = -\frac{1}{\mathrm{e}}\lim_{u \to 0^+}\frac{\ln(1 + u) - u}{u^2}$$
+$$\xlongequal{\text{洛必达法则}} -\frac{1}{\mathrm{e}}\lim_{u \to 0^+}\frac{\dfrac{1}{1 + u} - 1}{2u} = -\frac{1}{\mathrm{e}}\lim_{u \to 0^+}\frac{-u}{2u(1 + u)} = \frac{1}{2\mathrm{e}}.$$
+【注】应随时注意化简：将幂指函数化为指数函数，能求出极限（其极限值不为零的因子），可利用乘积极限先求出，作变量替换将形式化简，以及用等价无穷小替换等. 不要一上来就用洛必达法则.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{x \to 0}\left(\frac{1}{x^2}-\frac{1}{\sin^2 x}\right)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\lim_{x \to 0}\left(\frac{1}{x^2} - \frac{1}{\sin^2 x}\right) = \lim_{x \to 0}\frac{\sin^2 x - x^2}{x^2\sin^2 x} = \lim_{x \to 0}\frac{\sin^2 x - x^2}{x^4}$$
+$$= \lim_{x \to 0}\frac{(\sin x + x)(\sin x - x)}{x^4}$$
+$$= \lim_{x \to 0}\frac{2x \cdot \left(-\dfrac{1}{6}x^3\right)}{x^4}$$
+$$= -\frac{1}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{1}{3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求极限 $\lim_{x \to 0}\left[\frac{1+\int_{0}^{x}(1+t)^{\frac{1}{t}}\,\mathrm{d}t}{x}-\frac{1}{\sin x}\right]$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $\lim\limits_{x \to 0}\dfrac{\int_0^x (1 + t)^{\frac{1}{t}}\mathrm{d}t}{x} = \lim\limits_{x \to 0}(1 + x)^{\frac{1}{x}} = \mathrm{e}$，所以
+$$\lim_{x \to 0}\left[\frac{1 + \int_0^x (1 + t)^{\frac{1}{t}}\mathrm{d}t}{x} - \frac{1}{\sin x}\right] = \mathrm{e} + \lim_{x \to 0}\left(\frac{1}{x} - \frac{1}{\sin x}\right) = \mathrm{e} + \lim_{x \to 0}\frac{\sin x - x}{x^2}$$
+$$= \mathrm{e} + \lim_{x \to 0}\frac{-\dfrac{1}{6}x^3}{x^2} = \mathrm{e}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在点 $x=0$ 的某一邻域内可导，且 $f(0)=0$，$f'(0)\neq 0$，求 $\lim_{x \to 0}\frac{\int_{0}^{x^2}f(t)\,\mathrm{d}t}{x^2\int_{0}^{x}f(t)\,\mathrm{d}t}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于函数 $f(x)$ 在点 $x = 0$ 的某一邻域内可导，且 $f(0) = 0, f'(0) \neq 0$，因此
+$$\lim_{x \to 0}\frac{f(x)}{x} = \lim_{x \to 0}\frac{f(x) - f(0)}{x - 0} = f'(0) \neq 0, \lim_{x \to 0}\frac{\int_0^x f(t)\,\mathrm{d}t}{x^2} = \lim_{x \to 0}\frac{f(x)}{2x} = \frac{1}{2}f'(0) \neq 0.$$
+于是，
+$$\lim_{x \to 0}\frac{\int_0^{x^2} f(t)\,\mathrm{d}t}{x^2\int_0^x f(t)\,\mathrm{d}t} = \lim_{x \to 0}\frac{2xf(x^2)}{2x\int_0^x f(t)\,\mathrm{d}t + x^2f(x)} = \lim_{x \to 0}\frac{2f(x^2)}{2\int_0^x f(t)\,\mathrm{d}t + xf(x)}$$
+$$= \lim_{x \to 0}\frac{2\dfrac{f(x^2)}{x^2}}{2\dfrac{\int_0^x f(t)\,\mathrm{d}t}{x^2} + \dfrac{f(x)}{x}} = \frac{2\lim\limits_{x \to 0}\dfrac{f(x^2)}{x^2}}{2\lim\limits_{x \to 0}\dfrac{\int_0^x f(t)\,\mathrm{d}t}{x^2} + \lim\limits_{x \to 0}\dfrac{f(x)}{x}}$$
+$$= \frac{2f'(0)}{2f'(0)} = 1.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设存在 $0&lt;\theta&lt;1$，使得 $\int_{0}^{x}\mathrm{e}^t\,\mathrm{d}t=x\mathrm{e}^{x\theta}$，$x&gt;0$，则 $\lim_{x \to 0^+}\theta=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意得,$\frac{\int_0^x \mathrm{e}^t \mathrm{d}t}{x}=\mathrm{e}^{4x}$,故
+$$4x=\ln\frac{\int_0^x \mathrm{e}^t \mathrm{d}t}{x},$$
+即
+$$\theta=\frac{1}{x}\ln\frac{\int_0^x \mathrm{e}^t \mathrm{d}t}{x},$$
+所以
+$$\begin{aligned}\lim_{x \to 0^+}\theta&amp;=\lim_{x \to 0^+}\frac{1}{x}\cdot\frac{\int_0^x \mathrm{e}^t \mathrm{d}t-x}{x}\\&amp;=\lim_{x \to 0^+}\frac{\mathrm{e}^x-1}{2x}\\&amp;=\frac{1}{2}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $f(x)=\begin{cases}1, &amp; x\text{ 是整数},\\ -1, &amp; x\text{ 不是整数},\end{cases}$ 则 $\lim_{x \to \infty}\int_{0}^{\frac{1}{x}}f(x)\mathrm{e}^{-t^2}\,\mathrm{d}t=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\mathrm{e}^{-1}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x \to \infty$ 时,$f(x)$ 为有界变量,又 $\lim\limits_{x \to \infty}\int_0^{\frac{1}{x}}\mathrm{e}^{-t^2}\,\mathrm{d}t=0$,故原式为 0.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设当 $x \to 0$ 时，$f(x)=\int_{0}^{x}\sin(tx)^2\,\mathrm{d}t$ 与 $x^n$ 是同阶无穷小，则正整数 $n=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $f(x)=\int_0^x\sin(tx)^2\,\mathrm{d}t\xlongequal{tx=u}\frac{1}{x}\int_0^{x^2}\sin u^2\,\mathrm{d}u$,所以
+$$\lim_{x \to 0}\frac{f(x)}{x^n}=\lim_{x \to 0}\frac{\int_0^{x^2}\sin u^2\,\mathrm{d}u}{x^{n+1}}=\lim_{x \to 0}\frac{2x\sin x^4}{(n+1)x^n}=\lim_{x \to 0}\frac{2x^5}{(n+1)x^n}\xlongequal{n=5}\frac{1}{3}.$$
+故当 $x \to 0$ 时,若 $f(x)$ 与 $x^n$ 是同阶无穷小,则正整数 $n=5$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">5</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha(x)$ 是 $x \to 0$ 时的非零无穷小量，且 $\alpha(2x)-\alpha(x)=o(x)$，则 $\lim_{x \to 0}\frac{\alpha(x)}{x}$ 的值是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\infty$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">0 或 $\infty$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知,对于任意 $\varepsilon&gt;0$,存在 $\delta&gt;0$,当 $0&lt;|x|&lt;\delta$ 时,$|\alpha(2x)-\alpha(x)|&lt;|x|\,\varepsilon$,故
+$$\left|\alpha(x)-\alpha\left(\frac{x}{2}\right)\right|&lt;\left|\frac{x}{2}\right|\varepsilon,$$
+$$\left|\alpha\left(\frac{x}{2}\right)-\alpha\left(\frac{x}{4}\right)\right|&lt;\left|\frac{x}{4}\right|\varepsilon,$$
+……
+$$\left|\alpha\left(\frac{x}{2^{n-1}}\right)-\alpha\left(\frac{x}{2^n}\right)\right|&lt;\left|\frac{x}{2^n}\right|\varepsilon,$$
+于是
+$$\begin{aligned}\left|\alpha(x)-\alpha\left(\frac{x}{2^n}\right)\right|&amp;=\left|\alpha(x)-\alpha\left(\frac{x}{2}\right)+\alpha\left(\frac{x}{2}\right)-\alpha\left(\frac{x}{4}\right)+\cdots+\alpha\left(\frac{x}{2^{n-1}}\right)-\alpha\left(\frac{x}{2^n}\right)\right|\\&amp;\leqslant\left|\alpha(x)-\alpha\left(\frac{x}{2}\right)\right|+\left|\alpha\left(\frac{x}{2}\right)-\alpha\left(\frac{x}{4}\right)\right|+\cdots+\left|\alpha\left(\frac{x}{2^{n-1}}\right)-\alpha\left(\frac{x}{2^n}\right)\right|\\&amp;&lt;\left|\frac{x}{2}\right|\varepsilon+\left|\frac{x}{4}\right|\varepsilon+\cdots+\left|\frac{x}{2^n}\right|\varepsilon=|x|\,\varepsilon\left[1-\left(\frac{1}{2}\right)^n\right].\end{aligned}$$
+又当 $n \to \infty$ 时,$\alpha\left(\frac{x}{2^n}\right)\to 0$,所以 $\frac{|\alpha(x)|}{|x|}\leqslant\varepsilon$,即 $\lim\limits_{x \to 0}\frac{\alpha(x)}{x}=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若二次多项式 $f(x)$ 在 $x=0$ 的某邻域内与 $g(x)=\sec x$ 的差为 $x^2$ 的高阶无穷小，则 $f(x)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x \to 0$ 时,
+$$g(x)=g(0)+g'(0)x+\frac{g''(0)}{2}x^2+o(x^2),$$
+因 $g(x)=\sec x$,故 $g(0)=1,g'(0)=0,g''(0)=1$,即
+$$g(x)=1+\frac{x^2}{2}+o(x^2),g(x)-\left(1+\frac{x^2}{2}\right)=o(x^2),$$
+故 $f(x)=1+\frac{x^2}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$1+\frac{x^2}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $n \to \infty$ 时，$\mathrm{e}-\left(1+\frac{1}{n}\right)^n$ 与 $\frac{c}{n^k}$ 为等价无穷小，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$c=\frac{\mathrm{e}}{3},k=2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$c=\frac{\mathrm{e}}{2},k=2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$c=\frac{\mathrm{e}}{3},k=1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$c=\frac{\mathrm{e}}{2},k=1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">利用等价无穷小替换.当 $x \to 0$ 时,$\mathrm{e}^x-1\sim x,x-\ln(1+x)\sim\frac{x^2}{2}$.因为当 $n \to \infty$ 时,有
+$$\mathrm{e}-\left(1+\frac{1}{n}\right)^n=\mathrm{e}-\mathrm{e}^{n\ln\left(1+\frac{1}{n}\right)}=\mathrm{e}\left[1-\mathrm{e}^{n\ln\left(1+\frac{1}{n}\right)-1}\right]\sim \mathrm{e}\left[1-n\ln\left(1+\frac{1}{n}\right)\right]\sim\frac{\mathrm{e}}{2n},$$
+所以 $c=\frac{\mathrm{e}}{2},k=1$,应选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$\alpha(x)$ 与 $\beta(x)$ 是非零且不相等的等价无穷小量，以下4个结论：
+①$\alpha(x)+\beta(x)=2\alpha(x)$；
+②$\alpha(x)+\beta(x)=2\beta(x)$；
+③$\alpha(x)-\beta(x)=o(\alpha(x))$；
+④$\alpha(x)-\beta(x)=o(\beta(x))$.
+所有正确结论的序号是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">①③</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">③④</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">①②③④</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">②④</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\alpha(x)$ 与 $\beta(x)$ 是非零且不相等的等价无穷小量,得 $\lim\limits_{x \to 0}\frac{\alpha(x)}{\beta(x)}=1,\lim\limits_{x \to 0}\frac{\beta(x)}{\alpha(x)}=1,\alpha(x)\neq 0,\beta(x)\neq 0$ 且 $\alpha(x)\neq\beta(x)$,从而
+$$\lim_{x \to 0}\frac{\alpha(x)+\beta(x)}{\alpha(x)}=\lim_{x \to 0}\frac{\alpha(x)}{\alpha(x)}+\lim_{x \to 0}\frac{\beta(x)}{\alpha(x)}=1+1=2,$$
+故 $\alpha(x)+\beta(x)\sim 2\alpha(x)$,不是“=”,①错误;
+同理,$\alpha(x)+\beta(x)\sim 2\beta(x)$,从而②错误;
+$\lim\limits_{x \to 0}\frac{\alpha(x)-\beta(x)}{\alpha(x)}=\lim\limits_{x \to 0}\frac{\alpha(x)}{\alpha(x)}-\lim\limits_{x \to 0}\frac{\beta(x)}{\alpha(x)}=1-1=0$,③正确;
+$\lim\limits_{x \to 0}\frac{\alpha(x)-\beta(x)}{\beta(x)}=\lim\limits_{x \to 0}\frac{\alpha(x)}{\beta(x)}-\lim\limits_{x \to 0}\frac{\beta(x)}{\beta(x)}=1-1=0$,④正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q25" data-no="25">
+  <header class="q-head">
+    <span class="q-no">【25】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="25" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$(3+2\tan x)^x-3^x$ 是 $3\sin^2 x+x^3\cos\frac{1}{x}$ 的（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">高阶无穷小</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">低阶无穷小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">等价无穷小</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">同阶但非等价无穷小</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\lim\limits_{x \to 0}\frac{x^3\cos\frac{1}{x}}{3\sin^2 x}=\frac{1}{3}\lim\limits_{x \to 0}x\cos\frac{1}{x}=0$,知 $3\sin^2 x+x^3\cos\frac{1}{x}\sim 3\sin^2 x\sim 3x^2(x \to 0)$,故
+$$\begin{aligned}\lim_{x \to 0}\frac{(3+2\tan x)^x-3^x}{3\sin^2 x+x^3\cos\frac{1}{x}}&amp;=\lim_{x \to 0}\frac{3^x\left[\left(1+\frac{2}{3}\tan x\right)^x-1\right]}{3x^2}=\lim_{x \to 0}\frac{\mathrm{e}^{x\ln\left(1+\frac{2}{3}\tan x\right)}-1}{3x^2}\\&amp;=\lim_{x \to 0}\frac{x\ln\left(1+\frac{2}{3}\tan x\right)}{3x^2}=\lim_{x \to 0}\frac{x\cdot\frac{2}{3}\tan x}{3x^2}=\frac{2}{9},\end{aligned}$$
+所以当 $x \to 0$ 时,它们为同阶但非等价无穷小,故选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q26" data-no="26">
+  <header class="q-head">
+    <span class="q-no">【26】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="26" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，以下无穷小中，阶数最高的是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{0}^{\sin x}(1+t)^{\frac{2}{t}}\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{0}^{\ln(1+x^2)}\sqrt{\cos^3 t}\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{0}^{x}(\mathrm{e}^{\cos t}-\mathrm{e}^{\sin t})\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{0}^{x-\tan x}\arctan t\,\mathrm{d}t$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x \to 0$ 时,
+对于(A)选项,$\sin x\sim x,(1+x)^{\frac{2}{x}}\to \mathrm{e}^2$,则有
+$$\int_0^{\sin x}(1+t)^{\frac{2}{t}}\,\mathrm{d}t\sim\int_0^x \mathrm{e}^2\,\mathrm{d}t=\mathrm{e}^2 x;$$
+对于(B)选项,$\ln(1+x^2)\sim x^2,\sqrt{\cos^3 x}\to 1$,则有
+$$\int_0^{\ln(1+x^2)}\sqrt{\cos^3 t}\,\mathrm{d}t\sim\int_0^{x^2}1\,\mathrm{d}t=x^2;$$
+对于(C)选项,$\mathrm{e}^{\cos x}-\mathrm{e}^{\sin x}\to \mathrm{e}-1$,则有
+$$\int_0^x\left(\mathrm{e}^{\cos t}-\mathrm{e}^{\sin t}\right)\mathrm{d}t\sim\int_0^x(\mathrm{e}-1)\,\mathrm{d}t=(\mathrm{e}-1)x;$$
+对于(D)选项,$x-\tan x\sim-\frac{1}{3}x^3,\arctan x\sim x$,则有
+$$\int_0^{x-\tan x}\arctan t\,\mathrm{d}t\sim\int_0^{-\frac{1}{3}x^3}t\,\mathrm{d}t=\frac{1}{18}x^6.$$
+综上,阶数最高的是(D)选项.
+【注】① 讨论(A),(B),(C)选项用到如下结论:
+若 $\lim\limits_{x \to 0}f(x)=A\neq 0,\lim\limits_{x \to 0}h(x)=0$,且在 $x \to 0$ 时,$h(x)\neq 0$,则当 $x \to 0$ 时,
+$$\int_0^{h(x)}f(t)\,\mathrm{d}t\sim Ah(x).$$
+② 讨论(D)选项用到如下结论:
+当 $x \to 0$ 时,$f(x)\sim ax^m,g(x)\sim bx^n,ab\neq 0,m,n$ 为正整数,则当 $x \to 0$ 时,
+$$\int_0^{g(x)}f(t)\,\mathrm{d}t\sim\int_0^{bx^n}at^m\,\mathrm{d}t.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q27" data-no="27">
+  <header class="q-head">
+    <span class="q-no">【27】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="27" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，函数 $f(x)=ax+bx^2+\ln(1+x)$ 与 $g(x)=1-\cos x$ 是等价无穷小，则 $ab=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意可知,$\lim\limits_{x \to 0}\frac{ax+bx^2+\ln(1+x)}{1-\cos x}=\lim\limits_{x \to 0}\frac{(a+1)x+\left(b-\frac{1}{2}\right)x^2+o(x^2)}{\frac{1}{2}x^2}=1$,因此 $a=-1,b=1$,故有 $ab=-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q28" data-no="28">
+  <header class="q-head">
+    <span class="q-no">【28】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="32" data-no="28" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$f(x)=\frac{1}{2}\ln\frac{1+x}{1-x}-\arctan x$ 与 $g(x)=ax^b$ 是等价无穷小，则 $ab=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知,$\lim\limits_{x \to 0}\frac{f(x)}{g(x)}=\lim\limits_{x \to 0}\frac{\frac{1}{2}\ln\frac{1+x}{1-x}-\arctan x}{ax^b}=1$. 因为
+$$\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3),$$
+$$\ln(1-x)=-x-\frac{x^2}{2}-\frac{x^3}{3}+o(x^3),$$
+$$\arctan x=x-\frac{x^3}{3}+o(x^3),$$
+所以
+$$\begin{aligned}\lim_{x \to 0}\frac{f(x)}{g(x)}&amp;=\lim_{x \to 0}\frac{\frac{1}{2}\left[x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\right]-\frac{1}{2}\left[-x-\frac{x^2}{2}-\frac{x^3}{3}+o(x^3)\right]-\left[x-\frac{x^3}{3}+o(x^3)\right]}{ax^b}\\&amp;=\lim_{x \to 0}\frac{\frac{2x^3}{3}}{ax^b}=1,\end{aligned}$$
+故 $a=\frac{2}{3},b=3$,即 $ab=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q29" data-no="29">
+  <header class="q-head">
+    <span class="q-no">【29】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="29" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$\ln(1+x)-\tan x$ 与 $ax^b$ 是等价无穷小，则 $(a,b)=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\left(-\frac{1}{2},2\right)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\left(\frac{1}{2},2\right)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\left(-\frac{1}{3},3\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\left(\frac{1}{3},3\right)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意得,$\lim\limits_{x \to 0}\frac{\ln(1+x)-\tan x}{ax^b}=1$,由泰勒公式得
+$$\text{上式}=\lim_{x \to 0}\frac{x-\frac{1}{2}x^2+\frac{1}{3}x^3-\left(x+\frac{x^3}{3}\right)+o(x^3)}{ax^b}=\lim_{x \to 0}\frac{-\frac{1}{2}x^2+o(x^3)}{ax^b}=1,$$
+故 $a=-\frac{1}{2},b=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q30" data-no="30">
+  <header class="q-head">
+    <span class="q-no">【30】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="30" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$x-\ln(x+\sqrt{1+x^2})\sim ax^b$，则 $a,b$ 的值分别是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{6},3$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{6},2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{3},2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{3},3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\begin{aligned}\lim_{x \to 0}\frac{x-\ln(x+\sqrt{1+x^2})}{ax^b}&amp;=\lim_{x \to 0}\frac{1-\frac{1}{\sqrt{1+x^2}}}{abx^{b-1}}=\lim_{x \to 0}\frac{\sqrt{1+x^2}-1}{abx^{b-1}\cdot\sqrt{1+x^2}}\\&amp;=\lim_{x \to 0}\frac{\frac{1}{2}x^2}{abx^{b-1}}=1,\end{aligned}$$
+所以 $b-1=2,ab=\frac{1}{2}$,于是 $a=\frac{1}{6},b=3$.
+【注】由本题可知,当 $x \to 0$ 时,$\ln(x+\sqrt{1+x^2})=x-\frac{1}{6}x^3+o(x^3)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q31" data-no="31">
+  <header class="q-head">
+    <span class="q-no">【31】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="31" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x \to 0$ 时，$\arcsin x-x$ 与 $ax^b$ 是等价无穷小，则 $(a,b)=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\left(-\frac{1}{6},2\right)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\left(\frac{1}{6},2\right)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\left(-\frac{1}{6},3\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\left(\frac{1}{6},3\right)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\lim\limits_{x \to 0}\frac{\arcsin x-x}{ax^b}=\lim\limits_{x \to 0}\frac{x+\frac{1}{6}x^3+o(x^3)-x}{ax^b}=1$,得 $a=\frac{1}{6},b=3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q32" data-no="32">
+  <header class="q-head">
+    <span class="q-no">【32】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="32" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=x-[x]$，其中 $[x]$ 表示不超过 $x$ 的最大整数，求 $\lim_{x \to +\infty}\frac{1}{x}\int_{0}^{x}f(t)\,\mathrm{d}t$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x \in [0,1)$ 时,$f(x)=x-[x]=x$,又由于
+$$f(x+1)=x+1-[x+1]=x+1-([x]+1)=x-[x]=f(x),$$
+故 $f(x)$ 是周期为 1 的周期函数,其图像如图所示.
+【图】直角坐标系中画出周期为 1 的锯齿形折线：在 $[-1,0),[0,1),[1,2),[2,3)$ 等区间上均为从 0 上升到 1 的斜线段，左端点实心、右端点空心，横轴标注 $-2,-1,O,1,2,3$，纵轴标注 $f(x)$.
+当 $n\leqslant x&lt;n+1$ 时,$\frac{n}{2}=\int_0^n f(t)\,\mathrm{d}t\leqslant\int_0^x f(t)\,\mathrm{d}t&lt;\int_0^{n+1}f(t)\,\mathrm{d}t=\frac{n+1}{2}$,于是
+$$\frac{n}{2(n+1)}=\frac{1}{n+1}\int_0^n f(t)\,\mathrm{d}t&lt;\frac{1}{x}\int_0^x f(t)\,\mathrm{d}t&lt;\frac{1}{n}\int_0^{n+1}f(t)\,\mathrm{d}t=\frac{n+1}{2n}.$$
+当 $x \to +\infty$ 时,$n \to \infty$,由夹逼准则,有 $\lim\limits_{x \to +\infty}\frac{1}{x}\int_0^x f(t)\,\mathrm{d}t=\frac{1}{2}$.
+【注】本题考到了取整函数的两个重要公式:
+①$[x+n]=[x]+n$,其中 $n$ 为正整数.
+②$x-1&lt;[x]\leqslant x$.
+考生要熟悉它们.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q33" data-no="33">
+  <header class="q-head">
+    <span class="q-no">【33】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="33" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=\sqrt{\frac{1+x}{1-x}}$ 在 $x=0$ 处的2次泰勒多项式为 $a+bx+cx^2$，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a=1,b=1,c=1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a=1,b=1,c=\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a=0,b=-1,c=\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a=0,b=-1,c=1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由在 $x=0$ 处,满足 $\sqrt{\frac{1+x}{1-x}}=a+bx+cx^2+\cdots$,知 $\sqrt{1+x}=\sqrt{1-x}(a+bx+cx^2+\cdots)$.
+由 $\lim\limits_{x \to 0}\sqrt{1+x}=\lim\limits_{x \to 0}\sqrt{1-x}\cdot a$,可得 $a=1$. 又
+$$(1+x)^{\frac{1}{2}}=1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2}x^2+\cdots,$$
+$$(1-x)^{\frac{1}{2}}=1-\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2}x^2+\cdots,$$
+故
+$$\begin{aligned}1+\frac{1}{2}x-\frac{1}{8}x^2+\cdots&amp;=\left(1-\frac{1}{2}x-\frac{1}{8}x^2+\cdots\right)(1+bx+cx^2+\cdots)\\&amp;=1+bx+cx^2-\frac{1}{2}x-\frac{b}{2}x^2-\frac{1}{8}x^2+\cdots\\&amp;=1+\left(b-\frac{1}{2}\right)x+\left(c-\frac{b}{2}-\frac{1}{8}\right)x^2+\cdots,\end{aligned}$$
+解得 $b=1,c=\frac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q34" data-no="34">
+  <header class="q-head">
+    <span class="q-no">【34】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="34" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\lim_{x \to 0}\left[a\frac{2+\mathrm{e}^{\frac{1}{x}}}{1+\mathrm{e}^{\frac{4}{x}}}+(1+|x|)^{\frac{1}{x}}\right]$ 存在，求 $a$ 的值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $\lim\limits_{x \to 0}\left[a\frac{2+\mathrm{e}^{\frac{1}{x}}}{1+\mathrm{e}^{\frac{4}{x}}}+(1+|x|)^{\frac{1}{x}}\right]$ 存在,且
+$$\lim_{x \to 0^+}\left[a\frac{2+\mathrm{e}^{\frac{1}{x}}}{1+\mathrm{e}^{\frac{4}{x}}}+(1+|x|)^{\frac{1}{x}}\right]=\lim_{x \to 0^+}\left[a\frac{2+\mathrm{e}^{\frac{1}{x}}}{1+\mathrm{e}^{\frac{4}{x}}}+(1+x)^{\frac{1}{x}}\right]=0+\mathrm{e}=\mathrm{e},$$
+$$\lim_{x \to 0^-}\left[a\frac{2+\mathrm{e}^{\frac{1}{x}}}{1+\mathrm{e}^{\frac{4}{x}}}+(1+|x|)^{\frac{1}{x}}\right]=\lim_{x \to 0^-}\left[a\frac{2+\mathrm{e}^{\frac{1}{x}}}{1+\mathrm{e}^{\frac{4}{x}}}+(1-x)^{\frac{1}{x}}\right]=2a+\frac{1}{\mathrm{e}},$$
+所以
+$$\mathrm{e}=2a+\frac{1}{\mathrm{e}},$$
+解得
+$$a=\frac{\mathrm{e}}{2}-\frac{1}{2\mathrm{e}}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q35" data-no="35">
+  <header class="q-head">
+    <span class="q-no">【35】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="35" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\lim_{x \to +\infty}\frac{\int_{0}^{x}t^2\mathrm{e}^{x^2-t^2}\,\mathrm{d}t+a\mathrm{e}^{x^2}}{x^b}=-\frac{1}{2}$，求 $a,b$ 的值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">一开始,可能看不出是什么类型的未定式,作恒等变形(分子分母同时除以 $\mathrm{e}^{x^2}$)再看:
+$$\text{原式}=\lim_{x \to +\infty}\frac{\int_0^x t^2\mathrm{e}^{-t^2}\,\mathrm{d}t+a}{x^b\mathrm{e}^{-x^2}}=-\frac{1}{2},$$
+此时不论 $b$ 取何值,都有 $\lim\limits_{x \to +\infty}x^b\mathrm{e}^{-x^2}=0$,即判定为“$\frac{0}{0}$”型,故
+$$\lim_{x \to +\infty}\left(\int_0^x t^2\mathrm{e}^{-t^2}\,\mathrm{d}t+a\right)=0,$$
+于是
+$$a=-\int_0^{+\infty}t^2\mathrm{e}^{-t^2}\,\mathrm{d}t=-\frac{1}{4}\Gamma\left(\frac{1}{2}\right)=-\frac{\sqrt{\pi}}{4},$$
+则
+$$\begin{aligned}\text{原式}&amp;=\lim_{x \to +\infty}\frac{\int_0^x t^2\mathrm{e}^{-t^2}\,\mathrm{d}t-\frac{\sqrt{\pi}}{4}}{x^b\mathrm{e}^{-x^2}}\xlongequal{\text{洛必达法则}}\lim_{x \to +\infty}\frac{x^2\mathrm{e}^{-x^2}}{bx^{b-1}\mathrm{e}^{-x^2}+x^b\mathrm{e}^{-x^2}(-2x)}\\&amp;=\lim_{x \to +\infty}\frac{x^2}{bx^{b-1}-2x^{b+1}}=-\frac{1}{2},\end{aligned}$$
+故 $b=1$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q36" data-no="36">
+  <header class="q-head">
+    <span class="q-no">【36】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="36" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 满足 $\lim_{x \to 1}\frac{f(x)}{\mathrm{e}^{x-1}-1}=1$，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(1)=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim_{x \to 1}f(x)=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f'(1)=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim_{x \to 1}f'(x)=1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">
+【解析】由于$\lim_{x \to 1}\frac{f(x)}{\mathrm{e}^{x-1}-1}=1$，分母极限为 0，则分子极限也为 0，因此$\lim_{x \to 1}f(x)=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q37" data-no="37">
+  <header class="q-head">
+    <span class="q-no">【37】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="37" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $g(x)=\mathrm{e}^{\sqrt{x^2-2x+1}}$，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\lim_{x \to 1}g(x)$ 不存在</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim_{x \to 1}g(x)$ 存在，但在 $x=1$ 处 $g(x)$ 不连续</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">在 $x=1$ 处 $g(x)$ 导数存在</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">在 $x=1$ 处 $g(x)$ 连续，但不可导</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">函数$g(x)=\mathrm{e}^{\sqrt{x^2-2x+1}}=\mathrm{e}^{|x-1|}$的定义域是$(-\infty,+\infty)$，利用“初等函数在其定义区间上是连续的”这一结论可得$g(x)$在$x=1$处连续，故排除选项(A)和(B).
+又因为
+$$g_{+}'(1)=\lim_{x \to 1^{+}}\frac{g(x)-g(1)}{x-1}=\lim_{x \to 1^{+}}\frac{\mathrm{e}^{|x-1|}-1}{x-1}=\lim_{x \to 1^{+}}\frac{|x-1|}{x-1}=1,$$
+$$g_{-}'(1)=\lim_{x \to 1^{-}}\frac{g(x)-g(1)}{x-1}=\lim_{x \to 1^{-}}\frac{\mathrm{e}^{|x-1|}-1}{x-1}=\lim_{x \to 1^{-}}\frac{|x-1|}{x-1}=-1,$$
+所以$g_{+}'(1)\neq g_{-}'(1)$，即$g(x)$在$x=1$处不可导，故排除选项(C).
+综上，正确选项为(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q38" data-no="38">
+  <header class="q-head">
+    <span class="q-no">【38】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="38" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $f'(x)=1+x^2+x^3+o(x^3)\,(x \to 0)$，$g(x)=\begin{cases}\dfrac{x}{f(x)-f(0)}, &amp; x\neq 0,\\ a, &amp; x=0,\end{cases}$ 且 $g(x)$ 连续.
+(1)求 $a$ 的值；
+(2)当 $x \to 0$ 时，计算 $g(x)$ 到3阶的带佩亚诺余项的泰勒公式.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】(1)$\lim\limits_{x \to 0}g(x)=\frac{1}{f'(0)}=1$，故当$a=1$时，$g(x)$连续.
+(2)由于$f'(x)=1+x^2+x^3+o(x^3)(x \to 0)$，因此
+$$f(x)-f(0)=\int_{0}^{x}f'(t)\mathrm{d}t=\int_{0}^{x}\left[1+t^2+t^3+o(t^3)\right]\mathrm{d}t=x+\frac{1}{3}x^3+\frac{1}{4}x^4+o(x^4)(x \to 0).$$
+当$x \to 0$时，
+$$\begin{aligned}g(x)&amp;=\frac{1}{1+\frac{1}{3}x^2+\frac{1}{4}x^3+o(x^3)}\\&amp;=\left[1+\frac{1}{3}x^2+\frac{1}{4}x^3+o(x^3)\right]^{-1}\\&amp;=1+(-1)\left[\frac{1}{3}x^2+\frac{1}{4}x^3+o(x^3)\right]+o(x^3)\\&amp;=1-\frac{1}{3}x^2-\frac{1}{4}x^3+o(x^3).\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q39" data-no="39">
+  <header class="q-head">
+    <span class="q-no">【39】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="39" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下面结论正确的是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">设 $u=f(x)$ 在 $x_0$ 处连续，而 $v=g(x)$ 在 $x_0$ 处不连续，则函数 $y=f(x)g(x)$ 在 $x_0$ 处一定不连续</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">设 $u=f(x)$ 在 $x_0$ 处连续，而 $v=g(x)$ 在 $x_0$ 处不连续，则函数 $y=f(x)+g(x)$ 在 $x_0$ 处一定不连续</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">设 $u=f(x)$ 在 $x_0$ 处连续，而 $v=g(u)$ 在 $u_0=f(x_0)$ 处不连续，则复合函数 $y=g[f(x)]$ 在 $x_0$ 处一定不连续</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">以上选项均不正确</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于(A)选项，令$f(x)\equiv 0$，则对任意$g(x)$，有$y\equiv 0$，即$y$在$x_0$处连续.
+对于(B)选项，由于$\lim\limits_{x \to x_0}y=\lim\limits_{x \to x_0}[f(x)+g(x)]$，又$\lim\limits_{x \to x_0}f(x)=f(x_0)$，而$\lim\limits_{x \to x_0}g(x)\neq g(x_0)$，从而$\lim\limits_{x \to x_0}y\neq y(x_0)$，故在$x_0$处$y=f(x)+g(x)$不连续.
+对于(C)选项，令$u=f(x)\equiv u_0$，则$y=g[f(x)]\equiv g(u_0)$，因而$y=g[f(x)]$在$x_0$处连续.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q40" data-no="40">
+  <header class="q-head">
+    <span class="q-no">【40】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="32" data-no="40" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\lim_{n \to \infty}\frac{x^{n+1}+(\cos\pi x+1)\sin\alpha x}{x^n+(\cos\pi x+1)}$，为使 $f(x)$ 对于一切 $x$ 都连续，求常数 $\alpha$ 的最小正值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】当$|x|&gt;1$时，$\lim\limits_{n \to \infty}\dfrac{x^{n+1}+(\cos \pi x+1)\sin \alpha x}{x^n+(\cos \pi x+1)}=x$；
+当$x=1$时，$f(x)=1$；
+当$x=-1$时，$f(x)=-1$；
+当$|x|&lt;1$时，$\lim\limits_{n \to \infty}\dfrac{x^{n+1}+(\cos \pi x+1)\sin \alpha x}{x^n+(\cos \pi x+1)}=\sin \alpha x.$
+故
+$$f(x)=\begin{cases}x, &amp; |x|\geqslant 1,\\ \sin \alpha x, &amp; |x|&lt;1.\end{cases}$$
+为使$f(x)$连续，则必有$\lim\limits_{x \to 1^{-}}\sin \alpha x=1$，即$\alpha=\dfrac{\pi}{2}+2k\pi(k \in \mathbf{Z})$，于是$\alpha$的最小正值为$\dfrac{\pi}{2}$.可以验证当$\alpha=\dfrac{\pi}{2}$时，$f(x)$在点$x=-1$处也是连续的.故$\alpha$的最小正值$\dfrac{\pi}{2}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q41" data-no="41">
+  <header class="q-head">
+    <span class="q-no">【41】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="41" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=\frac{x}{\cos x}$ 在 $x=0$ 处的3次泰勒多项式为 $ax+bx^2+cx^3$，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a=1,b=0,c=\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a=0,b=1,c=\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a=0,b=\frac{1}{2},c=1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a=\frac{1}{2},b=1,c=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将$\cos x$在$x=0$处泰勒展开，可得$f(x)=\dfrac{x}{1-\dfrac{1}{2}x^2+\dfrac{1}{24}x^4-\cdots}$，列出除法竖式并计算，得
+$$\begin{array}{r} x+\frac{1}{2}x^3+\cdots \\ 1-\frac{1}{2}x^2+\frac{1}{24}x^4-\cdots\ \big)\overline{\ x\ } \\ \underline{\ x-\frac{1}{2}x^3+\frac{1}{24}x^5-\cdots\ } \\ \frac{1}{2}x^3-\frac{1}{24}x^5+\cdots \\ \underline{\ \frac{1}{2}x^3-\frac{1}{4}x^5+\cdots\ } \\ \frac{5}{24}x^5-\cdots \end{array}$$
+所以$a=1,b=0,c=\dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q42" data-no="42">
+  <header class="q-head">
+    <span class="q-no">【42】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="32" data-no="42" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$f(x)=\frac{|\ln|x||}{x^2-1}$ 有（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">两个跳跃间断点，一个无穷间断点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">两个可去间断点，一个无穷间断点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">一个可去间断点，一个跳跃间断点，一个无穷间断点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">三个无穷间断点</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">显然函数$f(x)$的间断点为$x=-1,x=0,x=1$.
+因为
+$$\lim_{x \to (-1)^{-}}f(x)=\lim_{x \to (-1)^{-}}\frac{\ln(-x)}{x^2-1}=\lim_{x \to (-1)^{-}}\frac{1}{x-1}\cdot\frac{\ln[1-(x+1)]}{x+1}=\frac{1}{2},$$
+$$\lim_{x \to (-1)^{+}}f(x)=\lim_{x \to (-1)^{+}}\frac{-\ln(-x)}{x^2-1}=-\lim_{x \to (-1)^{+}}\frac{1}{x-1}\cdot\frac{\ln[1-(x+1)]}{x+1}=-\frac{1}{2},$$
+所以$x=-1$为$f(x)$的跳跃间断点；同理可得$x=1$为$f(x)$的跳跃间断点.
+由$\lim\limits_{x \to 0}f(x)=-\infty$，得$x=0$为$f(x)$的无穷间断点.
+故$f(x)$有两个跳跃间断点，一个无穷间断点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-31.html">上一章：第6章 数理统计</a>
+      <a class="chapter-link" href="chapter-33.html">下一章：第2章 数列极限</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 32, "total": 42, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

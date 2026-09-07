@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 矩阵的秩 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第4章 矩阵的秩<span class="top-count">（5题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="53" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 3 阶非零矩阵，满足 $\boldsymbol{A}^2=\boldsymbol{A}$，且 $\boldsymbol{A}\neq\boldsymbol{E}$，则必有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$r(\boldsymbol{A})=1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r(\boldsymbol{A}-\boldsymbol{E})=2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$[r(\boldsymbol{A})-1][r(\boldsymbol{A}-\boldsymbol{E})-2]=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$[r(\boldsymbol{A})-1][r(\boldsymbol{A}-\boldsymbol{E})-1]=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">已知 $A$ 是 3 阶非零矩阵，则 $A \neq O$，故 $r(A) \geqslant 1$. 又 $A \neq E$，则 $A-E \neq O$，故 $r(A-E) \geqslant 1$. 由 $A^2 = A$，得 $A(A-E) = O$，故 $r(A) + r(A-E) \leqslant 3$，又
+$$r(A) + r(A-E) = r(A) + r(E-A) \geqslant r(A+E-A) = r(E) = 3,$$
+故 $r(A) + r(A-E) = 3$. 所以 $r(A)$ 和 $r(A-E)$ 一个是 1，另一个是 2，但不知道哪一个是 1，故 (A)，(B)，(C) 均是错误的，正确选项是 (D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="53" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B}$ 为 $n$ 阶实矩阵，则下列结论不成立的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$r([\boldsymbol{A}\quad\boldsymbol{A}\boldsymbol{B}])=r(\boldsymbol{A})$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r([\boldsymbol{A}\boldsymbol{B}^{\mathrm{T}}\quad\boldsymbol{A}\boldsymbol{B}^{\mathrm{T}}\boldsymbol{B}])=r(\boldsymbol{A}\boldsymbol{B}^{\mathrm{T}})$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$r\left(\begin{bmatrix}\boldsymbol{B}\boldsymbol{A}\\\boldsymbol{B}^{\mathrm{T}}\boldsymbol{B}\boldsymbol{A}\end{bmatrix}\right)=r(\boldsymbol{A}\boldsymbol{B}^{\mathrm{T}})$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$r\left(\begin{bmatrix}\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\\\boldsymbol{B}^{\mathrm{T}}\boldsymbol{A}\end{bmatrix}\right)=r(\boldsymbol{A})$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $[A \ \ AB] \to [A \ \ O]$，得 $r([A \ \ AB]) = r(A)$，(A) 正确.
+由 $[AB^{\mathrm{T}} \ \ AB^{\mathrm{T}}B] \to [AB^{\mathrm{T}} \ \ O]$，得 $r([AB^{\mathrm{T}} \ \ AB^{\mathrm{T}}B]) = r(AB^{\mathrm{T}})$，(B) 正确.
+由 $\begin{bmatrix} BA \\ B^{\mathrm{T}}BA \end{bmatrix} \to \begin{bmatrix} BA \\ O \end{bmatrix}$，得 $r\left(\begin{bmatrix} BA \\ B^{\mathrm{T}}BA \end{bmatrix}\right) = r(BA)$，但不一定有 $r(BA) = r(AB^{\mathrm{T}})$，故 (C) 不正确.
+由 $\begin{bmatrix} A^{\mathrm{T}}A \\ B^{\mathrm{T}}A \end{bmatrix} \xrightarrow{(*)} \begin{bmatrix} A \\ B^{\mathrm{T}}A \end{bmatrix} \to \begin{bmatrix} A \\ O \end{bmatrix}$，得 $r\left(\begin{bmatrix} A^{\mathrm{T}}A \\ B^{\mathrm{T}}A \end{bmatrix}\right) = r(A)$，(D) 正确.
+【注】(*) 处是因为 $A^{\mathrm{T}}Ax = 0$，$Ax = 0$ 为同解方程组，则对应的行向量组等价，故可直接替换.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="53" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\boldsymbol{A}$ 为 $n$ 阶矩阵，$\boldsymbol{E}$ 为 $n$ 阶单位矩阵，记矩阵 $\begin{bmatrix}\boldsymbol{O}&amp;\boldsymbol{A}\\\boldsymbol{A}^{\mathrm{T}}&amp;\boldsymbol{E}\end{bmatrix}$，$\begin{bmatrix}\boldsymbol{O}&amp;\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\\\boldsymbol{A}^{\mathrm{T}}&amp;\boldsymbol{E}\end{bmatrix}$，$\begin{bmatrix}\boldsymbol{A}^{\mathrm{T}}&amp;\boldsymbol{E}\\\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}&amp;\boldsymbol{A}^{\mathrm{T}}\boldsymbol{A}\end{bmatrix}$ 的秩分别为 $r_1,r_2,r_3$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$r_1=r_2\geqslant r_3$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r_1=r_2\leqslant r_3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$r_1=r_3\geqslant r_2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$r_1=r_3\leqslant r_2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\begin{bmatrix} O &amp; A \\ A^{\mathrm{T}} &amp; E \end{bmatrix} \xrightarrow{\text{第 2 行左边乘}(-A)\text{，加至第 1 行}} \begin{bmatrix} -AA^{\mathrm{T}} &amp; O \\ A^{\mathrm{T}} &amp; E \end{bmatrix} \xrightarrow{\text{第 2 列右边乘}(-A^{\mathrm{T}})\text{，加至第 1 列}} \begin{bmatrix} -AA^{\mathrm{T}} &amp; O \\ O &amp; E \end{bmatrix}$，故 $r_1 = r(-AA^{\mathrm{T}}) + n$.
+$\begin{bmatrix} O &amp; A^{\mathrm{T}}A \\ A^{\mathrm{T}} &amp; E \end{bmatrix} \xrightarrow{\text{第 2 行左边乘}(-A^{\mathrm{T}}A)\text{，加至第 1 行}} \begin{bmatrix} -A^{\mathrm{T}}AA^{\mathrm{T}} &amp; O \\ A^{\mathrm{T}} &amp; E \end{bmatrix} \xrightarrow{\text{第 2 列右边乘}(-A^{\mathrm{T}})\text{，加至第 1 列}} \begin{bmatrix} -A^{\mathrm{T}}AA^{\mathrm{T}} &amp; O \\ O &amp; E \end{bmatrix}$，故 $r_2 = r(-A^{\mathrm{T}}AA^{\mathrm{T}}) + n$.
+$\begin{bmatrix} A^{\mathrm{T}} &amp; E \\ A^{\mathrm{T}}AA^{\mathrm{T}} &amp; A^{\mathrm{T}}A \end{bmatrix} \xrightarrow{\text{第 2 列右边乘}(-A^{\mathrm{T}})\text{，加至第 1 列}} \begin{bmatrix} O &amp; E \\ O &amp; A^{\mathrm{T}}A \end{bmatrix} \xrightarrow{\text{第 1 行左边乘}(-A^{\mathrm{T}}A)\text{，加至第 2 行}} \begin{bmatrix} O &amp; E \\ O &amp; O \end{bmatrix}$，故 $r_3 = n$.
+因为
+$$r(A^{\mathrm{T}}) \geqslant r(A^{\mathrm{T}}AA^{\mathrm{T}}) \geqslant r(A^{\mathrm{T}}AA^{\mathrm{T}}A) = r\left[(A^{\mathrm{T}}A)^{\mathrm{T}}(A^{\mathrm{T}}A)\right] = r(A^{\mathrm{T}}A) = r(A^{\mathrm{T}}),$$
+故 $r(-AA^{\mathrm{T}}) = r(-A^{\mathrm{T}}A) = r(-A^{\mathrm{T}}AA^{\mathrm{T}}) \geqslant 0$，故 $r_1 = r_2 \geqslant r_3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="53" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $n$ 阶矩阵 $\boldsymbol{A},\boldsymbol{B},\boldsymbol{C}$ 满足 $\boldsymbol{A}\boldsymbol{B}\boldsymbol{C}=\boldsymbol{O}$，$\boldsymbol{E}$ 为 $n$ 阶单位矩阵，记矩阵 $\begin{bmatrix}\boldsymbol{O}&amp;\boldsymbol{A}\\\boldsymbol{B}\boldsymbol{C}&amp;\boldsymbol{E}\end{bmatrix}$，$\begin{bmatrix}\boldsymbol{A}\boldsymbol{B}&amp;\boldsymbol{C}\\\boldsymbol{O}&amp;\boldsymbol{E}\end{bmatrix}$，$\begin{bmatrix}\boldsymbol{E}&amp;\boldsymbol{A}\boldsymbol{B}\\\boldsymbol{A}\boldsymbol{B}&amp;\boldsymbol{O}\end{bmatrix}$ 的秩分别为 $r_1,r_2,r_3$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$r_1\leqslant r_2\leqslant r_3$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r_1\leqslant r_3\leqslant r_2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$r_3\leqslant r_1\leqslant r_2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$r_2\leqslant r_1\leqslant r_3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于 $\begin{bmatrix} O &amp; A \\ BC &amp; E \end{bmatrix}$，将分块矩阵的第 2 行左边乘 $(-A)$ 加至第 1 行，即
+$$\begin{bmatrix} E &amp; -A \\ O &amp; E \end{bmatrix}\begin{bmatrix} O &amp; A \\ BC &amp; E \end{bmatrix} = \begin{bmatrix} -ABC &amp; O \\ BC &amp; E \end{bmatrix} = \begin{bmatrix} O &amp; O \\ BC &amp; E \end{bmatrix},$$
+其秩 $r_1 = n$；
+对于 $\begin{bmatrix} AB &amp; C \\ O &amp; E \end{bmatrix}$，将分块矩阵的第 2 行左边乘 $(-C)$ 加至第 1 行，即
+$$\begin{bmatrix} E &amp; -C \\ O &amp; E \end{bmatrix}\begin{bmatrix} AB &amp; C \\ O &amp; E \end{bmatrix} = \begin{bmatrix} AB &amp; O \\ O &amp; E \end{bmatrix},$$
+其秩 $r_2 = r(AB) + n$；
+对于 $\begin{bmatrix} E &amp; AB \\ AB &amp; O \end{bmatrix}$，先将分块矩阵第 1 行左边乘 $(-AB)$ 加至第 2 行，即
+$$\begin{bmatrix} E &amp; O \\ -AB &amp; E \end{bmatrix}\begin{bmatrix} E &amp; AB \\ AB &amp; O \end{bmatrix} = \begin{bmatrix} E &amp; AB \\ O &amp; -ABAB \end{bmatrix},$$
+再将分块矩阵第 1 列右边乘 $(-AB)$ 加至第 2 列，即
+$$\begin{bmatrix} E &amp; AB \\ O &amp; -ABAB \end{bmatrix}\begin{bmatrix} E &amp; -AB \\ O &amp; E \end{bmatrix} = \begin{bmatrix} E &amp; O \\ O &amp; -ABAB \end{bmatrix},$$
+其秩 $r_3 = r(-ABAB) + n$.
+由于
+$$r(AB) \geqslant r(-ABAB) \geqslant 0,$$
+因此 $r_2 \geqslant r_3 \geqslant r_1$，故选 (B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="53" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B},\boldsymbol{C}$ 均为 $n$ 阶矩阵，$r(\boldsymbol{A}\boldsymbol{B})\leqslant r(\boldsymbol{B}\boldsymbol{A})$，记 $\begin{bmatrix}\boldsymbol{O}&amp;\boldsymbol{A}\boldsymbol{B}\\\boldsymbol{B}&amp;\boldsymbol{B}\boldsymbol{C}\end{bmatrix}$，$\begin{bmatrix}\boldsymbol{B}&amp;\boldsymbol{B}\boldsymbol{C}\\\boldsymbol{A}\boldsymbol{B}&amp;\boldsymbol{O}\end{bmatrix}$，$\begin{bmatrix}\boldsymbol{B}\boldsymbol{A}&amp;\boldsymbol{B}\boldsymbol{A}\boldsymbol{C}\\\boldsymbol{O}&amp;\boldsymbol{B}\end{bmatrix}$ 的秩分别为 $r_1,r_2,r_3$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$r_2\leqslant r_3\leqslant r_1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r_2\leqslant r_1\leqslant r_3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$r_1\leqslant r_2\leqslant r_3$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$r_3\leqslant r_2\leqslant r_1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\begin{bmatrix} O &amp; AB \\ B &amp; BC \end{bmatrix} \xrightarrow{\text{第 1 列右边乘}(-C)\text{，加至第 2 列}} \begin{bmatrix} O &amp; AB \\ B &amp; O \end{bmatrix}$，故 $r_1 = r(B) + r(AB)$；
+$\begin{bmatrix} B &amp; BC \\ AB &amp; O \end{bmatrix} \xrightarrow{\text{第 1 行左边乘}(-A)\text{，加至第 2 行}} \begin{bmatrix} B &amp; BC \\ O &amp; -ABC \end{bmatrix} \xrightarrow{\text{第 1 列右边乘}(-C)\text{，加至第 2 列}} \begin{bmatrix} B &amp; O \\ O &amp; -ABC \end{bmatrix}$，故 $r_2 = r(B) + r(-ABC) = r(B) + r(ABC)$；
+$\begin{bmatrix} BA &amp; BAC \\ O &amp; B \end{bmatrix} \xrightarrow{\text{第 1 列右边乘}(-C)\text{，加至第 2 列}} \begin{bmatrix} BA &amp; O \\ O &amp; B \end{bmatrix}$，故 $r_3 = r(B) + r(BA)$.
+由于 $r(ABC) \leqslant r(AB)$，则有 $r_2 \leqslant r_1$，又 $r(AB) \leqslant r(BA)$，则有 $r_1 \leqslant r_3$，故 $r_2 \leqslant r_1 \leqslant r_3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-52.html">上一章：第3章 矩阵运算</a>
+      <a class="chapter-link" href="chapter-54.html">下一章：第5章 线性方程组</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 53, "total": 5, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

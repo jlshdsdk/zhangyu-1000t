@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 行列式 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第1章 行列式<span class="top-count">（8题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="50" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\boldsymbol{A},\boldsymbol{B}$ 均为 4 阶矩阵，$r(\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}})=3$，$|\boldsymbol{A}\boldsymbol{B}|=\begin{vmatrix}2&amp;a&amp;0&amp;-a\\-a&amp;2&amp;-5&amp;b\\b&amp;0&amp;b&amp;-2\\0&amp;-2&amp;4&amp;0\end{vmatrix}$，且 $\begin{vmatrix}2&amp;a&amp;-a\\-a&amp;2&amp;b\\b&amp;0&amp;-2\end{vmatrix}=5$，则 $\begin{vmatrix}-a&amp;-5&amp;b\\2&amp;0&amp;-a\\b&amp;b&amp;-2\end{vmatrix}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $r(AA^{\mathrm{T}})=3$，知 $|A|=0$，$|AB|=|A||B|=0$，即
+$$|AB|\xlongequal{\text{按第4行展开}}(-2)\begin{vmatrix}2&amp;0&amp;-a\\-a&amp;-5&amp;b\\b&amp;b&amp;-2\end{vmatrix}+(-4)\begin{vmatrix}2&amp;a&amp;-a\\-a&amp;2&amp;b\\b&amp;0&amp;-2\end{vmatrix}$$
+$$=(-2)\begin{vmatrix}2&amp;0&amp;-a\\-a&amp;-5&amp;b\\b&amp;b&amp;-2\end{vmatrix}+(-4)\times 5=0,$$
+得 $\begin{vmatrix}2&amp;0&amp;-a\\-a&amp;-5&amp;b\\b&amp;b&amp;-2\end{vmatrix}=-10$，于是 $\begin{vmatrix}-a&amp;-5&amp;b\\2&amp;0&amp;-a\\b&amp;b&amp;-2\end{vmatrix}=10$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">10</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="50" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $n$ 阶行列式：
+$$D_n=\begin{vmatrix}a_1+x_1&amp;a_2&amp;\cdots&amp;a_n\\a_1&amp;a_2+x_2&amp;\cdots&amp;a_n\\\vdots&amp;\vdots&amp;&amp;\vdots\\a_1&amp;a_2&amp;\cdots&amp;a_n+x_n\end{vmatrix},$$
+其中 $x_i\neq 0,i=1,2,\cdots,n$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">用加边法，
+$$D_n=\begin{vmatrix}a_1+x_1&amp;a_2&amp;\cdots&amp;a_n\\a_1&amp;a_2+x_2&amp;\cdots&amp;a_n\\\vdots&amp;\vdots&amp;&amp;\vdots\\a_1&amp;a_2&amp;\cdots&amp;a_n+x_n\end{vmatrix}=\begin{vmatrix}1&amp;a_1&amp;a_2&amp;\cdots&amp;a_n\\0&amp;a_1+x_1&amp;a_2&amp;\cdots&amp;a_n\\0&amp;a_1&amp;a_2+x_2&amp;\cdots&amp;a_n\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots\\0&amp;a_1&amp;a_2&amp;\cdots&amp;a_n+x_n\end{vmatrix}$$
+$$\xlongequal[i=2,\cdots,n+1]{r_i-r_1}\begin{vmatrix}1&amp;a_1&amp;a_2&amp;\cdots&amp;a_n\\-1&amp;x_1&amp;0&amp;\cdots&amp;0\\-1&amp;0&amp;x_2&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots\\-1&amp;0&amp;0&amp;\cdots&amp;x_n\end{vmatrix}.$$
+因 $x_i\neq 0$（$i=1,2,\cdots,n$），故
+$$D_n\xlongequal{c_1+\sum\limits_{i=1}^{n}\frac{c_{i+1}}{x_i}}\begin{vmatrix}1+\sum\limits_{i=1}^{n}\frac{a_i}{x_i}&amp;a_1&amp;a_2&amp;\cdots&amp;a_n\\0&amp;x_1&amp;0&amp;\cdots&amp;0\\0&amp;0&amp;x_2&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots\\0&amp;0&amp;0&amp;\cdots&amp;x_n\end{vmatrix}=\left(1+\sum_{i=1}^{n}\frac{a_i}{x_i}\right)x_1x_2\cdots x_n.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="50" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $n+1$ 阶行列式：
+$$D_{n+1}=\begin{vmatrix}a_0&amp;a_1&amp;a_2&amp;\cdots&amp;a_{n-1}&amp;a_n\\-1&amp;x&amp;0&amp;\cdots&amp;0&amp;0\\0&amp;-1&amp;x&amp;\cdots&amp;0&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots&amp;\vdots\\0&amp;0&amp;0&amp;\cdots&amp;-1&amp;x\end{vmatrix}.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">按行列式 $D_{n+1}$ 的最后 1 列展开，得
+$$D_{n+1}=x\cdot(-1)^{(n+1)+(n+1)}D_n+a_n\cdot(-1)^{1+(n+1)}\cdot(-1)^n=xD_n+a_n.$$
+于是，逐次递推得到
+$$\begin{aligned}D_{n+1}&amp;=x(xD_{n-1}+a_{n-1})+a_n\\&amp;=x^2D_{n-1}+xa_{n-1}+a_n\\&amp;=x^2(xD_{n-2}+a_{n-2})+xa_{n-1}+a_n\\&amp;=x^3D_{n-2}+x^2a_{n-2}+xa_{n-1}+a_n\\&amp;=\cdots=x^{n-1}D_1+x^{n-1}a_1+x^{n-2}a_2+\cdots+xa_{n-1}+a_n\\&amp;=a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\cdots+a_{n-1}x+a_n,\end{aligned}$$
+其中 $D_1=a_0$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="50" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$D_n=\begin{vmatrix}b&amp;-1&amp;0&amp;\cdots&amp;0&amp;0\\0&amp;b&amp;-1&amp;\cdots&amp;0&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots&amp;\vdots\\0&amp;0&amp;0&amp;\cdots&amp;b&amp;-1\\a_n&amp;a_{n-1}&amp;a_{n-2}&amp;\cdots&amp;a_2&amp;b+a_1\end{vmatrix}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">递推法. 按第 1 列展开，得
+$$D_n=b\begin{vmatrix}b&amp;-1&amp;0&amp;\cdots&amp;0&amp;0\\0&amp;b&amp;-1&amp;\cdots&amp;0&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots&amp;\vdots\\a_{n-1}&amp;a_{n-2}&amp;a_{n-3}&amp;\cdots&amp;a_2&amp;b+a_1\end{vmatrix}_{(n-1)\times(n-1)}+(-1)^{n+1}a_n\begin{vmatrix}-1&amp;0&amp;\cdots&amp;0&amp;0\\b&amp;-1&amp;\cdots&amp;0&amp;0\\\vdots&amp;\vdots&amp;&amp;\vdots&amp;\vdots\\0&amp;0&amp;\cdots&amp;b&amp;-1\end{vmatrix}_{(n-1)\times(n-1)}$$
+$$=bD_{n-1}+(-1)^{n+1}a_n\cdot(-1)^{n-1}=bD_{n-1}+a_n\ (n&gt;1).$$
+下面进行递推，得
+$$\begin{aligned}D_n&amp;=bD_{n-1}+a_n=b(bD_{n-2}+a_{n-1})+a_n=b^2D_{n-2}+a_{n-1}b+a_n\\&amp;=b^2(bD_{n-3}+a_{n-2})+a_{n-1}b+a_n=b^3D_{n-3}+a_{n-2}b^2+a_{n-1}b+a_n\\&amp;=\cdots=b^{n-1}D_1+a_2b^{n-2}+\cdots+a_{n-1}b+a_n,\end{aligned}$$
+其中 $D_1\overset{(*)}{=}b+a_1$，故 $D_n=b^n+a_1b^{n-1}+a_2b^{n-2}+\cdots+a_{n-1}b+a_n$，当 $n=1$ 时，也符合.
+【注】(1)(* )处提醒考生注意. $D_n$ 是异爪形行列式，其元素分布规律应从右下角往左上看，写出 $D_k$（$k=1,2,\cdots,n-1,n$）供考生参考：
+$$D_k=\begin{vmatrix}b&amp;-1&amp;0&amp;\cdots&amp;0&amp;0\\0&amp;b&amp;-1&amp;\cdots&amp;0&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots&amp;\vdots\\0&amp;0&amp;0&amp;\cdots&amp;b&amp;-1\\a_k&amp;a_{k-1}&amp;a_{k-2}&amp;\cdots&amp;a_2&amp;b+a_1\end{vmatrix}.$$
+事实上，选第 1 列展开是基于 $D_n$ 的这种元素分布规律. 若选第 $n$ 列展开，余子式便不是 $D_{n-1}$，破坏了元素分布规律，无法建立递推公式.
+(2) 本题也可用第一数学归纳法做. 由
+$$D_1=b+a_1,$$
+$$D_2=\begin{vmatrix}b&amp;-1\\a_2&amp;b+a_1\end{vmatrix}=b^2+a_1b+a_2,$$
+设 $$D_k=b^k+a_1b^{k-1}+\cdots+a_{k-1}b+a_k, \qquad ①$$
+现在来看 $D_{k+1}$，将 $D_{k+1}$ 按第 1 列展开，由上述解析，知
+$$D_{k+1}=bD_k+a_{k+1}, \qquad ②$$
+将归纳假设①式代入②式，得
+$$\begin{aligned}D_{k+1}&amp;=b(b^k+a_1b^{k-1}+\cdots+a_{k-1}b+a_k)+a_{k+1}\\&amp;=b^{k+1}+a_1b^k+\cdots+a_{k-1}b^2+a_kb+a_{k+1}.\end{aligned}$$
+因此①式对任何正整数 $k$ 都成立，即得
+$$D_n=b^n+a_1b^{n-1}+\cdots+a_{n-1}b+a_n.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$b^n+a_1b^{n-1}+a_2b^{n-2}+\cdots+a_{n-1}b+a_n$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="50" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}=[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3]$，$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 为线性无关的 3 维列向量，$\boldsymbol{P}$ 为 3 阶矩阵，且 $\boldsymbol{P}\boldsymbol{A}=[-\boldsymbol{\alpha}_1,-2\boldsymbol{\alpha}_2,-3\boldsymbol{\alpha}_3]$，则 $|\boldsymbol{P}-\boldsymbol{E}|=(\qquad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">6</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">-6</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">24</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">-24</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，$PA=P[\alpha_1,\alpha_2,\alpha_3]=[\alpha_1,\alpha_2,\alpha_3]\begin{bmatrix}-1&amp;0&amp;0\\0&amp;-2&amp;0\\0&amp;0&amp;-3\end{bmatrix}\overset{\text{记}}{=}AQ$. 由 $A$ 可逆得 $P=AQA^{-1}$，故
+$$|P-E|=|AQA^{-1}-AEA^{-1}|=|A||Q-E||A^{-1}|=|Q-E|=-24.$$
+选 (D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="50" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 3 阶矩阵，$\lambda_1,\lambda_2,\lambda_3$ 是 $\boldsymbol{A}$ 的 3 个不同的特征值，其对应的特征向量为 $\boldsymbol{\xi}_1,\boldsymbol{\xi}_2,\boldsymbol{\xi}_3$，$\boldsymbol{\alpha}=\boldsymbol{\xi}_1+\boldsymbol{\xi}_2+\boldsymbol{\xi}_3$，$\boldsymbol{P}=[\boldsymbol{\alpha},\boldsymbol{A}\boldsymbol{\alpha},\boldsymbol{A}^2\boldsymbol{\alpha}]$.
+（1）证明 $\boldsymbol{P}$ 可逆；
+（2）若 $(\boldsymbol{A}^3-\boldsymbol{A})\boldsymbol{\alpha}=\boldsymbol{0}$，求 $|\boldsymbol{A}-3\boldsymbol{E}|$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题设 $A\xi_i=\lambda_i\xi_i$，$i=1,2,3$，且 $\alpha=\xi_1+\xi_2+\xi_3$，故
+$$A\alpha=A(\xi_1+\xi_2+\xi_3)=A\xi_1+A\xi_2+A\xi_3=\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3,$$
+$$A^2\alpha=\lambda_1^2\xi_1+\lambda_2^2\xi_2+\lambda_3^2\xi_3.$$
+设存在数 $k_1,k_2,k_3$，使得
+$$k_1\alpha+k_2A\alpha+k_3A^2\alpha=\boldsymbol{0}. \qquad (*)$$
+将 $\alpha=\xi_1+\xi_2+\xi_3$，$A\alpha=\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3$，$A^2\alpha=\lambda_1^2\xi_1+\lambda_2^2\xi_2+\lambda_3^2\xi_3$ 代入(*)式，整理得
+$$(k_1+k_2\lambda_1+k_3\lambda_1^2)\xi_1+(k_1+k_2\lambda_2+k_3\lambda_2^2)\xi_2+(k_1+k_2\lambda_3+k_3\lambda_3^2)\xi_3=\boldsymbol{0}.$$
+因 $\lambda_1,\lambda_2,\lambda_3$ 互不相同，故 $\xi_1,\xi_2,\xi_3$ 线性无关，于是
+$$\begin{cases}k_1+k_2\lambda_1+k_3\lambda_1^2=0,\\k_1+k_2\lambda_2+k_3\lambda_2^2=0,\\k_1+k_2\lambda_3+k_3\lambda_3^2=0,\end{cases}$$
+系数行列式
+$$\begin{vmatrix}1&amp;\lambda_1&amp;\lambda_1^2\\1&amp;\lambda_2&amp;\lambda_2^2\\1&amp;\lambda_3&amp;\lambda_3^2\end{vmatrix}=(\lambda_3-\lambda_1)(\lambda_3-\lambda_2)(\lambda_2-\lambda_1)\neq 0,$$
+故 $k_1=k_2=k_3=0$，即 $\alpha,A\alpha,A^2\alpha$ 线性无关，于是 $P=[\alpha,A\alpha,A^2\alpha]$ 可逆.
+(2) 由 $(A^3-A)\alpha=\boldsymbol{0}$，得 $A^3\alpha=A\alpha$，故
+$$\begin{aligned}AP&amp;=A[\alpha,A\alpha,A^2\alpha]=[A\alpha,A^2\alpha,A\alpha]\\&amp;=[\alpha,A\alpha,A^2\alpha]\begin{bmatrix}0&amp;0&amp;0\\1&amp;0&amp;1\\0&amp;1&amp;0\end{bmatrix}\overset{\text{记}}{=}PB,\end{aligned}$$
+于是 $P^{-1}AP=B$，即 $A\sim B$.
+令 $|\lambda E-B|=0$，即
+$$\begin{vmatrix}\lambda&amp;0&amp;0\\-1&amp;\lambda&amp;-1\\0&amp;-1&amp;\lambda\end{vmatrix}=\lambda(\lambda+1)(\lambda-1)=0,$$
+解得 $B$ 的特征值，即为 $A$ 的特征值 $\lambda_1=0,\lambda_2=-1,\lambda_3=1$，则对于 $A-3E$，特征值为 $-3,-4,-2$，故 $|A-3E|=(-3)\times(-4)\times(-2)=-24$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="50" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 3 阶矩阵，若 $|\boldsymbol{E}-\boldsymbol{A}|=1$，$|-\boldsymbol{E}-\boldsymbol{A}|=-1$，$|2\boldsymbol{E}-\boldsymbol{A}|=2$，则 $|3\boldsymbol{E}-\boldsymbol{A}|=(\qquad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">-2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">-8</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">8</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">11</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $|\lambda E-A|=\lambda^3+a\lambda^2+b\lambda+c$，
+则
+$$\begin{aligned}|E-A|&amp;=1+a+b+c=1,\\|-E-A|&amp;=-1+a-b+c=-1,\\|2E-A|&amp;=8+4a+2b+c=2,\end{aligned}$$
+解得
+$$\begin{cases}a=-2,\\b=0,\\c=2,\end{cases}$$
+故 $|\lambda E-A|=\lambda^3-2\lambda^2+2$，于是 $|3E-A|=11$.
+【注】常规考题会给出特征方程：$|E-A|=|-E-A|=|2E-A|=0$，则 $|3E-A|=8$. 而本题给出的不是直接推出特征方程的条件. 考生需对特征多项式有深刻理解.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="50" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 $n$ 阶实对称矩阵，$r(\boldsymbol{A})=r$，且满足 $\boldsymbol{A}^2=\boldsymbol{A}$，$f(x)=x^2-2x-3$，求 $|f(\boldsymbol{A})-6\boldsymbol{E}|$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">先求出 $A$ 的相似对角矩阵. 再利用相似对角矩阵，计算 $|f(A)-6E|$.
+由于 $A^2=A$，因此 $A$ 的特征值的取值范围为 $(1,0)$，又 $r(A)=r$，且 $A$ 是实对称矩阵，故知 1 是对应特征方程的 $r$ 重根，0 是 $n-r$ 重根，且存在可逆矩阵 $P$，使得
+$$P^{-1}AP=\begin{bmatrix}E_r&amp;O\\O&amp;O\end{bmatrix},A=P\begin{bmatrix}E_r&amp;O\\O&amp;O\end{bmatrix}P^{-1}=P\Lambda P^{-1},$$
+故
+$$\begin{aligned}|f(A)-6E|&amp;=|A^2-2A-3E-6E|\\&amp;=|(P\Lambda P^{-1})^2-2(P\Lambda P^{-1})-9PP^{-1}|\\&amp;=|P(\Lambda^2-2\Lambda-9E)P^{-1}|\\&amp;=|\Lambda^2-2\Lambda-9E|=\left|\begin{bmatrix}E_r&amp;O\\O&amp;O\end{bmatrix}-\begin{bmatrix}2E_r&amp;O\\O&amp;O\end{bmatrix}-9E\right|\\&amp;=\left|\begin{bmatrix}-10E_r&amp;O\\O&amp;-9E_{n-r}\end{bmatrix}\right|\\&amp;=(-10)^r(-9)^{n-r}=(-1)^n10^r9^{n-r}.\end{aligned}$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-49.html">上一章：第18章 多元函数积分学</a>
+      <a class="chapter-link" href="chapter-51.html">下一章：第2章 余子式和代数余子式的计算</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 50, "total": 8, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

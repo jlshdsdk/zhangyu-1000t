@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 矩阵 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第2章 矩阵<span class="top-count">（17题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知矩阵方程 $\boldsymbol{A}=\boldsymbol{B}\boldsymbol{C}$，其中 $\boldsymbol{A}=\begin{bmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix}$，则 $\boldsymbol{B},\boldsymbol{C}$ 可以是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix} \frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{3}} &amp; -\frac{1}{\sqrt{6}} \\ \frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{6}} \\ 0 &amp; \frac{1}{\sqrt{3}} &amp; \frac{2}{\sqrt{6}} \end{bmatrix},\begin{bmatrix} \sqrt{2} &amp; 0 &amp; 0 \\ 0 &amp; \sqrt{3} &amp; 0 \\ \frac{1}{\sqrt{2}} &amp; \frac{2}{\sqrt{3}} &amp; \frac{1}{\sqrt{6}} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix} \frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{3}} &amp; -\frac{1}{\sqrt{6}} \\ \frac{1}{\sqrt{3}} &amp; -\frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{3}} \\ \frac{1}{\sqrt{6}} &amp; \frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{2}} \end{bmatrix},\begin{bmatrix} \sqrt{2} &amp; 0 &amp; \frac{1}{\sqrt{2}} \\ 0 &amp; \sqrt{3} &amp; \frac{2}{\sqrt{3}} \\ 0 &amp; 0 &amp; \frac{1}{\sqrt{6}} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix} \frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{3}} &amp; -\frac{1}{\sqrt{6}} \\ \frac{1}{\sqrt{3}} &amp; -\frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{3}} \\ \frac{1}{\sqrt{6}} &amp; \frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{2}} \end{bmatrix},\begin{bmatrix} \sqrt{2} &amp; 0 &amp; 0 \\ 0 &amp; \sqrt{3} &amp; \frac{2}{\sqrt{3}} \\ 0 &amp; 0 &amp; \frac{1}{\sqrt{6}} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix} \frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{3}} &amp; -\frac{1}{\sqrt{6}} \\ \frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{3}} &amp; \frac{1}{\sqrt{6}} \\ 0 &amp; \frac{1}{\sqrt{3}} &amp; \frac{2}{\sqrt{6}} \end{bmatrix},\begin{bmatrix} \sqrt{2} &amp; 0 &amp; \frac{1}{\sqrt{2}} \\ 0 &amp; \sqrt{3} &amp; \frac{2}{\sqrt{3}} \\ 0 &amp; 0 &amp; \frac{1}{\sqrt{6}} \end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">在考研范围内，可认为本题考查矩阵相乘的运算规则.
+$$\begin{pmatrix}\frac{1}{\sqrt{2}}&amp;\frac{1}{\sqrt{3}}&amp;-\frac{1}{\sqrt{6}}\\\frac{1}{\sqrt{2}}&amp;-\frac{1}{\sqrt{3}}&amp;\frac{1}{\sqrt{6}}\\0&amp;\frac{1}{\sqrt{3}}&amp;\frac{2}{\sqrt{6}}\end{pmatrix}\begin{pmatrix}\sqrt{2}&amp;0&amp;\frac{1}{\sqrt{2}}\\0&amp;\sqrt{3}&amp;\frac{2}{\sqrt{3}}\\0&amp;0&amp;\frac{1}{\sqrt{6}}\end{pmatrix}=\begin{pmatrix}1&amp;1&amp;1\\1&amp;-1&amp;0\\0&amp;1&amp;1\end{pmatrix},$$
+(D) 选项符合题意.
+事实上，(A) 选项中左边矩阵第 1 行乘右边矩阵第 1 列得 $1-\frac{\sqrt{3}}{6}\neq1$，不符合题意，排除；
+(B)，(C) 选项中左边矩阵第 3 行乘右边矩阵第 1 列得 $\frac{\sqrt{3}}{3}\neq0$，不符合题意，也排除.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}=\begin{bmatrix} 0 &amp; 0 &amp; -1 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \end{bmatrix}$，则 $\boldsymbol{A}^{13}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\boldsymbol{A}^{2}=\begin{pmatrix}-1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;-1\end{pmatrix}$，则 $\boldsymbol{A}^{4}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}=\boldsymbol{E}$，故
+$$\boldsymbol{A}^{13}=(\boldsymbol{A}^{4})^{3}\boldsymbol{A}=\boldsymbol{E}^{3}\boldsymbol{A}=\boldsymbol{A}=\begin{pmatrix}0&amp;0&amp;-1\\0&amp;1&amp;0\\1&amp;0&amp;0\end{pmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}0&amp;0&amp;-1\\0&amp;1&amp;0\\1&amp;0&amp;0\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{B}=\begin{bmatrix} 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix}$，$\boldsymbol{A}=\boldsymbol{E}+\boldsymbol{B}+\boldsymbol{B}^2+\boldsymbol{B}^3$，则 $\boldsymbol{A}^{-1}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">容易验证，$\boldsymbol{B}^{4}=\boldsymbol{O}$，故
+$$\boldsymbol{A}(\boldsymbol{E}-\boldsymbol{B})=(\boldsymbol{E}+\boldsymbol{B}+\boldsymbol{B}^{2}+\boldsymbol{B}^{3})(\boldsymbol{E}-\boldsymbol{B})=\boldsymbol{E}-\boldsymbol{B}^{4}=\boldsymbol{E},$$
+从而 $\boldsymbol{A}^{-1}=\boldsymbol{E}-\boldsymbol{B}=\begin{pmatrix}1&amp;-1&amp;0&amp;0\\0&amp;1&amp;-1&amp;0\\0&amp;0&amp;1&amp;-1\\0&amp;0&amp;0&amp;1\end{pmatrix}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}1&amp;-1&amp;0&amp;0\\0&amp;1&amp;-1&amp;0\\0&amp;0&amp;1&amp;-1\\0&amp;0&amp;0&amp;1\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\boldsymbol{A}=\begin{bmatrix} 1 &amp; -1 \\ 1 &amp; 0 \end{bmatrix}$，若 $(\boldsymbol{P}\boldsymbol{A})^2=\boldsymbol{P}\boldsymbol{A}$，$\boldsymbol{P}$ 为可逆矩阵，则 $\boldsymbol{P}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\boldsymbol{A},\boldsymbol{P}$ 均可逆，$(\boldsymbol{PA})^{2}=\boldsymbol{PA}$，则 $\boldsymbol{PA}(\boldsymbol{PA}-\boldsymbol{E})=\boldsymbol{O}$，知 $\boldsymbol{PA}=\boldsymbol{E}$，于是
+$$\boldsymbol{P}=\boldsymbol{A}^{-1}=\begin{pmatrix}0&amp;1\\-1&amp;1\end{pmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}0&amp;1\\-1&amp;1\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B}$ 都是 3 阶矩阵，若 $|\boldsymbol{A}|=-3$，$|\boldsymbol{B}|=4$，$\boldsymbol{C}=\begin{bmatrix} 2\boldsymbol{A}^{*} &amp; (\boldsymbol{A}\boldsymbol{B})^{*} \\ \boldsymbol{O} &amp; \boldsymbol{B}^{-1} \end{bmatrix}$，则 $|\boldsymbol{C}|=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$|\boldsymbol{C}|=\begin{vmatrix}2\boldsymbol{A}^{*}&amp;(\boldsymbol{AB})^{*}\\\boldsymbol{O}&amp;\boldsymbol{B}^{-1}\end{vmatrix}=|2\boldsymbol{A}^{*}||\boldsymbol{B}^{-1}|=\frac{2^{3}|\boldsymbol{A}|^{2}}{|\boldsymbol{B}|}=\frac{8\times(-3)^{2}}{4}=18.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">18</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 2 阶方阵，$\boldsymbol{B}$ 为 3 阶方阵，$|\boldsymbol{A}|=2$，$|\boldsymbol{B}|=3$，$\boldsymbol{C}=\begin{bmatrix} \boldsymbol{O} &amp; \boldsymbol{A} \\ \boldsymbol{B} &amp; \boldsymbol{O} \end{bmatrix}$，则 $\boldsymbol{C}^{*}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix} \boldsymbol{O} &amp; -3\boldsymbol{A}^{*} \\ -2\boldsymbol{B}^{*} &amp; \boldsymbol{O} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix} \boldsymbol{O} &amp; 3\boldsymbol{A}^{*} \\ 2\boldsymbol{B}^{*} &amp; \boldsymbol{O} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix} \boldsymbol{O} &amp; -2\boldsymbol{B}^{*} \\ -3\boldsymbol{A}^{*} &amp; \boldsymbol{O} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix} \boldsymbol{O} &amp; 2\boldsymbol{B}^{*} \\ 3\boldsymbol{A}^{*} &amp; \boldsymbol{O} \end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$|\boldsymbol{C}|=(-1)^{2\times3}|\boldsymbol{A}||\boldsymbol{B}|=|\boldsymbol{A}||\boldsymbol{B}|$，$\boldsymbol{C}^{-1}=\begin{pmatrix}\boldsymbol{O}&amp;\boldsymbol{B}^{-1}\\\boldsymbol{A}^{-1}&amp;\boldsymbol{O}\end{pmatrix}$，故
+$$\boldsymbol{C}^{*}=|\boldsymbol{C}|\boldsymbol{C}^{-1}=|\boldsymbol{A}||\boldsymbol{B}|\begin{pmatrix}\boldsymbol{O}&amp;\boldsymbol{B}^{-1}\\\boldsymbol{A}^{-1}&amp;\boldsymbol{O}\end{pmatrix}=\begin{pmatrix}\boldsymbol{O}&amp;|\boldsymbol{A}||\boldsymbol{B}|\boldsymbol{B}^{-1}\\|\boldsymbol{A}||\boldsymbol{B}|\boldsymbol{A}^{-1}&amp;\boldsymbol{O}\end{pmatrix}=\begin{pmatrix}\boldsymbol{O}&amp;2\boldsymbol{B}^{*}\\3\boldsymbol{A}^{*}&amp;\boldsymbol{O}\end{pmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设矩阵 $\boldsymbol{A}=\begin{bmatrix} 1 &amp; 2 &amp; 4 \\ 0 &amp; 1 &amp; 5 \\ 0 &amp; 0 &amp; 3 \end{bmatrix}$，$\boldsymbol{B}=\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 3 &amp; 1 &amp; 0 \\ 4 &amp; 5 &amp; 1 \end{bmatrix}$，则 $|\boldsymbol{A}^{-1}\boldsymbol{B}^{*}-\boldsymbol{A}^{*}\boldsymbol{B}^{-1}|=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设 $|\boldsymbol{A}|=3$，$|\boldsymbol{B}|=1$，所以 $\boldsymbol{A}^{*}=|\boldsymbol{A}|\boldsymbol{A}^{-1}=3\boldsymbol{A}^{-1}$，$\boldsymbol{B}^{*}=|\boldsymbol{B}|\boldsymbol{B}^{-1}=\boldsymbol{B}^{-1}$，故
+$$|\boldsymbol{A}^{-1}\boldsymbol{B}^{*}-\boldsymbol{A}^{*}\boldsymbol{B}^{-1}|=|\boldsymbol{A}^{-1}\boldsymbol{B}^{-1}-3\boldsymbol{A}^{-1}\boldsymbol{B}^{-1}|=|-2\boldsymbol{A}^{-1}\boldsymbol{B}^{-1}|=(-2)^{3}|\boldsymbol{A}^{-1}||\boldsymbol{B}^{-1}|=-\frac{8}{3}.$$
+【注】本题如果通过求逆矩阵与伴随矩阵得到 $\boldsymbol{A}^{-1}\boldsymbol{B}^{*}-\boldsymbol{A}^{*}\boldsymbol{B}^{-1}$，再求行列式，计算量会非常大. 所以要先化简，再计算行列式，同时要注意 $|\boldsymbol{A}+\boldsymbol{B}|\neq|\boldsymbol{A}|+|\boldsymbol{B}|$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{8}{3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B}$ 为 3 阶矩阵，且 $\boldsymbol{A}\boldsymbol{B}=\begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$，则必有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">互换矩阵 $\boldsymbol{A}^{-1}$ 的第 1,2 行得矩阵 $\boldsymbol{B}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">互换矩阵 $\boldsymbol{A}^{-1}$ 的第 1,2 列得矩阵 $\boldsymbol{B}^{-1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">互换矩阵 $\boldsymbol{A}$ 的第 1,2 行得矩阵 $\boldsymbol{B}^{-1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">互换矩阵 $\boldsymbol{A}$ 的第 1,2 列得矩阵 $\boldsymbol{B}^{-1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\boldsymbol{AB}=\begin{pmatrix}0&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}$，所以 $\begin{pmatrix}0&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}\boldsymbol{A}=\boldsymbol{B}^{-1}$，故互换矩阵 $\boldsymbol{A}$ 的第 1,2 行得矩阵 $\boldsymbol{B}^{-1}$，选项 (C) 正确.
+现举例说明选项 (A)，(B)，(D) 不正确.
+当 $\boldsymbol{A}=\begin{pmatrix}1&amp;2&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$，$\boldsymbol{B}=\begin{pmatrix}-2&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}$，满足 $\boldsymbol{AB}=\begin{pmatrix}0&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}$.
+互换 $\boldsymbol{A}^{-1}=\begin{pmatrix}1&amp;-2&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$ 的第 1,2 行得矩阵 $\begin{pmatrix}0&amp;1&amp;0\\1&amp;-2&amp;0\\0&amp;0&amp;1\end{pmatrix}\neq\boldsymbol{B}$，从而选项 (A) 不正确.
+互换 $\boldsymbol{A}^{-1}=\begin{pmatrix}1&amp;-2&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$ 的第 1,2 列得矩阵 $\begin{pmatrix}-2&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}\neq\boldsymbol{B}^{-1}=\begin{pmatrix}0&amp;1&amp;0\\1&amp;2&amp;0\\0&amp;0&amp;1\end{pmatrix}$，从而选项 (B) 不正确.
+互换矩阵 $\boldsymbol{A}=\begin{pmatrix}1&amp;2&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$ 的第 1,2 列得矩阵 $\begin{pmatrix}2&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}\neq\boldsymbol{B}^{-1}=\begin{pmatrix}0&amp;1&amp;0\\1&amp;2&amp;0\\0&amp;0&amp;1\end{pmatrix}$，从而选项 (D) 不正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 3 阶矩阵，将 $\boldsymbol{A}$ 的第 1 行加到第 2 行得到 $\boldsymbol{B}$，再将 $\boldsymbol{B}$ 的第 2 列的 $-1$ 倍加到第 1 列得到 $\boldsymbol{C}$，记 $\boldsymbol{P}=\begin{bmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$，则 $\boldsymbol{C}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\boldsymbol{P}^{-1}\boldsymbol{A}\boldsymbol{P}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\boldsymbol{P}\boldsymbol{A}\boldsymbol{P}^{-1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\boldsymbol{P}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{P}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\boldsymbol{P}^{\mathrm{T}}\boldsymbol{A}(\boldsymbol{P}^{\mathrm{T}})^{-1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\boldsymbol{Q}=\begin{pmatrix}1&amp;0&amp;0\\-1&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$，则由题设知，$\boldsymbol{C}=\boldsymbol{P}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{Q}$. 容易验证：$(\boldsymbol{P}^{\mathrm{T}})^{-1}=\boldsymbol{Q}$. 故 $\boldsymbol{C}=\boldsymbol{P}^{\mathrm{T}}\boldsymbol{A}(\boldsymbol{P}^{\mathrm{T}})^{-1}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 阶矩阵 $\boldsymbol{A}$ 与 $\boldsymbol{B}$ 等价，则下列结论正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">存在可逆矩阵 $\boldsymbol{P}$，使得 $\boldsymbol{P}\boldsymbol{A}=\boldsymbol{B}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">存在可逆矩阵 $\boldsymbol{Q}$，使得 $\boldsymbol{A}\boldsymbol{Q}=\boldsymbol{B}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">若 $r(\boldsymbol{A})=2$，$\boldsymbol{A}$ 可经初等行变换化为矩阵 $\boldsymbol{B}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">若 $r(\boldsymbol{A})=3$，$\boldsymbol{A}$ 可经初等列变换化为矩阵 $\boldsymbol{B}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $\boldsymbol{A}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}$，$\boldsymbol{B}=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\0&amp;0&amp;0\end{pmatrix}$ 时，矩阵 $\boldsymbol{A}$ 不能经初等行变换化为矩阵 $\boldsymbol{B}$，也不存在可逆矩阵 $\boldsymbol{P}$，使得 $\boldsymbol{PA}=\boldsymbol{B}$，从而选项 (A)，(C) 不正确.
+当 $\boldsymbol{A}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}$，$\boldsymbol{B}=\begin{pmatrix}0&amp;0&amp;0\\0&amp;1&amp;0\\1&amp;0&amp;0\end{pmatrix}$ 时，矩阵 $\boldsymbol{A}$ 不能经初等列变换化为矩阵 $\boldsymbol{B}$，也不存在可逆矩阵 $\boldsymbol{Q}$，使得 $\boldsymbol{AQ}=\boldsymbol{B}$，从而选项 (B) 不正确.
+若 $r(\boldsymbol{A})=3$，则 $\boldsymbol{A}$ 为可逆矩阵，由于 $\boldsymbol{A}$ 与 $\boldsymbol{B}$ 等价，$\boldsymbol{B}$ 也为可逆矩阵，从而 $\boldsymbol{A}$ 与 $\boldsymbol{B}$ 均可通过初等列变换化为单位矩阵，故 $\boldsymbol{A}$ 可经初等列变换化为矩阵 $\boldsymbol{B}$，从而选项 (D) 正确.
+【注】注意当矩阵 $\boldsymbol{A}$ 与矩阵 $\boldsymbol{B}$ 等价时，存在可逆矩阵 $\boldsymbol{P},\boldsymbol{Q}$，使得 $\boldsymbol{PAQ}=\boldsymbol{B}$，此时 $\boldsymbol{A}$ 经初等行变换与初等列变换可以化为矩阵 $\boldsymbol{B}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">将 3 阶方阵 $\boldsymbol{A}$ 的第 1 行的 2 倍加到第 2 行得到矩阵 $\boldsymbol{B}$，将 3 阶方阵 $\boldsymbol{C}$ 的第 3 列的 $-3$ 倍加到第 1 列得到矩阵 $\boldsymbol{D}$. 若 $\boldsymbol{B}\boldsymbol{D}=\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{bmatrix}$，则 $\boldsymbol{A}\boldsymbol{C}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 2 &amp; 0 \\ -9 &amp; 0 &amp; 3 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -2 &amp; 2 &amp; 0 \\ 9 &amp; 0 &amp; 3 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix} -3 &amp; 0 &amp; 0 \\ -6 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -2 &amp; 2 &amp; 0 \\ -1 &amp; 0 &amp; 3 \end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $\boldsymbol{E}_{ij}(k)$ 为将单位矩阵 $\boldsymbol{E}$ 的第 $j$ 行的 $k$ 倍加到第 $i$ 行（或第 $i$ 列的 $k$ 倍加到第 $j$ 列）得到的初等矩阵，则 $[\boldsymbol{E}_{ij}(k)]^{-1}=\boldsymbol{E}_{ij}(-k)$.
+由题意知，$\boldsymbol{B}=\boldsymbol{E}_{21}(2)\boldsymbol{A}$，$\boldsymbol{D}=\boldsymbol{C}\boldsymbol{E}_{31}(-3)$，故
+$$\boldsymbol{A}=[\boldsymbol{E}_{21}(2)]^{-1}\boldsymbol{B}=\boldsymbol{E}_{21}(-2)\boldsymbol{B},\boldsymbol{C}=\boldsymbol{D}[\boldsymbol{E}_{31}(-3)]^{-1}=\boldsymbol{D}\boldsymbol{E}_{31}(3).$$
+于是，
+$$\boldsymbol{AC}=\boldsymbol{E}_{21}(-2)\boldsymbol{BD}\boldsymbol{E}_{31}(3)=\begin{pmatrix}1&amp;0&amp;0\\-2&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\3&amp;0&amp;1\end{pmatrix}=\begin{pmatrix}1&amp;0&amp;0\\-2&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\3&amp;0&amp;1\end{pmatrix}=\begin{pmatrix}1&amp;0&amp;0\\-2&amp;2&amp;0\\9&amp;0&amp;3\end{pmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B}$ 是 3 阶矩阵，$\boldsymbol{A}$ 是非零矩阵，且满足 $\boldsymbol{A}\boldsymbol{B}=\boldsymbol{O}$，$\boldsymbol{B}=\begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 2a &amp; 1-a &amp; 2a \\ a &amp; -a &amp; a^2-2 \end{bmatrix}$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a=-1$，必有 $r(\boldsymbol{A})=1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a=2$，必有 $r(\boldsymbol{A})=2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a=-1$，必有 $r(\boldsymbol{A})=2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a=2$，必有 $r(\boldsymbol{A})=1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\boldsymbol{AB}=\boldsymbol{O}$，知 $r(\boldsymbol{A})+r(\boldsymbol{B})\leqslant3$. 又 $r(\boldsymbol{A})&gt;0$，
+$$\boldsymbol{B}=\begin{pmatrix}1&amp;-1&amp;1\\2a&amp;1-a&amp;2a\\a&amp;-a&amp;a^{2}-2\end{pmatrix}\to\begin{pmatrix}1&amp;-1&amp;1\\0&amp;a+1&amp;0\\0&amp;0&amp;(a+1)(a-2)\end{pmatrix},$$
+故当 $a=-1$ 时，$r(\boldsymbol{B})=1$，$r(\boldsymbol{A})=1$ 或 $r(\boldsymbol{A})=2$，因此选项 (A)，(C) 不正确；当 $a=2$ 时，$r(\boldsymbol{B})=2$，必有 $r(\boldsymbol{A})=1$，因此选项 (D) 正确，选项 (B) 不正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="21" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B},\boldsymbol{C}$ 均是 3 阶方阵，满足 $\boldsymbol{A}\boldsymbol{B}=\boldsymbol{C}$，其中 $\boldsymbol{B}=\begin{bmatrix} 1 &amp; 2 &amp; 2 \\ 2 &amp; 1 &amp; 1 \\ -2 &amp; -1 &amp; a \end{bmatrix}$，$\boldsymbol{C}=\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 \end{bmatrix}$，则必有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a=-1$ 时，$r(\boldsymbol{A})=1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a=-1$ 时，$r(\boldsymbol{A})=2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a\neq -1$ 时，$r(\boldsymbol{A})=1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a\neq -1$ 时，$r(\boldsymbol{A})=2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">显然 $r(\boldsymbol{C})=1$，且
+$$\boldsymbol{B}=\begin{pmatrix}1&amp;2&amp;2\\2&amp;1&amp;1\\-2&amp;-1&amp;a\end{pmatrix}\to\begin{pmatrix}1&amp;2&amp;2\\0&amp;-3&amp;-3\\0&amp;3&amp;a+4\end{pmatrix}\to\begin{pmatrix}1&amp;2&amp;2\\0&amp;1&amp;1\\0&amp;0&amp;a+1\end{pmatrix},$$
+当 $a\neq-1$ 时，有 $r(\boldsymbol{B})=3$，即 $\boldsymbol{B}$ 可逆，因为 $\boldsymbol{AB}=\boldsymbol{C}$，故 $r(\boldsymbol{A})=r(\boldsymbol{AB})=r(\boldsymbol{C})=1$. 故应选 (C).
+因为 (C) 成立，所以 (D) 显然不成立. (A)，(B) 也不成立，可举反例如下.
+当 $a=-1$ 时，可取 $\boldsymbol{A}=\begin{pmatrix}0&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}$，有 $\boldsymbol{AB}=\boldsymbol{C}$，此时 $r(\boldsymbol{A})=1$；也可取 $\boldsymbol{A}=\begin{pmatrix}0&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;1&amp;1\end{pmatrix}$，也有 $\boldsymbol{AB}=\boldsymbol{C}$，此时 $r(\boldsymbol{A})=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 2 阶正交矩阵 $\boldsymbol{A}$ 的主对角线元素满足 $a_{11}+2=a_{22}$，则 $\boldsymbol{A}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为矩阵 $\boldsymbol{A}$ 的主对角线元素满足 $a_{11}+2=a_{22}$，故可设矩阵 $\boldsymbol{A}=\begin{pmatrix}a_{11}&amp;b\\c&amp;a_{11}+2\end{pmatrix}$. 由于矩阵 $\boldsymbol{A}$ 为正交矩阵，故 $\boldsymbol{AA}^{\mathrm{T}}=\boldsymbol{E}$，即 $a_{11}^{2}+b^{2}=c^{2}+(a_{11}+2)^{2}=1$，于是
+$$\begin{cases}a_{11}^{2}\leqslant1,\\(a_{11}+2)^{2}\leqslant1,\end{cases}\text{解得}\begin{cases}-1\leqslant a_{11}\leqslant1,\\-3\leqslant a_{11}\leqslant-1,\end{cases}$$
+故 $a_{11}=-1$，于是 $b=c=0$. 故 $\boldsymbol{A}=\begin{pmatrix}-1&amp;0\\0&amp;1\end{pmatrix}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}-1&amp;0\\0&amp;1\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 $n$ 阶矩阵，满足 $(\boldsymbol{A}-\boldsymbol{E})^5=\boldsymbol{O}$，则 $\boldsymbol{A}^{-1}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设条件
+$$(\boldsymbol{A}-\boldsymbol{E})^{5}=\boldsymbol{A}^{5}-5\boldsymbol{A}^{4}+10\boldsymbol{A}^{3}-10\boldsymbol{A}^{2}+5\boldsymbol{A}-\boldsymbol{E}=\boldsymbol{O},$$
+得
+$$\boldsymbol{A}(\boldsymbol{A}^{4}-5\boldsymbol{A}^{3}+10\boldsymbol{A}^{2}-10\boldsymbol{A}+5\boldsymbol{E})=\boldsymbol{E},$$
+知
+$$\boldsymbol{A}^{-1}=\boldsymbol{A}^{4}-5\boldsymbol{A}^{3}+10\boldsymbol{A}^{2}-10\boldsymbol{A}+5\boldsymbol{E}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\boldsymbol{A}^{4}-5\boldsymbol{A}^{3}+10\boldsymbol{A}^{2}-10\boldsymbol{A}+5\boldsymbol{E}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 $n$ 阶矩阵，满足 $\boldsymbol{A}^2=\boldsymbol{A}$，则 $(\boldsymbol{A}-2\boldsymbol{E})^3-3\boldsymbol{A}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\boldsymbol{A}^{2}=\boldsymbol{A}$，故 $\boldsymbol{A}^{3}=\boldsymbol{A}^{2}\boldsymbol{A}=\boldsymbol{AA}=\boldsymbol{A}$，
+$$\begin{aligned}(\boldsymbol{A}-2\boldsymbol{E})^{3}-3\boldsymbol{A}&amp;=\boldsymbol{A}^{3}-3\boldsymbol{A}^{2}(2\boldsymbol{E})+3\boldsymbol{A}(2\boldsymbol{E})^{2}-(2\boldsymbol{E})^{3}-3\boldsymbol{A}\\&amp;=\boldsymbol{A}-6\boldsymbol{A}+12\boldsymbol{A}-8\boldsymbol{E}-3\boldsymbol{A}\\&amp;=7\boldsymbol{A}-8\boldsymbol{E}-3\boldsymbol{A}=4\boldsymbol{A}-8\boldsymbol{E}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$4\boldsymbol{A}-8\boldsymbol{E}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="21" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 4 阶矩阵，满足 $\boldsymbol{A}^2=\boldsymbol{O}$，则 $r(\boldsymbol{A}^{*})=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $\boldsymbol{A}^{2}=\boldsymbol{O}$，故有 $r(\boldsymbol{A})+r(\boldsymbol{A})\leqslant4$，$r(\boldsymbol{A})\leqslant2$.
+$\boldsymbol{A}^{*}$ 由 $\boldsymbol{A}$ 中元素 $a_{ij}$ 的代数余子式（有正负号的 3 阶余子式）$A_{ij}$ 组成，而 $r(\boldsymbol{A})\leqslant2$，故 $A_{ij}=0(i,j=1,2,3,4)$，从而 $\boldsymbol{A}^{*}=\boldsymbol{O}$，故 $r(\boldsymbol{A}^{*})=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-20.html">上一章：第1章 行列式</a>
+      <a class="chapter-link" href="chapter-22.html">下一章：第3章 向量组</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 21, "total": 17, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

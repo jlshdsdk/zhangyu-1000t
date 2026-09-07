@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 线性方程组 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第4章 线性方程组<span class="top-count">（14题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="23" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">方程组 $\begin{cases}ax+y+z=1,\\x+ay+z=1,\\x+y+az=-2\end{cases}$ 有无穷多解，则 $a=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\overline{A}=\left[\begin{array}{ccc|c}a &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; a &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; a &amp; -2\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; a &amp; -2 \\ 0 &amp; a-1 &amp; 1-a &amp; 3 \\ 0 &amp; 0 &amp; (1-a)(a+2) &amp; 2(a+2)\end{array}\right].$
+由题意知，$r(A)=r(\overline{A})&lt;3$，故 $a=-2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 维列向量组 $\alpha_1,\alpha_2,\alpha_3$ 线性无关，$k,l$ 均为非零常数，$$\beta_1=k\alpha_1+l\alpha_2,\beta_2=k\alpha_2+l\alpha_3,\beta_3=k\alpha_3+l\alpha_1,$$ 记 $B=[\beta_1,\beta_2,\beta_3]$，则齐次线性方程组 $Bx=0$ 有非零解的充分必要条件为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$k-l=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$k+l=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$k-l\neq 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$k+l\neq 0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\beta_1=k\alpha_1+l\alpha_2$，$\beta_2=k\alpha_2+l\alpha_3$，$\beta_3=k\alpha_3+l\alpha_1$，因此
+$$B=[\beta_1,\beta_2,\beta_3]=[\alpha_1,\alpha_2,\alpha_3]\begin{bmatrix}k &amp; 0 &amp; l \\ l &amp; k &amp; 0 \\ 0 &amp; l &amp; k\end{bmatrix}.$$
+由于 $\alpha_1,\alpha_2,\alpha_3$ 线性无关，因此 $[\alpha_1,\alpha_2,\alpha_3]$ 是可逆矩阵，故 $r(B)=r(C)$，其中
+$$C=\begin{bmatrix}k &amp; 0 &amp; l \\ l &amp; k &amp; 0 \\ 0 &amp; l &amp; k\end{bmatrix},\ |C|=\begin{vmatrix}k &amp; 0 &amp; l \\ l &amp; k &amp; 0 \\ 0 &amp; l &amp; k\end{vmatrix}=k^3+l^3.$$
+于是，齐次线性方程组 $Bx=0$ 有非零解$\Leftrightarrow r(B)&lt;3\Leftrightarrow|C|=0\Leftrightarrow k^3+l^3=0\Leftrightarrow k+l=0$. 应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 $m\times n$ 矩阵，$B$ 是 $n\times m$ 矩阵，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">当 $m&gt;n$ 时，必有 $|AB|=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $m&gt;n$ 时，$AB$ 必可逆</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">当 $n&gt;m$ 时，$ABx=0$ 有唯一零解</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">当 $n&gt;m$ 时，必有 $r(AB)&lt;m$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $m&gt;n$ 时，有 $r(AB)\leqslant r(A)\leqslant n&lt;m$. 又 $AB$ 是 $m\times m$ 矩阵，故必有 $|AB|=0$. 排除(B)，应选(A).
+当 $n&gt;m$ 时，$r(AB)\leqslant r(A)\leqslant m&lt;n$，不能推出(C)，且(D)错误. 故排除(C)，(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 为 $n\ (n&gt;2)$ 阶方阵，$r(A^*)=1$，$\alpha_1,\alpha_2$ 是非齐次线性方程组 $Ax=b$ 的两个不同解，$k$ 为任意常数，则方程组 $Ax=b$ 的通解为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(k-1)\alpha_1+k\alpha_2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(k-1)\alpha_1-k\alpha_2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(k+1)\alpha_1+k\alpha_2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(k+1)\alpha_1-k\alpha_2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $r(A^*)=1$，得 $r(A)=n-1$，从而齐次线性方程组 $Ax=0$ 的基础解系中所含解向量的个数为 $n-r(A)=n-(n-1)=1$. 因为 $\alpha_1,\alpha_2$ 是非齐次线性方程组 $Ax=b$ 的两个不同解，所以 $\alpha_1-\alpha_2$ 是对应齐次线性方程组 $Ax=0$ 的非零解，从而 $\alpha_1-\alpha_2$ 是 $Ax=0$ 的一个基础解系. 于是，方程组 $Ax=b$ 的通解为 $k(\alpha_1-\alpha_2)+\alpha_1=(k+1)\alpha_1-k\alpha_2$，其中 $k$ 为任意常数. 应选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="23" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知非齐次线性方程组 $\begin{cases}x_1+x_2+x_3+x_4=-1,\\4x_1+3x_2+5x_3-x_4=-1,\\ax_1+x_2+3x_3+bx_4=1\end{cases}$ 有 3 个线性无关的解. 记该方程组的系数矩阵为 $A$. 求：
+(1) $a,b$ 的值；
+(2) 该方程组的通解；
+(3) 齐次线性方程组 $A^{\mathrm{T}}Ax=0$ 的通解.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 设 $\alpha_1,\alpha_2,\alpha_3$ 是原方程组的 3 个线性无关的解，则 $\alpha_1-\alpha_2$ 与 $\alpha_1-\alpha_3$ 为原方程组对应的齐次线性方程组 $Ax=0$ 的解，且易证 $\alpha_1-\alpha_2,\alpha_1-\alpha_3$ 线性无关，故 $4-r(A)\geqslant 2$，即 $r(A)\leqslant 2$. 又 $A$ 有一个 2 阶子式 $\begin{vmatrix}1 &amp; 1 \\ 4 &amp; 3\end{vmatrix}=-1\neq 0$，得 $r(A)\geqslant 2$，故 $r(A)=2$. 对 $A$ 的增广矩阵 $\overline{A}$ 作初等行变换得
+$$\overline{A}=\left[\begin{array}{cccc|c}1 &amp; 1 &amp; 1 &amp; 1 &amp; -1 \\ 4 &amp; 3 &amp; 5 &amp; -1 &amp; -1 \\ a &amp; 1 &amp; 3 &amp; b &amp; 1\end{array}\right]\to\left[\begin{array}{cccc|c}1 &amp; 1 &amp; 1 &amp; 1 &amp; -1 \\ 0 &amp; -1 &amp; 1 &amp; -5 &amp; 3 \\ 0 &amp; 1-a &amp; 3-a &amp; b-a &amp; 1+a\end{array}\right]$$
+$$\to\left[\begin{array}{cccc|c}1 &amp; 1 &amp; 1 &amp; 1 &amp; -1 \\ 0 &amp; -1 &amp; 1 &amp; -5 &amp; 3 \\ 0 &amp; 0 &amp; 4-2a &amp; b+4a-5 &amp; 4-2a\end{array}\right].$$
+由此得，$4-2a=b+4a-5=0$，即 $a=2$，$b=-3$.
+(2) 将 $a=2$，$b=-3$ 代入 $\overline{A}$ 中继续作初等行变换得
+$$\overline{A}\to\left[\begin{array}{cccc|c}1 &amp; 0 &amp; 2 &amp; -4 &amp; 2 \\ 0 &amp; 1 &amp; -1 &amp; 5 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right].$$
+故原方程组等价于$\begin{cases}x_1=2-2x_3+4x_4, \\ x_2=-3+x_3-5x_4, \\ x_3=x_3, \\ x_4=x_4,\end{cases}$故原方程组的通解为
+$$\begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ x_4\end{bmatrix}=\begin{bmatrix}2 \\ -3 \\ 0 \\ 0\end{bmatrix}+k_1\begin{bmatrix}-2 \\ 1 \\ 1 \\ 0\end{bmatrix}+k_2\begin{bmatrix}4 \\ -5 \\ 0 \\ 1\end{bmatrix}\ (k_1,k_2\text{ 为任意常数}).$$
+(3) 方程组 $A^{\mathrm{T}}Ax=0$ 与方程组 $Ax=0$ 同解. 事实上，若 $x=\xi$ 是方程组 $A^{\mathrm{T}}Ax=0$ 的解，则 $A^{\mathrm{T}}A\xi=0$，从而 $(A\xi)^{\mathrm{T}}(A\xi)=\xi^{\mathrm{T}}A^{\mathrm{T}}A\xi=\xi^{\mathrm{T}}(A^{\mathrm{T}}A\xi)=\xi^{\mathrm{T}}0=0$. 由于 $A\xi$ 为列向量，故 $A\xi=0$. 于是，方程组 $A^{\mathrm{T}}Ax=0$ 的解也是方程组 $Ax=0$ 的解. 若 $x=\xi$ 是方程组 $Ax=0$ 的解，则 $A\xi=0$，从而 $A^{\mathrm{T}}A\xi=A^{\mathrm{T}}(A\xi)=A^{\mathrm{T}}0=0$，故方程组 $Ax=0$ 的解也是方程组 $A^{\mathrm{T}}Ax=0$ 的解. 因此，方程组 $Ax=0$ 与方程组 $A^{\mathrm{T}}Ax=0$ 同解.
+由(2)知，方程组 $Ax=0$ 的通解为 $\begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ x_4\end{bmatrix}=k_1\begin{bmatrix}-2 \\ 1 \\ 1 \\ 0\end{bmatrix}+k_2\begin{bmatrix}4 \\ -5 \\ 0 \\ 1\end{bmatrix}$（$k_1,k_2$ 为任意常数），所以方程组 $A^{\mathrm{T}}Ax=0$ 的通解为 $\begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ x_4\end{bmatrix}=k_1\begin{bmatrix}-2 \\ 1 \\ 1 \\ 0\end{bmatrix}+k_2\begin{bmatrix}4 \\ -5 \\ 0 \\ 1\end{bmatrix}$（$k_1,k_2$ 为任意常数）.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A=[\alpha_1,\alpha_2,\cdots,\alpha_n]$ 经过若干次初等行变换得 $B=[\beta_1,\beta_2,\cdots,\beta_n]$，则 $A$ 与 $B$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">对应的任何部分行向量组具有相同的线性相关性</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">对应的任何部分列向量组具有相同的线性相关性</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">对应的任何 $k$ 阶子式同时为零或同时不为零</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">对应的非齐次线性方程组 $Ax=b$ 和 $Bx=b$ 是同解方程组</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$A$ 经过初等行变换得 $B$，对应的齐次线性方程组 $Ax=0$ 和 $Bx=0$ 是同解方程组，且对应的任何部分列向量构成的线性方程组也是同解方程组，故 $A,B$ 中对应的任何部分列向量组有相同的线性相关性，故应选(B).
+而(A)，(C)，(D)均不成立.
+例如取 $A=\begin{bmatrix}\alpha_1 \\ \alpha_2 \\ \alpha_3\end{bmatrix}=\begin{bmatrix}1 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0\end{bmatrix}$，则
+$$A=\begin{bmatrix}1 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0\end{bmatrix}\to\begin{bmatrix}0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0\end{bmatrix}=\begin{bmatrix}\alpha_1' \\ \alpha_2' \\ \alpha_3'\end{bmatrix}=B.$$
+$\alpha_1,\alpha_2$ 线性无关，但 $\alpha_1',\alpha_2'$ 线性相关. 故(A)不成立.
+$A_{33}=\begin{vmatrix}1 &amp; 1 \\ 0 &amp; 1\end{vmatrix}=1\neq B_{33}=\begin{vmatrix}0 &amp; 0 \\ 0 &amp; 1\end{vmatrix}=0$，其对应的 2 阶子式一个不为零，一个为零，(C)不成立.
+取 $b=\begin{bmatrix}2 \\ 1 \\ 1\end{bmatrix}$，则 $Ax=b$ 有解，但 $Bx=b$ 无解. 故(D)不成立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 3 阶非零矩阵，满足 $A^2=O$，若非齐次线性方程组 $Ax=b$ 有解，则其线性无关解向量的个数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$3$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$4$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$A$ 是 $3\times 3$ 矩阵，$A^2=AA=O$，故 $r(A)+r(A)=2r(A)\leqslant 3$，得 $r(A)\leqslant\dfrac{3}{2}$，又 $A\neq O$，$r(A)\geqslant 1$，从而知 $r(A)=1$. 齐次线性方程组 $Ax=0$ 的基础解系中线性无关解向量的个数为 $n-1=3-1=2$. 故非齐次线性方程组 $Ax=b$ 的线性无关解向量的个数是 3，应选(C).
+【注】设 $Ax=b$ 的通解为 $k_1\xi_1+k_2\xi_2+\eta$，则 $\eta,\eta+\xi_1,\eta+\xi_2$ 就是 $Ax=b$ 的 3 个线性无关解向量.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知线性方程组 $Ax=k\beta_1+\beta_2$ 有解，其中 $A=\begin{bmatrix}1&amp;1&amp;-1\\-1&amp;-2&amp;1\\1&amp;-1&amp;-1\end{bmatrix}$，$\beta_1=\begin{bmatrix}2\\1\\3\end{bmatrix}$，$\beta_2=\begin{bmatrix}1\\3\\-1\end{bmatrix}$，则 $k$ 等于（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将 $Ax=k\beta_1+\beta_2$ 的增广矩阵作初等行变换，得
+$$[A\mid k\beta_1+\beta_2]=\left[\begin{array}{ccc|c}1 &amp; 1 &amp; -1 &amp; 2k+1 \\ -1 &amp; -2 &amp; 1 &amp; k+3 \\ 1 &amp; -1 &amp; -1 &amp; 3k-1\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; -1 &amp; 2k+1 \\ 0 &amp; -1 &amp; 0 &amp; 3k+4 \\ 0 &amp; -2 &amp; 0 &amp; k-2\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; -1 &amp; 2k+1 \\ 0 &amp; -1 &amp; 0 &amp; 3k+4 \\ 0 &amp; 0 &amp; 0 &amp; -5k-10\end{array}\right].$$
+又 $Ax=k\beta_1+\beta_2$ 有解$\Leftrightarrow r(A)=r([A\mid k\beta_1+\beta_2])$，得 $k=-2$，故应选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="23" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A$ 是 3 阶矩阵，$A$ 的每行元素之和为 3，且齐次线性方程组 $Ax=0$ 有通解 $k_1[1,2,-2]^{\mathrm{T}}+k_2[2,1,2]^{\mathrm{T}}$，$\alpha=[1,1,1]^{\mathrm{T}}$，其中 $k_1,k_2$ 是任意常数.
+(1) 证明：对任意的一个 3 维列向量 $\beta$，向量 $A\beta$ 和 $\alpha$ 线性相关；
+(2) 若 $\beta=[3,6,-3]^{\mathrm{T}}$，求 $A\beta$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 令 $\xi_1=\alpha=[1,1,1]^{\mathrm{T}}$，$\xi_2=[1,2,-2]^{\mathrm{T}}$，$\xi_3=[2,1,2]^{\mathrm{T}}$，易知 $\xi_1,\xi_2,\xi_3$ 线性无关，故任意 3 维列向量 $\beta$ 均可由 $\xi_1,\xi_2,\xi_3$ 线性表示. 设存在不全为零的常数 $x_1,x_2,x_3$，使
+$$\beta=x_1\xi_1+x_2\xi_2+x_3\xi_3,$$
+又
+$$A\xi_1=\begin{bmatrix}3 \\ 3 \\ 3\end{bmatrix}=3\begin{bmatrix}1 \\ 1 \\ 1\end{bmatrix}=3\xi_1,\ A\xi_2=A\xi_3=0,$$
+从而有
+$$A\beta=A(x_1\xi_1+x_2\xi_2+x_3\xi_3)=x_1A\xi_1=3x_1\begin{bmatrix}1 \\ 1 \\ 1\end{bmatrix}=3x_1\alpha,$$
+故 $A\beta$ 和 $\alpha$ 线性相关.
+(2) 当 $\beta=[3,6,-3]^{\mathrm{T}}$ 时，且 $\beta=x_1\xi_1+x_2\xi_2+x_3\xi_3$，即解非齐次线性方程组
+$$\begin{cases}x_1+x_2+2x_3=3, \\ x_1+2x_2+x_3=6, \\ x_1-2x_2+2x_3=-3.\end{cases}\ (*)$$
+对($*$)的增广矩阵作初等行变换，得
+$$\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 2 &amp; 3 \\ 1 &amp; 2 &amp; 1 &amp; 6 \\ 1 &amp; -2 &amp; 2 &amp; -3\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; -1 &amp; 3 \\ 0 &amp; -3 &amp; 0 &amp; -6\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; -1 &amp; 3 \\ 0 &amp; 0 &amp; -3 &amp; 3\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; 3 \\ 0 &amp; 1 &amp; 0 &amp; 2 \\ 0 &amp; 0 &amp; 1 &amp; -1\end{array}\right],$$
+解得
+$$[x_1,x_2,x_3]^{\mathrm{T}}=[3,2,-1]^{\mathrm{T}},$$
+即
+$$\beta=3\xi_1+2\xi_2-\xi_3,$$
+$$A\beta=A(3\xi_1+2\xi_2-\xi_3)=3A\xi_1=3\cdot 3\begin{bmatrix}1 \\ 1 \\ 1\end{bmatrix}=\begin{bmatrix}9 \\ 9 \\ 9\end{bmatrix}.$$
+【注】① 以后会知道，3 个线性无关的列向量 $\xi_1,\xi_2,\xi_3$ 可由以下方法得到.
+由题知，$A$ 的每行元素之和为 3，则
+$$A\begin{bmatrix}1 \\ 1 \\ 1\end{bmatrix}=3\begin{bmatrix}1 \\ 1 \\ 1\end{bmatrix},$$
+即 $A$ 有特征值 $\lambda_1=3$，对应的特征向量为 $\xi_1=[1,1,1]^{\mathrm{T}}$.
+由 $Ax=0$ 有通解 $k_1[1,2,-2]^{\mathrm{T}}+k_2[2,1,2]^{\mathrm{T}}$，知 $A$ 有特征值 $\lambda_2=\lambda_3=0$，对应的特征向量为
+$$\xi_2=[1,2,-2]^{\mathrm{T}},\xi_3=[2,1,2]^{\mathrm{T}}.$$
+② 初等行变换中第二个矩阵为阶梯形，也可直接求解（先求 $x_2$）.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 维列向量组 $\alpha_1,\alpha_2,\alpha_3$ 与 $\beta_1,\beta_2,\beta_3$ 等价，记 $A=[\alpha_1,\alpha_2,\alpha_3]$，$B=[\beta_1,\beta_2,\beta_3]$，则下列结论：
+①$Ax=0$ 与 $Bx=0$ 同解；②$A^{\mathrm{T}}x=0$ 与 $B^{\mathrm{T}}x=0$ 同解；
+③$\begin{bmatrix}A\\B\end{bmatrix}x=0$ 与 $Ax=0$ 同解；④$\begin{bmatrix}A^{\mathrm{T}}\\B^{\mathrm{T}}\end{bmatrix}x=0$ 与 $A^{\mathrm{T}}x=0$ 同解.
+所有正确结论的序号是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">①②</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">①③</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">②④</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">①②③④</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　由于 $\alpha_1,\alpha_2,\alpha_3$ 与 $\beta_1,\beta_2,\beta_3$ 等价，故
+$$r([\alpha_1,\alpha_2,\alpha_3])=r([\beta_1,\beta_2,\beta_3])=r([\alpha_1,\alpha_2,\alpha_3,\beta_1,\beta_2,\beta_3]),$$
+即 $r(A)=r(B)=r([A\mid B])$，从而 $r(A^{\mathrm{T}})=r(B^{\mathrm{T}})=r\left(\begin{bmatrix}A^{\mathrm{T}} \\ B^{\mathrm{T}}\end{bmatrix}\right)$. 故②，④正确.
+方法二　由矩阵 $A,B$ 列向量组等价，知存在可逆矩阵 $P$，使得 $AP=B$，则 $P^{\mathrm{T}}A^{\mathrm{T}}=B^{\mathrm{T}}$，故
+$$B^{\mathrm{T}}x=0\Leftrightarrow P^{\mathrm{T}}A^{\mathrm{T}}x=0\Leftrightarrow A^{\mathrm{T}}x=0,$$
+所以②正确. 由矩阵 $A,B$ 列向量组等价，可得矩阵 $A^{\mathrm{T}},B^{\mathrm{T}}$ 行向量组等价，故 $A^{\mathrm{T}}x=0\Leftrightarrow\begin{bmatrix}A^{\mathrm{T}} \\ B^{\mathrm{T}}\end{bmatrix}x=0$，所以④正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 为 $m\times n$ 矩阵，$e=[1,1,\cdots,1]^{\mathrm{T}}$. 若方程组 $Ay=e$ 有解，则对于（Ⅰ）$A^{\mathrm{T}}x=0$ 与（Ⅱ）$\begin{cases}A^{\mathrm{T}}x=0,\\e^{\mathrm{T}}x=0,\end{cases}$ 说法正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">（Ⅰ）的解都是（Ⅱ）的解，但（Ⅱ）的解未必是（Ⅰ）的解</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">（Ⅱ）的解都是（Ⅰ）的解，但（Ⅰ）的解未必是（Ⅱ）的解</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">（Ⅰ）的解不是（Ⅱ）的解，且（Ⅱ）的解也不是（Ⅰ）的解</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">（Ⅰ）的解都是（Ⅱ）的解，且（Ⅱ）的解也都是（Ⅰ）的解</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">显然方程组（Ⅱ）的解都是方程组（Ⅰ）的解. 由 $Ay=e$ 有解，知 $r(A)=r([A\mid e])$，于是
+$r(A^{\mathrm{T}})=r([A\mid e]^{\mathrm{T}})=r\left(\begin{bmatrix}A^{\mathrm{T}} \\ e^{\mathrm{T}}\end{bmatrix}\right)$，于是方程组（Ⅰ）与方程组（Ⅱ）同解.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="23" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设齐次线性方程组
+$$(\text{Ⅰ})\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0.\end{cases}$$
+在线性方程组（Ⅰ）的基础上增添一个方程 $ax_1+bx_2+cx_3+dx_4=0$，得
+$$(\text{Ⅱ})\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0,\\ax_1+bx_2+cx_3+dx_4=0.\end{cases}$$
+问 $a,b,c,d$ 满足什么条件时，方程组（Ⅰ），（Ⅱ）是同解方程组？并求出此时方程组（Ⅱ）的通解.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当且仅当新添方程是多余方程，即新添方程可以由原方程组线性表示时，方程组（Ⅰ），（Ⅱ）是同解方程组. 令
+$$\begin{aligned}&amp;ax_1+bx_2+cx_3+dx_4\\&amp;=k_1(x_1+3x_3+5x_4)+k_2(x_1-x_2-2x_3+2x_4)+k_3(2x_1-x_2+x_3+3x_4)\\&amp;=(k_1+k_2+2k_3)x_1+(-k_2-k_3)x_2+(3k_1-2k_2+k_3)x_3+(5k_1+2k_2+3k_3)x_4,\end{aligned}$$
+使其对应系数相等，则
+$$\begin{bmatrix}a \\ b \\ c \\ d\end{bmatrix}=\begin{bmatrix}k_1+k_2+2k_3 \\ 0-k_2-k_3 \\ 3k_1-2k_2+k_3 \\ 5k_1+2k_2+3k_3\end{bmatrix}=k_1\begin{bmatrix}1 \\ 0 \\ 3 \\ 5\end{bmatrix}+k_2\begin{bmatrix}1 \\ -1 \\ -2 \\ 2\end{bmatrix}+k_3\begin{bmatrix}2 \\ -1 \\ 1 \\ 3\end{bmatrix}.\ (*)$$
+新添方程的系数行向量可由原方程组系数矩阵的行向量组线性表示，即上述方程组($*$)有解. 因
+$$\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 2 &amp; a \\ 0 &amp; -1 &amp; -1 &amp; b \\ 3 &amp; -2 &amp; 1 &amp; c \\ 5 &amp; 2 &amp; 3 &amp; d\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 2 &amp; a \\ 0 &amp; -1 &amp; -1 &amp; b \\ 0 &amp; -5 &amp; -5 &amp; c-3a \\ 0 &amp; -3 &amp; -7 &amp; d-5a\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 2 &amp; a \\ 0 &amp; -1 &amp; -1 &amp; b \\ 0 &amp; 0 &amp; -4 &amp; d-5a-3b \\ 0 &amp; 0 &amp; 0 &amp; c-3a-5b\end{array}\right],$$
+故当 $c-3a-5b=0$，$d$ 为任意值时，方程组（Ⅰ），（Ⅱ）同解.
+因方程组（Ⅰ），（Ⅱ）同解，解方程组（Ⅰ），由
+$$\begin{bmatrix}1 &amp; 0 &amp; 3 &amp; 5 \\ 1 &amp; -1 &amp; -2 &amp; 2 \\ 2 &amp; -1 &amp; 1 &amp; 3\end{bmatrix}\to\begin{bmatrix}1 &amp; 0 &amp; 3 &amp; 5 \\ 0 &amp; -1 &amp; -5 &amp; -3 \\ 0 &amp; -1 &amp; -5 &amp; -7\end{bmatrix}\to\begin{bmatrix}1 &amp; 0 &amp; 3 &amp; 5 \\ 0 &amp; -1 &amp; -5 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; -4\end{bmatrix},$$
+得基础解系为
+$$\xi=[-3,-5,1,0]^{\mathrm{T}},$$
+则其通解为 $k[-3,-5,1,0]^{\mathrm{T}}$，其中 $k$ 是任意常数.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="23" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面 $\pi_1:x+ay=a$，$\pi_2:ax+z=1$，$\pi_3:ay+z=1$，已知这三个平面没有公共交点，则 $a=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将平面方程联立得方程组$\begin{cases}x+ay=a, \\ ax+z=1, \\ ay+z=1,\end{cases}$对其增广矩阵作初等行变换，有
+$$\left[\begin{array}{ccc|c}1 &amp; a &amp; 0 &amp; a \\ a &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; a &amp; 1 &amp; 1\end{array}\right]\to\left[\begin{array}{ccc|c}1 &amp; a &amp; 0 &amp; a \\ 0 &amp; a &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 1+a &amp; 1+a-a^2\end{array}\right].$$
+由题意知，方程组无解. 当 $a=0$ 时，经验证方程组有解，不符合题意；当 $a\neq 0$ 时，应有$\begin{cases}1+a=0, \\ 1+a-a^2\neq 0,\end{cases}$解得 $a=-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="23" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $B$ 是 3 阶矩阵，齐次线性方程组 $Bx=0$ 的解空间的维数为 2，$A=\begin{bmatrix}1&amp;2&amp;-2\\4&amp;a&amp;3\\3&amp;-1&amp;1\end{bmatrix}$，若 $AB=O$，则齐次线性方程组 $Ax=0$ 的解空间的维数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为齐次线性方程组 $Bx=0$ 的解空间的维数为 2，所以 $r(B)=3-2=1$. 由 $AB=O$ 得 $r(A)+r(B)\leqslant 3$，从而 $r(A)\leqslant 3-r(B)=2$，又显然 $r(A)\geqslant 2$，故 $r(A)=2$. 因此，齐次线性方程组 $Ax=0$ 的解空间的维数为 1.
+应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-22.html">上一章：第3章 向量组</a>
+      <a class="chapter-link" href="chapter-24.html">下一章：第5章 特征值与特征向量</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 23, "total": 14, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

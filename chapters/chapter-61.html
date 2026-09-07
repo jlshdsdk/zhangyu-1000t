@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章 一维随机变量函数的分布 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第3章 一维随机变量函数的分布<span class="top-count">（4题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="61" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X\sim E(1),Y=[X+1]$，其中 $[\cdot]$ 表示取整符号，则 $Y$ 服从（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">参数为 $\mathrm{e}^{-1}$ 的几何分布</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">参数为 $1-\mathrm{e}^{-1}$ 的几何分布</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">参数为 $\mathrm{e}^{-1}$ 的泊松分布</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">参数为 $1-\mathrm{e}^{-1}$ 的泊松分布</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$P\{Y=k\}=P\{[X+1]=k\}=P\{[X]+1=k\}\\=P\{[X]=k-1\}=P\{k-1\leqslant X&lt;k\}\\=\int_{k-1}^{k}\mathrm{e}^{-x}\mathrm{d}x=\mathrm{e}^{1-k}-\mathrm{e}^{-k}=\mathrm{e}^{1-k}(1-\mathrm{e}^{-1})\\=(\mathrm{e}^{-1})^{k-1}(1-\mathrm{e}^{-1}),k=1,2,\cdots.$$故 $Y\sim G(1-\mathrm{e}^{-1})$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="61" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X\sim U(0,1)$，则 $Y=X^{\ln X}$ 的概率密度 $f_Y(y)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由分布函数法得，$$F_Y(y)=P\{Y\leqslant y\}=P\{X^{\ln X}\leqslant y\}=P\{\mathrm{e}^{(\ln X)^2}\leqslant y\}.$$当 $y&lt;1$ 时，$F_Y(y)=0$；当 $y\geqslant 1$ 时，$$F_Y(y)=P\{\mathrm{e}^{(\ln X)^2}\leqslant y\}=P\{(\ln X)^2\leqslant \ln y\}=P\{-\ln X\leqslant \sqrt{\ln y}\}\\=P\{X\geqslant \mathrm{e}^{-\sqrt{\ln y}}\}=1-\mathrm{e}^{-\sqrt{\ln y}}.$$所以 $f_Y(y)=F'_Y(y)=\begin{cases}\mathrm{e}^{-\sqrt{\ln y}}\cdot\dfrac{1}{2\sqrt{\ln y}}\cdot\dfrac{1}{y}, &amp; y&gt;1,\\0, &amp; 其他.\end{cases}$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{cases}\mathrm{e}^{-\sqrt{\ln y}}\cdot\dfrac{1}{2\sqrt{\ln y}}\cdot\dfrac{1}{y}, &amp; y&gt;1,\\0, &amp; 其他\end{cases}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="61" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">假设随机变量 $X$ 服从参数为 $\lambda$ 的指数分布，$G(x)$ 是区间 $[0,1]$ 上的均匀分布函数，求随机变量 $Y=G(X)$ 的分布函数 $H(y)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$X$ 的分布函数为 $$F(x)=\begin{cases}1-\mathrm{e}^{-\lambda x}, &amp; x\geqslant 0,\\0, &amp; x&lt;0.\end{cases}$$区间 $[0,1]$ 上的均匀分布函数为 $$G(x)=\begin{cases}0, &amp; x&lt;0,\\x, &amp; 0\leqslant x&lt;1,\\1, &amp; x\geqslant 1.\end{cases}$$设 $Y=G(X)$ 的分布函数为 $H(y)$。由于分布函数 $G(x)$ 的值域为 $[0,1]$，可见当 $y&lt;0$ 时，$$H(y)=P\{Y\leqslant y\}=P\{G(X)\leqslant y\}=0;$$当 $y\geqslant 1$ 时，$$H(y)=P\{Y\leqslant y\}=P\{G(X)\leqslant y\}=1;$$当 $0\leqslant y&lt;1$ 时，有 $$H(y)=P\{Y\leqslant y\}\\=P\{G(X)\leqslant y,0\leqslant X&lt;1\}+P\{G(X)\leqslant y,X&lt;0\}+P\{G(X)\leqslant y,X\geqslant 1\}\\=P\{0\leqslant X\leqslant y\}=1-\mathrm{e}^{-\lambda y}.$$于是，$Y=G(X)$ 的分布函数为 $$H(y)=\begin{cases}0, &amp; y&lt;0,\\1-\mathrm{e}^{-\lambda y}, &amp; 0\leqslant y&lt;1,\\1, &amp; y\geqslant 1.\end{cases}$$【注】注意 $F(x)$ 和 $G(x)$ 都是连续型随机变量的分布函数，因此都是连续函数，而随机变量 $Y=G(X)$ 的分布函数 $H(y)$ 并不是连续函数，$y=1$ 显然是 $H(y)$ 的间断点，因此 $Y$ 不是连续型随机变量。易见，$Y$ 也不是离散型随机变量。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="61" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">将长度为 1 的铁丝沿其上任一点折成两段，较短的一段长度记为 $X$，并以这两段作为矩形的两条边，记矩形面积为 $Z$，求：
+$(1)X$ 的概率密度；
+$(2)E(Z)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）如图所示，折点坐标记为 $V$，则 $V\sim U(0,1)$，【图】数轴示意：区间 $[0,1]$ 上一点 $V$，将其分为两段，长度分别标注为 $V$ 与 $1-V$。于是 $X=\min\{V,1-V\}$，则 $X$ 的分布函数为 $$F_X(x)=P\{X\leqslant x\}=P\{\min\{V,1-V\}\leqslant x\}.$$由题意，$P\left\{0\leqslant X\leqslant \dfrac{1}{2}\right\}=1$，故①当 $x&lt;0$ 时，$F_X(x)=0$；②当 $x\geqslant \dfrac{1}{2}$ 时，$F_X(x)=1$；③当 $0\leqslant x&lt;\dfrac{1}{2}$ 时，$$F_X(x)=P\{\min\{V,1-V\}\leqslant x\}\\=1-P\{\min\{V,1-V\}&gt;x\}\\=1-P\{V&gt;x,1-V&gt;x\}\\=1-P\{x&lt;V&lt;1-x\}\\=1-\frac{1-x-x}{1}=2x.$$于是 $f_X(x)=F'_X(x)=\begin{cases}2, &amp; 0&lt;x&lt;\dfrac{1}{2},\\0, &amp; 其他.\end{cases}$（2）方法一　由（1）知，$X\sim U\left(0,\dfrac{1}{2}\right)$，故 $E(X)=\dfrac{1}{4},D(X)=\dfrac{1}{48}$，故 $$E(Z)=E[X(1-X)]\\=E(X)-E(X^2)\\=E(X)-[E(X)]^2-D(X)\\=\frac{1}{4}-\frac{1}{16}-\frac{1}{48}\\=\frac{1}{6}.$$方法二　$Z=X(1-X)=X-X^2$，由于 $z'=(x-x^2)'=1-2x&gt;0,x\in\left(0,\dfrac{1}{2}\right)$，故 $z=x-x^2$ 在 $\left(0,\dfrac{1}{2}\right)$ 内单调可导，于是由 $x^2-x+z=0$，解得 $x=\dfrac{1\pm\sqrt{1-4z}}{2}=\dfrac{1}{2}\pm\sqrt{\dfrac{1}{4}-z}.$又 $x&lt;\dfrac{1}{2}$，故 $x=\dfrac{1}{2}-\sqrt{\dfrac{1}{4}-z}.$$$\frac{\mathrm{d}x}{\mathrm{d}z}=\frac{1}{2}\cdot\frac{1}{\sqrt{\frac{1}{4}-z}}$$，故 $Z$ 的概率密度为 $$f_Z(z)=\begin{cases}f_X(x)\left|\dfrac{\mathrm{d}x}{\mathrm{d}z}\right|, &amp; 0&lt;z&lt;\dfrac{1}{4},\\0, &amp; 其他\end{cases}=\begin{cases}\dfrac{1}{\sqrt{\dfrac{1}{4}-z}}, &amp; 0&lt;z&lt;\dfrac{1}{4},\\0, &amp; 其他，\end{cases}$$于是 $E(Z)=\int_{0}^{\frac{1}{4}}\dfrac{z}{\sqrt{\dfrac{1}{4}-z}}\mathrm{d}z\xlongequal[\ z=\frac{1}{4}-t^2\ ]{\sqrt{\frac{1}{4}-z}=t}\int_{0}^{\frac{1}{2}}\dfrac{\frac{1}{4}-t^2}{t}\cdot 2t\mathrm{d}t=2\left(\dfrac{1}{8}-\dfrac{1}{24}\right)=\dfrac{1}{6}$.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-60.html">上一章：第2章 一维随机变量及其分布</a>
+      <a class="chapter-link" href="chapter-62.html">下一章：第4章 多维随机变量及其分布</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 61, "total": 4, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

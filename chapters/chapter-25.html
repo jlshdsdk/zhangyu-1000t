@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 二次型 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第6章 二次型<span class="top-count">（24题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$f(x_1, x_2, x_3) = -2x_1x_2 - 2x_1x_3 + 6x_2x_3$ 的正惯性指数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">0</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\begin{cases} x_1 = y_1 + y_2, \\ x_2 = y_1 - y_2, \\ x_3 = y_3, \end{cases}$ 则
+$$f = -2y_1^2 + 2y_2^2 + 4y_1y_3 - 8y_2y_3 = -2(y_1 - y_3)^2 + 2(y_2 - 2y_3)^2 - 6y_3^2,$$
+再令 $\begin{cases} x_1 = y_1 - y_3, \\ x_2 = y_2 - 2y_3, \\ x_3 = y_3, \end{cases}$ 则 $f = -2z_1^2 + 2z_2^2 - 6z_3^2$，故 $f$ 的正惯性指数为 1.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="25" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = (x_1 - x_2 + x_3)^2 + (x_2 - ax_3)^2 + (ax_3 + x_1)^2$ 的秩为 2，则 $a =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　由于
+$$\begin{aligned} f(x_1, x_2, x_3) &amp;= (x_1 - x_2 + x_3)^2 + (x_2 - ax_3)^2 + (ax_3 + x_1)^2 \\ &amp;= 2x_1^2 + 2x_2^2 + (1 + 2a^2)x_3^2 - 2x_1x_2 + 2(1 + a)x_1x_3 - 2(1 + a)x_2x_3, \end{aligned}$$
+因此二次型的矩阵 $\boldsymbol{A} = \begin{bmatrix} 2 &amp; -1 &amp; 1 + a \\ -1 &amp; 2 &amp; -1 - a \\ 1 + a &amp; -1 - a &amp; 1 + 2a^2 \end{bmatrix}$，又二次型的秩为 2，故 $|\boldsymbol{A}| = (2a - 1)^2 = 0$，所以 $a = \dfrac{1}{2}$.
+
+方法二　若 $\boldsymbol{C} = \begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 1 &amp; 0 &amp; a \end{bmatrix}$ 为可逆矩阵，则令 $\begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix} = \boldsymbol{C} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}$，有 $f = y_1^2 + y_2^2 + y_3^2$，秩为 3，与题设矛盾，故 $\boldsymbol{C} = \begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 1 &amp; 0 &amp; a \end{bmatrix}$ 不可逆，由
+$$\begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 1 &amp; 0 &amp; a \end{bmatrix} \to \begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 0 &amp; 1 &amp; a - 1 \end{bmatrix} \to \begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 0 &amp; 0 &amp; 2a - 1 \end{bmatrix},$$
+则 $a = \dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二次型 $f(x_1, x_2, x_3) = a(x_1^2 + x_2^2 + x_3^2) + 4(x_1x_2 + x_1x_3 + x_2x_3)$ 经正交变换可化为标准形 $f = 5y_1^2 - y_2^2 - y_3^2$，则 $a = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记二次型 $f(x_1, x_2, x_3)$ 的矩阵为 $\boldsymbol{A}$. 由于 $f(x_1, x_2, x_3)$ 经正交变换可化为标准形 $f = 5y_1^2 - y_2^2 - y_3^2$，因此 $\boldsymbol{A}$ 的特征值为 $5, -1, -1$. 于是，$\operatorname{tr}(\boldsymbol{A}) = 3a = 5 + (-1) + (-1) = 3$，故 $a = 1$. 应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x_1, x_2, x_3) = [x_1 + (a-2)x_2 - 2x_3]^2 + (x_1 + ax_2 + x_3)^2 + [x_1 + ax_2 + (a-2)x_3]^2$. 求：(1) 方程 $f(x_1, x_2, x_3) = 0$ 的解；(2) 二次型 $f(x_1, x_2, x_3)$ 的规范形.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $f(x_1, x_2, x_3) = 0 \Leftrightarrow \begin{cases} x_1 + (a - 2)x_2 - 2x_3 = 0, \\ x_1 + ax_2 + x_3 = 0, \\ x_1 + ax_2 + (a - 2)x_3 = 0. \end{cases}$
+记上面齐次线性方程组的系数矩阵为 $\boldsymbol{A}$，对 $\boldsymbol{A}$ 作初等行变换，有
+$$\boldsymbol{A} = \begin{bmatrix} 1 &amp; a - 2 &amp; -2 \\ 1 &amp; a &amp; 1 \\ 1 &amp; a &amp; a - 2 \end{bmatrix} \to \begin{bmatrix} 1 &amp; a - 2 &amp; -2 \\ 0 &amp; 2 &amp; 3 \\ 0 &amp; 2 &amp; a \end{bmatrix} \to \begin{bmatrix} 1 &amp; a - 2 &amp; -2 \\ 0 &amp; 2 &amp; 3 \\ 0 &amp; 0 &amp; a - 3 \end{bmatrix}.$$
+当 $a \neq 3$ 时，$r(\boldsymbol{A}) = 3$，方程 $f(x_1, x_2, x_3) = 0$ 只有零解.
+当 $a = 3$ 时，$\boldsymbol{A} \to \begin{bmatrix} 1 &amp; 1 &amp; -2 \\ 0 &amp; 2 &amp; 3 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} \to \begin{bmatrix} 1 &amp; 0 &amp; -\dfrac{7}{2} \\ 0 &amp; 1 &amp; \dfrac{3}{2} \\ 0 &amp; 0 &amp; 0 \end{bmatrix}$，$r(\boldsymbol{A}) = 2 &lt; 3$，此时方程 $f(x_1, x_2, x_3) = 0$ 有无穷多解，通解为
+$$\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = k \begin{bmatrix} 7 \\ -3 \\ 2 \end{bmatrix} \ (k \text{ 为任意常数}).$$
+(2) 由(1)知，当 $a \neq 3$ 时，$f(x_1, x_2, x_3)$ 正定，故 $f(x_1, x_2, x_3)$ 的规范形为 $z_1^2 + z_2^2 + z_3^2$. 当 $a = 3$ 时，
+$$\begin{aligned} f(x_1, x_2, x_3) &amp;= (x_1 + x_2 - 2x_3)^2 + (x_1 + 3x_2 + x_3)^2 + (x_1 + 3x_2 + x_3)^2 \\ &amp;= 3x_1^2 + 19x_2^2 + 6x_3^2 + 14x_1x_2 + 8x_2x_3. \end{aligned}$$
+此时记二次型 $f(x_1, x_2, x_3)$ 的矩阵为 $\boldsymbol{B} = \begin{bmatrix} 3 &amp; 7 &amp; 0 \\ 7 &amp; 19 &amp; 4 \\ 0 &amp; 4 &amp; 6 \end{bmatrix}$，令
+$$\begin{aligned} |\lambda \boldsymbol{E} - \boldsymbol{B}| &amp;= \begin{vmatrix} \lambda - 3 &amp; -7 &amp; 0 \\ -7 &amp; \lambda - 19 &amp; -4 \\ 0 &amp; -4 &amp; \lambda - 6 \end{vmatrix} = \lambda(\lambda^2 - 28\lambda + 124) \\ &amp;= \lambda[\lambda - (14 + 6\sqrt{2})][\lambda - (14 - 6\sqrt{2})] = 0, \end{aligned}$$
+解得 $\boldsymbol{B}$ 的全部特征值为 $0, 14 + 6\sqrt{2}, 14 - 6\sqrt{2}$，于是 $f(x_1, x_2, x_3)$ 的规范形为 $z_1^2 + z_2^2$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = ax_1^2 + ax_2^2 + ax_3^2 + 2x_1x_2 + 2x_1x_3 - 2x_2x_3$ 对应的矩阵为 $A$，且其在正交变换 $x = Qy$ 下的标准形为 $y_1^2 + y_2^2 - 2y_3^2$. (1) 求 $a$ 的值和正交矩阵 $Q$. (2) 设矩阵 $B = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ c &amp; b &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{pmatrix}$，若 $A$ 与 $B$ 相似，求 $b, c$ 的值. 在此情形下，是否存在正交矩阵 $P$，使 $P^{\mathrm{T}}AP = B$？若存在，求 $P$；若不存在，请说明理由.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题设，二次型矩阵 $\boldsymbol{A} = \begin{bmatrix} a &amp; 1 &amp; 1 \\ 1 &amp; a &amp; -1 \\ 1 &amp; -1 &amp; a \end{bmatrix}$，则 $3a = 1 + 1 - 2 = 0$，解得 $a = 0$.
+则 $\boldsymbol{A} = \begin{bmatrix} 0 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; -1 \\ 1 &amp; -1 &amp; 0 \end{bmatrix}$，且其特征值为 $\lambda_1 = \lambda_2 = 1, \lambda_3 = -2$.
+当 $\lambda_1 = \lambda_2 = 1$ 时，由
+$$(\boldsymbol{E} - \boldsymbol{A})\boldsymbol{x} = \begin{bmatrix} 1 &amp; -1 &amp; -1 \\ -1 &amp; 1 &amp; 1 \\ -1 &amp; 1 &amp; 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \boldsymbol{0},$$
+解得属于 $\lambda_1 = \lambda_2 = 1$ 的特征向量为 $\boldsymbol{\xi}_1 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}, \boldsymbol{\xi}_2 = \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}$.
+当 $\lambda_3 = -2$ 时，由
+$$(-2\boldsymbol{E} - \boldsymbol{A})\boldsymbol{x} = \begin{bmatrix} -2 &amp; -1 &amp; -1 \\ -1 &amp; -2 &amp; 1 \\ -1 &amp; 1 &amp; -2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \boldsymbol{0},$$
+解得属于 $\lambda_3 = -2$ 的特征向量为 $\boldsymbol{\xi}_3 = \begin{bmatrix} 1 \\ -1 \\ -1 \end{bmatrix}$.
+将 $\lambda_1 = \lambda_2 = 1$ 对应的特征向量 $\boldsymbol{\xi}_1, \boldsymbol{\xi}_2$ 正交化，得
+$$\boldsymbol{\eta}_1 = \boldsymbol{\xi}_1 = [1, 0, 1]^{\mathrm T}, \boldsymbol{\eta}_2 = \boldsymbol{\xi}_2 - \frac{(\boldsymbol{\xi}_2, \boldsymbol{\eta}_1)}{(\boldsymbol{\eta}_1, \boldsymbol{\eta}_1)} \boldsymbol{\eta}_1 = [1, 1, 0]^{\mathrm T} - \frac{1}{2}[1, 0, 1]^{\mathrm T} = \left[\frac{1}{2}, 1, -\frac{1}{2}\right]^{\mathrm T}.$$
+再将 $\boldsymbol{\eta}_1, \boldsymbol{\eta}_2, \boldsymbol{\xi}_3$ 单位化，得
+$$\boldsymbol{\eta}_1^{\circ} = \begin{bmatrix} \dfrac{\sqrt{2}}{2} \\ 0 \\ \dfrac{\sqrt{2}}{2} \end{bmatrix}, \boldsymbol{\eta}_2^{\circ} = \begin{bmatrix} \dfrac{\sqrt{6}}{6} \\ \dfrac{\sqrt{6}}{3} \\ -\dfrac{\sqrt{6}}{6} \end{bmatrix}, \boldsymbol{\eta}_3^{\circ} = \begin{bmatrix} \dfrac{\sqrt{3}}{3} \\ -\dfrac{\sqrt{3}}{3} \\ -\dfrac{\sqrt{3}}{3} \end{bmatrix},$$
+得正交矩阵 $\boldsymbol{Q} = \begin{bmatrix} \dfrac{\sqrt{2}}{2} &amp; \dfrac{\sqrt{6}}{6} &amp; \dfrac{\sqrt{3}}{3} \\ 0 &amp; \dfrac{\sqrt{6}}{3} &amp; -\dfrac{\sqrt{3}}{3} \\ \dfrac{\sqrt{2}}{2} &amp; -\dfrac{\sqrt{6}}{6} &amp; -\dfrac{\sqrt{3}}{3} \end{bmatrix}$.
+(2) 由(1)得 $\boldsymbol{Q}^{\mathrm T} \boldsymbol{A} \boldsymbol{Q} = \begin{bmatrix} 1 &amp; &amp; \\ &amp; 1 &amp; \\ &amp; &amp; -2 \end{bmatrix}$，又 $\boldsymbol{A} \sim \boldsymbol{B}$，则 $\boldsymbol{B} \sim \boldsymbol{\Lambda} = \begin{bmatrix} 1 &amp; &amp; \\ &amp; 1 &amp; \\ &amp; &amp; -2 \end{bmatrix}$，$0 = 1 + b + 1$，解得 $b = -2$.
+又有 $\boldsymbol{A} - \boldsymbol{E} \sim \boldsymbol{B} - \boldsymbol{E}$，则 $r(\boldsymbol{A} - \boldsymbol{E}) = r(\boldsymbol{B} - \boldsymbol{E})$，即
+$$r \left( \begin{bmatrix} 0 &amp; &amp; \\ &amp; 0 &amp; \\ &amp; &amp; -3 \end{bmatrix} \right) = r \left( \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ c &amp; -3 &amp; 0 \\ -1 &amp; -1 &amp; 0 \end{bmatrix} \right),$$
+则 $c = -3$.
+若存在正交矩阵 $\boldsymbol{P}$，则 $\boldsymbol{P}^{\mathrm T} \boldsymbol{A} \boldsymbol{P} = \boldsymbol{B} = (\boldsymbol{P}^{\mathrm T} \boldsymbol{A} \boldsymbol{P})^{\mathrm T} = \boldsymbol{B}^{\mathrm T}$，而题干中 $\boldsymbol{B}$ 不是对称矩阵，矛盾. 故不存在.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A = \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}$，$B = \begin{pmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{pmatrix}$，则 $A$ 和 $B$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不相似但不合同</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">相似但不合同</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">不相似但合同</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">相似且合同</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\boldsymbol{A}$ 是实对称矩阵，$\boldsymbol{B}$ 是对角矩阵，若 $\boldsymbol{A}$ 与 $\boldsymbol{B}$ 相似，则必有 $\boldsymbol{A}$ 与 $\boldsymbol{B}$ 合同. 因
+$$|\lambda \boldsymbol{E} - \boldsymbol{A}| = \begin{vmatrix} \lambda &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; \lambda &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; \lambda &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; \lambda \end{vmatrix} = \begin{vmatrix} \lambda - 1 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; \lambda - 1 &amp; -1 &amp; 0 \\ 0 &amp; -1 + \lambda &amp; \lambda &amp; 0 \\ -1 + \lambda &amp; 0 &amp; 0 &amp; \lambda \end{vmatrix}$$
+$$= \begin{vmatrix} \lambda - 1 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; \lambda - 1 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; \lambda + 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \lambda + 1 \end{vmatrix} \\ = (\lambda - 1)^2 (\lambda + 1)^2,$$
+则 $\boldsymbol{A}$ 有特征值 $\lambda_1 = 1$（二重），$\lambda_2 = -1$（二重），故 $\boldsymbol{A}$ 与 $\boldsymbol{B}$ 相似且合同.
+故应选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 为 $n(n &gt; 1)$ 阶方阵，$i, j = 1, 2, \cdots, n$，$i \neq j$，互换 $A$ 的第 $i$ 行与第 $j$ 行得到矩阵 $B$，再互换 $B$ 的第 $i$ 列与第 $j$ 列得到矩阵 $C$，则 $A$ 与 $C$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">等价，相似且合同</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">等价，合同但不相似</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">合同，相似但不等价</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">等价，相似但不合同</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记互换单位矩阵 $\boldsymbol{E}$ 的第 $i$ 行(列)与第 $j$ 行(列)所得的初等矩阵为 $\boldsymbol{E}_{ij}$，有 $\boldsymbol{E}_{ij} \boldsymbol{A} \boldsymbol{E}_{ij} - \boldsymbol{C}$. 由于 $\boldsymbol{E}_{ij}^{\mathrm T} = \boldsymbol{E}_{ij}^{-1} = \boldsymbol{E}_{ij}$，故 $\boldsymbol{A}$ 与 $\boldsymbol{C}$ 等价、相似且合同.
+应选(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列矩阵中的正定矩阵是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$A = \begin{pmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 1 &amp; 2 \\ 1 &amp; 2 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$B = \begin{pmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 2 &amp; 2 \\ 1 &amp; 2 &amp; 5 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$C = \begin{pmatrix} 1 &amp; 1 &amp; 2 \\ 1 &amp; 3 &amp; 1 \\ 2 &amp; 1 &amp; -1 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$D = \begin{pmatrix} 1 &amp; 2 &amp; -1 \\ 2 &amp; 5 &amp; -3 \\ -1 &amp; -3 &amp; 2 \end{pmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">正定矩阵的必要条件是 $a_{ii} &gt; 0 \ (i = 1, 2, \cdots, n)$ 及行列式大于 0，可借此排除选项.
+矩阵 $\boldsymbol{A}$ 中 $a_{33} = 0$，矩阵 $\boldsymbol{C}$ 中 $c_{33} = -1$，故均不正定，排除.
+$$|\boldsymbol{D}| = \begin{vmatrix} 1 &amp; 2 &amp; -1 \\ 2 &amp; 5 &amp; -3 \\ -1 &amp; -3 &amp; 2 \end{vmatrix} = \begin{vmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; -1 \\ -1 &amp; -1 &amp; 1 \end{vmatrix} = 0,$$
+故 $\boldsymbol{D}$ 也不正定.
+对于 $\boldsymbol{B} = \begin{bmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 2 &amp; 2 \\ 1 &amp; 2 &amp; 5 \end{bmatrix}$，其顺序主子式
+$$2 &gt; 0,$$
+$$\begin{vmatrix} 2 &amp; -1 \\ -1 &amp; 2 \end{vmatrix} = 3 &gt; 0,$$
+$$|\boldsymbol{B}| = \begin{vmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 2 &amp; 2 \\ 1 &amp; 2 &amp; 5 \end{vmatrix} = \begin{vmatrix} 0 &amp; -1 &amp; 0 \\ 3 &amp; 2 &amp; 4 \\ 5 &amp; 2 &amp; 7 \end{vmatrix} = 1 &gt; 0,$$
+故 $\boldsymbol{B}$ 是正定矩阵，应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A$ 为 3 阶矩阵，$E$ 为 3 阶单位矩阵，且 $(aE + A)^2 = \begin{pmatrix} 1 &amp; 0 &amp; 1 \\ 0 &amp; 2 &amp; 0 \\ 1 &amp; 0 &amp; 1 \end{pmatrix}$，$\mathrm{tr}(A) = 2\sqrt{2} - 3a$，$a$ 为常数. (1) 求矩阵 $A$；(2) 若 $A$ 正定，求 $a$ 的取值范围.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 令 $\boldsymbol{B} = \begin{bmatrix} 1 &amp; 0 &amp; 1 \\ 0 &amp; 2 &amp; 0 \\ 1 &amp; 0 &amp; 1 \end{bmatrix}$，由
+$$|\lambda \boldsymbol{E} - \boldsymbol{B}| = \begin{vmatrix} \lambda - 1 &amp; 0 &amp; -1 \\ 0 &amp; \lambda - 2 &amp; 0 \\ -1 &amp; 0 &amp; \lambda - 1 \end{vmatrix} = \lambda (\lambda - 2)^2 = 0,$$
+知 $\boldsymbol{B}$ 有特征值 $\lambda_1 = 0, \lambda_2 = \lambda_3 = 2$.
+当 $\lambda_1 = 0$ 时，解得特征向量 $\boldsymbol{\eta}_1 = [1, 0, -1]^{\mathrm T}$；
+当 $\lambda_2 = \lambda_3 = 2$ 时，解得特征向量 $\boldsymbol{\eta}_2 = [1, 0, 1]^{\mathrm T}, \boldsymbol{\eta}_3 = [0, 1, 0]^{\mathrm T}$.
+令 $\boldsymbol{P} = \begin{bmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -1 &amp; 1 &amp; 0 \end{bmatrix}$，有 $\boldsymbol{P}^{-1} = \begin{bmatrix} \dfrac{1}{2} &amp; 0 &amp; -\dfrac{1}{2} \\ \dfrac{1}{2} &amp; 0 &amp; \dfrac{1}{2} \\ 0 &amp; 1 &amp; 0 \end{bmatrix}$，则 $\boldsymbol{P}^{-1} \boldsymbol{B} \boldsymbol{P} = \boldsymbol{\Lambda} = \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{bmatrix} \xlongequal{\text{记}} (\widetilde{\boldsymbol{\Lambda}})^2$. 则
+$$\boldsymbol{B} = \boldsymbol{P} \boldsymbol{\Lambda} \boldsymbol{P}^{-1} = \boldsymbol{P} \widetilde{\boldsymbol{\Lambda}} \boldsymbol{P}^{-1} \boldsymbol{P} \widetilde{\boldsymbol{\Lambda}} \boldsymbol{P}^{-1} = (\boldsymbol{P} \widetilde{\boldsymbol{\Lambda}} \boldsymbol{P}^{-1})^2 = (a\boldsymbol{E} + \boldsymbol{A})^2.$$
+又由于 $\operatorname{tr}(\boldsymbol{A}) = 2\sqrt{2} - 3a$，则 $\operatorname{tr}(a\boldsymbol{E} + \boldsymbol{A}) = 2\sqrt{2}$，故 $\widetilde{\boldsymbol{\Lambda}} = \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; \sqrt{2} &amp; 0 \\ 0 &amp; 0 &amp; \sqrt{2} \end{bmatrix}$，
+$$\boldsymbol{A} = \boldsymbol{P} \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; \sqrt{2} &amp; 0 \\ 0 &amp; 0 &amp; \sqrt{2} \end{bmatrix} \boldsymbol{P}^{-1} - a\boldsymbol{E} = \boldsymbol{P} \begin{bmatrix} -a &amp; 0 &amp; 0 \\ 0 &amp; \sqrt{2} - a &amp; 0 \\ 0 &amp; 0 &amp; \sqrt{2} - a \end{bmatrix} \boldsymbol{P}^{-1}$$
+$$= \begin{bmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -1 &amp; 1 &amp; 0 \end{bmatrix} \begin{bmatrix} -a &amp; 0 &amp; 0 \\ 0 &amp; \sqrt{2} - a &amp; 0 \\ 0 &amp; 0 &amp; \sqrt{2} - a \end{bmatrix} \begin{bmatrix} \dfrac{1}{2} &amp; 0 &amp; -\dfrac{1}{2} \\ \dfrac{1}{2} &amp; 0 &amp; \dfrac{1}{2} \\ 0 &amp; 1 &amp; 0 \end{bmatrix}$$
+$$= \begin{bmatrix} \dfrac{\sqrt{2}}{2} - a &amp; 0 &amp; \dfrac{\sqrt{2}}{2} \\ 0 &amp; \sqrt{2} - a &amp; 0 \\ \dfrac{\sqrt{2}}{2} &amp; 0 &amp; \dfrac{\sqrt{2}}{2} - a \end{bmatrix}.$$
+(2) 由(1)知，$\boldsymbol{A}$ 的特征值为 $-a, \sqrt{2} - a$（二重），若 $\boldsymbol{A}$ 正定，则 $\begin{cases} -a &gt; 0, \\ \sqrt{2} - a &gt; 0, \end{cases}$ 得 $a &lt; 0$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设矩阵 $A = \begin{pmatrix} 1 &amp; 1 &amp; a \\ 1 &amp; a &amp; 1 \\ a &amp; 1 &amp; 1 \end{pmatrix}$，向量 $\beta = \begin{pmatrix} 1 \\ 1 \\ a \end{pmatrix}$，若齐次线性方程组 $Ax = 0$ 的解空间的维数为 1. (1) 求常数 $a$ 的值及非齐次线性方程组 $Ax = \beta$ 的解；(2) 求一个正交变换 $x = Qy$，将二次型 $f(x) = x^{\mathrm{T}}Ax$ 化为标准形，并写出该标准形.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $$|\boldsymbol{A}| = \begin{vmatrix} 1 &amp; 1 &amp; a \\ 1 &amp; a &amp; 1 \\ a &amp; 1 &amp; 1 \end{vmatrix} = \begin{vmatrix} 1 &amp; 1 &amp; a \\ 0 &amp; a - 1 &amp; 1 - a \\ 0 &amp; 1 - a &amp; 1 - a^2 \end{vmatrix} \\ = \begin{vmatrix} 1 &amp; 1 &amp; a \\ 0 &amp; a - 1 &amp; 1 - a \\ 0 &amp; 0 &amp; 2 - a - a^2 \end{vmatrix} = -(a - 1)^2 (a + 2),$$
+显然当 $a = 1$ 时，$r(\boldsymbol{A}) = 1$，此时齐次线性方程组 $\boldsymbol{A}\boldsymbol{x} = \boldsymbol{0}$ 的解空间的维数为 2，不符合题意.
+当 $a = -2$ 时，
+$$[\boldsymbol{A} \mid \boldsymbol{\beta}] = \begin{bmatrix} 1 &amp; 1 &amp; -2 &amp; 1 \\ 1 &amp; -2 &amp; 1 &amp; 1 \\ -2 &amp; 1 &amp; 1 &amp; -2 \end{bmatrix} \to \begin{bmatrix} 1 &amp; 1 &amp; -2 &amp; 1 \\ 0 &amp; -3 &amp; 3 &amp; 0 \\ 0 &amp; 3 &amp; -3 &amp; 0 \end{bmatrix} \to \begin{bmatrix} 1 &amp; 0 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix},$$
+此时 $r(\boldsymbol{A}) = r([\boldsymbol{A} \mid \boldsymbol{\beta}]) = 2 &lt; 3$，符合题意，且方程组 $\boldsymbol{A}\boldsymbol{x} = \boldsymbol{\beta}$ 有无穷多解，其通解为
+$$\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = k \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix} + \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} \ (k \text{ 为任意常数}).$$
+(2) 由(1)知 $a = -2$，则
+$$|\lambda \boldsymbol{E} - \boldsymbol{A}| = \begin{vmatrix} \lambda - 1 &amp; -1 &amp; 2 \\ -1 &amp; \lambda + 2 &amp; -1 \\ 2 &amp; -1 &amp; \lambda - 1 \end{vmatrix} = \lambda (\lambda + 3)(\lambda - 3).$$
+令 $|\lambda \boldsymbol{E} - \boldsymbol{A}| = 0$，解得 $\boldsymbol{A}$ 的三个特征值为 $\lambda_1 = 3, \lambda_2 = -3, \lambda_3 = 0$.
+对于特征值 $\lambda_1 = 3$，对 $3\boldsymbol{E} - \boldsymbol{A}$ 作初等行变换，得
+$$3\boldsymbol{E} - \boldsymbol{A} = \begin{bmatrix} 2 &amp; -1 &amp; 2 \\ -1 &amp; 5 &amp; -1 \\ 2 &amp; -1 &amp; 2 \end{bmatrix} \to \begin{bmatrix} 1 &amp; -5 &amp; 1 \\ 0 &amp; 9 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} \to \begin{bmatrix} 1 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix},$$
+故 $\boldsymbol{A}$ 对应于特征值 $\lambda_1 = 3$ 的线性无关的特征向量为 $\boldsymbol{\alpha}_1 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}$.
+对于特征值 $\lambda_2 = -3$，对 $-3\boldsymbol{E} - \boldsymbol{A}$ 作初等行变换，得
+$$-3\boldsymbol{E} - \boldsymbol{A} = \begin{bmatrix} -4 &amp; -1 &amp; 2 \\ -1 &amp; -1 &amp; -1 \\ 2 &amp; -1 &amp; -4 \end{bmatrix} \to \begin{bmatrix} 1 &amp; 1 &amp; 1 \\ 0 &amp; 3 &amp; 6 \\ 0 &amp; -3 &amp; -6 \end{bmatrix}$$
+$$\to\begin{pmatrix}1&amp;1&amp;1\\0&amp;1&amp;2\\0&amp;0&amp;0\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;2\\0&amp;0&amp;0\end{pmatrix},$$
+故 $A$ 对应于特征值 $\lambda_2=-3$ 的线性无关的特征向量为 $\boldsymbol{\alpha}_2=\begin{pmatrix}1\\-2\\1\end{pmatrix}$.
+对于特征值 $\lambda_3=0$，由(1)知，$\begin{pmatrix}1\\1\\1\end{pmatrix}$ 是方程组 $(0E-A)x=0$ 的一个基础解系，故 $A$ 对应于特征值 $\lambda_3=0$ 的线性无关的特征向量为 $\boldsymbol{\alpha}_3=\begin{pmatrix}1\\1\\1\end{pmatrix}$.
+由于 $A$ 是实对称矩阵，故 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 是正交的，将其单位化，得
+$$\boldsymbol{\eta}_1=\frac{1}{\sqrt{2}}\begin{pmatrix}-1\\0\\1\end{pmatrix},\boldsymbol{\eta}_2=\frac{1}{\sqrt{6}}\begin{pmatrix}1\\-2\\1\end{pmatrix},\boldsymbol{\eta}_3=\frac{1}{\sqrt{3}}\begin{pmatrix}1\\1\\1\end{pmatrix}.$$
+令 $Q=\begin{pmatrix}-\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\[2mm]0&amp;-\dfrac{2}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\[2mm]\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\end{pmatrix}$，则 $x=Qy$ 是正交变换，在此变换下，二次型 $f(x)=x^{\mathrm{T}}Ax$ 可化为标准形 $f=3y_1^2-3y_2^2$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A = \begin{pmatrix} -3 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 2 \\ 0 &amp; 2 &amp; 2 \end{pmatrix}$，$B = \begin{pmatrix} 0 &amp; 3 &amp; 0 \\ 3 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; k \end{pmatrix}$，若 $A$ 与 $B$ 合同但不相似，则常数 $k$ 的取值范围为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$k &gt; 0$ 且 $k \neq 2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$k &gt; 0$ 且 $k \neq 3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$k &lt; 0$ 且 $k \neq -2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$k &lt; 0$ 且 $k \neq -3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $|\lambda E-A|=\begin{vmatrix}\lambda+3&amp;0&amp;0\\0&amp;\lambda+1&amp;-2\\0&amp;-2&amp;\lambda-2\end{vmatrix}=(\lambda+3)(\lambda+2)(\lambda-3)$，故矩阵 $A$ 的特征值为 $-3,-2,3$. 由于 $|\lambda E-B|=\begin{vmatrix}\lambda&amp;-3&amp;0\\-3&amp;\lambda&amp;0\\0&amp;0&amp;\lambda-k\end{vmatrix}=(\lambda+3)(\lambda-3)(\lambda-k)$，故矩阵 $B$ 的特征值为 $-3,k,3$. 由于 $A$ 与 $B$ 合同但不相似，故 $A$ 与 $B$ 的正、负特征值的个数分别相同，但 $A$ 与 $B$ 的特征值不全相同. 因此，$k&lt;0$ 且 $k\neq -2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 阶实对称矩阵 $A$ 的各行元素之和均为 2，其主对角线元素之和为 5，$r(A) = 2$，则二次型 $f(x_1, x_2, x_3) = x^{\mathrm{T}}Ax$ 满足条件 $x_1^2 + x_2^2 + x_3^2 = 1$ 的最大值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{5}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $r(A)=2$，所以 $\lambda_1=0$ 是 $A$ 的特征值，又 $A$ 的各行元素之和均为 2，所以
+$$A\begin{pmatrix}1\\1\\1\end{pmatrix}=\begin{pmatrix}2\\2\\2\end{pmatrix}=2\begin{pmatrix}1\\1\\1\end{pmatrix},$$
+即 $\lambda_2=2$ 是 $A$ 的一个特征值. 又 $A$ 的主对角线元素之和为 5，所以 $\lambda_1+\lambda_2+\lambda_3=5$，解得 $\lambda_3=3$.
+设正交矩阵 $Q$ 使 $Q^{\mathrm{T}}AQ=\begin{pmatrix}\lambda_1&amp;0&amp;0\\0&amp;\lambda_2&amp;0\\0&amp;0&amp;\lambda_3\end{pmatrix}$. 令 $x=Qy$，其中 $y=\begin{pmatrix}y_1\\y_2\\y_3\end{pmatrix}$，且满足
+$$y_1^2+y_2^2+y_3^2=x_1^2+x_2^2+x_3^2=1,$$
+所以
+$$\begin{aligned}f(x_1,x_2,x_3)&amp;=x^{\mathrm{T}}Ax=[y_1,y_2,y_3]\begin{pmatrix}\lambda_1&amp;0&amp;0\\0&amp;\lambda_2&amp;0\\0&amp;0&amp;\lambda_3\end{pmatrix}\begin{pmatrix}y_1\\y_2\\y_3\end{pmatrix}=\lambda_1y_1^2+\lambda_2y_2^2+\lambda_3y_3^2\\&amp;\leqslant\lambda_3(y_1^2+y_2^2+y_3^2)=3.\end{aligned}$$
+当 $y_1=y_2=0$，$y_3=1$ 时，$x_1^2+x_2^2+x_3^2=1$，且上述等号成立，故二次型 $f(x_1,x_2,x_3)$ 满足条件 $x_1^2+x_2^2+x_3^2=1$ 的最大值为 3.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A = \begin{pmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; a+2 &amp; 1 \\ 1 &amp; 1 &amp; a \end{pmatrix}$，若二次型 $f(x_1, x_2, x_3) = x^{\mathrm{T}}Ax$ 的规范形为 $z_1^2 + z_2^2$，求 $a$ 的值与将其化为规范形的可逆线性变换.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知二次型的正惯性指数为 2，负惯性指数为 0，故矩阵 $A$ 的秩为 2，由于
+$$A=\begin{pmatrix}1&amp;1&amp;1\\1&amp;a+2&amp;1\\1&amp;1&amp;a\end{pmatrix}\to\begin{pmatrix}1&amp;1&amp;1\\0&amp;a+1&amp;0\\0&amp;0&amp;a-1\end{pmatrix},$$
+因此 $a=-1$ 或 $a=1$.
+当 $a=-1$ 时，$A=\begin{pmatrix}1&amp;1&amp;1\\1&amp;1&amp;1\\1&amp;1&amp;-1\end{pmatrix}$，二次型为
+$$f(x_1,x_2,x_3)=x^{\mathrm{T}}Ax=x_1^2+x_2^2-x_3^2+2x_1x_2+2x_1x_3+2x_2x_3,$$
+对二次型配方得
+$$\begin{aligned}f(x_1,x_2,x_3)&amp;=x_1^2+x_2^2-x_3^2+2x_1x_2+2x_1x_3+2x_2x_3\\&amp;=x_1^2+2x_1(x_2+x_3)+(x_2+x_3)^2-2x_3^2\\&amp;=(x_1+x_2+x_3)^2-2x_3^2,\end{aligned}$$
+此时，二次型的正惯性指数为 1，负惯性指数为 1，不符合题意.
+当 $a=1$ 时，$A=\begin{pmatrix}1&amp;1&amp;1\\1&amp;3&amp;1\\1&amp;1&amp;1\end{pmatrix}$，二次型为
+$$f(x_1,x_2,x_3)=x^{\mathrm{T}}Ax=x_1^2+3x_2^2+x_3^2+2x_1x_2+2x_1x_3+2x_2x_3,$$
+对二次型配方得
+$$\begin{aligned}f(x_1,x_2,x_3)&amp;=x_1^2+3x_2^2+x_3^2+2x_1x_2+2x_1x_3+2x_2x_3\\&amp;=x_1^2+2x_1(x_2+x_3)+(x_2+x_3)^2+2x_2^2\\&amp;=(x_1+x_2+x_3)^2+2x_2^2,\end{aligned}$$
+此时，二次型的正惯性指数为 2，负惯性指数为 0，作可逆线性变换，令
+$$\begin{cases}z_1=x_1+x_2+x_3,\\z_2=\sqrt{2}x_2,\\z_3=x_3,\end{cases}$$
+则二次型化为规范形 $z_1^2+z_2^2$.
+综上，$a=1$，所求可逆线性变换为 $\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}1&amp;1&amp;1\\0&amp;\sqrt{2}&amp;0\\0&amp;0&amp;1\end{pmatrix}^{-1}\begin{pmatrix}z_1\\z_2\\z_3\end{pmatrix}=\begin{pmatrix}1&amp;-\dfrac{\sqrt{2}}{2}&amp;-1\\[1mm]0&amp;\dfrac{\sqrt{2}}{2}&amp;0\\[1mm]0&amp;0&amp;1\end{pmatrix}\begin{pmatrix}z_1\\z_2\\z_3\end{pmatrix}$.
+【注】本题也可以通过求矩阵的特征值确定正、负惯性指数，进而确定 $a$ 的值.
+当 $a=-1$ 时，$A=\begin{pmatrix}1&amp;1&amp;1\\1&amp;1&amp;1\\1&amp;1&amp;-1\end{pmatrix}$，由
+$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;-1&amp;-1\\-1&amp;\lambda-1&amp;-1\\-1&amp;-1&amp;\lambda+1\end{vmatrix}=\lambda\Big(\lambda-\frac{1+\sqrt{17}}{2}\Big)\Big(\lambda-\frac{1-\sqrt{17}}{2}\Big)=0,$$
+得 $A$ 的特征值为 $0,\dfrac{1+\sqrt{17}}{2},\dfrac{1-\sqrt{17}}{2}$，故正惯性指数为 1，负惯性指数为 1，不符合题意.
+当 $a=1$ 时，$A=\begin{pmatrix}1&amp;1&amp;1\\1&amp;3&amp;1\\1&amp;1&amp;1\end{pmatrix}$，由
+$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;-1&amp;-1\\-1&amp;\lambda-3&amp;-1\\-1&amp;-1&amp;\lambda-1\end{vmatrix}=\lambda(\lambda-1)(\lambda-4)=0,$$
+得 $A$ 的特征值为 $0,1,4$，故正惯性指数为 2，负惯性指数为 0，符合题意，从而所求 $a=1$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha, \beta$ 为 $n$ 维列向量，$P = [\alpha, \beta]$，$Q = [\alpha + \beta, 2\alpha]$. 若矩阵 $A$ 使得 $P^{\mathrm{T}}AP = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}$，则 $Q^{\mathrm{T}}AQ = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{pmatrix} 1 &amp; 4 \\ 4 &amp; 2 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{pmatrix} 4 &amp; 2 \\ 2 &amp; 1 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{pmatrix} 1 &amp; 2 \\ 2 &amp; 4 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{pmatrix} 2 &amp; 1 \\ 1 &amp; 4 \end{pmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$Q=[\boldsymbol{\alpha}+\boldsymbol{\beta},2\boldsymbol{\alpha}]=[\boldsymbol{\alpha},\boldsymbol{\beta}]\begin{pmatrix}1&amp;2\\1&amp;0\end{pmatrix}=P\begin{pmatrix}1&amp;2\\1&amp;0\end{pmatrix}$，故
+$$\begin{aligned}Q^{\mathrm{T}}AQ&amp;=\begin{pmatrix}1&amp;2\\1&amp;0\end{pmatrix}^{\mathrm{T}}P^{\mathrm{T}}AP\begin{pmatrix}1&amp;2\\1&amp;0\end{pmatrix}\\&amp;=\begin{pmatrix}1&amp;1\\2&amp;0\end{pmatrix}\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix}\begin{pmatrix}1&amp;2\\1&amp;0\end{pmatrix}\\&amp;=\begin{pmatrix}1&amp;2\\2&amp;4\end{pmatrix}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A = \begin{pmatrix} 3 &amp; 2 &amp; 1 \\ 2 &amp; 2 &amp; 1 \\ 1 &amp; 1 &amp; 1 \end{pmatrix}$，$\Lambda = \begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}$，求可逆矩阵 $C$，使得 $C^{\mathrm{T}}AC = \Lambda$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　$f=x^{\mathrm{T}}Ax=3x_1^2+2x_2^2+x_3^2+4x_1x_2+2x_1x_3+2x_2x_3$
+$$\begin{aligned}\overset{(\ast)}{=}&amp;(x_1^2+2x_1x_2+x_2^2+2x_1x_3+2x_2x_3+x_3^2)+(x_1^2+2x_1x_2+x_2^2)+x_1^2\\&amp;=x_1^2+(x_1+x_2)^2+(x_1+x_2+x_3)^2\\&amp;=2\Big(\frac{x_1}{\sqrt{2}}\Big)^2+3\Big(\frac{x_1+x_2}{\sqrt{3}}\Big)^2+(x_1+x_2+x_3)^2.\end{aligned}$$
+令 $\begin{cases}y_1=\dfrac{x_1}{\sqrt{2}},\\[1mm]y_2=\dfrac{x_1+x_2}{\sqrt{3}},\\[1mm]y_3=x_1+x_2+x_3,\end{cases}$ 即 $\begin{cases}x_1=\sqrt{2}y_1,\\x_2=-\sqrt{2}y_1+\sqrt{3}y_2,\\x_3=-\sqrt{3}y_2+y_3,\end{cases}$ 于是有 $\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}\sqrt{2}&amp;0&amp;0\\-\sqrt{2}&amp;\sqrt{3}&amp;0\\0&amp;-\sqrt{3}&amp;1\end{pmatrix}\begin{pmatrix}y_1\\y_2\\y_3\end{pmatrix}$，记 $x=Cy$，其中 $C=\begin{pmatrix}\sqrt{2}&amp;0&amp;0\\-\sqrt{2}&amp;\sqrt{3}&amp;0\\0&amp;-\sqrt{3}&amp;1\end{pmatrix}$，则 $f=x^{\mathrm{T}}Ax=(Cy)^{\mathrm{T}}A(Cy)=y^{\mathrm{T}}C^{\mathrm{T}}ACy=y^{\mathrm{T}}\Lambda y$，即可逆矩阵 $C$ 可使 $C^{\mathrm{T}}AC=\Lambda$.
+方法二　成对初等变换法.
+$$[A\mid E]=\begin{pmatrix}3&amp;2&amp;1&amp;\vline&amp;1&amp;0&amp;0\\2&amp;2&amp;1&amp;\vline&amp;0&amp;1&amp;0\\1&amp;1&amp;1&amp;\vline&amp;0&amp;0&amp;1\end{pmatrix}\to\begin{pmatrix}3&amp;2&amp;1&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{3}&amp;\dfrac{1}{3}&amp;\vline&amp;-\dfrac{2}{3}&amp;1&amp;0\\1&amp;1&amp;1&amp;\vline&amp;0&amp;0&amp;1\end{pmatrix}$$
+$$\to\begin{pmatrix}3&amp;0&amp;1&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{3}&amp;\dfrac{1}{3}&amp;\vline&amp;-\dfrac{2}{3}&amp;1&amp;0\\1&amp;\dfrac{1}{3}&amp;1&amp;\vline&amp;0&amp;0&amp;1\end{pmatrix}\to\begin{pmatrix}3&amp;0&amp;1&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{3}&amp;\dfrac{1}{3}&amp;\vline&amp;-\dfrac{2}{3}&amp;1&amp;0\\0&amp;\dfrac{1}{3}&amp;\dfrac{2}{3}&amp;\vline&amp;-\dfrac{1}{3}&amp;0&amp;1\end{pmatrix}$$
+$$\to\begin{pmatrix}3&amp;0&amp;0&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{3}&amp;\dfrac{1}{3}&amp;\vline&amp;-\dfrac{2}{3}&amp;1&amp;0\\0&amp;\dfrac{1}{3}&amp;\dfrac{2}{3}&amp;\vline&amp;-\dfrac{1}{3}&amp;0&amp;1\end{pmatrix}\to\begin{pmatrix}3&amp;0&amp;0&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{3}&amp;\dfrac{1}{3}&amp;\vline&amp;-\dfrac{2}{3}&amp;1&amp;0\\0&amp;0&amp;\dfrac{1}{2}&amp;\vline&amp;0&amp;-\dfrac{1}{2}&amp;1\end{pmatrix}$$
+$$\to\begin{pmatrix}3&amp;0&amp;0&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{3}&amp;0&amp;\vline&amp;-\dfrac{2}{3}&amp;1&amp;0\\0&amp;0&amp;\dfrac{1}{2}&amp;\vline&amp;0&amp;-\dfrac{1}{2}&amp;1\end{pmatrix}\to\begin{pmatrix}2&amp;0&amp;0&amp;\vline&amp;\dfrac{\sqrt{2}}{\sqrt{3}}&amp;0&amp;0\\0&amp;3&amp;0&amp;\vline&amp;-\sqrt{2}&amp;\dfrac{3}{\sqrt{2}}&amp;0\\0&amp;0&amp;1&amp;\vline&amp;0&amp;-\dfrac{\sqrt{2}}{2}&amp;\sqrt{2}\end{pmatrix}=[\Lambda\mid C^{\mathrm{T}}],$$
+故 $C=\begin{pmatrix}\dfrac{\sqrt{2}}{\sqrt{3}}&amp;-\sqrt{2}&amp;0\\[1mm]0&amp;\dfrac{3}{\sqrt{2}}&amp;-\dfrac{\sqrt{2}}{2}\\[1mm]0&amp;0&amp;\sqrt{2}\end{pmatrix}$.
+【注】①方法一中($\ast$)处用的是先配 $x_3$，再配 $x_2$，最后配 $x_1$ 的顺序，只要一次配齐一个 $x_i$，$i=1,2,3$，先配谁，后配谁，是没有限制的，以利于解题为原则即可.
+②方法二中“成对初等变换”的原理如下：
+因为 $C$ 可逆，故 $C$ 可写作 $E_1E_2\cdots E_k$，即 $C$ 等于若干($k$)个初等矩阵的乘积，于是 $C^{\mathrm{T}}AC=\Lambda$，即为 $E_k^{\mathrm{T}}\cdots E_2^{\mathrm{T}}E_1^{\mathrm{T}}AE_1E_2\cdots E_k=\Lambda$，而 $E_k^{\mathrm{T}}\cdots E_2^{\mathrm{T}}E_1^{\mathrm{T}}E=C^{\mathrm{T}}E=C^{\mathrm{T}}$，故通过初等行变换“$E_k^{\mathrm{T}}\cdots E_2^{\mathrm{T}}E_1^{\mathrm{T}}$”和初等列变换“$E_1E_2\cdots E_k$”将 $A$ 化成 $\Lambda$ 的同时，行变换“$E_k^{\mathrm{T}}\cdots E_2^{\mathrm{T}}E_1^{\mathrm{T}}$”将 $E$ 化成 $C^{\mathrm{T}}$，$C^{\mathrm{T}}$ 即可求出. 写为 $[A\mid E]\xrightarrow{\text{成对初等变换}}[\Lambda\mid C^{\mathrm{T}}]$. 需要指出的是，成对初等变换是指用结合律写成 $E_k^{\mathrm{T}}\cdots[E_2^{\mathrm{T}}(E_1^{\mathrm{T}}AE_1)E_2]\cdots E_k$，即 $E_i^{\mathrm{T}}$ 与 $E_i(i=1,2,\cdots,k)$ 要连续操作，这种方法要比配方法或正交变换法简单些，供考生参考，本题亦可用常规的配方法或正交变换法并进一步换元得到. 显然，这里所求的 $C$ 不唯一.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = x_1^2 + ax_2^2 + bx_3^2 + 4x_1x_2 + 4x_1x_3 + 2cx_2x_3$ 经正交变换 $x = Qy$ 可化为标准形 $-y_1^2 - y_2^2 + 5y_3^2$，求：(1) 常数 $a, b, c$ 的值；(2) 所用正交变换.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 二次型 $f$ 的矩阵为
+$$A=\begin{pmatrix}1&amp;2&amp;2\\2&amp;a&amp;c\\2&amp;c&amp;b\end{pmatrix}.$$
+因为二次型 $f$ 经正交变换 $x=Qy$ 可化为标准形 $-y_1^2-y_2^2+5y_3^2$，所以 $A$ 的特征值为 $\lambda_1=\lambda_2=-1$，$\lambda_3=5$. 由特征值的性质得 $\operatorname{tr}(A)=a+b+1=(-1)+(-1)+5=3$，故 $b=2-a$. 由于 $-1$ 是 $A$ 的特征值，于是，
+$$\begin{aligned}|-E-A|&amp;=-\begin{vmatrix}2&amp;2&amp;2\\2&amp;a+1&amp;c\\2&amp;c&amp;3-a\end{vmatrix}=-\begin{vmatrix}2&amp;2&amp;2\\0&amp;a-1&amp;c-2\\0&amp;c-2&amp;1-a\end{vmatrix}\\&amp;=2[(a-1)^2+(c-2)^2]=0,\end{aligned}$$
+所以 $a=1$，$b=1$，$c=2$.
+(2) 由(1)知 $A=\begin{pmatrix}1&amp;2&amp;2\\2&amp;1&amp;2\\2&amp;2&amp;1\end{pmatrix}$，特征值为 $\lambda_1=\lambda_2=-1$，$\lambda_3=5$.
+对于 $\lambda_1=\lambda_2=-1$，$-E-A=\begin{pmatrix}-2&amp;-2&amp;-2\\-2&amp;-2&amp;-2\\-2&amp;-2&amp;-2\end{pmatrix}\to\begin{pmatrix}1&amp;1&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}$.
+齐次线性方程组 $(-E-A)x=0$ 的基础解系为 $\boldsymbol{\xi}_1=[-1,1,0]^{\mathrm{T}}$，$\boldsymbol{\xi}_2=[-1,0,1]^{\mathrm{T}}$，此即对应于特征值 $\lambda_1=\lambda_2=-1$ 的线性无关的特征向量. 将其正交化得
+$$\boldsymbol{\eta}_1=\boldsymbol{\xi}_1=[-1,1,0]^{\mathrm{T}},\boldsymbol{\eta}_2=\boldsymbol{\xi}_2-\frac{(\boldsymbol{\xi}_2,\boldsymbol{\eta}_1)}{(\boldsymbol{\eta}_1,\boldsymbol{\eta}_1)}\boldsymbol{\eta}_1=\Big[-\frac{1}{2},-\frac{1}{2},1\Big]^{\mathrm{T}},$$
+再单位化得
+$$e_1=\Big[-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0\Big]^{\mathrm{T}},e_2=\Big[-\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}}\Big]^{\mathrm{T}}.$$
+对于 $\lambda_3=5$，$5E-A=\begin{pmatrix}4&amp;-2&amp;-2\\-2&amp;4&amp;-2\\-2&amp;-2&amp;4\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;-1\\0&amp;0&amp;0\end{pmatrix}$.
+齐次线性方程组 $(5E-A)x=0$ 的基础解系为 $\boldsymbol{\xi}_3=[1,1,1]^{\mathrm{T}}$，此即对应于特征值 $\lambda_3=5$ 的线性无关的特征向量. 将其单位化得 $e_3=\Big[\dfrac{1}{\sqrt{3}},\dfrac{1}{\sqrt{3}},\dfrac{1}{\sqrt{3}}\Big]^{\mathrm{T}}$.
+令 $Q=[e_1,e_2,e_3]=\begin{pmatrix}-\dfrac{1}{\sqrt{2}}&amp;-\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\[2mm]\dfrac{1}{\sqrt{2}}&amp;-\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\[2mm]0&amp;\dfrac{2}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\end{pmatrix}$，则 $Q$ 为正交矩阵. 故所求正交变换为 $x=Qy$. 在此变换下，二次型 $f$ 可化为标准形 $f=-y_1^2-y_2^2+5y_3^2$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 维列向量 $\alpha = [1, 1, 1]^{\mathrm{T}}$，矩阵 $A = \alpha\alpha^{\mathrm{T}}$. (1) 求 $A$ 的特征值与全部特征向量；(2) 求方程组 $(A + kE)x = 0$（$k$ 为常数）的通解；(3) 求一个正交变换 $x = Qy$，将二次型 $f = x^{\mathrm{T}}Ax$ 化为标准形.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由于 $A=\boldsymbol{\alpha}\boldsymbol{\alpha}^{\mathrm{T}}$ 是实对称矩阵，且 $r(A)=1$，$(\boldsymbol{\alpha},\boldsymbol{\alpha})=\boldsymbol{\alpha}^{\mathrm{T}}\boldsymbol{\alpha}=3$，因此 $A$ 的特征值为 $\lambda_1=3$，$\lambda_2=\lambda_3=0$.
+由于 $A\boldsymbol{\alpha}=(\boldsymbol{\alpha}\boldsymbol{\alpha}^{\mathrm{T}})\boldsymbol{\alpha}=\boldsymbol{\alpha}(\boldsymbol{\alpha}^{\mathrm{T}}\boldsymbol{\alpha})=3\boldsymbol{\alpha}$，因此 $A$ 的属于特征值 $\lambda_1=3$ 的全部特征向量为
+$$k_1\boldsymbol{\alpha}=k_1[1,1,1]^{\mathrm{T}}(k_1\neq 0).$$
+由于
+$$0E-A=\begin{pmatrix}-1&amp;-1&amp;-1\\-1&amp;-1&amp;-1\\-1&amp;-1&amp;-1\end{pmatrix}\to\begin{pmatrix}1&amp;1&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix},$$
+因此 $A$ 的属于特征值 $\lambda_2=\lambda_3=0$ 的全部特征向量为
+$$k_2[-1,1,0]^{\mathrm{T}}+k_3[-1,0,1]^{\mathrm{T}}(k_2,k_3\text{ 不全为零}).$$
+(2) $|A+kE|=\begin{vmatrix}k+1&amp;1&amp;1\\1&amp;k+1&amp;1\\1&amp;1&amp;k+1\end{vmatrix}=\begin{vmatrix}k+3&amp;k+3&amp;k+3\\1&amp;k+1&amp;1\\1&amp;1&amp;k+1\end{vmatrix}$
+$$=(k+3)\begin{vmatrix}1&amp;1&amp;1\\1&amp;k+1&amp;1\\1&amp;1&amp;k+1\end{vmatrix}$$
+$$=(k+3)\begin{vmatrix}1&amp;1&amp;1\\0&amp;k&amp;0\\0&amp;0&amp;k\end{vmatrix}=k^{2}(k+3).$$
+当 $k\neq -3$ 且 $k\neq 0$ 时，方程组 $(A+kE)x=0$ 只有零解。
+当 $k=-3$ 时，方程组 $(A-3E)x=0$ 与 $(3E-A)x=0$ 同解。由(1)知，方程组 $(A-3E)x=0$ 的通解为 $l_{1}\boldsymbol{\alpha}=l_{1}[1,1,1]^{\mathrm{T}}$（$l_{1}$ 为任意常数）。
+当 $k=0$ 时，方程组 $(A-0E)x=0$ 与 $(0E-A)x=0$ 同解。由(1)知，方程组 $(A-0E)x=0$ 的通解为
+$$l_{2}[-1,1,0]^{\mathrm{T}}+l_{3}[-1,0,1]^{\mathrm{T}}(l_{2},l_{3}\text{ 为任意常数}).$$
+(3) 由(1)知，$A$ 的全部特征值为 $\lambda_{1}=3,\lambda_{2}=\lambda_{3}=0$。$A$ 的属于特征值 $\lambda_{1}=3$ 的线性无关的特征向量为 $\boldsymbol{\alpha}=[1,1,1]^{\mathrm{T}}$，$A$ 的属于特征值 $\lambda_{2}=\lambda_{3}=0$ 的线性无关的特征向量为 $\boldsymbol{\alpha}_{2}=[-1,1,0]^{\mathrm{T}}$，$\boldsymbol{\alpha}_{3}=[-1,0,1]^{\mathrm{T}}$。将 $\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}$ 正交化，得
+$$\boldsymbol{\beta}_{2}=\boldsymbol{\alpha}_{2}=[-1,1,0]^{\mathrm{T}},$$
+$$\boldsymbol{\beta}_{3}=\boldsymbol{\alpha}_{3}-\frac{(\boldsymbol{\alpha}_{3},\boldsymbol{\beta}_{2})}{(\boldsymbol{\beta}_{2},\boldsymbol{\beta}_{2})}\boldsymbol{\beta}_{2}=[-1,0,1]^{\mathrm{T}}-\frac{1}{2}[-1,1,0]^{\mathrm{T}}=\left[-\frac{1}{2},-\frac{1}{2},1\right]^{\mathrm{T}}.$$
+再将 $\boldsymbol{\alpha},\boldsymbol{\beta}_{2},\boldsymbol{\beta}_{3}$ 单位化，得
+$$e_{1}=\left[\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\right]^{\mathrm{T}},e_{2}=\left[-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0\right]^{\mathrm{T}},e_{3}=\left[-\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}}\right]^{\mathrm{T}}.$$
+令 $Q=[e_{1},e_{2},e_{3}]=\begin{bmatrix}\dfrac{1}{\sqrt{3}}&amp;-\dfrac{1}{\sqrt{2}}&amp;-\dfrac{1}{\sqrt{6}}\\[2mm]\dfrac{1}{\sqrt{3}}&amp;\dfrac{1}{\sqrt{2}}&amp;-\dfrac{1}{\sqrt{6}}\\[2mm]\dfrac{1}{\sqrt{3}}&amp;0&amp;\dfrac{2}{\sqrt{6}}\end{bmatrix}$，则 $x=Qy$ 为正交变换，在此变换下二次型 $f=x^{\mathrm{T}}Ax$ 可化为标准形 $f=y^{\mathrm{T}}(Q^{\mathrm{T}}AQ)y=3y_{1}^{2}$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二次型 $f(x_1, x_2, x_3) = x_1^2 + x_2^2 + 2x_3^2 - 2x_1x_2$ 的矩阵为 $A$，则与 $A^2$ 既相似又合同的矩阵是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{pmatrix} 4 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{pmatrix} 4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{pmatrix} 3 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知二次型 $f$ 的矩阵为 $A=\begin{bmatrix}1&amp;-1&amp;0\\-1&amp;1&amp;0\\0&amp;0&amp;2\end{bmatrix}$。由于
+$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;1&amp;0\\1&amp;\lambda-1&amp;0\\0&amp;0&amp;\lambda-2\end{vmatrix}=\lambda(\lambda-2)^{2},$$
+故 $A$ 的特征值为 $2,2,0$，从而 $A^{2}$ 的特征值为 $4,4,0$。由于 $A$ 为实对称矩阵，故 $A^{2}$ 也为实对称矩阵，从而存在正交矩阵 $Q$，使得
+$$Q^{-1}A^{2}Q=Q^{\mathrm{T}}A^{2}Q=\begin{bmatrix}4&amp;0&amp;0\\0&amp;4&amp;0\\0&amp;0&amp;0\end{bmatrix},$$
+即 $A^{2}$ 与 $\begin{bmatrix}4&amp;0&amp;0\\0&amp;4&amp;0\\0&amp;0&amp;0\end{bmatrix}$ 既相似又合同。
+应选(B)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列二次型中，是正定二次型的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f_1(x_1, x_2, x_3, x_4) = (x_1 - x_2)^2 + (x_2 - x_3)^2 + (x_3 - x_4)^2 + (x_4 - x_1)^2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f_2(x_1, x_2, x_3, x_4) = (x_1 + x_2)^2 + (x_2 + x_3)^2 + (x_3 + x_4)^2 + (x_4 + x_1)^2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f_3(x_1, x_2, x_3, x_4) = (x_1 - x_2)^2 + (x_2 + x_3)^2 + (x_3 - x_4)^2 + (x_4 + x_1)^2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f_4(x_1, x_2, x_3, x_4) = (x_1 - x_2)^2 + (x_2 + x_3)^2 + (x_3 + x_4)^2 + (x_4 + x_1)^2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　对于选项(A)，存在 $x_{1}=[1,1,1,1]^{\mathrm{T}}$，使得 $f_{1}(x_{1})=0$，$f_{1}$ 不正定。
+对于选项(B)，存在 $x_{2}=[1,-1,1,-1]^{\mathrm{T}}$，使得 $f_{2}(x_{2})=0$，$f_{2}$ 不正定。
+对于选项(C)，存在 $x_{3}=[1,1,-1,-1]^{\mathrm{T}}$，使得 $f_{3}(x_{3})=0$，$f_{3}$ 不正定。
+由排除法，知应选(D)。
+方法二　对于选项(D)，
+$$f_{4}(x_{1},x_{2},x_{3},x_{4})=(x_{1}-x_{2})^{2}+(x_{2}+x_{3})^{2}+(x_{3}+x_{4})^{2}+(x_{4}+x_{1})^{2},$$
+令
+$$\begin{cases}y_{1}=x_{1}-x_{2},\\y_{2}=x_{2}+x_{3},\\y_{3}=x_{3}+x_{4},\\y_{4}=x_{4}+x_{1},\end{cases}$$
+即
+$$y=\begin{bmatrix}1&amp;-1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\\1&amp;0&amp;0&amp;1\end{bmatrix}x=Cx,$$
+其中
+$$|C|=\begin{vmatrix}1&amp;-1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\\1&amp;0&amp;0&amp;1\end{vmatrix}=\begin{vmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\\1&amp;1&amp;0&amp;1\end{vmatrix}=\begin{vmatrix}1&amp;1&amp;0\\0&amp;1&amp;1\\1&amp;0&amp;1\end{vmatrix}=2\neq 0.$$
+故 $x=C^{-1}y$ 是可逆线性变换，则由 $f_{4}\xlongequal{x=C^{-1}y}y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}$，知 $f_{4}$ 是正定二次型。
+方法三　$f_{4}(x_{1},x_{2},x_{3},x_{4})=(x_{1}-x_{2})^{2}+(x_{2}+x_{3})^{2}+(x_{3}+x_{4})^{2}+(x_{4}+x_{1})^{2}$
+$$=[x_{1}-x_{2},x_{2}+x_{3},x_{3}+x_{4},x_{4}+x_{1}]\begin{bmatrix}x_{1}-x_{2}\\x_{2}+x_{3}\\x_{3}+x_{4}\\x_{4}+x_{1}\end{bmatrix}$$
+$$=[x_{1},x_{2},x_{3},x_{4}]\begin{bmatrix}1&amp;0&amp;0&amp;1\\-1&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\end{bmatrix}\begin{bmatrix}1&amp;-1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\\1&amp;0&amp;0&amp;1\end{bmatrix}\begin{bmatrix}x_{1}\\x_{2}\\x_{3}\\x_{4}\end{bmatrix}$$
+$$=x^{\mathrm{T}}D^{\mathrm{T}}Dx=x^{\mathrm{T}}Ax,$$
+其中 $A=D^{\mathrm{T}}D$，$|D|=\begin{vmatrix}1&amp;-1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\\1&amp;0&amp;0&amp;1\end{vmatrix}=1+(-1)^{5}\begin{vmatrix}-1&amp;0&amp;0\\1&amp;1&amp;0\\0&amp;1&amp;1\end{vmatrix}=2\neq 0$，所以 $D$ 是可逆矩阵。故知 $A=D^{\mathrm{T}}D$ 是正定矩阵，$f_{4}$ 是正定二次型。
+方法四　写出各二次型对应的矩阵，用顺序主子式是否都大于零来判别。
+【注】要说明二次型不正定，只需找到 $x\neq 0$，使得 $f(x)\leqslant 0$ 即可；要说明二次型正定，则应给出证明（利用二次型正定的定义或充分必要条件）。
+有人认为：四个选项均是正的平方和，作变换均可化为 $y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}$，从而认为四个选项都正确。你认为呢？这里作的变换是可逆线性变换吗？注意，选项(D)中平方和，并非配方法中的平方和，但所作变换确是可逆线性变换。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(1) 设二次型 $f(x, y, z) = y^2 + 2zx$，用正交变换 $x = Qy$ 将其化为标准形，并写出 $Q$；(2) 求函数 $g(x, y, z) = \dfrac{y^2 + 2zx}{x^2 + y^2 + z^2}$（$x^2 + y^2 + z^2 \neq 0$）的最大值，并求出一个最大值点.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $f(x,y,z)=x^{\mathrm{T}}\begin{bmatrix}0&amp;0&amp;1\\0&amp;1&amp;0\\1&amp;0&amp;0\end{bmatrix}x$，其次型矩阵 $A=\begin{bmatrix}0&amp;0&amp;1\\0&amp;1&amp;0\\1&amp;0&amp;0\end{bmatrix}$，$x=[x,y,z]^{\mathrm{T}}$，令
+$$|\lambda E-A|=\begin{vmatrix}\lambda&amp;0&amp;-1\\0&amp;\lambda-1&amp;0\\-1&amp;0&amp;\lambda\end{vmatrix}=(\lambda-1)^{2}(\lambda+1)=0,$$
+得 $A$ 的特征值为 $\lambda_{1}=\lambda_{2}=1,\lambda_{3}=-1$。
+当 $\lambda_{1}=\lambda_{2}=1$ 时，由
+$$(E-A)x=\begin{bmatrix}1&amp;0&amp;-1\\0&amp;0&amp;0\\-1&amp;0&amp;1\end{bmatrix}x=0,$$
+得线性无关的特征向量 $\xi_{1}=[1,0,1]^{\mathrm{T}},\xi_{2}=[0,1,0]^{\mathrm{T}}$。
+当 $\lambda_{3}=-1$ 时，由
+$$(-E-A)x=\begin{bmatrix}-1&amp;0&amp;-1\\0&amp;-2&amp;0\\-1&amp;0&amp;-1\end{bmatrix}x=0,$$
+得线性无关的特征向量 $\xi_{3}=[1,0,-1]^{\mathrm{T}}$。
+$\xi_{1},\xi_{2},\xi_{3}$ 已相互正交，只需单位化，得
+$$\eta_{1}=\left[\frac{1}{\sqrt{2}},0,\frac{1}{\sqrt{2}}\right]^{\mathrm{T}},\eta_{2}=[0,1,0]^{\mathrm{T}},\eta_{3}=\left[\frac{1}{\sqrt{2}},0,-\frac{1}{\sqrt{2}}\right]^{\mathrm{T}}.$$
+令
+$$Q=[\eta_{1},\eta_{2},\eta_{3}]=\begin{bmatrix}\dfrac{1}{\sqrt{2}}&amp;0&amp;\dfrac{1}{\sqrt{2}}\\[2mm]0&amp;1&amp;0\\[2mm]\dfrac{1}{\sqrt{2}}&amp;0&amp;-\dfrac{1}{\sqrt{2}}\end{bmatrix},$$
+即为所求正交矩阵。
+记 $y=[u,v,w]^{\mathrm{T}}$，则经正交变换 $x=Qy$，有
+$$f(x,y,z)=x^{\mathrm{T}}Ax=y^{\mathrm{T}}Q^{\mathrm{T}}AQy=y^{\mathrm{T}}\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;-1\end{bmatrix}y=u^{2}+v^{2}-w^{2}.$$
+(2) 由(1)知，$f\leqslant u^{2}+v^{2}+w^{2}$，又
+$$x^{2}+y^{2}+z^{2}=x^{\mathrm{T}}x\\=(Qy)^{\mathrm{T}}(Qy)=y^{\mathrm{T}}Q^{\mathrm{T}}Qy\\=y^{\mathrm{T}}y=u^{2}+v^{2}+w^{2},$$
+故
+$$g(x,y,z)=\frac{f(x,y,z)}{x^{2}+y^{2}+z^{2}}\leqslant\frac{u^{2}+v^{2}+w^{2}}{u^{2}+v^{2}+w^{2}}=1,$$
+即函数 $g(x,y,z)$ 的最大值为 1，且当 $[u,v,w]^{\mathrm{T}}=[0,1,0]^{\mathrm{T}}$ 时，$g(x,y,z)=1$。此时
+$$\begin{bmatrix}x\\y\\z\end{bmatrix}=Q\begin{bmatrix}0\\1\\0\end{bmatrix}=\begin{bmatrix}\dfrac{1}{\sqrt{2}}&amp;0&amp;\dfrac{1}{\sqrt{2}}\\[2mm]0&amp;1&amp;0\\[2mm]\dfrac{1}{\sqrt{2}}&amp;0&amp;-\dfrac{1}{\sqrt{2}}\end{bmatrix}\begin{bmatrix}0\\1\\0\end{bmatrix}=\begin{bmatrix}0\\1\\0\end{bmatrix},$$
+故 $g(x,y,z)$ 的一个最大值点是 $(0,1,0)$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">二次型 $f(x_1, x_2, x_3) = x^{\mathrm{T}}Ax$ 通过正交变换化成 $2y_1^2 + 2y_2^2$，方程组 $Ax = 0$ 有解 $\xi = [1, 0, 1]^{\mathrm{T}}$，求正交变换及二次型矩阵 $A$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x_{1},x_{2},x_{3})=x^{\mathrm{T}}Ax$ 通过正交变换化成 $2y_{1}^{2}+2y_{2}^{2}$，说明 $A$ 有特征值 $\lambda_{1}=\lambda_{2}=2$。又 $Ax=0$ 有解 $\xi=[1,0,1]^{\mathrm{T}}$，知 $\lambda_{3}=0$ 是 $A$ 的特征值，$\xi$ 是 $A$ 的对应于 $\lambda_{3}=0$ 的特征向量。因二次型矩阵是实对称矩阵，故不同特征值对应的特征向量相互正交，设对应 $\lambda_{1}=\lambda_{2}=2$ 的特征向量为 $\eta=[x_{1},x_{2},x_{3}]^{\mathrm{T}}$，则应有
+$$\xi^{\mathrm{T}}\eta=x_{1}+x_{3}=0,$$
+得
+$$\eta_{1}=[1,0,-1]^{\mathrm{T}},\eta_{2}=[0,1,0]^{\mathrm{T}}.$$
+（注意到要求正交变换，这里 $\eta_{1},\eta_{2}$ 之间恰好正交。）
+将 $\eta_{1},\eta_{2},\xi$ 单位化，得正交矩阵
+$$Q=\begin{bmatrix}\dfrac{1}{\sqrt{2}}&amp;0&amp;\dfrac{1}{\sqrt{2}}\\[2mm]0&amp;1&amp;0\\[2mm]-\dfrac{1}{\sqrt{2}}&amp;0&amp;\dfrac{1}{\sqrt{2}}\end{bmatrix}.$$
+令 $x=Qy$，则
+$$f(x_{1},x_{2},x_{3})=x^{\mathrm{T}}Ax\xlongequal{x=Qy}y^{\mathrm{T}}Q^{\mathrm{T}}AQy=2y_{1}^{2}+2y_{2}^{2},$$
+$x=Qy$ 即所求正交变换，且有
+$$Q^{\mathrm{T}}AQ=Q^{-1}AQ=\begin{bmatrix}2&amp;&amp;\\&amp;2&amp;\\&amp;&amp;0\end{bmatrix}=\Lambda,$$
+则
+$$A=Q\Lambda Q^{-1}=Q\Lambda Q^{\mathrm{T}}$$
+$$=\frac{1}{\sqrt{2}}\begin{bmatrix}1&amp;0&amp;1\\0&amp;\sqrt{2}&amp;0\\-1&amp;0&amp;1\end{bmatrix}\begin{bmatrix}2&amp;0&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;0\end{bmatrix}\frac{1}{\sqrt{2}}\begin{bmatrix}1&amp;0&amp;-1\\0&amp;\sqrt{2}&amp;0\\1&amp;0&amp;1\end{bmatrix}$$
+$$=\begin{bmatrix}1&amp;0&amp;-1\\0&amp;2&amp;0\\-1&amp;0&amp;1\end{bmatrix}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A = \begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 \\ 1 &amp; 2 &amp; 3 &amp; \cdots &amp; s \\ 1 &amp; 2^2 &amp; 3^2 &amp; \cdots &amp; s^2 \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 1 &amp; 2^{n-1} &amp; 3^{n-1} &amp; \cdots &amp; s^{n-1} \end{pmatrix}$，其中 $s, n$ 是正整数，证明 $A^{\mathrm{T}}A$ 是实对称矩阵，并就正整数 $s, n$ 的情况讨论矩阵 $A^{\mathrm{T}}A$ 的正定性.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$(A^{\mathrm{T}}A)^{\mathrm{T}}=A^{\mathrm{T}}(A^{\mathrm{T}})^{\mathrm{T}}=A^{\mathrm{T}}A$，故 $A^{\mathrm{T}}A$ 是实对称矩阵。
+当 $s&gt;n$ 时，$A$ 的列向量组线性相关（向量个数 $&gt;$ 向量的维数），故 $Ax=0$ 有非零解，即存在 $x\neq 0$，使得 $Ax=0$，从而使 $x^{\mathrm{T}}A^{\mathrm{T}}Ax=0$，故 $s&gt;n$ 时，$A^{\mathrm{T}}A$ 不正定。
+当 $s=n$ 时，范德蒙德行列式 $|A|\neq 0$，$A$ 是可逆矩阵，根据矩阵正定的充分必要条件，可知 $A^{\mathrm{T}}A$ 是正定矩阵。
+当 $s&lt;n$ 时，$A$ 的列向量组线性无关（$s=n$ 时，$A$ 的列向量组线性无关，减少向量个数仍线性无关），$Ax=0$ 只有零解，即任给 $x\neq 0$，均有 $Ax\neq 0$，从而有 $(Ax)^{\mathrm{T}}Ax=x^{\mathrm{T}}A^{\mathrm{T}}Ax&gt;0$，故 $A^{\mathrm{T}}A$ 是正定矩阵。
+故当 $s\leqslant n$ 时，$A^{\mathrm{T}}A$ 是正定矩阵。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="25" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$f(x_1, x_2, x_3) = -2x_1x_2 - 2x_1x_3 + 6x_2x_3 = 0$ 是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">柱面</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">单叶双曲面</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">双叶双曲面</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">锥面</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\begin{cases}x_{1}=y_{1}+y_{2},\\x_{2}=y_{1}-y_{2},\\x_{3}=y_{3},\end{cases}$ 则
+$$f=-2y_{1}^{2}+2y_{2}^{2}+4y_{1}y_{3}-8y_{2}y_{3}\\=-2(y_{1}-y_{3})^{2}+2(y_{2}-2y_{3})^{2}-6y_{3}^{2},$$
+再令 $\begin{cases}z_{1}=y_{1}-y_{3},\\z_{2}=y_{2}-2y_{3},\\z_{3}=y_{3},\end{cases}$ 则
+$$f=-2z_{1}^{2}+2z_{2}^{2}-6z_{3}^{2}=0,$$
+且作的两次变换均为可逆线性变换，故 $z_{2}^{2}=z_{1}^{2}+3z_{3}^{2}$ 为锥面。
+【注】本题新意在于命制成 $f=0$，而以往真题一般命制成 $f=1$。若考生不注意，可能错选(C)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="25" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = x_1^2 + x_2^2 + ax_3^2 - 2x_1x_3$，且二次曲面 $f(x_1, x_2, x_3) = 1$ 是柱面. (1) 求 $a$ 的值；(2) 用正交变换将二次型 $f$ 化为标准形，并求所用的正交变换；(3) 求此柱面母线的方向向量.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 因为二次曲面 $f(x_{1},x_{2},x_{3})=1$ 为柱面，则二次型对应的矩阵 $A$ 有 0 特征值，所以 $|A|=0$，即 $\begin{vmatrix}1&amp;0&amp;-1\\0&amp;1&amp;0\\-1&amp;0&amp;a\end{vmatrix}=0$，解得 $a=1$。
+(2) $|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;0&amp;1\\0&amp;\lambda-1&amp;0\\1&amp;0&amp;\lambda-1\end{vmatrix}=\lambda(\lambda-1)(\lambda-2)=0$，解得 $\lambda_{1}=0,\lambda_{2}=1,\lambda_{3}=2$。
+当 $\lambda_{1}=0$ 时，解 $(0E-A)x=0$ 得 $\xi_{1}=\begin{bmatrix}1\\0\\1\end{bmatrix}$；
+当 $\lambda_{2}=1$ 时，解 $(E-A)x=0$ 得 $\xi_{2}=\begin{bmatrix}0\\1\\0\end{bmatrix}$；
+当 $\lambda_{3}=2$ 时，解 $(2E-A)x=0$ 得 $\xi_{3}=\begin{bmatrix}1\\0\\-1\end{bmatrix}$。
+由于实对称矩阵中不同特征值对应的特征向量正交，故令单位正交矩阵 $Q=\begin{bmatrix}\dfrac{\sqrt{2}}{2}&amp;0&amp;\dfrac{\sqrt{2}}{2}\\[2mm]0&amp;1&amp;0\\[2mm]\dfrac{\sqrt{2}}{2}&amp;0&amp;-\dfrac{\sqrt{2}}{2}\end{bmatrix}$，则在正交变换 $x=Qy$ 下，$f=y_{2}^{2}+2y_{3}^{2}$。
+(3) 由(2)知 $f=y_{2}^{2}+2y_{3}^{2}=1$，故该柱面的母线平行于 $y_{1}$ 轴，即在 $Oy_{1}y_{2}y_{3}$ 坐标系下的方向向量为 $\tau_{y}=\begin{bmatrix}1\\0\\0\end{bmatrix}$，于是在 $Ox_{1}x_{2}x_{3}$ 坐标系下的方向向量为 $\tau_{x}=Q\tau_{y}=Q\begin{bmatrix}1\\0\\0\end{bmatrix}=\begin{bmatrix}\dfrac{\sqrt{2}}{2}\\[2mm]0\\[2mm]\dfrac{\sqrt{2}}{2}\end{bmatrix}$。
+【注】第(3)问是对知识的深度考查，一般赋分不高（多为 $3\sim 5$ 分），但区分度明显。</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-24.html">上一章：第5章 特征值与特征向量</a>
+      <a class="chapter-link" href="chapter-26.html">下一章：第1章 随机事件与概率</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 25, "total": 24, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

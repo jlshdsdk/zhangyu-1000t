@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>测试卷一 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">综合篇 · 测试卷一<span class="top-count">（22题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 满足 $\lim_{x \to 0}\frac{x-f(x)}{\sin x}=1$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(0)=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f'(0)=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\lim_{x \to 0}\frac{f(x)}{x^2}=1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim_{x \to 0}\frac{f(x)}{x}=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，有 $\lim_{x \to 0}\frac{x}{\sin x}-\lim_{x \to 0}\frac{f(x)}{\sin x}=1$，故 $\lim_{x \to 0}\frac{f(x)}{\sin x}=0$，$\lim_{x \to 0}\frac{f(x)}{x}=0$．
+题设条件未定义 $f(0)$，故 (A), (B) 错误．
+对于 (C) 选项，取 $f(x)=x^4$，$\lim_{x \to 0}\frac{x-x^4}{\sin x}=1$，但 $\lim_{x \to 0}\frac{f(x)}{x^3}=0$，(C) 错误．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\sum_{n=1}^{\infty}a_n\cdot 2^n$ 条件收敛，则 $\sum_{n=1}^{\infty}na_n(x-1)^n$ 在点 $x=2$ 处（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">绝对收敛</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">条件收敛</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">发散</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">敛散性不确定</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\sum_{n=1}^{\infty} a_n \cdot 2^n$ 条件收敛，知 $\sum_{n=1}^{\infty} a_n x^n$ 的收敛半径 $R=2$，且收敛区间为 $(-2,2)$．
+将 $x^n$ 转化为 $(x-1)^n$，也就是把级数的中心点由 0 转移到 1，即将收敛区间平移到 $(-1,3)$，得 $\sum_{n=1}^{\infty} a_n(x-1)^n$，收敛半径不变．
+对 $\sum_{n=1}^{\infty} a_n(x-1)^n$ 逐项求导，得 $\sum_{n=1}^{\infty} n a_n (x-1)^{n-1}$，再乘以 $(x-1)$ 得 $\sum_{n=1}^{\infty} n a_n (x-1)^n$，收敛半径不变．
+故 $\sum_{n=1}^{\infty} n a_n (x-1)^n$ 的收敛区间为 $(-1,3)$，因为 $x=2$ 在收敛区间内部，所以在该点处级数绝对收敛．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设连续函数 $f(x)$ 在 0 到 $x$（$x\neq 0$）上的平均值为 $\overline{f}(x)=\frac{1}{x}\int_{0}^{x}f(t)\mathrm{d}t$，则以下结论：
+①若 $f(x)$ 是奇函数，则 $\overline{f}(x)$ 是奇函数；
+②若 $f(x)$ 是凹函数，则 $\overline{f}(x)$ 是凸函数；
+③若 $f(x)$ 是周期函数，则 $\overline{f}(x)$ 是周期函数.
+所有正确结论的序号为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">①</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">①②</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">②③</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">③</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于①，若 $f(-x)=-f(x)$，则
+$$\bar{f}(-x)=-\frac{1}{x}\int_{0}^{-x} f(t)\mathrm{d}t \xlongequal{t=-u} -\frac{1}{x}\int_{0}^{x} f(-u)\mathrm{d}(-u)=-\frac{1}{x}\int_{0}^{x} f(u)\mathrm{d}u=-\bar{f}(x),$$
+即 $\bar{f}(x)$ 为奇函数，①正确．
+对于②，取 $f(x)=x^2$，则 $\bar{f}(x)=\frac{1}{x}\int_{0}^{x} t^2\mathrm{d}t=\frac{1}{3}x^2$，②不正确．
+对于③，取 $f(x)=\sin x$，则 $\bar{f}(x)=\frac{1}{x}\int_{0}^{x} \sin t\,\mathrm{d}t=\frac{1-\cos x}{x}$，③不正确．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $L$ 为取正向的圆 $x^2+y^2=m$，$m&gt;0$，则曲线积分 $\oint_{L}\frac{(\mathrm{e}^{x^2}-x^2y)\mathrm{d}x+(xy^2-\sin y^2)\mathrm{d}y}{x^2+y^2}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\pi m$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{2}\pi m$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-\frac{1}{2}\pi m$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-\pi m$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">先将 $L$ 的方程 $x^2+y^2=m$ 代入，得
+$$\text{原式}=\frac{1}{m}\oint_{L} \left(\mathrm{e}^{x^2}-x^2 y\right)\mathrm{d}x+\left(xy^2-\sin y^2\right)\mathrm{d}y$$
+$$=\frac{1}{m}\iint_{x^2+y^2\leqslant m}\left(x^2+y^2\right)\mathrm{d}x\mathrm{d}y=\frac{1}{m}\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\sqrt{m}} r^2 \cdot r\,\mathrm{d}r=\frac{1}{2}\pi m．$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">在空间直角坐标系 $O-xyz$ 中，三张平面 $\pi_1$：$ax+y-z=1$，$\pi_2$：$x+y+bz=a$，$\pi_3$：$x+ay-z=1$ 的位置关系如图所示，则（　）.
+【图】三张平面两两相交，交线过同一点，呈过公共点的三张平面（星形）图形.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a=1, b\neq -1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a=1, b=-1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a\neq -2, b=2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a=-2, b=2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于三张平面相交于一条直线，记
+$$\alpha_1=\begin{bmatrix}a\\1\\-1\end{bmatrix},\alpha_2=\begin{bmatrix}1\\1\\b\end{bmatrix},\alpha_3=\begin{bmatrix}1\\a\\-1\end{bmatrix},\beta_1=\begin{bmatrix}a\\1\\-1\\1\end{bmatrix},\beta_2=\begin{bmatrix}1\\1\\b\\a\end{bmatrix},\beta_3=\begin{bmatrix}1\\a\\-1\\1\end{bmatrix},$$
+则 $r([\alpha_1,\alpha_2,\alpha_3])=r([\beta_1,\beta_2,\beta_3])=2$，且 $\beta_1,\beta_2,\beta_3$ 任意两个向量均线性无关．
+$$[\beta_1,\beta_2,\beta_3]=\begin{bmatrix}a&amp;1&amp;1\\1&amp;1&amp;a\\-1&amp;b&amp;-1\\1&amp;a&amp;1\end{bmatrix}\to\begin{bmatrix}1&amp;1&amp;a\\0&amp;1-a&amp;1-a^2\\0&amp;b+1&amp;a-1\\0&amp;a-1&amp;1-a\end{bmatrix}\to\begin{bmatrix}1&amp;1&amp;a\\0&amp;1-a&amp;1-a^2\\0&amp;b+1&amp;a-1\\0&amp;0&amp;2-a^2-a\end{bmatrix}.$$
+①当 $a=1$ 时，$\beta_1$ 与 $\beta_3$ 线性相关，不满足题意；
+②当 $a\neq 1$ 时，
+$$[\beta_1,\beta_2,\beta_3]\to\begin{bmatrix}1&amp;1&amp;a\\0&amp;1&amp;1+a\\0&amp;b+1&amp;a-1\\0&amp;0&amp;a+2\end{bmatrix}\to\begin{bmatrix}1&amp;1&amp;a\\0&amp;1&amp;1+a\\0&amp;0&amp;-b(a+1)-2\\0&amp;0&amp;a+2\end{bmatrix},$$
+要满足题意，则 $a+2=0$ 且 $-b(a+1)-2=0$，故 $\begin{cases}a=-2,\\b=2.\end{cases}$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 阶非零矩阵 $A$ 满足 $A_{ij}+a_{ij}=0$（$i,j=1,2,3$），则下列结论不正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(A-E)x=0$ 有非零解</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(A+E)x=0$ 有非零解</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(A+E)^2x=0$ 有非零解</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(A^2-E)x=0$ 有非零解</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，$A^{*}=-A^{\mathrm{T}}$，$A\neq O$，则 $AA^{*}=-AA^{\mathrm{T}}$，即 $AA^{\mathrm{T}}=-|A|E$，于是 $|A||A^{\mathrm{T}}|=-|A|^3$，$|A|^2(1+|A|)=0$，$|A|=0$ 或 $|A|=-1$，不妨设 $a_{11}\neq 0$，则
+$$|A|=a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}=-(a_{11}^2+a_{12}^2+a_{13}^2)&lt;0,$$
+故 $|A|=-1$，于是 $AA^{\mathrm{T}}=E$，$A$ 为正交矩阵．
+又
+$$|A+E|=|A+AA^{\mathrm{T}}|=|A||E+A^{\mathrm{T}}|=|A||E+A|,$$
+故 $(1-|A|)|A+E|=0$，由 $|A|=-1$，知 $|A+E|=0$，即 $(A+E)x=\mathbf{0}$ 有非零解，又 $\left|(A+E)^2\right|=|A+E|^2=0$，$\left|A^2-E\right|=|A+E||A-E|=0$，故 (B), (C), (D) 正确．
+对于 (A)，取 $A=\begin{bmatrix}-1&amp;0&amp;0\\0&amp;-1&amp;0\\0&amp;0&amp;-1\end{bmatrix}$，则 $A-E=\begin{bmatrix}-2&amp;0&amp;0\\0&amp;-2&amp;0\\0&amp;0&amp;-2\end{bmatrix}$，$(A-E)x=0$ 只有零解．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$n$ 阶矩阵 $A$ 与 $B$ 相似的充分非必要条件是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$A^{\top}$ 与 $B^{\top}$ 相似</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$|\lambda E-A|=|\lambda E-B|$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$A$ 与 $B$ 的各阶主子式之和分别相等</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$A^{-1}$ 与 $B^{-1}$ 相似</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">选项 (A), (B), (C) 均是 $A$ 与 $B$ 相似的必要条件．对于选项 (A)，对任意秩小于 $n-1$ 的 $A,B$，都有 $A^{*}=B^{*}=O$，$A^{*}$ 与 $B^{*}$ 相似，但不能得出 $A,B$ 相似．对于选项 (B), (C)，反例：$A=\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix}$，$B=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}$，$|\lambda E-A|=|\lambda E-B|=(\lambda-1)^2$，对任意可逆矩阵 $P$，都有 $P^{-1}AP=E\neq B$，故 $A$，$B$ 不相似，即选项 (B), (C) 不充分．对于选项 (D)，若存在可逆矩阵 $P$，使 $P^{-1}A^{-1}P=B^{-1}$，两边取逆，有 $P^{-1}AP=B$，故 $A$ 与 $B$ 相似．但反过来不对，$A$ 与 $B$ 相似，$A,B$ 均不一定可逆．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2$ 为来自总体 $N(\mu,k\sigma^2)$ 的简单随机样本，其中 $\sigma(\sigma&gt;0)$ 是未知参数，$k$ 为正常数，$|X_1-X_2|$ 是 $\sigma$ 的无偏估计，则 $k=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{\pi}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\sqrt{2\pi}}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{\sqrt{\pi}}{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设可得 $X_1-X_2\sim N(0,2k\sigma^2)$，令 $Z=X_1-X_2$，有
+$$E\left(\left|X_1-X_2\right|\right)=\int_{-\infty}^{+\infty}|z|\cdot\frac{1}{\sqrt{2\pi}\sqrt{2k\sigma}}\cdot\mathrm{e}^{\frac{z^2}{4k\sigma^2}}\mathrm{d}z=2\int_{0}^{+\infty}\frac{z}{2\sqrt{\pi k}\sigma}\mathrm{e}^{-\frac{z^2}{4k\sigma^2}}\mathrm{d}z$$
+$$=-\frac{2\sqrt{k}\sigma}{\sqrt{\pi}}\int_{0}^{+\infty}\mathrm{e}^{-\frac{z^2}{4k\sigma^2}}\mathrm{d}\left(-\frac{z^2}{4k\sigma^2}\right)$$
+$$=-\frac{2\sqrt{k}\sigma}{\sqrt{\pi}}\mathrm{e}^{-\frac{z^2}{4k\sigma^2}}\Bigg|_{0}^{+\infty}=\frac{2\sqrt{k}\sigma}{\sqrt{\pi}}=\sigma,$$
+则 $k=\dfrac{\pi}{4}$．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">一本 100 页的书，共有 20 个错字，每个错字等可能出现在每页，按照泊松定理，在给定的一页上至少有 2 个错字的概率约为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$1-\frac{5}{6}\mathrm{e}^{-\frac{1}{5}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$1-\frac{5}{6}\mathrm{e}^{-\frac{2}{5}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1-\frac{6}{5}\mathrm{e}^{-\frac{1}{5}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$1-\frac{6}{5}\mathrm{e}^{-\frac{2}{5}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">本题的关键是如何建立其模型．由题意，每个错字出现在某页上的概率均为 $\dfrac{1}{100}$，20 个错字可看作 20 次伯努利试验．
+设 $A$ 表示“给定的一页上至少有 2 个错字”，于是有
+$$P(A)=1-P(\overline{A})=1-\sum_{r=0}^{1}\mathrm{C}_{20}^{r}\left(\frac{1}{100}\right)^{r}\left(1-\frac{1}{100}\right)^{20-r},$$
+由泊松定理，
+$$\mathrm{C}_{20}^{0}\left(\frac{1}{100}\right)^{0}\left(1-\frac{1}{100}\right)^{20}\approx\frac{\left(\dfrac{1}{5}\right)^{0}}{0!}\mathrm{e}^{-\frac{1}{5}}=\mathrm{e}^{-\frac{1}{5}},$$
+$$\mathrm{C}_{20}^{1}\left(\frac{1}{100}\right)^{1}\left(1-\frac{1}{100}\right)^{19}\approx\frac{\left(\dfrac{1}{5}\right)^{1}}{1!}\mathrm{e}^{-\frac{1}{5}}=\frac{1}{5}\mathrm{e}^{-\frac{1}{5}},$$
+故 $P(A)\approx 1-\mathrm{e}^{-\frac{1}{5}}-\dfrac{1}{5}\mathrm{e}^{-\frac{1}{5}}=1-\dfrac{6}{5}\mathrm{e}^{-\frac{1}{5}}$．
+【注】泊松定理　若 $X\sim B(n,p)$，当 $n$ 很大，$p$ 很小，$\lambda=np$ 适中时，二项分布可用泊松分布近似表示，即
+$$\mathrm{C}_{n}^{k}p^{k}(1-p)^{n-k}\approx\frac{\lambda^{k}}{k!}\mathrm{e}^{-\lambda}.$$
+一般地，当 $n\geqslant 20$，$p\leqslant 0.05$ 时，用泊松分布逼近二项分布效果比较好，特别当 $n\geqslant 100$，$np\leqslant 10$ 时，逼近效果更佳．考纲要求考生“会用泊松分布近似表示二项分布”，应予以重视．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="68" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设两组数据分别来自两个方差相同且相互独立的正态总体 $X\sim N(\mu_1,\sigma^2)$ 与 $Y\sim N(\mu_2,\sigma^2)$. 现检验两组数据的均值“有显著差异”，且犯第一类错误的概率为 $\alpha$，则应（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">在置信度为 $1-\alpha$ 下，检验 $H_0$：$\mu_1\neq\mu_2$；$H_1$：$\mu_1=\mu_2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">在置信度为 $1-\frac{\alpha}{2}$ 下，检验 $H_0$：$\mu_1\neq\mu_2$；$H_1$：$\mu_1=\mu_2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">在置信度为 $1-\alpha$ 下，检验 $H_0$：$\mu_1=\mu_2$；$H_1$：$\mu_1\neq\mu_2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">在置信度为 $1-\frac{\alpha}{2}$ 下，检验 $H_0$：$\mu_1=\mu_2$；$H_1$：$\mu_1\neq\mu_2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">犯第一类错误的概率 $\alpha$ 即为显著性水平 $\alpha$，故置信度为 $1-\alpha$，本假设检验是对“有显著差异”这一结论进行检验，则应将这一结论的否定作为原假设 $H_0$：$\mu_1=\mu_2$，而将该结论作为备择假设 $H_1$：$\mu_1\neq\mu_2$．若检验出否定 $H_0$，则给 $H_1$ 一个强有力的支持．
+【注】假设检验一般要求 $H_0$ 中含等号，这是确定统计量的前提，可作为做选择题的一个辅助技巧．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="68" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">过原点的曲线 $y=y(x)$ 满足 $\frac{\mathrm{d}y}{\mathrm{d}x}=(x+y)^2$，则 $\lim_{x \to 0}\frac{y(x)}{x^3}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $x+y=u$，$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}u}{\mathrm{d}x}-1$，故
+$$\frac{\mathrm{d}u}{\mathrm{d}x}=u^2+1，\int\frac{\mathrm{d}u}{u^2+1}=\int\mathrm{d}x,$$
+即 $\arctan u=x+C$，由 $y(0)=0$，得 $u(0)=0$，于是 $C=0$，则有 $\arctan(x+y)=x$，得
+$$y=\tan x-x,$$
+故
+$$\lim_{x \to 0}\frac{\tan x-x}{x^3}=\frac{1}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="68" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a&gt;0$，$\Gamma$ 是空间圆周 $\begin{cases}x^2+y^2+z^2=a^2,\\ x+y+z=0,\end{cases}$ 且 $\oint_{\Gamma}(x^2+y^2)\mathrm{d}s=\pi$，则 $a=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由轮换对称性知 $\displaystyle\oint_{\Gamma} x^2\mathrm{d}s=\oint_{\Gamma} y^2\mathrm{d}s=\oint_{\Gamma} z^2\mathrm{d}s$，于是
+$$\oint_{\Gamma}\left(x^2+y^2\right)\mathrm{d}s=\oint_{\Gamma} x^2\mathrm{d}s+\oint_{\Gamma} y^2\mathrm{d}s$$
+$$=2\oint_{\Gamma} x^2\mathrm{d}s=\frac{2}{3}\left(\oint_{\Gamma} x^2\mathrm{d}s+\oint_{\Gamma} y^2\mathrm{d}s+\oint_{\Gamma} z^2\mathrm{d}s\right)$$
+$$=\frac{2}{3}\oint_{\Gamma}\left(x^2+y^2+z^2\right)\mathrm{d}s\xlongequal{(\ast)}\frac{2a^2}{3}\oint_{\Gamma} 1\mathrm{d}s=\frac{2a^2}{3}\cdot 2\pi\cdot a=\frac{4}{3}\pi a^3=\pi,$$
+则 $a^3=\dfrac{3}{4}$，$a=\left(\dfrac{3}{4}\right)^{\frac{1}{3}}$．
+【注】$(\ast)$ 处来自边界方程 $x^2+y^2+z^2=a^2$，可直接代入被积函数，从而化简计算．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\left(\dfrac{3}{4}\right)^{\frac{1}{3}}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="68" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$z=\ln\left(\mathrm{e}^{-x}+\frac{x^2}{y}\right)$ 在点 $(1,1)$ 处沿 $l=(1,0)$ 的方向导数为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\frac{\partial z}{\partial x}=\frac{-\mathrm{e}^{-x}+\dfrac{2x}{y}}{\mathrm{e}^{-x}+\dfrac{x^2}{y}},\quad \frac{\partial z}{\partial y}=\frac{-\dfrac{x^2}{y^2}}{\mathrm{e}^{-x}+\dfrac{x^2}{y}},$$
+故
+$$\operatorname{grad}z(1,1)=\left.\left(\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}\right)\right|_{(1,1)}=\left(\frac{2\mathrm{e}-1}{\mathrm{e}+1},-\frac{\mathrm{e}}{\mathrm{e}+1}\right),$$
+由 $z$ 在 $(1,1)$ 处可微，则
+$$\left.\frac{\partial z}{\partial l}\right|_{(1,1)}=\operatorname{grad}z(1,1)\cdot\frac{l}{\|l\|}=\frac{2\mathrm{e}-1}{\mathrm{e}+1}\cdot 1=\frac{2\mathrm{e}-1}{\mathrm{e}+1}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{2\mathrm{e}-1}{\mathrm{e}+1}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="68" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\Sigma$ 为曲面 $\frac{x^2}{4}+\frac{y^2}{4}+z^2=1$ 的外侧，则 $\displaystyle\oint_{\Sigma}x^2\mathrm{d}y\mathrm{d}z+z\mathrm{d}x\mathrm{d}y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令
+$$\begin{cases}x=2r\sin\varphi\cos\theta,\\y=2r\sin\varphi\sin\theta,\\z=r\cos\varphi,\end{cases}$$
+于是
+$$J=\frac{\partial(x,y,z)}{\partial(r,\theta,\varphi)}=\begin{vmatrix}\dfrac{\partial x}{\partial r}&amp;\dfrac{\partial x}{\partial\theta}&amp;\dfrac{\partial x}{\partial\varphi}\\\dfrac{\partial y}{\partial r}&amp;\dfrac{\partial y}{\partial\theta}&amp;\dfrac{\partial y}{\partial\varphi}\\\dfrac{\partial z}{\partial r}&amp;\dfrac{\partial z}{\partial\theta}&amp;\dfrac{\partial z}{\partial\varphi}\end{vmatrix}=-4r^2\sin\varphi,$$
+记 $\varOmega$ 为 $\varSigma$ 所围立体，由高斯公式可得
+$$\text{原式}=\iiint_{\varOmega}(2x+1)\mathrm{d}v=\iiint_{\varOmega}\mathrm{d}v=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\pi}\mathrm{d}\varphi\int_{0}^{1}4r^2\sin\varphi\mathrm{d}r=\frac{16}{3}\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{16}{3}\pi$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="68" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $|A|=\begin{vmatrix}2&amp;-1&amp;2&amp;3\\0&amp;1&amp;-1&amp;0\\2&amp;3&amp;4&amp;5\\1&amp;1&amp;1&amp;1\end{vmatrix}$，则 $A_{31}+M_{32}+A_{33}+M_{34}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】本题代数余子式前面的系数与行列式第 3 行不一样，所以本题属于“大 $A$ 配小 $k$，$k$ 把小 $a$ 吃”．
+【解析】本题即计算 $A_{31}-A_{32}+A_{33}-A_{34}$，结果等于用组合系数置换行列式中第 3 行元素后的行列式．
+$$A_{31}+M_{32}+A_{33}+M_{34}=A_{31}-A_{32}+A_{33}-A_{34}$$
+$$=\begin{vmatrix}2&amp;-1&amp;2&amp;3\\0&amp;1&amp;-1&amp;0\\1&amp;-1&amp;1&amp;-1\\1&amp;1&amp;1&amp;1\end{vmatrix}=\begin{vmatrix}0&amp;1&amp;0&amp;5\\0&amp;1&amp;-1&amp;0\\1&amp;-1&amp;1&amp;-1\\0&amp;2&amp;0&amp;2\end{vmatrix}=8.$$【注】与余子式、代数余子式相关的问题主要有两种：一种是余子式与代数余子式之间的转换，注意符号上的变换；另一种是计算某行(列)的余子式或代数余子式的线性组合，关键在于查看其组合系数与其他行(列)的元素是否一致，若一致，则取值为零，否则，用代数余子式的线性组合系数置换行列式中对应行(列)的元素后计算行列式.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">8</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="68" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">在 21~90 的整数中随机地取一个数，则取到的整数既不能被 2 整除，又不能被 9 整除的概率为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $A$ 为事件“取到的整数能被2整除”，$B$ 为事件“取到的整数能被9整除”，则
+$$p=P(\overline{AB})=P(\overline{A\cup B})=1-P(A\cup B)=1-[P(A)+P(B)-P(AB)].$$
+由 $\left\lfloor\dfrac{70}{2}\right\rfloor=35$，故 $P(A)=\dfrac{35}{70}=\dfrac{1}{2}$. 又 $\left\lfloor\dfrac{90}{9}\right\rfloor-\left\lfloor\dfrac{20}{9}\right\rfloor=8$，故 $P(B)=\dfrac{8}{70}=\dfrac{4}{35}$.
+同时能被2与9整除，即能被18整除，由 $\left\lfloor\dfrac{90}{18}\right\rfloor-\left\lfloor\dfrac{20}{18}\right\rfloor=4$，则 $P(AB)=\dfrac{4}{70}=\dfrac{2}{35}$.
+故
+$$p=1-\left(\frac{1}{2}+\frac{4}{35}-\frac{2}{35}\right)=\frac{31}{70}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{31}{70}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="68" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(本题满分 10 分)
+设函数 $x=x(y)$ 由方程 $y=\int_{a}^{x+y}\mathrm{e}^{-u^2}\mathrm{d}u$ 所确定，$x(0)=1$，求：
+(1) $a$ 的值；
+(2) $x''(0)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 令 $y=0$，有 $0=\int_{a}^{x}\mathrm{e}^{-u^2}\mathrm{d}u$，于是 $x=a=1$.
+(2) 由(1)，知 $y=\int_{1}^{x+y}\mathrm{e}^{-u^2}\mathrm{d}u$，两边对 $y$ 求导，得
+$$1=\mathrm{e}^{-(x+y)^2}\cdot[x'(y)+1],\qquad(*)$$
+令 $y=0$，有 $1=\mathrm{e}^{-1}\cdot[x'(0)+1]$，故 $x'(0)=\mathrm{e}-1$.
+$(*)$ 式两边再对 $y$ 求导，有
+$$0=\mathrm{e}^{-(x+y)^2}\cdot[-2(x+y)]\cdot[x'(y)+1]^2+\mathrm{e}^{-(x+y)^2}\cdot x''(y),$$
+令 $y=0$，有
+$$0=\mathrm{e}^{-1}\cdot[-2(1+0)]\cdot(\mathrm{e}-1+1)^2+\mathrm{e}^{-1}\cdot x''(0),$$
+于是 $x''(0)=2\mathrm{e}^2$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="68" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(本题满分 12 分)
+已知 $\frac{1}{(1+x)^2}-\ln(2+x)=\sum_{n=0}^{\infty}a_nx^n\ (-1&lt;x&lt;1)$，求 $a_n$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\begin{aligned}\frac{1}{(1+x)^2}&amp;=\left(-\frac{1}{1+x}\right)'=-\left[\sum_{n=0}^{\infty}(-1)^n x^n\right]'=-\sum_{n=1}^{\infty}(-1)^n n x^{n-1}\\&amp;=\sum_{n=0}^{\infty}(-1)^n(n+1)x^n,-1&lt;x&lt;1,\end{aligned}$$
+$$\ln(2+x)=\ln 2+\ln\left(1+\frac{x}{2}\right)=\ln 2+\sum_{n=1}^{\infty}(-1)^{n-1}\cdot\frac{\left(\dfrac{x}{2}\right)^n}{n}=\ln 2+\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n\cdot 2^n}x^n,-2&lt;x\leqslant 2,$$
+故当 $-1&lt;x&lt;1$ 时，
+$$\frac{1}{(1+x)^2}-\ln(2+x)=\sum_{n=1}^{\infty}(-1)^n\cdot\left(n+1+\frac{1}{n\cdot 2^n}\right)x^n+1-\ln 2.$$
+故
+$$a_n=\begin{cases}1-\ln 2, &amp; n=0,\\(-1)^n\left(n+1+\dfrac{1}{n\cdot 2^n}\right), &amp; n\geqslant 1.\end{cases}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="68" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(本题满分 12 分)
+设曲线 $\Gamma$ 为曲面 $x^2+y^2+z^2=1$ 与平面 $y=z$ 的交线，从 $z$ 轴正向看下去为逆时针方向，计算 $\displaystyle\oint_{\Gamma}y^2\sin x\mathrm{d}x+xyz\mathrm{d}z$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $\Sigma$ 为 $y=x$ 被 $x^2+y^2+z^2=1$ 所截部分，$\Sigma_1$ 为 $\Sigma$ 中 $x\geqslant 0$ 的部分，则
+$$\oint_{\Sigma} y^2\sin x\,\mathrm{d}x+xyz\,\mathrm{d}z=\iint_{\Sigma}\begin{vmatrix}0&amp;-\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{2}}\\\dfrac{\partial}{\partial x}&amp;\dfrac{\partial}{\partial y}&amp;\dfrac{\partial}{\partial z}\\y^2\sin x&amp;0&amp;xyz\end{vmatrix}\mathrm{d}S$$
+$$=\frac{1}{\sqrt{2}}\iint_{\Sigma}(yz-2y\sin x)\,\mathrm{d}S=\frac{2}{\sqrt{2}}\iint_{\Sigma_1}yz\,\mathrm{d}S$$
+$$=\sqrt{2}\iint_{D:\,x^2+y^2\leqslant 1,\,x\geqslant 0} y\cdot y\sqrt{2}\,\mathrm{d}x\,\mathrm{d}y$$
+$$\xlongequal{x=r\cos\theta,\ y=\frac{1}{\sqrt{2}}r\sin\theta} 2\iint_{D}\frac{r^2}{2}\sin^2\theta\cdot\frac{1}{\sqrt{2}}r\,\mathrm{d}\theta\,\mathrm{d}r$$
+$$=\frac{1}{\sqrt{2}}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sin^2\theta\,\mathrm{d}\theta\int_{0}^{1}r^3\,\mathrm{d}r$$
+$$=\frac{1}{\sqrt{2}}\left(\frac{1}{4}\cdot 2\cdot\frac{1}{2}\cdot\pi\right)=\frac{\sqrt{2}}{16}\pi.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="68" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(本题满分 12 分)
+设曲面 $S$ 的方程为 $(x+1)^2+y^2+z^2=4$，从原点向该曲面上任一点 $P$ 处的切平面作垂线，垂足为点 $Q$. 当点 $P$ 在曲面 $S$ 上运动时，点 $Q$ 的轨迹形成闭曲面 $\Sigma$，求：
+(1) $\Sigma$ 的方程；
+(2) $\Sigma$ 所围成闭区域 $\Omega$ 的形心横坐标 $\bar{x}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 曲面 $S$ 上任一点 $P(x_0,y_0,z_0)$ 处的切平面方程为
+$$(x_0+1)(x-x_0)+y_0(y-y_0)+z_0(z-z_0)=0,\qquad①$$
+从原点向切平面所作垂线方程为
+$$\frac{x}{x_0+1}=\frac{y}{y_0}=\frac{z}{z_0},$$
+又
+$$(x_0+1)^2+y_0^2+z_0^2=4,\qquad②$$
+令 $x_0+1=tx$，$y_0=ty$，$z_0=tz$，代入式①和式②，则有
+$$\begin{cases}tx(x-tx+1)+ty(y-ty)+tz(z-tz)=0,\\(tx)^2+(ty)^2+(tz)^2=4,\end{cases}$$
+整理得
+$$\begin{cases}x^2+y^2+z^2+x=t(x^2+y^2+z^2),\\t^2(x^2+y^2+z^2)=4,\end{cases}$$
+即闭曲面 $\Sigma$ 的方程为
+$$\frac{\left(x^2+y^2+z^2+x\right)^2}{x^2+y^2+z^2}=4.\qquad③$$
+(2) 令
+$$\begin{cases}y=r\sin\varphi\cos\theta,\\z=r\sin\varphi\sin\theta,\\x=r\cos\varphi,\end{cases}$$
+则式③化为 $r=2-\cos\varphi$.
+于是
+$$\iiint_{\Omega}x\,\mathrm{d}v=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\pi}\sin\varphi\cos\varphi\,\mathrm{d}\varphi\int_{0}^{2-\cos\varphi}r^3\,\mathrm{d}r$$
+$$=-\frac{\pi}{2}\int_{0}^{\pi}(2-\cos\varphi)^4\cos\varphi\,\mathrm{d}(\cos\varphi),$$
+其中
+$$\begin{aligned}&amp;\int_{0}^{\pi}(2-\cos\varphi)^4\cos\varphi\,\mathrm{d}(\cos\varphi)\\={}&amp;-\int_{0}^{\pi}(2-\cos\varphi)^4(2-\cos\varphi)\,\mathrm{d}(\cos\varphi)+2\int_{0}^{\pi}(2-\cos\varphi)^4\,\mathrm{d}(\cos\varphi)\\={}&amp;\int_{0}^{\pi}(2-\cos\varphi)^5\,\mathrm{d}(2-\cos\varphi)-2\int_{0}^{\pi}(2-\cos\varphi)^4\,\mathrm{d}(2-\cos\varphi)\\={}&amp;\frac{1}{6}(2-\cos\varphi)^6\Big|_{0}^{\pi}-2\times\frac{1}{5}(2-\cos\varphi)^5\Big|_{0}^{\pi}\\={}&amp;\frac{1}{6}(3^6-1)-\frac{2}{5}(3^5-1),\end{aligned}$$
+故
+$$\iiint_{\Omega}x\,\mathrm{d}v=-\frac{\pi}{2}\times\left(\frac{3^5}{2}-\frac{1}{6}-\frac{2\times 3^5}{5}+\frac{2}{5}\right)=-\frac{\pi}{2}\times\left[3^5\left(\frac{1}{2}-\frac{2}{5}\right)+\left(\frac{2}{5}-\frac{1}{6}\right)\right]=-\frac{184}{15}\pi.$$
+$$\iiint_{\Omega}\mathrm{d}v=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\pi}\sin\varphi\,\mathrm{d}\varphi\int_{0}^{2-\cos\varphi}r^2\,\mathrm{d}r=2\pi\int_{0}^{\pi}\frac{1}{3}(2-\cos\varphi)^3\sin\varphi\,\mathrm{d}\varphi$$
+$$=-\frac{2\pi}{3}\int_{0}^{\pi}(2-\cos\varphi)^3\,\mathrm{d}(\cos\varphi)=\frac{2\pi}{3}\int_{0}^{\pi}(2-\cos\varphi)^3\,\mathrm{d}(2-\cos\varphi)=\frac{2\pi}{3}\times\frac{1}{4}(2-\cos\varphi)^4\Big|_{0}^{\pi}=\frac{40}{3}\pi.$$
+所以形心横坐标 $\bar{x}=\dfrac{-\dfrac{184}{15}\pi}{\dfrac{40}{3}\pi}=-\dfrac{23}{25}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="68" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(本题满分 12 分)
+设 $\begin{cases}x_n=x_{n-1}+2y_{n-1},\\ y_n=4x_{n-1}+3y_{n-1},\end{cases}\ A=\begin{bmatrix}1&amp;2\\4&amp;3\end{bmatrix}$，2 阶矩阵 $B=[\beta_1,\beta_2]$ 满足 $B(A-B)=O$.
+(1) 当 $\begin{cases}x_0=1,\\ y_0=2\end{cases}$ 时，求 $x_{100}$，$y_{100}$；
+(2) 用 $\beta_1,\beta_2$ 的线性组合表示 $B^{10}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $\begin{cases}x_n=x_{n-1}+2y_{n-1},\\y_n=4x_{n-1}+3y_{n-1}\end{cases}$ 表示成矩阵形式为
+$$\begin{bmatrix}x_n\\y_n\end{bmatrix}=\begin{bmatrix}1&amp;2\\4&amp;3\end{bmatrix}\begin{bmatrix}x_{n-1}\\y_{n-1}\end{bmatrix}=A\begin{bmatrix}x_{n-1}\\y_{n-1}\end{bmatrix},$$
+由递推关系式可得
+$$\begin{bmatrix}x_n\\y_n\end{bmatrix}=\begin{bmatrix}1&amp;2\\4&amp;3\end{bmatrix}\begin{bmatrix}x_{n-1}\\y_{n-1}\end{bmatrix}=\begin{bmatrix}1&amp;2\\4&amp;3\end{bmatrix}^2\begin{bmatrix}x_{n-2}\\y_{n-2}\end{bmatrix}=\cdots=\begin{bmatrix}1&amp;2\\4&amp;3\end{bmatrix}^n\begin{bmatrix}x_0\\y_0\end{bmatrix},$$
+则
+$$\begin{bmatrix}x_{100}\\y_{100}\end{bmatrix}=\begin{bmatrix}1&amp;2\\4&amp;3\end{bmatrix}^{100}\begin{bmatrix}x_0\\y_0\end{bmatrix}=A^{100}\begin{bmatrix}x_0\\y_0\end{bmatrix}.$$
+下面求 $A$ 的特征值及特征向量. 令 $|\lambda E-A|=0$，则有
+$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;-2\\-4&amp;\lambda-3\end{vmatrix}=\lambda^2-4\lambda+3-8=(\lambda-5)(\lambda+1)=0,$$
+解得 $\lambda_1=5$，$\lambda_2=-1$.
+当 $\lambda_1=5$ 时，由 $(\lambda_1 E-A)x=\begin{bmatrix}4&amp;-2\\-4&amp;2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=0$，得 $\xi_1=\begin{bmatrix}1\\2\end{bmatrix}$；
+当 $\lambda_2=-1$ 时，由 $(\lambda_2 E-A)x=\begin{bmatrix}-2&amp;-2\\-4&amp;-4\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=0$，得 $\xi_2=\begin{bmatrix}1\\-1\end{bmatrix}$.
+故当 $\begin{cases}x_0=1,\\y_0=2\end{cases}$ 时，记 $\eta_0=\begin{bmatrix}1\\2\end{bmatrix}$，则 $\eta_0=\xi_1$，可得
+$$\begin{bmatrix}x_{100}\\y_{100}\end{bmatrix}=A^{100}\eta_0=A^{100}\xi_1=\lambda_1^{100}\xi_1=5^{100}\begin{bmatrix}1\\2\end{bmatrix},$$
+故 $x_{100}=5^{100}$，$y_{100}=2\times 5^{100}$.
+(2) 令 $P=\begin{bmatrix}1&amp;1\\2&amp;-1\end{bmatrix}$，则 $P^{-1}=-\dfrac{1}{3}\begin{bmatrix}-1&amp;-1\\-2&amp;1\end{bmatrix}$，有 $P^{-1}AP=\begin{bmatrix}5&amp;0\\0&amp;-1\end{bmatrix}$，$A=P\begin{bmatrix}5&amp;0\\0&amp;-1\end{bmatrix}P^{-1}$.
+又 $B(A-B)=O$，即 $BA=B^2$，于是
+$$B^{10}=B^8B^2=B^9A=B^7B^2A=B^8A^2=\cdots=BA^9.$$
+由
+$$A^9=P\begin{bmatrix}5^9&amp;0\\0&amp;-1\end{bmatrix}P^{-1}=\begin{bmatrix}\dfrac{5^9-2}{3}&amp;\dfrac{5^9+1}{3}\\\dfrac{2(5^9+1)}{3}&amp;\dfrac{2\times 5^9-1}{3}\end{bmatrix},$$
+得 $B^{10}=[\beta_1,\beta_2]\begin{bmatrix}\dfrac{5^9-2}{3}&amp;\dfrac{5^9+1}{3}\\\dfrac{2(5^9+1)}{3}&amp;\dfrac{2\times 5^9-1}{3}\end{bmatrix}=\left(\dfrac{5^9-2}{3}\beta_1+\dfrac{2(5^9+1)}{3}\beta_2,\ \dfrac{5^9+1}{3}\beta_1+\dfrac{2\times 5^9-1}{3}\beta_2\right).$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="68" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(本题满分 12 分)
+在区间 $(0,2)$ 上随机取一点，将该区间分成两段，较短一段的长度记为 $X$，令 $Y=|3X-1|$，求：
+(1) $X$ 的概率密度；
+(2) $E(Y)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 设随机取的点的坐标为 $V$，则 $V\sim U(0,2)$，$X=\min\{V,2-V\}$，$X$ 的分布函数记为 $F_X(x)$. 由于 $P\{0&lt;X\leqslant 1\}=1$，故当 $x&lt;0$ 时，$F_X(x)=0$；当 $x\geqslant 1$ 时，$F_X(x)=1$；
+当 $0\leqslant x&lt;1$ 时，
+$$\begin{aligned}F_X(x)&amp;=P\{X\leqslant x\}\\&amp;=P\{\min\{V,2-V\}\leqslant x\}\\&amp;=1-P\{\min\{V,2-V\}&gt;x\}\\&amp;=1-P\{x&lt;V&lt;2-x\}\\&amp;=1-\frac{(2-x)-x}{2}=x\end{aligned}$$
+所以 $X$ 的分布函数为
+$$F_X(x)=\begin{cases}0, &amp; x&lt;0,\\x, &amp; 0\leqslant x&lt;1,\\1, &amp; x\geqslant 1,\end{cases}$$
+$X$ 的概率密度为
+$$f_X(x)=\begin{cases}1, &amp; 0&lt;x&lt;1,\\0, &amp; \text{其他}.\end{cases}$$
+(2) $X\sim F_X(x)$，$Y=|3X-1|$，则当 $x&gt;\dfrac{1}{3}$ 时，$y=3x-1$，当 $x&lt;\dfrac{1}{3}$ 时，$y=1-3x$.
+由于 $P\{0&lt;X\leqslant 1\}=1$，故 $P\{0\leqslant Y\leqslant 2\}=1$.
+故当 $y&lt;0$ 时，$F_Y(y)=0$；
+当 $y\geqslant 2$ 时，$F_Y(y)=1$；
+当 $0\leqslant y&lt;1$ 时，$F_{Y}(y)=P\{|3X-1|\leqslant y\}=\int_{\frac{1-y}{3}}^{\frac{1+y}{3}}\mathrm{d}x=\frac{2y}{3}$；
+
+当 $1\leqslant y&lt;2$ 时，$F_{Y}(y)=\int_{0}^{\frac{1+y}{3}}\mathrm{d}x=\frac{y+1}{3}$． ……9分
+
+故
+
+$$f_{Y}(y)=\begin{cases}\dfrac{2}{3}, &amp; 0&lt;y&lt;1,\\[2mm]\dfrac{1}{3}, &amp; 1&lt;y&lt;2,\\[2mm]0, &amp; \text{其他},\end{cases}$$ ……10分
+
+则 $E(Y)=\int_{0}^{1}y\dfrac{2}{3}\mathrm{d}y+\int_{1}^{2}y\dfrac{1}{3}\mathrm{d}y=\dfrac{2}{3}\times\dfrac{1}{2}+\dfrac{1}{3}\times\dfrac{3}{2}=\dfrac{5}{6}$． ……12分</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-67.html">上一章：第9章 参数估计与假设检验</a>
+      <a class="chapter-link" href="chapter-69.html">下一章：测试卷二</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 68, "total": 22, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

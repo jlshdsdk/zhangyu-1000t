@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 行列式 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第1章 行列式<span class="top-count">（10题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="20" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a,b,c$ 是方程 $x^3-2x+4=0$ 的三个根，则行列式 $\begin{vmatrix} a &amp; b &amp; c \\ b &amp; c &amp; a \\ c &amp; a &amp; b \end{vmatrix}$ 的值等于（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　由 $a,b,c$ 是方程 $x^3-2x+4=0$ 的三个根，有
+$$x^3-2x+4=(x-a)(x-b)(x-c)=x^3-(a+b+c)x^2+(bc+ac+ab)x-abc=0,$$
+从而 $a+b+c=0$，于是
+$$\begin{vmatrix}a&amp;b&amp;c\\b&amp;c&amp;a\\c&amp;a&amp;b\end{vmatrix}=\begin{vmatrix}a+b+c&amp;a+b+c&amp;a+b+c\\b&amp;c&amp;a\\c&amp;a&amp;b\end{vmatrix}=(a+b+c)\begin{vmatrix}1&amp;1&amp;1\\b&amp;c&amp;a\\c&amp;a&amp;b\end{vmatrix}=0.$$
+方法二　方程为 $x^3-2x+4=(x+2)(x^2-2x+2)=0$. 因 $a,b,c$ 是方程 $x^3-2x+4=0$ 的三个根，不妨设 $a=-2$，则 $b,c$ 应满足 $x^2-2x+2=0$，由二次方程根与方程系数的关系，得 $b+c=-(-2)=2$，因此有 $a+b+c=0$. 于是
+$$\begin{vmatrix}a&amp;b&amp;c\\b&amp;c&amp;a\\c&amp;a&amp;b\end{vmatrix}=\begin{vmatrix}a+b+c&amp;a+b+c&amp;a+b+c\\b&amp;c&amp;a\\c&amp;a&amp;b\end{vmatrix}=(a+b+c)\begin{vmatrix}1&amp;1&amp;1\\b&amp;c&amp;a\\c&amp;a&amp;b\end{vmatrix}=0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="20" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">行列式 $\begin{vmatrix} x &amp; 1 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; x &amp; 1 \\ 1 &amp; x &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 1 &amp; x \end{vmatrix}$ 展开式中的常数项为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">4</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">0</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一
+$$\begin{vmatrix}x&amp;1&amp;0&amp;1\\0&amp;1&amp;x&amp;1\\1&amp;x&amp;1&amp;0\\1&amp;0&amp;1&amp;x\end{vmatrix}=\begin{vmatrix}x&amp;1&amp;0&amp;1\\0&amp;1&amp;x&amp;1\\0&amp;x&amp;0&amp;-x\\1&amp;0&amp;1&amp;x\end{vmatrix}\xlongequal{\text{按第 }1\text{ 列展开}}x\begin{vmatrix}* &amp; * &amp; *\\* &amp; * &amp; *\\* &amp; * &amp; *\end{vmatrix}-\begin{vmatrix}1&amp;0&amp;1\\1&amp;x&amp;1\\x&amp;0&amp;-x\end{vmatrix},$$
+上式中，
+$$x\begin{vmatrix}* &amp; * &amp; *\\* &amp; * &amp; *\\* &amp; * &amp; *\end{vmatrix}$$
+展开后每一项均含 $x$，且
+$$\begin{vmatrix}1&amp;0&amp;1\\1&amp;x&amp;1\\x&amp;0&amp;-x\end{vmatrix}=x\begin{vmatrix}1&amp;0&amp;1\\1&amp;x&amp;1\\1&amp;0&amp;-1\end{vmatrix}$$
+展开后每一项也含 $x$，因此
+$$\begin{vmatrix}x&amp;1&amp;0&amp;1\\0&amp;1&amp;x&amp;1\\1&amp;x&amp;1&amp;0\\1&amp;0&amp;1&amp;x\end{vmatrix}$$
+的常数项是 $0$.
+方法二　此行列式展开后为关于 $x$ 的多项式，其常数项对应于取 $x=0$ 时多项式的值，因此
+$$\begin{vmatrix}x&amp;1&amp;0&amp;1\\0&amp;1&amp;x&amp;1\\1&amp;x&amp;1&amp;0\\1&amp;0&amp;1&amp;x\end{vmatrix}$$
+的常数项是它取 $x=0$ 时的值，即
+$$\begin{vmatrix}0&amp;1&amp;0&amp;1\\0&amp;1&amp;0&amp;1\\1&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0\end{vmatrix},$$
+此行列式的第一行与第二行相同，故其值为 $0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="20" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">多项式 $f(x)=\begin{vmatrix} x &amp; -1 &amp; 2x &amp; -x \\ 2 &amp; x &amp; 2 &amp; 1 \\ 2 &amp; 0 &amp; -x &amp; -1 \\ -1 &amp; 2 &amp; 1 &amp; x \end{vmatrix}$ 的常数项为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">4</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">6</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">8</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">要求多项式的常数项，只需令 $x=0$ 求行列式的值即可，故
+$$f(0)=\begin{vmatrix}0&amp;-1&amp;0&amp;0\\2&amp;0&amp;2&amp;1\\2&amp;0&amp;0&amp;-1\\-1&amp;2&amp;1&amp;0\end{vmatrix}=\begin{vmatrix}2&amp;2&amp;1\\2&amp;0&amp;-1\\-1&amp;1&amp;0\end{vmatrix}=6.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="20" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">不恒为零的函数 $f(x)=\begin{vmatrix} a_1+x &amp; b_1+x &amp; c_1+x \\ a_2+x &amp; b_2+x &amp; c_2+x \\ a_3+x &amp; b_3+x &amp; c_3+x \end{vmatrix}$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">没有零点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">至多有 1 个零点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">恰有 2 个零点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">恰有 3 个零点</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">在
+$$f(x)=\begin{vmatrix}a_1+x&amp;b_1+x&amp;c_1+x\\a_2+x&amp;b_2+x&amp;c_2+x\\a_3+x&amp;b_3+x&amp;c_3+x\end{vmatrix}$$
+中，将第 1 列乘 $-1$ 分别加到第 2, 3 列上得
+$$f(x)=\begin{vmatrix}a_1+x&amp;b_1+x&amp;c_1+x\\a_2+x&amp;b_2+x&amp;c_2+x\\a_3+x&amp;b_3+x&amp;c_3+x\end{vmatrix}=\begin{vmatrix}a_1+x&amp;b_1-a_1&amp;c_1-a_1\\a_2+x&amp;b_2-a_2&amp;c_2-a_2\\a_3+x&amp;b_3-a_3&amp;c_3-a_3\end{vmatrix}$$
+$$=\begin{vmatrix}a_1&amp;b_1-a_1&amp;c_1-a_1\\a_2&amp;b_2-a_2&amp;c_2-a_2\\a_3&amp;b_3-a_3&amp;c_3-a_3\end{vmatrix}+x\begin{vmatrix}1&amp;b_1-a_1&amp;c_1-a_1\\1&amp;b_2-a_2&amp;c_2-a_2\\1&amp;b_3-a_3&amp;c_3-a_3\end{vmatrix}.$$
+当
+$$\begin{vmatrix}1&amp;b_1-a_1&amp;c_1-a_1\\1&amp;b_2-a_2&amp;c_2-a_2\\1&amp;b_3-a_3&amp;c_3-a_3\end{vmatrix}=0$$
+时，$f(x)$ 是常数，它没有零点；
+当
+$$\begin{vmatrix}1&amp;b_1-a_1&amp;c_1-a_1\\1&amp;b_2-a_2&amp;c_2-a_2\\1&amp;b_3-a_3&amp;c_3-a_3\end{vmatrix}\neq 0$$
+时，$f(x)$ 是 $x$ 的一次多项式，它只有一个零点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="20" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $f(x)=\begin{vmatrix} 3x+1 &amp; x+11 &amp; x-2 \\ x+1 &amp; x+4 &amp; -1 \\ x &amp; 7 &amp; x-1 \end{vmatrix}$，则 $f(x)$ 的拐点为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(1,7)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(-1,-1)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(0,0)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(-2,-2)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f(x)\xlongequal{r_3-r_2-r_1}\begin{vmatrix}x&amp;0&amp;0\\x+1&amp;x+4&amp;-1\\x&amp;7&amp;x-1\end{vmatrix}=x\begin{vmatrix}x+4&amp;-1\\7&amp;x-1\end{vmatrix}$$
+$$=x(x^2+3x+3)=x^3+3x^2+3x,$$
+$$f'(x)=3x^2+6x+3=3(x+1)^2.$$
+又 $f''(x)=6x+6$，$f''(-1)=0$，$f'''(x)=6\neq 0$. 所以 $f(x)$ 的拐点为 $(-1,-1)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="20" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $D=\begin{vmatrix} 1 &amp; -3 &amp; 1 &amp; -2 \\ 2 &amp; -5 &amp; -2 &amp; -2 \\ 0 &amp; -4 &amp; 5 &amp; 1 \\ -3 &amp; 9 &amp; -6 &amp; 7 \end{vmatrix}$，$M_{3j}$ 表示 $D$ 中第 3 行第 $j$ 列元素的余子式（$j=1,2,3,4$），则 $M_{31}+3M_{32}-2M_{33}+2M_{34}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $A_{3j}$ 表示 $D$ 中第 3 行第 $j$ 列元素的代数余子式，则 $A_{3j}=(-1)^{3+j}M_{3j}\,(j=1,2,3,4)$. 对 $D$ 的第 1 行元素利用代数余子式的性质，得
+$$A_{31}-3A_{32}+A_{33}-2A_{34}=0,$$
+即
+$$M_{31}+3M_{32}+M_{33}+2M_{34}=0,$$
+所以
+$$M_{31}+3M_{32}-2M_{33}+2M_{34}=-3M_{33}=-3\begin{vmatrix}1&amp;-3&amp;-2\\2&amp;-5&amp;-2\\-3&amp;9&amp;7\end{vmatrix}=-3.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="20" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\begin{vmatrix} 2 &amp; 1 &amp; 0 &amp; -1 \\ -1 &amp; 2 &amp; -5 &amp; 3 \\ 3 &amp; 0 &amp; a &amp; b \\ 1 &amp; -3 &amp; 5 &amp; 0 \end{vmatrix}-\begin{vmatrix} 2 &amp; 1 &amp; 0 &amp; -1 \\ -1 &amp; 2 &amp; -5 &amp; 3 \\ 3 &amp; 0 &amp; a &amp; b \\ 1 &amp; -1 &amp; 1 &amp; 0 \end{vmatrix}=\underline{\quad\quad}.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\begin{vmatrix}2&amp;1&amp;0&amp;-1\\-1&amp;2&amp;-5&amp;3\\3&amp;0&amp;a&amp;b\\1&amp;-3&amp;5&amp;0\end{vmatrix}-\begin{vmatrix}2&amp;1&amp;0&amp;-1\\-1&amp;2&amp;-5&amp;3\\3&amp;0&amp;a&amp;b\\1&amp;-1&amp;1&amp;0\end{vmatrix}=\begin{vmatrix}2&amp;1&amp;0&amp;-1\\-1&amp;2&amp;-5&amp;3\\3&amp;0&amp;a&amp;b\\0&amp;-2&amp;4&amp;0\end{vmatrix}$$
+$$=\begin{vmatrix}0&amp;0&amp;0&amp;-1\\5&amp;5&amp;-5&amp;3\\3+2b&amp;b&amp;a&amp;b\\0&amp;-2&amp;4&amp;0\end{vmatrix}=(-1)\cdot(-1)^{1+4}\begin{vmatrix}5&amp;5&amp;-5\\3+2b&amp;b&amp;a\\0&amp;-2&amp;4\end{vmatrix}$$
+$$=5\begin{vmatrix}1&amp;1&amp;-1\\3+2b&amp;b&amp;a\\0&amp;-2&amp;4\end{vmatrix}=5\begin{vmatrix}1&amp;1&amp;1\\3+2b&amp;b&amp;a+2b\\0&amp;-2&amp;0\end{vmatrix}$$
+$$=10(a-3).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">10(a-3)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="20" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设行列式 $D=\begin{vmatrix} 2 &amp; 0 &amp; -1 &amp; 1 \\ 3 &amp; 1 &amp; 0 &amp; 1 \\ 4 &amp; 1 &amp; 1 &amp; 0 \\ 5 &amp; -1 &amp; 0 &amp; a \end{vmatrix}$，$A_{ij}$ 表示元素 $a_{ij}$（$i,j=1,2,3,4$）的代数余子式. 若 $A_{11}-A_{21}+A_{41}=4$，则 $a=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由行列式的展开定理，得
+$$A_{11}-A_{21}+A_{41}=\begin{vmatrix}1&amp;0&amp;-1&amp;1\\-1&amp;1&amp;0&amp;1\\0&amp;1&amp;1&amp;0\\1&amp;-1&amp;0&amp;a\end{vmatrix}=\begin{vmatrix}1&amp;0&amp;-1&amp;1\\0&amp;1&amp;-1&amp;2\\0&amp;1&amp;1&amp;0\\0&amp;-1&amp;1&amp;a-1\end{vmatrix}$$
+$$=\begin{vmatrix}1&amp;-1&amp;2\\1&amp;1&amp;0\\-1&amp;1&amp;a-1\end{vmatrix}=2a+2,$$
+又 $A_{11}-A_{21}+A_{41}=4$，故 $a=1$.
+【注】本题也可以直接用代数余子式的定义进行计算. 注意行列式 $\begin{vmatrix}1&amp;0&amp;-1&amp;1\\-1&amp;1&amp;0&amp;1\\0&amp;1&amp;1&amp;0\\1&amp;-1&amp;0&amp;a\end{vmatrix}$ 与行列式 $\begin{vmatrix}2&amp;0&amp;-1&amp;1\\3&amp;1&amp;0&amp;1\\4&amp;1&amp;1&amp;0\\5&amp;-1&amp;0&amp;a\end{vmatrix}$ 第 1 列元素的代数余子式相同.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="20" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x\neq 0$，则 $D_4=\begin{vmatrix} x &amp; x &amp; 0 &amp; 0 \\ 1 &amp; 1+2x &amp; 2x &amp; 0 \\ 0 &amp; 2 &amp; 2+3x &amp; 3x \\ 0 &amp; 0 &amp; 3 &amp; 3+4x \end{vmatrix}=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　利用行列式性质，则
+$$D_4=x\begin{vmatrix}1&amp;1&amp;0&amp;0\\1&amp;1+2x&amp;2x&amp;0\\0&amp;2&amp;2+3x&amp;3x\\0&amp;0&amp;3&amp;3+4x\end{vmatrix}=x\begin{vmatrix}1&amp;1&amp;0&amp;0\\0&amp;2x&amp;2x&amp;0\\0&amp;2&amp;2+3x&amp;3x\\0&amp;0&amp;3&amp;3+4x\end{vmatrix}$$
+$$=x\cdot 2x\begin{vmatrix}1&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;2&amp;2+3x&amp;3x\\0&amp;0&amp;3&amp;3+4x\end{vmatrix}=x\cdot 2x\begin{vmatrix}1&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;3x&amp;3x\\0&amp;0&amp;3&amp;3+4x\end{vmatrix}$$
+$$=x\cdot 2x\cdot 3x\begin{vmatrix}1&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0\\0&amp;0&amp;1&amp;1\\0&amp;0&amp;0&amp;4x\end{vmatrix}=x\cdot 2x\cdot 3x\cdot 4x=24x^4.$$
+方法二
+$$D_4=(3+4x)D_3-9xD_2=(3+4x)\left[(2+3x)D_2-4xD_1\right]-9xD_2.$$
+又 $D_1=x$，$D_2=\begin{vmatrix}x&amp;x\\1&amp;1+2x\end{vmatrix}=2x^2$，故
+$$D_4=(3+4x)\left[(2+3x)\cdot 2x^2-4x^2\right]-9x\cdot 2x^2=(3+4x)\cdot 6x^3-18x^3=24x^4.$$
+【注】① $D_n=\begin{vmatrix}a_1&amp;b_1&amp;&amp;&amp;\\c_2&amp;a_2&amp;b_2&amp;&amp;\\&amp;c_3&amp;a_3&amp;b_3&amp;\\&amp;&amp;\ddots&amp;\ddots&amp;\ddots\\&amp;&amp;&amp;c_{n-1}&amp;a_{n-1}&amp;b_{n-1}\\&amp;&amp;&amp;&amp;c_n&amp;a_n\end{vmatrix}=a_nD_{n-1}-b_{n-1}c_nD_{n-2}$，
+这可以作为递推的开端，往下就方便多了.
+② 注意 $D_n$ 元素分布规律为“左上至右下”阶数增加，即 $D_1=a_1$，$D_2=\begin{vmatrix}a_1&amp;b_1\\c_2&amp;a_2\end{vmatrix}$，$D_3=\begin{vmatrix}a_1&amp;b_1&amp;0\\c_2&amp;a_2&amp;b_2\\0&amp;c_3&amp;a_3\end{vmatrix}$，……，别弄反了.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">24x^4</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="20" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 3 阶矩阵，$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 是 3 维线性无关列向量，且满足 $\boldsymbol{A}\boldsymbol{\alpha}_1=\boldsymbol{\alpha}_1+2\boldsymbol{\alpha}_2+\boldsymbol{\alpha}_3$，$\boldsymbol{A}\boldsymbol{\alpha}_2=2\boldsymbol{\alpha}_1+\boldsymbol{\alpha}_2+\boldsymbol{\alpha}_3$，$\boldsymbol{A}\boldsymbol{\alpha}_3=\boldsymbol{\alpha}_1+\boldsymbol{\alpha}_2+2\boldsymbol{\alpha}_3$，则 $|\boldsymbol{A}|=\underline{\quad\quad}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设条件 $A\alpha_1=\alpha_1+2\alpha_2+\alpha_3$，$A\alpha_2=2\alpha_1+\alpha_2+\alpha_3$，$A\alpha_3=\alpha_1+\alpha_2+2\alpha_3$，故
+$$A[\alpha_1,\alpha_2,\alpha_3]=[\alpha_1+2\alpha_2+\alpha_3,\,2\alpha_1+\alpha_2+\alpha_3,\,\alpha_1+\alpha_2+2\alpha_3]=[\alpha_1,\alpha_2,\alpha_3]\begin{bmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{bmatrix}.$$
+方法一　两边取行列式，得
+$$\left|A[\alpha_1,\alpha_2,\alpha_3]\right|=\left|A\right|\left|[\alpha_1,\alpha_2,\alpha_3]\right|=\left|[\alpha_1,\alpha_2,\alpha_3]\begin{bmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{bmatrix}\right|=\left|[\alpha_1,\alpha_2,\alpha_3]\right|\begin{vmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{vmatrix},$$
+因为 $\alpha_1,\alpha_2,\alpha_3$ 线性无关，所以 $\left|[\alpha_1,\alpha_2,\alpha_3]\right|\neq 0$，可得
+$$\left|A\right|=\begin{vmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{vmatrix}=-4.$$
+方法二　因为 $\alpha_1,\alpha_2,\alpha_3$ 线性无关，记 $P=[\alpha_1,\alpha_2,\alpha_3]$，则 $P$ 是可逆矩阵，从而可得
+$$AP=P\begin{bmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{bmatrix},\text{ 即 }P^{-1}AP=\begin{bmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{bmatrix},$$
+又因为相似矩阵有相同的行列式，所以
+$$\left|A\right|=\begin{vmatrix}1&amp;2&amp;1\\2&amp;1&amp;1\\1&amp;1&amp;2\end{vmatrix}=-4.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-4</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-19.html">上一章：第18章 多元函数积分学</a>
+      <a class="chapter-link" href="chapter-21.html">下一章：第2章 矩阵</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 20, "total": 10, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

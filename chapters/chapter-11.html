@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第10章 一元函数积分学的应用(一)——几何应用 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第10章 一元函数积分学的应用(一)——几何应用<span class="top-count">（20题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\frac{1}{x^{2}+4x+5}$ 在区间 $(0,+\infty)$ 上与 $x$ 轴所围成图形的面积为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\int_{0}^{+\infty}\frac{\mathrm{d}x}{x^{2}+4x+5}=\int_{0}^{+\infty}\frac{\mathrm{d}x}{(x+2)^{2}+1}=\arctan(x+2)\Big|_{0}^{+\infty}=\frac{\pi}{2}-\arctan 2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{\pi}{2}-\arctan 2$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\frac{\ln x}{\sqrt{x}}$ 在 $[1,\mathrm{e}^{2}]$ 上与 $x$ 轴所围图形的面积是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为在 $[1,\mathrm{e}^{2}]$ 上 $y=\frac{\ln x}{\sqrt{x}}\geqslant 0$ 恒成立，所以所求面积为
+$$\int_{1}^{\mathrm{e}^{2}}\frac{\ln x}{\sqrt{x}}\mathrm{d}x=\int_{1}^{\mathrm{e}^{2}}\ln x\,\mathrm{d}(2\sqrt{x})=2\sqrt{x}\cdot\ln x\Big|_{1}^{\mathrm{e}^{2}}-\int_{1}^{\mathrm{e}^{2}}2\sqrt{x}\cdot\frac{1}{x}\mathrm{d}x$$
+$$=4\mathrm{e}-2\int_{1}^{\mathrm{e}^{2}}\frac{1}{\sqrt{x}}\mathrm{d}x=4\mathrm{e}-2\cdot 2\sqrt{x}\Big|_{1}^{\mathrm{e}^{2}}$$
+$$=4\mathrm{e}-(4\mathrm{e}-4)=4.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">4</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="11" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">如图所示，抛物线 $y=(\sqrt{2}-1)x^{2}$ 把 $y=x(b-x)(b&gt;0)$ 与 $x$ 轴所围成的闭区域分为面积为 $S_{A}$ 与 $S_{B}$ 的两部分，则（　）.【图】第一象限内，抛物线 $y=x(b-x)$ 开口向下与 $x$ 轴交于原点 $O$ 和 $b$，抛物线 $y=(\sqrt{2}-1)x^{2}$ 开口向上，两曲线相交，阴影部分 $S_{A}$ 为两曲线间靠上区域、$S_{B}$ 为下方与 $x$ 轴间区域<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$S_{A}&lt;S_{B}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$S_{A}=S_{B}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$S_{A}&gt;S_{B}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$S_{A}$ 与 $S_{B}$ 大小关系与 $b$ 的数值有关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">先求两条曲线的交点横坐标. 由
+$$\begin{cases}y=x(b-x),\\y=(\sqrt{2}-1)x^{2}\end{cases}$$
+得 $x=0$ 或 $x=\frac{b}{\sqrt{2}}$. 因此
+$$S_{A}=\int_{0}^{\frac{b}{\sqrt{2}}}\left[x(b-x)-(\sqrt{2}-1)x^{2}\right]\mathrm{d}x=\int_{0}^{\frac{b}{\sqrt{2}}}(bx-\sqrt{2}x^{2})\,\mathrm{d}x$$
+$$=\frac{b}{2}x^{2}\Big|_{0}^{\frac{b}{\sqrt{2}}}-\frac{\sqrt{2}}{3}x^{3}\Big|_{0}^{\frac{b}{\sqrt{2}}}=\frac{b^{3}}{4}-\frac{b^{3}}{6}=\frac{b^{3}}{12},$$
+$$S_{A}+S_{B}=\int_{0}^{b}x(b-x)\,\mathrm{d}x=\frac{b^{3}}{2}-\frac{b^{3}}{3}=\frac{b^{3}}{6},$$
+所以 $S_{B}=\frac{b^{3}}{6}-\frac{b^{3}}{12}=\frac{b^{3}}{12}=S_{A}$.
+故正确选项为 (B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="11" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">过点 $(p,\sin p)$ 作曲线 $y=\sin x$ 的切线（见图），设该曲线与切线及 $y$ 轴所围成图形的面积为 $S_{1}$，曲线与直线 $x=p$ 及 $x$ 轴所围成图形的面积为 $S_{2}$，则（　）.【图】正弦曲线一拱，在点 $(p,\sin p)$ 处作切线，$S_{1}$ 为切线与曲线及 $y$ 轴间区域，$S_{2}$ 为曲线与直线 $x=p$ 及 $x$ 轴间区域，$O$ 为原点<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\lim\limits_{p\to 0^{+}}\dfrac{S_{2}}{S_{1}+S_{2}}=\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim\limits_{p\to 0^{+}}\dfrac{S_{2}}{S_{1}+S_{2}}=\dfrac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\lim\limits_{p\to 0^{+}}\dfrac{S_{2}}{S_{1}+S_{2}}=\dfrac{2}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim\limits_{p\to 0^{+}}\dfrac{S_{2}}{S_{1}+S_{2}}=1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">过点 $(p,\sin p)$ 的切线方程为
+$$y=(x-p)\cos p+\sin p.$$
+令 $x=0$，得 $y=-p\cos p+\sin p$. 因为 $S_{2}=\int_{0}^{p}\sin x\,\mathrm{d}x=1-\cos p$，而 $S_{1}+S_{2}$ 代表一个直角梯形的面积，即
+$$S_{1}+S_{2}=\frac{1}{2}\left[\sin p+(-p\cos p+\sin p)\right]p=-\frac{p^{2}}{2}\cos p+p\sin p,$$
+所以
+$$\lim_{p\to 0^{+}}\frac{S_{2}}{S_{1}+S_{2}}=\lim_{p\to 0^{+}}\frac{1-\cos p}{-\frac{p^{2}}{2}\cos p+p\sin p}$$
+$$\xlongequal{\text{洛必达法则}}\lim_{p\to 0^{+}}\frac{\sin p}{-p\cos p+\frac{p^{2}}{2}\sin p+\sin p+p\cos p}$$
+$$=\lim_{p\to 0^{+}}\frac{\sin p}{\frac{p^{2}}{2}\sin p+\sin p}=\lim_{p\to 0^{+}}\frac{1}{\frac{p^{2}}{2}+1}=1.$$
+故正确选项为 (D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 具有二阶连续导数，若曲线 $y_{1}=f(x)$ 过点 $(0,0)$，且与曲线 $y_{2}=a^{x}(a&gt;1)$ 在点 $(1,a)$ 处相切，$\int_{0}^{1}xf''(x)\mathrm{d}x=2\ln 2-2$，则 $a=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知 $f(0)=0$，当 $x=1$ 时，
+$$f(1)=y_{1}(1)=a,$$
+$$f'(1)=y_{1}'(1)=y_{2}'(1)=(a^{x})'\Big|_{x=1}=a\ln a.$$
+又
+$$\int_{0}^{1}xf''(x)\,\mathrm{d}x=xf'(x)\Big|_{0}^{1}-\int_{0}^{1}f'(x)\,\mathrm{d}x=f'(1)-f(1)=2\ln 2-2,$$
+所以 $f'(1)-f(1)=a\ln a-a=2\ln 2-2$，显然 $a=2$ 时等式成立.
+令 $g(x)=x\ln x-x-2\ln 2+2$，则 $g'(x)=\ln x&gt;0\,(x&gt;1)$，故 $g(x)$ 在 $(1,+\infty)$ 上最多有一个零点，故 $a=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面区域 $D$ 由曲线段 $y=\sin \pi x(0\leqslant x\leqslant 1)$ 与 $x$ 轴围成，则 $D$ 绕 $y$ 轴旋转一周所成旋转体的体积为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知，平面区域 $D$ 绕 $y$ 轴旋转一周所成旋转体的体积为
+$$V=2\pi\int_{0}^{1}x\sin \pi x\,\mathrm{d}x=-2\int_{0}^{1}x\,\mathrm{d}(\cos \pi x)$$
+$$=-2\left(x\cos \pi x\Big|_{0}^{1}-\int_{0}^{1}\cos \pi x\,\mathrm{d}x\right)$$
+$$=-2\left(-1-\frac{1}{\pi}\sin \pi x\Big|_{0}^{1}\right)$$
+$$=2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x)=x\int_{1}^{x}\dfrac{\mathrm{e}^{t^{2}}}{t}\mathrm{d}t$，则 $f(x)$ 在 $(0,1)$ 上的平均值为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】本题利用变限函数给出 $f(x)$，要求考生计算定积分 $\int_{0}^{1}f(x)\,\mathrm{d}x$，以此考查考生对变限函数的熟练掌握程度. 同时，由于 $f(x)$ 是一个初等函数与一个变限函数的乘积，需要考生将其整合后再利用分部积分法才能解决问题，考生也可将其转化成一个二重积分，交换积分次序后计算得到答案，这对考生综合利用数学知识、灵活处理数学问题的能力进行了全面的考查.
+【解析】方法一　$\overline{f}=\frac{1}{1-0}\int_{0}^{1}f(x)\,\mathrm{d}x=\int_{0}^{1}\left(x\int_{1}^{x}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t\right)\mathrm{d}x=\frac{1}{2}\int_{0}^{1}\left(\int_{1}^{x}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t\right)\mathrm{d}(x^{2})$
+$$=\frac{1}{2}\left[x^{2}\int_{1}^{x}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t\Big|_{0}^{1}-\int_{0}^{1}x^{2}\,\mathrm{d}\left(\int_{1}^{x}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t\right)\right]$$
+$$=-\frac{1}{2}\int_{0}^{1}x^{2}\cdot\frac{\mathrm{e}^{x^{2}}}{x}\,\mathrm{d}x=-\frac{1}{4}\mathrm{e}^{x^{2}}\Big|_{0}^{1}$$
+$$=-\frac{1}{4}(\mathrm{e}-1).$$
+方法二（此方法学完二重积分再看）
+$$\overline{f}=\frac{1}{1-0}\int_{0}^{1}f(x)\,\mathrm{d}x=\int_{0}^{1}\left(x\int_{1}^{x}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t\right)\mathrm{d}x=-\int_{0}^{1}x\,\mathrm{d}x\int_{x}^{1}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t$$
+$$=-\int_{0}^{1}\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t\int_{0}^{t}x\,\mathrm{d}x=-\frac{1}{2}\int_{0}^{1}t^{2}\cdot\frac{\mathrm{e}^{t^{2}}}{t}\,\mathrm{d}t$$
+$$=-\frac{1}{4}\mathrm{e}^{t^{2}}\Big|_{0}^{1}=-\frac{1}{4}(\mathrm{e}-1).$$
+【注】函数 $y=f(x)$ 在区间 $[a,b]$ 上的平均值是指 $\frac{1}{b-a}\int_{a}^{b}f(x)\,\mathrm{d}x$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\frac{1}{4}(\mathrm{e}-1)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="11" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知曲线 $L:y=\mathrm{e}^{-x}(x\geqslant 0)$，设 $P$ 是 $L$ 上的动点，$V$ 是 $L$ 上从点 $A(0,1)$ 到点 $P$ 的一段弧绕 $x$ 轴旋转一周所得的旋转体体积，当 $P$ 运动到点 $\left(1,\dfrac{1}{\mathrm{e}}\right)$ 时，沿 $x$ 轴正向的速度为 1，求此时 $V$ 关于时间 $t$ 的变化率.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $P(m,\mathrm{e}^{-m})$，$m\geqslant 0$，旋转体图像如图所示，则
+【图】平面直角坐标系中，曲线从 $y$ 轴上点 $A(0,1)$ 向右单调下降趋近 $x$ 轴，标注点 $P(m,\mathrm{e}^{-m})$，曲线下区域绕 $x$ 轴旋转成旋转体，图中画出截面圆盘.
+$$V=\int_{0}^{m}\pi\cdot(\mathrm{e}^{-x})^{2}\,\mathrm{d}x=-\frac{\pi}{2}\int_{0}^{m}\mathrm{e}^{-2x}\,\mathrm{d}(-2x)$$
+$$=-\frac{\pi}{2}\mathrm{e}^{-2x}\Big|_{0}^{m}=\frac{\pi}{2}(1-\mathrm{e}^{-2m}),$$
+$$\frac{\mathrm{d}V}{\mathrm{d}t}=\frac{\mathrm{d}V}{\mathrm{d}m}\cdot\frac{\mathrm{d}m}{\mathrm{d}t}=-\frac{\pi}{2}\mathrm{e}^{-2m}\cdot(-2)\cdot\frac{\mathrm{d}m}{\mathrm{d}t}$$
+$$=\pi\mathrm{e}^{-2m}\cdot\frac{\mathrm{d}m}{\mathrm{d}t},$$
+当 $m=1$ 时，$\frac{\mathrm{d}m}{\mathrm{d}t}=1$，故 $\frac{\mathrm{d}V}{\mathrm{d}t}\Big|_{m=1}=\frac{\pi}{\mathrm{e}^{2}}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\ln\sin x\left(\dfrac{\pi}{6}\leqslant x\leqslant\dfrac{\pi}{3}\right)$ 的弧长为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $y'=\cot x$，因此根据弧长公式，曲线 $y=\ln\sin x\left(\frac{\pi}{6}\leqslant x\leqslant\frac{\pi}{3}\right)$ 的弧长为
+$$s=\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\sqrt{1+(y')^{2}}\,\mathrm{d}x=\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\sqrt{1+\cot^{2}x}\,\mathrm{d}x=\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\csc x\,\mathrm{d}x$$
+$$=\left.\ln\left|\csc x-\cot x\right|\right|_{\frac{\pi}{6}}^{\frac{\pi}{3}}=\ln\frac{2\sqrt{3}+3}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\ln\frac{2\sqrt{3}+3}{3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $r=\mathrm{e}^{\theta}$ 从 $\theta=0$ 到 $\theta=1$ 的弧长为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$s=\int_{0}^{1}\sqrt{\left[(\mathrm{e}^{\theta})'\right]^{2}+(\mathrm{e}^{\theta})^{2}}\,\mathrm{d}\theta=\sqrt{2}\int_{0}^{1}\mathrm{e}^{\theta}\,\mathrm{d}\theta=\sqrt{2}(\mathrm{e}-1).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\sqrt{2}(\mathrm{e}-1)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $y=y(x)$ 由方程 $y^{4}-6xy+3=0\ (1\leqslant y\leqslant 2)$ 所确定，则曲线 $y=y(x)$ 从点 $\left(\dfrac{2}{3},1\right)$ 到点 $\left(\dfrac{19}{12},2\right)$ 的长度为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $y^{4}-6xy+3=0$ 可得 $x=\frac{1}{6}y^{3}+\frac{1}{2y}$，故曲线 $y=y(x)$ 从点 $\left(\frac{2}{3},1\right)$ 到点 $\left(\frac{19}{12},2\right)$ 的长度为
+$$\int_{\frac{2}{3}}^{\frac{19}{12}}\sqrt{1+\left[y'(x)\right]^{2}}\,\mathrm{d}x\xlongequal[x=\frac{1}{6}y^{3}+\frac{1}{2y}]{\text{换元},\,x=x(y)}\int_{1}^{2}\sqrt{1+\left[x'(y)\right]^{2}}\,\mathrm{d}y=\int_{1}^{2}\sqrt{1+\frac{1}{4}\left(y^{2}-\frac{1}{y^{2}}\right)^{2}}\,\mathrm{d}y$$
+$$=\frac{1}{2}\int_{1}^{2}\sqrt{\left(y^{2}+\frac{1}{y^{2}}\right)^{2}}\,\mathrm{d}y=\frac{1}{2}\int_{1}^{2}\left(y^{2}+\frac{1}{y^{2}}\right)\mathrm{d}y=\frac{17}{12}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{17}{12}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="11" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\mathrm{e}^{x}$ 与其过原点的切线及 $y$ 轴所围图形的面积为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{0}^{1}(\ln y-y\ln y)\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{0}^{1}(\mathrm{e}^{x}-\mathrm{e}x)\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{1}^{\mathrm{e}}(\ln y-y\ln y)\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{1}^{\mathrm{e}}(\mathrm{e}^{x}-x\mathrm{e}^{x})\mathrm{d}x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">先求出曲线 $y=\mathrm{e}^{x}$ 上过原点的切线，设 $(x_{0},\mathrm{e}^{x_{0}})$ 为曲线 $y=\mathrm{e}^{x}$ 上任意一点，则该点处的切线方程为 $y-\mathrm{e}^{x_{0}}=\mathrm{e}^{x_{0}}(x-x_{0})$，因过原点，即 $x=0$，$y=0$，解出 $x_{0}=1$，于是过原点的切线方程为 $y=\mathrm{e}x$，故所求的面积为 $\int_{0}^{1}(\mathrm{e}^{x}-\mathrm{e}x)\,\mathrm{d}x$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=x^{2}\mathrm{e}^{-x}\ (0\leqslant x&lt;+\infty)$ 绕 $x$ 轴旋转一周所得延展到无穷远的旋转体的体积为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由旋转体体积公式，得
+$$V_{x}=\pi\int_{0}^{+\infty}y^{2}\,\mathrm{d}x=\pi\int_{0}^{+\infty}\left(x^{2}\mathrm{e}^{-x}\right)^{2}\mathrm{d}x$$
+$$=\pi\int_{0}^{+\infty}x^{4}\mathrm{e}^{-2x}\,\mathrm{d}x=\frac{\pi}{2^{5}}\int_{0}^{+\infty}(2x)^{4}\mathrm{e}^{-2x}\,\mathrm{d}(2x)$$
+$$=\frac{\pi}{2^{5}}\int_{0}^{+\infty}t^{4}\mathrm{e}^{-t}\,\mathrm{d}t=\frac{\pi}{2^{5}}\Gamma(5)$$
+$$=\frac{\pi}{2^{5}}\cdot 4!=\frac{3}{4}\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{3}{4}\pi$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$f(x)=x\ln x\ (0&lt;x\leqslant 2)$ 绕 $x$ 轴旋转一周所得旋转体的体积为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">如图所示，所求旋转体体积为
+【图】平面直角坐标系中，曲线 $y=x\ln x$ 在区间 $(0,2)$ 内的图形单峰，在 $x=1$ 附近与 $x$ 轴相交，标注点 $1$ 与 $2$，区域绕 $x$ 轴旋转.
+$$V=\int_{0}^{2}\pi(x\ln x)^{2}\,\mathrm{d}x$$
+$$=\pi\int_{0}^{2}x^{2}(\ln x)^{2}\,\mathrm{d}x$$
+$$=\pi\left[\frac{1}{3}x^{3}(\ln x)^{2}\Big|_{0}^{2}-\int_{0}^{2}\frac{2}{3}x^{2}\ln x\,\mathrm{d}x\right]$$
+$$=\pi\left[\frac{8}{3}(\ln 2)^{2}-\frac{2}{3}\left(\frac{1}{3}x^{3}\ln x\Big|_{0}^{2}-\frac{1}{3}\int_{0}^{2}x^{2}\,\mathrm{d}x\right)\right]$$
+$$=\pi\left[\frac{8}{3}(\ln 2)^{2}-\frac{2}{3}\left(\frac{8}{3}\ln 2-\frac{8}{9}\right)\right]$$
+$$=\pi\left[\frac{8}{3}(\ln 2)^{2}-\frac{16\ln 2}{9}+\frac{16}{27}\right].$$
+【注】由于 $\lim_{x\to 0^{+}}x\ln x=0$，故不用考虑 $x=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\pi\left[\frac{8}{3}(\ln 2)^{2}-\frac{16\ln 2}{9}+\frac{16}{27}\right]$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\dfrac{1}{2}x^{2}\ (x\in[0,1])$ 的长度为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\mathrm{d}s=\sqrt{1+(y')^{2}}\,\mathrm{d}x=\sqrt{1+x^{2}}\,\mathrm{d}x$，知曲线 $y=\frac{1}{2}x^{2}\,(x\in[0,1])$ 的长度为
+$$s=\int_{0}^{1}\sqrt{1+x^{2}}\,\mathrm{d}x.$$
+令 $x=\tan t$，则
+$$s=\int_{0}^{1}\sqrt{1+x^{2}}\,\mathrm{d}x=\int_{0}^{\frac{\pi}{4}}\sec t\,\mathrm{d}(\tan t)$$
+$$=\sec t\cdot\tan t\Big|_{0}^{\frac{\pi}{4}}-\int_{0}^{\frac{\pi}{4}}\tan t\cdot\sec t\cdot\tan t\,\mathrm{d}t$$
+$$=\sqrt{2}-\int_{0}^{\frac{\pi}{4}}\sec t\cdot\sec^{2}t\,\mathrm{d}t+\int_{0}^{\frac{\pi}{4}}\sec t\,\mathrm{d}t$$
+$$=\sqrt{2}-\int_{0}^{\frac{\pi}{4}}\sec t\,\mathrm{d}(\tan t)+\int_{0}^{\frac{\pi}{4}}\sec t\,\mathrm{d}t$$
+$$=\sqrt{2}-\int_{0}^{\frac{\pi}{4}}\sec t\,\mathrm{d}(\tan t)+\ln(\sec t+\tan t)\Big|_{0}^{\frac{\pi}{4}}$$
+$$=\sqrt{2}-\int_{0}^{\frac{\pi}{4}}\sec t\,\mathrm{d}(\tan t)+\ln(1+\sqrt{2}),$$
+得 $s=\frac{1}{2}\left[\sqrt{2}+\ln(1+\sqrt{2})\right]$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{2}\left[\sqrt{2}+\ln(1+\sqrt{2})\right]$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="11" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面 $D$ 是由 $y=\ln x,x=1,y=1$ 围成的第一象限的有界区域，记 $D$ 绕 $x$ 轴与绕 $y=1$ 旋转一周所得旋转体的体积分别为 $V_{1},V_{2}$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$V_{1}&gt;\dfrac{\pi}{2}&gt;V_{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$V_{2}&gt;\dfrac{\pi}{2}&gt;V_{1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{\pi}{2}&gt;V_{1}&gt;V_{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{\pi}{2}&gt;V_{2}&gt;V_{1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$V_{1}=\int_{1}^{\mathrm{e}}\pi\left[1-(\ln x)^{2}\right]\mathrm{d}x=\pi\left[(\mathrm{e}-1)-x(\ln x)^{2}\Big|_{1}^{\mathrm{e}}+2\int_{1}^{\mathrm{e}}\ln x\,\mathrm{d}x\right]$$
+$$=\pi\left(-1+2x\ln x\Big|_{1}^{\mathrm{e}}-2\int_{1}^{\mathrm{e}}1\,\mathrm{d}x\right)=\pi,$$
+$$V_{2}=\int_{1}^{\mathrm{e}}\pi(1-\ln x)^{2}\,\mathrm{d}x=\pi\left[(\mathrm{e}-1)+\int_{1}^{\mathrm{e}}(\ln x)^{2}\,\mathrm{d}x-2\int_{1}^{\mathrm{e}}\ln x\,\mathrm{d}x\right]$$
+$$=\pi(2\mathrm{e}-5),$$
+因此 $V_{1}&gt;\frac{\pi}{2}&gt;V_{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=x^{2}$ 从点 $(1,1)$ 到点 $(2,4)$ 的一段弧绕 $y$ 轴旋转一周所得旋转体的侧面积为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$x=\sqrt{y},\frac{\mathrm{d}x}{\mathrm{d}y}=\frac{1}{2\sqrt{y}},$$
+$$S=\int_{1}^{4}2\pi x\sqrt{1+\left(\frac{\mathrm{d}x}{\mathrm{d}y}\right)^{2}}\,\mathrm{d}y=\int_{1}^{4}2\pi\sqrt{y}\,\sqrt{1+\frac{1}{4y}}\,\mathrm{d}y=2\pi\int_{1}^{4}\sqrt{y+\frac{1}{4}}\,\mathrm{d}y$$
+$$=2\pi\cdot\frac{2}{3}\left(y+\frac{1}{4}\right)^{\frac{3}{2}}\Big|_{1}^{4}=\frac{\pi}{6}(17\sqrt{17}-5\sqrt{5}).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{\pi}{6}(17\sqrt{17}-5\sqrt{5})$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="11" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $y=\dfrac{x^{2}}{\sqrt{1-x^{2}}}$ 在区间 $[0,1]$ 的平均值为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">所求的平均值为
+$$\int_{0}^{1}\frac{x^{2}}{\sqrt{1-x^{2}}}\,\mathrm{d}x.$$
+令 $x=\sin\theta$，则
+$$\text{上式}=\int_{0}^{\frac{\pi}{2}}\sin^{2}\theta\,\mathrm{d}\theta=\left(\frac{1}{2}\theta-\frac{1}{4}\sin 2\theta\right)\Big|_{0}^{\frac{\pi}{2}}=\frac{1}{4}\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{4}\pi$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="11" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $P$ 为曲线 $\begin{cases}x=\cos t,\\ y=2\sin ^{2}t,\end{cases} t\in\left[0,\dfrac{\pi}{2}\right]$ 上的一点，该曲线与直线 $OP$ 及 $x$ 轴所围图形的面积为 $S$，求函数 $\dfrac{\mathrm{d}S}{\mathrm{d}t}$ 取得最大值时点 $P$ 的坐标.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】先画出草图，写出面积 $S$ 的表达式，从而得到 $\dfrac{\mathrm{d}S}{\mathrm{d}t}$. 接着求出 $\dfrac{\mathrm{d}S}{\mathrm{d}t}$ 的极值，与区间端点函数值比较，即得 $\dfrac{\mathrm{d}S}{\mathrm{d}t}$ 的最大值，此时最大值点即为所求点.
+【解析】由 $\begin{cases}x=\cos t,\\y=2\sin^{2}t\end{cases}$ 可得 $y=2(1-x^{2})$.
+如图所示，作直线 $PQ$ 垂直 $x$ 轴于点 $Q$，所围图形的面积为
+$$S=S_{1}+S_{2},$$
+直角三角形 $OPQ$ 的面积为
+$$S_{1}=\frac{1}{2}xy=\frac{1}{2}\cos t\cdot 2\sin^{2}t=\cos t\cdot\sin^{2}t,$$
+【图】平面直角坐标系第一象限内，曲线从 $y$ 轴上点 $(0,2)$ 下凸下降到 $x$ 轴上点 $(1,0)$，曲线上标注点 $P(x,y)$，由 $P$ 向 $x$ 轴作垂线，垂足为 $Q$，$S_{1}$ 为 $OP$ 与 $PQ$、$OQ$ 围成的三角形区域，$S_{2}$ 为垂线右侧曲线下方阴影区域.
+由曲线，$x$ 轴与直线 $PQ$ 所围图形的面积为
+$$S_{2}=\int_{\cos t}^{1}y\,\mathrm{d}x=\int_{\cos t}^{1}2(1-x^{2})\,\mathrm{d}x.$$
+故
+$$S=S_{1}+S_{2}=\cos t\cdot\sin^{2}t+\int_{\cos t}^{1}2(1-x^{2})\,\mathrm{d}x,$$
+$$\frac{\mathrm{d}S}{\mathrm{d}t}=2\sin t\cdot\cos^{2}t-\sin^{3}t+2(1-\cos^{2}t)\sin t=2\sin t-\sin^{3}t,$$
+$$\frac{\mathrm{d}^{2}S}{\mathrm{d}t^{2}}=2\cos t-3\sin^{2}t\cdot\cos t=\cos t\,(2-3\sin^{2}t).$$
+令 $\dfrac{\mathrm{d}^{2}S}{\mathrm{d}t^{2}}=0$，可得 $t=\dfrac{\pi}{2}$，或 $t=\arcsin\sqrt{\dfrac{2}{3}}$.
+因 $\dfrac{\mathrm{d}S}{\mathrm{d}t}\Big|_{t=0}=0$，$\dfrac{\mathrm{d}S}{\mathrm{d}t}\Big|_{t=\frac{\pi}{2}}=1$，$\dfrac{\mathrm{d}S}{\mathrm{d}t}\Big|_{t=\arcsin\sqrt{\frac{2}{3}}}=\dfrac{4}{3}\sqrt{\dfrac{2}{3}}&gt;1$，故当 $t=\arcsin\sqrt{\dfrac{2}{3}}$ 时，$\dfrac{\mathrm{d}S}{\mathrm{d}t}$ 取得最大值，此时点 $P$ 的坐标为 $\left(\dfrac{1}{\sqrt{3}},\dfrac{4}{3}\right)$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="11" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求常数 $a\ (a&gt;0)$，使曲线 $y=a(1-x^{2})$ 与其在 $(-1,0)$ 及 $(1,0)$ 两点处的法线所围成图形的面积最小.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】如图所示，由于图形关于 $y$ 轴对称，因此只需求在 $y$ 轴右侧的图形面积的最小值即可。
+【解析】由 $y = a(1 - x^2)$，有 $y' = -2ax$，则过点 $A(1, 0)$ 的曲线的法线的斜率为
+$$k = -\frac{1}{y'}\Big|_{x=1} = \frac{1}{2a},$$
+于是法线方程为 $y = \dfrac{1}{2a}(x - 1)$，则
+$$\frac{1}{2}S = \int_0^1 \left[a(1 - x^2) - \frac{1}{2a}(x - 1)\right]\mathrm{d}x = \frac{2}{3}a + \frac{1}{4a}.$$
+【图】平面直角坐标系中，抛物线 $y=a(1-x^2)$ 开口向下与 $x$ 轴交于 $B(-1,0)$ 和 $A(1,0)$ 两点，抛物线下方与过 $A$、$B$ 的法线围成阴影状区域，原点为 $O$。
+记 $f(a) = \dfrac{2}{3}a + \dfrac{1}{4a}\,(a &gt; 0)$，则
+$$f'(a) = \frac{2}{3} - \frac{1}{4a^2},$$
+令 $f'(a) = 0$，可得 $a = \dfrac{\sqrt{6}}{4}$。
+故当 $a = \dfrac{\sqrt{6}}{4}$ 时，$f(a)$ 为唯一极小值，即最小值，此时曲线方程为 $y = \dfrac{\sqrt{6}}{4}(1 - x^2)$。</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-10.html">上一章：第9章 一元函数积分学的计算</a>
+      <a class="chapter-link" href="chapter-12.html">下一章：第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 11, "total": 20, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

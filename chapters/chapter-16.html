@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第15章 微分方程 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第15章 微分方程<span class="top-count">（21题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="16" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $f'(x)-f(x)=2x\mathrm{e}^{x}$ 的积分曲线没有极值点，但有拐点，则 $f(x)=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\mathrm{e}^{x}(x+C),1\leqslant C&lt;2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}^{x}(x^{2}+C),1\leqslant C&lt;2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\mathrm{e}^{x}(x^{2}+C),0\leqslant C&lt;1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\mathrm{e}^{x}(x+C),0\leqslant C&lt;1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x)=\mathrm{e}^{-\int(-1)\mathrm{d}x}\left[\int 2x\mathrm{e}^{x}\mathrm{e}^{\int(-1)\mathrm{d}x}\mathrm{d}x+C\right]=\mathrm{e}^{x}\left(\int 2x\mathrm{e}^{x}\cdot\mathrm{e}^{-x}\mathrm{d}x+C\right)=\mathrm{e}^{x}(x^{2}+C).$
+$$f'(x)=\mathrm{e}^{x}(x^{2}+2x+C),f''(x)=\mathrm{e}^{x}(x^{2}+4x+2+C).$$
+$f(x)$ 无极值点，说明 $f'(x)$ 不变号，由于 $\mathrm{e}^{x}&gt;0$，则 $x^{2}+2x+C\geqslant 0$，即对应的方程的判别式 $\Delta\leqslant 0$，也即 $4-4C\leqslant 0$，故 $C\geqslant 1$。
+曲线 $f(x)$ 有拐点，说明 $f''(x)$ 要变号，即 $x^{2}+4x+2+C=0$ 有两个不等实根，令其判别式 $\Delta&gt;0$，得 $C&lt;2$。选（B）。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="16" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设一曲线过点 $(\mathrm{e},1)$，且此曲线上任一点 $M(x,y)$ 处的法线斜率为 $\frac{-x\ln x}{x+y\ln x}$，则此曲线方程为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=\frac{x}{\mathrm{e}}+x\ln(\ln x)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=\frac{x}{\mathrm{e}}+\ln(\ln x)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=\frac{x}{\mathrm{e}}+x\ln x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=\mathrm{e}x+x\ln(\ln x)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知，所求过点 $(\mathrm{e},1)$ 的曲线在任一点 $M(x,y)$ 处的切线斜率为
+$$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{x+y\ln x}{x\ln x}=\frac{1}{\ln x}+\frac{y}{x},$$
+即 $\frac{\mathrm{d}y}{\mathrm{d}x}-\frac{1}{x}y=\frac{1}{\ln x}$（一阶线性微分方程），其通解为
+$$y=\mathrm{e}^{\int\frac{1}{x}\mathrm{d}x}\left[\int\mathrm{e}^{\left(-\int\frac{1}{x}\mathrm{d}x\right)}\cdot\frac{1}{\ln x}\mathrm{d}x+C\right]=x[\ln(\ln x)+C].$$
+由 $y\big|_{x=\mathrm{e}}=1$，得 $C=\frac{1}{\mathrm{e}}$，故所求曲线方程为
+$$y=\frac{x}{\mathrm{e}}+x\ln(\ln x).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="16" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">微分方程 $y'\sec^{2}y-\sec^{2}y-1=0$ 的通解是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $\tan^{2}y=\sec^{2}y-1$，所以 $y'\sec^{2}y-\sec^{2}y-1=0$ 可化为
+$$(\tan y)'-\tan^{2}y-2=0.$$ 
+令 $\tan y=u$，则 $\frac{\mathrm{d}u}{\mathrm{d}x}=u^{2}+2$，解得 $\frac{1}{\sqrt{2}}\arctan\frac{u}{\sqrt{2}}=x+C$，即 $\frac{1}{\sqrt{2}}\arctan\frac{\tan y}{\sqrt{2}}=x+C$，其中 $C$ 为任意常数。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{\sqrt{2}}\arctan\frac{\tan y}{\sqrt{2}}=x+C$，其中 $C$ 为任意常数</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求微分方程 $(2x-3xy^{2}-y^{3})y'+y^{3}=0$ 的通解.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】若把 $x$ 看作自变量，方程很难求解，若把 $y$ 看作自变量，$x$ 看作未知函数，就可以化为一阶线性微分方程。
+【解析】整理微分方程可得 $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{-y^{3}}{2x-3xy^{2}-y^{3}}$，取倒数得
+$$\frac{\mathrm{d}x}{\mathrm{d}y}=-\frac{2x-3xy^{2}-y^{3}}{y^{3}},$$
+即
+$$\frac{\mathrm{d}x}{\mathrm{d}y}+\frac{2-3y^{2}}{y^{3}}x=1.$$
+利用通解公式得
+$$x=\mathrm{e}^{-\int\frac{2-3y^{2}}{y^{3}}\mathrm{d}y}\left(\int\mathrm{e}^{\int\frac{2-3y^{2}}{y^{3}}\mathrm{d}y}\mathrm{d}y+C\right)=y^{3}\mathrm{e}^{\frac{1}{y^{2}}}\left(\int\mathrm{e}^{-\frac{1}{y^{2}}}y^{-3}\mathrm{d}y+C\right)$$
+$$=y^{3}\mathrm{e}^{\frac{1}{y^{2}}}\left[\frac{1}{2}\int\mathrm{d}\left(\mathrm{e}^{-\frac{1}{y^{2}}}\right)+C\right]=y^{3}\mathrm{e}^{\frac{1}{y^{2}}}\left(\frac{1}{2}\mathrm{e}^{-\frac{1}{y^{2}}}+C\right)$$
+$$=\frac{1}{2}y^{3}+Cy^{3}\mathrm{e}^{\frac{1}{y^{2}}}(y\neq 0),$$
+其中 $C$ 为任意常数。另外，$y=0$ 也是方程的解。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求微分方程 $(1+y^{2})\mathrm{d}x+(x-\arctan y)\mathrm{d}y=0$ 的通解.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">整理微分方程可得 $\frac{\mathrm{d}x}{\mathrm{d}y}+\frac{1}{1+y^{2}}x=\frac{\arctan y}{1+y^{2}}$，这是以 $y$ 为自变量的一阶线性微分方程，由通解公式，得
+$$x=\mathrm{e}^{-\int\frac{1}{1+y^{2}}\mathrm{d}y}\left(\int\frac{\arctan y}{1+y^{2}}\mathrm{e}^{\int\frac{1}{1+y^{2}}\mathrm{d}y}\mathrm{d}y+C\right)$$
+$$=\mathrm{e}^{-\arctan y}\left(\int\frac{\arctan y}{1+y^{2}}\cdot\mathrm{e}^{\arctan y}\mathrm{d}y+C\right)$$
+$$=\mathrm{e}^{-\arctan y}\left[\int\arctan y\,\mathrm{d}\left(\mathrm{e}^{\arctan y}\right)+C\right]$$
+$$=\mathrm{e}^{-\arctan y}\left[\arctan y\cdot\mathrm{e}^{\arctan y}-\int\mathrm{e}^{\arctan y}\,\mathrm{d}(\arctan y)+C\right]$$
+$$=\arctan y-1+C\mathrm{e}^{-\arctan y},$$
+其中 $C$ 为任意常数。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $y(x)$ 是微分方程 $y'+\frac{1}{x^{2}}y=2\mathrm{e}^{\frac{1}{x}}$ 满足 $y\left(\frac{1}{2}\right)=0$ 的解.
+(1) 求 $y=y(x)$ 的表达式；
+(2) 求曲线 $y(x)$ 的斜渐近线.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）由一阶非齐次线性微分方程的通解公式可得
+$$y=\mathrm{e}^{-\int\frac{1}{x}\mathrm{d}x}\left(\int 2\mathrm{e}^{x}\mathrm{e}^{\int\frac{1}{x}\mathrm{d}x}\mathrm{d}x+C\right)=\mathrm{e}^{\frac{1}{x}}(2x+C),$$ 
+因为 $y\left(\frac{1}{2}\right)=0$，所以 $C=-1$，故 $y=\mathrm{e}^{\frac{1}{x}}(2x-1)$。
+（2）因为
+$$k=\lim_{x\to\infty}\frac{y}{x}=\lim_{x\to\infty}\mathrm{e}^{\frac{1}{x}}\left(2-\frac{1}{x}\right)=2,$$
+$$b=\lim_{x\to\infty}(y-2x)=\lim_{x\to\infty}\left[2x\left(\mathrm{e}^{\frac{1}{x}}-1\right)-\mathrm{e}^{\frac{1}{x}}\right]=\lim_{x\to\infty}\left[\frac{2\left(\mathrm{e}^{\frac{1}{x}}-1\right)}{\frac{1}{x}}-\mathrm{e}^{\frac{1}{x}}\right]=1,$$
+所以曲线 $y(x)$ 的斜渐近线方程为 $y=2x+1$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知微分方程 $\mathrm{e}^{y}=t+\frac{1}{y}$ 满足 $y(0)=0$.
+(1) 求该微分方程的特解 $y=y(t)$；
+(2) 设 $\begin{cases}x=\sqrt{1+t^{2}},\\y=y(t),\end{cases}$ 计算 $\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\bigg|_{t=1}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）由 $\mathrm{e}^{y}=t+\frac{1}{y}$ 得 $\mathrm{e}^{y}-t=\frac{\mathrm{d}t}{\mathrm{d}y}$，即 $t'+t=\mathrm{e}^{y}$，故
+$$t=\mathrm{e}^{-\int\mathrm{d}y}\left(\int\mathrm{e}^{\int\mathrm{d}y}\mathrm{e}^{y}\mathrm{d}y+C\right)=\mathrm{e}^{-y}\left(\int\mathrm{e}^{2y}\mathrm{d}y+C\right)=\frac{\mathrm{e}^{y}}{2}+C\mathrm{e}^{-y}.$$
+又 $y(0)=0$，故 $\frac{1}{2}+C=0$，$C=-\frac{1}{2}$，则 $t=\frac{\mathrm{e}^{y}-\mathrm{e}^{-y}}{2}$，$2t\mathrm{e}^{y}=(\mathrm{e}^{y})^{2}-1$，有 $(\mathrm{e}^{y})^{2}-2t\mathrm{e}^{y}-1=0$，则 $\mathrm{e}^{y}=\frac{2t\pm\sqrt{4t^{2}+4}}{2}=t\pm\sqrt{t^{2}+1}$（含负号），故 $y=\ln(t+\sqrt{1+t^{2}})$。
+（2）
+$$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}=\frac{\frac{1}{\sqrt{1+t^{2}}}}{\frac{1}{2}\cdot\frac{2t}{\sqrt{1+t^{2}}}}=\frac{1}{t},$$
+$$\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}\left(\frac{\mathrm{d}y}{\mathrm{d}x}\right)}{\mathrm{d}x}=\frac{\mathrm{d}\left(\frac{1}{t}\right)\big/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\frac{-\frac{1}{t^{2}}}{\frac{t}{\sqrt{1+t^{2}}}}=-\frac{\sqrt{1+t^{2}}}{t^{3}},$$
+故 $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\Big|_{t=1}=-\sqrt{2}$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设曲线 $L$ 过点 $(1,1)$，$L$ 上任一点 $P(x,y)$ 处的切线交 $x$ 轴于点 $T$，且 $|PT|=|OT|$，求曲线 $L$ 的方程.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】先由题意列出曲线 $L$ 在点 $P$ 处的切线方程，解出切线与 $x$ 轴的交点 $T$ 的坐标，再由 $|PT|=|OT|$，即得曲线 $L$ 的微分方程，解方程得通解，最后由初始条件定出特解，即为所求曲线 $L$ 的方程。
+【解析】设曲线 $L$ 的方程为 $y=y(x)$，则曲线 $L$ 在点 $P(x,y)$ 处的切线方程为
+$$Y-y=y'(X-x),$$
+切线与 $x$ 轴的交点 $T$ 的坐标为 $\left(x-\frac{y}{y'},0\right)(y'\neq 0)$。
+$$\text{故}|PT|=\sqrt{\left(\frac{y}{y'}\right)^{2}+y^{2}}=\left|\frac{y}{y'}\right|\sqrt{1+(y')^{2}},|OT|=\left|x-\frac{y}{y'}\right|,\text{由}|PT|=|OT|,\text{有}$$
+$$\left(\frac{y}{y'}\right)^{2}\left[1+(y')^{2}\right]=\left(x-\frac{y}{y'}\right)^{2},$$
+整理可得 $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{2xy}{x^{2}-y^{2}}$，取倒数得 $\frac{\mathrm{d}x}{\mathrm{d}y}=\frac{x^{2}-y^{2}}{2xy}$。
+令 $x=uy$，则 $\frac{\mathrm{d}x}{\mathrm{d}y}=u+y\frac{\mathrm{d}u}{\mathrm{d}y}$，该方程化为 $-\frac{2u}{u^{2}+1}\mathrm{d}u=\frac{\mathrm{d}y}{y}$，积分可得 $\frac{1}{u^{2}+1}=Cy$，代入 $u=\frac{x}{y}$，可得 $x^{2}+y^{2}=C_{1}y$。
+由初始条件 $x\big|_{y=1}=1$，得 $C_{1}=2$。
+因此，方程为 $x^{2}+y^{2}=2y$，即 $x^{2}+(y-1)^{2}=1$。由于 $y'\neq 0$ 且曲线过点 $(1,1)$，故取右半部分，即曲线 $L$ 的方程为 $x^{2}+(y-1)^{2}=1,x&gt;0$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 有连续导数，$x\in[0,+\infty)$，且满足方程
+$$\int_{0}^{x}(x-1)f(t)\,\mathrm{d}t-\int_{0}^{x}tf(t)\,\mathrm{d}t=x,$$
+求函数 $f(x)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】先将第一项积分变形，再对等式求导两次，化为微分方程后求解。
+【解析】原方程可写为
+$$x\int_{0}^{x}f(t)\,\mathrm{d}t-\int_{0}^{x}f(t)\,\mathrm{d}t-\int_{0}^{x}tf(t)\,\mathrm{d}t=x,$$
+求导并化简，得
+$$\int_{0}^{x}f(t)\,\mathrm{d}t-f(x)=1(\text{隐含}f(0)=-1),$$
+继续求导，可得
+$$f(x)-f'(x)=0,$$
+解得 $f(x)=C\mathrm{e}^{x}$，由于 $f(0)=-1$，因此 $C=-1$，即 $f(x)=-\mathrm{e}^{x}(x\geqslant 0)$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\varphi(x)$ 为连续函数，$|\varphi(x)|\leqslant k$（$k$ 为常数），求微分方程 $\dfrac{\mathrm{d}y}{\mathrm{d}x}+y=\varphi(x)$ 满足初始条件 $y(0)=0$ 的特解 $y(x)$，并证明当 $x\geqslant 0$ 时，有 $|y(x)|\leqslant k(1-\mathrm{e}^{-x})$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】本题可直接利用一阶线性微分方程的通解公式，不过要将通解中的不定积分写成变上限 $x$ 的积分形式。本题采用全微分的方法求解较便捷。
+【解析】原方程的两端同乘 $\mathrm{e}^{x}$，得 $\frac{\mathrm{d}y}{\mathrm{d}x}\mathrm{e}^{x}+y\mathrm{e}^{x}=\varphi(x)\mathrm{e}^{x}$，整理可得
+$$\mathrm{e}^{x}\mathrm{d}y+y\mathrm{e}^{x}\mathrm{d}x=\varphi(x)\mathrm{e}^{x}\mathrm{d}x,$$
+也即 $\mathrm{d}(y\mathrm{e}^{x})=\varphi(x)\mathrm{e}^{x}\mathrm{d}x$，又因 $y(0)=0$，故积分得 $y\mathrm{e}^{x}=\int_{0}^{x}\varphi(t)\mathrm{e}^{t}\mathrm{d}t$，整理得 $y=\mathrm{e}^{-x}\int_{0}^{x}\varphi(t)\mathrm{e}^{t}\mathrm{d}t$。
+当 $x\geqslant 0$ 时，于是
+$$|y(x)|=\left|\mathrm{e}^{-x}\int_{0}^{x}\varphi(t)\mathrm{e}^{t}\,\mathrm{d}t\right|\leqslant \mathrm{e}^{-x}\int_{0}^{x}|\varphi(t)|\mathrm{e}^{t}\mathrm{d}t$$
+$$\leqslant \mathrm{e}^{-x}k\int_{0}^{x}\mathrm{e}^{t}\,\mathrm{d}t=k\mathrm{e}^{-x}\left(\mathrm{e}^{x}-1\right)=k\left(1-\mathrm{e}^{-x}\right),$$
+即当 $x\geqslant 0$ 时，$|y(x)|\leqslant k(1-\mathrm{e}^{-x})$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $y=y(x)$ 是微分方程 $2xy'-4y=2\ln x-1$ 满足条件 $y(1)=\dfrac{1}{4}$ 的解，求曲线 $y=y(x)$ 在 $[1,\mathrm{e}]$ 上的平均值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">整理题干方程，得 $y'-\frac{2}{x}y=\frac{2\ln x-1}{2x}$，由一阶非齐次线性微分方程的通解公式，得
+$$y(x)=\mathrm{e}^{\int\frac{2}{x}\mathrm{d}x}\left(\int\frac{2\ln x-1}{2x}\mathrm{e}^{-\int\frac{2}{x}\mathrm{d}x}\,\mathrm{d}x+C\right)$$
+$$=x^{2}\left(\int\frac{2\ln x-1}{2x^{3}}\,\mathrm{d}x+C\right)=-\frac{1}{2}\ln x+Cx^{2},$$
+代入 $y(1)=\frac{1}{4}$，得 $C=\frac{1}{4}$，所以 $y=-\frac{1}{2}\ln x+\frac{1}{4}x^{2}$。
+由 $\int_{1}^{\mathrm{e}}y(x)\,\mathrm{d}x=\int_{1}^{\mathrm{e}}\left(-\frac{1}{2}\ln x+\frac{1}{4}x^{2}\right)\mathrm{d}x=\frac{\mathrm{e}^{3}-7}{12}$，得平均值为 $\frac{\mathrm{e}^{3}-7}{12(\mathrm{e}-1)}$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设曲线 $y=y(x)\ (x&gt;0)$ 经过点 $(1,0)$，该曲线上任一点 $P(x,y)$ 到 $y$ 轴的距离等于该点处的切线在 $y$ 轴上的截距，求 $y(x)$ 在区间 $(0,1)$ 上与 $x$ 轴所围平面图形的面积.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知切线方程为 $Y-y=y'(X-x)$，切线在 $y$ 轴上的截距为 $y-xy'$，故有 $x=y-xy'$，即 $y'-\frac{y}{x}=-1$，解此微分方程得
+$$y(x)=\mathrm{e}^{\int\frac{1}{x}\mathrm{d}x}\left[\int\left(-\mathrm{e}^{-\int\frac{1}{x}\mathrm{d}x}\right)\mathrm{d}x+C\right]=x(-\ln x+C),$$
+代入 $y(1)=0$ 得 $C=0$，即 $y(x)=-x\ln x$。
+$y(x)$ 在区间 $(0,1)$ 上与 $x$ 轴所围平面图形的面积为
+$$\int_{0}^{1}\left|-x\ln x\right|\,\mathrm{d}x=-\int_{0}^{1}\ln x\,\mathrm{d}\left(\frac{1}{2}x^{2}\right)=\int_{0}^{1}\frac{1}{2}x\,\mathrm{d}x=\frac{1}{4}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="16" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设曲线 $y=y(x)$ 上点 $P(0,4)$ 处的切线垂直于直线 $x-2y+5=0$，且该曲线满足微分方程 $y''+2y'+y=0$，则此曲线方程为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=\frac{9}{2}x\mathrm{e}^{-x}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=\left(4+\frac{9}{2}x\right)\mathrm{e}^{-x}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=(C_{1}x+C_{2})\mathrm{e}^{-x}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=2(x+2)\mathrm{e}^{-x}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">二阶常系数齐次线性微分方程 $y''+2y'+y=0$ 的特征方程为 $r^{2}+2r+1=0$，解得特征根为 $r_{1}=r_{2}=-1$，故通解为
+$$y=\mathrm{e}^{-x}(C_{1}x+C_{2}).$$
+由题意知 $y(0)=4,y'(0)=-2$，于是可得 $C_{2}=4,C_{1}=2$。
+故曲线方程为 $y=\mathrm{e}^{-x}(2x+4)=2(x+2)\mathrm{e}^{-x}$，应选（D）。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="16" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设曲线 $y=y(x)$ 经过原点，且在原点处的切线与直线 $2x+y+6=0$ 平行，而 $y(x)$ 满足微分方程 $y''-2y'+5y=0$，则此曲线的方程为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=\mathrm{e}^{x}\sin 2x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=-\mathrm{e}^{x}\sin 2x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=\mathrm{e}^{x}(\cos 2x-\sin 2x)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=\mathrm{e}^{x}(\sin 2x-\cos 2x)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">二阶常系数齐次线性微分方程 $y''-2y'+5y=0$ 的特征方程为 $r^{2}-2r+5=0$，特征根为 $r_{1,2}=1\pm 2\mathrm{i}$，可得通解为
+$$y=\mathrm{e}^{x}(C_{1}\cos 2x+C_{2}\sin 2x).$$
+由题意知，$y\big|_{x=0}=0,y'\big|_{x=0}=-2$，于是可得 $C_{1}=0,C_{2}=-1$，故 $y=-\mathrm{e}^{x}\sin 2x$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="16" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y=y(x)$ 满足 $y''-2y'+y=0$，且 $y(0)=0$，$y'(0)=1$，则 $\int_{-\infty}^{0}y(x)\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $y''-2y'+y=0$ 得特征方程为 $r^{2}-2r+1=0$，即 $(r-1)^{2}=0$，解得
+$$r_{1}=r_{2}=1,$$
+故通解 $y=(C_{1}+C_{2}x)\mathrm{e}^{x}$，由 $y(0)=0,y'(0)=1$，可得 $\begin{cases}C_{1}=0,\\C_{2}=1,\end{cases}$ 故
+$$y(x)=x\mathrm{e}^{x}.$$
+因此
+$$\int_{-\infty}^{0}y(x)\,\mathrm{d}x=\int_{-\infty}^{0}x\mathrm{e}^{x}\,\mathrm{d}x=(x-1)\mathrm{e}^{x}\Big|_{-\infty}^{0}=-1.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="16" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知某常系数齐次线性微分方程的通解为 $y=C_{1}+\mathrm{e}^{x}(C_{2}\cos 2x+C_{3}\sin 2x)$，则该微分方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由通解形式可知特征根为 $r_{1}=0,r_{2,3}=1\pm 2\mathrm{i}$，故特征方程为
+$$r(r-1+2\mathrm{i})(r-1-2\mathrm{i})=0,$$
+整理得 $r^{3}-2r^{2}+5r=0$，可得对应的微分方程为 $y'''-2y''+5y'=0$。
+【注】考生应对某些高于二阶的常系数齐次线性微分方程熟练求解，并会根据解的结构形式反求微分方程。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$y'''-2y''+5y'=0$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="16" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">微分方程 $4y''-12y'+9y=\mathrm{e}^{\frac{3}{2}x}(3x^{2}+2)$ 的特解形式为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$Ax^{2}+Bx+C+D\mathrm{e}^{\frac{3}{2}x}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(Ax^{2}+Bx+C)\mathrm{e}^{\frac{3}{2}x}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$x(Ax^{2}+Bx+C)\mathrm{e}^{\frac{3}{2}x}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$x^{2}(Ax^{2}+Bx+C)\mathrm{e}^{\frac{3}{2}x}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题可知，对应齐次方程的特征方程为 $4r^{2}-12r+9=0$，也即 $(2r-3)^{2}=0$，解得 $r_{1}=r_{2}=\frac{3}{2}$。
+$\frac{3}{2}$ 为二重根，再由原方程的非齐次项 $\mathrm{e}^{\frac{3}{2}x}(3x^{2}+2)$，可以确定原方程的特解形式为
+$$y^{*}=x^{2}(Ax^{2}+Bx+C)\mathrm{e}^{\frac{3}{2}x}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="16" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $y_{1}=x\mathrm{e}^{x}+\mathrm{e}^{2x}$，$y_{2}=x\mathrm{e}^{x}+\mathrm{e}^{-x}$，$y_{3}=x\mathrm{e}^{x}+\mathrm{e}^{2x}-\mathrm{e}^{-x}$ 是某二阶常系数非齐次线性微分方程的三个解，则此微分方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由条件知 $y_{1}-y_{2}=\mathrm{e}^{2x}-\mathrm{e}^{-x},y_{1}-y_{3}=\mathrm{e}^{-x}$ 都是对应齐次方程的解，而 $(y_{1}-y_{2})+(y_{1}-y_{3})=\mathrm{e}^{2x}$ 也是齐次方程的解，可知 $\mathrm{e}^{2x}$ 与 $\mathrm{e}^{-x}$ 是齐次方程两个线性无关的解。而 $y_{2}=\mathrm{e}^{-x}+x\mathrm{e}^{x}$ 是非齐次方程的解，故 $x\mathrm{e}^{x}$ 也是非齐次方程的解。
+由 $\mathrm{e}^{-x},\mathrm{e}^{2x}$ 是齐次方程的线性无关的解，可知特征根为 $r_{1}=-1,r_{2}=2$，特征方程为 $r^{2}-r-2=0$，也即对应的齐次方程为 $y''-y'-2y=0$。
+设所求非齐次方程为 $y''-y'-2y=f(x)$，将非齐次方程的解 $x\mathrm{e}^{x}$ 代入，得
+$$f(x)=(x\mathrm{e}^{x})''-(x\mathrm{e}^{x})'-2x\mathrm{e}^{x}=(1-2x)\mathrm{e}^{x}.$$
+故所求方程为 $y''-y'-2y=(1-2x)\mathrm{e}^{x}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$y''-y'-2y=(1-2x)\mathrm{e}^{x}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求微分方程 $y''-2y'+y=2(3x^{2}-2)\mathrm{e}^{x}$ 的通解.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】这是二阶常系数非齐次线性微分方程，其通解由对应的齐次方程的通解与自身的一个特解构成。对于特解，可以根据非齐次项定出特解的形式，代入原方程即可求得特解。
+【解析】原方程所对应的齐次方程为
+$$y''-2y'+y=0,$$
+其特征方程为 $r^{2}-2r+1=0$，解得 $r_{1}=r_{2}=1$。
+于是齐次方程的通解为
+$$Y=(C_{1}+C_{2}x)\mathrm{e}^{x},$$
+其中 $C_{1},C_{2}$ 为任意常数。
+由于特征方程有重根 1，且非齐次项为 $2(3x^{2}-2)\mathrm{e}^{x}$，故可设特解为
+$$y^{*}=x^{2}(a_{0}x^{2}+a_{1}x+a_{2})\mathrm{e}^{x}.$$
+代入原方程并比较两端系数，得
+$$a_{0}=\frac{1}{2},a_{1}=0,a_{2}=-2.$$
+于是有
+$$y^{*}=x^{2}\left(\frac{1}{2}x^{2}-2\right)\mathrm{e}^{x}.$$
+因此，原方程的通解为
+$$y=Y+y^{*}=(C_{1}+C_{2}x)\mathrm{e}^{x}+x^{2}\left(\frac{x^{2}}{2}-2\right)\mathrm{e}^{x},$$
+其中 $C_{1},C_{2}$ 为任意常数。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="16" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求微分方程 $y''+4y'+5y=8\cos x$，当 $x\to-\infty$ 时为有界的特解.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】这是二阶常系数非齐次线性微分方程，先求其通解，再由题设定特解。
+【解析】对应齐次方程的特征方程为 $r^{2}+4r+5=0$，解得 $r_{1,2}=-2\pm \mathrm{i}$。
+于是对应齐次方程的通解为
+$$Y=\mathrm{e}^{-2x}(C_{1}\cos x+C_{2}\sin x).$$
+已知非齐次项为 $8\cos x$，而 $\pm \mathrm{i}$ 不是特征根，故可设原方程的一个特解为 $y^{*}=A\sin x+B\cos x$，代入原方程，比较系数得 $A=B=1$，于是原方程有特解 $y^{*}=\sin x+\cos x$。
+因此，原方程的通解为 $y=Y+y^{*}$，即
+$$y=\mathrm{e}^{-2x}(C_{1}\cos x+C_{2}\sin x)+\sin x+\cos x.$$
+为使 $x\to-\infty$ 时，$y$ 有界，必有 $C_{1}=C_{2}=0$，故满足题设的特解为
+$$y = \sin x + \cos x.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="16" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">欧拉方程 $x^{2}y''+3xy'+3y=0$ 满足条件 $y(1)=0$，$y'(1)=\sqrt{2}$ 的解为 $y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $x = \mathrm{e}^t$，并记 $D = \dfrac{\mathrm{d}}{\mathrm{d}t}$，则利用欧拉方程的解法可将 $x^2 y'' + 3xy' + 3y = 0$ 化为 $[D(D-1) + 3D + 3]y = 0$，即
+$$\frac{\mathrm{d}^2 y}{\mathrm{d}t^2} + 2\frac{\mathrm{d}y}{\mathrm{d}t} + 3y = 0,$$
+其特征方程为 $r^2 + 2r + 3 = 0$，得一对共轭复根 $-1 \pm \sqrt{2}\,\mathrm{i}$，可得其通解为
+$$y = \mathrm{e}^{-t}(C_1 \cos \sqrt{2}\,t + C_2 \sin \sqrt{2}\,t),$$
+从而原方程的通解为
+$$y = \frac{1}{x}\left[C_1 \cos(\sqrt{2}\ln x) + C_2 \sin(\sqrt{2}\ln x)\right].$$
+由条件 $y(1) = 0$，$y'(1) = \sqrt{2}$ 可得 $\begin{cases} C_1 = 0, \\ C_2 = 1, \end{cases}$ 故欧拉方程 $x^2 y'' + 3xy' + 3y = 0$ 满足条件 $y(1) = 0$，$y'(1) = \sqrt{2}$ 的解为 $y = \dfrac{\sin(\sqrt{2}\ln x)}{x}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\sin(\sqrt{2}\ln x)}{x}$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-15.html">上一章：第14章 二重积分</a>
+      <a class="chapter-link" href="chapter-17.html">下一章：第16章 无穷级数</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 16, "total": 21, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

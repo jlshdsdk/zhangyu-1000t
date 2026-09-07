@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第13章 多元函数微分学 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第13章 多元函数微分学<span class="top-count">（27题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $z=\arctan[xy+\cos(x+y)]$，则 $\mathrm{d}z\Big|_{(0,\pi)}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\frac{\partial z}{\partial x}=\frac{y-\sin(x+y)}{1+[xy+\cos(x+y)]^{2}},\frac{\partial z}{\partial y}=\frac{x-\sin(x+y)}{1+[xy+\cos(x+y)]^{2}}$,故 $$\left.\mathrm{d}z\right|_{(0,\pi)}=\left.\frac{\partial z}{\partial x}\right|_{(0,\pi)}\mathrm{d}x+\left.\frac{\partial z}{\partial y}\right|_{(0,\pi)}\mathrm{d}y=\frac{\pi}{2}\mathrm{d}x.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{\pi}{2}\mathrm{d}x$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(u)$ 可导，$z=f(\cos y-\cos x)+xy$，则 $\frac{1}{\sin x}\cdot\frac{\partial z}{\partial x}+\frac{1}{\sin y}\cdot\frac{\partial z}{\partial y}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $z=f(\cos y-\cos x)+xy$,所以 $$\frac{\partial z}{\partial x}=f'(\cos y-\cos x)\cdot\sin x+y,\frac{\partial z}{\partial y}=f'(\cos y-\cos x)\cdot(-\sin y)+x.$$ 从而 $$\frac{1}{\sin x}\cdot\frac{\partial z}{\partial x}+\frac{1}{\sin y}\cdot\frac{\partial z}{\partial y}=\frac{y}{\sin x}+\frac{x}{\sin y}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{y}{\sin x}+\frac{x}{\sin y}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(u)$ 可导，$z=yf(x^{y^{2}})$，则 $2x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由已知可得 $$\frac{\partial z}{\partial x}=yf'(x^{y^{2}})\cdot(y^{2}x^{y^{2}-1}),\frac{\partial z}{\partial y}=f(x^{y^{2}})+yf'(x^{y^{2}})\cdot(x^{y^{2}}\cdot\ln x\cdot 2y),$$ 所以 $$2x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=2y^{3}\cdot x^{y^{2}}\cdot(1+\ln x)\cdot f'(x^{y^{2}})+yf(x^{y^{2}}).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$2y^{3}\cdot x^{y^{2}}\cdot(1+\ln x)\cdot f'(x^{y^{2}})+yf(x^{y^{2}})$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $z=z(x,y)$ 由方程 $(x+1)z+2y\ln z-\arctan(xy)=1$ 确定，则 $\frac{\partial z}{\partial x}\Big|_{(0,2)}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将 $x=0,y=2$ 代入 $(x+1)z+2y\ln z-\arctan(xy)=1$,有 $$z+4\ln z=1,$$ 因为 $z+4\ln z$ 是 $(0,+\infty)$ 上的增函数,且当 $z=1$ 时,$z+4\ln z=1$,从而解得 $z=1$. 在 $(x+1)z+2y\ln z-\arctan(xy)=1$ 两端对 $x$ 求偏导,有 $$z+(x+1)\frac{\partial z}{\partial x}+2y\cdot\frac{1}{z}\cdot\frac{\partial z}{\partial x}-\frac{1}{1+(xy)^{2}}\cdot y=0,$$ 将 $x=0,y=2,z=1$ 代入上式,解得 $\left.\frac{\partial z}{\partial x}\right|_{(0,2)}=\frac{1}{5}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{5}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $F(x,y)=\int_{0}^{x-y}(x-y-t)\mathrm{e}^{t}\mathrm{d}t$，则 $\frac{\partial^{2}F}{\partial x^{2}}+\frac{\partial^{2}F}{\partial y^{2}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$F(x,y)=\int_{0}^{x-y}(x-y-t)\mathrm{e}^{t}\mathrm{d}t=(x-y)\int_{0}^{x-y}\mathrm{e}^{t}\mathrm{d}t-\int_{0}^{x-y}t\mathrm{e}^{t}\mathrm{d}t,$$ 于是 $$\frac{\partial F}{\partial x}=\int_{0}^{x-y}\mathrm{e}^{t}\mathrm{d}t+(x-y)\mathrm{e}^{x-y}-(x-y)\mathrm{e}^{x-y}=\int_{0}^{x-y}\mathrm{e}^{t}\mathrm{d}t,\frac{\partial^{2}F}{\partial x^{2}}=\mathrm{e}^{x-y},$$ $$\frac{\partial F}{\partial y}=-\int_{0}^{x-y}\mathrm{e}^{t}\mathrm{d}t-(x-y)\mathrm{e}^{x-y}+(x-y)\mathrm{e}^{x-y}=-\int_{0}^{x-y}\mathrm{e}^{t}\mathrm{d}t,\frac{\partial^{2}F}{\partial y^{2}}=\mathrm{e}^{x-y},$$ 故 $$\frac{\partial^{2}F}{\partial x^{2}}+\frac{\partial^{2}F}{\partial y^{2}}=\mathrm{e}^{x-y}+\mathrm{e}^{x-y}=2\mathrm{e}^{x-y}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$2\mathrm{e}^{x-y}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x,\sin x)=x+\sin x$，$f'_{x}(x,y)=1+2\cos x$，则 $f'_{y}(x,y)\Big|_{y=\sin x}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $f_{x}'(x,y)=1+2\cos x$ 知, $$f(x,y)=x+2\sin x+g(y).$$ 由 $f(x,\sin x)=x+\sin x$,得 $g(\sin x)=-\sin x$,即 $g(y)=-y$,故 $$f(x,y)=x+2\sin x-y,$$ 则 $\left.f_{y}'(x,y)\right|_{y=\sin x}=\left.-1\right|_{y=\sin x}=-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x,y)$ 具有二阶连续偏导数，且满足 $\frac{\partial^{2}[f(x,y)]}{\partial x\partial y}=1$，$f(0,y)=\sin y$，$f(x,0)=\sin x$，则 $f\left(\frac{\pi}{2},\frac{\pi}{2}\right)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\frac{\partial^{2}[f(x,y)]}{\partial x\partial y}=1$ 得 $$\frac{\partial[f(x,y)]}{\partial y}=x+C_{1}(y),$$ 所以 $$f(x,y)=xy+\int C_{1}(y)\mathrm{d}y+C_{2}(x)=xy+C_{3}(y)+C_{2}(x).$$ 由 $f(0,y)=\sin y$, $f(x,0)=\sin x$ 得 $$C_{2}(x)=\sin x-C_{3}(0),C_{3}(y)=\sin y-C_{2}(0),$$ 又 $f(0,0)=0$,所以 $$f(x,y)=xy+\sin x+\sin y.$$ 因此 $f\left(\frac{\pi}{2},\frac{\pi}{2}\right)=\frac{\pi^{2}}{4}+2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{\pi^{2}}{4}+2$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f\left(x+y,\frac{x}{y}\right)=x^{2}-xy+y^{2}$，则 $f'_{x}(x,y)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $u=x+y$, $v=\frac{x}{y}$,从而 $x=\frac{uv}{1+v}$, $y=\frac{u}{1+v}$,则有 $$f(u,v)=\left(\frac{uv}{1+v}\right)^{2}-\frac{u^{2}v}{(1+v)^{2}}+\frac{u^{2}}{(1+v)^{2}},$$ 即 $$f(x,y)=\frac{x^{2}}{(1+y)^{2}}(y^{2}-y+1),$$ 所以 $f_{x}'(x,y)=\frac{2x(y^{2}-y+1)}{(1+y)^{2}}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{2x(y^{2}-y+1)}{(1+y)^{2}}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x,y)=\sqrt{|xy|}$，求 $\frac{\partial[f(x,y)]}{\partial x}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x,y)=\begin{cases}\sqrt{x\mid y\mid}, &amp; (x,y)\in D_{1}=\{(x,y)\mid x&gt;0,-\infty&lt;y&lt;+\infty\},\\ \sqrt{-x\mid y\mid}, &amp; (x,y)\in D_{2}=\{(x,y)\mid x&lt;0,-\infty&lt;y&lt;+\infty\},\\ 0, &amp; (x,y)\in D_{3}=\{(x,y)\mid x=0,-\infty&lt;y&lt;+\infty\}.\end{cases}$
+① 当 $x=0,y=0$ 时, $$f_{x}'(0,0)=\lim_{\Delta x\to 0}\frac{f(\Delta x,0)-f(0,0)}{\Delta x}=\lim_{\Delta x\to 0}\frac{\sqrt{\mid\Delta x\mid\cdot 0}-0}{\Delta x}=0;$$
+② 当 $x=0,y\neq 0$ 时, $$f_{x}'(0,y)=\lim_{\Delta x\to 0}\frac{f(\Delta x,y)-f(0,y)}{\Delta x}=\lim_{\Delta x\to 0}\frac{\sqrt{\mid\Delta x\mid}\cdot\sqrt{\mid y\mid}}{\Delta x},$$ 该极限不存在,所以 $f_{x}'(0,y)$($y\neq 0$)不存在;
+③ 当 $(x,y)\in D_{1}$ 时, $$f_{x}'(x,y)=\frac{\partial}{\partial x}\sqrt{x\mid y\mid}=\frac{\sqrt{\mid y\mid}}{2\sqrt{x}}=\frac{1}{2}\sqrt{\left|\frac{y}{x}\right|};$$
+④ 当 $(x,y)\in D_{2}$ 时, $$f_{x}'(x,y)=\frac{\partial}{\partial x}\sqrt{-x\mid y\mid}=-\frac{\sqrt{\mid y\mid}}{2\sqrt{-x}}=-\frac{1}{2}\sqrt{\left|\frac{y}{x}\right|}.$$ 综上, $$f_{x}'(x,y)=\begin{cases}\dfrac{1}{2}\sqrt{\left|\dfrac{y}{x}\right|}, &amp; x&gt;0,-\infty&lt;y&lt;+\infty,\\ -\dfrac{1}{2}\sqrt{\left|\dfrac{y}{x}\right|}, &amp; x&lt;0,-\infty&lt;y&lt;+\infty,\\ 0, &amp; x=0,y=0,\\ \text{不存在}, &amp; x=0,y\neq 0.\end{cases}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="14" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $Q(x,y)=\frac{x}{y^{2}}$，$y&gt;0$，$P(x,y)\mathrm{d}x+Q(x,y)\mathrm{d}y$ 是某二元函数的全微分，则 $P(x,y)$ 可取为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y^{2}-\frac{x^{2}}{y^{3}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$x^{2}-\frac{1}{y}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{y^{2}}-\frac{x^{2}}{y^{3}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{x^{2}}-\frac{1}{y}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设该二元函数为 $z=z(x,y)$,由题意知,$\frac{\partial z}{\partial y}=\frac{x}{y^{2}}$,可得 $z(x,y)=-\frac{x}{y}+\varphi(x)$,此时有 $$\frac{\partial z}{\partial x}=-\frac{1}{y}+\varphi'(x)=P(x,y),$$ 观察选项可知,只有选项(B)符合题意.
+【注】(D)项不能选,因为 $\frac{1}{x^{2}}-\frac{1}{y}$ 在 $(0,y)$ 处无定义.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $z=x^{y}$ 在点 $(1,2)$ 处的全微分为 $\mathrm{d}z=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\frac{\partial z}{\partial x}=y\cdot x^{y-1}$,$\frac{\partial z}{\partial y}=x^{y}\cdot\ln x$,故 $$\left.\frac{\partial z}{\partial x}\right|_{(1,2)}=2,\left.\frac{\partial z}{\partial y}\right|_{(1,2)}=0,$$ 则函数 $z=x^{y}$ 在点 $(1,2)$ 处的全微分为 $\mathrm{d}z=2\mathrm{d}x$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$2\mathrm{d}x$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f$ 具有二阶连续偏导数，且 $u=f(x^{2}+y,xy)$，则 $u''_{xy}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题可得 $$u_{x}'=2xf_{1}'+yf_{2}',$$ $$u_{xy}''=2xf_{11}''+2x^{2}f_{12}''+f_{2}'+yf_{21}''+xyf_{22}''$$ $$=f_{2}'+2xf_{11}''+(2x^{2}+y)f_{12}''+xyf_{22}'',$$ 其中,$f$ 具有二阶连续偏导数,故 $f_{21}''=f_{12}''$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$f_{2}'+2xf_{11}''+(2x^{2}+y)f_{12}''+xyf_{22}''$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(u,v)$ 具有二阶连续偏导数，函数 $g(x,y)=xy-f\left(\frac{y}{x},\frac{x}{y}\right)$，求
+$$x^{2}\frac{\partial^{2}g}{\partial x^{2}}+2xy\frac{\partial^{2}g}{\partial x\partial y}+y^{2}\frac{\partial^{2}g}{\partial y^{2}}.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题,函数复合关系如图所示,所以
+【图】复合函数关系图：$g$ 由两部分复合而成,一支为 $1$(即 $xy$),另一支为 $2$(即 $f\left(\frac{y}{x},\frac{x}{y}\right)$),中间变量 $\frac{y}{x}$、$\frac{x}{y}$ 分别连接 $x$ 与 $y$.
+$$\frac{\partial g}{\partial x}=y-f_{u}'\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{y}{x^{2}}\right)-f_{v}'\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{y},$$ $$\frac{\partial g}{\partial y}=x-f_{u}'\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{x}-f_{v}'\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{x}{y^{2}}\right),$$ $$\frac{\partial^{2}g}{\partial x^{2}}=\frac{y}{x^{2}}\left[f_{uu}''\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{y}{x^{2}}\right)+f_{uv}''\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{y}\right]+f_{u}'\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{2y}{x^{3}}\right)-$$ $$\frac{1}{y}\left[f_{uv}''\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{y}{x^{2}}\right)+f_{vv}''\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{y}\right]$$ $$=-\frac{y^{2}}{x^{2}}f_{uu}''+\frac{2y^{3}}{x^{3}}f_{uv}''-\frac{1}{y^{2}}f_{vv}''-\frac{2y}{x^{3}}f_{u}',$$ $$\frac{\partial^{2}g}{\partial x\partial y}=1+f_{v}'\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{x^{2}}+\frac{y}{x^{2}}\left[f_{uu}''\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{x}+f_{uv}''\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{x}{y^{2}}\right)\right]+$$ $$\frac{1}{y^{2}}f_{v}'\left(\frac{y}{x},\frac{x}{y}\right)-\frac{1}{y}\left[f_{uv}''\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{x}-\frac{x}{y^{2}}f_{vv}''\left(\frac{y}{x},\frac{x}{y}\right)\right]$$ $$=1+\frac{y}{x^{3}}f_{uu}''-\frac{2}{xy}f_{uv}''+\frac{x}{y^{3}}f_{vv}''+\frac{1}{x^{2}}f_{u}'+\frac{1}{y^{2}}f_{v}',$$ $$\frac{\partial^{2}g}{\partial y^{2}}=-\frac{1}{x}\left[f_{uu}''\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{x}+f_{uv}''\left(\frac{y}{x},\frac{x}{y}\right)\left(-\frac{x}{y^{2}}\right)\right]-\frac{2x}{y^{3}}f_{v}'\left(\frac{y}{x},\frac{x}{y}\right)+$$ $$\frac{x}{y^{2}}\left[f_{uv}''\left(\frac{y}{x},\frac{x}{y}\right)\frac{1}{x}-\frac{x}{y^{2}}f_{vv}''\left(\frac{y}{x},\frac{x}{y}\right)\right]$$ $$=-\frac{1}{x^{2}}f_{uu}''+\frac{2}{y^{2}}f_{uv}''-\frac{x^{2}}{y^{4}}f_{vv}''-\frac{2x}{y^{3}}f_{v}',$$ 故 $$x^{2}\frac{\partial^{2}g}{\partial x^{2}}+2xy\frac{\partial^{2}g}{\partial x\partial y}+y^{2}\frac{\partial^{2}g}{\partial y^{2}}=2xy.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $z=xyf\left(\frac{y}{x}\right)$，其中 $f(u)$ 可导，且满足 $x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=y^{2}(\ln y-\ln x)$，求：
+(1) $f(x)$ 的表达式；
+(2) $f(x)$ 与 $x$ 轴所围图形的面积及该图形绕 $x$ 轴旋转一周所得旋转体的体积.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 因为 $z=xyf\left(\frac{y}{x}\right)$,且 $f(u)$ 可导,所以 $$\frac{\partial z}{\partial x}=yf\left(\frac{y}{x}\right)+xyf'\left(\frac{y}{x}\right)\left(-\frac{y}{x^{2}}\right)=yf\left(\frac{y}{x}\right)-\frac{y^{2}}{x}f'\left(\frac{y}{x}\right),$$ $$\frac{\partial z}{\partial y}=xf\left(\frac{y}{x}\right)+xyf'\left(\frac{y}{x}\right)\frac{1}{x}=xf\left(\frac{y}{x}\right)+yf'\left(\frac{y}{x}\right),$$ $$x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=xyf\left(\frac{y}{x}\right)-y^{2}f'\left(\frac{y}{x}\right)+xyf\left(\frac{y}{x}\right)+y^{2}f'\left(\frac{y}{x}\right)=2xyf\left(\frac{y}{x}\right).$$ 又 $x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=y^{2}(\ln y-\ln x)$,所以 $2xyf\left(\frac{y}{x}\right)=y^{2}(\ln y-\ln x)$,即 $$f\left(\frac{y}{x}\right)=\frac{y}{2x}\ln\frac{y}{x},$$ 令 $u=\frac{y}{x}$,则 $f(u)=\frac{u}{2}\ln u$,即 $f(x)=\frac{x}{2}\ln x$.
+(2) 设 $f(x)$ 与 $x$ 轴所围图形面积及该图形绕 $x$ 轴旋转一周所得旋转体体积分别为 $S$、$V$,则 $$S=\left|\int_{0}^{1}f(x)\mathrm{d}x\right|=\left|\int_{0}^{1}\frac{x}{2}\ln x\mathrm{d}x\right|$$ $$=\left|\frac{1}{2}\int_{0}^{1}\ln x\,\mathrm{d}\left(\frac{1}{2}x^{2}\right)\right|=\left|\frac{1}{4}x^{2}\ln x\right|_{0}^{1}-\frac{1}{4}\int_{0}^{1}x\mathrm{d}x\right|$$ $$=\frac{1}{8},$$ $$V=\int_{0}^{1}\pi[f(x)]^{2}\mathrm{d}x=\int_{0}^{1}\pi\left(\frac{x}{2}\ln x\right)^{2}\mathrm{d}x=\frac{\pi}{4}\int_{0}^{1}x^{2}\ln^{2}x\,\mathrm{d}x$$ $$\xlongequal{\text{令 }\ln x=t}\frac{\pi}{4}\int_{-\infty}^{0}\mathrm{e}^{2t}\cdot t^{2}\cdot\mathrm{e}^{t}\,\mathrm{d}t=\frac{\pi}{4}\int_{-\infty}^{0}\mathrm{e}^{3t}\cdot t^{2}\,\mathrm{d}t$$ $$=\frac{\pi}{4}\int_{-\infty}^{0}t^{2}\,\mathrm{d}\left(\frac{1}{3}\mathrm{e}^{3t}\right)=\frac{\pi}{12}\mathrm{e}^{3t}\cdot t^{2}\Big|_{-\infty}^{0}-\frac{\pi}{6}\int_{-\infty}^{0}t\mathrm{e}^{3t}\,\mathrm{d}t$$ $$=-\frac{\pi}{6}\int_{-\infty}^{0}t\,\mathrm{d}\left(\frac{1}{3}\mathrm{e}^{3t}\right)=-\frac{\pi}{18}\mathrm{e}^{3t}\cdot t\Big|_{-\infty}^{0}+\frac{\pi}{18}\int_{-\infty}^{0}\mathrm{e}^{3t}\,\mathrm{d}t$$ $$=\frac{\pi}{54}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(u)=\ln u$，$u=\sqrt{x^{2}+y^{2}+z^{2}}$，求 $\frac{\partial^{2}[f(u)]}{\partial x^{2}}+\frac{\partial^{2}[f(u)]}{\partial y^{2}}+\frac{\partial^{2}[f(u)]}{\partial z^{2}}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题可得 $$\frac{\partial[f(u)]}{\partial x}=\frac{1}{u}\cdot\frac{\partial u}{\partial x}=\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\cdot\frac{x}{\sqrt{x^{2}+y^{2}+z^{2}}}$$ $$=\frac{x}{x^{2}+y^{2}+z^{2}},$$ $$\frac{\partial^{2}[f(u)]}{\partial x^{2}}=\frac{\partial}{\partial x}\left(\frac{x}{x^{2}+y^{2}+z^{2}}\right)=\frac{y^{2}+z^{2}-x^{2}}{(x^{2}+y^{2}+z^{2})^{2}}.$$ 由变量对称性,有 $$\frac{\partial^{2}[f(u)]}{\partial y^{2}}=\frac{z^{2}+x^{2}-y^{2}}{(x^{2}+y^{2}+z^{2})^{2}},$$ $$\frac{\partial^{2}[f(u)]}{\partial z^{2}}=\frac{x^{2}+y^{2}-z^{2}}{(x^{2}+y^{2}+z^{2})^{2}},$$ 故得 $$\frac{\partial^{2}[f(u)]}{\partial x^{2}}+\frac{\partial^{2}[f(u)]}{\partial y^{2}}+\frac{\partial^{2}[f(u)]}{\partial z^{2}}=\frac{1}{x^{2}+y^{2}+z^{2}}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $u=f(x,y)$ 具有二阶连续偏导数，作变量代换 $\xi=x$，$\eta=y-x$，将方程
+$$\frac{\partial^{2}u}{\partial x^{2}}+2\frac{\partial^{2}u}{\partial x\partial y}+\frac{\partial^{2}u}{\partial y^{2}}=0$$
+化为以 $\xi,\eta$ 为自变量的方程.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题,函数复合关系如图所示,所以
+【图】复合函数关系图：$u$ 与中间变量 $\xi$、$\eta$ 相连,$\xi$ 连接 $x$,$\eta$ 分别连接 $x$ 与 $y$.
+$$\frac{\partial u}{\partial x}=\frac{\partial u}{\partial \xi}\frac{\partial \xi}{\partial x}+\frac{\partial u}{\partial \eta}\frac{\partial \eta}{\partial x}=\frac{\partial u}{\partial \xi}-\frac{\partial u}{\partial \eta},\frac{\partial u}{\partial y}=\frac{\partial u}{\partial \eta},$$ $$\frac{\partial^{2}u}{\partial x^{2}}=\frac{\partial}{\partial \xi}\left(\frac{\partial u}{\partial \xi}-\frac{\partial u}{\partial \eta}\right)\frac{\partial \xi}{\partial x}+\frac{\partial}{\partial \eta}\left(\frac{\partial u}{\partial \xi}-\frac{\partial u}{\partial \eta}\right)\frac{\partial \eta}{\partial x}$$ $$=\frac{\partial^{2}u}{\partial \xi^{2}}-\frac{\partial^{2}u}{\partial \eta\partial \xi}-\frac{\partial^{2}u}{\partial \xi\partial \eta}+\frac{\partial^{2}u}{\partial \eta^{2}}$$ $$=\frac{\partial^{2}u}{\partial \xi^{2}}-2\frac{\partial^{2}u}{\partial \xi\partial \eta}+\frac{\partial^{2}u}{\partial \eta^{2}},$$ $$\frac{\partial^{2}u}{\partial x\partial y}=\frac{\partial}{\partial \xi}\left(\frac{\partial u}{\partial \xi}-\frac{\partial u}{\partial \eta}\right)\frac{\partial \xi}{\partial y}+\frac{\partial}{\partial \eta}\left(\frac{\partial u}{\partial \xi}-\frac{\partial u}{\partial \eta}\right)\frac{\partial \eta}{\partial y}$$ $$=\frac{\partial^{2}u}{\partial \xi\partial \eta}-\frac{\partial^{2}u}{\partial \eta^{2}},$$ $$\frac{\partial^{2}u}{\partial y^{2}}=\frac{\partial^{2}u}{\partial \eta^{2}}.$$ 故 $$\frac{\partial^{2}u}{\partial x^{2}}+2\frac{\partial^{2}u}{\partial x\partial y}+\frac{\partial^{2}u}{\partial y^{2}}=\frac{\partial^{2}u}{\partial \xi^{2}}=0,$$ 即 $$\frac{\partial^{2}u}{\partial \xi^{2}}=0.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $z=z(x,y)$ 由方程 $F\left(x+\frac{z}{y},y+\frac{z}{x}\right)=0$ 确定，且 $F(u,v)$ 具有连续偏导数，求 $x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将方程 $F\left(x+\frac{z}{y},y+\frac{z}{x}\right)=0$ 两边对 $x$ 求导得
+$F_1' \cdot \left(1+\frac{1}{y} \cdot \frac{\partial z}{\partial x}\right)+F_2' \cdot \left(-\frac{z}{x^2}+\frac{1}{x} \cdot \frac{\partial z}{\partial x}\right)=0$, 则 $\frac{\partial z}{\partial x}=\frac{y(zF_2'-x^2F_1')}{x(xF_1'+yF_2')}$. 将方程 $F\left(x+\frac{z}{y}, y+\frac{z}{x}\right)=0$ 两边对 $y$ 求导得 $F_1' \cdot \left(-\frac{z}{y^2}+\frac{1}{y} \cdot \frac{\partial z}{\partial y}\right)+F_2' \cdot \left(1+\frac{1}{x} \cdot \frac{\partial z}{\partial y}\right)=0$, 则 $\frac{\partial z}{\partial y}=\frac{x(xF_1'-y^2F_2')}{y(xF_1'+yF_2')}$. 所以 $x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=\frac{z(xF_1'+yF_2')-(xF_1'+yF_2')xy}{xF_1'+yF_2'}=z-xy$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="14" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y)$ 在有界闭区域 $D$ 上连续，在 $D$ 内有一阶偏导数. 若 $f(x,y)$ 在 $D$ 的边界 $\partial D$ 上的值均为 0，且 $\frac{\partial[f(x,y)]}{\partial x}+\frac{\partial[f(x,y)]}{\partial y}=f(x,y)$，则 $f(x,y)$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">在 $D$ 内有正的最大值</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">在 $D$ 内有负的最小值</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">只在 $D$ 的边界 $\partial D$ 上取到最大值</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">在 $D$ 的边界 $\partial D$ 上可以取到最小值</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】设在 $D$ 内存在 $(x_0, y_0)$, 使得 $f(x_0, y_0)$ 为正的最大值, 则 $f(x_0, y_0)&gt;0$, 且 $f_x'(x_0, y_0)=0, f_y'(x_0, y_0)=0$. 由题设条件得 $f_x'(x_0, y_0)+f_y'(x_0, y_0)=f(x_0, y_0)=0$, 矛盾, 故选项 (A) 不正确. 同理, 选项 (B) 也不正确. 故对于任意 $(x, y) \in D$, $f(x, y) \equiv 0$, 故 $f(x, y)$ 在 $D$ 的边界上和 $D$ 的内部处处为最大值, 处处为最小值.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="14" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y)$ 在平面有界闭区域 $D$ 上具有二阶连续偏导数，且满足 $\frac{\partial^{2}f}{\partial x\partial y}&gt;0$ 与 $\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}=0$，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(x,y)$ 的最小值点和最大值点都在 $D$ 的内部</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(x,y)$ 的最小值点和最大值点都在 $D$ 的边界上</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(x,y)$ 的最小值点在 $D$ 的内部，最大值点在 $D$ 的边界上</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(x,y)$ 的最大值点在 $D$ 的内部，最小值点在 $D$ 的边界上</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由题可知, $B&gt;0$, $A+C=0$, 于是 $AC \leqslant 0$, 故 $AC-B^2&lt;0$, 因此有界闭区域 $D$ 内部无极值点, 从而也无最值点, 又由二阶连续偏导数存在可知, $f(x, y)$ 的最小值与最大值一定存在, 故必在 $D$ 的边界上取得, 选项 (B) 正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="14" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y)=x^{4}+y^{4}-(x+y)^{2}$，且 $(1,1)$ 与 $(-1,-1)$ 为函数 $f(x,y)$ 的两个驻点，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(1,1)$ 与 $f(-1,-1)$ 都是极大值</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(1,1)$ 与 $f(-1,-1)$ 都是极小值</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(1,1)$ 是极大值，$f(-1,-1)$ 是极小值</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(1,1)$ 是极小值，$f(-1,-1)$ 是极大值</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由题可得 $$f_{xx}''(x, y)=12x^2-2, A=f_{xx}''(1, 1)=10,$$ $$f_{yy}''(x, y)=12y^2-2, C=f_{yy}''(1, 1)=10,$$ $$f_{xy}''(x, y)=-2, B=f_{xy}''(1, 1)=-2.$$ 于是 $AC-B^2&gt;0$, 且 $A&gt;0$, 故 $f(1, 1)$ 为极小值, 同理可得 $f(-1, -1)$ 也为极小值.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="14" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\mathrm{e}^{x}+y^{2}+|z|=3$，其中 $x,y,z$ 为实数，若 $\mathrm{e}^{x}y^{2}|z|\leqslant k$ 恒成立，则 $k$ 的取值范围是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由 $\mathrm{e}^x+y^2+|z|=3$ 且 $\mathrm{e}^x y^2|z| \leqslant k$ 恒成立, 得 $\mathrm{e}^x y^2(3-\mathrm{e}^x-y^2) \leqslant k$ 恒成立, 令 $f(x, y)=\mathrm{e}^x y^2(3-\mathrm{e}^x-y^2)$. 求 $f(x, y)=\mathrm{e}^x y^2(3-\mathrm{e}^x-y^2)$ 在区域 $D=\{(x, y) \mid \mathrm{e}^x+y^2 \leqslant 3\}$ 上的最大值. 令 $$\begin{cases} \frac{\partial f}{\partial x}=\mathrm{e}^x y^2(3-\mathrm{e}^x-y^2)-\mathrm{e}^{2x}y^2=0, \\ \frac{\partial f}{\partial y}=2y\mathrm{e}^x(3-\mathrm{e}^x-y^2)-2y^3\mathrm{e}^x=0, \end{cases}}$$ 得驻点 $\{(x, y) \mid -\infty&lt;x&lt;\ln 3, y=0\}$, $(0, 1)$ 和 $(0, -1)$. 在边界 $\mathrm{e}^x+y^2=3$ 上, 函数 $f(x, y)=0$. 又 $f(x, 0)=0, f(0, 1)=1, f(0, -1)=1$, 所以 $f(x, y)$ 的最大值为 1, 故 $k \geqslant 1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$k \geqslant 1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求函数 $f(x,y)=(y-x)(y-x^{2})$ 的极值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】$\frac{\partial f}{\partial x}=-(y-x^2)+(y-x)(-2x)=-y+x^2-2xy+2x^2=3x^2-2xy-y$, $\frac{\partial f}{\partial y}=y-x^2+y-x=2y-x-x^2$, 令 $\begin{cases} 3x^2-2xy-y=0, \\ 2y-x-x^2=0, \end{cases}$ 解得 $\begin{cases} x=0, \\ y=0 \end{cases}$ 或 $\begin{cases} x=1, \\ y=1 \end{cases}$ 或 $\begin{cases} x=\frac{1}{2}, \\ y=\frac{3}{8}. \end{cases}$ $\frac{\partial^2 f}{\partial x^2}=6x-2y$, $\frac{\partial^2 f}{\partial x \partial y}=-2x-1$, $\frac{\partial^2 f}{\partial y^2}=2$. ① 对于点 $(0, 0)$, $A=0$, $B=-1$, $C=2$, $AC-B^2=-1&lt;0$, 故点 $(0, 0)$ 不是 $f(x, y)$ 的极值点. ② 对于点 $(1, 1)$, $A=4$, $B=-3$, $C=2$, $AC-B^2=-1&lt;0$, 故点 $(1, 1)$ 不是 $f(x, y)$ 的极值点. ③ 对于点 $\left(\frac{1}{2}, \frac{3}{8}\right)$, $A=\frac{9}{4}$, $B=-2$, $C=2$, $AC-B^2=\frac{1}{2}&gt;0$, $A&gt;0$, 故 $f(x, y)$ 在点 $\left(\frac{1}{2}, \frac{3}{8}\right)$ 处取极小值, 极小值为 $-\frac{1}{64}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求函数 $f(x,y)=x^{3}+y^{3}-3xy$ 的极值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由 $\begin{cases} f_x'(x, y)=3x^2-3y=0, \\ f_y'(x, y)=3y^2-3x=0, \end{cases}$ 得驻点 $(0, 0)$, $(1, 1)$, 又 $f_{xx}''(x, y)=6x$, $f_{xy}''(x, y)=-3$, $f_{yy}''(x, y)=6y$, 故 $A=f_{xx}''(0, 0)=0$, $B=f_{xy}''(0, 0)=-3$, $C=f_{yy}''(0, 0)=0$, 则 $AC-B^2=-9&lt;0$, 所以 $(0, 0)$ 非极值点; 而 $A=f_{xx}''(1, 1)=6&gt;0$, $B=f_{xy}''(1, 1)=-3$, $C=f_{yy}''(1, 1)=6$, 则 $AC-B^2=27&gt;0$, 所以 $(1, 1)$ 为极小值点, 极小值为 $f(1, 1)=-1$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求函数 $f(x,y)=x^{3}-3xy-y^{2}-y-9$ 的极值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由 $\begin{cases} f_x'(x, y)=3x^2-3y=0, \\ f_y'(x, y)=-3x-2y-1=0, \end{cases}$ 得驻点 $(-1, 1)$, $\left(-\frac{1}{2}, \frac{1}{4}\right)$, 又 $f_{xx}''(x, y)=6x$, $f_{xy}''(x, y)=-3$, $f_{yy}''(x, y)=-2$, 故 $A=f_{xx}''(-1, 1)=-6&lt;0$, $B=f_{xy}''(-1, 1)=-3$, $C=f_{yy}''(-1, 1)=-2$, 则 $AC-B^2=3&gt;0$, 所以 $(-1, 1)$ 为极大值点, 极大值为 $f(-1, 1)=-9$; 而 $A=f_{xx}''\left(-\frac{1}{2}, \frac{1}{4}\right)=-3$, $B=f_{xy}''\left(-\frac{1}{2}, \frac{1}{4}\right)=-3$, $C=f_{yy}''\left(-\frac{1}{2}, \frac{1}{4}\right)=-2$, 则 $AC-B^2=-3&lt;0$, 所以 $\left(-\frac{1}{2}, \frac{1}{4}\right)$ 非极值点.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q25" data-no="25">
+  <header class="q-head">
+    <span class="q-no">【25】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="25" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求函数 $f(x,y)=xy$ 在约束条件 $x+y=2$ 下的极值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】约束条件 $x+y=2$ 可表示为 $y=2-x$, 将其代入 $f(x, y)=xy$ 中, 问题即转化为求 $f=x(2-x)$ 的无条件极值. 又 $\frac{\mathrm{d}f}{\mathrm{d}x}=2-2x$, 令 $\frac{\mathrm{d}f}{\mathrm{d}x}=0$, 解得 $x=1$. 又因为 $\left.\frac{\mathrm{d}^2f}{\mathrm{d}x^2}\right|_{x=1}=-2&lt;0$, 所以 $x=1$ 为极大值点, 且极大值为 $f=1 \cdot (2-1)=1$. 故在条件 $x+y=2$ 下, 函数 $f(x, y)=xy$ 在点 $(1, 1)$ 处取得极大值 1.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q26" data-no="26">
+  <header class="q-head">
+    <span class="q-no">【26】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="26" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求 $f(x,y)=x^{4}-\frac{1}{12}x^{6}-2x^{2}y-\frac{1}{2}y^{2}$ 的极值点.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由题, 等式两端对 $x$, $y$ 求一阶偏导数, 有 $$f_x'(x, y)=4x^3-\frac{1}{2}x^5-4xy,$$ $$f_y'(x, y)=-2x^2-y.$$ 等式两端对 $x$, $y$ 求二阶偏导数, 有 $$f_{xx}''(x, y)=12x^2-\frac{5}{2}x^4-4y,$$ $$f_{xy}''(x, y)=-4x,$$ $$f_{yy}''(x, y)=-1.$$ 令 $\begin{cases} f_x'(x, y)=0, \\ f_y'(x, y)=0, \end{cases}$ 解得驻点 $(0, 0)$, $(\pm 2\sqrt{6}, -48)$. 在点 $(0, 0)$ 处, $A=\left.f_{xx}''\right|_{(0, 0)}=0$, $B=\left.f_{xy}''\right|_{(0, 0)}=0$, $C=\left.f_{yy}''\right|_{(0, 0)}=-1$, $AC-B^2=0$, 判别法失效. 取 $y=x^2$, $f(x, x^2)=x^4-\frac{1}{12}x^6-2x^4-\frac{1}{2}x^4=-\frac{3}{2}x^4-\frac{1}{12}x^6$, 则当 $x \to 0$ 时, $f(x, x^2) \sim -\frac{3}{2}x^4&lt;0$; 取 $y=-x^2$, $f(x, -x^2)=x^4-\frac{1}{12}x^6+2x^4-\frac{1}{2}x^4=\frac{5}{2}x^4-\frac{1}{12}x^6$, 则当 $x \to 0$ 时, $f(x, -x^2) \sim \frac{5}{2}x^4&gt;0$, 所以点 $(0, 0)$ 不是 $f(x, y)$ 的极值点. 在点 $(\pm 2\sqrt{6}, -48)$ 处, 由于 $A=\left.f_{xx}''\right|_{(\pm 2\sqrt{6}, -48)}=-960$, $B=\left.f_{xy}''\right|_{(\pm 2\sqrt{6}, -48)}=\pm 8\sqrt{6}$, $C=\left.f_{yy}''\right|_{(\pm 2\sqrt{6}, -48)}=-1$, 因此 $AC-B^2&gt;0$, $A&lt;0$, 所以点 $(\pm 2\sqrt{6}, -48)$ 为 $f(x, y)$ 的极大值点.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q27" data-no="27">
+  <header class="q-head">
+    <span class="q-no">【27】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="14" data-no="27" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\frac{\partial f}{\partial x}=(x^{2}+y^{2}-4x+4)\mathrm{e}^{x}$，$\frac{\partial f}{\partial y}=2y\mathrm{e}^{x}$，$f(0,0)=0$，求：
+(1) $f(x,y)$ 的表达式；
+(2) $f(x,y)$ 的极值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】(1) 由题可得 $$f(x, y)=\int (x^2+y^2-4x+4)\mathrm{e}^x \mathrm{d}x=(x^2+y^2-6x+10)\mathrm{e}^x+\varphi(y),$$ 则 $\frac{\partial f}{\partial y}=2y\mathrm{e}^x+\varphi'(y)=2y\mathrm{e}^x$, 所以 $\varphi'(y)=0$, 则 $\varphi(y)=C$. 故 $f(x, y)=(x^2+y^2-6x+10)\mathrm{e}^x+C$, 又 $f(0, 0)=0$, 有 $C=-10$, 故 $$f(x, y)=(x^2+y^2-6x+10)\mathrm{e}^x-10.$$ (2) 令 $\begin{cases} \frac{\partial f}{\partial x}=0, \\ \frac{\partial f}{\partial y}=0, \end{cases}$ 有 $\begin{cases} x=2, \\ y=0. \end{cases}$ 可得 $$A=\left.f_{xx}''\right|_{(2, 0)}=(2x-4+x^2+y^2-4x+4)\mathrm{e}^x \Big|_{(2, 0)}=0,$$ $$B=\left.f_{xy}''\right|_{(2, 0)}=2y\mathrm{e}^x \Big|_{(2, 0)}=0,$$ $$C=\left.f_{yy}''\right|_{(2, 0)}=2\mathrm{e}^x \Big|_{(2, 0)}=2\mathrm{e}^2.$$ 所以 $\Delta=AC-B^2=0$, 判别法失效. 令 $g(x)=f(x, 0)=(x^2-6x+10)\mathrm{e}^x-10$, 故 $g'(x)=(x^2-4x+4)\mathrm{e}^x=(x-2)^2\mathrm{e}^x$. 令 $g'(x)=0$ 有 $x=2$, 又 $g''(2)=0$, $g'''(2)=2\mathrm{e}^2&gt;0$. 所以 $x=2$ 不是 $g(x)$ 的极值点, $(2, 0)$ 也不是 $f(x, y)$ 的极值点, 故 $f(x, y)$ 无极值.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-13.html">上一章：第12章 一元函数积分学的应用(三)——物理应用</a>
+      <a class="chapter-link" href="chapter-15.html">下一章：第14章 二重积分</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 14, "total": 27, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

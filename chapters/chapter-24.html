@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章 特征值与特征向量 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第5章 特征值与特征向量<span class="top-count">（22题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $n$ 阶矩阵 $A$ 有特征值 $\lambda_1 = 1, \lambda_2 = -1$，对应的特征向量分别是 $\xi_1, \xi_2$，$k$ 是任意常数，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$k\xi_1$ 仍是 $A$ 对应 $\lambda = 1$ 的特征向量</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\xi_1 + \xi_2$ 是 $A$ 对应 $\lambda = 0$ 的特征向量</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\xi_1 - \xi_2$ 是 $A$ 对应 $\lambda = 2$ 的特征向量</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\xi_1 + \xi_2$ 是 $A^2$ 对应 $\lambda = 1$ 的特征向量</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$A\xi_1=\xi_1$，$A\xi_2=-\xi_2$，两式的两端均在左边乘 $A$，得
+$$A^2\xi_1=A\xi_1=\xi_1, A^2\xi_2=A(-\xi_2)=-A\xi_2=\xi_2,$$
+故有 $A^2\xi_1+A^2\xi_2=A^2(\xi_1+\xi_2)=\xi_1+\xi_2$，故(D)成立，应选(D).
+对于(A)，若 $k=0$，$k\xi_1=0$，零向量不是 $A$ 的特征向量.
+对于(B)，$A(\xi_1+\xi_2)=\xi_1-\xi_2\neq 0(\xi_1+\xi_2)$，则 $\xi_1+\xi_2$ 不是 $A$ 对应 $\lambda=0$ 的特征向量.
+对于(C)，$A(\xi_1-\xi_2)=\xi_1+\xi_2\neq 2(\xi_1-\xi_2)$，则 $\xi_1-\xi_2$ 不是 $A$ 对应 $\lambda=2$ 的特征向量.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $$A = \begin{pmatrix} 3 &amp; -4 &amp; 0 \\ 4 &amp; -5 &amp; 0 \\ a &amp; 2 &amp; -1 \end{pmatrix},$$ 若 $A$ 的三重特征值 $\lambda$ 对应两个线性无关的特征向量，则 $a = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $A$ 的三重特征值 $\lambda$ 对应两个线性无关的特征向量，因此 $r(A-\lambda E)=1$. 而
+$$A-\lambda E=\begin{bmatrix}3-\lambda &amp; -4 &amp; 0\\ 4 &amp; -5-\lambda &amp; 0\\ a &amp; 2 &amp; -1-\lambda\end{bmatrix},$$
+要使 $r(A-\lambda E)=1$，需 $A-\lambda E$ 的第一行各元素分别与第二行和第三行对应的元素成比例，因此有
+$$-1-\lambda=0, -4a=2(3-\lambda), (3-\lambda)(-5-\lambda)=-16,$$
+解得 $\lambda=-1$，$a=-2$，故正确选项为(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $P^{-1}AP = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{pmatrix}$，$\alpha_1$ 是矩阵 $A$ 属于特征值 $\lambda = 1$ 的特征向量，$\alpha_2, \alpha_3$ 是矩阵 $A$ 属于特征值 $\lambda = 3$ 的线性无关的特征向量，则矩阵 $P$ 不可以是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$[\alpha_1, -2\alpha_2, \alpha_3]$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$[\alpha_1, \alpha_2 + \alpha_3, \alpha_2 - 2\alpha_3]$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$[\alpha_1, \alpha_3, \alpha_2]$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$[\alpha_1 + \alpha_2, \alpha_1 - \alpha_2, \alpha_3]$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $P^{-1}AP=\Lambda=\begin{bmatrix}1&amp;0&amp;0\\0&amp;3&amp;0\\0&amp;0&amp;3\end{bmatrix}$，令 $P=[\alpha_1,\alpha_2,\alpha_3]$，则有 $AP=P\Lambda$，即
+$$A[\alpha_1,\alpha_2,\alpha_3]=[\alpha_1,\alpha_2,\alpha_3]\begin{bmatrix}1&amp;0&amp;0\\0&amp;3&amp;0\\0&amp;0&amp;3\end{bmatrix},$$
+即
+$$[A\alpha_1,A\alpha_2,A\alpha_3]=[\alpha_1,3\alpha_2,3\alpha_3].$$
+因 $\alpha_1$ 是 $A$ 属于 $\lambda=1$ 的特征向量，$\alpha_2,\alpha_3$ 是 $A$ 属于 $\lambda=3$ 的特征向量，且矩阵 $P$ 可逆，因此，$\alpha_1,\alpha_2,\alpha_3$ 线性无关.
+若 $\alpha$ 是属于特征值 $\lambda$ 的特征向量，则 $-2\alpha$ 仍是属于特征值 $\lambda$ 的特征向量，故排除(A).
+若 $\alpha,\beta$ 是属于特征值 $\lambda$ 的特征向量，则 $k_1\alpha+k_2\beta$（$k_1,k_2$ 不同时为零）仍是属于特征值 $\lambda$ 的特征向量. 本题中，$\alpha_2,\alpha_3$ 是属于 $\lambda=3$ 的线性无关的特征向量，故 $\alpha_2+\alpha_3,\alpha_2-2\alpha_3$ 仍是属于 $\lambda=3$ 的特征向量，并且 $\alpha_2+\alpha_3,\alpha_2-2\alpha_3$ 线性无关，故排除(B).
+对于(C)，因为 $\alpha_2,\alpha_3$ 均是属于 $\lambda=3$ 的特征向量，所以 $\alpha_2,\alpha_3$ 谁在前谁在后均正确，故排除(C).
+由于 $\alpha_1,\alpha_2$ 是不同特征值的特征向量，因此 $\alpha_1+\alpha_2,\alpha_1-\alpha_2$ 不再是矩阵 $A$ 的特征向量，故选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lambda = -1$ 是 $A$ 的特征值的充分必要条件为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$A^2 = E$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r(A + E) &lt; n$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$A$ 中每行元素之和为 $-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$A^{\mathrm{T}} = -A$，$|E - A| = 0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">若 $\lambda=-1$ 是 $A$ 的特征值，则存在 $\xi\neq 0$，使 $A\xi=-\xi$，即
+$$(A+E)\xi=0\Leftrightarrow|A+E|=0\Leftrightarrow r(A+E)&lt;n.$$
+故选(B).
+选项(A)既不是充分条件，也不是必要条件. 选项(C)和(D)都是充分条件，但不是必要条件.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A, P$ 都是 $n$ 阶可逆矩阵，$\lambda, \xi$ 分别是 $A$ 的特征值和对应的特征向量，则 $P^{-1}A^*P$ 的特征值和对应的特征向量分别是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{|A|}{\lambda}, P^{-1}\xi$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{|A|}{\lambda}, \xi$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{\lambda}, P\xi$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{\lambda}, P^{-1}\xi$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设条件
+$$A\xi=\lambda\xi \tag{$*$}$$
+且 $A$ 可逆知 $\lambda\neq 0$，在 $(*)$ 式的两端左边各乘 $A^*$，得
+$$A^*A\xi=|A|\xi=\lambda A^*\xi,$$
+即
+$$A^*\xi=\frac{|A|}{\lambda}\xi. \tag{$**$}$$
+$(**)$ 式的两端左边各乘 $P^{-1}$ 得
+$$P^{-1}A^*\xi=P^{-1}A^*P(P^{-1}\xi)=\frac{|A|}{\lambda}P^{-1}\xi.$$
+故 $P^{-1}A^*P$ 的特征值为 $\dfrac{|A|}{\lambda}$，其对应的特征向量为 $P^{-1}\xi$.
+【注】$P^{-1}A^*P$ 相似于 $A^*$，则它们应有相同的特征值 $\dfrac{|A|}{\lambda}$，再求 $P^{-1}A^*P$ 的特征向量也更简便.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 3 阶矩阵，将 $A$ 的第 2 列加到第 3 列得矩阵 $B$，再将 $B$ 的第 3 行的 $-1$ 倍加到第 2 行得 $\begin{pmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 2 &amp; a \end{pmatrix}$，其中 $a$ 为常数，则 $A$ 的特征值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1, 2, $a$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1, 2, $-2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1, $-1$, 2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1, $a$, $-a$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $P=\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;1\\0&amp;0&amp;1\end{bmatrix}$，则 $P^{-1}=\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;-1\\0&amp;0&amp;1\end{bmatrix}$. 又记 $C=\begin{bmatrix}1&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;2&amp;a\end{bmatrix}$，根据题意，得 $AP=B$，且 $P^{-1}B=C$，所以 $P^{-1}AP=C$，即 $A$ 与 $C$ 相似，因而具有相同的特征值. 易知 $C$ 的特征值为 $1,2,a$，所以 $A$ 的特征值为 $1,2,a$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列矩阵中，不能相似对角化的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{pmatrix} 1 &amp; 2 &amp; -1 \\ 2 &amp; 0 &amp; 1 \\ -1 &amp; 1 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{pmatrix} 3 &amp; 2 &amp; 1 \\ 0 &amp; 2 &amp; 1 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 1 &amp; 0 &amp; 1 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 1 &amp; 2 &amp; 0 \\ 0 &amp; 1 &amp; 2 \end{pmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记四个选项中的矩阵依次为 $A,B,C,D$. 由于 $A$ 为实对称矩阵，因此 $A$ 可相似对角化. 显然，$B,C,D$ 的特征值依次为 $3,2,0$；$2,2,1$；$0,2,2$. 由于 $B$ 有三个不同的特征值，因此 $B$ 可相似对角化. 容易求得，$r(2E-C)=1$，$r(2E-D)=2$，故 $C$ 的二重特征值 2 对应两个线性无关的特征向量，而 $D$ 的二重特征值 2 仅对应一个线性无关的特征向量. 因此，$C$ 可相似对角化，$D$ 不可相似对角化.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="24" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 为 2 阶矩阵，$\alpha = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ 是方程组 $Ax = 0$ 的解，$\beta = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ 是方程组 $Ax = \beta$ 的解，则矩阵 $A =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知 $A\alpha=0$，$A\beta=\beta$，所以 $\alpha,\beta$ 分别是矩阵 $A$ 的属于特征值 $0,1$ 的特征向量. 故 $P=[\alpha,\beta]$ 为可逆矩阵，且有 $P^{-1}AP=\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}$，于是
+$$A=P\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}P^{-1}=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}\begin{bmatrix}1&amp;-1\\0&amp;1\end{bmatrix}=\begin{bmatrix}0&amp;1\\0&amp;1\end{bmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{bmatrix}0&amp;1\\0&amp;1\end{bmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="24" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A$ 为 2 阶方阵，可逆矩阵 $P = [\alpha, \beta]$ 使得 $P^{-1}AP = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 2 \end{pmatrix}$，$Q = [\beta, \alpha]$，则 $Q^{-1}A^*Q =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意，$AP-P\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}$，即 $A[\alpha,\beta]=[\alpha,\beta]\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}$，故 $A\alpha=\alpha$，$A\beta=2\beta$，又 $\alpha\neq 0$，$\beta\neq 0$，所以 $A$ 对应于 $\alpha,\beta$ 的特征值分别为 $\lambda_1=1$，$\lambda_2=2$，则 $A^*$ 对应于 $\alpha,\beta$ 的特征值分别为 $\lambda_1^*=2$，$\lambda_2^*=1$，即 $A^*\alpha=2\alpha$，$A^*\beta=\beta$，于是
+$$A^*[\beta,\alpha]=[\beta,\alpha]\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix},$$
+即
+$$A^*Q=Q\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}, Q^{-1}A^*Q=\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 1 与 $-1$ 是矩阵 $$A = \begin{pmatrix} 3 &amp; 1 &amp; -2 \\ -a &amp; -1 &amp; a \\ 4 &amp; 1 &amp; -3 \end{pmatrix}$$ 的特征值，若矩阵 $A$ 可相似对角化，则 $a = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">2</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\lambda_1=1$，$\lambda_2=-1$. 设 $\lambda_3$ 是 $A$ 的第三个特征值，则 $\lambda_1+\lambda_2+\lambda_3=\operatorname{tr}(A)=3+(-1)+(-3)=-1$，因而 $\lambda_3=-1$，即 $\lambda_2=\lambda_3=-1$ 是 $|\lambda E-A|=0$ 的二重根.
+$$-E-A\to\begin{bmatrix}-4&amp;-1&amp;2\\ a&amp;0&amp;-a\\ -4&amp;-1&amp;2\end{bmatrix}\to\begin{bmatrix}-4&amp;-1&amp;2\\ a&amp;0&amp;-a\\ 0&amp;0&amp;0\end{bmatrix},$$
+因要使 $r(-E-A)=1$，即 $a=0$，这时 $(-E-A)x=0$ 才有两个线性无关的解，矩阵 $A$ 才可相似对角化.
+故正确选项为(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A = \begin{pmatrix} 1 &amp; -1 &amp; -a \\ 2 &amp; a &amp; -2 \\ -a &amp; -1 &amp; 1 \end{pmatrix}$，求 $A$ 的特征值，并讨论 $A$ 是否可相似对角化.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】先求 $A$ 的特征值，再根据特征值的情况，讨论 $A$ 是否可相似对角化.
+【解析】
+$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;1&amp;a\\ -2&amp;\lambda-a&amp;2\\ a&amp;1&amp;\lambda-1\end{vmatrix}=\begin{vmatrix}\lambda-1&amp;1&amp;\lambda-1+a\\ -2&amp;\lambda-a&amp;0\\ a&amp;1&amp;\lambda-1+a\end{vmatrix}$$
+$$=\begin{vmatrix}\lambda-1-a&amp;0&amp;0\\ -2&amp;\lambda-a&amp;0\\ a&amp;1&amp;\lambda-1+a\end{vmatrix}=[\lambda-(1+a)](\lambda-a)[\lambda-(1-a)],$$
+故有 $\lambda_1=1+a$，$\lambda_2=a$，$\lambda_3=1-a$.
+讨论特征值的重数. 对任意 $a$，$\lambda_1=1+a\neq\lambda_2=a$；$\lambda_1=1+a=\lambda_3=1-a\Leftrightarrow a=0$；$\lambda_2=a=\lambda_3=1-a\Leftrightarrow a=\dfrac{1}{2}$.
+故当 $a\neq 0$ 且 $a\neq\dfrac{1}{2}$ 时，$\lambda_1\neq\lambda_2\neq\lambda_3$，有三个不同的特征值，$A$ 可以相似对角化.
+当 $a=\dfrac{1}{2}$ 时，$\lambda_2=\lambda_3=\dfrac{1}{2}$，是二重特征值.
+$$r\left(\frac{1}{2}E-A\right)=r\left(\begin{bmatrix}-\dfrac{1}{2}&amp;1&amp;\dfrac{1}{2}\\ -2&amp;0&amp;2\\ \dfrac{1}{2}&amp;1&amp;-\dfrac{1}{2}\end{bmatrix}\right)=2,$$
+故对应的线性无关的特征向量只有一个，此时 $A$ 不可以相似对角化.
+当 $a=0$ 时，$\lambda_1=\lambda_3=1$，是二重特征值.
+$$r(E-A)=r\left(\begin{bmatrix}0&amp;1&amp;0\\ -2&amp;1&amp;2\\ 0&amp;1&amp;0\end{bmatrix}\right)=2,$$
+故对应的线性无关的特征向量也只有一个，此时 $A$ 不可以相似对角化.
+【注】讨论矩阵是否能相似对角化，不必具体计算出特征向量，在有重特征值时，只需计算 $r(\lambda E-A)$，讨论线性无关的特征向量个数是否和重数相等即可.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 3 阶实对称矩阵，已知 $A$ 的每行元素之和为 3，且有二重特征值 $\lambda_1 = \lambda_2 = 1$. 求 $A$ 的全部特征值、特征向量，并求 $A^n$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　$A$ 是 3 阶矩阵，每行元素之和为 3，即有
+$$A\begin{bmatrix}1\\1\\1\end{bmatrix}=\begin{bmatrix}3\\3\\3\end{bmatrix}=3\begin{bmatrix}1\\1\\1\end{bmatrix},$$
+故知 $A$ 有特征值 $\lambda_3=3$，其对应的特征向量为 $\xi_3=[1,1,1]^{\mathrm{T}}$.
+又 $A$ 是实对称矩阵，不同特征值对应的特征向量相互正交，故设 $\lambda_1=\lambda_2=1$ 的特征向量为 $\xi=[x_1,x_2,x_3]^{\mathrm{T}}$，应有
+$$\xi_3^{\mathrm{T}}\xi=x_1+x_2+x_3=0,$$
+解得 $\lambda_1=\lambda_2=1$ 的线性无关的特征向量为
+$$\xi_1=[-1,1,0]^{\mathrm{T}}, \xi_2=[-1,0,1]^{\mathrm{T}}.$$
+取
+$$P=[\xi_1,\xi_2,\xi_3]=\begin{bmatrix}-1&amp;-1&amp;1\\ 1&amp;0&amp;1\\ 0&amp;1&amp;1\end{bmatrix}, P^{-1}AP=\Lambda=\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3\end{bmatrix},$$
+故
+$$A=P\Lambda P^{-1}, A^n=P\Lambda P^{-1}\cdots P\Lambda P^{-1}=P\Lambda^n P^{-1}.$$
+其中 $P^{-1}$ 可如下求得：
+$$\left[\begin{array}{ccc|ccc}-1&amp;-1&amp;1&amp;1&amp;0&amp;0\\ 1&amp;0&amp;1&amp;0&amp;1&amp;0\\ 0&amp;1&amp;1&amp;0&amp;0&amp;1\end{array}\right]\to\left[\begin{array}{ccc|ccc}1&amp;0&amp;1&amp;0&amp;1&amp;0\\ 0&amp;1&amp;1&amp;0&amp;0&amp;1\\ 0&amp;-1&amp;2&amp;1&amp;1&amp;0\end{array}\right]\to\left[\begin{array}{ccc|ccc}1&amp;0&amp;1&amp;0&amp;1&amp;0\\ 0&amp;1&amp;1&amp;0&amp;0&amp;1\\ 0&amp;0&amp;3&amp;1&amp;1&amp;1\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;-\dfrac{1}{3}&amp;\dfrac{2}{3}&amp;-\dfrac{1}{3}\\ 0&amp;1&amp;0&amp;-\dfrac{1}{3}&amp;-\dfrac{1}{3}&amp;\dfrac{2}{3}\\ 0&amp;0&amp;1&amp;\dfrac{1}{3}&amp;\dfrac{1}{3}&amp;\dfrac{1}{3}\end{array}\right],$$
+则 $P^{-1}=\dfrac{1}{3}\begin{bmatrix}-1&amp;2&amp;-1\\ -1&amp;-1&amp;2\\ 1&amp;1&amp;1\end{bmatrix}$，故
+$$A^n=P\Lambda^n P^{-1}=\frac{1}{3}\begin{bmatrix}-1&amp;-1&amp;1\\ 1&amp;0&amp;1\\ 0&amp;1&amp;1\end{bmatrix}\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3\end{bmatrix}^n\begin{bmatrix}-1&amp;2&amp;-1\\ -1&amp;-1&amp;2\\ 1&amp;1&amp;1\end{bmatrix}$$
+$$=\frac{1}{3}\begin{bmatrix}-1&amp;-1&amp;1\\ 1&amp;0&amp;1\\ 0&amp;1&amp;1\end{bmatrix}\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3^n\end{bmatrix}\begin{bmatrix}-1&amp;2&amp;-1\\ -1&amp;-1&amp;2\\ 1&amp;1&amp;1\end{bmatrix}$$
+$$=\frac{1}{3}\begin{bmatrix}3^n+2&amp;3^n-1&amp;3^n-1\\ 3^n-1&amp;3^n+2&amp;3^n-1\\ 3^n-1&amp;3^n-1&amp;3^n+2\end{bmatrix}.$$
+方法二　由方法一，得
+$$A\xi_3=\lambda_3\xi_3, \text{其中 } \lambda_3=3, \xi_3=\begin{bmatrix}1\\1\\1\end{bmatrix}.$$
+设 $\lambda_1=\lambda_2=1$ 对应的特征向量为 $\xi=[x_1,x_2,x_3]^{\mathrm{T}}$，则应有
+$$\xi_3^{\mathrm{T}}\xi=x_1+x_2+x_3=0.$$
+取 $\xi_1=[1,-1,0]^{\mathrm{T}}$，再取 $\xi_2$ 与 $\xi_1$ 正交，设 $\xi_2=[1,1,x]^{\mathrm{T}}$，代入上式得 $\xi_2=[1,1,-2]^{\mathrm{T}}$. 将 $\xi_1,\xi_2,\xi_3$ 单位化，并取正交矩阵
+$$Q=[\xi_1^{\circ},\xi_2^{\circ},\xi_3^{\circ}]=\begin{bmatrix}\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\ -\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\ 0&amp;-\dfrac{2}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\end{bmatrix},$$
+则
+$$Q^{-1}AQ=Q^{\mathrm{T}}AQ=\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3\end{bmatrix}=\Lambda.$$
+$$A^n=Q\Lambda^n Q^{\mathrm{T}}=\begin{bmatrix}\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\ -\dfrac{1}{\sqrt{2}}&amp;\dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\\ 0&amp;-\dfrac{2}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{3}}\end{bmatrix}\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3^n\end{bmatrix}\begin{bmatrix}\dfrac{1}{\sqrt{2}}&amp;-\dfrac{1}{\sqrt{2}}&amp;0\\ \dfrac{1}{\sqrt{6}}&amp;\dfrac{1}{\sqrt{6}}&amp;-\dfrac{2}{\sqrt{6}}\\ \dfrac{1}{\sqrt{3}}&amp;\dfrac{1}{\sqrt{3}}&amp;\dfrac{1}{\sqrt{3}}\end{bmatrix}$$
+$$=\frac{1}{3}\begin{bmatrix}3^n+2&amp;3^n-1&amp;3^n-1\\ 3^n-1&amp;3^n+2&amp;3^n-1\\ 3^n-1&amp;3^n-1&amp;3^n+2\end{bmatrix}.$$
+【注】因 $A$ 是实对称矩阵，故不同特征值对应的特征向量应正交，且不但存在可逆矩阵 $P$，使 $P^{-1}AP=\Lambda$，还存在正交矩阵 $Q$，使
+$$Q^{-1}AQ=Q^{\mathrm{T}}AQ=\Lambda.$$
+方法二中利用正交矩阵 $Q$ 有 $Q^{-1}=Q^{\mathrm{T}}$，避免了利用初等变换求逆的过程，较简便.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="24" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 3 阶实对称矩阵，满足 $A + A^2 + \dfrac{1}{2}A^3 = O$，则 $r(A) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $\lambda$ 是 $A$ 的任一特征值，则 $\lambda+\lambda^2+\dfrac{1}{2}\lambda^3=0$，解得 $\lambda=0$ 或 $\lambda=-1\pm\mathrm{i}$，其中 $\mathrm{i}$ 是虚数单位. 因为 $A$ 是实对称矩阵，其特征值 $\lambda$ 为实数，所以只能为 $\lambda=0$（三重），且 $A$ 相似于对角矩阵
+$$\begin{bmatrix}0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;0\end{bmatrix}, \text{故 } r(A)=0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(1) 设 $A, B$ 是 $n$ 阶矩阵，$A$ 有特征值 $\lambda = 1, 2, \cdots, n$. 证明 $AB$ 和 $BA$ 有相同的特征值且 $AB \sim BA$；(2) 对一般的 $n$ 阶矩阵 $A, B$，是否必有 $AB \sim BA$，说明理由.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 因 $A$ 有 $n$ 个互不相同的非零特征值，$|A|=n!\neq 0$，故 $A$ 可逆，从而有
+$$|\lambda E-AB|=|A(\lambda A^{-1}-B)|=|A|\,|\lambda E-BA|\,|A^{-1}|=|\lambda E-BA|,$$
+即 $AB$ 和 $BA$ 有相同的特征多项式，故有相同的特征值.
+若取可逆矩阵 $P=A$，则有
+$$P^{-1}ABP=A^{-1}ABA=BA.$$
+故有 $AB\sim BA$.
+(2) 对于一般的 $n$ 阶矩阵 $A,B$，不一定有 $AB\sim BA$，可举反例说明.
+例如，取
+$$A=\begin{bmatrix}1&amp;1\\ -1&amp;-1\end{bmatrix}, B=\begin{bmatrix}1&amp;-1\\ -1&amp;1\end{bmatrix},$$
+则有
+$$AB=\begin{bmatrix}1&amp;1\\ -1&amp;-1\end{bmatrix}\begin{bmatrix}1&amp;-1\\ -1&amp;1\end{bmatrix}=\begin{bmatrix}0&amp;0\\ 0&amp;0\end{bmatrix},$$
+$$BA=\begin{bmatrix}1&amp;-1\\ -1&amp;1\end{bmatrix}\begin{bmatrix}1&amp;1\\ -1&amp;-1\end{bmatrix}=\begin{bmatrix}2&amp;2\\ -2&amp;-2\end{bmatrix}.$$
+显然 $r(AB)=0$，$r(BA)=1$，故 $AB$ 不相似于 $BA$.
+【注】①. 要证明相似，应找出可逆矩阵 $P$，使得 $P^{-1}ABP=BA$.
+②. 要说明不相似只要证明其不满足某个相似的必要条件即可.
+③. 相似必有相同的 $\lambda$，但 $\lambda$ 相同不一定相似.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A = \begin{pmatrix} 3 &amp; a &amp; 4 \\ 2 &amp; -1 &amp; 2 \\ -2 &amp; -a &amp; -3 \end{pmatrix}$，求 $A$ 的特征值，问 $a$ 为何值时，$A$ 不能相似于对角矩阵；$a$ 为何值时，$A$ 相似于对角矩阵，并求可逆矩阵 $P$，使得 $P^{-1}AP = \Lambda$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $|\lambda E-A|=\begin{vmatrix}\lambda-3&amp;-a&amp;-4\\-2&amp;\lambda+1&amp;-2\\2&amp;a&amp;\lambda+3\end{vmatrix}=\begin{vmatrix}\lambda-3&amp;-a&amp;-\lambda-1\\-2&amp;\lambda+1&amp;0\\2&amp;a&amp;\lambda+1\end{vmatrix}=\begin{vmatrix}\lambda-1&amp;0&amp;0\\-2&amp;\lambda+1&amp;0\\2&amp;a&amp;\lambda+1\end{vmatrix}=0,$
+得 $\lambda_1=\lambda_2=-1$（二重），$\lambda_3=1$.
+当 $\lambda_1=\lambda_2=-1$ 时，因
+$$-E-A=\begin{bmatrix}-4&amp;-a&amp;-4\\-2&amp;0&amp;-2\\2&amp;a&amp;2\end{bmatrix}\to\begin{bmatrix}-2&amp;0&amp;-2\\-2&amp;0&amp;-2\\2&amp;a&amp;2\end{bmatrix}\to\begin{bmatrix}1&amp;0&amp;1\\0&amp;a&amp;0\\0&amp;0&amp;0\end{bmatrix},$$
+故 $r(-E-A)=\begin{cases}2,&amp;a\neq0,\\1,&amp;a=0.\end{cases}$
+当 $a\neq0$ 时，$r(-E-A)=2$，则 $A$ 对应于 $\lambda_1=\lambda_2=-1$ 的线性无关的特征向量只有一个，故 $A$ 不能相似于对角矩阵.
+当 $a=0$ 时，$r(-E-A)=1$，则 $A$ 对应于 $\lambda_1=\lambda_2=-1$ 的线性无关的特征向量有两个，故 $A$ 相似于对角矩阵.
+当 $a=0,\lambda=-1$ 时，由 $(-E-A)x=\begin{bmatrix}-4&amp;0&amp;-4\\-2&amp;0&amp;-2\\2&amp;0&amp;2\end{bmatrix}\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=0$，解得
+$$\xi_1=\begin{bmatrix}1\\0\\-1\end{bmatrix},\xi_2=\begin{bmatrix}0\\1\\0\end{bmatrix}.$$
+当 $a=0,\lambda=1$ 时，由 $(E-A)x=\begin{bmatrix}-2&amp;0&amp;-4\\-2&amp;2&amp;-2\\2&amp;0&amp;4\end{bmatrix}\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=0$，解得
+$$\xi_3=\begin{bmatrix}2\\1\\-1\end{bmatrix}.$$
+故存在可逆矩阵 $P=[\xi_1,\xi_2,\xi_3]$，使得
+$$P^{-1}AP=\begin{bmatrix}-1&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;1\end{bmatrix}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="24" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 3 阶矩阵 $A$ 有三个特征值 $-1, 2, \dfrac{1}{3}$，对应的特征向量分别是 $\xi_1, \xi_2, \xi_3$，取 $P = [2\xi_2, -\xi_1, 3\xi_3]$，则 $P^{-1}AP =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因 $\lambda_1=-1,\lambda_2=2,\lambda_3=\frac{1}{3}$ 对应的特征向量分别是 $\xi_1,\xi_2,\xi_3$，即
+$$A\xi_1=-\xi_1,A\xi_2=2\xi_2,A\xi_3=\frac{1}{3}\xi_3,$$
+则
+$$A(-\xi_1)=-(-\xi_1),A(2\xi_2)=2(2\xi_2),A(3\xi_3)=\frac{1}{3}(3\xi_3),$$
+$$\begin{aligned}[A(2\xi_2),A(-\xi_1),A(3\xi_3)]&amp;=A[2\xi_2,-\xi_1,3\xi_3]=\left[2(2\xi_2),-(-\xi_1),\frac{1}{3}(3\xi_3)\right]\\&amp;=[2\xi_2,-\xi_1,3\xi_3]\begin{bmatrix}2&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;\frac{1}{3}\end{bmatrix}.\end{aligned}$$
+取 $P=[2\xi_2,-\xi_1,3\xi_3]$，得
+$$P^{-1}AP=\begin{bmatrix}2&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;\frac{1}{3}\end{bmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{bmatrix}2&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;\frac{1}{3}\end{bmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $A$ 是 3 阶矩阵，$r(A) = 1$，则 $\lambda = 0$ 是 $A$ 的特征值，其重数（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">必为 2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">可能为 2 或 3</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">可能为 1 或 2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">可能为 1, 2 或 3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$A$ 是 3 阶矩阵，$r(A)=1$，即 $r(0E-A)=1$，$(0E-A)x=0$ 有 2 个线性无关的特征向量，故 $\lambda=0$ 至少是二重特征值，不可能是一重特征值，故可排除选项（C），（D），也可能是三重特征值，例如 $A=\begin{bmatrix}0&amp;0&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{bmatrix}$ 满足 $r(A)=1$，但 $\lambda=0$ 是三重特征值，排除选项（A），故应选（B）.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="24" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 2 阶矩阵，有特征值 $\lambda_1 = 1, \lambda_2 = 2$，$f(x) = x^2 - 3x + 3$，则 $f(A) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题，$A$ 是 2 阶矩阵，有 2 个不同的特征值，故 $A\sim\Lambda$，即存在可逆矩阵 $P$，使得 $P^{-1}AP=\Lambda,A=P\Lambda P^{-1}$，其中 $\Lambda=\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}$.
+方法一
+$$\begin{aligned}f(x)&amp;=x^2-3x+3=(x-1)(x-2)+1,\\f(A)&amp;=(A-E)(A-2E)+E\\&amp;=(P\Lambda P^{-1}-PP^{-1})(P\Lambda P^{-1}-2PP^{-1})+E\\&amp;=P\left(\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}-E\right)P^{-1}P\left(\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}-2E\right)P^{-1}+E\\&amp;=P\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}\begin{bmatrix}-1&amp;0\\0&amp;0\end{bmatrix}P^{-1}+E=P\begin{bmatrix}0&amp;0\\0&amp;0\end{bmatrix}P^{-1}+E=E.\end{aligned}$$
+方法二　直接计算.
+$$\begin{aligned}f(A)&amp;=A^2-3A+3E=(P\Lambda P^{-1})^2-3P\Lambda P^{-1}+3PP^{-1}\\&amp;=P\Lambda^2P^{-1}-3P\Lambda P^{-1}+3PP^{-1}\\&amp;=P(\Lambda^2-3\Lambda+3E)P^{-1}\\&amp;=P\left(\begin{bmatrix}1&amp;0\\0&amp;4\end{bmatrix}-\begin{bmatrix}3&amp;0\\0&amp;6\end{bmatrix}+\begin{bmatrix}3&amp;0\\0&amp;3\end{bmatrix}\right)P^{-1}\\&amp;=P\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix}P^{-1}=E.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">E</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="24" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A, B$ 是 $n$ 阶可逆矩阵，且 $A \sim B$，则以下结论中：①$A^{-1} \sim B^{-1}$；②$A^{\mathrm{T}} \sim B^{\mathrm{T}}$；③$A^* \sim B^*$；④$AB \sim BA$. 正确结论的个数是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $A\sim B$，有 $|A|=|B|$，且存在可逆矩阵 $P$，使
+$$P^{-1}AP=B.\qquad(*)$$
+两边求逆得
+$$P^{-1}A^{-1}P=B^{-1},\qquad(**)$$
+从而 $A^{-1}\sim B^{-1}$，故 ① 正确.
+由 $(*)$ 式两边转置，得 $P^{\mathrm{T}}A^{\mathrm{T}}(P^{-1})^{\mathrm{T}}=B^{\mathrm{T}}$，记 $(P^{-1})^{\mathrm{T}}=Q,P^{\mathrm{T}}=Q^{-1}$，即 $Q^{-1}A^{\mathrm{T}}Q=B^{\mathrm{T}}$，从而 $A^{\mathrm{T}}\sim B^{\mathrm{T}}$，故 ② 正确.
+对 $(**)$ 式两边乘 $|A|$，得
+$$P^{-1}|A|A^{-1}P=P^{-1}A^{*}P=|A|B^{-1}=|B|B^{-1}=B^{*},$$
+从而 $A^{*}\sim B^{*}$，故 ③ 正确.
+因 $A$ 可逆，故
+$$BA=EBA=A^{-1}ABA=A^{-1}(AB)A,$$
+即 $AB\sim BA$，故 ④ 正确.
+故应选（D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A = E - \dfrac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}$，其中 $E$ 是 $n$ 阶单位矩阵，$\alpha = [a_1, a_2, \cdots, a_n]^{\mathrm{T}} \neq 0$. (1) 计算 $A^2$，并求 $A^{-1}$；(2) 验证 $\alpha$ 是 $A$ 的特征向量，并求 $A$ 的对应于 $\alpha$ 的特征值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1)
+$$\begin{aligned}A^2&amp;=\left(E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\right)\left(E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\right)\\&amp;=E-\frac{6}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}+9\frac{1}{\alpha^{\mathrm{T}}\alpha(\alpha^{\mathrm{T}}\alpha)}\alpha(\alpha^{\mathrm{T}}\alpha)\alpha^{\mathrm{T}}\\&amp;=E-\frac{6}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}+9\frac{1}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\\&amp;=E+\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\\&amp;=-\left(E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\right)+2E=-A+2E,\end{aligned}$$
+即
+$$A^2+A=A(A+E)=2E,$$
+故 $A$ 可逆，且
+$$\begin{aligned}A^{-1}&amp;=\frac{1}{2}(A+E)=\frac{1}{2}\left[\left(E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\right)+E\right]\\&amp;=\frac{1}{2}\left(2E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\right)=E-\frac{3}{2\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}.\end{aligned}$$
+(2)
+$$A\alpha=\left(E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\right)\alpha=\alpha-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha(\alpha^{\mathrm{T}}\alpha)=\alpha-3\alpha=-2\alpha,$$
+故 $\alpha$ 是 $A$ 的特征向量，对应的特征值为 $-2$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 3 阶矩阵，$\lambda_0$ 是 $A$ 的特征值，对应的特征向量为 $\xi = [1, 1, 1]^{\mathrm{T}}$，且 $|A| = 1$，$A^*$ 是 $A$ 的伴随矩阵，$A^* = \begin{pmatrix} -a &amp; 1 &amp; -2 \\ -1 &amp; b &amp; -\dfrac{7}{2} \\ 2 &amp; -3 &amp; a \end{pmatrix}$，求参数 $a, b$ 及 $\lambda_0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设条件，有
+$$A\xi=\lambda_0\xi,$$
+在等式两端的左边乘 $A^{*}$，且利用 $|A|=1$，得
+$$A^{*}A\xi=|A|\xi=\xi=\lambda_0A^{*}\xi,$$
+即
+$$\lambda_0\begin{bmatrix}-a&amp;1&amp;-2\\-1&amp;b&amp;-\dfrac{7}{2}\\2&amp;-3&amp;a\end{bmatrix}\begin{bmatrix}1\\1\\1\end{bmatrix}=\begin{bmatrix}1\\1\\1\end{bmatrix},$$
+得
+$$\begin{cases}\lambda_0(-a+1-2)=1,\\\lambda_0\left(-1+b-\dfrac{7}{2}\right)=1,\\\lambda_0(2-3+a)=1.\end{cases}$$
+因 $|A|=1$，故 $\lambda_0\neq0$，解得 $a=0,b=\dfrac{7}{2},\lambda_0=-1$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="24" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是 3 阶矩阵，$\lambda_1, \lambda_2, \lambda_3$ 是 $A$ 的三个不同的特征值，对应的特征向量分别是 $\xi_1, \xi_2, \xi_3$，令 $\beta = \xi_1 + \xi_2 + \xi_3$. 证明：(1) $\beta$ 不是 $A$ 的特征向量；(2) 向量组 $\beta, A\beta, A^2\beta$ 线性无关.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 已知 $A\beta=A(\xi_1+\xi_2+\xi_3)=\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3$，若 $\beta$ 是 $A$ 的特征向量，假设对应的特征值为 $\mu$，则有
+$$A\beta=\mu\beta=\mu(\xi_1+\xi_2+\xi_3)=\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3,$$
+从而得 $(\mu-\lambda_1)\xi_1+(\mu-\lambda_2)\xi_2+(\mu-\lambda_3)\xi_3=0$.
+由 $\xi_1,\xi_2,\xi_3$ 是不同特征值对应的特征向量知，$\xi_1,\xi_2,\xi_3$ 线性无关，从而得 $\lambda_1=\lambda_2=\lambda_3=\mu$. 这和 $\lambda_1,\lambda_2,\lambda_3$ 互不相同矛盾，故 $\beta=\xi_1+\xi_2+\xi_3$ 不是 $A$ 的特征向量.
+(2) 方法一　用线性无关的定义证.
+假设有数 $k_1,k_2,k_3$ 使得
+$$k_1\beta+k_2A\beta+k_3A^2\beta=0,$$
+将 $\beta=\xi_1+\xi_2+\xi_3$ 及 $A\xi_i=\lambda_i\xi_i(i=1,2,3)$ 代入，得
+$$k_1(\xi_1+\xi_2+\xi_3)+k_2(\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3)+k_3(\lambda_1^2\xi_1+\lambda_2^2\xi_2+\lambda_3^2\xi_3)=0,$$
+整理得
+$$(k_1+k_2\lambda_1+k_3\lambda_1^2)\xi_1+(k_1+k_2\lambda_2+k_3\lambda_2^2)\xi_2+(k_1+k_2\lambda_3+k_3\lambda_3^2)\xi_3=0.\qquad(*)$$
+因 $\xi_1,\xi_2,\xi_3$ 线性无关，当且仅当
+$$\begin{cases}k_1+\lambda_1k_2+\lambda_1^2k_3=0,\\k_1+\lambda_2k_2+\lambda_2^2k_3=0,\\k_1+\lambda_3k_2+\lambda_3^2k_3=0\end{cases}\qquad(**)$$
+时，$(*)$ 式成立. 又 $\lambda_i(i=1,2,3)$ 互不相同，故方程组的系数行列式
+$$\begin{vmatrix}1&amp;\lambda_1&amp;\lambda_1^2\\1&amp;\lambda_2&amp;\lambda_2^2\\1&amp;\lambda_3&amp;\lambda_3^2\end{vmatrix}=(\lambda_3-\lambda_2)(\lambda_3-\lambda_1)(\lambda_2-\lambda_1)\neq0,$$
+故方程组 $(**)$ 仅有零解，即 $k_1=k_2=k_3=0$，所以 $\beta,A\beta,A^2\beta$ 线性无关.
+方法二
+$$\begin{aligned}[\beta,A\beta,A^2\beta]&amp;=[\xi_1+\xi_2+\xi_3,\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3,\lambda_1^2\xi_1+\lambda_2^2\xi_2+\lambda_3^2\xi_3]\\&amp;=[\xi_1,\xi_2,\xi_3]\begin{bmatrix}1&amp;\lambda_1&amp;\lambda_1^2\\1&amp;\lambda_2&amp;\lambda_2^2\\1&amp;\lambda_3&amp;\lambda_3^2\end{bmatrix}=[\xi_1,\xi_2,\xi_3]C.\end{aligned}$$
+由 $|C|=\begin{vmatrix}1&amp;\lambda_1&amp;\lambda_1^2\\1&amp;\lambda_2&amp;\lambda_2^2\\1&amp;\lambda_3&amp;\lambda_3^2\end{vmatrix}\neq0$ 知，$C$ 是可逆矩阵，故
+$$r([\beta,A\beta,A^2\beta])=r([\xi_1,\xi_2,\xi_3])=3,$$
+即 $\beta,A\beta,A^2\beta$ 线性无关.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-23.html">上一章：第4章 线性方程组</a>
+      <a class="chapter-link" href="chapter-25.html">下一章：第6章 二次型</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 24, "total": 22, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

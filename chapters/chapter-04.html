@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章 一元函数微分学的概念 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第3章 一元函数微分学的概念<span class="top-count">（16题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x)$满足$f(0)=0$，且$f'(0)$存在，则$\lim_{x \to 0}\frac{f(1-\cos x)}{\ln(1-x\sin x)} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式 $=\lim\limits_{x \to 0}\dfrac{f(1-\cos x)-f(0)}{(1-\cos x)-0} \cdot \lim\limits_{x \to 0}\dfrac{1-\cos x}{\ln(1-x\sin x)}$
+$$= f'(0) \lim_{x \to 0}\frac{1-\cos x}{\ln(1-x\sin x)}$$
+$$\xlongequal{\text{等价无穷小替换}} f'(0) \lim_{x \to 0}\frac{\dfrac{1}{2}x^2}{-x\sin x} = -\frac{1}{2}f'(0)\lim_{x \to 0}\frac{x^2}{x^2} = -\frac{1}{2}f'(0).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{1}{2}f'(0)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="4" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$F(x) = g(x)\varphi(x)$，$\varphi(x)$在$x=a$处连续但不可导，$g(x)$在$x=a$处可导，$F(x)$在$x=a$处可导，则一定有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$g(a)=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$g(a)\neq 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$g'(a)=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$g(a)$可以为任意实数</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　当 $g(x) \neq 0$ 时，$\varphi(x)=\dfrac{F(x)}{g(x)}$.
+因为 $F(x)$ 在 $x=a$ 处可导，$g(x)$ 在 $x=a$ 处可导，假设 $g(a) \neq 0$，则 $\varphi(x)$ 在 $x=a$ 处也可导，且 $\varphi'(a)=\dfrac{F'(a)g(a)-F(a)g'(a)}{g^2(a)}$.
+这与 $\varphi(x)$ 在 $x=a$ 处不可导矛盾，所以 $g(a)=0$.
+方法二　根据定义，
+$$F'(a)=\lim_{h \to 0}\frac{F(a+h)-F(a)}{h}$$
+$$=\lim_{h \to 0}\frac{g(a+h)\varphi(a+h)-g(a)\varphi(a)}{h}$$
+$$=\lim_{h \to 0}\frac{g(a+h)\varphi(a+h)-g(a)\varphi(a+h)}{h}+\lim_{h \to 0}\frac{g(a)\varphi(a+h)-g(a)\varphi(a)}{h}$$
+$$=g'(a)\lim_{h \to 0}\varphi(a+h)+g(a)\lim_{h \to 0}\frac{\varphi(a+h)-\varphi(a)}{h}$$
+$$=g'(a)\varphi(a)+g(a)\lim_{h \to 0}\frac{\varphi(a+h)-\varphi(a)}{h}.$$
+由于 $\varphi(x)$ 在 $x=a$ 处不可导，则 $\lim\limits_{h \to 0}\dfrac{\varphi(a+h)-\varphi(a)}{h}$ 不存在.
+但 $F'(a)$ 存在，则必有 $g(a)=0$. 此时 $F'(a)=g'(a)\varphi(a)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="4" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设连续函数$f(x)$满足$\lim_{x \to 2}\frac{\ln(x-1)}{f(3-x)} = 2$，且$f(1)=0$，则$f'(1)$的值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-\frac{1}{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\Delta x=x-2$，当 $x \to 2$ 时，$\Delta x \to 0$，则
+$$\lim_{x \to 2}\frac{\ln(x-1)}{f(3-x)}=\lim_{\Delta x \to 0}\frac{\ln(1+\Delta x)}{f(1-\Delta x)}$$
+$$=\lim_{\Delta x \to 0}\frac{\dfrac{\ln(1+\Delta x)}{\Delta x}}{\dfrac{f(1-\Delta x)}{\Delta x}}=2.$$
+故 $\lim\limits_{\Delta x \to 0}\dfrac{f(1-\Delta x)}{\Delta x}=\dfrac{1}{2}$，
+从而得 $f'(1)=-\dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x)$在$x=0$处可导，$f(0)=f'(0)=\sqrt{2}$，则$\lim_{x \to 0}\frac{f^{2}(x)-2}{x} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式 $=\lim\limits_{x \to 0}\dfrac{f(x)+\sqrt{2}}{1} \cdot \dfrac{f(x)-\sqrt{2}}{x}=\lim\limits_{x \to 0}[f(x)+\sqrt{2}] \cdot \lim\limits_{x \to 0}\dfrac{f(x)-f(0)}{x-0}$
+$$=(\sqrt{2}+\sqrt{2}) \cdot f'(0)=2\sqrt{2} \cdot \sqrt{2}=4.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">4</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \dfrac{1}{n^{2}}$，$\dfrac{1}{(n+1)^{2}} &lt; x \leqslant \dfrac{1}{n^{2}}$，$n=1,2,\cdots$，$f(0)=0$，则$f'_+(0) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f_+'(0)=\lim\limits_{x \to 0^+}\dfrac{f(x)-f(0)}{x-0}=\lim\limits_{x \to 0^+}\dfrac{f(x)}{x}$，由 $n^2 \leqslant \dfrac{1}{x}&lt;(n+1)^2$，得 $\dfrac{n^2}{n^2} \leqslant \dfrac{f(x)}{x}&lt;\left(\dfrac{n+1}{n}\right)^2$，当 $x \to 0^+$ 时，$n \to \infty$，根据夹逼准则，$\lim\limits_{x \to 0^+}\dfrac{f(x)}{x}=1$，即 $f_+'(0)=1$.\n【注】此命题所给函数表达式及定义区间均异于常见的连续函数及定义区间，易对考生造成扰乱. 事实上，考生必须紧抓导数定义——极限计算的方法，识别“包装”，只有利用好题目给的“$\dfrac{1}{(n+1)^2} &lt; x \leqslant \dfrac{1}{n^2}$”这个连续不等式，才能用上夹逼准则，从而解决问题.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设可导函数$f(x) &gt; 0$，则$\lim_{n \to \infty}n\ln\frac{f\left(\frac{1}{n}\right)}{f(0)} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式 $=\lim\limits_{n \to \infty}\dfrac{\ln f\left(\dfrac{1}{n}\right)-\ln f(0)}{\dfrac{1}{n}}=\lim\limits_{x \to 0^+}\dfrac{\ln f(x)-\ln f(0)}{x-0}=\left.[\ln f(x)]'\right|_{x=0}=\dfrac{f'(0)}{f(0)}$.
+【注】要善于用公式 $\ln \dfrac{b}{a}=\ln b-\ln a$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{f'(0)}{f(0)}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="4" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数$f(x)$可导，$|f(x)|$在$x=0$处不可导，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(0)=0$，$f'(0)=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(0)=0$，$f'(0)\neq 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(0)\neq 0$，$f'(0)=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(0)\neq 0$，$f'(0)\neq 0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">若 $f(0) \neq 0$，则 $\left.[|f(x)|]'\right|_{x=0}=\left.[\sqrt{f^2(x)}]'\right|_{x=0}=\left.\dfrac{2f(x)f'(x)}{2\sqrt{f^2(x)}}\right|_{x=0}=\dfrac{f(0)f'(0)}{|f(0)|}$，即 $|f(x)|$ 在 $x=0$ 处可导，与题设矛盾，故 $f(0)=0$.
+记 $g(x)=|f(x)|$，则
+$$g_+'(0)=\lim_{x \to 0^+}\frac{|f(x)|}{x}=|f'(0)|\text{，}$$
+$$g_-'(0)=\lim_{x \to 0^-}\frac{|f(x)|}{x}=-\left|\lim_{x \to 0^-}\frac{f(x)}{x}\right|=-|f'(0)|.$$
+若 $f'(0)=0$，则亦有 $|f(x)|$ 在 $x=0$ 处可导，矛盾. 于是 $f'(0) \neq 0$.
+【注】特例法：取 $f(x)=x$，则 $|f(x)|=|x|$，$f(0)=0$，$f'(0)=1 \neq 0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数$f(x)$连续，$\lim_{x \to 1}\frac{f(x)-1}{\ln x} = 2$，则曲线$y=f(x)$在点$x=1$处的切线方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\lim\limits_{x \to 1}[f(x)-1]=\lim\limits_{x \to 1}\dfrac{f(x)-1}{\ln x} \cdot \ln x=0$，又 $f(x)$ 连续，故 $f(1)=\lim\limits_{x \to 1}f(x)=1$.
+于是 $f'(1)=\lim\limits_{x \to 1}\dfrac{f(x)-f(1)}{x-1}=\lim\limits_{x \to 1}\dfrac{f(x)-1}{\ln x} \cdot \dfrac{\ln x}{x-1}=2 \cdot 1=2$.
+故所求切线方程为 $y-f(1)=f'(1)(x-1)$，即 $y-1=2(x-1)$，也即 $y=2x-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$y=2x-1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="4" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数$f(x)$在$x=1$处可导，且$\Delta f(1)$是$f(x)$在增量为$\Delta x$时的函数值增量，则$\lim_{\Delta x \to 0}\frac{\Delta f(1) - \mathrm{d}f(1)}{\Delta x} =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f'(1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\infty$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\Delta f(1)=f(1+\Delta x)-f(1)$，故 $\lim\limits_{\Delta x \to 0}\dfrac{\Delta f(1)}{\Delta x}=f'(1)$，又
+$$\lim_{\Delta x \to 0}\frac{\mathrm{d}f(1)}{\Delta x}=\lim_{\Delta x \to 0}\frac{f'(1)\mathrm{d}x}{\Delta x}=\lim_{\Delta x \to 0}\frac{f'(1)\Delta x}{\Delta x}=f'(1)\text{，}$$
+于是原式 $=f'(1)-f'(1)=0$.
+【注】在微分概念中，由 $\Delta y=A\Delta x+o(\Delta x)$，得 $\mathrm{d}y=A\Delta x$，故由 $\Delta x=1 \cdot \Delta x+o(\Delta x)$，得 $\mathrm{d}x=1 \cdot \Delta x$，也就有 $\mathrm{d}y=A\Delta x=A\mathrm{d}x$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="4" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \begin{cases}x^{3}\sin\frac{1}{x}, &amp; x&gt;0, \\ x^{3}, &amp; x \leqslant 0,\end{cases}$则$f(x)$在$x=0$处（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不连续</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">连续，但不可导</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">可导，但导函数不连续</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">可导，且导函数连续</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\lim\limits_{x \to 0^-}f(x)=\lim\limits_{x \to 0^-}x^2=0=f(0)$，$\lim\limits_{x \to 0^+}f(x)=\lim\limits_{x \to 0^+}x^3\sin \dfrac{1}{x}=0$，故 $f(x)$ 在点 $x=0$ 处连续.
+$$f_+'(0)=\lim_{x \to 0^+}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^+}\frac{x^3\sin \dfrac{1}{x}}{x}$$
+$$=\lim_{x \to 0^+}x^2\sin \frac{1}{x}=0\text{，}$$
+$$f_-'(0)=\lim_{x \to 0^-}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^-}\frac{x^2}{x}=0\text{，}$$
+故 $f(x)$ 在点 $x=0$ 处可导，且 $f'(0)=0$.
+又当 $x&gt;0$ 时，$f'(x)=3x^2\sin \dfrac{1}{x}+x^3\cos \dfrac{1}{x} \cdot \left(-\dfrac{1}{x^2}\right)=3x^2\sin \dfrac{1}{x}-x\cos \dfrac{1}{x}$；当 $x&lt;0$ 时，$f'(x)=2x$，故
+$$\lim_{x \to 0^+}f'(x)=\lim_{x \to 0^-}f'(x)=0=f'(0)\text{，}$$
+即 $f'(x)$ 在 $x=0$ 处连续.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="4" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$\varphi(x)$只有一阶连续导数，$f(x) = \varphi(x)\left[1+|\ln(1+x)|\right]$，则$\varphi(0)=0$是$f(x)$在$x=0$处可导的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">充分必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">充分非必要条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">必要非充分条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既非充分又非必要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f'(0)=\lim_{x \to 0}\frac{f(x)-f(0)}{x-0}$$
+$$=\lim_{x \to 0}\left[\frac{\varphi(x)-\varphi(0)}{x-0}+\frac{\varphi(x)|\ln(1+x)|}{x-0}\right]\text{，}$$
+则
+$$f_+'(0)=\varphi'(0)+\varphi(0)\text{，}$$
+$$f_-'(0)=\varphi'(0)-\varphi(0)\text{，}$$
+而 $f'(0)$ 存在等价于 $f_+'(0)=f_-'(0)$，即 $\varphi(0)=0$. 选项（A）正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x)$在$x_0$处可导，$x_n = \sin\frac{1}{n} + \frac{1}{n^{2}}$，则$\lim_{n \to \infty}\frac{f\left(x_0+\frac{1}{n}\right)-f\left(x_0-x_n\right)}{\sin\frac{1}{n}} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $n \to \infty$ 时，$\sin \dfrac{1}{n} \sim \dfrac{1}{n}$，$x_n \sim \dfrac{1}{n}$，用等价无穷小替换，有
+$$\lim_{n \to \infty}\frac{f\left(x_0+\dfrac{1}{n}\right)-f(x_0-x_n)}{\sin \dfrac{1}{n}}$$
+$$=\lim_{n \to \infty}\frac{f\left(x_0+\dfrac{1}{n}\right)-f(x_0)-\left[f(x_0-x_n)-f(x_0)\right]}{\dfrac{1}{n}}$$
+$$=\lim_{n \to \infty}\frac{f\left(x_0+\dfrac{1}{n}\right)-f(x_0)}{\dfrac{1}{n}}+\lim_{n \to \infty}\frac{f(x_0-x_n)-f(x_0)}{-x_n} \cdot \frac{x_n}{\dfrac{1}{n}}$$
+$$=2f'(x_0).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$2f'(x_0)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x)$为在$x=0$处可导的奇函数，则$\lim_{x \to 0}\frac{f(tx)-5f(x)}{x} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f(x)$ 为奇函数，故 $f(0)=0$，又 $f(x)$ 在 $x=0$ 处可导，则当 $t \neq 0$ 时，有
+$$\lim_{x \to 0}\frac{f(tx)-5f(x)}{x}=\lim_{x \to 0}\frac{f(tx)-f(0)+5f(0)-5f(x)}{x}$$
+$$=\lim_{x \to 0}\left[\frac{f(tx)-f(0)}{tx}t-5\frac{f(x)-f(0)}{x}\right]$$
+$$=(t-5)f'(0)\text{；}$$
+当 $t=0$ 时，$\lim\limits_{x \to 0}\dfrac{f(tx)-5f(x)}{x}=-\lim\limits_{x \to 0}\dfrac{5f(x)}{x}=-5\lim\limits_{x \to 0}\dfrac{f(x)-f(0)}{x}$
+$$=-5f'(0).$$
+所以 $\lim\limits_{x \to 0}\dfrac{f(tx)-5f(x)}{x}=(t-5)f'(0)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$(t-5)f'(0)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="4" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \max\{2x, x^{2}\}$，$x \in (0,4)$，且$f'(a)$不存在，$a \in (0,4)$，则$a =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题可知 $f(x)=\begin{cases}2x, &amp; 0&lt;x&lt;2,\\ x^2, &amp; 2 \leqslant x&lt;4,\end{cases}$ 则
+$$f_-'(2)=\lim_{x \to 2^-}\frac{f(x)-f(2)}{x-2}=\lim_{x \to 2^-}\frac{2x-4}{x-2}=2\text{，}$$
+$$f_+'(2)=\lim_{x \to 2^+}\frac{f(x)-f(2)}{x-2}=\lim_{x \to 2^+}\frac{x^2-4}{x-2}=4.$$
+故 $f'(2)$ 不存在. 即知 $a=2$.
+【注】分段表示的函数，讨论其连续性、可微性，关键在于分段点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="4" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \lim_{n \to \infty}\frac{x^{2}\mathrm{e}^{n(x-1)} + ax + b}{5 + \mathrm{e}^{n(x-1)}}$，求$f(x)$并讨论$f(x)$的连续性及可导性与$a,b$的关系.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">① $f(x)=\begin{cases}\dfrac{ax+b}{5}, &amp; x&lt;1,\\ \dfrac{1+a+b}{6}, &amp; x=1,\\ x^2, &amp; x&gt;1.\end{cases}$
+② 若 $f(x)$ 在 $x=1$ 处连续，则要求 $\lim\limits_{x \to 1^-}f(x)=\lim\limits_{x \to 1^+}f(x)=f(1)$ 成立，即
+$$\frac{a+b}{5}=1=\frac{1+a+b}{6}.$$
+当 $a+b=5$ 时，$f(x)$ 在 $x=1$ 处连续.
+当 $x \neq 1$ 时，$f(x)$ 连续，所以当 $a+b=5$ 时，$f(x)$ 在 $(-\infty,+\infty)$ 上连续.
+③ 当 $f_+'(1)=f_-'(1)$ 时，$f(x)$ 在 $x=1$ 处可导（可导是在连续的基础上的，即 $a+b=5$）.
+$$f_-'(1)=\lim_{x \to 1^-}\frac{f(x)-f(1)}{x-1}=\lim_{x \to 1^-}\frac{\dfrac{ax+b}{5}-\dfrac{1+a+b}{6}}{x-1}\xlongequal{a+b=5}\frac{0}{0}=\frac{a}{5}\text{，}$$
+$$f_+'(1)=\lim_{x \to 1^+}\frac{f(x)-f(1)}{x-1}=\lim_{x \to 1^+}\frac{x^2-\dfrac{1+a+b}{6}}{x-1}=\lim_{x \to 1^+}\frac{x^2-1}{x-1}=\lim_{x \to 1^+}(x+1)=2.$$
+故仅当 $\dfrac{a}{5}=2$，即 $a=10$ 时，$f_-'(1)=f_+'(1)$，即 $f(x)$ 在 $x=1$ 处可导.
+综上所述，当 $a=10$，$b=-5$ 时，$f(x)$ 在 $(-\infty,+\infty)$ 上可导.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="4" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数$f(x) = \begin{cases}x^{2}+2x+b, &amp; x \leqslant 0, \\ \ln(1+ax), &amp; x&gt;0\end{cases}$处处可导，试确定常数$a$和$b$的值，并求出$f'(x)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】$f(x)$ 由两个表达式分段表示，显然当 $x&lt;0$ 时，$x^2+2x+b$ 处处可导，当 $x&gt;0$ 时，$\ln(1+ax)$ 也是处处可导. 要考虑的只是 $f(x)$ 在 $x=0$ 处的连续性和可导性.
+【解析】由于 $\lim\limits_{x \to 0^-}(x^2+2x+b)=b$，$\lim\limits_{x \to 0^+}\ln(1+ax)=0$，而 $f(0)=b$，要使 $f(x)$ 在 $x=0$ 处连续，则必须有 $b=0$.
+又
+$$f_-'(0)=\lim_{x \to 0^-}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^-}\frac{x^2+2x}{x}=2\text{，}$$
+$$f_+'(0)=\lim_{x \to 0^+}\frac{\ln(1+ax)-f(0)}{x-0}=\lim_{x \to 0^+}\frac{\ln(1+ax)}{x}=a.$$
+要使 $f(x)$ 在 $x=0$ 处可导，则必须有 $a=2$，于是
+$$f(x)=\begin{cases}x^2+2x, &amp; x \leqslant 0,\\ \ln(1+2x), &amp; x&gt;0,\end{cases}$$
+故
+$$f'(x)=\begin{cases}2x+2, &amp; x \leqslant 0,\\ \dfrac{2}{1+2x}, &amp; x&gt;0.\end{cases}$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-03.html">上一章：第2章 数列极限</a>
+      <a class="chapter-link" href="chapter-05.html">下一章：第4章 一元函数微分学的计算</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 4, "total": 16, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

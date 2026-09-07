@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 余子式和代数余子式的计算 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第2章 余子式和代数余子式的计算<span class="top-count">（3题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="51" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $D_3=\begin{vmatrix}1&amp;1&amp;1\\1&amp;2&amp;5\\34&amp;1&amp;34\end{vmatrix}$，则 $5A_{11}+2A_{12}+A_{13}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$5A_{11}+2A_{12}+A_{13}=\begin{vmatrix}5&amp;2&amp;1\\1&amp;2&amp;5\\34&amp;1&amp;34\end{vmatrix}=520.$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">520</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="51" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 3 阶行列式 $|\boldsymbol{A}|=-9$，其第 2 行元素为 $[1,1,2]$，第 3 行元素为 $[2,2,1]$，则 $A_{31}+A_{32}-3A_{33}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $|A|=\begin{vmatrix}a_1&amp;a_2&amp;a_3\\1&amp;1&amp;2\\2&amp;2&amp;1\end{vmatrix}$，则 $2A_{31}+2A_{32}+A_{33}=|A|=-9$，而
+$$A_{31}+A_{32}+2A_{33}=\begin{vmatrix}a_1&amp;a_2&amp;a_3\\1&amp;1&amp;2\\1&amp;1&amp;2\end{vmatrix}=0,$$
+即 $\begin{cases}2(A_{31}+A_{32})+A_{33}=-9,\\A_{31}+A_{32}+2A_{33}=0,\end{cases}$ 解得 $A_{31}+A_{32}=-6$，$A_{33}=3$，故 $A_{31}+A_{32}-3A_{33}=-15$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-15</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="51" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 3 阶行列式 $|\boldsymbol{A}|$ 的元素 $a_{ij}$ 均为实数，且 $a_{ij}$ 不全为 0. 若
+$$a_{ij}=-A_{ij}\;(i,j=1,2,3),$$
+其中 $A_{ij}$ 是 $a_{ij}$ 的代数余子式，则 $|\boldsymbol{A}|=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $A^{\mathrm{T}}=\begin{bmatrix}a_{11}&amp;a_{21}&amp;a_{31}\\a_{12}&amp;a_{22}&amp;a_{32}\\a_{13}&amp;a_{23}&amp;a_{33}\end{bmatrix}$，$A^{*}=\begin{bmatrix}A_{11}&amp;A_{21}&amp;A_{31}\\A_{12}&amp;A_{22}&amp;A_{32}\\A_{13}&amp;A_{23}&amp;A_{33}\end{bmatrix}$，$a_{ij}=-A_{ij}$，得 $A^{*}=-A^{\mathrm{T}}$. 于是 $|A^{*}|=|-A^{\mathrm{T}}|$，即 $|A|^{3-1}=(-1)^3|A|$，也即 $|A|^2=-|A|$，故
+$$|A|(|A|+1)=0. \qquad (*)$$
+由 $a_{ij}$ 不全为 0 知，存在 $a_{kj}\neq 0$，将行列式 $|A|$ 按第 $k$ 行展开，得
+$$|A|=a_{k1}A_{k1}+a_{k2}A_{k2}+a_{k3}A_{k3}=-a_{k1}^2-a_{k2}^2-a_{k3}^2&lt;0,$$
+故由(*)式知，$|A|=-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-1</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-50.html">上一章：第1章 行列式</a>
+      <a class="chapter-link" href="chapter-52.html">下一章：第3章 矩阵运算</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 51, "total": 3, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

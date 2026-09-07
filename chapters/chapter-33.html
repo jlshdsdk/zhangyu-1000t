@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 数列极限 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第2章 数列极限<span class="top-count">（15题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="33" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a_n=(n+3)^{\frac{1}{n}}$，$n=1,2,\cdots$，则数列$\{a_n\}$是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">单增的</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">单减的</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">不单调的</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">无界的</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=x^{\frac{1}{x}}$，知 $f'(x)=\dfrac{x^{\frac{1}{x}}}{x^{2}}(1-\ln x)$，于是当 $x&gt;\mathrm{e}$ 时，$f'(x)&lt;0$，从而知在 $(\mathrm{e},+\infty)$ 内 $f(x)$ 单减，取 $x=n+3&gt;\mathrm{e}$，即知 $\{a_n\}$ 为一单减数列，从而选项（B）正确，选项（A），（C）皆不正确. 选项(D)也不正确. 事实上，因为 $\lim\limits_{x\to+\infty}x^{\frac{1}{x}}=1$，所以 $\lim\limits_{n\to\infty}(n+3)^{\frac{1}{n+3}}=1$，故知 $\{a_n\}$ 为一有界数列.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="33" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a_n$ 是方程 $x=\tan\sqrt{x}$ 在 $\left((n\pi)^2,\left(n\pi+\frac{\pi}{2}\right)^2\right)(n=1,2,\cdots)$ 内的根，则 $\lim_{n \to \infty}(\sqrt{a_{n+1}}-\sqrt{a_n})=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{\sqrt{\pi}}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\sqrt{\pi}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\pi$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\sqrt{x}=t$，则 $x=t^2$，所以 $t^2=\tan t\ (t\geqslant 0)$，其图像如图所示.【图】直角坐标系中画出曲线 $x=\tan t$ 与 $x=t^2$，在 $t=\frac{\pi}{2},\frac{3\pi}{2},\frac{5\pi}{2},\cdots$ 处 $x=\tan t$ 有垂直渐近线（虚线标出），两曲线在每一区间内相交.\n于是\n$$\pi&lt;\sqrt{a_1}=t_1&lt;\frac{3\pi}{2},$$\n$$2\pi&lt;\sqrt{a_2}=t_2&lt;\frac{5\pi}{2},$$\n……\n$$n\pi&lt;\sqrt{a_n}=t_n&lt;n\pi+\frac{\pi}{2},$$\n$$(n+1)\pi&lt;\sqrt{a_{n+1}}=t_{n+1}&lt;(n+1)\pi+\frac{\pi}{2},$$\n则\n$$\frac{\pi}{2}&lt;\sqrt{a_{n+1}}-\sqrt{a_n}&lt;\frac{3\pi}{2},$$\n又\n$$\tan(\sqrt{a_{n+1}}-\sqrt{a_n})=\frac{\tan\sqrt{a_{n+1}}-\tan\sqrt{a_n}}{1+\tan\sqrt{a_{n+1}}\tan\sqrt{a_n}}=\frac{a_{n+1}-a_n}{1+a_{n+1}\cdot a_n}=\frac{(\sqrt{a_{n+1}}-\sqrt{a_n})(\sqrt{a_{n+1}}+\sqrt{a_n})}{1+a_{n+1}\cdot a_n}.$$\n由于 $\sqrt{a_n}&gt;n\pi$，则当 $n\to\infty$ 时，$\sqrt{a_n}\to+\infty$，即 $\dfrac{1}{\sqrt{a_n}}\to 0^{+}$，因此\n$$\lim_{n\to\infty}\frac{\sqrt{a_{n+1}}+\sqrt{a_n}}{1+a_{n+1}\cdot a_n}=\lim_{n\to\infty}\frac{\dfrac{1}{\sqrt{a_n}}+\dfrac{1}{\sqrt{a_{n+1}}}}{\dfrac{1}{\sqrt{a_n\cdot a_{n+1}}}+\sqrt{a_n\cdot a_{n+1}}}=0,$$\n所以 $\lim\limits_{n\to\infty}\tan(\sqrt{a_{n+1}}-\sqrt{a_n})=0$，则 $\lim\limits_{n\to\infty}(\sqrt{a_{n+1}}-\sqrt{a_n})=\pi$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="33" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设正项数列$\{a_n\}$单调增加，则以下选项中使得$\{a_n\}$收敛的是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\left\{(1+a_n)^{\frac{1}{a_n}}\right\}$ 收敛于1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\left\{\left(1+\frac{1}{a_n}\right)^{a_n}\right\}$ 收敛于 $\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\{a_n\ln a_n\}$ 收敛于0</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\left\{\frac{\ln a_n}{a_n}\right\}$ 收敛于0</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">正项数列 $\{a_n\}$ 单调增加，则 $\lim\limits_{n\to\infty}a_n=+\infty$ 或 $\lim\limits_{n\to\infty}a_n=a$.\n对于选项（A），$(1+x)^{\frac{1}{x}}\ (x&gt;0)$ 的图像如图（a）所示.【图】曲线自 $x=0$ 处的空心点（纵坐标约 2.7）单调下降，趋于水平渐近线.\n当 $(1+a_n)^{\frac{1}{a_n}}\to 1$ 时，$a_n\to+\infty$，故 $\{a_n\}$ 发散.\n对于选项（B），$\left(1+\dfrac{1}{x}\right)^{x}\ (x&gt;0)$ 的图像如图（b）所示.【图】曲线自纵坐标 1 处单调上升，趋于水平渐近线.\n当 $\left(1+\dfrac{1}{a_n}\right)^{a_n}\to \mathrm{e}$ 时，$a_n\to+\infty$，故 $\{a_n\}$ 发散.\n对于选项（C），$x\ln x\ (x&gt;0)$ 的图像如图（c）所示.【图】曲线在 $(0,1)$ 内位于 $x$ 轴下方且有极小值点，在 $x=1$ 处与 $x$ 轴相交后上升.\n当 $a_n\ln a_n\to 0$ 时，$a_n\to 0^{+}$ 或 $a_n\to 1$，由于 $a_n&gt;0$ 且单调增加，故 $a_n\to 1^{-}$，$a_n&lt;1$，即数列 $\{a_n\}$ 有上界，故 $\{a_n\}$ 收敛.\n对于选项（D），$\dfrac{\ln x}{x}\ (x&gt;0)$ 的图像如图（d）所示.【图】曲线在 $x=1$ 处与 $x$ 轴相交，先上升后下降并趋于 0.\n当 $\dfrac{\ln a_n}{a_n}\to 0$ 时，$a_n\to 1^{-}$ 或 $a_n\to+\infty$，故 $\{a_n\}$ 可能收敛，也可能发散.\n【注】此题命制新颖，着重考查概念和性质，对考生区分度高.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 满足 $|f(x)-f(y)|&lt;|x-y|$，对任意不同的 $x,y$ 均成立，且
+$$f(x_1)&gt;x_1,f(x_1+1)&lt;x_1+1,2x_{n+1}=x_n+f(x_n),n=1,2,\cdots.$$
+(1)证明 $f(x)=x$ 在 $(x_1,x_1+1)$ 内有唯一实根 $\xi$；
+(2)证明$\{x_n\}$收敛于 $\xi$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 令 $y=x+\Delta x$，则 $\mid f(x+\Delta x)-f(x)\mid&lt;\mid\Delta x\mid$，故\n$$\lim\limits_{\Delta x\to 0}\mid f(x+\Delta x)-f(x)\mid=0,$$\n即 $\lim\limits_{\Delta x\to 0}f(x+\Delta x)=f(x)$，因 $x$ 的任意性，故 $f(x)$ 连续.\n再令 $g(x)=f(x)-x$，有\n$$g(x_1)=f(x_1)-x_1&gt;0,$$\n$$g(x_1+1)=f(x_1+1)-(x_1+1)&lt;0,$$\n故由闭区间连续函数性质，存在 $\xi\in(x_1,x_1+1)$，使 $f(\xi)=\xi$.\n若存在 $\eta\in(x_1,x_1+1)$，$\eta\neq\xi$，使 $f(\eta)=\eta$，则 $\mid f(\eta)-f(\xi)\mid=\mid\eta-\xi\mid$，与条件矛盾，故 $\xi$ 唯一.\n(2) 已知 $x_2-x_1=\dfrac{x_1+f(x_1)}{2}-x_1=\dfrac{f(x_1)-x_1}{2}&gt;0$，设 $x_n-x_{n-1}&gt;0$，则\n$$x_{n+1}-x_n=\dfrac{x_n+f(x_n)}{2}-\dfrac{x_{n-1}+f(x_{n-1})}{2}=\dfrac{x_n-x_{n-1}}{2}+\dfrac{x_n-x_{n-1}}{2}\cdot\dfrac{f(x_n)-f(x_{n-1})}{x_n-x_{n-1}}=\dfrac{x_n-x_{n-1}}{2}\left[1+\dfrac{f(x_n)-f(x_{n-1})}{x_n-x_{n-1}}\right].$$\n由条件可得，$\left|\dfrac{f(x)-f(y)}{x-y}\right|&lt;1$，即 $\dfrac{f(x)-f(y)}{x-y}+1&gt;0$，故 $x_{n+1}-x_n&gt;0$.\n由(1)可知，$x_1&lt;\xi$，设 $x_n&lt;\xi$，则\n$$x_{n+1}-\xi=\dfrac{x_n+f(x_n)}{2}-\xi=\dfrac{x_n-\xi}{2}+\dfrac{f(x_n)-f(\xi)}{2}\cdot\dfrac{x_n-\xi}{x_n-\xi}=\dfrac{x_n-\xi}{2}\left[1+\dfrac{f(x_n)-f(\xi)}{x_n-\xi}\right]&lt;0,$$\n故 $\{x_n\}$ 有上界，且上界为 $\xi$.\n由单调有界准则，得 $\{x_n\}$ 收敛. 设 $\lim\limits_{n\to\infty}x_n=a$，则\n$$2a=a+f(a),$$\n故 $a=\xi$. 得证.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $0\leqslant x_1\leqslant\sqrt{c}$，$x_{n+1}=\frac{c(1+x_n)}{c+x_n}$，$n\in\mathbf{Z}^+$，$c&gt;1$. 证明数列$\{x_n\}$收敛，并求其值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">注意到 $x_{n+1}-x_n=\dfrac{c-x_n^2}{c+x_n}\ (n\in \mathbf{Z}^{+})$，故用归纳法可证 $0\leqslant x_n\leqslant x_{n+1}\leqslant\sqrt{c}\ (n\in \mathbf{Z}^{+})$，从而 $\{x_n\}$ 单调有界，$\lim\limits_{n\to\infty}x_n\stackrel{\text{存在}}{=} A$. 递推式两端取极限并化简得 $A^2=c$，由保号性知数列的极限值为 $A=\sqrt{c}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(1)当 $0&lt;x&lt;\frac{\pi}{2}$ 时，证明 $\sin x&gt;\frac{2}{\pi}x$；
+(2)设数列$\{x_n\}$,$\{y_n\}$满足 $x_{n+1}=\sin x_n$，$y_{n+1}=y_n^2$，$n=1,2,3,\cdots$，$x_1=y_1=\frac{1}{2}$，当 $n \to \infty$ 时，证明 $y_n$ 是比 $x_n$ 高阶的无穷小量.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 设 $f(x)=\sin x-\dfrac{2x}{\pi},x\in\left(0,\dfrac{\pi}{2}\right)$，则\n$$f'(x)=\cos x-\dfrac{2}{\pi},f''(x)=-\sin x&lt;0,$$\n所以曲线 $f(x)=\sin x-\dfrac{2x}{\pi}$ 在 $\left(0,\dfrac{\pi}{2}\right)$ 内是凸的，又 $f(0)=f\left(\dfrac{\pi}{2}\right)=0$，所以 $f(x)=\sin x-\dfrac{2x}{\pi}&gt;0$，即\n$$\sin x&gt;\dfrac{2x}{\pi}.$$\n(2) 首先，$x_{n+1}=\sin x_n&lt;x_n$，$x_n&gt;0$，由单调有界准则，知 $\lim\limits_{n\to\infty}x_n\stackrel{\text{存在}}{=} a$，于是 $a=\sin a$，得 $a=0$.\n$y_{n+1}=y_n^2&lt;y_n$，$0&lt;y_n\leqslant\dfrac{1}{2}&lt;1$，由单调有界准则，知 $\lim\limits_{n\to\infty}y_n\stackrel{\text{存在}}{=} b$，于是 $b=b^2$，得 $b=0$（因保号性，舍去 $b=1$）.\n又由(1)，当 $0&lt;x&lt;\dfrac{\pi}{2}$ 时，有 $\sin x&gt;\dfrac{2}{\pi}x$，且 $y_{n+1}=y_n^2=y_n\cdot y_n\leqslant\dfrac{1}{2}y_n$，于是\n$$0&lt;\dfrac{y_{n+1}}{x_{n+1}}=\dfrac{y_n^2}{\sin x_n}&lt;\dfrac{\dfrac{1}{2}y_n}{\dfrac{2x_n}{\pi}}=\dfrac{\pi}{4}\cdot\dfrac{y_n}{x_n}&lt;\left(\dfrac{\pi}{4}\right)^2\cdot\dfrac{y_{n-1}}{x_{n-1}}&lt;\cdots&lt;\left(\dfrac{\pi}{4}\right)^n\cdot\dfrac{y_1}{x_1}=\left(\dfrac{\pi}{4}\right)^n.$$\n又 $\lim\limits_{n\to\infty}\left(\dfrac{\pi}{4}\right)^n=0$，由夹逼准则，有 $\lim\limits_{n\to\infty}\dfrac{y_{n+1}}{x_{n+1}}=0$，故 $y_n$ 是比 $x_n$ 高阶的无穷小量.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设数列$\{x_n\}$满足 $0&lt;x_n&lt;\frac{\pi}{2}$，$\cos x_{n+1}-x_{n+1}=\cos x_n$，$n=1,2,\cdots$.
+(1)证明 $\lim_{n \to \infty}x_n$ 存在并求其值；
+(2)计算 $\lim_{n \to \infty}\frac{x_{n+1}}{x_n^2}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $\cos x_{n+1}-\cos x_n=x_{n+1}&gt;0$，且 $0&lt;x_n&lt;\dfrac{\pi}{2}$，故有 $0&lt;x_{n+1}&lt;x_n$，于是 $\{x_n\}$ 单调减少且有下界，$\lim\limits_{n\to\infty}x_n\stackrel{\text{存在}}{=} a$. 在 $\cos x_{n+1}-x_{n+1}=\cos x_n$ 两边取极限，有 $\cos a-a=\cos a$，得 $a=0$. 于是 $\lim\limits_{n\to\infty}x_n=0$.\n(2) $\lim\limits_{n\to\infty}\dfrac{x_{n+1}}{x_n^2}=\lim\limits_{n\to\infty}\dfrac{1-\cos x_n}{x_n^2}\cdot\dfrac{x_{n+1}}{1-\cos x_n}=\dfrac{1}{2}\lim\limits_{n\to\infty}\dfrac{x_{n+1}}{1-\cos x_{n+1}+x_{n+1}}=\dfrac{1}{2}$.\n【注】这种命题将函数的具体性质与抽象理论相结合，较好地考查了考生的数学水平，还可进一步发挥.\n① 将单通项 $x_n$ 改成双通项 $a_n$ 与 $b_n$.\n设 $0&lt;a_n&lt;\dfrac{\pi}{2}$，$0&lt;b_n&lt;\dfrac{\pi}{2}$，$\cos a_n-a_n=\cos b_n$，且 $\lim\limits_{n\to\infty}b_n=0$，则由 $\cos a_n-\cos b_n=a_n&gt;0$，知 $0&lt;a_n&lt;b_n$. 由夹逼准则，得 $\lim\limits_{n\to\infty}a_n=0$，且\n$$\lim_{n\to\infty}\dfrac{a_n}{b_n^2}=\lim_{n\to\infty}\dfrac{1-\cos b_n}{b_n^2}\cdot\dfrac{a_n}{1-\cos b_n}=\dfrac{1}{2}\lim_{n\to\infty}\dfrac{a_n}{1-\cos a_n+a_n}=\dfrac{1}{2}.$$\n与上题如出一辙.\n② 将函数 $\cos x$ 改成 $\mathrm{e}^x$.\n设 $x_n&gt;0$，$\mathrm{e}^{x_n}-x_n=\mathrm{e}^{x_{n+1}}$（或更具迷惑性地写成 $\ln(\mathrm{e}^{x_n}-x_n)=x_{n+1}$），则由 $\mathrm{e}^{x_n}-\mathrm{e}^{x_{n+1}}=x_n&gt;0$，知 $x_n&gt;x_{n+1}&gt;0$，$\lim\limits_{n\to\infty}x_n\stackrel{\text{存在}}{=} a$，于是有 $\mathrm{e}^a-\mathrm{e}^a=a=0$，得 $\lim\limits_{n\to\infty}x_n=0$，且\n$$\lim_{n\to\infty}\dfrac{x_n^2}{x_{n+1}}=\lim_{n\to\infty}\dfrac{x_n^2}{\ln(\mathrm{e}^{x_n}-x_n)}=\lim_{n\to\infty}\dfrac{x_n^2}{\mathrm{e}^{x_n}-x_n-1}=\lim_{n\to\infty}\dfrac{x_n^2}{\dfrac{1}{2}x_n^2}=2.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知数列$\{x_n\}$满足 $0&lt;x_1&lt;\frac{\pi}{4}$，$x_{n+1}+\tan x_n=2x_n$，$n=1,2,\cdots$.
+(1)证明 $\lim_{n \to \infty}x_n$ 存在，并求其值；
+(2)求极限 $\lim_{n \to \infty}\left(\frac{1}{x_n^2}-\frac{1}{x_nx_{n+1}}\right)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 已知 $0&lt;x_1&lt;\dfrac{\pi}{4}$，设 $0&lt;x_n&lt;\dfrac{\pi}{4}$，则 $x_{n+1}=2x_n-\tan x_n$.\n令 $f(x)=2x-\tan x\left(0\leqslant x\leqslant\dfrac{\pi}{4}\right)$，有 $f'(x)=2-\dfrac{1}{\cos^2 x}\xlongequal{\text{令}}0$，得 $x=\dfrac{\pi}{4}$，当 $x\in\left(0,\dfrac{\pi}{4}\right)$ 时，$f'(x)&gt;0$，$f(x)$ 单调递增，又 $f(0)=0$，$f\left(\dfrac{\pi}{4}\right)=\dfrac{\pi}{2}-1&lt;\dfrac{\pi}{4}$，于是当 $x\in\left(0,\dfrac{\pi}{4}\right)$ 时，$0&lt;f(x)&lt;\dfrac{\pi}{4}$，即 $0&lt;x_{n+1}=f(x_n)&lt;\dfrac{\pi}{4}$，故 $\{x_n\}$ 有界. 又 $x_{n+1}-x_n=x_n-\tan x_n&lt;0$，$0&lt;x_n&lt;\dfrac{\pi}{4}$，知 $\{x_n\}$ 单调递减. 由单调有界准则，$\lim\limits_{n\to\infty}x_n\stackrel{\text{存在}}{=} A$. 故有 $A+\tan A=2A$，得 $A=0$，即 $\lim\limits_{n\to\infty}x_n=0$.\n(2) $\lim\limits_{n\to\infty}\left(\dfrac{1}{x_n^2}-\dfrac{1}{x_nx_{n+1}}\right)=\lim\limits_{n\to\infty}\dfrac{x_{n+1}-x_n}{x_n^2x_{n+1}}=\lim\limits_{n\to\infty}\dfrac{x_n-\tan x_n}{x_n^2(2x_n-\tan x_n)}=\lim\limits_{x\to 0^{+}}\dfrac{x-\tan x}{x^2(2x-\tan x)}=-\dfrac{1}{3}$.\n【注】处理此类问题的关键手段一般是将 $x_n$ 改写成 $x$，用导数工具研究函数性态，再如：\n① 证明 $f(x)=(x-1)\mathrm{e}^x+1&gt;0$，$x\neq 0$；\n② 设数列 $\{x_n\}$ 满足 $x_{n+1}\mathrm{e}^{x_n}=(x_n-1)\mathrm{e}^{x_n}+1$，$x_1&gt;0$，$n=1,2,\cdots$，证明 $\lim\limits_{n\to\infty}x_n$ 存在.\n事实上，对于①，令 $f'(x)=x\mathrm{e}^x=0$，则可得 $f(x)$ 在 $x&gt;0$ 时单调增加，$x&lt;0$ 时单调减少，故 $x\neq 0$ 时 $f(x)&gt;f(0)=0$；对于②，有 $x_{n+1}\mathrm{e}^{x_n}&gt;0$，即 $x_{n+1}&gt;0$，也即 $\{x_n\}$ 有下界 0，又 $x_{n+1}-x_n=\dfrac{1}{\mathrm{e}^{x_n}}-1&lt;0\ (x_n&gt;0)$，即 $\{x_n\}$ 单调减少，由单调有界准则，知 $\lim\limits_{n\to\infty}x_n$ 存在.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="33" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a_n=\int_{0}^{1}x^n\sqrt{1-x^2}\,\mathrm{d}x$，$b_n=\int_{0}^{\frac{\pi}{2}}\sin^n t\,\mathrm{d}t$，则极限 $\lim_{n \to \infty}\left[\frac{(n+1)a_n}{b_n}\right]^n=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\mathrm{e}^{-1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$+\infty$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$a_n=\int_0^1 x^n\sqrt{1-x^2}\,\mathrm{d}x\xlongequal{x=\sin t}\int_0^{\frac{\pi}{2}}\sin^n t\cdot\cos^2 t\,\mathrm{d}t=\int_0^{\frac{\pi}{2}}\sin^n t(1-\sin^2 t)\,\mathrm{d}t=b_n-b_{n+2}$.\n又 $b_{n+2}=\dfrac{n+1}{n+2}b_n$，则 $\lim\limits_{n\to\infty}\left[\dfrac{(n+1)a_n}{b_n}\right]^n=\lim\limits_{n\to\infty}\left(\dfrac{n+1}{n+2}\right)^n=\mathrm{e}^{\lim\limits_{n\to\infty}\frac{-n}{n+2}}=\mathrm{e}^{-1}$. 选（C）.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x_1&lt;0$，$x_{n+1}=\mathrm{e}^{x_n}-1$，求 $\lim_{n \to \infty}\left(\frac{1}{x_n}-\frac{1}{x_{n+1}}\right)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">已知 $x_1&lt;0$，若 $x_k&lt;0$，则 $x_{k+1}=\mathrm{e}^{x_k}-1&lt;0$，由数学归纳法得，对任意正整数 $n$，均有 $x_n&lt;0$. 因此，数列 $\{x_n\}$ 有上界.\n令 $f(x)=\mathrm{e}^x-1-x$，则 $f'(x)=\mathrm{e}^x-1&lt;0\ (x&lt;0)$，故 $f(x)$ 在 $(-\infty,0]$ 上单调减少，从而当 $x&lt;0$ 时，$f(x)&gt;f(0)=0$，即 $\mathrm{e}^x-1&gt;x$. 于是，$x_{n+1}=\mathrm{e}^{x_n}-1&gt;x_n$，因此，数列 $\{x_n\}$ 单调增加.\n根据单调有界准则知，$\lim\limits_{n\to\infty}x_n$ 存在. 设 $\lim\limits_{n\to\infty}x_n=a$，则对等式 $x_{n+1}=\mathrm{e}^{x_n}-1$ 两边令 $n\to\infty$ 取极限，得 $a=\mathrm{e}^a-1$. 由函数 $f(x)=\mathrm{e}^x-1-x\ (x\leqslant 0)$ 的单调性知，方程 $a=\mathrm{e}^a-1$ 有唯一实根 $a=0$. 从而，$\lim\limits_{n\to\infty}x_n=0$. 于是\n$$\lim_{n\to\infty}\left(\dfrac{1}{x_n}-\dfrac{1}{x_{n+1}}\right)=\lim_{n\to\infty}\dfrac{x_{n+1}-x_n}{x_nx_{n+1}}=\lim_{n\to\infty}\dfrac{\mathrm{e}^{x_n}-1-x_n}{x_n\left(\mathrm{e}^{x_n}-1\right)}=\lim_{t\to 0^{-}}\dfrac{\mathrm{e}^t-1-t}{t\left(\mathrm{e}^t-1\right)}=\lim_{t\to 0^{-}}\dfrac{\mathrm{e}^t-1-t}{t^2}=\lim_{t\to 0^{-}}\dfrac{\mathrm{e}^t-1}{2t}=\dfrac{1}{2}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $a_n=\int_{0}^{1}t^n|\ln t|\,\mathrm{d}t$，$n=1,2,\cdots$，计算 $\lim_{n \to \infty}(n^2a_n)^n$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$a_n=\int_0^1 t^n\mid\ln t\mid\,\mathrm{d}t=-\dfrac{1}{n+1}\int_0^1\ln t\,\mathrm{d}(t^{n+1})=-\dfrac{1}{n+1}\left(t^{n+1}\ln t\Big|_0^1-\int_0^1 t^n\,\mathrm{d}t\right)=\dfrac{1}{(n+1)^2},$$\n所以 $\lim\limits_{n\to\infty}(n^2a_n)^n=\lim\limits_{n\to\infty}\left[\left(\dfrac{n}{n+1}\right)^2\right]^n=\mathrm{e}^{\lim\limits_{n\to\infty}2n\left(\frac{n}{n+1}-1\right)}=\mathrm{e}^{-2}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设数列$\{a_n\}$的通项 $a_n=\int_{0}^{+\infty}\frac{\mathrm{d}x}{(1+x^2)^n}$，$n=2,3,\cdots$，计算 $\lim_{n \to \infty}\left(\frac{a_{n+1}}{a_n}\right)^{\ln(1+\mathrm{e}^{2n})}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$a_n=\int_0^{+\infty}\dfrac{\mathrm{d}x}{(1+x^2)^n}\xlongequal{\text{令 }x=\tan t}\int_0^{\frac{\pi}{2}}\dfrac{\sec^2 t}{\left(\sec^2 t\right)^n}\,\mathrm{d}t=\int_0^{\frac{\pi}{2}}\cos^{2n-2}t\,\mathrm{d}t$.\n$$\dfrac{a_{n+1}}{a_n}=\dfrac{\int_0^{\frac{\pi}{2}}\cos^{2n}t\,\mathrm{d}t}{\int_0^{\frac{\pi}{2}}\cos^{2n-2}t\,\mathrm{d}t}=\dfrac{(2n-1)!!}{(2n)!!}\cdot\dfrac{\pi}{2}\cdot\dfrac{(2n-2)!!}{(2n-3)!!}\cdot\dfrac{2}{\pi}=\dfrac{2n-1}{2n},$$\n于是\n$$\lim_{n\to\infty}\left(\dfrac{a_{n+1}}{a_n}\right)^{\ln(1+\mathrm{e}^{2n})}=\lim_{n\to\infty}\left(1-\dfrac{1}{2n}\right)^{\ln(1+\mathrm{e}^{2n})}=\mathrm{e}^{\lim\limits_{n\to\infty}\ln(1+\mathrm{e}^{2n})\cdot\left(-\frac{1}{2n}\right)}=\mathrm{e}^{\lim\limits_{n\to\infty}\frac{\ln(1+\mathrm{e}^{2n})}{\ln \mathrm{e}^{2n}}\cdot \ln \mathrm{e}^{2n}\cdot\left(-\frac{1}{2n}\right)}=\mathrm{e}^{\lim\limits_{n\to\infty}2n\cdot\left(-\frac{1}{2n}\right)}=\mathrm{e}^{-1}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a_n=\int_{0}^{1}(1-x^2)^{\frac{n}{2}}\,\mathrm{d}x$，$n=1,2,\cdots$.
+(1)证明 $a_{n+1}&lt;a_n&lt;a_{n-1}$；
+(2)计算 $\lim_{n \to \infty}na_n^2$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 令 $x=\sin t\left(0\leqslant t\leqslant\dfrac{\pi}{2}\right)$，则 $(1-x^2)^{\frac{n}{2}}=\cos^n t$，故 $a_n=\int_0^{\frac{\pi}{2}}\cos^{n+1}t\,\mathrm{d}t$.\n因为当 $t\in\left(0,\dfrac{\pi}{2}\right)$ 时，$\cos t\in(0,1)$，$\cos^{n+2}t&lt;\cos^{n+1}t&lt;\cos^n t$，故 $a_{n+1}&lt;a_n&lt;a_{n-1}$.\n(2) 由(1)知 $a_{n+1}&lt;a_n&lt;a_{n-1}$，故 $a_na_{n+1}&lt;a_n^2&lt;a_na_{n-1}$.\n当 $n$ 为奇数时，\n$$a_na_{n+1}=\dfrac{n!!}{(n+1)!!}\cdot\dfrac{\pi}{2}\cdot\dfrac{(n+1)!!}{(n+2)!!}=\dfrac{1}{n+2}\cdot\dfrac{\pi}{2},$$\n$$a_na_{n-1}=\dfrac{n!!}{(n+1)!!}\cdot\dfrac{\pi}{2}\cdot\dfrac{(n-1)!!}{n!!}=\dfrac{1}{n+1}\cdot\dfrac{\pi}{2},$$\n则 $\lim\limits_{n\to\infty}na_na_{n+1}=\lim\limits_{n\to\infty}na_na_{n-1}=\dfrac{\pi}{2}$，由夹逼准则知，$\lim\limits_{n\to\infty}na_n^2=\dfrac{\pi}{2}$.\n当 $n$ 为偶数时，同理可得 $\lim\limits_{n\to\infty}na_n^2=\dfrac{\pi}{2}$.\n综上，$\lim\limits_{n\to\infty}na_n^2=\dfrac{\pi}{2}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设数列$\{a_n\}$,$\{b_n\}$满足：
+$$a_0=\frac{1}{2},a_{n+1}=a_n^2,n=0,1,2,\cdots;$$
+$$b_n=\tan b_{n+1},0&lt;-b_n&lt;\frac{\pi}{4},n=0,1,2,\cdots.$$
+计算 $\lim_{n \to \infty}\frac{a_n}{b_n}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知，$$0&lt;a_{n+1}=a_n^2=a_n\cdot a_n\leqslant\frac{1}{2}a_n&lt;1,$$ $$-\frac{\pi}{4}&lt;b_n=\tan b_{n+1}&lt;b_{n+1}&lt;0.$$ 又由数列单调有界准则知 $\{a_n\}$，$\{b_n\}$ 收敛，因此易知 $\lim\limits_{n\to\infty}a_n=\lim\limits_{n\to\infty}b_n=0.$ 令 $c_n=\dfrac{a_n}{b_n}$，于是有 $$\left|\frac{c_{n+1}}{c_n}\right|=\left|\frac{a_{n+1}}{b_{n+1}}\cdot\frac{b_n}{a_n}\right|=|a_n|\left|\frac{b_n}{\arctan b_n}\right|,$$ 故 $$\lim_{n\to\infty}\left|\frac{c_{n+1}}{c_n}\right|=\lim_{n\to\infty}|a_n|\left|\frac{b_n}{\arctan b_n}\right|=0,$$ 也即，存在 $N&gt;0$，使得当 $n&gt;N$ 时，有 $\left|\dfrac{c_{n+1}}{c_n}\right|&lt;\dfrac{1}{2}$，得 $$0&lt;|c_{n+1}|&lt;\frac{1}{2}|c_n|&lt;\left(\frac{1}{2}\right)^2|c_{n-1}|&lt;\cdots&lt;\left(\frac{1}{2}\right)^{n-N}|c_{N+1}|,$$ 故 $\lim\limits_{n\to\infty}|c_{n+1}|=0$，即 $\lim\limits_{n\to\infty}\dfrac{a_n}{b_n}=0$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="33" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $f(x)$ 可导，且 $|f'(x)|\leqslant\frac{1}{\mathrm{e}}$，方程 $f(x)=x$ 有唯一解 $x=0$，又 $x_{n+1}=f(x_n)$，$n=1,2,\cdots$. 证明：当 $n \to \infty$ 时，$x_n$ 是 $\mathrm{e}^{-\frac{n}{2}}$ 的高阶无穷小.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $f(x)=x$ 有唯一解 $x=0$，故 $f(0)=0$，且 $$|x_n-0|=|f(x_{n-1})-f(0)|=|f'(\xi)|\cdot|x_{n-1}-0|\leqslant\frac{1}{\mathrm{e}}|x_{n-1}-0|\leqslant\cdots\leqslant\left(\frac{1}{\mathrm{e}}\right)^{n-1}|x_1-0|,$$ 其中 $\xi$ 介于 $x_{n-1}$ 与 $0$ 之间，即 $|x_n|\leqslant\mathrm{e}^{-(n-1)}|x_1|$. 因为 $0\leqslant\mathrm{e}^{\frac{n}{2}}|x_n|\leqslant\mathrm{e}^{\frac{n}{2}}\mathrm{e}^{-(n-1)}|x_1|=\mathrm{e}^{-\frac{n}{2}+1}|x_1|$，且 $\lim\limits_{n\to\infty}\mathrm{e}^{-\frac{n}{2}+1}|x_1|=0$，故由夹逼准则可知 $$\lim_{n\to\infty}\frac{|x_n|}{\mathrm{e}^{-\frac{n}{2}}}=\lim_{n\to\infty}\mathrm{e}^{\frac{n}{2}}|x_n|=0,$$ 即当 $n\to\infty$ 时，$x_n$ 是 $\mathrm{e}^{-\frac{n}{2}}$ 的高阶无穷小.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-32.html">上一章：第1章 函数极限与连续</a>
+      <a class="chapter-link" href="chapter-34.html">下一章：第3章 一元函数微分学的概念</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 33, "total": 15, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

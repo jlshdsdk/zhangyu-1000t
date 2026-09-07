@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式<span class="top-count">（28题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x)=a\left(\ln|x|+\frac{3}{2}\right)-bx^2$ 有 4 个不同的零点，则 $\frac{b}{a}$ 的取值范围是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(0,\frac{\mathrm{e}}{2})$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(\frac{\mathrm{e}}{2},+\infty)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(0,\frac{\mathrm{e}^2}{2})$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(\frac{\mathrm{e}^2}{2},+\infty)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f(x)=f(-x)$，因此 $f(x)$ 是偶函数，又由于 $f(x)$ 有 4 个不同的零点，故在 $(0,+\infty)$ 上 $f(x)$ 有 2 个不同的零点．
+当 $a=0$ 时，$f(x)=-bx^2$，不符合题意，故 $a\neq 0$．
+当 $x\in(0,+\infty)$ 时，将 $a\left(\ln|x|+\frac{3}{2}\right)-bx^2=0$ 化为 $\ln x+\frac{3}{2}-\frac{b}{a}x^2=0$．
+记 $k=\frac{b}{a}$．令 $g(x)=\ln x+\frac{3}{2}-kx^2$，$x\in(0,+\infty)$，故 $g(x)$ 在 $(0,+\infty)$ 上有 2 个不同的零点．
+由于 $$g'(x)=\frac{1}{x}-2kx=\frac{1-2kx^2}{x},$$ 当 $k\leqslant 0$ 时，$g'(x)&gt;0$，故 $g(x)$ 单调递增，不可能有 2 个不同的零点，故 $k&gt;0$．令 $g'(x)=0$，得 $x=\sqrt{\frac{1}{2k}}$．当 $0&lt;x&lt;\sqrt{\frac{1}{2k}}$ 时，$g'(x)&gt;0$，$g(x)$ 单调递增；当 $x&gt;\sqrt{\frac{1}{2k}}$ 时，$g'(x)&lt;0$，$g(x)$ 单调递减．
+又 $\lim_{x\to 0^+}g(x)=-\infty$，$\lim_{x\to+\infty}g(x)=-\infty$，故要使 $g(x)$ 在 $(0,+\infty)$ 上有 2 个不同的零点，则需令 $g\left(\sqrt{\frac{1}{2k}}\right)&gt;0$，解得 $0&lt;k&lt;\frac{\mathrm{e}^2}{2}$，故 $0&lt;\frac{b}{a}&lt;\frac{\mathrm{e}^2}{2}$．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求函数 $y=\ln x$ 在 $x=2$ 处带拉格朗日余项的 $n$ 阶泰勒展开式.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $t=x-2$，则可化为 $y=\ln 2+\ln\left(1+\frac{t}{2}\right)\xlongequal{\text{泰勒展开}}\ln 2+\sum_{k=1}^{n}\frac{(-1)^{k-1}t^k}{k\cdot 2^k}+R_n=\ln 2+\sum_{k=1}^{n}\frac{(-1)^{k-1}(x-2)^k}{k\cdot 2^k}+\frac{(-1)^n(x-2)^{n+1}}{(n+1)\left[\theta(x-2)+2\right]^{n+1}}$，其中 $\theta\in(0,1)$．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在区间 $[0,1]$ 上可导，$f(0)=0$，$f(1)=1$，且 $f(x)$ 不恒等于 $x$. 证明：存在 $\xi\in(0,1)$，使得 $f'(\xi)&gt;1$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">用反证法，假设对于任意 $x\in(0,1)$，$f'(x)\leqslant 1$，则 $F(x)=f(x)-x$ 在 $[0,1]$ 上单调递减（由 $F'(x)\leqslant 0$）．因此 $0=F(0)\geqslant F(x)\geqslant F(1)=0$，$x\in(0,1)$，即 $f(x)\equiv x$，与题设矛盾．故假设不成立，命题得证．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $[0,+\infty)$ 上可导.\n(1) 若 $f(0)=\lim\limits_{x\to+\infty}f(x)=0$，求证：存在 $\xi\in(0,+\infty)$，使 $f'(\xi)=0$；\n(2) 若 $0\leqslant f(x)\leqslant\ln\dfrac{2x+1}{x+\sqrt{1+x^2}}$，求证：存在 $\xi\in(0,+\infty)$，使 $f'(\xi)=\dfrac{2}{2\xi+1}-\dfrac{1}{\sqrt{1+\xi^2}}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）若 $f(x)$ 在 $(0,+\infty)$ 上有一零点 $x_0$，则对区间 $(0,x_0)$ 用罗尔定理即可．否则，由连续性知 $f(x)$ 在 $(0,+\infty)$ 上不变号，不妨设为恒正．则存在 $M&gt;1$，对任意 $x&gt;M$，有 $f(x)&lt;f(1)$，特别地，$0&lt;f(2M)&lt;f(1)$．又由 $f(x)$ 的连续性，存在 $m\in(0,1)$，使得 $f(m)=f(2M)$，从而对区间 $(m,2M)$ 用罗尔定理，即存在 $\xi\in(m,2M)\subset(0,+\infty)$，使 $f'(\xi)=0$．
+（2）记 $g(x)=f(x)-\ln\frac{2x+1}{x+\sqrt{1+x^2}}$，当 $x=0$ 时，$\ln\frac{2x+1}{x+\sqrt{1+x^2}}=0$，又 $\lim_{x\to+\infty}\ln\frac{2x+1}{x+\sqrt{1+x^2}}=0$，由夹逼准则即得 $g(0)=0$，$\lim_{x\to+\infty}g(x)=0$．因此，由（1）的结论知存在 $\xi\in(0,+\infty)$，使得 $g'(\xi)=0$．移项整理即得 $f'(\xi)=\frac{2}{2\xi+1}-\frac{1}{\sqrt{1+\xi^2}}$．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设正值函数 $f(x)$ 二阶可导且满足 $[f'(x)]^2&gt;f(x)f''(x)$，函数 $f(x)-x$ 在 $x=0$ 处取得极值 1，证明 $f(x)\leqslant\mathrm{e}^x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $g(x)=\ln f(x)$，则 $g'(x)=\frac{f'(x)}{f(x)}$，$$g''(x)=\frac{f''(x)f(x)-\left[f'(x)\right]^2}{f^2(x)}&lt;0.$$ 又 $f(0)-0=1$，$f'(0)-1=0$，得 $f(0)=1$，$f'(0)=1$，也即 $$g(0)=\ln f(0)=0,\ g'(0)=\frac{f'(0)}{f(0)}=1.$$ 于是 $g(x)=g(0)+g'(0)x+\frac{g''(\xi)}{2}x^2=x+\frac{g''(\xi)}{2}x^2\leqslant x$，其中 $\xi$ 介于 $0,x$ 之间．故 $\ln f(x)\leqslant x$，$f(x)\leqslant \mathrm{e}^x$．证毕．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 上二阶可导，且 $f''(x)\geqslant 0$. 证明：\n(1) 对于任意 $x_0,x\in(-\infty,+\infty)$，有 $f(x)\geqslant f(x_0)+f'(x_0)(x-x_0)$；\n(2) 若存在常数 $M&gt;0$，使得任意 $x\in(-\infty,+\infty)$，均有 $|f(x)|\leqslant M$，则 $f(x)$ 为常值函数.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）若 $x&gt;x_0$，则存在 $\xi\in(x_0,x)$，有 $\frac{f(x)-f(x_0)}{x-x_0}=f'(\xi)\geqslant f'(x_0)$（由 $f''(x)\geqslant 0$ 知 $f'(x)$ 单调递增），移项即得待证式．$x&lt;x_0$ 的情形同理可证．
+（2）用反证法，假设存在 $x_1&lt;x_2$，使 $f(x_1)\neq f(x_2)$，不妨设 $f(x_1)&lt;f(x_2)$，则 $k=\frac{f(x_2)-f(x_1)}{x_2-x_1}&gt;0$．由拉格朗日中值定理，知存在 $\xi\in(x_1,x_2)$ 使得 $f'(\xi)=k$，从而对于任意 $x&gt;\xi$，$f'(x)\geqslant k$，由（1）得，对于任意 $x&gt;\xi$，$f(x)\geqslant f(\xi)+k(x-\xi)$，这与 $f(x)$ 的有界性矛盾．故假设不成立，命题得证．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在区间 $[a,b]$ 上连续，在区间 $(a,b)$ 上二阶可导，$f(a)=f(b)=0$，且存在一点 $c\in(a,b)$，使得 $f(c)&gt;0$. 证明：存在一点 $\xi\in(a,b)$，使得 $f''(\xi)&lt;0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由已知条件及拉格朗日中值定理可得，存在 $\alpha\in(a,c)$，使得 $f'(\alpha)=\frac{f(c)-f(a)}{c-a}&gt;0$，存在 $\beta\in(c,b)$，使得 $f'(\beta)=\frac{f(c)-f(b)}{c-b}&lt;0$．
+故存在 $\xi\in(\alpha,\beta)\subset(a,b)$，使得 $f''(\xi)=\frac{f'(\alpha)-f'(\beta)}{\alpha-\beta}&lt;0$．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在区间 $[-2,2]$ 上可导，且 $f'(x)&gt;2f(x)&gt;0$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{f(-2)}{f(-1)}&gt;1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{f(0)}{f(-1)}&gt;\mathrm{e}^2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{f(1)}{f(-1)}&lt;\mathrm{e}^2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{f(2)}{f(-1)}&lt;\mathrm{e}^3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $g(x)=\mathrm{e}^{-2x}f(x)$，则 $g'(x)=\left[-2f(x)+f'(x)\right]\mathrm{e}^{-2x}&gt;0$，故 $g(x)$ 在 $[-2,2]$ 上单调增加，从而 $$g(0)&gt;g(-1),$$ 即 $$f(0)&gt;\mathrm{e}^2 f(-1),$$ 又 $f(x)&gt;0$，所以 $\frac{f(0)}{f(-1)}&gt;\mathrm{e}^2$．选项（B）正确．同理可知选项（A），（C），（D）均不正确．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若可导函数 $f(x)$ 满足 $f'(x)&lt;2f(x)$，则当 $b&gt;a&gt;0$ 时，有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$b^2f(a)&gt;a^2f(b)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$b^2f(\ln a)&gt;a^2f(\ln b)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$b^2f(a)&lt;a^2f(b)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$b^2f(\ln a)&lt;a^2f(\ln b)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\varphi(x)=\mathrm{e}^{-2x}f(x)$，则由题设知，$\varphi'(x)=\mathrm{e}^{-2x}\left[f'(x)-2f(x)\right]&lt;0$，故 $\varphi(x)$ 单调减少．于是，当 $b&gt;a&gt;0$ 时，$\varphi(\ln b)&lt;\varphi(\ln a)$，即 $\mathrm{e}^{-2\ln b}f(\ln b)&lt;\mathrm{e}^{-2\ln a}f(\ln a)$，也即 $b^{-2}f(\ln b)&lt;a^{-2}f(\ln a)$，由此即得 $b^2 f(\ln a)&gt;a^2 f(\ln b)$．
+由题干条件无法确定 $b^2 f(a)$ 与 $a^2 f(b)$ 的大小关系，如 $f(x)=\mathrm{e}^x$，则 $f'(x)=\mathrm{e}^x&lt;2\mathrm{e}^x=2f(x)$．
+令 $g(x)=\frac{\mathrm{e}^x}{x^2}(x&gt;0)$，则 $g'(x)=\frac{\mathrm{e}^x(x-2)}{x^3}$，当 $0&lt;x&lt;2$ 时，$g(x)$ 单调减少，当 $x&gt;2$ 时，$g(x)$ 单调增加．所以，当 $2&gt;b&gt;a&gt;0$ 时，$g(b)&lt;g(a)$，即 $b^2 f(a)&gt;a^2 f(b)$；当 $b&gt;a&gt;2$ 时，$g(b)&gt;g(a)$，即 $b^2 f(a)&lt;a^2 f(b)$．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\int_0^x\mathrm{e}^{t^2}\mathrm{d}t$，$x\geqslant 0$.\n(1) 证明：$\int_0^x\mathrm{e}^{t^2}\mathrm{d}t=xf'[x\cdot\theta(x)]$，且 $\theta(x)$ 唯一，其中 $0&lt;\theta(x)&lt;1$，$x&gt;0$；\n(2) 求 $\lim\limits_{x\to 0^+}\theta(x)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）当 $x&gt;0$ 时，对 $f(x)$ 在 $[0,x]$ 上用拉格朗日中值定理，有 $$f(x)-f(0)=f'[x\cdot\theta(x)]\cdot x,\ 0&lt;\theta(x)&lt;1,$$ 即 $$\int_0^x \mathrm{e}^{t^2}\mathrm{d}t=xf'[x\cdot\theta(x)],\ 0&lt;\theta(x)&lt;1.$$ 若另有 $\theta^*(x)$，使得 $f(x)-f(0)=f'[x\cdot\theta^*(x)]\cdot x\ (0&lt;\theta^*(x)&lt;1)$，则 $$f'[x\cdot\theta(x)]x-f'[x\cdot\theta^*(x)]x=f''(\xi)\cdot x\cdot\left[\theta(x)-\theta^*(x)\right]x=0,$$ 其中 $\xi$ 介于 $x\cdot\theta(x)$ 与 $x\cdot\theta^*(x)$ 之间，而 $f''(x)&gt;0$，$x&gt;0$，故 $\theta(x)=\theta^*(x)$．
+（2）由（1）知，$\int_0^x \mathrm{e}^{t^2}\mathrm{d}t=x\cdot \mathrm{e}^{[x\cdot\theta(x)]^2}\ (0&lt;\theta(x)&lt;1,\ x&gt;0)$，解得 $$\theta(x)=\frac{1}{x}\cdot\sqrt{\ln\frac{\int_0^x \mathrm{e}^{t^2}\mathrm{d}t}{x}},$$ 故 $$\lim_{x\to 0^+}\theta(x)=\lim_{x\to 0^+}\frac{1}{x}\cdot\sqrt{\frac{\int_0^x \mathrm{e}^{t^2}\mathrm{d}t-x}{x}}=\lim_{x\to 0^+}\sqrt{\frac{\int_0^x \mathrm{e}^{t^2}\mathrm{d}t-x}{x^3}}=\sqrt{\lim_{x\to 0^+}\frac{\int_0^x \mathrm{e}^{t^2}\mathrm{d}t-x}{x^3}}=\sqrt{\lim_{x\to 0^+}\frac{\mathrm{e}^{x^2}-1}{3x^2}}=\frac{\sqrt{3}}{3}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[2,4]$ 上一阶可导且 $f'(x)\geqslant M&gt;0$，$f(2)&gt;0$. 证明：\n(1) 对任意的 $x\in[3,4]$，均有 $f(x)&gt;M$；\n(2) 存在 $\xi\in(3,4)$，使得 $f(\xi)&gt;M\cdot\dfrac{\mathrm{e}^{\xi-3}}{\mathrm{e}-1}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）在 $[2,3]$ 上对 $f(x)$ 应用拉格朗日中值定理，有 $$f(3)-f(2)=f'(\eta)\geqslant M&gt;0,$$ 其中 $\eta\in(2,3)$．又 $f(2)&gt;0$，故 $$f(3)=f(2)+f'(\eta)&gt;M.$$ 又在 $[2,4]$ 上 $f'(x)&gt;0$，$f(x)$ 单调增加，于是对任意的 $x\in[3,4]$，均有 $f(x)&gt;M$．
+（2）令 $F(x)=\int_3^x f(t)\mathrm{d}t$，$G(x)=\mathrm{e}^x$，在 $[3,4]$ 上对 $F(x)$，$G(x)$ 应用柯西中值定理，有 $$\frac{F(4)-F(3)}{G(4)-G(3)}=\frac{F'(\xi)}{G'(\xi)},\ \xi\in(3,4),$$ 即 $$\frac{\int_3^4 f(x)\mathrm{d}x}{\mathrm{e}^4(\mathrm{e}-1)}=\frac{f(\xi)}{\mathrm{e}^{\xi}},\ \xi\in(3,4).$$ 又由（1），有 $$\int_3^4 f(x)\mathrm{d}x&gt;\int_3^4 M\mathrm{d}x=M,$$ 故 $\frac{f(\xi)}{\mathrm{e}^{\xi}}&gt;\frac{M}{\mathrm{e}^3(\mathrm{e}-1)}$，即 $f(\xi)&gt;M\cdot\frac{\mathrm{e}^{\xi-3}}{\mathrm{e}-1}$．
+【注】$\xi\in(3,4)$，故 $\frac{\mathrm{e}^{\xi-3}}{\mathrm{e}-1}$ 与 1 的大小关系不确定，不能简单认为（1）成立则（2）必成立．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $y=f(x)$ 在区间 $(\alpha,\beta)$ 内二阶可导，且其图像在 $(\alpha,\beta)$ 内有三个点满足关系 $y=ax^2+bx+c$. 证明：必然存在一个点 $\xi\in(\alpha,\beta)$，使得 $f''(\xi)=2a$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $F(x)=f(x)-(ax^2+bx+c)$，则 $F(x)$ 在 $(\alpha,\beta)$ 内二阶可导．由已知条件，在 $(\alpha,\beta)$ 内存在 $u,v,w$，且 $u&lt;v&lt;w$，使得 $F(u)=F(v)=F(w)=0$，故由罗尔定理知存在 $\xi_1\in(u,v)$，$\xi_2\in(v,w)$，使得 $F'(\xi_1)=F'(\xi_2)=0$．因此，存在 $\xi\in(\xi_1,\xi_2)\subset(\alpha,\beta)$，使得 $F''(\xi)=f''(\xi)-2a=0$，即 $f''(\xi)=2a$．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $[0,1]$ 上二阶可导，且 $\int_0^1 f(x)\mathrm{d}x=0$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">当 $f'(x)&lt;0$ 时，$f\left(\frac{1}{2}\right)&lt;0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $f''(x)&lt;0$ 时，$f\left(\frac{1}{2}\right)&lt;0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">当 $f'(x)&gt;0$ 时，$f\left(\frac{1}{2}\right)&lt;0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">当 $f''(x)&gt;0$ 时，$f\left(\frac{1}{2}\right)&lt;0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x)$ 在 $[0,1]$ 上二阶可导，则由带拉格朗日余项的泰勒公式，有 $$f(x)=f\left(\frac{1}{2}\right)+f'\left(\frac{1}{2}\right)\left(x-\frac{1}{2}\right)+\frac{1}{2}f''(\xi)\left(x-\frac{1}{2}\right)^2,$$ 其中 $\xi$ 介于 $x$ 与 $\frac{1}{2}$ 之间．又在 $[0,1]$ 上取积分得 $$\int_0^1 f(x)\mathrm{d}x=\int_0^1 f\left(\frac{1}{2}\right)\mathrm{d}x+\int_0^1 f'\left(\frac{1}{2}\right)\left(x-\frac{1}{2}\right)\mathrm{d}x+\frac{1}{2}\int_0^1 f''(\xi)\left(x-\frac{1}{2}\right)^2\mathrm{d}x,$$ $$0=f\left(\frac{1}{2}\right)+f'\left(\frac{1}{2}\right)\cdot\frac{1}{2}\left(x-\frac{1}{2}\right)^2\Big|_0^1+\frac{1}{2}\int_0^1 f''(\xi)\left(x-\frac{1}{2}\right)^2\mathrm{d}x,$$ $$f\left(\frac{1}{2}\right)=-\frac{1}{2}\int_0^1 f''(\xi)\left(x-\frac{1}{2}\right)^2\mathrm{d}x.$$ 故当 $f''(x)&gt;0$ 时，有 $f''(\xi)&gt;0$，则 $f\left(\frac{1}{2}\right)&lt;0$．因此选（D）．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $[0,1]$ 上连续且 $f(0)=f(1)=0$，在 $(0,1)$ 内二阶可导且 $f''(x)&lt;0$，记 $M=\max\limits_{0\leqslant x\leqslant 1}\{f(x)\}$.\n(1) 证明：对任意正整数 $n$，存在唯一的 $x_n\in(0,1)$，使得 $f'(x_n)=\frac{M}{n}$；\n(2) 对(1)中得到的 $\{x_n\}$，证明：$\lim\limits_{n\to\infty}x_n$ 存在，且 $\lim\limits_{n\to\infty}f(x_n)=M$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）记 $x_0$ 为 $[0,1]$ 上 $f(x)$ 的最大值点，又 $f(0)=f(1)=0$，则 $M=f(x_0)&gt;0$，$x_0\in(0,1)$，且由费马定理，有 $f'(x_0)=0$．
+在 $[0,x_0]$ 上对 $f(x)$ 应用拉格朗日中值定理，得 $$f'(\xi)=\frac{f(x_0)-f(0)}{x_0-0}=\frac{M}{x_0},\ \xi\in(0,x_0).$$ 对任意正整数 $n$，$0&lt;\frac{M}{n}&lt;\frac{M}{x_0}$，即 $f'(x_0)&lt;\frac{M}{n}&lt;f'(\xi)$．又由于 $f'(x)$ 在 $[\xi,x_0]$ 上连续，故由介值定理，存在 $x_n\in(\xi,x_0)\subset(0,1)$，使得 $f'(x_n)=\frac{M}{n}$．又 $f''(x)&lt;0$，$f'(x)$ 严格单调减少，故 $x_n$ 唯一．
+（2）由于 $f'(x_n)=\frac{M}{n}&gt;\frac{M}{n+1}=f'(x_{n+1})$，且 $f'(x)$ 严格单调减少，故 $x_n&lt;x_{n+1}$，即 $\{x_n\}$ 严格单调增加，且有界，故 $\lim_{n\to\infty}x_n$ 存在．又 $$\lim_{n\to\infty}f'(x_n)=\lim_{n\to\infty}\frac{M}{n}=0,\ \text{即}\ f'\left(\lim_{n\to\infty}x_n\right)=0,$$ 由于 $f'(x_0)=0$，且导数零点唯一，故 $\lim_{n\to\infty}x_n=x_0$，所以 $\lim_{n\to\infty}f(x_n)=f(x_0)=M$．
+【注】本题还可以这样做．
+解析 （1）记 $x_0$ 为 $[0,1]$ 上的最大值点，$f(x_0)=M$．令 $F(x)=f(x)-\frac{M}{n}x$，则 $F(x_0)=M-\frac{M}{n}x_0&gt;0$，$F(1)=-\frac{M}{n}&lt;0$，由零点定理，存在 $\xi\in(x_0,1)$，使 $F(\xi)=0$．又 $F(0)=0$，由罗尔定理，存在 $x_n\in(0,\xi)\subset(0,1)$，使 $F'(x_n)=0$，即 $f'(x_n)=\frac{M}{n}$．又 $f''(x)&lt;0$，$f'(x)$ 严格单调减少，故 $x_n$ 唯一．
+（2）由拉格朗日中值定理，有 $f'(x_{n+1})-f'(x_n)=f''(\xi_n)(x_{n+1}-x_n)$，$\xi_n$ 介于 $x_n,x_{n+1}$ 之间，则 $$x_{n+1}-x_n=\frac{1}{f''(\xi_n)}\left(\frac{M}{n+1}-\frac{M}{n}\right)&gt;0,$$ 故 $\{x_n\}$ 单调增加，且有界，故 $\lim_{n\to\infty}x_n$ 存在．
+其余同标准答案．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=x-\mathrm{e}\ln x$，则 $f(x)$ 的零点个数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $f(x)=x-\mathrm{e}\ln x$，所以 $f'(x)=1-\frac{\mathrm{e}}{x}$，令 $f'(x)=0$，解得 $x=\mathrm{e}$．
+当 $x\in(0,\mathrm{e}]$ 时，$f(x)$ 单调减少；当 $x\in[\mathrm{e},+\infty)$ 时，$f(x)$ 单调增加．
+又 $\lim_{x\to+\infty}f(x)=+\infty$，$\lim_{x\to 0^+}f(x)=+\infty$，$f(\mathrm{e})=0$，所以函数 $f(x)$ 有唯一零点．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">确定常数 $k$ 的取值范围，使方程 $x-\arctan x=kx^3$ 在 $(0,1]$ 内有实根.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\frac{1}{x^2}-\frac{\arctan x}{x^3}$，则 $$f'(x)=-\frac{2}{x^3}-\frac{\frac{x}{1+x^2}-3\arctan x}{x^4}=\frac{3\arctan x-2x-\frac{x}{1+x^2}}{x^4},$$ 再令 $g(x)=3\arctan x-2x-\frac{x}{1+x^2}$，则 $g'(x)=\frac{-2x^4}{(1+x^2)^2}&lt;0\ (x\neq 0)$．故 $g(x)$ 在 $[0,+\infty)$ 上单调减少，从而当 $x&gt;0$ 时，$g(x)&lt;g(0)=0$，即 $f'(x)&lt;0$．由此可见，$f(x)$ 在 $(0,+\infty)$ 上单调减少．于是，当 $0&lt;x\leqslant 1$ 时，$f(1)\leqslant f(x)&lt;f(0^+)$．由于 $f(1)=1-\frac{\pi}{4}$，$$f(0^+)=\lim_{x\to 0^+}\left(\frac{1}{x^2}-\frac{\arctan x}{x^3}\right)=\lim_{x\to 0^+}\frac{x-\arctan x}{x^3}=\lim_{x\to 0^+}\frac{1-\frac{1}{1+x^2}}{3x^2}=\frac{1}{3},$$ 故当 $0&lt;x\leqslant 1$ 时，$1-\frac{\pi}{4}\leqslant f(x)&lt;\frac{1}{3}$．由此可见，当且仅当 $1-\frac{\pi}{4}\leqslant k&lt;\frac{1}{3}$ 时，方程 $\frac{1}{x^2}-\frac{\arctan x}{x^3}=k$ 在 $(0,1]$ 内有实根．由于在 $(0,1]$ 内方程 $x-\arctan x=kx^3$ 有实根，即方程 $\frac{1}{x^2}-\frac{\arctan x}{x^3}=k$ 有实根，故所求常数 $k$ 的取值范围为 $1-\frac{\pi}{4}\leqslant k&lt;\frac{1}{3}$．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设方程 $\frac{\tan x}{x}=k$ 在 $\left(0,\frac{\pi}{4}\right)$ 内有实根，则常数 $k$ 的取值范围为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$0&lt;k&lt;\frac{4}{\pi}-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{4}{\pi}-1&lt;k&lt;\frac{4}{\pi}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1&lt;k&lt;\frac{4}{\pi}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{4}{\pi}-1&lt;k&lt;1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\frac{\tan x}{x}$，则 $$f'(x)=\frac{x\sec^2 x-\tan x}{x^2}=\frac{x-\sin x\cos x}{x^2\cos^2 x}=\frac{2x-\sin 2x}{2x^2\cos^2 x}&gt;0\left(0&lt;x&lt;\frac{\pi}{4}\right).$$ 故函数 $f(x)$ 在 $\left(0,\frac{\pi}{4}\right]$ 上单调增加，从而当 $0&lt;x&lt;\frac{\pi}{4}$ 时，$f(0^+)&lt;f(x)&lt;f\left(\frac{\pi}{4}\right)$，即 $1&lt;f(x)&lt;\frac{4}{\pi}$．于是，当且仅当 $1&lt;k&lt;\frac{4}{\pi}$ 时，方程 $\frac{\tan x}{x}=k$ 在 $\left(0,\frac{\pi}{4}\right)$ 内有实根．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知方程 $\frac{1}{x}-\frac{1}{\mathrm{e}^x-1}=k$ 在区间 $(-\infty,0)$ 内有实根，求常数 $k$ 的取值范围.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\frac{1}{x}-\frac{1}{\mathrm{e}^x-1}(x&lt;0)$，则 $$f'(x)=-\frac{1}{x^2}+\frac{\mathrm{e}^x}{(\mathrm{e}^x-1)^2}=\frac{x^2\mathrm{e}^x-(\mathrm{e}^x-1)^2}{x^2(\mathrm{e}^x-1)^2}=\frac{x^2-(\mathrm{e}^x-2+\mathrm{e}^{-x})}{x^2(\mathrm{e}^x-1)^2\mathrm{e}^{-x}}.$$ 再令 $g(x)=x^2-(\mathrm{e}^x-2+\mathrm{e}^{-x})(x\leqslant 0)$，则 $$g'(x)=2x-(\mathrm{e}^x-\mathrm{e}^{-x}),\ g''(x)=2-(\mathrm{e}^x+\mathrm{e}^{-x}).$$ 由于 $g''(x)&lt;0\ (x&lt;0)$，因此 $g'(x)$ 单调减少，从而当 $x&lt;0$ 时，$g'(x)&gt;g'(0)=0$，即 $g(x)$ 在 $(-\infty,0]$ 上单调增加．于是，当 $x&lt;0$ 时，$g(x)&lt;g(0)=0$，从而 $f'(x)&lt;0$，即 $f(x)$ 在 $(-\infty,0)$ 上单调减少．又 $$\lim_{x\to 0^-}f(x)=\lim_{x\to 0^-}\left(\frac{1}{x}-\frac{1}{\mathrm{e}^x-1}\right)=\lim_{x\to 0^-}\frac{\mathrm{e}^x-1-x}{x(\mathrm{e}^x-1)}=\lim_{x\to 0^-}\frac{\mathrm{e}^x-1-x}{x^2}=\lim_{x\to 0^-}\frac{\mathrm{e}^x-1}{2x}=\frac{1}{2},$$ $$\lim_{x\to-\infty}f(x)=\lim_{x\to-\infty}\left(\frac{1}{x}-\frac{1}{\mathrm{e}^x-1}\right)=1,$$ 知 $\frac{1}{2}&lt;f(x)&lt;1\ (x&lt;0)$．故当且仅当 $\frac{1}{2}&lt;k&lt;1$ 时，方程 $\frac{1}{x}-\frac{1}{\mathrm{e}^x-1}=k$ 在区间 $(-\infty,0)$ 内有实根．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若函数 $f(x)=\dfrac{1}{x\mathrm{e}^{-x}-a}$ 在 $(-\infty,+\infty)$ 内处处连续，则常数 $a$ 的取值范围为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a&lt;0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a&gt;\mathrm{e}^{-1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a&lt;\mathrm{e}^{-1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$0&lt;a&lt;\mathrm{e}^{-1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $g(x)=x\mathrm{e}^{-x}-a$，则函数 $f(x)=\frac{1}{x\mathrm{e}^{-x}-a}$ 在 $(-\infty,+\infty)$ 内处处连续等价于函数 $g(x)$ 在 $(-\infty,+\infty)$ 内没有零点．又 $$g'(x)=\mathrm{e}^{-x}(1-x),$$ 令 $g'(x)=0$，得 $x=1$．因为当 $x&lt;1$ 时，$g(x)$ 单调增加，当 $x&gt;1$ 时，$g(x)$ 单调减少，所以 $\max\{g(x)\}=g(1)=\mathrm{e}^{-1}-a$．又 $\lim_{x\to-\infty}g(x)=\lim_{x\to-\infty}(x\mathrm{e}^{-x}-a)=-\infty$，$\lim_{x\to+\infty}g(x)=\lim_{x\to+\infty}(x\mathrm{e}^{-x}-a)=-a$．故当且仅当 $\max\{g(x)\}=\mathrm{e}^{-1}-a&lt;0$，即 $a&gt;\mathrm{e}^{-1}$ 时，函数 $g(x)$ 没有零点．此时，函数 $f(x)$ 在 $(-\infty,+\infty)$ 内处处连续．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在区间 $[0,1]$ 上连续，在区间 $(0,1)$ 内可导，且 $f'(x)&gt;0$，$f(0)=1$，则当 $x\in(0,1)$ 时，有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(x)&lt;\mathrm{e}^{f(x)-1}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(x)&gt;\mathrm{e}^{f(x)-1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(x)&lt;\mathrm{e}^{-f(x)+1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(x)&gt;\mathrm{e}^{-f(x)+1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为函数 $f(x)$ 在区间 $[0,1]$ 上连续，在区间 $(0,1)$ 内可导，且 $f'(x)&gt;0$，所以 $f(x)$ 在 $[0,1]$ 上单调增加，又 $f(0)=1$，故当 $x\in(0,1)$ 时，$f(x)&gt;f(0)=1$.\n令 $F(x)=\mathrm{e}^{-f(x)}f(x)$，则 $F'(x)=\mathrm{e}^{-f(x)}f'(x)\left[1-f(x)\right]&lt;0(0&lt;x&lt;1)$. 所以 $F(x)$ 在 $[0,1]$ 上单调减少，从而当 $x\in(0,1)$ 时，有 $F(x)&lt;F(0)$，即 $\mathrm{e}^{-f(x)}f(x)&lt;\mathrm{e}^{-1}$，也即 $f(x)&lt;\mathrm{e}^{f(x)-1}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上二阶可导，且 $f(a)=f(b)$，$f''(x)\neq 0$，则下列结论正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">在 $(a,b)$ 内，$f'(x)\neq 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">存在 $\xi_1,\xi_2\in(a,b)$，使 $f'(\xi_1)=f'(\xi_2)=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">存在唯一的 $\xi\in(a,b)$，使 $f'(\xi)=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">存在 $\xi\in[a,b]$，使 $f(\xi)=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知，$f(x)$ 在 $[a,b]$ 上满足罗尔定理，故至少存在一点 $\xi\in(a,b)$，使 $f'(\xi)=0$，又因为 $f''(x)\neq 0$，故不可能有两点 $\xi_1,\xi_2\in(a,b)$，使得 $f'(\xi_1)=f'(\xi_2)=0$，所以选项(A)，(B)均不正确，选项(C)正确. 对于选项(D)，由于没有 $f(a)$，$f(b)$ 异号或最大值、最小值异号的条件，因此不能断定存在 $\xi\in[a,b]$，使 $f(\xi)=0$，故选项(D)不正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $[a,b]$ 上连续，$(a,b)$ 内二阶可导，且 $f(a)=f(b)=0$，$f(c)&lt;0$，$a&lt;c&lt;b$. 证明：至少存在一点 $\xi\in(a,b)$，使 $f''(\xi)&gt;0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $f(x)$ 在 $[a,b]$ 上满足拉格朗日中值定理，所以存在 $\xi_1\in(a,c)\subset(a,b)$，使得\n$$\frac{f(c)-f(a)}{c-a}=f'(\xi_1),$$\n又 $f(c)&lt;0$，$f(a)=0$，$c&gt;a$，故 $f'(\xi_1)&lt;0$.\n同理，存在 $\xi_2\in(c,b)$，使得 $\dfrac{f(b)-f(c)}{b-c}=f'(\xi_2)$，又 $f(c)&lt;0$，$f(b)=0$，$b&gt;c$，故 $f'(\xi_2)&gt;0$.\n又 $f'(x)$ 在 $[\xi_1,\xi_2]$ 上连续，在 $(\xi_1,\xi_2)$ 上可导，由拉格朗日中值定理，可得存在 $\xi\in(\xi_1,\xi_2)\subset(a,b)$，使得\n$$\frac{f'(\xi_2)-f'(\xi_1)}{\xi_2-\xi_1}=f''(\xi).$$\n由于 $f'(\xi_2)-f'(\xi_1)&gt;0$，$\xi_2-\xi_1&gt;0$，因此 $f''(\xi)&gt;0$，证毕.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)&gt;0$，$f''(x)$ 存在且 $f''(x)\leqslant 0$，$x\in[0,+\infty)$.\n证明：对于任意 $x\in[0,+\infty)$，$f'(x)\geqslant 0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】采用反证法. 在证明过程中利用一阶带拉格朗日余项的泰勒公式.\n【解析】假设存在 $x_0\in[0,+\infty)$ 使得 $f'(x_0)&lt;0$，则由一阶带拉格朗日余项的泰勒公式，有\n$$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(\xi)}{2!}(x-x_0)^2(\text{其中 }\xi\text{ 在 }x_0\text{ 与 }x\text{ 之间})，$$\n又 $f''(x)\leqslant 0$，故 $\lim\limits_{x\to+\infty}f(x)=-\infty$，即存在 $G&gt;0$，当 $x&gt;G$ 时，有 $f(x)&lt;0$，此与题设 $f(x)&gt;0$ 矛盾.\n因此，对于任意 $x\in[0,+\infty)$，$f'(x)\geqslant 0$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="37" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $b&gt;0&gt;a$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a\mathrm{e}^a(\mathrm{e}^b-1)&gt;b\mathrm{e}^b(\mathrm{e}^a-1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a\mathrm{e}^a(\mathrm{e}^b-1)&lt;b\mathrm{e}^b(\mathrm{e}^a-1)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$b\mathrm{e}^a(\mathrm{e}^b-1)&gt;a\mathrm{e}^b(\mathrm{e}^a-1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$b\mathrm{e}^a(\mathrm{e}^b-1)&lt;a\mathrm{e}^b(\mathrm{e}^a-1)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\dfrac{\int_0^x te^t\mathrm{d}t}{\int_0^x \mathrm{e}^t\mathrm{d}t}(x\neq 0)$，其中 $\int_0^x \mathrm{e}^t\mathrm{d}t=\mathrm{e}^x-1$，则\n$$f'(x)=\frac{x\mathrm{e}^x\cdot\int_0^x \mathrm{e}^t\mathrm{d}t-\int_0^x te^t\mathrm{d}t\cdot\mathrm{e}^x}{(\mathrm{e}^x-1)^2}=\frac{\mathrm{e}^x\left(\int_0^x x\mathrm{e}^t\mathrm{d}t-\int_0^x te^t\mathrm{d}t\right)}{(\mathrm{e}^x-1)^2}=\frac{\mathrm{e}^x\cdot\int_0^x (x-t)\mathrm{e}^t\mathrm{d}t}{(\mathrm{e}^x-1)^2}&gt;0.$$\n故 $f(x)$ 在 $(-\infty,0)$，$(0,+\infty)$ 上分别单调递增，又 $\lim\limits_{x\to 0}f(x)=\lim\limits_{x\to 0}\dfrac{x\mathrm{e}^x}{\mathrm{e}^x}=0$，所以当 $b&gt;0&gt;a$ 时，$f(b)&gt;\lim\limits_{x\to 0^+}f(x)=\lim\limits_{x\to 0^-}f(x)&gt;f(a)$，即 $\dfrac{\int_0^b te^t\mathrm{d}t}{\int_0^b \mathrm{e}^t\mathrm{d}t}&gt;\dfrac{\int_0^a te^t\mathrm{d}t}{\int_0^a \mathrm{e}^t\mathrm{d}t}$，整理得 $a\mathrm{e}^a(\mathrm{e}^b-1)&gt;b\mathrm{e}^b(\mathrm{e}^a-1)$，故(A)正确，(B)错误.\n对于选项(C)，(D)，构造函数 $g(x)=\dfrac{x(\mathrm{e}^x-1)}{\mathrm{e}^x}$，求导得 $g'(x)=\dfrac{\mathrm{e}^x-1+x}{\mathrm{e}^x}\begin{cases}&gt;0, &amp; x&gt;0,\\&lt;0, &amp; x&lt;0,\end{cases}$ 得 $g(x)$ 在 $(0,+\infty)$ 上单调递增，在 $(-\infty,0)$ 上单调递减，无法判断 $g(a),g(b)$ 的大小.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q25" data-no="25">
+  <header class="q-head">
+    <span class="q-no">【25】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="25" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\mathrm{e}&lt;a&lt;b$，证明：$a^2&lt;ab\dfrac{\ln a}{\ln b}&lt;b^2$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】由题设知 $ab&gt;0$，欲证之式变为 $\dfrac{a}{b}&lt;\dfrac{\ln a}{\ln b}&lt;\dfrac{b}{a}$. 要证 $\dfrac{a}{b}&lt;\dfrac{\ln a}{\ln b}$，即证 $\dfrac{\ln b}{b}&lt;\dfrac{\ln a}{a}$，由此构造辅助函数 $\varphi_1(x)=\dfrac{\ln x}{x}$，利用 $\varphi_1(x)$ 的单调性证明即可；要证 $\dfrac{\ln a}{\ln b}&lt;\dfrac{b}{a}$，即证 $a\ln a&lt;b\ln b$，由此构造辅助函数 $\varphi_2(x)=x\ln x$，利用 $\varphi_2(x)$ 的单调性证明即可.\n【解析】令 $\varphi_1(x)=\dfrac{\ln x}{x}$，$\varphi_1'(x)=\dfrac{1-\ln x}{x^2}&lt;0(x&gt;\mathrm{e})$，知 $\varphi_1(x)$ 在 $(\mathrm{e},+\infty)$ 上单调递减，于是当 $\mathrm{e}&lt;a&lt;b$ 时，有 $\varphi_1(b)&lt;\varphi_1(a)$，则 $\dfrac{\ln b}{b}&lt;\dfrac{\ln a}{a}$，即 $\dfrac{a}{b}&lt;\dfrac{\ln a}{\ln b}$；\n令 $\varphi_2(x)=x\ln x$，$\varphi_2'(x)=1+\ln x&gt;0(x&gt;\mathrm{e})$，知 $\varphi_2(x)$ 在 $(\mathrm{e},+\infty)$ 上单调递增，于是当 $\mathrm{e}&lt;a&lt;b$ 时，有 $\varphi_2(a)&lt;\varphi_2(b)$，则 $a\ln a&lt;b\ln b$，即 $\dfrac{\ln a}{\ln b}&lt;\dfrac{b}{a}$.\n综上，$\dfrac{a}{b}&lt;\dfrac{\ln a}{\ln b}&lt;\dfrac{b}{a}$，故 $a^2&lt;ab\dfrac{\ln a}{\ln b}&lt;b^2$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q26" data-no="26">
+  <header class="q-head">
+    <span class="q-no">【26】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="26" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f''(x)&lt;0$，且 $\lim\limits_{x\to 0}\dfrac{f(x)}{x}=1$，证明：$f(x)\leqslant x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\lim\limits_{x\to 0}\dfrac{f(x)}{x}=1$，可得 $\dfrac{f(x)}{x}=1+o(x)(x\to 0)$，故\n$$f(x)=x+o(x)x,$$\n则\n$$\lim_{x\to 0}f(x)=f(0)=0,$$\n$$f'(0)=\lim_{x\to 0}\dfrac{f(x)-f(0)}{x-0}=\lim_{x\to 0}\dfrac{f(x)}{x}=1.$$\n由 $f(x)$ 的一阶带拉格朗日余项的泰勒公式，有\n$$f(x)=f(0)+f'(0)x+\frac{f''(\xi)}{2}x^2\\=x+\frac{f''(\xi)}{2}x^2(\xi\text{ 在 }0\text{ 与 }x\text{ 之间})，$$\n因 $f''(x)&lt;0$，故 $f(x)\leqslant x$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q27" data-no="27">
+  <header class="q-head">
+    <span class="q-no">【27】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="27" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $b\geqslant a&gt;0$，求证：$\arctan\dfrac{b-a}{2}\geqslant\dfrac{\arctan b-\arctan a}{2}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\arctan\dfrac{x-a}{2}-\dfrac{\arctan x-\arctan a}{2}$，其中 $x\geqslant a$，$f(a)=0$，\n$$f'(x)=\dfrac{\dfrac{1}{2}}{1+\left(\dfrac{x-a}{2}\right)^2}-\dfrac{1}{2}\cdot\dfrac{1}{1+x^2}\\=\dfrac{1}{2}\cdot\dfrac{1+x^2-\left(\dfrac{x-a}{2}\right)^2-1}{\left[1+\left(\dfrac{x-a}{2}\right)^2\right](1+x^2)}\\=\dfrac{1}{2}\dfrac{\left(x-\dfrac{x-a}{2}\right)\left(x+\dfrac{x-a}{2}\right)}{\left[1+\left(\dfrac{x-a}{2}\right)^2\right](1+x^2)}\\=\dfrac{1}{2}\dfrac{\dfrac{x+a}{2}\cdot\dfrac{3x-a}{2}}{\left[1+\left(\dfrac{x-a}{2}\right)^2\right](1+x^2)}.$$\n因为 $x\geqslant a&gt;0$，故 $\dfrac{x+a}{2}&gt;0$，$\dfrac{3x-a}{2}&gt;0$，从而 $f'(x)&gt;0$，可知 $f(x)$ 在 $[a,+\infty)$ 上单调增加.\n又 $f(a)=0$，$b\geqslant a$，从而 $f(b)\geqslant 0$，故 $f(b)=\arctan\dfrac{b-a}{2}-\dfrac{\arctan b-\arctan a}{2}\geqslant 0$，即\n$$\arctan\dfrac{b-a}{2}\geqslant\dfrac{\arctan b-\arctan a}{2}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q28" data-no="28">
+  <header class="q-head">
+    <span class="q-no">【28】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="37" data-no="28" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在区间 $(a,b)$ 内可导. 证明：导函数 $f'(x)$ 在 $(a,b)$ 内严格单调增加的充分必要条件是对 $(a,b)$ 内任意的 $x_1,x_2,x_3$，当 $x_1&lt;x_2&lt;x_3$ 时，$\dfrac{f(x_2)-f(x_1)}{x_2-x_1}&lt;\dfrac{f(x_3)-f(x_2)}{x_3-x_2}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">必要性. 由于 $f(x)$ 在 $(a,b)$ 内可导，且 $x_1,x_2,x_3\in(a,b)$，故 $f(x)$ 在 $[x_1,x_2]$ 与 $[x_2,x_3]$ 上均连续，在 $(x_1,x_2)$ 与 $(x_2,x_3)$ 内均可导，则由拉格朗日中值定理，可得\n存在 $\xi_1\in(x_1,x_2)$，使得 $f'(\xi_1)=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}$；\n存在 $\xi_2\in(x_2,x_3)$，使得 $f'(\xi_2)=\dfrac{f(x_3)-f(x_2)}{x_3-x_2}$.\n易知 $\xi_1&lt;x_2&lt;\xi_2$，又由于 $f'(x)$ 在 $(a,b)$ 内严格单调增加，故有 $f'(\xi_1)&lt;f'(\xi_2)$. 得证.\n充分性. 在 $(a,b)$ 内任取 $x_1&lt;t_1&lt;x_2&lt;t_2&lt;x_3$，在 $(x_1,x_2)(\subset(a,b))$ 内，由题设知，\n$$\frac{f(t_1)-f(x_1)}{t_1-x_1}&lt;\frac{f(x_2)-f(t_1)}{x_2-t_1}.$$\n令 $t_1\to x_1^+$，则根据导数定义有 $\lim\limits_{t_1\to x_1^+}\dfrac{f(t_1)-f(x_1)}{t_1-x_1}=f'(x_1)$. 根据函数连续性，有\n$$\lim_{t_1\to x_1^+}\dfrac{f(x_2)-f(t_1)}{x_2-t_1}=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}.$$\n故根据极限保号性，有 $f'(x_1)\leqslant\dfrac{f(x_2)-f(x_1)}{x_2-x_1}$.\n同理，在 $(x_2,x_3)(\subset(a,b))$ 内，有 $\dfrac{f(t_2)-f(x_2)}{t_2-x_2}&lt;\dfrac{f(x_3)-f(t_2)}{x_3-t_2}$.\n令 $t_2\to x_3^-$，可得到 $f'(x_3)\geqslant\dfrac{f(x_3)-f(x_2)}{x_3-x_2}$.\n又因为 $\dfrac{f(x_3)-f(x_2)}{x_3-x_2}&gt;\dfrac{f(x_2)-f(x_1)}{x_2-x_1}$，所以 $f'(x_3)&gt;f'(x_1)$. 由 $x_1,x_3$ 的任意性，可得 $f'(x)$ 在 $(a,b)$ 内严格单调递增. 得证.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-36.html">上一章：第5章 一元函数微分学的应用(一)——几何应用</a>
+      <a class="chapter-link" href="chapter-38.html">下一章：第7章 一元函数微分学的应用(三)——物理应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 37, "total": 28, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

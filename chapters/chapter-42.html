@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第11章 一元函数积分学的应用(二)——积分等式与积分不等式 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第11章 一元函数积分学的应用(二)——积分等式与积分不等式<span class="top-count">（9题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="42" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[-1,1]$ 上二阶可导，且 $f''(x)&gt;0$，$f(0)=-1$，则（\quad）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{-1}^{1}f(x)\,\mathrm{d}x&gt;0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{-1}^{1}f(x)\,\mathrm{d}x&lt;0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{-1}^{1}f(x)\,\mathrm{d}x&gt;-2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{-1}^{1}f(x)\,\mathrm{d}x&lt;-2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由泰勒公式知，对任意的 $x \in [-1,1]$，有
+$$f(x) = f(0) + f'(0)x + \frac{f''(\xi)}{2}x^2（\xi 介于 0 与 x 之间）.$$
+因为 $f''(x) &gt; 0$，$f(0) = -1$，所以
+$$f(x) &gt; -1 + f'(0)x（x \neq 0）,$$
+从而
+$$\int_{-1}^{1} f(x)\mathrm{d}x &gt; \int_{-1}^{1} \left[-1 + f'(0)x\right]\mathrm{d}x = -2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 是 $[0,1]$ 上的连续函数，利用分部积分法证明：$$\int_{0}^{1}\left[\int_{x^{2}}^{\sqrt{x}}f(t)\,\mathrm{d}t\right]\mathrm{d}x=\int_{0}^{1}(\sqrt{x}-x^{2})f(x)\,\mathrm{d}x.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_{0}^{1}\left[\int_{x^2}^{\sqrt{x}} f(t)\,\mathrm{d}t\right]\mathrm{d}x \xlongequal{\text{分部积分}} \left.\left[x\int_{x^2}^{\sqrt{x}} f(t)\,\mathrm{d}t\right]\right|_{0}^{1} - \int_{0}^{1} x\,\mathrm{d}\left[\int_{x^2}^{\sqrt{x}} f(t)\,\mathrm{d}t\right]$$
+$$= \int_{0}^{1} x f(x^2)\,\mathrm{d}(x^2) - \int_{0}^{1} x f\left(\sqrt{x}\right)\mathrm{d}\left(\sqrt{x}\right)$$
+$$\xlongequal{u = x^2,\, v = \sqrt{x}} \int_{0}^{1} \sqrt{u} f(u)\,\mathrm{d}u - \int_{0}^{1} v^2 f(v)\,\mathrm{d}v$$
+$$= \int_{0}^{1} \left(\sqrt{x} - x^2\right) f(x)\,\mathrm{d}x.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="42" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是 $[0,1]$ 上的可导函数，$f(0)=f(1)=1$，$\max\limits_{0\leqslant x\leqslant 1}\{|f'(x)|\}=1$，则（\quad）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{4}&lt;\int_{0}^{1}f(x)\,\mathrm{d}x&lt;\dfrac{1}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{2}&lt;\int_{0}^{1}f(x)\,\mathrm{d}x&lt;\dfrac{3}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{3}{4}&lt;\int_{0}^{1}f(x)\,\mathrm{d}x&lt;\dfrac{5}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{5}{4}&lt;\int_{0}^{1}f(x)\,\mathrm{d}x&lt;\dfrac{7}{4}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x) = f(x) - x - 1$，$x \in [0,1)$，则 $F'(x) = f'(x) - 1 \leqslant 0$. 又 $F(0) = 0$，故 $F(x) &lt; F(0) = 0（0 &lt; x &lt; 1）$，则 $f(x) &lt; x + 1（0 &lt; x &lt; 1）$. 同理，可得当 $0 &lt; x &lt; 1$ 时，$f(x) &gt; 1 - x$，$f(x) &gt; x$，$f(x) &lt; 2 - x$，所以曲线 $f(x)$ 在 $y = x$，$y = x + 1$，$y = -x + 1$，$y = -x + 2$ 所围正方形内，如图所示.
+【图】平面直角坐标系中，单位正方形 $ABCO$（顶点 $O$ 为原点，$C$ 在 $x$ 轴上），其内一条曲线 $f(x)$ 连接 $(0,1)$ 与 $(1,1)$，图中标出 $S_1$（正方形）与 $S_2$（三角形 $ABE$）、$S_3$ 等区域.
+由图可知，正方形 $ABCO$ 面积 $S_1 = 1$，三角形 $ABE$ 面积 $S_2 = \frac{1}{4} = S_3$（三角形 $ABD$ 面积）. 故
+$$S_1 - S_3 &lt; \int_{0}^{1} f(x)\,\mathrm{d}x &lt; S_1 + S_2,$$
+即
+$$\frac{3}{4} &lt; \int_{0}^{1} f(x)\,\mathrm{d}x &lt; \frac{5}{4}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">证明：$$\int_{0}^{1}\left(\int_{x}^{\sqrt{x}}\frac{\sin t}{t}\,\mathrm{d}t\right)\mathrm{d}x=1-\sin 1.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_{0}^{1}\left(\int_{x}^{\sqrt{x}} \frac{\sin t}{t}\,\mathrm{d}t\right)\mathrm{d}x \xlongequal{\text{分部积分}} \left.\left(x\int_{x}^{\sqrt{x}} \frac{\sin t}{t}\,\mathrm{d}t\right)\right|_{0}^{1} - \int_{0}^{1} x\,\mathrm{d}\left(\int_{x}^{\sqrt{x}} \frac{\sin t}{t}\,\mathrm{d}t\right)$$
+$$= -\int_{0}^{1} x\left(\frac{\sin\sqrt{x}}{\sqrt{x}} \cdot \frac{1}{2\sqrt{x}} - \frac{\sin x}{x}\right)\mathrm{d}x$$
+$$= \int_{0}^{1}\left(\sin x - \frac{\sin\sqrt{x}}{2}\right)\mathrm{d}x$$
+$$\xlongequal{t = \sqrt{x}} -\int_{0}^{1} t\sin t\,\mathrm{d}t + \int_{0}^{1} \sin x\,\mathrm{d}x$$
+$$= 1 - \sin 1.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$，$g(x)$ 在区间 $[a,b]$ 上连续，对任意的 $x\in[a,b]$，满足 $\displaystyle\int_{a}^{x}g(t)\,\mathrm{d}t\leqslant\int_{a}^{x}f(t)\,\mathrm{d}t$，且 $\displaystyle\int_{a}^{b}g(t)\,\mathrm{d}t=\int_{a}^{b}f(t)\,\mathrm{d}t$. 证明：$\displaystyle\int_{a}^{b}xf(x)\,\mathrm{d}x\leqslant\int_{a}^{b}xg(x)\,\mathrm{d}x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x) = f(x) - g(x)\left(x \in [a,b]\right)$，$G(x) = \int_{a}^{x} F(t)\,\mathrm{d}t\left(x \in [a,b]\right)$. 易见 $G'(x) = F(x)$，且 $G(x) \geqslant 0$. 从而
+$$\int_{a}^{b} x F(x)\,\mathrm{d}x = \int_{a}^{b} x\,\mathrm{d}\left[G(x)\right] = xG(x)\Big|_{a}^{b} - \int_{a}^{b} G(x)\,\mathrm{d}x = -\int_{a}^{b} G(x)\,\mathrm{d}x \leqslant 0,$$
+移项即得待证不等式.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上可导，且 $f'(x)$ 连续，$f(a)=0$. 证明：$$\int_{a}^{b}f^{2}(x)\,\mathrm{d}x\leqslant\frac{(b-a)^{2}}{2}\int_{a}^{b}[f'(x)]^{2}\,\mathrm{d}x.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由柯西积分不等式
+$$\left[\int_{a}^{b} \varphi(x)\psi(x)\,\mathrm{d}x\right]^2 \leqslant \int_{a}^{b} \varphi^2(x)\,\mathrm{d}x \int_{a}^{b} \psi^2(x)\,\mathrm{d}x.$$
+令 $\varphi(x) = 1$，$\psi(x) = f'(x)$，有
+$$\left[\int_{a}^{t} 1 \cdot f'(x)\,\mathrm{d}x\right]^2 \leqslant \int_{a}^{t} 1^2\,\mathrm{d}x \int_{a}^{t} \left[f'(x)\right]^2 \mathrm{d}x（a \leqslant t \leqslant b）,$$
+$$\left[f(t) - f(a)\right]^2 \leqslant (t - a)\int_{a}^{t} \left[f'(x)\right]^2 \mathrm{d}x,$$
+则
+$$f^2(t) \leqslant (t - a)\int_{a}^{b} \left[f'(x)\right]^2 \mathrm{d}x,$$
+可得
+$$\int_{a}^{b} f^2(t)\,\mathrm{d}t \leqslant \int_{a}^{b} (t - a)\,\mathrm{d}t \int_{a}^{b} \left[f'(x)\right]^2 \mathrm{d}x,$$
+故
+$$\int_{a}^{b} f^2(t)\,\mathrm{d}t \leqslant \frac{(b-a)^2}{2}\int_{a}^{b} \left[f'(x)\right]^2 \mathrm{d}x,$$
+即
+$$\int_{a}^{b} f^2(x)\,\mathrm{d}x \leqslant \frac{(b-a)^2}{2}\int_{a}^{b} \left[f'(x)\right]^2 \mathrm{d}x.$$
+
+【注】柯西积分不等式（也称柯西-施瓦茨不等式）：
+若函数 $\varphi(x)$ 与 $\psi(x)$ 在 $[a,b]$ 上均连续，则有
+$$\left[\int_{a}^{b} \varphi(x)\psi(x)\,\mathrm{d}x\right]^2 \leqslant \int_{a}^{b} \left[\varphi(x)\right]^2 \mathrm{d}x \int_{a}^{b} \left[\psi(x)\right]^2 \mathrm{d}x.$$
+证明如下.
+方法一　令 $F(t) = \int_{a}^{t} \left[\varphi(x)\right]^2 \mathrm{d}x \cdot \int_{a}^{t} \left[\psi(x)\right]^2 \mathrm{d}x - \left[\int_{a}^{t} \varphi(x)\psi(x)\,\mathrm{d}x\right]^2$，则当 $t \geqslant a$ 时，有
+$F'(t) = \int_{a}^{t} \left[\varphi(t)\psi(x) - \varphi(x)\psi(t)\right]^2 \mathrm{d}x \geqslant 0$，由此可知 $F(t)$ 单调不减，又 $F(a) = 0$，所以 $F(b) \geqslant 0$，即 $\left[\int_{a}^{b} \varphi(x)\psi(x)\,\mathrm{d}x\right]^2 \leqslant \int_{a}^{b} \left[\varphi(x)\right]^2 \mathrm{d}x \cdot \int_{a}^{b} \left[\psi(x)\right]^2 \mathrm{d}x.$
+方法二　由 $0 \leqslant \int_{a}^{b} \left[\varphi(x) - t\psi(x)\right]^2 \mathrm{d}x = \int_{a}^{b} \left[\varphi(x)\right]^2 \mathrm{d}x - 2t\int_{a}^{b} \varphi(x)\psi(x)\,\mathrm{d}x + t^2 \int_{a}^{b} \left[\psi(x)\right]^2 \mathrm{d}x$，则
+$$\Delta = 4\left[\int_{a}^{b} \varphi(x)\psi(x)\,\mathrm{d}x\right]^2 - 4\int_{a}^{b} \left[\varphi(x)\right]^2 \mathrm{d}x \int_{a}^{b} \left[\psi(x)\right]^2 \mathrm{d}x \leqslant 0.$$
+于是 $\left[\int_{a}^{b} \varphi(x)\psi(x)\,\mathrm{d}x\right]^2 \leqslant \int_{a}^{b} \left[\varphi(x)\right]^2 \mathrm{d}x \cdot \int_{a}^{b} \left[\psi(x)\right]^2 \mathrm{d}x.$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上连续，且 $\displaystyle\int_{0}^{1}x^{2}f(x)\,\mathrm{d}x=\int_{0}^{1}f(x)\,\mathrm{d}x$. 证明：至少存在一点 $\xi\in(0,1)$，使得 $\displaystyle\int_{0}^{\xi}f(x)\,\mathrm{d}x=0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x) = \int_{0}^{x} \left(x^2 - t^2\right) f(t)\,\mathrm{d}t$，$F(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $F(0) = 0$，
+$$F(1) = \int_{0}^{1} \left(1 - t^2\right) f(t)\,\mathrm{d}t = \int_{0}^{1} f(t)\,\mathrm{d}t - \int_{0}^{1} t^2 f(t)\,\mathrm{d}t = 0 = F(0),$$
+故由罗尔定理可知，至少存在一点 $\xi \in (0,1)$，使得 $F'(\xi) = 0$，即
+$$\left.\left[\frac{\mathrm{d}}{\mathrm{d}x}\int_{0}^{x} \left(x^2 - t^2\right) f(t)\,\mathrm{d}t\right]\right|_{x=\xi} = \left.\left[2x\int_{0}^{x} f(t)\,\mathrm{d}t + x^2 f(x) - x^2 f(x)\right]\right|_{x=\xi} = 2\xi\int_{0}^{\xi} f(t)\,\mathrm{d}t = 0.$$
+因为 $\xi \in (0,1)$，$\xi \neq 0$，所以 $\int_{0}^{\xi} f(t)\,\mathrm{d}t = 0$，即 $\int_{0}^{\xi} f(x)\,\mathrm{d}x = 0$.
+
+【注】此题不易想到将 $F(x)$ 设成 $\int_{0}^{x} f(t)\,\mathrm{d}t$ 的形式，应该注意观察条件 $\int_{0}^{1} x^2 f(x)\,\mathrm{d}x = \int_{0}^{1} f(x)\,\mathrm{d}x$，那么 $\int_{0}^{1} x^2 f(x)\,\mathrm{d}x - \int_{0}^{1} f(x)\,\mathrm{d}x$ 很可能是某个变上限函数 $F(x)$ 取 $x = 1$ 时的形式，从而猜出 $F(x)$ 的形式.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y=f(x)$ 是可导的单调函数，$f(a)=0$，$g(x)$ 是 $f(x)$ 的反函数. 证明：$$\int_{a}^{x}f(t)\,\mathrm{d}t+\int_{0}^{y}g(t)\,\mathrm{d}t=xy.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $F(x) = \int_{a}^{x} f(t)\,\mathrm{d}t + \int_{0}^{f(x)} g(t)\,\mathrm{d}t - x f(x)$，
+$$F'(x) = f(x) + g\left[f(x)\right] \cdot f'(x) - f(x) - x f'(x)$$
+$$= x f'(x) - x f'(x) = 0.$$
+因此 $F(x) = C$，又 $F(a) = 0$，知 $F(x) \equiv 0$，从而
+$$\int_{a}^{x} f(t)\,\mathrm{d}t + \int_{0}^{f(x)} g(t)\,\mathrm{d}t = x f(x),$$
+即
+$$\int_{a}^{x} f(t)\,\mathrm{d}t + \int_{0}^{y} g(t)\,\mathrm{d}t = xy.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="42" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上具有二阶导数，$f(0)=f(1)=0$，$f''(x)&lt;0$，$0\leqslant f(x)\leqslant 1$. 记曲线 $y=f(x)$ 在 $[0,1]$ 上的长度为 $a$，证明：（1）存在 $\xi\in(0,1)$，使得对任意 $x\in(0,\xi)$，有 $f'(x)&gt;0$；（2）$a&lt;3$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）由 $f(0) = f(1)$，根据罗尔定理，存在 $\xi \in (0,1)$，使得 $f'(\xi) = 0$. 又 $f''(x) &lt; 0$，所以 $f'(x)$ 在 $(0,1)$ 上严格单调减少，即对任意 $x \in (0,\xi)$，有 $f'(x) &gt; 0$.
+（2）
+$$a = \int_{0}^{1} \sqrt{1 + \left[f'(x)\right]^2}\,\mathrm{d}x = \int_{0}^{\xi} \sqrt{1 + \left[f'(x)\right]^2}\,\mathrm{d}x + \int_{\xi}^{1} \sqrt{1 + \left[f'(x)\right]^2}\,\mathrm{d}x$$
+$$&lt; \int_{0}^{\xi} \sqrt{1 + \left[f'(x)\right]^2 + 2f'(x)}\,\mathrm{d}x + \int_{\xi}^{1} \sqrt{1 + \left[f'(x)\right]^2 - 2f'(x)}\,\mathrm{d}x$$
+$$= \int_{0}^{\xi} \left[1 + f'(x)\right]\mathrm{d}x + \int_{\xi}^{1} \left[1 - f'(x)\right]\mathrm{d}x$$
+$$= 1 + 2f(\xi) \leqslant 3.$$
+
+【注】本题欲证 $\int_{0}^{1} \sqrt{1 + \left[f'(x)\right]^2}\,\mathrm{d}x &lt; 3$，但是直接在 $[0,1]$ 上无法实现此证明. 故将 $[0,1]$ 拆分成 $[0,\xi]$ 与 $[\xi,1]$，在两个子区间上分别放缩，便可达到目的. 这提示考生，在一个大区间上完成不了的任务，一个常用的办法是切分成若干小区间来处理，这就是“三向解题法”中的黎曼思想.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-41.html">上一章：第10章 一元函数积分学的应用(一)——几何应用</a>
+      <a class="chapter-link" href="chapter-43.html">下一章：第12章 一元函数积分学的应用(三)——物理应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 42, "total": 9, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

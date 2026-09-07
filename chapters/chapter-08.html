@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 一元函数微分学的应用(三)——物理应用 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第7章 一元函数微分学的应用(三)——物理应用<span class="top-count">（5题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="8" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">一动点 $P$ 在曲线 $9y=4x^{2}$ 上运动, 设坐标轴的单位长度是 $1\ \mathrm{cm}$, 若点 $P$ 横坐标的变化率是 $30\ \mathrm{cm/s}$, 则当点 $P$ 经过点 $(3,4)$ 时, 点 $P$ 到原点距离的变化率为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $P(x,y)$，则点 $P$ 到原点的距离为 $l=\sqrt{x^2+y^2}$，且 $9y=4x^2$，两个等式均对 $t$ 求导，得
+$$\frac{\mathrm{d}l}{\mathrm{d}t}=\frac{x\frac{\mathrm{d}x}{\mathrm{d}t}+y\frac{\mathrm{d}y}{\mathrm{d}t}}{\sqrt{x^2+y^2}},\ 9\frac{\mathrm{d}y}{\mathrm{d}t}=8x\frac{\mathrm{d}x}{\mathrm{d}t},$$
+由题设，$x=3,\ y=4,\ \frac{\mathrm{d}x}{\mathrm{d}t}=30$，则
+$$\frac{\mathrm{d}y}{\mathrm{d}t}=80\ \mathrm{cm/s},\ \frac{\mathrm{d}l}{\mathrm{d}t}=82\ \mathrm{cm/s}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">82 cm/s</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="8" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二阶可导函数 $y=f(t)$ 表示某人在 10 分钟内心跳次数的变化曲线, 如图所示. 则关于此人心跳次数的增长速度, 说法正确的是(  ).【图】横轴为 $t$(分钟), 在 3、7、10 处标有虚线, 纵轴为 $y$(次数); 曲线整体上升, $0\sim 3$ 分钟一段上凸(增速逐渐变小), 3 分钟附近由上凸转为下凸, $3\sim 10$ 分钟下凸且增速在 7 分钟附近最小, 之后增大, 10 分钟处上升最陡。<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$0\sim 3$ 分钟增速变小; $7\sim 10$ 分钟增速变大</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$0\sim 3$ 分钟增速变大; $7\sim 10$ 分钟增速变小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$0\sim 3$ 分钟增速变大; $7\sim 10$ 分钟增速变大</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$0\sim 3$ 分钟增速变小; $7\sim 10$ 分钟增速变小</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$t \in (0,3)$ 时，$f(t)$ 为凸曲线，故 $f''(t)&lt;0$，于是有 $f'(t)$ 单调递减；$t \in (7,10)$ 时，$f(t)$ 为凹曲线，故 $f''(t)&gt;0$，于是有 $f'(t)$ 单调递增.
+$f'(t)$ 即为心跳次数对时间 $t$ 的变化率，即心跳次数增长速度. 故选 (A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="8" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知一容器中水增加的速率为 $1\ \mathrm{m^{3}/min}$, 且水的体积 $V$ 与水面高度 $y$ 满足 $V=\dfrac{\pi}{2}y^{2}$, 当水面上升到高为 $1\ \mathrm{m}$ 时, 求水面高度上升的速率.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意，$\frac{\mathrm{d}V}{\mathrm{d}t}=1$，又 $V=\frac{\pi}{2}y^2$，则 $\frac{\mathrm{d}V}{\mathrm{d}t}=\pi y\frac{\mathrm{d}y}{\mathrm{d}t}$，故
+$$\left.\frac{\mathrm{d}y}{\mathrm{d}t}\right|_{y=1}=\left.\frac{\mathrm{d}V}{\mathrm{d}t}\cdot\frac{1}{\pi y}\right|_{y=1}=\frac{1}{\pi}\ (\mathrm{m/min}).$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="8" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知某圆柱体底面半径与高随时间变化的速率分别为 $2\ \mathrm{cm/s}$, $-3\ \mathrm{cm/s}$, 且圆柱体的体积与表面积随时间变化的速率分别为 $-100\pi\ \mathrm{cm^{3}/s}$, $40\pi\ \mathrm{cm^{2}/s}$, 则圆柱体的底面半径与高分别为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$5\ \mathrm{cm}, 5\ \mathrm{cm}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$10\ \mathrm{cm}, 5\ \mathrm{cm}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$5\ \mathrm{cm}, 10\ \mathrm{cm}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$10\ \mathrm{cm}, 10\ \mathrm{cm}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设圆柱体的底面半径为 $r$ cm，高为 $h$ cm，体积为 $V\ \mathrm{cm^3}$，表面积为 $S\ \mathrm{cm^2}$，时间为 $t$ s，则
+$$V=\pi r^2h,\ S=2\pi rh+2\pi r^2,$$
+所以
+$$\frac{\mathrm{d}V}{\mathrm{d}t}=2\pi rh\frac{\mathrm{d}r}{\mathrm{d}t}+\pi r^2\frac{\mathrm{d}h}{\mathrm{d}t},\ \frac{\mathrm{d}S}{\mathrm{d}t}=2\pi h\frac{\mathrm{d}r}{\mathrm{d}t}+2\pi r\frac{\mathrm{d}h}{\mathrm{d}t}+4\pi r\frac{\mathrm{d}r}{\mathrm{d}t}.$$
+由题设，$\frac{\mathrm{d}r}{\mathrm{d}t}=2,\ \frac{\mathrm{d}h}{\mathrm{d}t}=-3,\ \frac{\mathrm{d}V}{\mathrm{d}t}=-100\pi,\ \frac{\mathrm{d}S}{\mathrm{d}t}=40\pi$，代人上式，舍去负值，得 $r=10,\ h=5$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="8" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">一物体在距离同一水平面上的地面观测器 $10\ \mathrm{m}$ 处离地匀速铅直上升, 其速度为 $a\ \mathrm{m/s}$. 若该物体上升到离地 $20\ \mathrm{m}$ 时, 观测器视线倾角的变化率为 $\dfrac{1}{10}$, 则 $a=(\quad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">5</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设时间为 $t$ s 时，物体离地面的距离为 $h(t)$ m，观测器视线的倾角为 $\theta(t)$，如图所示，则有 $\theta(t)=\arctan\dfrac{h(t)}{10}$，故
+$$\frac{\mathrm{d}[\theta(t)]}{\mathrm{d}t}=\frac{\dfrac{1}{10}}{1+\left[\dfrac{h(t)}{10}\right]^{2}}\cdot\frac{\mathrm{d}[h(t)]}{\mathrm{d}t}.$$
+当 $h(t)=20$ m 时，$\dfrac{\mathrm{d}[h(t)]}{\mathrm{d}t}=a$，得 $\dfrac{\mathrm{d}[\theta(t)]}{\mathrm{d}t}=\dfrac{a}{50}=\dfrac{1}{10}$，即 $a=5$.【图】直角三角形，底边水平标注 10，竖直边标注 $h(t)$，底角处标注 $\theta(t)$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-07.html">上一章：第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a>
+      <a class="chapter-link" href="chapter-09.html">下一章：第8章 一元函数积分学的概念与性质</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 8, "total": 5, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

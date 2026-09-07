@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第12章 一元函数积分学的应用(三)——物理应用 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第12章 一元函数积分学的应用(三)——物理应用<span class="top-count">（5题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="43" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">一三角形平面薄板铅直地浸没于水中，设当该薄板的一条边与水面相平齐时薄板一侧所受的水压力的大小为 $F_{1}$，当倒转薄板使原来与水面相平齐的那条边与水面平行而该边相对的顶点与水面相齐时薄板一侧所受的水压力的大小为 $F_{2}$，则（\quad）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$F_{2}=\dfrac{3}{2}F_{1}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$F_{2}=\dfrac{4}{3}F_{1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$F_{2}=2F_{1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$F_{2}=3F_{1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">如图所示. 以水面上某一点为原点，铅直向下的方向为 $x$ 轴正向，建立平面直角坐标系，选取 $x$ 为积分变量，设三角形薄板与水面相平的那条边的长为 $a$，相应的高为 $h$，重力加速度为 $g$，水的密度为 $\rho$，则
+$$F_1 = \int_{0}^{h} \rho g x\, \frac{a}{h}(h - x)\,\mathrm{d}x = \frac{\rho g a}{h}\int_{0}^{h} (hx - x^2)\,\mathrm{d}x = \frac{1}{6}\rho g a h^2,$$
+$$F_2 = \int_{0}^{h} \rho g x\, \frac{a}{h}x\,\mathrm{d}x = \frac{\rho g a}{h}\int_{0}^{h} x^2\,\mathrm{d}x = \frac{1}{3}\rho g a h^2.$$
+故 $F_2 = 2F_1$. 应选 (C).
+【图】两组坐标系图：(a) 倒三角形薄板顶点朝下，$y$ 轴沿水面，$x$ 轴铅直向下，标出窄条 $x$ 与 $x+\mathrm{d}x$；(b) 正三角形薄板底边在水面的坐标系图，同样标出 $x$ 与 $x+\mathrm{d}x$ 的窄条.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="43" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">边长为 2 的等边三角形薄平板铅直沉没在水中，且一条边与水面相齐. 记重力加速度为 $g$，水的密度为 $\rho$.（1）求该平板一侧所受的水压力；（2）当水面开始以 0.1 的速度上涨时，求平板一侧所受水压力的变化率.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）建立如图 (a) 所示的直角坐标系，则在水深 $y$ 处平板一侧所受的水压力为
+$$\mathrm{d}F = \rho g y \cdot 2\left(1 - \frac{\sqrt{3}}{3}y\right)\mathrm{d}y,$$
+则平板一侧所受的水压力为
+$$\int_{0}^{\sqrt{3}} \rho g y \cdot 2\left(1 - \frac{\sqrt{3}}{3}y\right)\mathrm{d}y$$
+$$= 2\rho g\int_{0}^{\sqrt{3}} \left(y - \frac{\sqrt{3}}{3}y^2\right)\mathrm{d}y$$
+$$= 2\rho g\left(\frac{3}{2} - 1\right)$$
+$$= \rho g.$$
+（2）如图 (b) 所示，设 $0 \sim t$ 时刻水面增加的高度为 $-h$，$h = h(t)$，$h &lt; 0$，则
+$$F = \int_{0}^{\sqrt{3}} 2\rho g\left(1 - \frac{\sqrt{3}}{3}y\right)(y - h)\,\mathrm{d}y$$
+$$= \rho g - 2\rho g\int_{0}^{\sqrt{3}}\left(1 - \frac{\sqrt{3}}{3}y\right)\mathrm{d}y \cdot h$$
+$$= \rho g - \sqrt{3}\rho g h.$$
+【图】两幅坐标系图：(a) 倒三角形平板，水面线在 $x$ 轴处（标水面符号），$y$ 轴向下，水深 $y$ 与 $y+\mathrm{d}y$ 处画窄条；(b) 同样倒三角形，水面升高至 $x$ 轴上方 $h$ 处，三角形底边处标注 $\sqrt{3}$.
+又 $\frac{\mathrm{d}h}{\mathrm{d}t} = -\frac{1}{10}$，故
+$$\frac{\mathrm{d}F}{\mathrm{d}t} = -\sqrt{3}\rho g\,\frac{\mathrm{d}h}{\mathrm{d}t} = \frac{\sqrt{3}}{10}\rho g.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="43" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知曲线 $L:y=\ln\sqrt{x}\,(2\leqslant x\leqslant 4)$，在 $L$ 上的任意点 $P(x,y)$ 作切线，记切线与曲线 $L$ 在 $2\leqslant x\leqslant 4$ 时所围成的有界区域的面积为 $S$.（1）求一点 $P_{0}$，使上述面积 $S$ 关于 $x$ 的变化率为零；（2）当点 $P(x,y)$ 在曲线上移动至 $\left(\mathrm{e},\dfrac{1}{2}\right)$ 时，横坐标关于时间的变化率为 1，求此时面积关于时间的变化率 $\dfrac{\mathrm{d}S}{\mathrm{d}t}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）由 $y = \ln\sqrt{x} = \frac{1}{2}\ln x$ 得 $y' = \frac{1}{2x}$，曲线 $L$ 在点 $P(x,y)$ 处的切线方程为
+$$Y - \frac{1}{2}\ln x = \frac{1}{2x}(X - x),$$
+于是
+$$S = \int_{2}^{4} \left(\frac{1}{2}\ln x + \frac{1}{2x}X - \frac{1}{2} - \frac{1}{2}\ln X\right)\mathrm{d}X$$
+$$= \left.\frac{1}{2}\ln x \cdot (4 - 2) + \frac{1}{4x}X^2\right|_{2}^{4} - \frac{1}{2}(4 - 2) - \left.\frac{1}{2}(X\ln X - X)\right|_{2}^{4}$$
+$$= \ln x + \frac{3}{x} - 1 - \frac{1}{2}(4\ln 4 - 4 - 2\ln 2 + 2)$$
+$$= \frac{3}{x} + \ln x - 3\ln 2,$$
+则由 $\frac{\mathrm{d}S}{\mathrm{d}x} = -\frac{3}{x^2} + \frac{1}{x} = 0$，得 $x_0 = 3$，故有 $P_0\left(3, \frac{1}{2}\ln 3\right)$.
+（2）$\left.\frac{\mathrm{d}S}{\mathrm{d}t}\right|_{x=\mathrm{e}} = \left.\frac{\mathrm{d}S}{\mathrm{d}x}\right|_{x=\mathrm{e}} \cdot \left.\frac{\mathrm{d}x}{\mathrm{d}t}\right|_{x=\mathrm{e}} = \left(-\frac{3}{\mathrm{e}^2} + \frac{1}{\mathrm{e}}\right) \cdot 1 = \frac{\mathrm{e} - 3}{\mathrm{e}^2}.$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="43" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设有半圆形板：$x^{2}+y^{2}\leqslant a^{2}\;(y\geqslant 0)$，它在点 $P(x,y)$ 的密度与点 $P$ 到原点的距离成正比，则半圆形板的重心坐标为（\quad）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\left(0,\dfrac{\pi a}{3}\right)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\left(0,\dfrac{\pi a}{2}\right)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\left(0,\dfrac{4a}{3\pi}\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\left(0,\dfrac{3a}{2\pi}\right)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，密度函数 $\rho(x,y) = k\sqrt{x^2 + y^2}\,(k &gt; 0)$，设重心坐标为 $\left(\overline{x}, \overline{y}\right)$，$D = \{(x,y) \mid x^2 + y^2 \leqslant a^2, y \geqslant 0\}$，由对称性知 $\overline{x} = 0$，$\overline{y} = \frac{M_x}{M}$.
+其中，
+$$M_x = \iint_{D} k y\sqrt{x^2 + y^2}\,\mathrm{d}x\mathrm{d}y = k\int_{0}^{\pi}\mathrm{d}\theta\int_{0}^{a} r\sin\theta \cdot r \cdot r\,\mathrm{d}r = \frac{1}{2}ka^4,$$
+$$M = \iint_{D} k\sqrt{x^2 + y^2}\,\mathrm{d}x\mathrm{d}y = k\int_{0}^{\pi}\mathrm{d}\theta\int_{0}^{a} r^2\,\mathrm{d}r = \frac{1}{3}k\pi a^3,$$
+故 $\overline{y} = \frac{M_x}{M} = \frac{3a}{2\pi}$.
+因此，重心坐标 $\left(\overline{x}, \overline{y}\right) = \left(0, \frac{3a}{2\pi}\right)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="43" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\mathrm{e}^{x}$ 与直线 $x=1$，$x=-1$ 及 $x$ 轴所围平面有界区域 $D$ 的形心为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">区域 $D$ 如图所示.
+【图】平面直角坐标系中，曲线 $y = \mathrm{e}^x$ 下、区间 $[-1,1]$ 上的阴影区域 $D$，横轴标注 $-1$，$O$，$1$.
+$$\overline{x} = \frac{\int_{-1}^{1}\mathrm{d}x\int_{0}^{\mathrm{e}^x} x\,\mathrm{d}y}{\int_{-1}^{1}\mathrm{d}x\int_{0}^{\mathrm{e}^x}\mathrm{d}y} = \frac{\int_{-1}^{1} x\mathrm{e}^x\,\mathrm{d}x}{\int_{-1}^{1} \mathrm{e}^x\,\mathrm{d}x} = \frac{2}{\mathrm{e}^2 - 1},$$
+$$\overline{y} = \frac{\int_{-1}^{1}\mathrm{d}x\int_{0}^{\mathrm{e}^x} y\,\mathrm{d}y}{\int_{-1}^{1}\mathrm{d}x\int_{0}^{\mathrm{e}^x}\mathrm{d}y} = \frac{\frac{1}{2}\int_{-1}^{1} \left(\mathrm{e}^x\right)^2\mathrm{d}x}{\int_{-1}^{1} \mathrm{e}^x\,\mathrm{d}x} = \frac{\mathrm{e}^2 + 1}{4\mathrm{e}}.$$
+故所求形心为 $\left(\frac{2}{\mathrm{e}^2 - 1}, \frac{\mathrm{e}^2 + 1}{4\mathrm{e}}\right)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\left(\frac{2}{\mathrm{e}^2 - 1}, \frac{\mathrm{e}^2 + 1}{4\mathrm{e}}\right)$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-42.html">上一章：第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a>
+      <a class="chapter-link" href="chapter-44.html">下一章：第13章 多元函数微分学</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 43, "total": 5, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

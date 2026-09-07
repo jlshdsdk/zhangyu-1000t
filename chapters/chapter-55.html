@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 向量组 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第6章 向量组<span class="top-count">（9题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="55" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha_1, \alpha_2, \cdots, \alpha_s$ 是 $n$ 维列向量，$A$ 是 $m \times n$ 矩阵，记向量组（Ⅰ）为 $\alpha_1, \alpha_2, \cdots, \alpha_s$，向量组（Ⅱ）为 $A\alpha_1, A\alpha_2, \cdots, A\alpha_s$，则下列命题正确的是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">若向量组（Ⅰ）线性无关，则向量组（Ⅱ）线性无关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">若向量组（Ⅱ）线性无关，则向量组（Ⅰ）线性无关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">若向量组（Ⅱ）线性相关，则向量组（Ⅰ）线性相关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">向量组（Ⅰ）与向量组（Ⅱ）具有不同的线性相关性</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于选项(B)，利用反证法. 假设向量组（Ⅱ）线性无关，有 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\cdots,\boldsymbol{\alpha}_s$ 线性相关，则存在不全为零的数 $k_1,k_2,\cdots,k_s$，使得
+$$k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2+\cdots+k_s\boldsymbol{\alpha}_s=\mathbf{0},$$
+（*）
+在（*）式的左边乘 $A$，得
+$$A(k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2+\cdots+k_s\boldsymbol{\alpha}_s)=k_1A\boldsymbol{\alpha}_1+k_2A\boldsymbol{\alpha}_2+\cdots+k_sA\boldsymbol{\alpha}_s=\mathbf{0},$$
+因 $k_1,k_2,\cdots,k_s$ 不全为零，得 $A\boldsymbol{\alpha}_1,A\boldsymbol{\alpha}_2,\cdots,A\boldsymbol{\alpha}_s$ 线性相关，这和已知矛盾，故 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\cdots,\boldsymbol{\alpha}_s$ 必线性无关，选项(B) 成立，选项(D) 不成立.
+对于选项(A)，(C) 不成立，只需举出反例即可.
+取向量组（Ⅰ）$\boldsymbol{\alpha}_1=\begin{pmatrix}1\\0\\0\end{pmatrix}$，$\boldsymbol{\alpha}_2=\begin{pmatrix}0\\0\\1\end{pmatrix}$ 线性无关，取 $A=O$，此时向量组（Ⅱ）$A\boldsymbol{\alpha}_1,A\boldsymbol{\alpha}_2$ 线性相关，故向量组（Ⅰ）$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性无关推不出 $A\boldsymbol{\alpha}_1,A\boldsymbol{\alpha}_2$ 线性无关，且向量组（Ⅱ）$A\boldsymbol{\alpha}_1,A\boldsymbol{\alpha}_2$ 线性相关也推不出 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性相关，故选项(A)，(C) 不成立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="55" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 维向量组 $\alpha_1 = [1, 1, 0]^{\mathrm{T}}, \alpha_2 = [5, 3, 2]^{\mathrm{T}}, \alpha_3 = [1, 3, -1]^{\mathrm{T}}, \alpha_4 = [-2, 2, -3]^{\mathrm{T}}$. 且 $A$ 是 3 阶矩阵，满足 $A\alpha_1 = \alpha_2, A\alpha_2 = \alpha_3, A\alpha_3 = \alpha_1$，求 $A\alpha_4$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4$ 均为具体型向量（分量为常数），故先寻找它们的关系. 设 $x_1\boldsymbol{\alpha}_1+x_2\boldsymbol{\alpha}_2+x_3\boldsymbol{\alpha}_3=\boldsymbol{\alpha}_4$，于是
+$$\left[\begin{array}{ccc|c}1&amp;5&amp;1&amp;-2\\1&amp;3&amp;3&amp;2\\0&amp;2&amp;-1&amp;-3\end{array}\right]\to\left[\begin{array}{ccc|c}1&amp;5&amp;1&amp;-2\\0&amp;-2&amp;2&amp;4\\0&amp;2&amp;-1&amp;-3\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|c}1&amp;5&amp;1&amp;-2\\0&amp;1&amp;-1&amp;-2\\0&amp;2&amp;-1&amp;-3\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|c}1&amp;0&amp;6&amp;8\\0&amp;1&amp;-1&amp;-2\\0&amp;0&amp;1&amp;1\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|c}1&amp;0&amp;0&amp;2\\0&amp;1&amp;0&amp;-1\\0&amp;0&amp;1&amp;1\end{array}\right],$$
+此方程组有唯一解 $x_1=2$，$x_2=-1$，$x_3=1$，得 $\boldsymbol{\alpha}_4=2\boldsymbol{\alpha}_1-\boldsymbol{\alpha}_2+\boldsymbol{\alpha}_3$，则
+$$A\boldsymbol{\alpha}_4=A(2\boldsymbol{\alpha}_1-\boldsymbol{\alpha}_2+\boldsymbol{\alpha}_3)$$
+$$=2A\boldsymbol{\alpha}_1-A\boldsymbol{\alpha}_2+A\boldsymbol{\alpha}_3$$
+$$=2\begin{pmatrix}5\\3\\2\end{pmatrix}-\begin{pmatrix}1\\3\\-1\end{pmatrix}+\begin{pmatrix}-2\\2\\-3\end{pmatrix}=\begin{pmatrix}7\\5\\2\end{pmatrix}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="55" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha_1 = \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}, \alpha_2 = \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}, \alpha_3 = \begin{bmatrix} 2 \\ 0 \\ 0 \end{bmatrix}; \beta_1 = \begin{bmatrix} a \\ -1 \\ 1 \end{bmatrix}, \beta_2 = \begin{bmatrix} 4 \\ 0 \\ b \end{bmatrix}, \beta_3 = \begin{bmatrix} 0 \\ c \\ 1 \end{bmatrix}$，问 $a, b, c$ 为何值时，向量组 $\alpha_1, \alpha_2, \alpha_3$ 与 $\beta_1, \beta_2, \beta_3$ 等价，且当向量组等价时，求 $\beta_1$ 由 $\alpha_1, \alpha_2, \alpha_3$ 的线性表示式及 $\alpha_1$ 由 $\beta_1, \beta_2, \beta_3$ 的线性表示式.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对 $[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3\mid\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3]$ 作初等行变换，有
+$$[A\mid B]=[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3\mid\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3]=\left[\begin{array}{ccc|ccc}1&amp;1&amp;2&amp;a&amp;4&amp;0\\-1&amp;1&amp;0&amp;-1&amp;0&amp;c\\1&amp;0&amp;1&amp;1&amp;b&amp;1\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|ccc}1&amp;1&amp;2&amp;a&amp;4&amp;0\\0&amp;2&amp;2&amp;a-1&amp;4&amp;c\\0&amp;-1&amp;-1&amp;1-a&amp;b-4&amp;1\end{array}\right]$$
+$$\to\left[\begin{array}{ccc|ccc}1&amp;1&amp;2&amp;a&amp;4&amp;0\\0&amp;1&amp;1&amp;a-1&amp;4-b&amp;-1\\0&amp;0&amp;0&amp;1-a&amp;2b-4&amp;2+c\end{array}\right]=[A'\mid B'].$$
+向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 与 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$ 等价，即 $\boldsymbol{\beta}_i(i=1,2,3)$ 可由 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性表示，且 $\boldsymbol{\alpha}_i(i=1,2,3)$ 可由 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$ 线性表示，故 $r(A)=r(B)$，则应取 $a=1$，$b=2$，$c=-2$. 当 $a=1$，$b=2$，$c=-2$ 时，
+$$[A'\mid B']=\left[\begin{array}{ccc|ccc}1&amp;1&amp;2&amp;1&amp;4&amp;0\\0&amp;1&amp;1&amp;0&amp;2&amp;-1\\0&amp;0&amp;0&amp;0&amp;0&amp;0\end{array}\right],$$
+则向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 与 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$ 等价.
+求 $\boldsymbol{\beta}_1$ 由 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 的线性表示式，即解方程组
+$$\begin{cases}x_1+x_2+2x_3=1,\\x_2+x_3=0,\end{cases}$$
+得通解为 $k[-1,-1,1]^{\mathrm{T}}+[1,0,0]^{\mathrm{T}}$，即 $\boldsymbol{\beta}_1=(-k+1)\boldsymbol{\alpha}_1-k\boldsymbol{\alpha}_2+k\boldsymbol{\alpha}_3$，其中 $k$ 是任意常数.
+求 $\boldsymbol{\alpha}_1$ 由 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$ 的线性表示式，即解方程组
+$$\begin{cases}x_1+4x_3=1,\\2x_2-x_3=0,\end{cases}$$
+得通解为 $l[-4,1,2]^{\mathrm{T}}+[1,0,0]^{\mathrm{T}}$，即 $\boldsymbol{\alpha}_1=(-4l+1)\boldsymbol{\beta}_1+l\boldsymbol{\beta}_2+2l\boldsymbol{\beta}_3$，其中 $l$ 是任意常数.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="55" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 是秩为 2 的 3 阶实对称矩阵，$\alpha, \beta$ 是 3 维非零列向量，$B = \begin{bmatrix} A &amp; \beta \\ \alpha^{\mathrm{T}} &amp; 1 \end{bmatrix}$，则 $r(B) = 2$ 是方程组 $\begin{cases} Ax = \beta, \\ \alpha^{\mathrm{T}} x = 1 \end{cases}$ 有解的（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">充分非必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">必要非充分条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">充分必要条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既非充分又非必要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">若 $r(B)=2$，即 $r\left(\begin{bmatrix}A&amp;\boldsymbol{\beta}\\\boldsymbol{\alpha}^{\mathrm{T}}&amp;1\end{bmatrix}\right)=2$. 又 $2=r(A)\leqslant r\left(\begin{bmatrix}A\\\boldsymbol{\alpha}^{\mathrm{T}}\end{bmatrix}\right)\leqslant r\left(\begin{bmatrix}A&amp;\boldsymbol{\beta}\\\boldsymbol{\alpha}^{\mathrm{T}}&amp;1\end{bmatrix}\right)=2$，于是 $r\left(\begin{bmatrix}A\\\boldsymbol{\alpha}^{\mathrm{T}}\end{bmatrix}\right)=2=r\left(\begin{bmatrix}A&amp;\boldsymbol{\beta}\\\boldsymbol{\alpha}^{\mathrm{T}}&amp;1\end{bmatrix}\right)$，即 $\begin{cases}Ax=\boldsymbol{\beta},\\\boldsymbol{\alpha}^{\mathrm{T}}x=1\end{cases}$ 有解.
+反过来，若 $\begin{cases}Ax=\boldsymbol{\beta},\\\boldsymbol{\alpha}^{\mathrm{T}}x=1\end{cases}$ 有解，即 $r\left(\begin{bmatrix}A&amp;\boldsymbol{\beta}\\\boldsymbol{\alpha}^{\mathrm{T}}&amp;1\end{bmatrix}\right)=r\left(\begin{bmatrix}A\\\boldsymbol{\alpha}^{\mathrm{T}}\end{bmatrix}\right)$，且 $r([A\mid\boldsymbol{\beta}])=r(A)=2$，但 $r\left(\begin{bmatrix}A\\\boldsymbol{\alpha}^{\mathrm{T}}\end{bmatrix}\right)$ 并不一定等于 $r\left(\begin{bmatrix}A\\\boldsymbol{\beta}^{\mathrm{T}}\end{bmatrix}\right)=r\left(\begin{bmatrix}A^{\mathrm{T}}\\\boldsymbol{\beta}^{\mathrm{T}}\end{bmatrix}\right)=r([A\mid\boldsymbol{\beta}])=2$，故为充分非必要条件.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="55" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 3 维列向量 $\alpha_1, \alpha_2$ 线性无关，$\beta_1, \beta_2$ 线性无关.
+（1）证明：存在 3 维非零列向量 $\xi, \xi$ 既可由 $\alpha_1, \alpha_2$ 线性表示，也可由 $\beta_1, \beta_2$ 线性表示；
+（2）若 $\alpha_1 = [1, -2, 3]^{\mathrm{T}}, \alpha_2 = [2, 1, 1]^{\mathrm{T}}, \beta_1 = [-2, 1, 4]^{\mathrm{T}}, \beta_2 = [-5, -3, 5]^{\mathrm{T}}$，求既可由 $\alpha_1, \alpha_2$ 线性表示，也可由 $\beta_1, \beta_2$ 线性表示的所有非零列向量 $\xi$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 因为 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1,\boldsymbol{\beta}_2$ 均是 3 维列向量，4 个 3 维列向量必线性相关，由定义知，存在不全为零的常数 $k_1,k_2,\lambda_1,\lambda_2$，使得
+$$k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2+\lambda_1\boldsymbol{\beta}_1+\lambda_2\boldsymbol{\beta}_2=\mathbf{0},$$
+即
+$$k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2=-\lambda_1\boldsymbol{\beta}_1-\lambda_2\boldsymbol{\beta}_2.$$
+取
+$$\boldsymbol{\xi}=k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2=-\lambda_1\boldsymbol{\beta}_1-\lambda_2\boldsymbol{\beta}_2,$$
+若 $\boldsymbol{\xi}=\mathbf{0}$，则 $k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2=-\lambda_1\boldsymbol{\beta}_1-\lambda_2\boldsymbol{\beta}_2=\mathbf{0}$. 因为 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性无关，$\boldsymbol{\beta}_1,\boldsymbol{\beta}_2$ 也线性无关，从而得出 $k_1=k_2=0$，且 $\lambda_1=\lambda_2=0$，这和 $k_1,k_2,\lambda_1,\lambda_2$ 不全为零矛盾，故 $\boldsymbol{\xi}\neq\mathbf{0}$，所以存在既可由 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性表示，也可由 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2$ 线性表示的非零列向量 $\boldsymbol{\xi}$.
+(2) 设 $\boldsymbol{\xi}=k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2=-\lambda_1\boldsymbol{\beta}_1-\lambda_2\boldsymbol{\beta}_2$，得齐次线性方程组 $k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2+\lambda_1\boldsymbol{\beta}_1+\lambda_2\boldsymbol{\beta}_2=\mathbf{0}$，将 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1,\boldsymbol{\beta}_2$ 合并成矩阵，并作初等行变换，得
+$$[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1,\boldsymbol{\beta}_2]=\begin{bmatrix}1&amp;2&amp;-2&amp;-5\\-2&amp;1&amp;1&amp;-3\\3&amp;1&amp;4&amp;5\end{bmatrix}\to\begin{bmatrix}1&amp;2&amp;-2&amp;-5\\0&amp;5&amp;-3&amp;-13\\0&amp;-5&amp;10&amp;20\end{bmatrix}$$
+$$\to\begin{bmatrix}1&amp;2&amp;-2&amp;-5\\0&amp;5&amp;-3&amp;-13\\0&amp;0&amp;7&amp;7\end{bmatrix}\to\begin{bmatrix}1&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;-2\\0&amp;0&amp;1&amp;1\end{bmatrix},$$
+解得 $[k_1,k_2,\lambda_1,\lambda_2]^{\mathrm{T}}=k[-1,2,-1,1]^{\mathrm{T}}$，故既可由 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性表示，也可由 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2$ 线性表示的所有非零向量为
+$$\boldsymbol{\xi}=k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2=-k\boldsymbol{\alpha}_1+2k\boldsymbol{\alpha}_2=-k\begin{pmatrix}1\\-2\\3\end{pmatrix}+2k\begin{pmatrix}2\\1\\1\end{pmatrix}=k\begin{pmatrix}3\\4\\-1\end{pmatrix},$$其中 $k$ 是任意非零常数，
+或 $\quad\boldsymbol{\xi}=-\lambda_1\boldsymbol{\beta}_1-\lambda_2\boldsymbol{\beta}_2=k\boldsymbol{\beta}_1-k\boldsymbol{\beta}_2=k\begin{pmatrix}-2\\1\\4\end{pmatrix}-k\begin{pmatrix}-5\\-3\\5\end{pmatrix}=k\begin{pmatrix}3\\4\\-1\end{pmatrix},$其中 $k$ 是任意非零常数.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="55" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设向量空间 $V$ 满足 $x_1 + x_2 + x_3 = 0, -\infty &lt; x_i &lt; +\infty, i = 1, 2, 3$，则 $V$ 的一个基为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}, \begin{bmatrix} -1 \\ -1 \\ 0 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}, \begin{bmatrix} -1 \\ -1 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $x_1+x_2+x_3=0$，解得
+$$\boldsymbol{\xi}_1=\begin{pmatrix}-1\\0\\1\end{pmatrix},\boldsymbol{\xi}_2=\begin{pmatrix}-1\\1\\0\end{pmatrix},$$
+故其为 $V$ 的一个基.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="55" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">向量空间 $V = \{(x, y, z) \mid (x, y, z) \in \mathbf{R}^3, x - 2z = 0\}$ 的一个基为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知，$\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}2x\\y\\z\end{pmatrix}=y\begin{pmatrix}0\\1\\0\end{pmatrix}+z\begin{pmatrix}2\\0\\1\end{pmatrix}$，故基为 $\begin{pmatrix}0\\1\\0\end{pmatrix},\begin{pmatrix}2\\0\\1\end{pmatrix}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}0\\1\\0\end{pmatrix},\begin{pmatrix}2\\0\\1\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="55" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\beta_1, \beta_2, \beta_3$ 是 3 维向量空间 $\mathbf{R}^3$ 的一个基，则基 $\beta_1, 2\beta_2, 3\beta_3$ 到基 $\beta_1 - \beta_2, \beta_2 + \beta_3, \beta_3 - \beta_1$ 的过渡矩阵为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix} 0 &amp; -2 &amp; 1 \\ 3 &amp; 0 &amp; -6 \\ -8 &amp; 4 &amp; 0 \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix} 1 &amp; 0 &amp; -1 \\ -\dfrac{1}{2} &amp; \dfrac{1}{2} &amp; 0 \\ 0 &amp; \dfrac{1}{3} &amp; \dfrac{1}{3} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix} \dfrac{1}{2} &amp; -\dfrac{1}{3} &amp; \dfrac{1}{4} \\ 0 &amp; \dfrac{1}{2} &amp; -\dfrac{1}{3} \\ -\dfrac{1}{3} &amp; 0 &amp; \dfrac{1}{4} \end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix} \dfrac{1}{2} &amp; 0 &amp; -\dfrac{1}{3} \\ -\dfrac{1}{3} &amp; \dfrac{1}{2} &amp; 0 \\ \dfrac{1}{4} &amp; -\dfrac{1}{3} &amp; \dfrac{1}{4} \end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">根据向量空间的两基之间的变换关系式，得
+$$[\boldsymbol{\beta}_1-\boldsymbol{\beta}_2,\boldsymbol{\beta}_2+\boldsymbol{\beta}_3,\boldsymbol{\beta}_3-\boldsymbol{\beta}_1]=[\boldsymbol{\beta}_1,2\boldsymbol{\beta}_2,3\boldsymbol{\beta}_3]\begin{bmatrix}1&amp;0&amp;-1\\-\dfrac{1}{2}&amp;\dfrac{1}{2}&amp;0\\0&amp;\dfrac{1}{3}&amp;\dfrac{1}{3}\end{bmatrix},$$
+故(B) 为正确选项.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="55" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">由向量 $\alpha_1 = [1, 0, 1]^{\mathrm{T}}, \alpha_2 = [1, 2, 3]^{\mathrm{T}}, \alpha_3 = [2, 2, 4]^{\mathrm{T}}$ 生成的向量空间 $V = \mathrm{span}\{\alpha_1, \alpha_2, \alpha_3\} = \{k_1\alpha_1 + k_2\alpha_2 + k_3\alpha_3 \mid k_1, k_2, k_3 \in \mathbf{R}\}$，则 $V$ 的一个规范正交基为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设可得 $\boldsymbol{\alpha}_3=\boldsymbol{\alpha}_1+\boldsymbol{\alpha}_2$，所以 $V$ 中的任意向量均可由 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性表示，又 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 线性无关，故 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2$ 为向量空间 $V$ 的一个基，将其标准正交化，得
+$$\boldsymbol{\beta}_1=\boldsymbol{\alpha}_1=\begin{pmatrix}1\\0\\1\end{pmatrix},\boldsymbol{\beta}_2=\boldsymbol{\alpha}_2-\dfrac{(\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}\boldsymbol{\beta}_1=\begin{pmatrix}-1\\2\\1\end{pmatrix},$$
+$$\boldsymbol{\gamma}_1=\dfrac{1}{\|\boldsymbol{\beta}_1\|}\boldsymbol{\beta}_1=\dfrac{1}{\sqrt{2}}\begin{pmatrix}1\\0\\1\end{pmatrix},\boldsymbol{\gamma}_2=\dfrac{1}{\|\boldsymbol{\beta}_2\|}\boldsymbol{\beta}_2=\dfrac{1}{\sqrt{6}}\begin{pmatrix}-1\\2\\1\end{pmatrix},$$
+从而 $\dfrac{1}{\sqrt{2}}\begin{pmatrix}1\\0\\1\end{pmatrix},\dfrac{1}{\sqrt{6}}\begin{pmatrix}-1\\2\\1\end{pmatrix}$ 为向量空间 $V$ 的一个规范正交基.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{\sqrt{2}}\begin{pmatrix}1\\0\\1\end{pmatrix},\dfrac{1}{\sqrt{6}}\begin{pmatrix}-1\\2\\1\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-54.html">上一章：第5章 线性方程组</a>
+      <a class="chapter-link" href="chapter-56.html">下一章：第7章 特征值与特征向量</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 55, "total": 9, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

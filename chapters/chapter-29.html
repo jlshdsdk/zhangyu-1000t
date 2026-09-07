@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 随机变量的数字特征 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第4章 随机变量的数字特征<span class="top-count">（19题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X \sim E(1)$，记 $Y=\max\{X,1\}$，则 $E(Y)=$(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1-\mathrm{e}^{-1}</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1+\mathrm{e}^{-1}</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">\mathrm{e}^{-1}</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$E(Y)=E(\max\{X,1\})=\int_{-\infty}^{+\infty}\max\{x,1\}f(x)\mathrm{d}x$,其中
+$$f(x)=\begin{cases}\mathrm{e}^{-x}, &amp; x&gt;0,\\ 0, &amp; x\leqslant 0,\end{cases}$$
+即
+$$E(Y)=\int_{-\infty}^{+\infty}\max\{x,1\}f(x)\mathrm{d}x=\int_{0}^{+\infty}\max\{x,1\}\mathrm{e}^{-x}\mathrm{d}x=\int_{0}^{1}\mathrm{e}^{-x}\mathrm{d}x+\int_{1}^{+\infty}x\mathrm{e}^{-x}\mathrm{d}x=1-\mathrm{e}^{-1}+2\mathrm{e}^{-1}=1+\mathrm{e}^{-1}.$$
+故选(C)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X_1,X_2,X_3$ 的概率密度图像分别如图(a)~图(c)所示，则(  ).【图】三个图均在区间 $[-1,1]$ 上：(a) 为以 $x=0$ 为峰、两端到 $\pm 1$ 的三角形密度；(b) 为 $[-1,1]$ 上的矩形（均匀分布）密度；(c) 为在 $x=0$ 处为零、向 $\pm 1$ 两端线性上升的 V 形（$|x|$ 形）密度。<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">D(X_1)&lt;D(X_2)&lt;D(X_3)</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">D(X_1)&lt;D(X_3)&lt;D(X_2)</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">D(X_2)&lt;D(X_1)&lt;D(X_3)</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">D(X_2)&lt;D(X_3)&lt;D(X_1)</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">根据概率密度 $f(x)$ 的归一性知,题图(a) 中的 $X_1$ 的概率密度为
+$$f_1(x)=\begin{cases}1+x, &amp; -1\leqslant x&lt;0,\\ 1-x, &amp; 0\leqslant x\leqslant 1,\\ 0, &amp; \text{其他}.\end{cases}$$
+题图(b) 中的 $X_2$ 的概率密度为
+$$f_2(x)=\begin{cases}\dfrac{1}{2}, &amp; -1&lt;x&lt;1,\\ 0, &amp; \text{其他}.\end{cases}$$
+题图(c) 中的 $X_3$ 的概率密度为
+$$f_3(x)=\begin{cases}-x, &amp; -1&lt;x&lt;0,\\ x, &amp; 0\leqslant x&lt;1,\\ 0, &amp; \text{其他}.\end{cases}$$
+因此有
+$$E(X_1)=\int_{-1}^{0}x(1+x)\mathrm{d}x+\int_{0}^{1}x(1-x)\mathrm{d}x=0,$$
+$$E(X_1^2)=\int_{-1}^{0}x^2(1+x)\mathrm{d}x+\int_{0}^{1}x^2(1-x)\mathrm{d}x=\frac{1}{6},$$
+$$D(X_1)=E(X_1^2)-[E(X_1)]^2=\frac{1}{6}.$$
+同理,$E(X_2)=0,E(X_2^2)=\dfrac{1}{3},D(X_2)=\dfrac{1}{3};E(X_3)=0,E(X_3^2)=\dfrac{1}{2},D(X_3)=\dfrac{1}{2}$.
+所以 $D(X_1)&lt;D(X_2)&lt;D(X_3)$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 服从参数为 $p\ (0&lt;p&lt;1)$ 的几何分布，则 $E\left(\dfrac{1}{X}\right)=($  $)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">p(1-p)</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">-p\ln p</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">-(1-p)\ln p</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">-\dfrac{p\ln p}{1-p}</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知,$P\{X=k\}=p(1-p)^{k-1},k=1,2,3,\cdots$,因此有
+$$E\left(\frac{1}{X}\right)=\sum_{k=1}^{\infty}\frac{1}{k}p(1-p)^{k-1}=\frac{p}{1-p}\sum_{k=1}^{\infty}\frac{1}{k}(1-p)^k=\frac{p}{1-p}\sum_{k=1}^{\infty}\frac{1}{k}x^k\Bigg|_{x=1-p}.$$
+令 $S(x)=\displaystyle\sum_{k=1}^{\infty}\frac{1}{k}x^k$,则 $S'(x)=\displaystyle\sum_{k=1}^{\infty}x^{k-1}=\frac{1}{1-x}$,从而有
+$$S(x)=S(0)+\int_{0}^{x}\frac{1}{1-t}\mathrm{d}t=-\ln(1-x),$$
+故 $S(1-p)=-\ln p$,于是 $E\left(\dfrac{1}{X}\right)=-\dfrac{p\ln p}{1-p}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="29" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 服从参数为 $\lambda=2$ 的泊松分布，则 $P\{X&gt;D(X)\}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $X\sim P(2)$,因此 $X$ 的概率分布为 $P\{X=k\}=\dfrac{2^k\mathrm{e}^{-2}}{k!}(k=0,1,2,\cdots)$,且 $D(X)=2$,于是,
+$$P\{X&gt;D(X)\}=P\{X&gt;2\}=1-P\{X\leqslant 2\}=1-\mathrm{e}^{-2}-2\mathrm{e}^{-2}-\frac{2^2\mathrm{e}^{-2}}{2!}=1-5\mathrm{e}^{-2}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-5\mathrm{e}^{-2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="29" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 的概率密度为 $f(x)=\begin{cases}2x, &amp; 0&lt;x&lt;1,\\0, &amp; \text{其他},\end{cases}$ $F(x)$ 为 $X$ 的分布函数，$E(X)$ 为 $X$ 的数学期望，则 $P\{F(X)&gt;E(X)\}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知,
+$$E(X)=\int_{0}^{1}xf(x)\mathrm{d}x=\int_{0}^{1}2x^2\mathrm{d}x=\frac{2}{3}.$$
+由 $F(x)=\displaystyle\int_{-\infty}^{x}f(t)\mathrm{d}t$,得
+$$F(x)=\begin{cases}0, &amp; x&lt;0,\\ x^2, &amp; 0\leqslant x&lt;1,\\ 1, &amp; x\geqslant 1.\end{cases}$$
+从而,
+$$P\{F(X)&gt;E(X)\}=P\left\{X^2&gt;\frac{2}{3}\right\}=1-P\left\{-\sqrt{\frac{2}{3}}\leqslant X\leqslant\sqrt{\frac{2}{3}}\right\}=1-P\left\{0\leqslant X\leqslant\sqrt{\frac{2}{3}}\right\}=1-\int_{0}^{\sqrt{\frac{2}{3}}}2x\mathrm{d}x=\frac{1}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="29" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 服从参数为 $\lambda(\lambda&gt;0)$ 的指数分布，则 $X$ 落在数学期望 $E(X)$ 和方差 $D(X)$ 之间的概率为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $X$ 服从参数为 $\lambda$ 的指数分布,知 $E(X)=\dfrac{1}{\lambda},D(X)=\dfrac{1}{\lambda^2}$.
+当 $\lambda&lt;1$ 时,所求概率为
+$$P\left\{\frac{1}{\lambda}&lt;X&lt;\frac{1}{\lambda^2}\right\}=\int_{\frac{1}{\lambda}}^{\frac{1}{\lambda^2}}\lambda\mathrm{e}^{-\lambda x}\mathrm{d}x\xlongequal{t=\lambda x}\int_{1}^{\frac{1}{\lambda}}\mathrm{e}^{-t}\mathrm{d}t=\mathrm{e}^{-1}-\mathrm{e}^{-\frac{1}{\lambda}};$$
+当 $\lambda\geqslant 1$ 时,所求概率为
+$$P\left\{\frac{1}{\lambda^2}&lt;X&lt;\frac{1}{\lambda}\right\}=\int_{\frac{1}{\lambda^2}}^{\frac{1}{\lambda}}\lambda\mathrm{e}^{-\lambda x}\mathrm{d}x\xlongequal{t=\lambda x}\int_{\frac{1}{\lambda}}^{1}\mathrm{e}^{-t}\mathrm{d}t=\mathrm{e}^{-\frac{1}{\lambda}}-\mathrm{e}^{-1}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\left|\mathrm{e}^{-1}-\mathrm{e}^{-\frac{1}{\lambda}}\right|$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="29" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">在 $(0,1)$ 线段上随机投掷两点，该两点的距离为 $X$，求：
+(1) $X$ 的分布函数 $F(x)$ 和概率密度 $f(x)$；
+(2) $X$ 的数学期望 $E(X)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设所投两点为 $X_1$ 和 $X_2$,显然 $(X_1,X_2)$ 在正方形区域 $0&lt;x_1&lt;1,0&lt;x_2&lt;1$ 上服从均匀分布,即有 $X_1$ 和 $X_2$ 的联合概率密度为
+$$f(x_1,x_2)=\begin{cases}1, &amp; 0&lt;x_1&lt;1,0&lt;x_2&lt;1,\\ 0, &amp; \text{其他}.\end{cases}$$
+由题设,距离为 $X=|X_1-X_2|$.
+(1)如图所示,【图】直角坐标系 $x_1Ox_2$ 中的单位正方形,两条斜线分别为 $x_1-x_2=x$ 与 $x_1-x_2=-x$,两线之间的带状阴影区域为满足 $|x_1-x_2|\leqslant x$ 的部分,图中标注了截距 $x$ 与 $1$。当 $x\leqslant 0$ 时,$F(x)=P\{X\leqslant x\}=0$;
+当 $x\geqslant 1$ 时,$F(x)=P\{X\leqslant x\}=1$;
+当 $0&lt;x&lt;1$ 时,
+$$F(x)=P\{X\leqslant x\}=P\{|X_1-X_2|\leqslant x\}=\iint\limits_{\substack{|x_1-x_2|\leqslant x\\ 0&lt;x_1,x_2&lt;1}}\mathrm{d}x_1\mathrm{d}x_2=1-(1-x)^2=2x-x^2.$$
+所以
+$$F(x)=\begin{cases}0, &amp; x\leqslant 0,\\ 2x-x^2, &amp; 0&lt;x&lt;1,\\ 1, &amp; x\geqslant 1,\end{cases}f(x)=\begin{cases}2-2x, &amp; 0&lt;x&lt;1,\\ 0, &amp; \text{其他}.\end{cases}$$
+$(2)E(X)=\displaystyle\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x=\int_{0}^{1}x(2-2x)\mathrm{d}x=\left(x^2-\frac{2}{3}x^3\right)\Big|_{0}^{1}=\frac{1}{3}$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="29" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知随机变量 $X$ 的概率密度为 $f(x)=A\mathrm{e}^{x(B-x)}\ (-\infty&lt;x&lt;+\infty)$，$E(X)=2D(X)$，求：
+(1) 常数 $A,B$ 的值；
+(2) $E(X^2+\mathrm{e}^X)$ 的值；
+(3) $Y=|\sqrt{2}(X-1)|$ 的分布函数 $F(y)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1)$f(x)=A\mathrm{e}^{x(B-x)}=A\mathrm{e}^{-x^2+Bx}=A\mathrm{e}^{\frac{B^2}{4}}\mathrm{e}^{-\left(x-\frac{B}{2}\right)^2}$,
+可以将 $f(x)$ 看成正态分布 $N\left(\dfrac{B}{2},\dfrac{1}{2}\right)$ 的概率密度,则有 $X\sim N\left(\dfrac{B}{2},\dfrac{1}{2}\right)$,且 $E(X)=2D(X)$,得到 $E(X)=\dfrac{B}{2}=2D(X)=1$,即 $B=2$.
+又 $A\mathrm{e}^{\frac{B^2}{4}}=\dfrac{1}{\sqrt{2\pi}\sigma}$,故 $A\mathrm{e}=\dfrac{1}{\sqrt{2\pi}\cdot\sqrt{\dfrac{1}{2}}}=\dfrac{1}{\sqrt{\pi}}$,解得 $A=\dfrac{\mathrm{e}^{-1}}{\sqrt{\pi}}$.
+综上,$A=\dfrac{\mathrm{e}^{-1}}{\sqrt{\pi}},B=2$.
+(2)$E(X^2+\mathrm{e}^X)=E(X^2)+E(\mathrm{e}^X)$,
+又
+$$E(X^2)=D(X)+[E(X)]^2=\frac{1}{2}+1=\frac{3}{2},$$
+$$E(\mathrm{e}^X)=\int_{-\infty}^{+\infty}\mathrm{e}^xf(x)\mathrm{d}x=\int_{-\infty}^{+\infty}\mathrm{e}^x\frac{1}{\sqrt{\pi}}\mathrm{e}^{-(x-1)^2}\mathrm{d}x=\frac{1}{\sqrt{\pi}}\int_{-\infty}^{+\infty}\mathrm{e}^{-x^2+3x-1}\mathrm{d}x=\frac{1}{\sqrt{\pi}}\int_{-\infty}^{+\infty}\mathrm{e}^{-\left(x-\frac{3}{2}\right)^2}\cdot\mathrm{e}^{\frac{5}{4}}\mathrm{d}x=\mathrm{e}^{\frac{5}{4}}\int_{-\infty}^{+\infty}\frac{1}{\sqrt{\pi}}\mathrm{e}^{-\left(x-\frac{3}{2}\right)^2}\mathrm{d}x=\mathrm{e}^{\frac{5}{4}},$$
+所以 $E(X^2+\mathrm{e}^X)=\dfrac{3}{2}+\mathrm{e}^{\frac{5}{4}}$.
+(3)由(1)知 $X\sim N\left(1,\dfrac{1}{2}\right)$,故 $(X-1)\sim N\left(0,\dfrac{1}{2}\right),\sqrt{2}(X-1)\sim N(0,1)$,所以当 $y\geqslant 0$ 时,
+$$F(y)=P\{Y\leqslant y\}=P\{|\sqrt{2}(X-1)|\leqslant y\}=P\{-y\leqslant\sqrt{2}(X-1)\leqslant y\}=\int_{-y}^{y}\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\mathrm{d}t=2\int_{0}^{y}\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\mathrm{d}t=2\Phi(y)-1,$$
+其中 $\Phi(y)$ 为标准正态分布的分布函数.
+当 $y&lt;0$ 时,$F(y)=0$.
+综上,$F(y)=\begin{cases}2\Phi(y)-1, &amp; y\geqslant 0,\\ 0, &amp; \text{其他}.\end{cases}$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X,Y$ 是两个相互独立且均服从正态分布 $N\left(0,\left(\dfrac{1}{\sqrt{2}}\right)^2\right)$ 的随机变量，则随机变量 $|X-Y|$ 的数学期望 $E(|X-Y|)=($  $)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">\dfrac{1}{\sqrt{8\pi}}</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">\dfrac{1}{\sqrt{2\pi}}</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">\dfrac{2}{\sqrt{\pi}}</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">\sqrt{\dfrac{2}{\pi}}</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $X,Y$ 是两个相互独立且均服从正态分布 $N\left(0,\left(\dfrac{1}{\sqrt{2}}\right)^2\right)$ 的随机变量,故 $Z=X-Y$ 也服从正态分布.由
+$$E(Z)=E(X)-E(Y)=0,D(Z)=D(X)+D(Y)=\frac{1}{2}+\frac{1}{2}=1,$$
+知 $Z\sim N(0,1)$.于是
+$$E(|X-Y|)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}|z|\,\mathrm{e}^{-\frac{z^2}{2}}\mathrm{d}z=\frac{2}{\sqrt{2\pi}}\int_{0}^{+\infty}z\mathrm{e}^{-\frac{z^2}{2}}\mathrm{d}z=-\frac{2}{\sqrt{2\pi}}\mathrm{e}^{-\frac{z^2}{2}}\Big|_{0}^{+\infty}=\sqrt{\frac{2}{\pi}},$$
+应选(D)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 与 $Y$ 独立同分布，且都服从参数为 1 的指数分布. 若
+$$Z=\begin{cases}2X, &amp; X\geqslant Y,\\Y-1, &amp; X&lt;Y,\end{cases}$$
+则 $E(Z)=($  $)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">\dfrac{2}{7}</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">\dfrac{7}{2}</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">\dfrac{7}{4}</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">\dfrac{4}{7}</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一 由题知,随机变量 $X$ 与 $Y$ 的联合概率密度为
+$$f(x,y)=\begin{cases}\mathrm{e}^{-x-y}, &amp; x&gt;0,y&gt;0,\\ 0, &amp; \text{其他},\end{cases}$$
+故
+$$E(Z)=\int_{0}^{+\infty}\mathrm{d}y\int_{0}^{y}(y-1)\mathrm{e}^{-x-y}\mathrm{d}x+\int_{0}^{+\infty}\mathrm{d}x\int_{0}^{x}2x\mathrm{e}^{-x-y}\mathrm{d}y=\int_{0}^{+\infty}(y-1)\mathrm{e}^{-y}(1-\mathrm{e}^{-y})\mathrm{d}y+\int_{0}^{+\infty}2x\mathrm{e}^{-x}(1-\mathrm{e}^{-x})\mathrm{d}x=\int_{0}^{+\infty}(3y-1)(\mathrm{e}^{-y}-\mathrm{e}^{-2y})\mathrm{d}y=\frac{7}{4}.$$
+方法二 当 $X=x$ 时,$Z=\begin{cases}2x, &amp; x\geqslant Y,\\ Y-1, &amp; x&lt;Y\end{cases}$ 是 $Y$ 的函数.
+$$E(Z\mid X=x)=\int_{0}^{x}2x\mathrm{e}^{-y}\mathrm{d}y+\int_{x}^{+\infty}(y-1)\mathrm{e}^{-y}\mathrm{d}y=2x(1-\mathrm{e}^{-x})+x\mathrm{e}^{-x}=2x-x\mathrm{e}^{-x},$$
+则 $E(Z)=E[E(Z\mid X)]=E(2X-X\mathrm{e}^{-X})=2E(X)-E(X\mathrm{e}^{-X})=2-\dfrac{1}{4}=\dfrac{7}{4}$.
+【注】方法二中使用了亚当夏娃公式,公式的推导运用了全集分解思想.
+①$E(Y\mid X=x)$ 是 $X=x$ 条件下 $Y$ 的条件期望,则 $Y$ 的期望为随机变量 $E(Y\mid X)$ 的期望,即亚当公式:
+$$E(Y)=E[E(Y\mid X)].$$
+②$D(Y\mid X=x)$ 是 $X=x$ 条件下 $Y$ 的条件方差,则 $Y$ 的方差为随机变量 $D(Y\mid X)$ 的期望加上随机变量 $E(Y\mid X)$ 的方差,即夏娃公式:
+$$D(Y)=E[D(Y\mid X)]+D[E(Y\mid X)].$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">随机试验 $E$ 有三种两两不相容的结果 $A_1,A_2,A_3$，且三种结果发生的概率均为 $\dfrac{1}{3}$. 将试验 $E$ 独立重复做 2 次，$X$ 表示 2 次试验中结果 $A_1$ 发生的次数，$Y$ 表示 2 次试验中结果 $A_2$ 发生的次数，则 $X$ 与 $Y$ 的相关系数为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">-\dfrac{1}{2}</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">-\dfrac{1}{3}</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">\dfrac{1}{3}</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">\dfrac{1}{2}</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题知 $X\sim B\left(2,\dfrac{1}{3}\right),Y\sim B\left(2,\dfrac{1}{3}\right)$.设 $Z$ 表示 2 次试验中结果 $A_3$ 发生的次数,则 $Z\sim B\left(2,\dfrac{1}{3}\right)$.又 $X+Y+Z=2$,于是 $X+Y=2-Z$.根据二项分布的性质,知 $X+Y\sim B\left(2,\dfrac{2}{3}\right)$.
+从而 $D(X)=D(Y)=\dfrac{4}{9},D(X+Y)=\dfrac{4}{9}$.由
+$$D(X+Y)=D(X)+D(Y)+2\mathrm{Cov}(X,Y),$$
+可得 $\mathrm{Cov}(X,Y)=-\dfrac{2}{9}$,所以 $X$ 与 $Y$ 的相关系数为
+$$\rho_{XY}=\frac{\mathrm{Cov}(X,Y)}{\sqrt{D(X)}\cdot\sqrt{D(Y)}}=-\frac{1}{2}.$$
+【注】由 $P(A_1)=P(A_2)=P(A_3)=\dfrac{1}{3}$,得 $X\sim B\left(2,\dfrac{1}{3}\right),Y\sim B\left(2,\dfrac{1}{3}\right)$.$X$ 与 $Y$ 的相关系数为 $\rho_{XY}=\dfrac{\mathrm{Cov}(X,Y)}{\sqrt{D(X)}\cdot\sqrt{D(Y)}}$.显然
+$$E(X)=E(Y)=\frac{2}{3},D(X)=D(Y)=2\times\frac{1}{3}\times\frac{2}{3}=\frac{4}{9},$$
+易知 $\mathrm{Cov}(X,Y)=E(XY)-E(X)E(Y)$,为求 $E(XY)$,先求出 $XY$ 的分布律.
+$X$ 和 $Y$ 的可能取值均为 $0,1,2$,且由题意可知 $X+Y\leqslant 2$,所以 $XY$ 的可能取值应为 $0,1$.
+$$P\{XY=1\}=P\{X=1,Y=1\}=2\times\frac{1}{3}\times\frac{1}{3}=\frac{2}{9},P\{XY=0\}=1-\frac{2}{9}=\frac{7}{9}.$$
+故 $XY$ 的分布律为
+【图】两行分布律表格：第一行为 $XY$ 的取值 $0$、$1$，第二行为对应概率 $\dfrac{7}{9}$、$\dfrac{2}{9}$。
+得 $E(XY)=\dfrac{2}{9}$,故
+$$\mathrm{Cov}(X,Y)=E(XY)-E(X)E(Y)=\frac{2}{9}-\frac{2}{3}\times\frac{2}{3}=-\frac{2}{9},$$
+$$\rho_{XY}=\frac{\mathrm{Cov}(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}=\frac{-\dfrac{2}{9}}{\dfrac{2}{3}\times\dfrac{2}{3}}=-\frac{1}{2}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 和 $Y$ 的方差存在，则 $D(X+Y)=D(X)+D(Y)$ 是 $X$ 和 $Y$（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不相关的充分非必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">不相关的充分必要条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">独立的充分非必要条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">独立的充分必要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一 由随机变量的方差的性质
+$$D(X+Y)=D(X)+D(Y)+2\mathrm{Cov}(X,Y),$$
+可知
+$$D(X+Y)=D(X)+D(Y)$$
+的充分必要条件是 $\mathrm{Cov}(X,Y)=0$,即 $X$ 和 $Y$ 不相关.故选项(B)正确,选项(A)错误.
+方法二 排除法.由
+$$D(X+Y)=D(X)+D(Y)+2\mathrm{Cov}(X,Y),$$
+可知 $\mathrm{Cov}(X,Y)=0$ 是 $D(X+Y)=D(X)+D(Y)$ 的充分必要条件,选项(A)不成立.而 $\mathrm{Cov}(X,Y)=0$ 时 $X$ 和 $Y$ 未必独立,例如,设 $X$ 和 $Y$ 的联合分布是圆域 $x^2+y^2\leqslant 1$ 上的均匀分布,由对称性知 $X$ 和 $Y$ 不相关,但是 $X$ 和 $Y$ 不独立,排除选项(C)和(D).故只有(B)是正确选项.
+【注】方法二中，例中的 $X$ 和 $Y$ 不相关和不独立的证明，可参考强化篇第 6 章第 16 题.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知随机变量 $X\sim U(0,4)$，实数 $c\in[0,4]$，且 $X$ 与 $|X-c|$ 不相关，则 $c=($  $)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $X$ 与 $|X-c|$ 不相关，得
+$$\operatorname{Cov}(X,\ |X-c|)=E(X\,|X-c|)-E(X)\cdot E(|X-c|)=0.\qquad(*)$$
+由题设知，随机变量 $X$ 的概率密度为
+$$f(x)=\begin{cases}\dfrac{1}{4},\quad 0&lt;x&lt;4,\\0,\quad\ \ \text{其他},\end{cases}$$
+故
+$$E(X)=2,$$
+$$E(\,|X-c|\,)=\int_{0}^{4}|x-c|\,f(x)\,\mathrm{d}x=\frac{1}{4}\int_{0}^{c}(c-x)\,\mathrm{d}x+\frac{1}{4}\int_{c}^{4}(x-c)\,\mathrm{d}x=\frac{c^{2}}{4}-c+2,$$
+$$E(X\,|X-c|)=\int_{0}^{4}x\,|x-c|\,f(x)\,\mathrm{d}x=\frac{1}{4}\int_{0}^{c}x(c-x)\,\mathrm{d}x+\frac{1}{4}\int_{c}^{4}x(x-c)\,\mathrm{d}x=\frac{c^{3}}{12}-2c+\frac{16}{3}.$$
+将上述期望代入 $(*)$ 式，化简得
+$$c^{3}-6c^{2}+16=0,$$
+又 $c\in[0,4]$，解得 $c=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X,Y$ 独立同分布于 $\begin{pmatrix}-1 &amp; 1\\ \dfrac{1}{2} &amp; \dfrac{1}{2}\end{pmatrix}$，$Z_1=XY$，$Z_2=\dfrac{X}{Y}$，则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">X,Y,Z_1 相互独立</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">Y,Z_1,Z_2 相互独立</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">X,Z_1,Z_2 两两独立</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">X,Y,Z_2 不相互独立</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设可得
+$$P\{Z_1=-1\}=P\{Z_2=-1\}=P\{X=-1,Y=1\}+P\{X=1,Y=-1\}=\frac{1}{2},$$
+$$P\{Z_1=1\}=P\{Z_2=1\}=P\{X=1,Y=1\}+P\{X=-1,Y=-1\}=\frac{1}{2},$$
+所以
+$$P\{Z_1=1,Z_2=-1\}=0\neq P\{Z_1=1\}P\{Z_2=-1\},$$
+故选项 (B)，(C) 错误.
+对 $a,b\in\{-1,1\}$，有
+$$P\{Z_2=a,X=b\}=P\left\{\frac{X}{Y}=a,X=b\right\}=P\left\{X=b,Y=\frac{b}{a}\right\}=P\{X=b\}P\left\{Y=\frac{b}{a}\right\}=\frac{1}{4},$$
+$$P\{Z_2=a\}P\{X=b\}=\frac{1}{2}\times\frac{1}{2}=\frac{1}{4},$$
+但 $P\{X=-1,Y=1,Z_2=1\}=0\neq P\{X=-1\}P\{Y=1\}P\{Z_2=1\}$，
+所以 $X,Y,Z_2$ 不相互独立. 同理，$X,Y,Z_1$ 也不相互独立. 故选项 (A) 错误，选项 (D) 正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="29" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对于任意随机变量 $X$ 和 $Y$，如果 $D(X+Y)=D(X-Y)$，则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">X 和 Y 相互独立</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">D(XY)=D(X)D(Y)</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">X 和 Y 相关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">E(XY)=E(X)E(Y)</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　由于
+$$D(X+Y)=D(X-Y),$$
+因此
+$$D(X)+D(Y)+2\operatorname{Cov}(X,Y)=D(X)+D(Y)-2\operatorname{Cov}(X,Y),$$
+则
+$$\operatorname{Cov}(X,Y)=E(XY)-E(X)E(Y)=0,\ E(XY)=E(X)E(Y),$$
+可见 (D) 是正确选项.
+方法二　排除法. 不难验证选项 (A)、(B) 和 (C) 都不成立. 虽然 $X$ 和 $Y$ 不相关是
+$$D(X+Y)=D(X-Y)=D(X)+D(Y)$$
+的充分必要条件，但是当 $X$ 和 $Y$ 不相关时，$X$ 和 $Y$ 未必独立，因此选项 (A) 的结论一般不成立. 显然选项 (C) 也不成立. 为说明选项 (B) 不成立，只需举一反例. 设 $X$ 和 $Y$ 均服从参数为 $p\ (0&lt;p&lt;1)$ 的 $0-1$ 分布且相互独立，从而 $D(X+Y)=D(X-Y)$，且
+$$D(X)=D(Y)=p(1-p).$$
+由于
+$$P\{XY=1\}=P\{X=1,Y=1\}=p^{2},$$
+$$P\{XY=0\}=1-p^{2},$$
+因此 $XY$ 服从参数为 $p^{2}$ 的 $0-1$ 分布，且
+$$D(XY)=p^{2}(1-p^{2})\neq p^{2}(1-p)^{2}=D(X)D(Y),$$
+可见选项 (B) 不成立. 故选项 (A)，(B) 和 (C) 都不成立，只有 (D) 是正确选项.
+【注】因为 $X$ 和 $Y$ 是任意随机变量，所以选项 (A) 和 (C) 并不是非此即彼的.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="29" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X,Y$ 均服从参数为 $\lambda$ 的泊松分布，且 $\rho_{XY}=-\dfrac{1}{2}$，$U=2X+Y$，则 $U$ 与 $X$ 的相关系数为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $X\sim P(\lambda),Y\sim P(\lambda),\rho_{XY}=-\dfrac{1}{2}$，因此
+$$D(X)=D(Y)=\lambda,$$
+$$\begin{aligned}D(U)&amp;=D(2X+Y)=D(2X)+D(Y)+2\operatorname{Cov}(2X,Y)\\&amp;=4D(X)+D(Y)+4\operatorname{Cov}(X,Y)\\&amp;=4D(X)+D(Y)+4\rho_{XY}\sqrt{D(X)}\sqrt{D(Y)}=5\lambda-2\lambda=3\lambda,\end{aligned}$$
+$$\begin{aligned}\operatorname{Cov}(U,X)&amp;=\operatorname{Cov}(2X+Y,X)=2\operatorname{Cov}(X,X)+\operatorname{Cov}(Y,X)\\&amp;=2D(X)+\rho_{XY}\sqrt{D(X)}\sqrt{D(Y)}=2\lambda-\frac{1}{2}\lambda=\frac{3}{2}\lambda.\end{aligned}$$
+于是，$\rho_{UX}=\dfrac{\operatorname{Cov}(U,X)}{\sqrt{D(U)}\cdot\sqrt{D(X)}}=\dfrac{\dfrac{3}{2}\lambda}{\sqrt{3\lambda}\sqrt{\lambda}}=\dfrac{\sqrt{3}}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\sqrt{6}}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="29" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 和 $Y$ 相互独立且服从相同的分布，$X\sim\begin{pmatrix}0 &amp; 1\\ p &amp; q\end{pmatrix}$，$p+q=1,0&lt;p&lt;1$，又
+$$Z=\begin{cases}1, &amp; X+Y \text{为奇数},\\0, &amp; X+Y \text{为偶数}.\end{cases}$$
+(1) 求 $XZ$ 的分布律；
+(2) $p$ 取何值时，$X$ 和 $Z$ 相关? 说明理由.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $P\{Z=0\}=P\{X=0,Y=0\}+P\{X=1,Y=1\}=p^{2}+q^{2},$
+$$P\{Z=1\}=P\{X=0,Y=1\}+P\{X=1,Y=0\}=2pq,$$
+故 $Z\sim\begin{pmatrix}0 &amp; 1\\ p^{2}+q^{2} &amp; 2pq\end{pmatrix}.$
+又
+$$\begin{aligned}P\{XZ=0\}&amp;=P\{X=0,Z=0\}+P\{X=0,Z=1\}+P\{X=1,Z=0\}\\&amp;=P\{X=0,Y=0\}+P\{X=0,Y=1\}+P\{X=1,Y=1\}\\&amp;=p^{2}+pq+q^{2},\end{aligned}$$
+$$P\{XZ=1\}=P\{X=1,Z=1\}=P\{X=1,Y=0\}=pq,$$
+故 $XZ\sim\begin{pmatrix}0 &amp; 1\\ p^{2}+pq+q^{2} &amp; pq\end{pmatrix}.$
+(2) 由 (1) 知，
+$$E(X)=q, E(Z)=2pq, E(XZ)=pq,$$
+故
+$$\operatorname{Cov}(X,Z)=E(XZ)-E(X)E(Z)=pq(1-2q)=p(1-p)(2p-1).$$
+由于 $0&lt;p&lt;1$，故当 $p\neq\dfrac{1}{2}$ 时，$\operatorname{Cov}(X,Z)\neq 0$，$X$ 和 $Z$ 相关.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="29" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 与 $Y$ 相互独立，$X$ 的分布列为 $\begin{pmatrix}-1 &amp; 0 &amp; 1\\ p &amp; p &amp; 1-2p\end{pmatrix}$，$Y$ 服从参数为 1 的指数分布，令 $Z=XY$，若 $Y$ 与 $Z$ 既不相关，也不独立，求：
+(1) $Z\ (Z\neq 0)$ 的概率密度；
+(2) $p$ 的值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $Z$ 的分布函数为
+$$\begin{aligned}F_{Z}(z)&amp;=P\{Z\leqslant z\}=P\{XY\leqslant z\,|\,X=-1\}P\{X=-1\}+P\{XY\leqslant z\,|\,X=0\}P\{X=0\}+\\&amp;P\{XY\leqslant z\,|\,X=1\}P\{X=1\}\\&amp;=p\cdot P\{Y\geqslant-z\}+p\cdot P\{z\geqslant 0\}+(1-2p)\cdot P\{Y\leqslant z\}.\end{aligned}$$
+① 当 $z&lt;0$ 时，$F_{Z}(z)=p\cdot\int_{-z}^{+\infty}\mathrm{e}^{-y}\,\mathrm{d}y=p\mathrm{e}^{z}$；
+② 当 $z\geqslant 0$ 时，$F_{Z}(z)=2p+(1-2p)\cdot\int_{0}^{z}\mathrm{e}^{-y}\,\mathrm{d}y=2p+(1-\mathrm{e}^{-z})(1-2p)=1-\mathrm{e}^{-z}+2p\mathrm{e}^{-z}.$
+故 $Z$ 的概率密度为
+$$f_{Z}(z)=\begin{cases}(1-2p)\mathrm{e}^{-z},\quad z\geqslant 0,\\p\mathrm{e}^{z},\quad\quad\quad\ \ z&lt;0.\end{cases}$$
+(2)
+$$\begin{aligned}\operatorname{Cov}(Y,Z)&amp;=E(YZ)-E(Y)E(Z)=E(XY^{2})-E(Y)\cdot E(XY)\\&amp;=E(X)E(Y^{2})-E(X)\cdot[E(Y)]^{2}\\&amp;=E(X)\cdot D(Y)=(1-3p)\cdot 1=1-3p,\end{aligned}$$
+因为 $Y$ 与 $Z$ 不相关，所以 $\operatorname{Cov}(Y,Z)=0$，得 $p=\dfrac{1}{3}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="29" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 和 $Y$ 的联合概率分布为
+【图】联合分布表：行为 $X=0,1$，列为 $Y=-1,0,1$；$X=0$ 行依次为 $0.07,\ 0.18,\ 0.15$；$X=1$ 行依次为 $0.08,\ 0.32,\ 0.2$.
+(1) 求 $X$ 和 $Y$ 的相关系数 $\rho$；
+(2) 求 $X^2$ 和 $Y^2$ 的协方差 $\mathrm{Cov}(X^2,Y^2)$；
+(3) 问 $X$ 和 $Y$ 以及 $X^2$ 和 $Y^2$ 是否相关? 是否独立?</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $X,Y$ 和 $XY$ 的概率分布及其数学期望相应为
+$$X\sim\begin{pmatrix}0 &amp; 1\\ 0.4 &amp; 0.6\end{pmatrix},\ Y\sim\begin{pmatrix}-1 &amp; 0 &amp; 1\\ 0.15 &amp; 0.5 &amp; 0.35\end{pmatrix},\ XY\sim\begin{pmatrix}-1 &amp; 0 &amp; 1\\ 0.08 &amp; 0.72 &amp; 0.2\end{pmatrix},$$
+$$E(X)=0.6, E(Y)=-0.15+0.35=0.2,$$
+$$E(XY)=-0.08+0.2=0.12.$$
+因此
+$$\operatorname{Cov}(X,Y)=E(XY)-E(X)E(Y)=0.$$
+则 $X$ 和 $Y$ 的相关系数 $\rho=0$.
+(2) $X^{2}$ 和 $Y^{2}$ 的协方差
+$$\operatorname{Cov}(X^{2},Y^{2})=E(X^{2}Y^{2})-E(X^{2})E(Y^{2}).$$
+因为
+$$E(X^{2}Y^{2})=E[(XY)^{2}]=0.08+0.2=0.28,$$
+$$E(X^{2})=0.6, E(Y^{2})=0.15+0.35=0.5,$$
+所以
+$$\operatorname{Cov}(X^{2},Y^{2})=0.28-0.6\times 0.5=-0.02.$$
+(3) 由 (1) 可知 $X$ 和 $Y$ 不相关，但是不独立，因为
+$$P\{X=0,Y=0\}=0.18\neq 0.4\times 0.5=P\{X=0\}P\{Y=0\}.$$
+由 (2) 可知 $X^{2}$ 和 $Y^{2}$ 相关，从而不独立.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-28.html">上一章：第3章 多维随机变量及其分布</a>
+      <a class="chapter-link" href="chapter-30.html">下一章：第5章 大数定律与中心极限定理</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 29, "total": 19, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

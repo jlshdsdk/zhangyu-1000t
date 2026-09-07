@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第8章 一元函数积分学的概念与性质 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第8章 一元函数积分学的概念与性质<span class="top-count">（25题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a></nav>
+  </aside>
+  <main class="content" id="content">
+<div class="chapter-note">⚠ 本章第22题解析尾部及第23～25题解析，因所用原书扫描件缺失印刷页44～45而无法收录（解析册扫描从印刷页43直接跳至46）。题目仍完整保留，解析部分敬请参照纸质书。</div>
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在区间 $[0,1]$ 上连续，则 $\int_{0}^{1}f(x)\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\lim_{n \to \infty}\sum_{k=1}^{n} f\left(\frac{3k-1}{3n}\right)\frac{1}{3n}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim_{n \to \infty}\sum_{k=1}^{n} f\left(\frac{3k-1}{3n}\right)\frac{1}{n}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\lim_{n \to \infty}\sum_{k=1}^{3n} f\left(\frac{k-1}{3n}\right)\frac{1}{n}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim_{n \to \infty}\sum_{k=1}^{3n} f\left(\frac{k}{3n}\right)\frac{3}{n}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一  若函数 $f(x)$ 在区间 $[0,1]$ 上连续，由定积分的定义，对任意的划分 $T:0=x_0&lt;x_1&lt;\cdots&lt;x_n=1$，以及任意的 $\xi_k\in[x_{k-1},x_k]\ (1\leqslant k\leqslant n)$，均有
+$$\int_{0}^{1}f(x)\mathrm{d}x=\lim_{\lambda(T)\to 0}\sum_{k=1}^{n}f(\xi_k)\Delta x_k,$$
+其中 $\Delta x_k=x_k-x_{k-1},\lambda(T)=\max_{1\leqslant k\leqslant n}\{\Delta x_k\}$。
+选项(A)中，分割 $T$ 是将区间 $[0,1]$ 作 $n$ 等分，点 $\xi_k=\dfrac{3k-1}{3n}$ 为各个小区间的内点，区间长度应该为 $\dfrac{1}{n}$，而该选项错误地取为 $\dfrac{1}{3n}$，所以计算结果应为 $\dfrac{1}{3}\int_{0}^{1}f(x)\mathrm{d}x$。
+选项(C)中，分割 $T$ 是将区间 $[0,1]$ 作 $3n$ 等分，点 $\xi_k=\dfrac{k-1}{3n}$ 为各个小区间的左端点，区间长度应该为 $\dfrac{1}{3n}$，而该选项错误地取为 $\dfrac{1}{n}$，所以计算结果应为 $3\int_{0}^{1}f(x)\mathrm{d}x$。
+选项(D)中，分割 $T$ 是将区间 $[0,1]$ 作 $3n$ 等分，点 $\xi_k=\dfrac{k}{3n}$ 为各个小区间的右端点，区间长度应该为 $\dfrac{1}{3n}$，而该选项错误地取为 $\dfrac{3}{n}$，所以计算结果应为 $9\int_{0}^{1}f(x)\mathrm{d}x$。
+只有选项(B)中，分割 $T$ 是将区间 $[0,1]$ 作 $n$ 等分，点 $\xi_k=\dfrac{3k-1}{3n}$ 为各个小区间的内点，区间长度为 $\dfrac{1}{n}$，计算结果为 $\int_{0}^{1}f(x)\mathrm{d}x$。
+故选(B)。
+方法二  作为选择题，本题也可以利用特殊值法得到正确答案。
+取 $f(x)=1$，则 $\int_{0}^{1}f(x)\mathrm{d}x=1$。而
+$$\lim_{n\to\infty}\sum_{k=1}^{n}f\left(\frac{3k-1}{3n}\right)\frac{1}{3n}=\lim_{n\to\infty}\sum_{k=1}^{n}\frac{1}{3n}=\frac{1}{3},$$
+$$\lim_{n\to\infty}\sum_{k=1}^{n}f\left(\frac{3k-1}{3n}\right)\frac{1}{n}=\lim_{n\to\infty}\sum_{k=1}^{n}\frac{1}{n}=1,$$
+$$\lim_{n\to\infty}\sum_{k=1}^{3n}f\left(\frac{k-1}{3n}\right)\frac{1}{n}=\lim_{n\to\infty}\sum_{k=1}^{3n}\frac{1}{n}=3,$$
+$$\lim_{n\to\infty}\sum_{k=1}^{3n}f\left(\frac{k}{3n}\right)\frac{3}{n}=\lim_{n\to\infty}\sum_{k=1}^{3n}\frac{3}{n}=9,$$
+所以选项(A)，(C)，(D)都不是正确选项，故选(B)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="9" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{n \to \infty}\frac{1}{n}\sum_{i=1}^{n}\left[\ln(3n-2i)-\ln(n+2i)\right]=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式 $=\lim_{n\to\infty}\dfrac{1}{n}\sum_{i=1}^{n}\ln\dfrac{3n-2i}{n+2i}=\lim_{n\to\infty}\dfrac{1}{n}\sum_{i=1}^{n}\ln\dfrac{3-2\dfrac{i}{n}}{1+2\dfrac{i}{n}}$
+$$=\int_{0}^{1}\ln\frac{3-2x}{1+2x}\mathrm{d}x=\int_{0}^{1}\ln\frac{\dfrac{3}{2}-x}{\dfrac{1}{2}+x}\mathrm{d}x$$
+$$\xlongequal{\ \ \text{令 }x-\frac{1}{2}=t\ \ }\int_{-\frac{1}{2}}^{\frac{1}{2}}\ln\frac{1-t}{1+t}\mathrm{d}t,$$
+由于 $\ln\dfrac{1-t}{1+t}=\ln(1-t)-\ln(1+t)$ 为奇函数，因此原式 $=0$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">甲、乙两人赛跑，图中实线和虚线分别为甲和乙的速度曲线（单位：$\mathrm{m/s}$），三块阴影部分面积依次为 $15,20,10$，且当 $t=0$ 时，甲在乙前面 $10\,\mathrm{m}$ 处，则在 $[0,t_3]$ 上，甲、乙相遇的次数为（　）.【图】$v(t)$-$t$ 坐标系中两条速度曲线（实线与虚线）多次交叉，交叉点横坐标依次为 $t_1,t_2,t_3$，三块阴影区域分别位于 $[0,t_1]$（面积 15）、$[t_1,t_2]$（面积 20）、$[t_2,t_3]$（面积 10），纵轴标注 $v(\mathrm{m/s})$，横轴标注 $t(\mathrm{s})$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $t$ 时刻甲在乙前面 $s$ m 处，由题图，可画出 $s=s(t)$ 的大致图形，如图所示，从而可知 $s(0)=10&gt;0,s(t_1)=-5&lt;0,s(t_2)=15&gt;0,s(t_3)=5&gt;0$，由问题的实际意义可知，$s(t)$ 为连续函数，故由零点定理，有 $s(\xi_1)=s(\xi_2)=0(\xi_1\in(0,t_1),\xi_2\in(t_1,t_2))$，即在 $[0,t_3]$ 上，甲、乙相遇的次数为 2.
+【图】坐标轴为 $s(\mathrm{m})$-$t(\mathrm{s})$ 的连续曲线：从 $s(0)=10$ 下降，过 $t_1$ 处最低点 $-5$ 后上升，在 $t_2$ 处达到最高点 $15$，再下降至 $t_3$ 处为 $5$，曲线与 $t$ 轴在 $\xi_1$、$\xi_2$ 两点相交。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $M=\int_{-\frac{1}{2}}^{\frac{1}{2}}\left(1+\frac{x}{1+x^{2}}\right)\mathrm{d}x$，$N=\int_{0}^{1}\frac{(1+x)\ln^{2}(1+x)}{x^{2}}\,\mathrm{d}x$，$K=\int_{0}^{1}\frac{\mathrm{e}^{x}}{1+x}\,\mathrm{d}x$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$M&gt;N&gt;K$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$N&gt;K&gt;M$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$K&gt;M&gt;N$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$K&gt;N&gt;M$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$M=\int_{-\frac{1}{2}}^{\frac{1}{2}}1\mathrm{d}x+\int_{-\frac{1}{2}}^{\frac{1}{2}}\dfrac{x}{1+x^2}\mathrm{d}x$，因为 $\int_{-\frac{1}{2}}^{\frac{1}{2}}\dfrac{x}{1+x^2}\mathrm{d}x=0$，所以 $M=1$。
+令 $g(x)=(1+x)\ln^2(1+x)-x^2(0\leqslant x\leqslant 1)$，则有
+$$g'(x)=\ln^2(1+x)+(1+x)2\ln(1+x)\frac{1}{1+x}-2x=\ln^2(1+x)+2\ln(1+x)-2x,$$
+$$g''(x)=\frac{2\ln(1+x)}{1+x}+\frac{2}{1+x}-2=\frac{2\ln(1+x)+2-2(1+x)}{1+x}=\frac{2\ln(1+x)-2x}{1+x}.$$
+因为 $x&gt;0$ 时，$\ln(1+x)&lt;x$，所以 $\ln(1+x)-x&lt;0$，即有 $g''(x)&lt;0$，$g'(x)$ 在区间 $[0,1]$ 上单调减少，所以 $g'(x)&lt;g'(0)=0(0&lt;x\leqslant 1)$，即 $g(x)$ 在区间 $[0,1]$ 上单调减少，所以 $g(x)&lt;g(0)=0(0&lt;x\leqslant 1)$，即 $(1+x)\ln^2(1+x)-x^2&lt;0(0&lt;x\leqslant 1)$，故
+$$\frac{(1+x)\ln^2(1+x)}{x^2}&lt;1,$$
+所以 $\int_{0}^{1}\dfrac{(1+x)\ln^2(1+x)}{x^2}\mathrm{d}x&lt;\int_{0}^{1}1\mathrm{d}x=1$，即 $N&lt;M$。
+当 $x&gt;0$ 时，$\mathrm{e}^x&gt;1+x$，所以 $\dfrac{\mathrm{e}^x}{1+x}&gt;1$，$\int_{0}^{1}\dfrac{\mathrm{e}^x}{1+x}\mathrm{d}x&gt;\int_{0}^{1}1\mathrm{d}x=1$，即 $K&gt;M$。
+综上所述，$K&gt;M&gt;N$，故选(C)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是 $(0,+\infty)$ 内的正值连续函数，且 $f'(x)&lt;0$，$g(x)=\int_{1}^{x}f(t)\,\mathrm{d}t$，则 $g\left(\frac{1}{2}\right)$ 和 $g\left(\frac{3}{2}\right)$ 的可能取值是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-2,\ 1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-2,\ 3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$2,\ -1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2,\ -3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f(x)$ 是 $(0,+\infty)$ 内的正值连续函数，则
+$$g\left(\frac{1}{2}\right)=\int_{1}^{\frac{1}{2}}f(t)\mathrm{d}t&lt;0,$$
+$$g\left(\frac{3}{2}\right)=\int_{1}^{\frac{3}{2}}f(t)\mathrm{d}t&gt;0.$$
+又 $f'(x)&lt;0$，则 $f(x)$ 单调递减，故
+$$\left|g\left(\frac{1}{2}\right)\right|=\int_{\frac{1}{2}}^{1}f(t)\mathrm{d}t&gt;\int_{1}^{\frac{3}{2}}f(t)\mathrm{d}t=\left|g\left(\frac{3}{2}\right)\right|.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\begin{cases}x\ln x, &amp; x&gt;0,\\ x^{2}+x, &amp; x\leqslant 0,\end{cases}$ 若 $\int_{a}^{b}f(x)\,\mathrm{d}x\ (a&lt;b)$ 取得最小值，则 $(a,b)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(-1,1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(-1,2)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(0,1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(1,2)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，$f(-1)=f(1)=0$，$\lim_{x\to+\infty}x\ln x=+\infty$，$\lim_{x\to 0^{+}}x\ln x=0$，$\lim_{x\to-\infty}(x^2+x)=+\infty$。
+当 $x&gt;0$ 时，$f'(x)=\ln x+1\xlongequal{\ \text{令}\ \ }0$，得 $x=\dfrac{1}{\mathrm{e}}$；
+当 $x&lt;0$ 时，$f'(x)=2x+1\xlongequal{\ \text{令}\ \ }0$，得 $x=-\dfrac{1}{2}$。
+故在 $[-1,1]$ 上，$f(x)\leqslant 0$，其他区间上 $f(x)$ 均大于 0，如图所示，于是 $\int_{a}^{b}f(x)\mathrm{d}x$ 的最小值为 $\int_{-1}^{1}f(x)\mathrm{d}x$，则 $a=-1,b=1$。
+【图】坐标系中一条类似抛物线的曲线，在 $x=-1$ 和 $x=1$ 处与 $x$ 轴相交，两交点之间曲线位于 $x$ 轴下方（原点附近略微下凹），区间外曲线位于 $x$ 轴上方，标注 $-1$、$O$、$1$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $g(x)$ 在 $\left[0,\frac{\pi}{2}\right]$ 上连续，若在 $\left(0,\frac{\pi}{2}\right)$ 内 $g'(x)\geqslant 0$，则对任意的 $x\in\left(0,\frac{\pi}{2}\right)$，有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{x}^{\frac{\pi}{2}}g(t)\,\mathrm{d}t\geqslant\int_{x}^{\frac{\pi}{2}}g(\sin t)\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{x}^{1}g(t)\,\mathrm{d}t\leqslant\int_{x}^{1}g(\sin t)\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{x}^{1}g(t)\,\mathrm{d}t\geqslant\int_{x}^{1}g(\sin t)\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{x}^{\frac{\pi}{2}}g(t)\,\mathrm{d}t\leqslant\int_{x}^{\frac{\pi}{2}}g(\sin t)\,\mathrm{d}t$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为在 $\left(0,\dfrac{\pi}{2}\right)$ 内 $g'(x)\geqslant 0$，所以 $g(x)$ 在 $\left(0,\dfrac{\pi}{2}\right)$ 内单调增加。又 $t\in\left(0,\dfrac{\pi}{2}\right)$ 时有 $t&gt;\sin t$，因而，当 $t\in\left[0,\dfrac{\pi}{2}\right]$ 时，$g(t)\geqslant g(\sin t)$，从而当 $x\in\left(0,\dfrac{\pi}{2}\right)$ 时，$\int_{x}^{\frac{\pi}{2}}g(t)\mathrm{d}t\geqslant\int_{x}^{\frac{\pi}{2}}g(\sin t)\mathrm{d}t$ 成立。
+故正确选项为(A)。
+【注】当 $0&lt;x&lt;1$ 时，有 $\int_{x}^{1}g(t)\mathrm{d}t\geqslant\int_{x}^{1}g(\sin t)\mathrm{d}t$ 成立；当 $1&lt;x&lt;\dfrac{\pi}{2}$ 时，有 $\int_{x}^{1}g(t)\mathrm{d}t\leqslant\int_{x}^{1}g(\sin t)\mathrm{d}t$ 成立。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $\sqrt{1-x^{2}}$ 是 $xf(x)$ 的一个原函数，则 $\int_{0}^{1}\frac{1}{f(x)}\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $xf(x)=(\sqrt{1-x^2})'=\dfrac{-x}{\sqrt{1-x^2}}$，所以 $f(x)=\dfrac{-1}{\sqrt{1-x^2}}$，故
+$$\int_{0}^{1}\frac{1}{f(x)}\mathrm{d}x=-\int_{0}^{1}\sqrt{1-x^2}\,\mathrm{d}x\xlongequal{\ \ \text{定积分的几何意义}\ \ }-\frac{\pi}{4}.$$
+故正确选项为(C)。
+【注】由定积分的几何意义知 $\int_{0}^{1}\sqrt{1-x^2}\,\mathrm{d}x$ 等于单位圆在第一象限的面积，如图所示。
+【图】第一象限的单位圆弧 $y=\sqrt{1-x^2}$ 与坐标轴围成的阴影区域，标注 $1$（$y$ 轴截距）、$y=\sqrt{1-x^2}$、$O$、$1$（$x$ 轴截距）。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="9" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f$ 是 $\int_{1}^{x}\frac{1}{1+t^{2}}\,\mathrm{d}t$ 的反函数，则 $f'(0)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $y=\int_{1}^{\mathrm{e}^x}\dfrac{1}{1+t^3}\mathrm{d}t$，则 $y'=\dfrac{\mathrm{e}^x}{1+\mathrm{e}^{3x}}$。
+对反函数 $x=f(y)$，有 $f'(y)=\dfrac{1}{y'}=\dfrac{1+\mathrm{e}^{3x}}{\mathrm{e}^x}$，当 $y=0$ 时，不难看出 $x=0$。于是
+$$f'(y)\Big|_{y=0}=\frac{1+\mathrm{e}^{3x}}{\mathrm{e}^x}\Big|_{x=0}=2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是 $(-\infty,+\infty)$ 上可导的奇函数，任意的 $x\in(-\infty,+\infty)$，均有 $f(x+1)-f(x)=f(1)$，$f\left(\frac{1}{2}\right)=0$，则以下是偶函数的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{0}^{x}\left[\sin f(t)+f(t+1)\right]\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{0}^{x}\left[\sin f'(t)+f'(t+1)\right]\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{0}^{x}\left[\cos f(t)+f(t+2)\right]\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{0}^{x}\left[\cos f'(t)+f'(t+2)\right]\mathrm{d}t$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $x=-\dfrac{1}{2}$，代入题设等式，有
+$$f\left(\frac{1}{2}\right)-f\left(-\frac{1}{2}\right)=f(1),$$
+又 $f\left(\dfrac{1}{2}\right)=0$，且 $f(x)$ 是奇函数，故 $2f\left(\dfrac{1}{2}\right)=0=f(1)$，所以
+$$f(x+1)=f(x),$$
+故 $f(x)$ 是 $(-\infty,+\infty)$ 上可导的且周期为 1 的奇函数。
+(A)选项中 $\sin f(t)$ 是奇函数，$f(t+1)=f(t)$ 是奇函数，所以 $\int_{0}^{x}[\sin f(t)+f(t+1)]\mathrm{d}t$ 是偶函数。
+(B)选项中 $\sin f'(t)$ 是偶函数，$f'(t+1)=f'(t)$ 是偶函数，所以 $\int_{0}^{x}[\sin f'(t)+f'(t+1)]\mathrm{d}t$ 是奇函数。
+(C)选项中 $\cos f(t)$ 是偶函数，$f(t+2)=f(t)$ 是奇函数，所以 $\int_{0}^{x}[\cos f(t)+f(t+2)]\mathrm{d}t$ 是非奇非偶函数。
+(D)选项中 $\cos f'(t)$ 是偶函数，$f'(t+2)=f'(t)$ 是偶函数，所以 $\int_{0}^{x}[\cos f'(t)+f'(t+2)]\mathrm{d}t$ 是奇函数。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是实数集上连续的偶函数，在 $(-\infty,0)$ 上有唯一零点 $x_{0}=-1$，且 $f'(x_{0})=1$，则函数 $F(x)=\int_{0}^{x}f(t)\,\mathrm{d}t$ 的严格单调增区间是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(-\infty,-1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(-1,+\infty)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(-1,1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(1,+\infty)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">在 $(-\infty,0)$ 上考虑，由 $x_0$ 为 $f(x)$ 的零点可得
+$$f'(x_0)=f'(-1)=\lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}=\lim_{x\to x_0}\frac{f(x)}{x-x_0}=1&gt;0,$$
+由极限的保号性可知，存在 $\delta&gt;0$，在 $(x_0-\delta,x_0)\cup(x_0,x_0+\delta)\subset(-\infty,0)$ 内有 $\dfrac{f(x)}{x-x_0}&gt;0$。因此，当 $x\in(x_0-\delta,x_0)$ 时，$f(x)&lt;0$，当 $x\in(x_0,x_0+\delta)$ 时，$f(x)&gt;0$。
+由题设 $f(x)$ 在 $(-\infty,0)$ 上有唯一零点 $x_0=-1$，可得当 $x\in(-\infty,x_0-\delta]$ 时，$f(x)&lt;0$，当 $x\in[x_0+\delta,0)$ 时，$f(x)&gt;0$（理由见注）。
+由题设 $f(x)$ 是实数集上连续的偶函数，可得当 $x\in(0,1)$ 时，$f(x)&gt;0$；当 $x\in(1,+\infty)$ 时，$f(x)&lt;0$。
+综上所述，当 $x\in(-1,1)$ 时，$f(x)\geqslant 0$（仅在 $x=0$ 处可能取到等号）；当 $x\in(-\infty,-1)\cup(1,+\infty)$ 时，$f(x)&lt;0$。因 $F'(x)=f(x)$，因此 $F(x)$ 在 $(-1,1)$ 内严格单调增加。
+故正确选项为(C)。
+【注】若 $f(x)$ 在 $(-\infty,0)$ 上有唯一零点 $x_0=-1$ 且当 $x\in(x_0-\delta,x_0)$ 时 $f(x)&lt;0$，则当 $x\in(-\infty,x_0-\delta]$ 时 $f(x)&lt;0$。
+反证，设存在 $x_1\in(-\infty,x_0-\delta]$ 使得 $f(x_1)&gt;0$，取 $x_2\in(x_0-\delta,x_0)$，则有 $f(x_2)&lt;0$，利用连续函数的零点定理，存在 $x_3\in(x_1,x_2)\subset(-\infty,x_0)$ 使得 $f(x_3)=0$，这与 $f(x)$ 在 $(-\infty,0)$ 上有唯一零点 $x_0=-1$ 矛盾。
+同理可证，若 $f(x)$ 在 $(-\infty,0)$ 上有唯一零点 $x_0=-1$ 且当 $x\in(x_0,x_0+\delta)$ 时 $f(x)&gt;0$，则当 $x\in[x_0+\delta,0)$ 时，$f(x)&gt;0$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[0,2]$ 上单调连续，$f(0)=1$，$f(2)=2$，且对任意 $x_{1},x_{2}\in[0,2]$ 总有 $f\left(\frac{x_{1}+x_{2}}{2}\right)&gt;\frac{f(x_{1})+f(x_{2})}{2}$，$g(x)$ 是 $f(x)$ 的反函数，$P=\int_{1}^{2}g(x)\,\mathrm{d}x$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$3&lt;P&lt;4$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$2&lt;P&lt;3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1&lt;P&lt;2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$0&lt;P&lt;1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">根据题设条件，对任意 $x_1,x_2\in[0,2]$ 总有 $f\left(\dfrac{x_1+x_2}{2}\right)&gt;\dfrac{f(x_1)+f(x_2)}{2}$，可知曲线 $f(x)$ 在 $[0,2]$ 上是凸的，因 $f(x)$ 在 $[0,2]$ 上单调连续，且 $f(0)=1,f(2)=2$，所以 $f(x)$ 在 $[0,2]$ 上单调递增，进而 $f(x)&gt;0,x\in[0,2]$。又 $g(x)$ 是 $f(x)$ 的反函数，因此，$g(1)=0,g(2)=2$，$g(x)$ 在 $[1,2]$ 上是凹的，且 $g(x)&gt;0,x\in(1,2]$。
+如图所示，曲线 $CD$ 是 $f(x)$ 的图形，曲线 $AC$ 是 $g(x)$ 的图形。由定积分的几何意义，$P=\int_{1}^{2}g(x)\mathrm{d}x$ 表示图中曲边三角形 $ABC$ 的面积，显然 $P=\int_{1}^{2}g(x)\mathrm{d}x&gt;0$，而且 $P=\int_{1}^{2}g(x)\mathrm{d}x$ 小于直角三角形 $ABC$ 的面积，即 $P=\int_{1}^{2}g(x)\mathrm{d}x&lt;\dfrac{1}{2}\times 1\times 2=1$。因此有 $0&lt;P=\int_{1}^{2}g(x)\mathrm{d}x&lt;1$。
+故正确选项为(D)。
+【图】坐标系中，曲线 $y=f(x)$ 从 $D$ 上升到点 $C(2,2)$，曲线 $y=g(x)$ 从 $A(1,0)$ 上升到 $C$ 附近，虚线 $y=x$ 与直线段 $AC$、$BC$、$AB$ 构成三角形，标注 $D$、$y=f(x)$、$C(2,2)$、$y=x$、$y=g(x)$、$O$、$A(1,0)$、$B$。
+【注】特殊值代入法。
+取 $f(x)=\sqrt{\dfrac{x}{2}}+1$，则 $g(x)=2(x-1)^2(1\leqslant x\leqslant 2)$，所以
+$$0&lt;P=\int_{1}^{2}g(x)\mathrm{d}x=\int_{1}^{2}2(x-1)^2\,\mathrm{d}x=\frac{2}{3}&lt;1.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列反常积分中，发散的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{0}^{+\infty}x\mathrm{e}^{-x}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{-\infty}^{+\infty}x\mathrm{e}^{-x^{2}}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{-\infty}^{+\infty}\frac{\arctan x}{1+x^{2}}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{-\infty}^{+\infty}\frac{x}{1+x^{2}}\,\mathrm{d}x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\int_{0}^{+\infty}x\mathrm{e}^{-x}\mathrm{d}x=-\int_{0}^{+\infty}x\mathrm{d}(\mathrm{e}^{-x})=-x\mathrm{e}^{-x}\Big|_{0}^{+\infty}+\int_{0}^{+\infty}\mathrm{e}^{-x}\mathrm{d}x=-\mathrm{e}^{-x}\Big|_{0}^{+\infty}=1,$
+$$\int_{-\infty}^{+\infty}x\mathrm{e}^{-x^2}\mathrm{d}x=\frac{1}{2}\int_{-\infty}^{+\infty}\mathrm{e}^{-x^2}\mathrm{d}(x^2)=-\frac{1}{2}\mathrm{e}^{-x^2}\Big|_{-\infty}^{+\infty}=0,$$
+$$\int_{-\infty}^{+\infty}\frac{\arctan x}{1+x^2}\mathrm{d}x=\int_{-\infty}^{+\infty}\arctan x\,\mathrm{d}(\arctan x)=\frac{1}{2}\arctan^2 x\Big|_{-\infty}^{+\infty}=0,$$
+所以选项(A)，(B)，(C)中的积分都是收敛的，而
+$$\int_{-\infty}^{+\infty}\frac{x}{1+x^2}\mathrm{d}x=\int_{-\infty}^{0}\frac{x}{1+x^2}\mathrm{d}x+\int_{0}^{+\infty}\frac{x}{1+x^2}\mathrm{d}x,$$
+又
+$$\int_{-\infty}^{0}\frac{x}{1+x^2}\mathrm{d}x=\frac{1}{2}\int_{-\infty}^{0}\frac{\mathrm{d}(1+x^2)}{1+x^2}=\frac{1}{2}\ln(1+x^2)\Big|_{-\infty}^{0},$$
+此积分发散，从而积分 $\int_{-\infty}^{+\infty}\dfrac{x}{1+x^2}\mathrm{d}x$ 发散，选(D)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若反常积分 $\int_{0}^{+\infty}\frac{\ln x}{(1+x)x^{1-p}}\,\mathrm{d}x$ 收敛，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$p&lt;1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$p&gt;1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$0&lt;p&lt;1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$0\leqslant p&lt;1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">此积分为有一个瑕点 $x=0$ 的无穷区间上的反常积分，可写为
+$$\int_{0}^{+\infty}\frac{\ln x}{(1+x)x^{1-p}}\mathrm{d}x=\int_{0}^{1}\frac{\ln x}{(1+x)x^{1-p}}\mathrm{d}x+\int_{1}^{+\infty}\frac{\ln x}{(1+x)x^{1-p}}\mathrm{d}x.$$
+对任意 $\varepsilon&gt;0$，有
+$$\lim_{x\to 0^{+}}\frac{\dfrac{\ln x}{(1+x)x^{1-p}}}{\dfrac{1}{x^{1-p+\varepsilon}}}=\lim_{x\to 0^{+}}x^{\varepsilon}\ln x=0,$$
+若 $\int_0^1 \frac{1}{x^{1-p}}\mathrm{d}x$ 收敛，即 $1-p&lt;1,p&gt;0$，则 $\int_0^1 \frac{\ln x}{(1+x)x^{1-p}}\mathrm{d}x$ 也收敛。对任意 $\varepsilon&gt;0$，有 $$\lim_{x \to +\infty} \frac{\frac{\ln x}{(1+x)x^{1-p}}}{\frac{1}{x^{2-p+\varepsilon}}}=\lim_{x \to +\infty} \frac{\ln x}{x^{\varepsilon}}=0,$$ 若 $\int_1^{+\infty} \frac{1}{x^{2-p+\varepsilon}}\mathrm{d}x$ 收敛，即 $2-p&gt;1,p&lt;1$，则 $\int_1^{+\infty} \frac{\ln x}{(1+x)x^{1-p}}\mathrm{d}x$ 也收敛。综上，当 $0&lt;p&lt;1$ 时，反常积分 $\int_0^{+\infty} \frac{\ln x}{(1+x)x^{1-p}}\mathrm{d}x$ 收敛。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列反常积分收敛的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{2}^{+\infty}\frac{1}{x\ln x}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{0}^{+\infty}\mathrm{e}^{-x^{2}}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{-1}^{1}\frac{1}{\sin x}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{0}^{1}\frac{x}{\ln^{2}(1+x)}\,\mathrm{d}x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_2^{+\infty} \frac{1}{x \ln x}\mathrm{d}x=\ln \ln x \Big|_2^{+\infty}=+\infty，发散.$$ $$\int_{-1}^{1} \frac{1}{\sin x}\mathrm{d}x=\int_{-1}^{0} \frac{1}{\sin x}\mathrm{d}x+\int_0^{1} \frac{1}{\sin x}\mathrm{d}x,$$ 当 $0&lt;x\leqslant 1$ 时，有 $\frac{1}{\sin x}&gt;\frac{1}{x}$，而 $\int_0^1 \frac{\mathrm{d}x}{x}=+\infty$，发散，故 $\int_0^1 \frac{1}{\sin x}\mathrm{d}x=+\infty$，从而 $\int_{-1}^{1} \frac{1}{\sin x}\mathrm{d}x$ 发散。又 $\int_0^1 \frac{x}{\ln^2(1+x)}\mathrm{d}x$ 与 $\int_0^1 \frac{x}{x^2}\mathrm{d}x=\int_0^1 \frac{1}{x}\mathrm{d}x$ 同敛散，故 $\int_0^1 \frac{x}{\ln^2(1+x)}\mathrm{d}x$ 发散。因此，选项（A），（C），（D）都发散，选项（B）收敛（因 $\int_0^{+\infty} \mathrm{e}^{-x^2}\mathrm{d}x=\frac{\sqrt{\pi}}{2}$）。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="9" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{n \to \infty}\frac{1}{n^{2}}\left[\sqrt{n^{2}-1}+\sqrt{n^{2}-2^{2}}+\cdots+\sqrt{n^{2}-(n-1)^{2}}\right]=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】原式 $=\lim_{n \to \infty} \frac{1}{n}\left[\sqrt{1-\left(\frac{1}{n}\right)^2}+\sqrt{1-\left(\frac{2}{n}\right)^2}+\cdots+\sqrt{1-\left(\frac{n-1}{n}\right)^2}\right]$ $$=\int_0^1 \sqrt{1-x^2}\,\mathrm{d}x \xlongequal{x=\sin t} \int_0^{\frac{\pi}{2}} \cos^2 t\,\mathrm{d}t$$ $$=\int_0^{\frac{\pi}{2}} \frac{1+\cos 2t}{2}\,\mathrm{d}t=\left(\frac{t}{2}+\frac{\sin 2t}{4}\right)\Big|_0^{\frac{\pi}{2}}=\frac{\pi}{4}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{\pi}{4}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="9" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{n \to \infty}\sum_{i=1}^{n}\frac{n}{n^{2}+9i^{2}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】因 $$\frac{n}{n^2+9i^2}=\frac{n}{n^2\left[1+9\left(\frac{i}{n}\right)^2\right]}=\frac{1}{n} \cdot \frac{1}{1+9\left(\frac{i}{n}\right)^2},$$ 故 $$\lim_{n \to \infty} \sum_{i=1}^{n} \frac{n}{n^2+9i^2}=\lim_{n \to \infty} \sum_{i=1}^{n} \frac{1}{n} \cdot \frac{1}{1+9\left(\frac{i}{n}\right)^2}=\int_0^1 \frac{\mathrm{d}x}{1+9x^2}=\frac{1}{3}\arctan 3.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{1}{3}\arctan 3</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">定积分 $I=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\frac{\sin x}{x}\,\mathrm{d}x$ 的值满足（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$0\leqslant I\leqslant\frac{3}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{2}&lt;I&lt;\frac{\sqrt{2}}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\sqrt{2}}{2}&lt;I&lt;1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$1&lt;I&lt;2\sqrt{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】令 $f(x)=\frac{\sin x}{x},x \in \left[\frac{\pi}{4},\frac{\pi}{2}\right]$，则 $f'(x)=\frac{x \cdot \cos x-\sin x}{x^2}$，记 $g(x)=x\cos x-\sin x$，则 $g\left(\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}\left(\frac{\pi}{4}-1\right)&lt;0$，$g'(x)=-x\sin x&lt;0\left(\frac{\pi}{4}\leqslant x\leqslant \frac{\pi}{2}\right)$，故 $g(x)&lt;0\left(\frac{\pi}{4}\leqslant x\leqslant \frac{\pi}{2}\right)$，即 $f'(x)&lt;0$，故 $f(x)$ 在 $\left[\frac{\pi}{4},\frac{\pi}{2}\right]$ 上为单调递减函数。当 $\frac{\pi}{4}\leqslant x\leqslant \frac{\pi}{2}$ 时，有 $f\left(\frac{\pi}{2}\right)\leqslant f(x)\leqslant f\left(\frac{\pi}{4}\right)$，即 $\frac{2}{\pi}\leqslant f(x)\leqslant \frac{2\sqrt{2}}{\pi}$。因此，$\frac{1}{2}\leqslant \int_{\frac{\pi}{4}}^{\frac{\pi}{2}} f(x)\,\mathrm{d}x \leqslant \frac{\sqrt{2}}{2}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 为 $(-\infty,+\infty)$ 上可导的奇函数，则下列函数为奇函数的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$x^{3}\int_{0}^{x}f'(t)\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{0}^{x}f(-t)\,\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{a}^{x}\left[f'(t)+f(t)\right]\mathrm{d}t$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{0}^{x}\left|f(t)\right|\mathrm{d}t$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】对于选项（A），$x^3 \int_0^x f'(t)\,\mathrm{d}t=x^3 f(x)$ 为偶函数。对于选项（B），$\int_0^x f(-t)\,\mathrm{d}t=-\int_0^x f(t)\,\mathrm{d}t$ 为偶函数。对于选项（C），$\int_0^x \left[f'(t)+f(t)\right]\mathrm{d}t=f(x)+\int_0^x f(t)\,\mathrm{d}t$，$f(x)$ 为奇函数，$\int_0^x f(t)\,\mathrm{d}t$ 为偶函数，故二者之和非奇非偶。对于选项（D），由于 $\left|f(x)\right|$ 为偶函数，它的原函数中唯一的一个奇函数为 $\int_0^x \left|f(t)\right|\mathrm{d}t$，所以选择（D）。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $M=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\frac{x}{1+x^{2}}\cos^{2}x\,\mathrm{d}x$，$N=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\left(x^{2}\sin x+\sin^{2}x\cos x\right)\mathrm{d}x$，$P=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\left(\sin^{2}x-\cos^{2}x\right)\mathrm{d}x$，则有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$N&lt;P&lt;M$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$M&lt;P&lt;N$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$N&lt;M&lt;P$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$P&lt;M&lt;N$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由于 $\frac{x}{1+x^2}\cos^5 x$ 在 $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ 上是奇函数，因此 $M=0$，$$N=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \left(x^2 \sin x+\sin^2 x\cos x\right)\mathrm{d}x=2\int_0^{\frac{\pi}{2}} \sin^2 x\cos x\,\mathrm{d}x&gt;0,$$ $$P=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \left(\sin^3 x-\cos^4 x\right)\mathrm{d}x=-2\int_0^{\frac{\pi}{2}} \cos^4 x\,\mathrm{d}x&lt;0,$$ 因此 $P&lt;M&lt;N$，选（D）。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="9" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $x^{2}\mathrm{e}^{x}$ 是 $f(x)$ 在 $(0,+\infty)$ 上的一个原函数，则 $\int f(\ln x)\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】 $$f(x)=\left(x^2 \mathrm{e}^x\right)'=\left(2x+x^2\right)\mathrm{e}^x,$$ $$f(\ln x)=\left(2\ln x+\ln^2 x\right)x,$$ $$\int f(\ln x)\,\mathrm{d}x=\int \left(2\ln x+\ln^2 x\right)x\,\mathrm{d}x$$ $$=\frac{1}{2}\int \left(2\ln x+\ln^2 x\right)\mathrm{d}\left(x^2\right)$$ $$=\frac{1}{2}x^2\left(2\ln x+\ln^2 x\right)-\frac{1}{2}\int x^2\left(\frac{2}{x}+\frac{2\ln x}{x}\right)\mathrm{d}x$$ $$=\frac{1}{2}x^2\left(2\ln x+\ln^2 x\right)-\frac{1}{2}x^2-\int x\ln x\,\mathrm{d}x$$ $$=x^2\ln x+\frac{1}{2}x^2\ln^2 x-\frac{x^2}{2}-\frac{1}{2}x^2\ln x+\frac{1}{4}x^2+C$$ $$=\frac{1}{2}x^2\ln x+\frac{1}{2}x^2\ln^2 x-\frac{1}{4}x^2+C$$ $$=\frac{x^2}{4}\left(2\ln x+2\ln^2 x-1\right)+C.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{x^2}{4}\left(2\ln x+2\ln^2 x-1\right)+C</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="9" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $F(x)=\int_{0}^{x}(1-[t])\,\mathrm{d}t$，其中 $[x]$ 表示不超过 $x$ 的最大整数，则 $F'_{-}(1)-F'_{+}(1)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】设 $f(x)=x-[x]$，其图形如图所示。【图】f(x)=x-[x] 的图像为周期为 1 的锯齿形曲线：在 $[0,1)$ 上为从 0 到 1 的斜线段，$x=1$ 处跳落到 0，呈周期性重复。
+
+【原书扫描件自此缺页，本题解析后半及第23～25题解析缺失。】</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列命题中不成立的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">若 $f(x)$ 连续，$x\in[a,b]$，则 $\int_{a}^{x}f(t)\,\mathrm{d}t$ 必为 $f(x)$ 的原函数</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">若 $f(x)$ 可积，$x\in[a,b]$，则 $f(x)$ 在 $(a,b)$ 内存在原函数</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">若 $f(x)$ 连续，且为奇函数，$x\in[-a,a]$，则 $\int_{-a}^{a}f(x)\,\mathrm{d}x=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">若 $f(x)$ 连续，$T$ 为其周期，则 $\int_{a}^{a+T}f(x)\,\mathrm{d}x=\int_{0}^{T}f(x)\,\mathrm{d}x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="missing-box">原书扫描件缺页（印刷页44～45），本题解析暂缺，请参照纸质书。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x-5)=\frac{4}{x^{2}-10x}$，则 $\int_{0}^{1}f(2x+1)\,\mathrm{d}x$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">为反常积分，且发散</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">为反常积分，且收敛</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">不是反常积分，且其值为 10</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">不是反常积分，且其值为 $\frac{\pi}{4}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="missing-box">原书扫描件缺页（印刷页44～45），本题解析暂缺，请参照纸质书。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q25" data-no="25">
+  <header class="q-head">
+    <span class="q-no">【25】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="9" data-no="25" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列表达式中正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{\pi}^{2\pi}\left|\sin x\right|\mathrm{d}x\leqslant\int_{\pi}^{2\pi}\sin^{2}x\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\frac{x}{1+\cos x}\,\mathrm{d}x&lt;\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\left(\frac{\sin x}{1+x^{4}}+\frac{1}{1+x^{2}}\right)\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{a}^{b}f(x)\,\mathrm{d}x\leqslant\int_{c}^{d}f(x)\,\mathrm{d}x$，$[a,b]\subset[c,d]$，$f(x)$ 连续，$x\in[c,d]$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{-1}^{1}\left|f(x)\right|\mathrm{d}x=2\int_{0}^{1}\left|f(x)\right|\mathrm{d}x$，$f(x)$ 连续，$x\in[-1,1]$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="missing-box">原书扫描件缺页（印刷页44～45），本题解析暂缺，请参照纸质书。</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-08.html">上一章：第7章 一元函数微分学的应用(三)——物理应用</a>
+      <a class="chapter-link" href="chapter-10.html">下一章：第9章 一元函数积分学的计算</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 9, "total": 25, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

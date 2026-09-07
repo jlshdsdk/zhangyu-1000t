@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第14章 二重积分 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第14章 二重积分<span class="top-count">（24题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="15" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x\geqslant 0$，$y\geqslant 0$，曲线 $l_{1}:x^{2}+y^{2}-xy=1$，$l_{2}:x^{2}+y^{2}-xy=2$，直线 $l_{3}:y=\frac{\sqrt{3}}{3}x$，$l_{4}:y=\sqrt{3}x$. 区域 $D_{1}$ 由 $l_{1},l_{2},x=0,y=0$ 围成，$D_{2}$ 由 $l_{1},l_{2},l_{3},y=0$ 围成，$D_{3}$ 由 $l_{1},l_{2},l_{4},x=0$ 围成，则对于 $I_{i}=\iint\limits_{D_{i}}\sqrt[3]{y-x}\,\mathrm{d}\sigma\ (i=1,2,3)$，有（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$I_{1}&lt;I_{2}&lt;I_{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$I_{3}&lt;I_{1}&lt;I_{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$I_{2}&lt;I_{3}&lt;I_{1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$I_{2}&lt;I_{1}&lt;I_{3}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$l_1,l_2,l_3,l_4$ 的图形如图所示。【图】平面直角坐标系中过原点附近的四条直线：$l_4$ 位于第一象限且斜率最大，$l_3$ 斜率次之，$l_2$ 位于第二象限靠近 $y$ 轴，$l_1$ 位于第四象限，另有两关于 $y=x$ 对称的曲线弧。
+由于区域 $D_1$ 关于 $y=x$ 对称，由轮换对称性得
+$$I_1=\iint_{D_1}\sqrt[3]{x-y}\mathrm{d}\sigma=\iint_{D_1}\sqrt[3]{y-x}\mathrm{d}\sigma,$$
+故 $I_1=0$.
+由于 $D_2$ 在 $y=x$ 的下侧，故 $y&lt;x$，则 $\sqrt[3]{y-x}&lt;0$；由于 $D_3$ 在 $y=x$ 的上侧，故 $y&gt;x$，则 $\sqrt[3]{y-x}&gt;0$. 根据积分的保号性知，$I_2&lt;0,I_3&gt;0$.
+综上，$I_2&lt;I_1&lt;I_3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="15" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim\limits_{r\to 0}\frac{1}{\pi r^{2}}\iint\limits_{x^{2}+y^{2}\leqslant r^{2}}\mathrm{e}^{x^{2}-y^{2}}\cos(x+y)\mathrm{d}x\mathrm{d}y=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\pi r^{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{\pi r^{2}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由积分中值定理知，存在 $(\xi,\eta)\in\{(x,y)\mid x^2+y^2\leqslant r^2\}$，使
+$$\begin{aligned}
+&amp;\lim_{r\to 0}\frac{1}{\pi r^2}\iint_{x^2+y^2\leqslant r^2}\mathrm{e}^{x^2-y^2}\cos(x+y)\mathrm{d}x\mathrm{d}y\\
+&amp;=\lim_{r\to 0}\frac{1}{\pi r^2}\cdot\mathrm{e}^{\xi^2-\eta^2}\cos(\xi+\eta)\cdot\pi r^2\\
+&amp;=\lim_{r\to 0}\mathrm{e}^{\xi^2-\eta^2}\cos(\xi+\eta)\\
+&amp;=\lim_{(\xi,\eta)\to(0,0)}\mathrm{e}^{\xi^2-\eta^2}\cos(\xi+\eta)=1.
+\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="15" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $D=\{(x,y)\mid(x-1)^{2}+(y-1)^{2}\leqslant 1\}$，$I_{i}=\iint\limits_{D}f_{i}(x,y)\mathrm{d}x\mathrm{d}y$，$f_{i}(x,y)=(x+y)^{i}\ (i=1,2,3)$，则 $I_{1},I_{2},I_{3}$ 之间的大小顺序为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$I_{3}&lt;I_{2}&lt;I_{1}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$I_{2}&lt;I_{3}&lt;I_{1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$I_{1}&lt;I_{3}&lt;I_{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$I_{1}&lt;I_{2}&lt;I_{3}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $u=x-1,v=y-1$，则积分区域可以转化为 $D'=\{(u,v)\mid u^2+v^2\leqslant 1\}$，是以坐标原点为圆心的一个单位圆.
+因为 $I_1=\iint\limits_{D}f_1(x,y)\mathrm{d}x\mathrm{d}y=\iint\limits_{D}(x+y)\mathrm{d}x\mathrm{d}y=\iint\limits_{D'}(u+v+2)\mathrm{d}u\mathrm{d}v$，
+且积分区域 $D'$ 关于原点对称，故 $\iint\limits_{D'}(u+v)\mathrm{d}u\mathrm{d}v=0$，所以
+$$I_1=\iint\limits_{D'}2\mathrm{d}u\mathrm{d}v=2\pi.$$
+同理可得
+$$\begin{aligned}
+I_2&amp;=\iint\limits_{D}(x+y)^2\mathrm{d}x\mathrm{d}y=\iint\limits_{D'}(u+v+2)^2\mathrm{d}u\mathrm{d}v\\
+&amp;=\iint\limits_{D'}(u+v)^2\mathrm{d}u\mathrm{d}v+\iint\limits_{D'}4\mathrm{d}u\mathrm{d}v\\
+&amp;=\iint\limits_{D'}(u+v)^2\mathrm{d}u\mathrm{d}v+4\pi,\\
+I_3&amp;=\iint\limits_{D}(x+y)^3\mathrm{d}x\mathrm{d}y=\iint\limits_{D'}(u+v+2)^3\mathrm{d}u\mathrm{d}v\\
+&amp;=\iint\limits_{D'}6(u+v)^2\mathrm{d}u\mathrm{d}v+8\pi.
+\end{aligned}$$
+又因为 $(u+v)^2&gt;0$，故 $\iint\limits_{D'}(u+v)^2\mathrm{d}u\mathrm{d}v&gt;0$，显然有
+$$I_3&gt;I_2&gt;I_1.$$
+【注】此题也可以用极坐标形式将 $I_1$ 的值求出来，求解结果是
+$$I_1=2\pi,I_2=\frac{9}{2}\pi,I_3=11\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="15" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $I=\iint\limits_{x^{2}+y^{2}\leqslant 1}(x^{2}+y^{2})\,\mathrm{d}\sigma$，$J=\iint\limits_{|x|+|y|\leqslant 1}\sin(x^{2}+y^{2})\,\mathrm{d}\sigma$，$K=\iint\limits_{|x|+|y|\leqslant 1}(x^{2}+y^{2})\,\mathrm{d}\sigma$，则 $I,J,K$ 的大小关系是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$I&lt;J&lt;K$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$J&lt;K&lt;I$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$K&lt;I&lt;J$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$K&lt;J&lt;I$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">在二重积分 $I$ 和 $K$ 中被积函数相同，且除零点之外被积函数恒为正，但 $K$ 的积分区域 $|x|+|y|\leqslant 1$ 是 $I$ 的积分区域 $x^2+y^2\leqslant 1$ 的内接正方形，故 $K&lt;I$.
+在二重积分 $J$ 和 $K$ 中积分区域相同，但被积函数 $\sin(x^2+y^2)\leqslant|\sin(x^2+y^2)|\leqslant x^2+y^2$ 且仅在零点处等号成立，故 $J&lt;K$. 综上可得 $J&lt;K&lt;I$，故应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $D=\{(x,y)\mid 1\leqslant x\leqslant 2,1\leqslant y\leqslant 2\}$，则 $\iint\limits_{D}(x-y)^{2}[\tan(x-y)+\sin(x-y)]\mathrm{d}x\mathrm{d}y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】方法一　注意到积分区域 $D$ 关于 $y=x$ 对称，且被积函数是关于 $x-y$ 的奇函数，故积分为零.
+方法二
+$$\begin{aligned}
+&amp;\iint\limits_{D}(x-y)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}x\mathrm{d}y\\
+&amp;=\int_1^2\mathrm{d}x\int_1^x(x-y)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}y+\\
+&amp;\quad\int_1^2\mathrm{d}x\int_x^2(x-y)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}y\\
+&amp;=I_1+I_2,
+\end{aligned}$$
+而
+$$\begin{aligned}
+I_2&amp;=\int_1^2\mathrm{d}x\int_x^2(x-y)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}y\\
+&amp;=\int_1^2\mathrm{d}y\int_1^y(x-y)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}x\\
+&amp;=\int_1^2\mathrm{d}x\int_1^x(y-x)^2\big[\tan(y-x)+\sin(y-x)\big]\mathrm{d}y\\
+&amp;=-\int_1^2\mathrm{d}x\int_1^x(y-x)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}y=-I_1,
+\end{aligned}$$
+从而得到 $\iint\limits_{D}(x-y)^2\big[\tan(x-y)+\sin(x-y)\big]\mathrm{d}x\mathrm{d}y=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="15" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$I=\int_{1}^{\mathrm{e}}\mathrm{d}y\int_{0}^{\ln y}f(x,y)\,\mathrm{d}x$（其中 $f(x,y)$ 连续），交换积分次序得（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$I=\int_{0}^{\ln y}\mathrm{d}x\int_{1}^{\mathrm{e}}f(x,y)\,\mathrm{d}y$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$I=\int_{0}^{1}\mathrm{d}x\int_{\mathrm{e}^{x}}^{\mathrm{e}}f(x,y)\,\mathrm{d}y$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$I=\int_{1}^{\mathrm{e}}\mathrm{d}x\int_{0}^{\ln y}f(x,y)\,\mathrm{d}y$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$I=\int_{\mathrm{e}^{x}}^{\mathrm{e}}\mathrm{d}x\int_{0}^{1}f(x,y)\,\mathrm{d}y$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">积分区域如图所示【图】坐标系中曲线 $y=\mathrm{e}^x$ 与水平线 $y=\mathrm{e}$，交点处虚线对应 $x=1$，区域位于 $x=0$ 与 $x=1$ 之间。，所以先积 $y$ 时应是从 $y=\mathrm{e}^x$ 到 $y=\mathrm{e}$，故 $I=\int_0^1\mathrm{d}x\int_{\mathrm{e}^x}^{\mathrm{e}}f(x,y)\,\mathrm{d}y$，即选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{0}^{2}\mathrm{d}y\int_{\frac{y}{2}}^{1}\frac{y}{\sqrt{1+x^{3}}}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\int_0^2\mathrm{d}y\int_2^y\frac{y}{\sqrt{1+x^3}}\mathrm{d}x=-\int_0^2\mathrm{d}y\int_y^2\frac{y}{\sqrt{1+x^3}}\mathrm{d}x$，可知积分区域如图所示【图】直线 $y=x$、竖直线 $x=2$ 与 $x$ 轴围成的三角形区域，标注 $2$。，则
+$$\int_0^2\mathrm{d}y\int_y^2\frac{y}{\sqrt{1+x^3}}\mathrm{d}x=-\int_0^2\frac{1}{\sqrt{1+x^3}}\mathrm{d}x\int_0^x y\,\mathrm{d}y$$
+$$\begin{aligned}
+&amp;=-\frac{1}{2}\int_0^2\frac{x^2}{\sqrt{1+x^3}}\mathrm{d}x\\
+&amp;=-\frac{1}{6}\int_0^2(1+x^3)^{-\frac{1}{2}}\,\mathrm{d}(x^3)\\
+&amp;=-\frac{1}{3}(1+x^3)^{\frac{1}{2}}\Big|_0^2=-\frac{2}{3}.
+\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-\frac{2}{3}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{0}^{t}\mathrm{d}y\int_{\sqrt{y}}^{\sqrt{t}}\sqrt{1+x^{3}}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">积分区域如图所示【图】第一象限中曲线 $y=x^2$，纵轴标注 $t$（虚线），横轴标注 $\sqrt{t}$，区域为曲线下与 $y=0$ 之间部分。，则
+$$\begin{aligned}
+\text{原式}&amp;=\int_0^{\sqrt{t}}\sqrt{1+x^3}\,\mathrm{d}x\int_0^{x^2}\mathrm{d}y\\
+&amp;=\int_0^{\sqrt{t}}x^2\sqrt{1+x^3}\,\mathrm{d}x\\
+&amp;=\frac{1}{3}\int_0^{\sqrt{t}}\sqrt{1+x^3}\,\mathrm{d}(x^3)\\
+&amp;=\frac{1}{3}\int_0^{\sqrt{t}}\sqrt{1+x^3}\,\mathrm{d}(x^3+1)\\
+&amp;=\frac{1}{3}\cdot\frac{2}{3}(1+x^3)^{\frac{3}{2}}\Big|_0^{\sqrt{t}}\\
+&amp;=\frac{2}{9}\Big[\big(1+t^{\frac{3}{2}}\big)^{\frac{3}{2}}-1\Big].
+\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{2}{9}\Big[\big(1+t^{\frac{3}{2}}\big)^{\frac{3}{2}}-1\Big]</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(t)=\int_{1}^{t^{2}}\mathrm{d}x\int_{t}^{\sqrt{x}}\sin\frac{x}{y}\,\mathrm{d}y$，则 $f'\left(\frac{\pi}{2}\right)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $t&gt;1$ 时，设区域
+$$D=\{(x,y)\mid 1\leqslant x\leqslant t^2,\sqrt{x}\leqslant y\leqslant t\},$$
+从而
+$$f(t)=-\int_1^{t^2}\mathrm{d}x\int_{\sqrt{x}}^{t}\sin\frac{x}{y}\,\mathrm{d}y=-\iint\limits_{D}\sin\frac{x}{y}\,\mathrm{d}x\mathrm{d}y.$$
+将二重积分写为先对 $x$，后对 $y$ 的累次积分，有
+$$f(t)=-\int_1^{t}\mathrm{d}y\int_1^{y^2}\sin\frac{x}{y}\,\mathrm{d}x=-\int_1^{t}y\Big(\cos\frac{1}{y}-\cos y\Big)\mathrm{d}y,$$
+所以
+$$f'(t)=-t\Big(\cos\frac{1}{t}-\cos t\Big),t&gt;1,$$
+从而
+$$f'\Big(\frac{\pi}{2}\Big)=-\frac{\pi}{2}\cos\frac{2}{\pi}.$$
+【注】由于所求为 $f'\Big(\dfrac{\pi}{2}\Big),\dfrac{\pi}{2}&gt;1$，故只研究 $t&gt;1$ 即可.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-\frac{\pi}{2}\cos\frac{2}{\pi}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知曲线 $L$ 的极坐标方程为 $r=\sin 3\theta\left(0\leqslant\theta\leqslant\frac{\pi}{3}\right)$，$D$ 为曲线 $L$ 围成的区域，则 $\iint\limits_{D}\sqrt{x^{2}+y^{2}}\,\mathrm{d}x\mathrm{d}y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\begin{aligned}
+\iint\limits_{D}\sqrt{x^2+y^2}\,\mathrm{d}x\mathrm{d}y&amp;=\int_0^{\frac{\pi}{3}}\mathrm{d}\theta\int_0^{\sin 3\theta}\sqrt{r^2\cos^2\theta+r^2\sin^2\theta}\cdot r\,\mathrm{d}r\\
+&amp;=\int_0^{\frac{\pi}{3}}\mathrm{d}\theta\int_0^{\sin 3\theta}r^2\,\mathrm{d}r=\frac{1}{3}\int_0^{\frac{\pi}{3}}\sin^3 3\theta\,\mathrm{d}\theta\\
+&amp;=\frac{1}{9}\int_0^{\pi}\sin^3 t\,\mathrm{d}t=\frac{2}{9}\int_0^{\frac{\pi}{2}}\sin^3 t\,\mathrm{d}t=\frac{2}{9}\cdot\frac{2}{3}=\frac{4}{27}.
+\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{4}{27}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知平面区域 $D=\{(x,y)\mid|x|\leqslant y,(x^{2}+y^{2})^{3}\leqslant y^{4}\}$，则 $\iint\limits_{D}\frac{|x|}{\sqrt{x^{2}+y^{2}}}\,\mathrm{d}x\mathrm{d}y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $D$ 关于 $y$ 轴对称，所以
+$$\iint\limits_{D}\frac{|x|}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y=2\iint\limits_{D_1}\frac{x}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y,$$
+其中 $D_1$ 是 $D$ 位于 $y$ 轴右侧的部分，如图所示。【图】坐标系中标注直线 $y=x$ 与区域 $D_1$，$D_1$ 位于 $y$ 轴与直线 $y=x$ 之间（第一象限），由曲线弧围成。
+在极坐标系中，$D_1=\Big\{(r,\theta)\,\Big|\,\dfrac{\pi}{4}\leqslant\theta\leqslant\dfrac{\pi}{2},0\leqslant r\leqslant\sin^2\theta\Big\}$，所以
+$$\begin{aligned}
+\iint\limits_{D}\frac{|x|}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y&amp;=2\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\mathrm{d}\theta\int_0^{\sin^2\theta}r\cos\theta\,\mathrm{d}r=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\sin^4\theta\,\mathrm{d}(\sin\theta)\\
+&amp;=\frac{1}{5}\sin^5\theta\Big|_{\frac{\pi}{4}}^{\frac{\pi}{2}}=\frac{1}{5}\Big(1-\frac{\sqrt{2}}{8}\Big).
+\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{1}{5}\Big(1-\frac{\sqrt{2}}{8}\Big)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="15" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $D$ 是第一象限内由三条曲线 $y=x^{2}$，$y^{2}=x$，$x^{2}+y^{2}=1$ 所围成的以原点为一个顶点的曲边三角形，化二重积分为累次积分（先积 $y$，后积 $x$），则 $\iint\limits_{D}f(x,y)\,\mathrm{d}x\mathrm{d}y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">曲线 $y=x^2,y^2=x,x^2+y^2=1$ 在第一象限所围成的以原点为一个顶点的曲边三角形如图所示。【图】第一象限中抛物线 $y=x^2$、$y^2=x$ 与圆弧 $x^2+y^2=1$ 围成曲边三角形，标注交点 $Q$、$P$ 及 $x$ 轴上的点 $H$，区域分为 $D_1$、$D_2$ 两部分，图中标出坐标 $\Big(\dfrac{\sqrt{5}-1}{2},\sqrt{\dfrac{\sqrt{5}-1}{2}}\Big)$ 与 $\Big(\sqrt{\dfrac{\sqrt{5}-1}{2}},\dfrac{\sqrt{5}-1}{2}\Big)$。
+设曲线 $y=x^2$ 与 $x^2+y^2=1$ 交点为 $P$，其坐标为
+$$\Bigg[\sqrt{\frac{\sqrt{5}-1}{2}},\frac{\sqrt{5}-1}{2}\Bigg],$$
+曲线 $y^2=x$ 与 $x^2+y^2=1$ 的交点为 $Q$，其坐标为
+$$\Bigg[\frac{\sqrt{5}-1}{2},\sqrt{\frac{\sqrt{5}-1}{2}}\Bigg].$$
+过点 $Q$ 作 $QH\perp x$ 轴，交 $x$ 轴于点 $H$，$QH$ 将积分区域 $D$ 分为 $D_1$ 和 $D_2$ 两个部分，所以
+$$\begin{aligned}
+\iint\limits_{D}f(x,y)\,\mathrm{d}x\mathrm{d}y&amp;=\iint\limits_{D_1}f(x,y)\,\mathrm{d}x\mathrm{d}y+\iint\limits_{D_2}f(x,y)\,\mathrm{d}x\mathrm{d}y\\
+&amp;=\int_0^{\frac{\sqrt{5}-1}{2}}\mathrm{d}x\int_{x^2}^{\sqrt{x}}f(x,y)\,\mathrm{d}y+\int_{\frac{\sqrt{5}-1}{2}}^{\sqrt{\frac{\sqrt{5}-1}{2}}}\mathrm{d}x\int_{x^2}^{\sqrt{1-x^2}}f(x,y)\,\mathrm{d}y.
+\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\int_0^{\frac{\sqrt{5}-1}{2}}\mathrm{d}x\int_{x^2}^{\sqrt{x}}f(x,y)\,\mathrm{d}y+\int_{\frac{\sqrt{5}-1}{2}}^{\sqrt{\frac{\sqrt{5}-1}{2}}}\mathrm{d}x\int_{x^2}^{\sqrt{1-x^2}}f(x,y)\,\mathrm{d}y</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面区域 $D$ 由曲线 $y=\sqrt{3(1-x^{2})}$ 与直线 $y=\sqrt{3}x$ 及 $y$ 轴所围成. 计算二重积分
+$$\iint\limits_{D}(x^{2}+y^{2})\,\mathrm{d}x\mathrm{d}y.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $r^2\sin^2\theta+3r^2\cos^2\theta=3$，得
+$$r^2=\frac{3}{3\cos^2\theta+\sin^2\theta},$$
+积分区域如图所示【图】第一象限内由 $y$ 轴、直线 $y=\sqrt{3}x$ 与椭圆弧 $x^2+\frac{y^2}{3}=1$ 围成的区域 $D$。，则
+$$\begin{aligned}
+\text{原式}&amp;=\int_{\frac{\pi}{3}}^{\frac{\pi}{2}}\mathrm{d}\theta\int_0^{\sqrt{\frac{3}{3\cos^2\theta+\sin^2\theta}}}r^3\,\mathrm{d}r\\
+&amp;=\frac{9}{4}\int_{\frac{\pi}{3}}^{\frac{\pi}{2}}\frac{\tan^2\theta+1}{(3+\tan^2\theta)^2}\,\mathrm{d}(\tan\theta)\\
+&amp;=\frac{9}{4}\int_{\sqrt{3}}^{+\infty}\frac{t^2+1}{(3+t^2)^2}\,\mathrm{d}t\\
+&amp;=\frac{9}{4}\int_{\sqrt{3}}^{+\infty}\frac{t^2+3-2}{(t^2+3)^2}\,\mathrm{d}t\\
+&amp;=\frac{9}{4}\int_{\sqrt{3}}^{+\infty}\frac{\mathrm{d}t}{t^2+3}-\frac{9}{4}\int_{\sqrt{3}}^{+\infty}\frac{2\,\mathrm{d}t}{(t^2+3)^2}\\
+&amp;=\frac{9}{4}\cdot\frac{1}{\sqrt{3}}\arctan\frac{t}{\sqrt{3}}\Bigg|_{\sqrt{3}}^{+\infty}-\frac{1}{4}\Bigg(\frac{3t}{t^2+3}+\sqrt{3}\arctan\frac{t}{\sqrt{3}}\Bigg)\Bigg|_{\sqrt{3}}^{+\infty}\\
+&amp;=\frac{3\sqrt{3}\pi}{16}-\frac{(\pi-2)\sqrt{3}}{16}=\frac{\sqrt{3}}{8}(1+\pi).
+\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面区域 $D=\{(x,y)\mid 1\leqslant x^{2}+y^{2}\leqslant 4,x\geqslant 0,y\geqslant 0\}$，计算
+$$\iint\limits_{D}\frac{x\cos\sqrt{x^{2}+y^{2}}}{x+y}\,\mathrm{d}x\mathrm{d}y.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由轮换对称性，得
+$$\begin{aligned}
+\iint\limits_{D}\frac{x\cos\sqrt{x^2+y^2}}{x+y}\,\mathrm{d}x\mathrm{d}y&amp;=\iint\limits_{D}\frac{y\cos\sqrt{x^2+y^2}}{x+y}\,\mathrm{d}x\mathrm{d}y\\
+&amp;=\frac{1}{2}\iint\limits_{D}\cos\sqrt{x^2+y^2}\,\mathrm{d}x\mathrm{d}y=\frac{1}{2}\int_0^{\frac{\pi}{2}}\mathrm{d}\theta\int_1^2 r\cos r\,\mathrm{d}r\\
+&amp;=\frac{\pi}{4}(2\sin 2+\cos 2-\sin 1-\cos 1).
+\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $D$ 是由 $y=|x|$ 及 $y=1$ 围成的有界区域，计算二重积分
+$$\iint\limits_{D}\frac{x^{2}-x\cos y-y^{2}}{x^{2}+y^{2}}\,\mathrm{d}x\mathrm{d}y.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由对称性，得
+$$\begin{aligned}
+\iint\limits_{D}\frac{x^2-2x\cos y-y^2}{x^2+y^2}\,\mathrm{d}x\mathrm{d}y&amp;=\iint\limits_{D}\frac{x^2-y^2}{x^2+y^2}\,\mathrm{d}x\mathrm{d}y=2\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\mathrm{d}\theta\int_0^{\frac{1}{\sin\theta}}\frac{r^2\cos^2\theta-r^2\sin^2\theta}{r^2}\cdot r\,\mathrm{d}r\\
+&amp;=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}(\cos^2\theta-\sin^2\theta)\frac{1}{\sin^2\theta}\,\mathrm{d}\theta=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cot^2\theta\,\mathrm{d}\theta-\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}1\,\mathrm{d}\theta\\
+&amp;=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\csc^2\theta\,\mathrm{d}\theta-\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}2\,\mathrm{d}\theta=-\cot\theta\Big|_{\frac{\pi}{4}}^{\frac{\pi}{2}}-\frac{\pi}{2}=1-\frac{\pi}{2}.
+\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算二重积分 $\iint\limits_{D}\sqrt{1-x^{2}-y^{2}}\,\mathrm{d}\sigma$，其中 $D=\{(x,y)\mid x^{2}+y^{2}\leqslant y\}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">如图所示，由对称性，用极坐标，得【图】与原点相切、圆心在 $y$ 轴正半轴上的圆形区域。
+$$\begin{aligned}
+\iint\limits_{D}\sqrt{1-x^2-y^2}\,\mathrm{d}x\mathrm{d}y&amp;=2\int_0^{\frac{\pi}{2}}\mathrm{d}\theta\int_0^{\sin\theta}\sqrt{1-r^2}\,r\,\mathrm{d}r\\
+&amp;=-\int_0^{\frac{\pi}{2}}\mathrm{d}\theta\int_0^{\sin\theta}(1-r^2)^{\frac{1}{2}}\,\mathrm{d}(1-r^2)\\
+&amp;=-\int_0^{\frac{\pi}{2}}\Bigg[\frac{2}{3}(1-r^2)^{\frac{3}{2}}\Bigg|_0^{\sin\theta}\Bigg]\mathrm{d}\theta\\
+&amp;=-\frac{2}{3}\int_0^{\frac{\pi}{2}}(\cos^3\theta-1)\,\mathrm{d}\theta\\
+&amp;=-\frac{2}{3}\Big(\frac{2}{3}-\frac{\pi}{2}\Big)=\frac{\pi}{3}-\frac{4}{9}.
+\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面区域 $D=\{(x,y)\mid x^{3}\leqslant y\leqslant 1,-1\leqslant x\leqslant 1\}$，$f(x)$ 是定义在 $[-a,a]\ (a\geqslant 1)$ 上的任意连续函数，求 $\iint\limits_{D}[(x+1)f(x)+(x-1)f(-x)]\sin y\,\mathrm{d}x\mathrm{d}y$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f(x)+f(-x)$ 为偶函数，因而 $x[f(x)+f(-x)]$ 为奇函数，又 $f(x)-f(-x)$ 为奇函数，从而 $(x+1)f(x)+(x-1)f(-x)=x[f(x)+f(-x)]+[f(x)-f(-x)]$ 为奇函数，于是
+$$\begin{aligned}
+\text{原积分}&amp;=\int_{-1}^{1}\big[(x+1)f(x)+(x-1)f(-x)\big]\mathrm{d}x\int_{x^3}^{1}\sin y\,\mathrm{d}y\\
+&amp;=\int_{-1}^{1}(\cos x^3-\cos 1)\big[(x+1)f(x)+(x-1)f(-x)\big]\mathrm{d}x=0.
+\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $I=\int_{0}^{1}\mathrm{d}y\int_{y}^{\sqrt{2y-y^{2}}}\frac{1}{\sqrt{x^{2}+y^{2}}\cdot\sqrt{4-x^{2}-y^{2}}}\,\mathrm{d}x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">积分区域如图所示【图】圆 $x^2+y^2=2y$（与 $x$ 轴相切于原点）与直线 $y=x$，阴影为二者围成的位于直线 $y=x$ 右上方的区域。，则
+$$\begin{aligned}
+I&amp;=\int_0^1\mathrm{d}y\int_y^{\sqrt{2y-y^2}}\frac{1}{\sqrt{x^2+y^2}\cdot\sqrt{4-x^2-y^2}}\,\mathrm{d}x\\
+&amp;=\int_0^{\frac{\pi}{4}}\mathrm{d}\theta\int_0^{2\sin\theta}\frac{1}{\sqrt{4-r^2}}\,\mathrm{d}r=\int_0^{\frac{\pi}{4}}\Bigg(\arcsin\frac{r}{2}\Bigg|_0^{2\sin\theta}\Bigg)\mathrm{d}\theta\\
+&amp;=\int_0^{\frac{\pi}{4}}\theta\,\mathrm{d}\theta=\frac{1}{2}\theta^2\Bigg|_0^{\frac{\pi}{4}}=\frac{\pi^2}{32}.
+\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $\iint\limits_{D}f(x,y)\,\mathrm{d}\sigma$，其中 $D=\{(x,y)\mid x^{2}+y^{2}\geqslant 2x\}$，
+$$f(x,y)=\begin{cases}y,&amp;1\leqslant x\leqslant 2,0\leqslant y\leqslant x,\\0,&amp;\text{其他}.\end{cases}$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">被积函数 $f(x,y)$ 的非零区域和积分区域的公共部分如图所示，故
+$$\iint_{D} f(x,y)\,\mathrm{d}\sigma=\int_{0}^{\frac{\pi}{4}}\mathrm{d}\theta\int_{2\cos\theta}^{\frac{2}{\cos\theta}} r\sin\theta\cdot r\,\mathrm{d}r$$
+$$=\frac{1}{3}\int_{0}^{\frac{\pi}{4}}\left(\sin\theta\cdot r^{3}\Big|_{r=2\cos\theta}^{r=\frac{2}{\cos\theta}}\right)\mathrm{d}\theta$$
+$$=\frac{8}{3}\int_{0}^{\frac{\pi}{4}}\left(\frac{\sin\theta}{\cos^{3}\theta}-\cos^{3}\theta\sin\theta\right)\mathrm{d}\theta$$
+$$=\frac{8}{3}\left(\frac{1}{2}\cdot\frac{1}{\cos^{2}\theta}+\frac{1}{4}\cos^{4}\theta\right)\Big|_{0}^{\frac{\pi}{4}}$$
+$$=\frac{5}{6}.$$
+【图】直角坐标系中画出直线 $y=x$ 与圆 $x^{2}+y^{2}=2x$，圆过原点，标注 $x$ 轴上点 1、2，$y$ 轴上点 1、2，积分区域为直线与圆围成的公共部分。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设平面区域 $D=\{(x,y)\mid x+y\leqslant 1,x\geqslant 0,y\geqslant 0\}$，计算 $\iint\limits_{D}\frac{\mathrm{e}^{-(x+y)}}{\sqrt{xy}}\,\mathrm{d}\sigma$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　用极坐标系.
+$$原式=\int_{0}^{\frac{\pi}{2}}\mathrm{d}\theta\int_{0}^{\frac{1}{\cos\theta+\sin\theta}}\frac{\mathrm{e}^{-r(\cos\theta+\sin\theta)}}{\sqrt{\cos\theta\sin\theta}}\,\mathrm{d}r$$
+$$=\int_{0}^{\frac{\pi}{2}}\left[\frac{1}{\sqrt{\cos\theta\sin\theta}}\cdot\frac{-1}{\cos\theta+\sin\theta}\cdot\mathrm{e}^{-r(\cos\theta+\sin\theta)}\Big|_{r=0}^{r=\frac{1}{\cos\theta+\sin\theta}}\right]\mathrm{d}\theta$$
+$$=\left(1-\frac{1}{\mathrm{e}}\right)\int_{0}^{\frac{\pi}{2}}\frac{1}{(\cos\theta+\sin\theta)\sqrt{\cos\theta\sin\theta}}\,\mathrm{d}\theta$$
+$$=\left(1-\frac{1}{\mathrm{e}}\right)\int_{0}^{\frac{\pi}{2}}\frac{\mathrm{d}\theta}{\cos^{2}\theta(1+\tan\theta)\sqrt{\tan\theta}}$$
+$$=\left(1-\frac{1}{\mathrm{e}}\right)\int_{0}^{\frac{\pi}{2}}\frac{\mathrm{d}(\tan\theta)}{(1+\tan\theta)\sqrt{\tan\theta}}$$
+$$\xlongequal{\tan\theta=u}\left(1-\frac{1}{\mathrm{e}}\right)\int_{0}^{+\infty}\frac{\mathrm{d}u}{(1+u)\sqrt{u}}$$
+$$=\left(1-\frac{1}{\mathrm{e}}\right)\cdot 2\int_{0}^{+\infty}\frac{\mathrm{d}(\sqrt{u})}{1+(\sqrt{u})^{2}}$$
+$$=2\left(1-\frac{1}{\mathrm{e}}\right)\cdot\arctan\sqrt{u}\Big|_{0}^{+\infty}$$
+$$=\pi\left(1-\frac{1}{\mathrm{e}}\right).$$
+方法二　用换元法.
+令 $\begin{cases} u=-(x+y), \\ v=x, \end{cases}$ 则 $D'=\{(u,v)\mid -1\leqslant u\leqslant 0,\ 0\leqslant v\leqslant 1,\ -1\leqslant u+v\leqslant 0\}$，区域 $D‘$ 如图中阴影部分所示.
+【图】$uOv$ 坐标系中由三条直线围成的阴影平行区域，标注 $u$ 轴上 $-1$、$v$ 轴上 $1$ 和 $-1$。
+$$原式=\iint_{D’} \frac{\mathrm{e}^{u}}{\sqrt{v(-v-u)}}\left|\begin{vmatrix} \frac{\partial x}{\partial u} &amp; \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} &amp; \frac{\partial y}{\partial v} \end{vmatrix}\right|\,\mathrm{d}u\,\mathrm{d}v=\iint_{D'} \frac{\mathrm{e}^{u}}{\sqrt{v(-v-u)}}\,\mathrm{d}u\,\mathrm{d}v$$
+$$=\int_{-1}^{0}\mathrm{d}u\int_{0}^{-u}\frac{\mathrm{e}^{u}}{\sqrt{-v^{2}-uv}}\,\mathrm{d}v=\int_{-1}^{0}\mathrm{e}^{u}\left(\arcsin\frac{v+\dfrac{u}{2}}{-\dfrac{u}{2}}\Big|_{v=0}^{v=-u}\right)\mathrm{d}u$$
+$$=\int_{-1}^{0}\mathrm{e}^{u}\left(\frac{\pi}{2}+\frac{\pi}{2}\right)\mathrm{d}u=\int_{-1}^{0}\pi\mathrm{e}^{u}\,\mathrm{d}u=\pi\left(1-\frac{1}{\mathrm{e}}\right).$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知平面区域 $D=\{(x,y)\mid(x-1)^{2}+y^{2}\leqslant 1\}$，计算二重积分 $I=\iint\limits_{D}(x^{2}-3y^{2})\,\mathrm{d}x\mathrm{d}y$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　选用极坐标系.
+对于 $(x-1)^{2}+y^{2}\leqslant 1$，即 $x^{2}+y^{2}\leqslant 2x$，转化成 $r^{2}\leqslant 2r\cos\theta$，即 $r\leqslant 2\cos\theta$. 由此，$\cos\theta\geqslant 0$，从而 $-\dfrac{\pi}{2}\leqslant\theta\leqslant\dfrac{\pi}{2}$，所求积分
+$$I=\iint_{D}(x^{2}-3y^{2})\,\mathrm{d}x\mathrm{d}y=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\mathrm{d}\theta\int_{0}^{2\cos\theta}\left(r^{2}\cos^{2}\theta-3r^{2}\sin^{2}\theta\right)r\,\mathrm{d}r$$
+$$=4\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left(\cos^{2}\theta-3\sin^{2}\theta\right)\cos^{4}\theta\,\mathrm{d}\theta=4\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left[4\cos^{2}\theta-\left(3\cos^{2}\theta+3\sin^{2}\theta\right)\right]\cos^{4}\theta\,\mathrm{d}\theta$$
+$$=4\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left(4\cos^{6}\theta-3\cos^{4}\theta\right)\mathrm{d}\theta=8\int_{0}^{\frac{\pi}{2}}\left(4\cos^{6}\theta-3\cos^{4}\theta\right)\mathrm{d}\theta$$
+$$=8\left(4\times\frac{5}{6}\times\frac{3}{4}\times\frac{1}{2}\times\frac{\pi}{2}-3\times\frac{3}{4}\times\frac{1}{2}\times\frac{\pi}{2}\right)=\frac{\pi}{2}.$$
+方法二　平移坐标系.
+将坐标系整体向右平移一个单位，积分区域变成 $D‘=\{(x,y)\mid x^{2}+y^{2}\leqslant 1\}$，此时所求积分
+$$I=\iint_{D’}\left[(x+1)^{2}-3y^{2}\right]\mathrm{d}x\mathrm{d}y=\iint_{D'}\left(x^{2}+2x+1-3y^{2}\right)\mathrm{d}x\mathrm{d}y.$$
+根据对称性，$\iint_{D}2x\,\mathrm{d}x\mathrm{d}y=0$；
+根据轮换对称性，$\iint_{D}x^{2}\,\mathrm{d}x\mathrm{d}y=\iint_{D}y^{2}\,\mathrm{d}x\mathrm{d}y$，所以
+$$\iint_{D}(x^{2}-3y^{2})\,\mathrm{d}x\mathrm{d}y=-\iint_{D}(x^{2}+y^{2})\,\mathrm{d}x\mathrm{d}y=-\int_{-\pi}^{\pi}\mathrm{d}\theta\int_{0}^{1}r^{2}r\,\mathrm{d}r=-2\pi\times\frac{1}{4}=-\frac{\pi}{2},$$
+进而
+$$I=\pi-\frac{\pi}{2}=\frac{\pi}{2}.$$
+【注】方法一的最后一步可以通过反复进行分部积分得到，但华里士公式作为熟知公式，应当直接记住.
+方法二之所以能够进行，一个重要的前提是被积函数在平移之后仍然简单. 如果被积函数在进行平移变换之后复杂程度明显上升，那么转化积分区域可能是得不偿失的.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算二重积分 $\iint\limits_{D}(x+y^{2})\,\mathrm{d}\sigma$，其中 $D=\{(x,y)\mid x^{2}+y^{2}\leqslant x+y\}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $x^{2}+y^{2}\leqslant x+y$，得 $\left(x-\dfrac{1}{2}\right)^{2}+\left(y-\dfrac{1}{2}\right)^{2}\leqslant\dfrac{1}{2}$.
+令 $\begin{cases} x=\dfrac{1}{2}+r\cos\theta, \\ y=\dfrac{1}{2}+r\sin\theta, \end{cases}$ 其中 $0\leqslant\theta\leqslant 2\pi$，$0\leqslant r\leqslant\dfrac{1}{\sqrt{2}}$，则
+$$\iint_{D}(x+y^{2})\,\mathrm{d}\sigma=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\frac{1}{\sqrt{2}}}\left[\left(\frac{1}{2}+r\cos\theta\right)+\left(\frac{1}{2}+r\sin\theta\right)^{2}\right]r\,\mathrm{d}r$$
+$$=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\frac{1}{\sqrt{2}}}\left(\frac{3}{4}+r\cos\theta+r\sin\theta+r^{2}\sin^{2}\theta\right)r\,\mathrm{d}r$$
+$$=\int_{0}^{2\pi}\left[\left(\frac{3}{8}r^{2}+\frac{1}{3}r^{3}\cos\theta+\frac{1}{3}r^{3}\sin\theta+\frac{1}{4}r^{4}\sin^{2}\theta\right)\Big|_{0}^{\frac{1}{\sqrt{2}}}\right]\mathrm{d}\theta$$
+$$=\int_{0}^{2\pi}\left[\frac{3}{16}+\frac{1}{6\sqrt{2}}(\sin\theta+\cos\theta)+\frac{1}{16}\sin^{2}\theta\right]\mathrm{d}\theta$$
+$$=\frac{3}{8}\pi+\frac{1}{6\sqrt{2}}\left.(\sin\theta-\cos\theta)\right|_{0}^{2\pi}+\frac{1}{16}\int_{0}^{2\pi}\frac{1-\cos 2\theta}{2}\,\mathrm{d}\theta$$
+$$=\frac{3}{8}\pi+\frac{\pi}{16}=\frac{7}{16}\pi.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算二重积分 $I=\iint\limits_{D}x[1+yf(x^{2}+y^{2})]\,\mathrm{d}x\mathrm{d}y$，其中 $D$ 由曲线 $y=x^{3}$ 及直线 $y=1$，$x=-1$ 围成，$f(u)$ 为连续函数.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】因 $f(u)$ 为连续函数，故其存在原函数 $F(u)=\displaystyle\int_{0}^{u}f(t)\,\mathrm{d}t$，计算过程中利用定积分性质消去被积函数中的抽象函数，取得计算的结果.
+【解析】
+$$I=\iint_{D}x\,\mathrm{d}x\mathrm{d}y+\iint_{D}xyf(x^{2}+y^{2})\,\mathrm{d}x\mathrm{d}y$$
+$$=\int_{-1}^{1}x\,\mathrm{d}x\int_{x^{3}}^{1}\mathrm{d}y+\int_{-1}^{1}x\,\mathrm{d}x\int_{x^{3}}^{1}yf(x^{2}+y^{2})\,\mathrm{d}y$$
+$$=-\frac{2}{5}+\int_{-1}^{1}x\,\mathrm{d}x\int_{x^{3}}^{1}\frac{1}{2}f(x^{2}+y^{2})\,\mathrm{d}(x^{2}+y^{2})$$
+$$=-\frac{2}{5}+\frac{1}{2}\int_{-1}^{1}x\left[F(x^{2}+1)-F(x^{2}+x^{6})\right]\mathrm{d}x,$$
+其中 $x\left[F(x^{2}+1)-F(x^{2}+x^{6})\right]$ 是在 $[-1,1]$ 上的奇函数，所以 $\displaystyle\int_{-1}^{1}x\left[F(x^{2}+1)-F(x^{2}+x^{6})\right]\mathrm{d}x=0$.
+综上，$I=\iint_{D}x\left[1+yf(x^{2}+y^{2})\right]\mathrm{d}x\mathrm{d}y=-\dfrac{2}{5}.$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="15" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算 $\iint\limits_{D}\sqrt{\frac{1-x^{2}-y^{2}}{1+x^{2}+y^{2}}}\,\mathrm{d}x\mathrm{d}y$，其中 $D$ 为圆 $x^{2}+y^{2}=1$ 所包围的在第一象限内的区域.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\begin{cases} x=r\cos\theta, \\ y=r\sin\theta, \end{cases}$ 其中 $\begin{cases} 0\leqslant\theta\leqslant\dfrac{\pi}{2}, \\ 0\leqslant r\leqslant 1, \end{cases}$ 则有
+$$\iint_{D}\sqrt{\frac{1-x^{2}-y^{2}}{1+x^{2}+y^{2}}}\,\mathrm{d}x\mathrm{d}y=\int_{0}^{\frac{\pi}{2}}\mathrm{d}\theta\int_{0}^{1}\sqrt{\frac{1-r^{2}}{1+r^{2}}}\,r\,\mathrm{d}r$$
+$$=\frac{\pi}{2}\cdot\frac{1}{2}\int_{0}^{1}\sqrt{\frac{1-r^{2}}{1+r^{2}}}\,\mathrm{d}(r^{2})\xlongequal{\text{令} r^{2}=t}\frac{\pi}{4}\int_{0}^{1}\sqrt{\frac{1-t}{1+t}}\,\mathrm{d}t$$
+$$=\frac{\pi}{4}\int_{0}^{1}\frac{1-t}{\sqrt{1-t^{2}}}\,\mathrm{d}t=\frac{\pi}{4}\left(\int_{0}^{1}\frac{\mathrm{d}t}{\sqrt{1-t^{2}}}-\int_{0}^{1}\frac{t}{\sqrt{1-t^{2}}}\,\mathrm{d}t\right)$$
+$$=\frac{\pi}{4}\left.(\arcsin t+\sqrt{1-t^{2}})\right|_{0}^{1}=\frac{\pi}{8}(\pi-2).$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-14.html">上一章：第13章 多元函数微分学</a>
+      <a class="chapter-link" href="chapter-16.html">下一章：第15章 微分方程</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 15, "total": 24, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

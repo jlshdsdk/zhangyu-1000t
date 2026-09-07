@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式<span class="top-count">（22题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=x(2x-3)(4x-5)$, 则方程 $f'(x)=0$ 的实根个数为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x)=0$ 的实根为 $x_1=0$，$x_2=\dfrac{5}{4}$，$x_3=\dfrac{3}{2}$，即 $f(0)=f\left(\dfrac{5}{4}\right)=f\left(\dfrac{3}{2}\right)$，且 $f(x)$ 可导，则由罗尔定理，存在 $\xi_1\in\left(0,\dfrac{5}{4}\right)$，使 $f'(\xi_1)=0$；存在 $\xi_2\in\left(\dfrac{5}{4},\dfrac{3}{2}\right)$，使 $f'(\xi_2)=0$，故 $f'(x)=0$ 至少有两个实根. 又 $f'(x)=0$ 为一元二次方程，至多有两个实根. 综上，选 (C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若方程 $x-\mathrm{e}\ln x-k=0$ 在 $(0,1]$ 上有解, 则 $k$ 的最小值为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\mathrm{e}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $f(x)=x-\ln x-k$，则 $f'(x)=1-\dfrac{1}{x}&lt;0$，$x\in(0,1]$，这表明 $f(x)$ 在 $(0,1]$ 上单调递减，因而它在 $(0,1]$ 上最多只有一个零点.又 $\lim\limits_{x\to 0^+}f(x)=+\infty$，由极限的保号性，存在 $r$，$0&lt;r&lt;1$，使得 $f(r)&gt;0$. $f(x)$ 在 $[r,1]$ 上连续，$f(r)&gt;0$，$f(1)=1-k$.当 $f(1)=1-k=0$，即 $k=1$ 时，$x=1$ 是 $f(x)$ 的一个零点，即 $x=1$ 是方程 $x-\ln x-k=0$ 的一个解.当 $f(1)=1-k&lt;0$，即 $k&gt;1$ 时，由在闭区间上连续函数的零点定理，知函数 $f(x)$ 在 $(r,1)\subset(0,1)$ 内有一个零点，即方程 $x-\ln x-k=0$ 在 $(0,1)$ 内有一个解.当 $f(1)=1-k&gt;0$，即 $k&lt;1$ 时，在 $(0,1]$ 上 $f(x)&gt;0$，这时方程 $x-\ln x-k=0$ 在 $(0,1]$ 上没有解. 因此，如果方程 $x-\ln x-k=0$ 在 $(0,1]$ 上有解，则 $k$ 的最小值为 1.故正确选项为 (C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=a\mathrm{e}^{x}-bx\,(a&gt;0)$ 有两个零点, 则 $\dfrac{b}{a}$ 的取值范围是(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\left(0,\dfrac{1}{\mathrm{e}}\right)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(0,\mathrm{e})$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\left(\dfrac{1}{\mathrm{e}},+\infty\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(\mathrm{e},+\infty)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x)$ 的定义域为 $(-\infty,+\infty)$.显然 $b&gt;0$，否则 $f(x)$ 是单调增加函数，与条件矛盾.$f'(x)=a\mathrm{e}^x-b$，令 $f'(x)=0$，得驻点 $x=\ln\dfrac{b}{a}$.当 $x\in\left(-\infty,\ln\dfrac{b}{a}\right)$ 时，$f'(x)&lt;0$，则 $f(x)$ 单调递减.当 $x\in\left(\ln\dfrac{b}{a},+\infty\right)$ 时，$f'(x)&gt;0$，则 $f(x)$ 单调递增.当 $x\to-\infty$ 时，$f(x)\to+\infty$，当 $x\to+\infty$ 时，$f(x)\to+\infty$.因此 $f\left(\ln\dfrac{b}{a}\right)$ 是最小值. 故当 $f\left(\ln\dfrac{b}{a}\right)=a\mathrm{e}^{\ln\frac{b}{a}}-b\ln\dfrac{b}{a}=b\left(1-\ln\dfrac{b}{a}\right)&lt;0$ 时，$f(x)$ 有两个零点（见图），此时 $\dfrac{b}{a}&gt;\mathrm{e}$，即 $\dfrac{b}{a}\in(\mathrm{e},+\infty)$.【图】坐标系中曲线 $y=f(x)$ 呈先降后升的U形，与 $x$ 轴有两个交点，驻点横轴位置标注 $\ln\dfrac{b}{a}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x)=\ln x-\dfrac{x}{\mathrm{e}}+a\,(x&gt;0)$ 有两个零点, 则 $a$ 的取值范围是(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(-1,0)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(0,1)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(-\infty,0)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(0,+\infty)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f'(x)=\frac{1}{x}-\frac{1}{\mathrm{e}}=\frac{\mathrm{e}-x}{\mathrm{e}x}\stackrel{令}{=}0,$$得 $x=\mathrm{e}$. 又 $f''(x)=-\dfrac{1}{x^2}&lt;0$，故 $x=\mathrm{e}$ 是唯一极大值点，极大值为 $f(\mathrm{e})=a$.又$$\begin{aligned}&amp;\lim_{x\to 0^+}f(x)=\lim_{x\to 0^+}\left(\ln x-\frac{x}{\mathrm{e}}+a\right)=-\infty,\\&amp;\lim_{x\to+\infty}f(x)=\lim_{x\to+\infty}\left(\ln x-\frac{x}{\mathrm{e}}+a\right)\\&amp;\qquad=\lim_{x\to+\infty}x\left(\frac{\ln x}{x}-\frac{1}{\mathrm{e}}+\frac{a}{x}\right)=-\infty,\end{aligned}$$于是当 $a&gt;0$ 时，$f(\mathrm{e})&gt;0$，且 $f(x)$ 在 $(0,\mathrm{e})$，$(\mathrm{e},+\infty)$ 上均单调，由零点定理知，$f(x)$ 有两个零点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="7" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设存在 $0&lt;\theta&lt;1$, 使得 $\arcsin x=\dfrac{x}{\sqrt{1-(\theta x)^{2}}}$, $-1\leqslant x\leqslant 1$, 则 $\lim\limits_{x\to 0}\theta=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\arcsin x=\dfrac{x}{\sqrt{1-(\theta x)^2}}$，可得当 $x\neq 0$ 时，$$\theta^2=\frac{1-\dfrac{x^2}{\arcsin^2 x}}{x^2}=\frac{\arcsin^2 x-x^2}{\arcsin^2 x\cdot x^2},$$故$$\begin{aligned}\lim_{x\to 0}\theta&amp;=\lim_{x\to 0}\sqrt{\frac{\arcsin^2 x-x^2}{\arcsin^2 x\cdot x^2}}\\&amp;=\lim_{x\to 0}\sqrt{\frac{(\arcsin x+x)(\arcsin x-x)}{x^4}}.\end{aligned}$$因为当 $x\to 0$ 时，$\arcsin x=x+\dfrac{1}{6}x^3+o(x^3)$，故 $(\arcsin x+x)(\arcsin x-x)\sim\dfrac{1}{3}x^4(x\to 0)$.所以原式 $=\dfrac{\sqrt{3}}{3}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\sqrt{3}}{3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x&gt;0$, 证明 $\dfrac{x}{1+x}&lt;\ln(1+x)&lt;x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(t)=\ln(1+t)$，$t&gt;0$，在 $[0,x]$ 上对 $f(t)$ 用拉格朗日中值定理，有$$f(x)-f(0)=f'(\xi)(x-0),\xi\in(0,x),$$即 $\ln(1+x)=\dfrac{1}{1+\xi}\cdot x$，由于 $\dfrac{1}{1+x}&lt;\dfrac{1}{1+\xi}&lt;1$，故 $\dfrac{x}{1+x}&lt;\ln(1+x)&lt;x(x&gt;0)$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x&gt;0$, 证明 $\dfrac{1}{1+x}&lt;\ln\left(1+\dfrac{1}{x}\right)&lt;\dfrac{1}{x}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(t)=\ln t$，$t&gt;0$，在 $[x,1+x]$ 上对 $f(t)$ 用拉格朗日中值定理，有$$\ln(1+x)-\ln x=\frac{1}{\xi},x&lt;\xi&lt;x+1,$$故 $\dfrac{1}{1+x}&lt;\ln\left(1+\dfrac{1}{x}\right)&lt;\dfrac{1}{x}(x&gt;0)$.【注】$\ln\left(1+\dfrac{1}{x}\right)=\ln\dfrac{1+x}{x}=\ln(1+x)-\ln x$，这一步构造出了 $f(b)-f(a)$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 可导, 且 $|f'(x)|\leqslant 1$, $f(0)=1$, 证明 $|f(x)|\leqslant 1+x, 0&lt;x&lt;1$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因 $f(x)-f(0)=f'(\xi)x$，$x\in(0,1)$，$\xi\in(0,x)$，又 $f(0)=1$，$|f'(\xi)|\leqslant 1$，于是当 $0&lt;x&lt;1$ 时，有$$|f(x)|=|f(0)+f'(\xi)x|\leqslant 1+|f'(\xi)|x\leqslant 1+x.$$【注】进一步地，令 $f(0)=f(1)=1$，由 $-1\leqslant f'(x)\leqslant 1$，可证得当 $0&lt;x&lt;1$ 时，$$f(x)=f(0)+f'(\xi_1)x\leqslant 1+x,\xi_1\in(0,x),$$$$f(x)=f(0)+f'(\xi_2)x\geqslant 1-x,\xi_2\in(0,x),$$$$f(x)=f(1)+f'(\xi_3)(x-1)\geqslant 1+(x-1)=x,\xi_3\in(x,1),$$$$f(x)=f(1)+f'(\xi_4)(x-1)\leqslant 1-(x-1)=2-x,\xi_4\in(x,1),$$也即 $f(x)$ 在 $(0,1)$ 上被包在 $y=1+x$，$y=x$，$y=1-x$，$y=2-x$ 四条直线所围平面区域内（见图）. 这能直观地让考生感受到拉格朗日中值定理的重要作用之一：用 $f'(x)$ 的大小来限定 $f(x)$ 的变化幅度大小. 此题中，由于 $|f'(x)|\leqslant 1$，故 $f(x)$ 被限定在一个小的区域内.【图】直角坐标系中画出 $y=1+x$，$y=x$，$y=1-x$，$y=2-x$ 四条直线围成的区域，曲线 $y=f(x)$ 位于该区域内，标注点 $y$ 轴上的 1、2 与 $x$ 轴上的 1、2。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $[a,+\infty)\,(a&gt;0)$ 上一阶导数连续, $\lim\limits_{x\to+\infty}f'(x)=0$, 则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\lim\limits_{x\to+\infty}[f(2x)+f(x)]=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim\limits_{x\to+\infty}[f(2x)-f(x)]=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\lim\limits_{x\to+\infty}[f(x+1)-f(x)]=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim\limits_{x\to+\infty}[f(x+1)+f(x)]=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由拉格朗日中值定理知，$$f(x+1)-f(x)=f'(\xi),x&lt;\xi&lt;x+1,$$故 $\lim\limits_{x\to+\infty}[f(x+1)-f(x)]=\lim\limits_{x\to+\infty}f'(\xi)\xlongequal{x&lt;\xi&lt;x+1}\lim\limits_{\xi\to+\infty}f'(\xi)=0$. (C) 正确.取 $f(x)=\sqrt{x}$，则$$\begin{aligned}&amp;\lim_{x\to+\infty}(\sqrt{2x}+\sqrt{x})=+\infty,\\&amp;\lim_{x\to+\infty}(\sqrt{2x}-\sqrt{x})=+\infty,\\&amp;\lim_{x\to+\infty}(\sqrt{x+1}+\sqrt{x})=+\infty.\end{aligned}$$可排除 (A)，(B)，(D).【注】当 $x\to+\infty$ 时，$f'(x)\to 0$. 意味着当 $x\to+\infty$ 时，$f(x)$ 的变化率 $\to 0$，于是 $f(x+1)-f(x)\to 0(x\to+\infty)$ 也就顺理成章了.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="7" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 在 $x=1$ 处一阶导数连续, 且 $f'(1)=2$, 则 $\lim\limits_{x\to 1^{+}}\dfrac{f(x)-f(1)}{\ln x}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\ln 1=0$，当 $x&gt;1$ 时，$$\frac{f(x)-f(1)}{\ln x}=\frac{f(x)-f(1)}{\ln x-\ln 1}\xlongequal{\text{柯西中值定理}}\frac{f'(\xi)}{\dfrac{1}{\xi}}=\xi f'(\xi),1&lt;\xi&lt;x.$$当 $x\to 1^+$ 时，$\xi\to 1^+$，于是原式 $=\lim\limits_{\xi\to 1^+}\xi f'(\xi)=f'(1)=2$.【注】本题用洛必达法则或导数定义法亦可.$$\lim_{x\to 1^+}\frac{f(x)-f(1)}{\ln x}\xlongequal{\text{洛必达法则}}\lim_{x\to 1^+}\frac{f'(x)}{\dfrac{1}{x}}=\lim_{x\to 1^+}xf'(x)=2.$$如何用导数定义求解？见下题.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f'(1)=2$, 计算 $\lim\limits_{x\to 1^{+}}\dfrac{f(x)-f(1)}{\ln x}$, 并指出与第 10 题的区别.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">注意本题与上题的区别，本题未讲 $f(x)$ 在 $x=1$ 处一阶导数连续，只有 $f(x)$ 在 $x=1$ 处可导，上述洛必达法则和柯西中值定理均不可用. 改用导数的定义：$$\text{原式}=\lim_{x\to 1^+}\frac{\dfrac{f(x)-f(1)}{x-1}}{\dfrac{\ln x-\ln 1}{x-1}}=\frac{f'_+(1)}{\left.\dfrac{1}{x}\right|_{x=1}}=\frac{2}{1}=2.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">(1) 将 $\sin x$ 在 $x=0$ 处展开成一阶带拉格朗日余项的泰勒公式; (2) 证明 $\left|\dfrac{\sin x}{x}-1\right|\leqslant \dfrac{1}{2}\,|x|\,, x\neq 0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）$\sin x=\sin 0+(\sin x)'\Big|_{x=0}\cdot x+\dfrac{(\sin x)''\Big|_{x=\xi}}{2!}\cdot x^2$$$=x-\frac{\sin \xi}{2}x^2(\xi\text{ 介于 }0,x\text{ 之间}).$$（2）$\left|\dfrac{\sin x}{x}-1\right|=\left|\dfrac{x-\dfrac{\sin \xi}{2}x^2}{x}-1\right|=\left|1-\dfrac{\sin \xi}{2}x-1\right|\leqslant\dfrac{1}{2}\mid x\mid(x\neq 0).$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求曲线 $y=\mathrm{e}^{-\frac{1}{x}}$ 与曲线 $y=x^{3}-3x$ 的交点个数.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\mathrm{e}^{-\frac{x}{2}}-x^3+3x$，则$$f'(x)=-\frac{1}{2}\mathrm{e}^{-\frac{x}{2}}-3x^2+3,$$$$f''(x)=\frac{1}{4}\mathrm{e}^{-\frac{x}{2}}-6x,$$$$f'''(x)=-\frac{1}{8}\mathrm{e}^{-\frac{x}{2}}-6,$$至此，由 $\mathrm{e}^{-\frac{x}{2}}&gt;0$，有 $f'''(x)&lt;0$，即 $f'''(x)=0$ 无实根，则 $f(x)=0$ 至多有 3 个实根.取 $x=-\sqrt{3}$，有 $f(-\sqrt{3})=\mathrm{e}^{\frac{\sqrt{3}}{2}}&gt;0$；取 $x=-1$，有 $f(-1)=\mathrm{e}^{\frac{1}{2}}-2&lt;0$；取 $x=1$，有 $f(1)=\mathrm{e}^{-\frac{1}{2}}+2&gt;0$；取 $x=2$，有 $f(2)=\mathrm{e}^{-1}-2&lt;0$.故 $f(x)=0$ 在 $(-\sqrt{3},-1)$，$(-1,1)$，$(1,2)$ 内各有一个实根.综上，两曲线恰有 3 个交点.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是连续可导函数, 当 $0&lt;a&lt;x&lt;b$ 时, 恒有 $xf'(x)&lt;f(x)$, 则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$af(x)&gt;xf(a)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$bf(x)&gt;xf(b)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$xf(x)&gt;bf(b)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$xf(x)&lt;af(a)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x)=\dfrac{f(x)}{x}$，则$$F'(x)=\frac{xf'(x)-f(x)}{x^2}.$$又因为当 $0&lt;a&lt;x&lt;b$ 时，$xf'(x)&lt;f(x)$，所以在 $(a,b)$ 内有 $F'(x)&lt;0$，$F(x)$ 单调减少，从而 $F(a)&gt;F(x)&gt;F(b)$，即$$\frac{f(a)}{a}&gt;\frac{f(x)}{x}&gt;\frac{f(b)}{b}.$$故选项 (B) 成立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">方程 $x^{4}+4x+b=0$ 有两个不等的实根, 则 $b$ 的取值满足(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$b&lt;3$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$b&gt;3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$b&lt;-3$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$b&gt;-3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　设 $f(x)=x^4+4x+b$，方程有两个不等实根，等价于函数 $f(x)$ 有两个零点，根据 4 次函数的几何图形可知，此时 $f(x)$ 的极小值应小于零.$$f'(x)=4x^3+4=4(x+1)(x^2-x+1).$$由 $f'(x)=0$ 得唯一驻点 $x=-1$.又$$f''(x)=12x^2\geqslant 0,$$所以 $x=-1$ 为极小值点.由 $f(-1)=1-4+b&lt;0$ 可得 $b&lt;3$.方法二　令 $f_1(x)=x^4$，$f_2(x)=-4x-b$，如图所示，方程 $x^4+4x+b=0$ 有两个不等的实根意味着 $f_1(x)$ 与 $f_2(x)$ 有两个交点.当 $f_2(x)$ 与 $f_1(x)$ 相切时，$f_1(x)$ 与 $f_2(x)$ 恰好有一个交点，此时$$f_1'(x)=4x^3=f_2'(x)=-4,$$解得 $x=-1$，此时 $f_1(-1)=1$，因此 $f_2(-1)=4-b=1$，即 $b=3$，则 $f_2(x)=-4x-3$.结合图形，知 $-b&gt;-3$，即 $b&lt;3$ 时，才能使得 $f_1(x)$ 与 $f_2(x)$ 有两个交点.【图】直角坐标系中画出开口向上的曲线 $f_1(x)=x^4$ 与直线 $f_2(x)=-4x-b$，直线过 $y$ 轴上标注的 $-b$ 处，两曲线有两个交点。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设常数 $k&gt;0$, 函数 $f(x)=\dfrac{1}{\ln x-\dfrac{x}{\mathrm{e}}+k}$ 在 $(0,+\infty)$ 内的间断点个数为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">0</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $g(x)=\ln x-\dfrac{x}{\mathrm{e}}+k$，易知 $g'(x)=\dfrac{1}{x}-\dfrac{1}{\mathrm{e}}$. 当 $x&gt;\mathrm{e}$ 时，$g'(x)&lt;0$；当 $0&lt;x&lt;\mathrm{e}$ 时，$g'(x)&gt;0$. 故在 $(0,\mathrm{e})$ 和 $(\mathrm{e},+\infty)$ 内 $g(x)$ 分别至多有一个零点. 又 $g(\mathrm{e})=k&gt;0$，$\lim\limits_{x\to 0^+}g(x)=-\infty$，$\lim\limits_{x\to+\infty}g(x)=-\infty$. 所以 $g(x)$ 在 $(0,+\infty)$ 内有两个零点. 不妨设 $g(x)$ 的两个零点分别为 $x_1$ 和 $x_2$，又 $\lim\limits_{x\to x_1}f(x)=\infty$，$\lim\limits_{x\to x_2}f(x)=\infty$，故 $x_1$ 和 $x_2$ 均为 $f(x)$ 的无穷间断点，所以 $f(x)$ 在 $(0,+\infty)$ 内有两个间断点，故答案选 (B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x),g(x)$ 为恒大于零的可导函数, 且 $f'(x)g(x)&lt;f(x)g'(x)$, 则当 $a&lt;x&lt;b$ 时, 下列不等式恒成立的是(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(a)g(x)&gt;f(x)g(b)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(x)g(a)&gt;f(b)g(x)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(a)g(b)&gt;f(b)g(x)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(x)g(b)&gt;f(b)g(x)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x)=\dfrac{f(x)}{g(x)}$，由 $f'(x)g(x)-f(x)g'(x)&lt;0$ 可知$$F'(x)=\left[\frac{f(x)}{g(x)}\right]'=\frac{f'(x)g(x)-f(x)g'(x)}{g^2(x)}&lt;0.$$从而函数 $\dfrac{f(x)}{g(x)}$ 单调减少，故有 $\dfrac{f(a)}{g(a)}&gt;\dfrac{f(x)}{g(x)}&gt;\dfrac{f(b)}{g(b)}$.由上述不等式可知选项 (A)，(B)，(C) 三个不等式不一定成立.而由 $\dfrac{f(x)}{g(x)}&gt;\dfrac{f(b)}{g(b)}$ 可知选项 (D) 正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $0\leqslant x\leqslant 1$, $p&gt;1$, 证明 $\dfrac{1}{2^{p-1}}\leqslant x^{p}+(1-x)^{p}\leqslant 1$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】欲证不等式需找出基本函数 $f(x)$，按常规方法求出 $f(x)$ 的极值与最值，再进行比较，即可得证.【解析】令 $f(x)=x^p+(1-x)^p$，则$$\begin{aligned}f'(x)&amp;=px^{p-1}+p(1-x)^{p-1}(-1)=p\left[x^{p-1}-(1-x)^{p-1}\right],\\f''(x)&amp;=p(p-1)x^{p-2}+p(p-1)(1-x)^{p-2}.\end{aligned}$$令 $f'(x)=0$ 可得 $x=\dfrac{1}{2}$.又因 $p&gt;1$，故 $f''\left(\dfrac{1}{2}\right)=2p(p-1)\left(\dfrac{1}{2}\right)^{p-2}&gt;0$，于是 $f(x)$ 在 $x=\dfrac{1}{2}$ 处取得极小值 $f\left(\dfrac{1}{2}\right)=\dfrac{1}{2^{p-1}}$.由于 $f(0)=f(1)=1$，于是 $f(x)$ 在 $[0,1]$ 上的最小值为 $\dfrac{1}{2^{p-1}}$，最大值为 1.故有$$\frac{1}{2^{p-1}}\leqslant f(x)\leqslant 1,$$即$$\frac{1}{2^{p-1}}\leqslant x^p+(1-x)^p\leqslant 1.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对于 $k$ 的不同取值情况, 确定方程 $x^{3}-3x+k=0$ 实根的个数, 并证明你的结论.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】方程 $x^3-3x+k=0$ 是三次方程，它可能有一个实根，两个实根或者三个实根. 根的个数取决于曲线 $y=x^3-3x+k$ 与 $x$ 轴交点的个数. 曲线 $y=x^3-3x+k$ 与 $x$ 轴相切时，该切点必为 $y=x^3-3x+k$ 的极值点.【解析】设 $y=x^3-3x+k$，则当 $x\to+\infty$ 时，$y\to+\infty$；当 $x\to-\infty$ 时，$y\to-\infty$. $y'=3x^2-3$，令 $y'=0$，可得 $x=-1$ 或 1.又 $y''=6x$，由极值点的第二充分条件可知，$y''\Big|_{x=-1}=-6&lt;0$，则 $y\Big|_{x=-1}=k+2$ 为极大值；$y''\Big|_{x=1}=6&gt;0$，则 $y\Big|_{x=1}=k-2$ 为极小值.当极大值 $k+2&lt;0$，极小值 $k-2&lt;0$ 时，方程只有一个实根. 同理，当极小值 $k-2&gt;0$，极大值
+$k+2&gt;0$ 时，方程也只有一个实根.
+当 $k+2=0$ 或 $k-2=0$ 时，方程有两个实根.
+当 $k+2&gt;0$ 且 $k-2&lt;0$ 时，方程有三个实根.
+综上，当 $k&gt;2$ 或 $k&lt;-2$ 时，方程有一个实根；当 $k=\pm 2$ 时，方程有两个实根；当 $-2&lt;k&lt;2$ 时，方程有三个实根.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="7" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上连续, 在 $(a,b)$ 内可导 $(a&gt;0)$, 证明: 在 $(a,b)$ 内 $$2x[f(b)-f(a)]=(b^{2}-a^{2})f'(x)$$ 至少有一个实根.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】欲证结论，相当于证明在 $(a,b)$ 内至少有一点满足
+$$(b^2-a^2)f'(x)-2x[f(b)-f(a)]=0.$$
+由于 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，因此，构造函数 $F(x)=(b^2-a^2)f(x)-x^2[f(b)-f(a)]$，使 $F'(x)=(b^2-a^2)f'(x)-2x[f(b)-f(a)]$，于是 $F(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导. 如果能验证 $F(a)=F(b)$，则由罗尔定理可证原命题.
+【解析】构造函数 $F(x)=(b^2-a^2)f(x)-[f(b)-f(a)]x^2$，由 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，可知 $F(x)$ 也在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，又
+$$F(a)=b^2f(a)-a^2f(b)=F(b),$$
+则由罗尔定理可知，至少存在一点 $\xi \in (a,b)$，使
+$$F'(\xi)=(b^2-a^2)f'(\xi)-2[f(b)-f(a)]\xi=0,$$
+命题得证.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a_{0}+\dfrac{a_{1}}{2}+\cdots+\dfrac{a_{n}}{n+1}=0\,(a_{i}$ 为实数, $i=0,1,2,\cdots,n)$, 则在区间 $(0,1)$ 内, 方程 $a_{0}+a_{1}x+\cdots+a_{n}x^{n}=0$(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">没有实根</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">至少有一个实根</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">仅有一个实根</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">是否有实根不能判定</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=a_0x+\frac{a_1}{2}x^2+\cdots+\frac{a_n}{n+1}x^{n+1}$，则 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且
+$$f(0)=0,\ f(1)=a_0+\frac{a_1}{2}+\cdots+\frac{a_n}{n+1}=0.$$
+故由罗尔定理知，至少存在一点 $\xi \in (0,1)$，使 $f'(\xi)=0$，即 $a_0+a_1\xi+\cdots+a_n\xi^n=0$，亦即方程 $a_0+a_1x+\cdots+a_nx^n=0$ 至少有一个实根 $\xi$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="7" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x),g(x)$ 为恒大于零的可导函数, 且 $[\ln f(x)]'&lt;[\ln g(x)]'$, 则当 $a&lt;x&lt;b$ 时, 必有(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{f(x)}{f(b)}&gt;\dfrac{g(x)}{g(b)}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{f(x)}{f(a)}&gt;\dfrac{g(x)}{g(a)}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{f(x)}{f(b)}&gt;\dfrac{g(b)}{g(x)}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{f(x)}{f(a)}&gt;\dfrac{g(a)}{g(x)}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $[\ln f(x)]'&lt;[\ln g(x)]'$，所以 $\frac{f'(x)}{f(x)}&lt;\frac{g'(x)}{g(x)}$，即
+$$f'(x)g(x)-g'(x)f(x)&lt;0,$$
+则
+$$\frac{f'(x)g(x)-g'(x)f(x)}{g^2(x)}&lt;0,$$
+最后得到 $\left[\frac{f(x)}{g(x)}\right]'&lt;0$，即 $\frac{f(x)}{g(x)}$ 是单调减少的函数. 由于 $a&lt;x&lt;b$，因此必有 $\frac{f(a)}{g(a)}&gt;\frac{f(x)}{g(x)}&gt;\frac{f(b)}{g(b)}$，即
+$$\frac{f(a)}{f(x)}&gt;\frac{g(a)}{g(x)},\ \frac{f(x)}{f(b)}&gt;\frac{g(x)}{g(b)}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-06.html">上一章：第5章 一元函数微分学的应用(一)——几何应用</a>
+      <a class="chapter-link" href="chapter-08.html">下一章：第7章 一元函数微分学的应用(三)——物理应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 7, "total": 22, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

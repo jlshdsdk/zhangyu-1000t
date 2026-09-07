@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章 矩阵运算 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第3章 矩阵运算<span class="top-count">（12题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="52" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 $n$ 阶矩阵，则下列说法错误的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">对任意的 $n$ 维列向量 $\boldsymbol{\xi}$，有 $\boldsymbol{A}\boldsymbol{\xi}=\boldsymbol{0}$，则 $\boldsymbol{A}=\boldsymbol{O}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">对任意的 $n$ 维列向量 $\boldsymbol{\xi}$，有 $\boldsymbol{\xi}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{\xi}=0$，则 $\boldsymbol{A}=\boldsymbol{O}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">对任意的 $n$ 阶矩阵 $\boldsymbol{B}$，有 $\boldsymbol{A}\boldsymbol{B}=\boldsymbol{O}$，则 $\boldsymbol{A}=\boldsymbol{O}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">对任意的 $n$ 阶矩阵 $\boldsymbol{B}$，有 $\boldsymbol{B}^{\mathrm{T}}\boldsymbol{A}\boldsymbol{B}=\boldsymbol{O}$，则 $\boldsymbol{A}=\boldsymbol{O}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　选项(A)，对任意的 $n$ 维列向量 $\xi$，有 $A\xi=0$. 分别取 $\xi_1=[1,0,\cdots,0]^{\mathrm{T}}$，$\xi_2=[0,1,\cdots,0]^{\mathrm{T}}$，$\cdots$，$\xi_n=[0,0,\cdots,1]^{\mathrm{T}}$ 代入，即得 $a_{ij}=0\,(i=1,2,\cdots,n;j=1,2,\cdots,n)$. 故 $A=O$. 选项(C)，(D)，对任意的 $n$ 阶矩阵 $B$，有 $AB=O$ 及 $B^{\mathrm{T}}AB=O$. 只要取 $B=E$，即可得出 $A=O$. 故由排除法，应选(B).
+方法二　对选项(B)，当 $A$ 是反对称矩阵，即 $A^{\mathrm{T}}=-A\neq O$ 时，则对任意的 $n$ 维列向量 $\xi$，因 $\xi^{\mathrm{T}}A\xi$ 是数，故有
+$$\xi^{\mathrm{T}}A\xi=(\xi^{\mathrm{T}}A\xi)^{\mathrm{T}}=\xi^{\mathrm{T}}A^{\mathrm{T}}\xi=-\xi^{\mathrm{T}}A\xi,$$
+所以 $2\xi^{\mathrm{T}}A\xi=0$，即 $\xi^{\mathrm{T}}A\xi=0$，但 $A\neq O$. 故选项(B)的说法是错误的，应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="52" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}=\begin{bmatrix}1&amp;1&amp;-1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{bmatrix}$，则 $\boldsymbol{A}^{10}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $A=E+B$，其中 $B=\begin{pmatrix}0&amp;1&amp;-1\\0&amp;0&amp;1\\0&amp;0&amp;0\end{pmatrix}$. 由 $B^2=\begin{pmatrix}0&amp;0&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}$，$B^3=O$，则
+$$\begin{aligned}A^{10}&amp;=(E+B)^{10}\\&amp;=E^{10}+10E^9B+\frac{10\times9}{2}E^8B^2\\&amp;=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}+\begin{pmatrix}0&amp;10&amp;-10\\0&amp;0&amp;10\\0&amp;0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0&amp;45\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}\\&amp;=\begin{pmatrix}1&amp;10&amp;35\\0&amp;1&amp;10\\0&amp;0&amp;1\end{pmatrix}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}1&amp;10&amp;35\\0&amp;1&amp;10\\0&amp;0&amp;1\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="52" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\begin{bmatrix}1&amp;0\\-1&amp;1\end{bmatrix}^{3}\begin{bmatrix}1&amp;2\\-1&amp;3\end{bmatrix}\begin{bmatrix}0&amp;1\\1&amp;0\end{bmatrix}^{5}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $A=\begin{pmatrix}1&amp;2\\-1&amp;3\end{pmatrix}$，$B=\begin{pmatrix}1&amp;0\\-1&amp;1\end{pmatrix}$，$C=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$，则 $B^3A$ 是将 $A$ 的第 1 行的 $-1$ 倍加到第 2 行，重复 3 次，故 $B^3A=\begin{pmatrix}1&amp;2\\-4&amp;-3\end{pmatrix}$，$B^3AC^5$ 是将 $B^3A$ 的第 1 列与第 2 列互换，重复 5 次，即只互换 1 次，故
+$$\text{原式}=B^3AC^5=\begin{pmatrix}2&amp;1\\-3&amp;-4\end{pmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}2&amp;1\\-3&amp;-4\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="52" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A},\boldsymbol{B},\boldsymbol{C}$ 均是 3 阶矩阵，且满足 $\boldsymbol{A}\boldsymbol{B}=\boldsymbol{B}^2-\boldsymbol{B}\boldsymbol{C}$，其中 $\boldsymbol{B}=\begin{bmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{bmatrix}$，$\boldsymbol{C}=\begin{bmatrix}0&amp;1&amp;1\\0&amp;0&amp;1\\0&amp;0&amp;1\end{bmatrix}$，则 $\boldsymbol{A}^{99}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $|B|=\begin{vmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{vmatrix}=1\neq0$，知 $B$ 可逆，且由
+$$AB=B^2-BC=B(B-C),$$
+得 $A=B(B-C)B^{-1}$，于是
+$$A^{99}=B(B-C)B^{-1}B(B-C)B^{-1}\cdots B(B-C)B^{-1}=B(B-C)^{99}B^{-1}.$$
+又易知
+$$B^{-1}=\begin{pmatrix}1&amp;-1&amp;0\\0&amp;1&amp;-1\\0&amp;0&amp;1\end{pmatrix},B-C=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix},$$
+故
+$$\begin{aligned}A^{99}&amp;=\begin{pmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}^{99}\begin{pmatrix}1&amp;-1&amp;0\\0&amp;1&amp;-1\\0&amp;0&amp;1\end{pmatrix}\\&amp;=\begin{pmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}\begin{pmatrix}1&amp;-1&amp;0\\0&amp;1&amp;-1\\0&amp;0&amp;1\end{pmatrix}\\&amp;=\begin{pmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}\begin{pmatrix}1&amp;-1&amp;0\\0&amp;1&amp;-1\\0&amp;0&amp;0\end{pmatrix}\\&amp;=\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;-1\\0&amp;0&amp;0\end{pmatrix}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;-1\\0&amp;0&amp;0\end{pmatrix}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="52" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 $n\;(n\geqslant 2)$ 阶实对称矩阵，且满足 $\boldsymbol{E}-2\boldsymbol{A}+\boldsymbol{A}^2-2\boldsymbol{A}^3=\boldsymbol{O}$，其中 $\boldsymbol{E}$ 为 $n$ 阶单位矩阵，则 $\boldsymbol{A}=\_\_\_\_\_\_.$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意可知，
+$$E-2A+A^2-2A^3=E-2A+(E-2A)A^2=O,$$
+即
+$$(E-2A)(E+A^2)=O,$$
+因为 $|E+A^2|\neq0$，所以 $E-2A=O$，即 $A=\dfrac{E}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{E}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="52" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 是 $n$ 阶矩阵，$\boldsymbol{E}+\boldsymbol{A}$ 是可逆矩阵，则下列等式不成立的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(\boldsymbol{A}+\boldsymbol{E})(\boldsymbol{A}-\boldsymbol{E})=(\boldsymbol{A}-\boldsymbol{E})(\boldsymbol{A}+\boldsymbol{E})$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(\boldsymbol{A}+\boldsymbol{E})^{-1}(\boldsymbol{A}-\boldsymbol{E})=(\boldsymbol{A}-\boldsymbol{E})(\boldsymbol{A}+\boldsymbol{E})^{-1}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(\boldsymbol{A}+\boldsymbol{E})^{*}(\boldsymbol{A}-\boldsymbol{E})=(\boldsymbol{A}-\boldsymbol{E})(\boldsymbol{A}+\boldsymbol{E})^{*}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(\boldsymbol{A}+\boldsymbol{E})^{\mathrm{T}}(\boldsymbol{A}-\boldsymbol{E})=(\boldsymbol{A}-\boldsymbol{E})(\boldsymbol{A}+\boldsymbol{E})^{\mathrm{T}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">选项(A) 显然成立，因 $(A+E)(A-E)=A^2-E=(A-E)(A+E)$. 将选项(B) 等号两边左、右各乘 $A+E$，即得选项(A). 选项(C) 等号两边左、右各乘 $A+E$，且 $|A+E|\neq0$，消去，也是选项(A). 故选项(A)，(B)，(C) 等式均成立，由排除法，应选(D).
+选项(D) 不成立，因矩阵乘法不一定能满足交换律，举出反例，如取
+$$A=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix},$$
+则
+$$A+E=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},A-E=\begin{pmatrix}-1&amp;1\\0&amp;-1\end{pmatrix},$$
+而
+$$(A+E)^{\mathrm{T}}(A-E)=\begin{pmatrix}1&amp;0\\1&amp;1\end{pmatrix}\begin{pmatrix}-1&amp;1\\0&amp;-1\end{pmatrix}=\begin{pmatrix}-1&amp;1\\-1&amp;0\end{pmatrix},$$
+$$(A-E)(A+E)^{\mathrm{T}}=\begin{pmatrix}-1&amp;1\\0&amp;-1\end{pmatrix}\begin{pmatrix}1&amp;0\\1&amp;1\end{pmatrix}=\begin{pmatrix}0&amp;1\\-1&amp;-1\end{pmatrix},$$
+故 $(A+E)^{\mathrm{T}}(A-E)\neq(A-E)(A+E)^{\mathrm{T}}$，选项(D) 不成立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="52" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 2 阶方阵，$\boldsymbol{\alpha}$ 为 2 维非零列向量，且 $\boldsymbol{\alpha}$ 不是 $\boldsymbol{A}$ 的特征向量，$\boldsymbol{P}=[\boldsymbol{\alpha},\boldsymbol{A}\boldsymbol{\alpha}]$，$\boldsymbol{A}^2\boldsymbol{\alpha}+\boldsymbol{A}\boldsymbol{\alpha}-2\boldsymbol{\alpha}=\boldsymbol{0}$，若矩阵 $\boldsymbol{B}$ 满足 $\boldsymbol{A}\boldsymbol{P}=\boldsymbol{P}\boldsymbol{B}$，则 $\boldsymbol{B}=(\qquad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix}-1&amp;0\\1&amp;2\end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix}0&amp;1\\2&amp;-1\end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix}-1&amp;1\\0&amp;2\end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix}0&amp;2\\1&amp;-1\end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $A^2\boldsymbol{\alpha}+A\boldsymbol{\alpha}-2\boldsymbol{\alpha}=0$，故 $A^2\boldsymbol{\alpha}=2\boldsymbol{\alpha}-A\boldsymbol{\alpha}$.
+由 $AP=PB$，得 $A[\boldsymbol{\alpha},A\boldsymbol{\alpha}]=[A\boldsymbol{\alpha},A^2\boldsymbol{\alpha}]=[\boldsymbol{\alpha},A\boldsymbol{\alpha}]\begin{pmatrix}0&amp;2\\1&amp;-1\end{pmatrix}=PB$，故 $B=\begin{pmatrix}0&amp;2\\1&amp;-1\end{pmatrix}$.
+【注】设 $P=[\boldsymbol{\alpha},A\boldsymbol{\alpha}]$ 不可逆，则存在 $k\,(k$ 为常数$)$，使 $A\boldsymbol{\alpha}=k\boldsymbol{\alpha}$，与 $\boldsymbol{\alpha}$ 不是 $A$ 的特征向量矛盾，故 $P$ 可逆.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="52" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $a$ 是常数，且矩阵 $\boldsymbol{A}=\begin{bmatrix}1&amp;2&amp;a\\1&amp;3&amp;0\\2&amp;7&amp;-a\end{bmatrix}$ 可经初等列变换化为矩阵 $\boldsymbol{B}=\begin{bmatrix}1&amp;a&amp;2\\0&amp;1&amp;1\\-1&amp;1&amp;1\end{bmatrix}$.
+（1）求 $a$；
+（2）求满足 $\boldsymbol{A}\boldsymbol{P}=\boldsymbol{B}$ 的可逆矩阵 $\boldsymbol{P}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 对矩阵 $A,B$ 分别施以初等行变换，得
+$$A=\begin{pmatrix}1&amp;2&amp;a\\1&amp;3&amp;0\\2&amp;7&amp;-a\end{pmatrix}\to\begin{pmatrix}1&amp;2&amp;a\\0&amp;1&amp;-a\\0&amp;3&amp;-3a\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;3a\\0&amp;1&amp;-a\\0&amp;0&amp;0\end{pmatrix},$$
+$$B=\begin{pmatrix}1&amp;a&amp;2\\0&amp;1&amp;1\\-1&amp;1&amp;1\end{pmatrix}\to\begin{pmatrix}1&amp;a&amp;2\\0&amp;1&amp;1\\0&amp;a+1&amp;3\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;2-a\\0&amp;1&amp;1\\0&amp;0&amp;2-a\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;1\\0&amp;0&amp;2-a\end{pmatrix}.$$
+由题设知 $r(A)=r(B)$，故 $a=2$.
+(2) 由(1) 知 $a=2$. 对矩阵 $[A\mid B]$ 施以初等行变换，得
+$$[A\mid B]=\left[\begin{array}{ccc|ccc}1&amp;2&amp;2&amp;1&amp;2&amp;2\\1&amp;3&amp;0&amp;0&amp;1&amp;1\\2&amp;7&amp;-2&amp;-1&amp;1&amp;1\end{array}\right]\to\left[\begin{array}{ccc|ccc}1&amp;2&amp;2&amp;1&amp;2&amp;2\\0&amp;1&amp;-2&amp;-1&amp;-1&amp;-1\\0&amp;3&amp;-6&amp;-3&amp;-3&amp;-3\end{array}\right]\to\left[\begin{array}{ccc|ccc}1&amp;0&amp;6&amp;3&amp;4&amp;4\\0&amp;1&amp;-2&amp;-1&amp;-1&amp;-1\\0&amp;0&amp;0&amp;0&amp;0&amp;0\end{array}\right].$$
+记 $B=[\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3]$，由于
+$$A\begin{pmatrix}-6\\2\\1\end{pmatrix}=0,A\begin{pmatrix}3\\-1\\0\end{pmatrix}=\boldsymbol{\beta}_1,A\begin{pmatrix}4\\-1\\0\end{pmatrix}=\boldsymbol{\beta}_2,A\begin{pmatrix}4\\-1\\0\end{pmatrix}=\boldsymbol{\beta}_3,$$
+故 $AX=B$ 的解为
+$$X=\begin{pmatrix}3-6k_1&amp;4-6k_2&amp;4-6k_3\\-1+2k_1&amp;-1+2k_2&amp;-1+2k_3\\k_1&amp;k_2&amp;k_3\end{pmatrix},$$
+其中 $k_1,k_2,k_3$ 为任意常数.
+由于 $|X|=k_3-k_2$，因此满足 $AP=B$ 的可逆矩阵为
+$$P=\begin{pmatrix}3-6k_1&amp;4-6k_2&amp;4-6k_3\\-1+2k_1&amp;-1+2k_2&amp;-1+2k_3\\k_1&amp;k_2&amp;k_3\end{pmatrix},$$
+其中 $k_1,k_2,k_3$ 为任意常数，且 $k_2\neq k_3$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="52" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{A}$ 为 $n$ 阶可逆矩阵，$\boldsymbol{\alpha}$ 为 $n$ 维列向量，$b$ 为常数. 记分块矩阵
+$$\boldsymbol{P}=\begin{bmatrix}\boldsymbol{E}&amp;\boldsymbol{0}\\-\boldsymbol{\alpha}^{\mathrm{T}}\boldsymbol{A}^{*}&amp;|\boldsymbol{A}|\end{bmatrix},\quad\boldsymbol{Q}=\begin{bmatrix}\boldsymbol{A}&amp;\boldsymbol{\alpha}\\\boldsymbol{\alpha}^{\mathrm{T}}&amp;b\end{bmatrix},$$
+其中 $\boldsymbol{A}^{*}$ 是矩阵 $\boldsymbol{A}$ 的伴随矩阵，$\boldsymbol{E}$ 为 $n$ 阶单位矩阵.
+（1）计算并化简 $\boldsymbol{P}\boldsymbol{Q}$；
+（2）证明：矩阵 $\boldsymbol{Q}$ 可逆的充分必要条件是 $\boldsymbol{\alpha}^{\mathrm{T}}\boldsymbol{A}^{-1}\boldsymbol{\alpha}\neq b$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 因 $AA^*=A^*A=|A|E$，故
+$$\begin{aligned}PQ&amp;=\begin{pmatrix}E&amp;0\\-\boldsymbol{\alpha}^{\mathrm{T}}A^*&amp;|A|\end{pmatrix}\begin{pmatrix}A&amp;\boldsymbol{\alpha}\\\boldsymbol{\alpha}^{\mathrm{T}}&amp;b\end{pmatrix}\\&amp;=\begin{pmatrix}A&amp;\boldsymbol{\alpha}\\-\boldsymbol{\alpha}^{\mathrm{T}}A^*A+|A|\boldsymbol{\alpha}^{\mathrm{T}}&amp;-\boldsymbol{\alpha}^{\mathrm{T}}A^*\boldsymbol{\alpha}+b|A|\end{pmatrix}\\&amp;=\begin{pmatrix}A&amp;\boldsymbol{\alpha}\\0&amp;|A|\left(b-\boldsymbol{\alpha}^{\mathrm{T}}A^{-1}\boldsymbol{\alpha}\right)\end{pmatrix}.\end{aligned}$$
+(2) 由(1) 可得
+$$|PQ|=|A|^2\left(b-\boldsymbol{\alpha}^{\mathrm{T}}A^{-1}\boldsymbol{\alpha}\right),$$
+而 $|PQ|=|P||Q|$，且 $|P|=|A|\neq0$，故 $|Q|=|A|\left(b-\boldsymbol{\alpha}^{\mathrm{T}}A^{-1}\boldsymbol{\alpha}\right)$.
+由此可知，$|Q|\neq0$ 的充分必要条件为 $\boldsymbol{\alpha}^{\mathrm{T}}A^{-1}\boldsymbol{\alpha}\neq b$，即矩阵 $Q$ 可逆的充分必要条件是 $\boldsymbol{\alpha}^{\mathrm{T}}A^{-1}\boldsymbol{\alpha}\neq b$.
+【注】注意看清 $\boldsymbol{\alpha}^{\mathrm{T}}A^{-1}\boldsymbol{\alpha}$ 是一个数.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="52" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求与 $\boldsymbol{A}=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}$ 可交换的全部 2 阶矩阵.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设与 $A$ 可交换的 2 阶矩阵为 $X=\begin{pmatrix}x_1&amp;x_2\\x_3&amp;x_4\end{pmatrix}$，则根据题意，有
+$$\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}\begin{pmatrix}x_1&amp;x_2\\x_3&amp;x_4\end{pmatrix}=\begin{pmatrix}x_1&amp;x_2\\x_3&amp;x_4\end{pmatrix}\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},$$
+即
+$$\begin{pmatrix}x_1+x_3&amp;x_2+x_1\\x_3&amp;x_4\end{pmatrix}=\begin{pmatrix}x_1&amp;x_1+x_2\\x_3&amp;x_3+x_4\end{pmatrix},$$
+对应元素相等，得
+$$\begin{cases}x_1+x_3=x_1,\\x_2+x_4=x_1+x_2,\\x_3=x_3,\\x_4=x_3+x_4,\end{cases}$$
+解得 $\begin{cases}x_3=0,\\x_1=x_4,\\x_2\text{ 为任意常数}.\end{cases}$
+故与 $A=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}$ 可交换的 2 阶矩阵为
+$$X=\begin{pmatrix}x_1&amp;x_2\\0&amp;x_1\end{pmatrix},\text{其中 }x_1,x_2\text{ 是任意常数}.$$
+【注】① 不是任意矩阵都可以与 $A$ 交换，而是有一部分矩阵可与 $A$ 交换. 本题是用待定系数（待定矩阵）法解矩阵方程，从而求出与 $A$ 可交换的所有 2 阶矩阵.
+② 因为单位矩阵 $E$ 可与任何矩阵交换，故也可将 $A$ 分解为
+$$A=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}=E+\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}\xlongequal{\text{记}}E+C,$$
+则求与 $A$ 可交换的矩阵，即求与 $C$ 可交换的矩阵，且 $C$ 形式简单，更便于计算.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="52" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设
+$$\boldsymbol{A}=\begin{bmatrix}2&amp;-2&amp;-4\\-1&amp;3&amp;4\\1&amp;-2&amp;-3\end{bmatrix},$$
+问是否存在非单位矩阵 $\boldsymbol{B}$，使得 $\boldsymbol{A}\boldsymbol{B}=\boldsymbol{A}$？若不存在，请说明理由；若存在，求出所有满足 $\boldsymbol{A}\boldsymbol{B}=\boldsymbol{A}$ 的 $\boldsymbol{B}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $AB=A$，即 $A(B-E)=O$，因 $B\neq E$，则 $B-E\neq O$，故当 $A$ 可逆时，$Ax=0$ 有唯一零解，不存在 $B\,(B\neq E)$，使得 $AB=A$. 当 $A$ 不可逆时，$Ax=0$ 有非零解，存在 $B\,(B\neq E)$，使得 $AB=A$ 成立.
+因为
+$$A=\begin{pmatrix}2&amp;-2&amp;-4\\-1&amp;3&amp;4\\1&amp;-2&amp;-3\end{pmatrix}\to\begin{pmatrix}1&amp;-2&amp;-3\\0&amp;2&amp;2\\0&amp;1&amp;1\end{pmatrix}\to\begin{pmatrix}1&amp;-2&amp;-3\\0&amp;1&amp;1\\0&amp;0&amp;0\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;1\\0&amp;0&amp;0\end{pmatrix},$$
+所以 $A$ 不可逆，且 $Ax=0$ 有通解 $x=k[1,-1,1]^{\mathrm{T}}$，其中 $k$ 为任意常数.
+对于不全为零的任意常数 $k_1,k_2,k_3$，有
+$$B-E=\begin{pmatrix}k_1&amp;k_2&amp;k_3\\-k_1&amp;-k_2&amp;-k_3\\k_1&amp;k_2&amp;k_3\end{pmatrix},$$
+则
+$$B=E+\begin{pmatrix}k_1&amp;k_2&amp;k_3\\-k_1&amp;-k_2&amp;-k_3\\k_1&amp;k_2&amp;k_3\end{pmatrix}=\begin{pmatrix}1+k_1&amp;k_2&amp;k_3\\-k_1&amp;1-k_2&amp;-k_3\\k_1&amp;k_2&amp;1+k_3\end{pmatrix}\neq E,$$
+且使 $AB=A$ 成立.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="52" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\begin{bmatrix}1&amp;1&amp;1\\1&amp;2&amp;1\\1&amp;1&amp;1\end{bmatrix}=\begin{bmatrix}1&amp;1\\1&amp;2\\1&amp;1\end{bmatrix}\boldsymbol{A}$，则 $\boldsymbol{A}=(\qquad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix}1&amp;0&amp;1\\0&amp;1&amp;0\end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix}0&amp;1&amp;0\\1&amp;0&amp;1\end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix}1&amp;1&amp;0\\0&amp;0&amp;1\end{bmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix}1&amp;0&amp;1\\0&amp;0&amp;1\end{bmatrix}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\boldsymbol{\alpha}_1=[1,1,1]^{\mathrm{T}}$，$\boldsymbol{\alpha}_2=[1,2,1]^{\mathrm{T}}$，观察 $\begin{pmatrix}1&amp;1&amp;1\\1&amp;2&amp;1\\1&amp;1&amp;1\end{pmatrix}$ 与 $\begin{pmatrix}1&amp;1\\1&amp;2\\1&amp;1\end{pmatrix}$，可记为 $[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_1]$ 与 $[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2]$，故 $[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_1]=[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2]\begin{pmatrix}1&amp;0&amp;1\\0&amp;1&amp;0\end{pmatrix}$，即可得 $A=\begin{pmatrix}1&amp;0&amp;1\\0&amp;1&amp;0\end{pmatrix}$.
+【注】这是考查向量组的极大线性无关组及表示的题.
+若考生设 $A=\begin{pmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\end{pmatrix}$，则有
+$$\begin{cases}a_{11}+a_{21}=1,\\a_{11}+2a_{21}=1,\\a_{11}+a_{21}=1,\end{cases}\begin{cases}a_{12}+a_{22}=1,\\a_{12}+2a_{22}=2,\\a_{12}+a_{22}=1,\end{cases}\begin{cases}a_{13}+a_{23}=1,\\a_{13}+2a_{23}=1,\\a_{13}+a_{23}=1,\end{cases}$$
+解得 $A=\begin{pmatrix}1&amp;0&amp;1\\0&amp;1&amp;0\end{pmatrix}$. 此方法显然比较复杂.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-51.html">上一章：第2章 余子式和代数余子式的计算</a>
+      <a class="chapter-link" href="chapter-53.html">下一章：第4章 矩阵的秩</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 52, "total": 12, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

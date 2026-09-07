@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章 多维随机变量函数的分布 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第5章 多维随机变量函数的分布<span class="top-count">（11题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="63" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2$ 是来自标准正态总体 $X$ 的简单随机样本，则 $Y=\dfrac{X_1}{X_2}$ 的概率密度 $f_Y(y)=（　）$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{\pi(1+y^2)}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{\pi(1+y)}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{1+y^2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{\pi}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意得，$X_i \sim N(0,1)$，$i=1,2$，则
+$$f_{X_i}(x)=\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{1}{2}x^2}.$$
+因为 $X_1,X_2$ 是来自标准正态总体 $X$ 的简单随机样本，所以 $X_1,X_2$ 相互独立，且均服从标准正态分布，故 $(X_1,X_2)$ 服从二维正态分布，即 $(X_1,X_2)\sim N(0,0;1,1;0)$，其概率密度为
+$$f(x_1,x_2)=\frac{1}{2\pi}\mathrm{e}^{-\frac{x_1^2+x_2^2}{2}}.$$
+利用卷积公式可得
+$$\begin{aligned}f_Y(y)&amp;=\int_{-\infty}^{+\infty}|x_2|f(x_2y,x_2)\mathrm{d}(x_2)\xrightarrow{x_2\text{ 记为 }x}\int_{-\infty}^{+\infty}|x|f(xy,x)\mathrm{d}x\\&amp;=2\int_0^{+\infty}x\cdot\frac{1}{2\pi}\mathrm{e}^{-\frac{1}{2}(y^2+1)x^2}\mathrm{d}x\\&amp;=\frac{1}{\pi}\int_0^{+\infty}\mathrm{e}^{-\frac{1}{2}(y^2+1)x^2}\mathrm{d}\left(\frac{1}{2}x^2\right)\\&amp;=\frac{1}{\pi(1+y^2)}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="63" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2$ 相互独立，$X_1\sim\begin{pmatrix}1 &amp; 0\\ \dfrac{1}{2} &amp; \dfrac{1}{2}\end{pmatrix},X_2\sim N(0,1),Y=2X_1X_2-X_2$，则 $Y$ 的分布函数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$1-\Phi(2y)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$1-\Phi(y)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\Phi(2y)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\Phi(y)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　$F_Y(y)=P\{Y\leqslant y\}=P\{2X_1X_2-X_2\leqslant y\}$
+$$\begin{aligned}&amp;=P\{2X_1X_2-X_2\leqslant y\mid X_1=1\}\cdot P\{X_1=1\}+\\&amp;\quad P\{2X_1X_2-X_2\leqslant y\mid X_1=0\}\cdot P\{X_1=0\}\\&amp;=\frac{1}{2}P\{X_2\leqslant y\}+\frac{1}{2}P\{X_2\geqslant -y\}=P\{X_2\leqslant y\}=\Phi(y).\end{aligned}$$
+方法二　当 $x+y\geqslant 0$ 时，
+$$\begin{aligned}F_{X_2,Y}(x,y)&amp;=P\{X_2\leqslant x,Y\leqslant y\}\\&amp;=P\{X_2\leqslant x,2X_1X_2-X_2\leqslant y\}\\&amp;=P\{X_1=1\}P\{X_2\leqslant x,2X_1X_2-X_2\leqslant y\mid X_1=1\}+\\&amp;\quad P\{X_1=0\}P\{X_2\leqslant x,2X_1X_2-X_2\leqslant y\mid X_1=0\}\\&amp;=\frac{1}{2}(P\{X_2\leqslant x,X_2\leqslant y\}+P\{X_2\leqslant x,-X_2\leqslant y\})\\&amp;=\frac{1}{2}[\Phi(\min\{x,y\})+\Phi(x)-\Phi(-y)]\\&amp;=\frac{1}{2}[\Phi(\min\{x,y\})+\Phi(x)-1+\Phi(y)],\end{aligned}$$
+故 $F_Y(y)=\lim\limits_{x\to+\infty}F_{X_2,Y}(x,y)=\frac{1}{2}[\Phi(y)+1-1+\Phi(y)]=\Phi(y)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="63" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X,Y$ 独立同分布于参数为 $\lambda$ 的指数分布，令 $Z=\max\{X,Y\}$，则与 $Z$ 同分布的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{X+Y}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{2X+Y}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{2X+Y}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$Y$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $W=\min\{X,Y\}$，则 $W\sim E(2\lambda)$.
+由 $Z+W=X+Y$ 知，$E(Z)+E(W)=E(X)+E(Y)$，于是 $E(Z)=E(X)+E(Y)-E(W)=\frac{3}{2\lambda}$，而选项 (A)，(C)，(D) 中的期望均不为 $\frac{3}{2\lambda}$，排除，对于选项 (B)，有 $E\left(\frac{2X+Y}{2}\right)=\frac{3}{2\lambda}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="63" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X,Y$ 独立同分布于 $E(\lambda)$，其中 $\lambda&gt;0,F(x)$ 为 $X$ 的分布函数，则与 $F(X)$ 同分布的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{2X}{X+Y}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{X}{Y}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{X+Y}{2X}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{Y}{X+Y}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　显然，$F(X)\sim U(0,1)$.
+令 $\begin{cases}u=\dfrac{y}{x+y},\\v=y,\end{cases}$ 则有 $\begin{cases}x=\dfrac{v}{u}-v,\\y=v,\end{cases}$ $J=\dfrac{\partial(x,y)}{\partial(u,v)}=\begin{vmatrix}-\dfrac{v}{u^2}&amp;\dfrac{1}{u}-1\\0&amp;1\end{vmatrix}=-\dfrac{v}{u^2}$.
+由题意知，随机变量 $X,Y$ 的联合概率密度为 $f(x,y)=\begin{cases}\lambda^2\mathrm{e}^{-\lambda(x+y)},&amp;x&gt;0,y&gt;0,\\0,&amp;\text{其他},\end{cases}$ 则有
+$$f_{U,V}(u,v)=f\left(\frac{v}{u}-v,v\right)\cdot\left|-\frac{v}{u^2}\right|=\begin{cases}\lambda^2\mathrm{e}^{-\lambda\frac{v}{u}}\cdot\dfrac{v}{u^2},&amp;\dfrac{v}{u}&gt;v&gt;0,\\0,&amp;\text{其他},\end{cases}$$
+$$f_U(u)=\begin{cases}\displaystyle\int_0^{+\infty}\lambda^2\mathrm{e}^{-\lambda\frac{v}{u}}\frac{v}{u^2}\mathrm{d}v,&amp;0&lt;u&lt;1,\\0,&amp;\text{其他}\end{cases}=\begin{cases}1,&amp;0&lt;u&lt;1,\\0,&amp;\text{其他}.\end{cases}$$
+方法二　分布函数法.
+记 $Z=\dfrac{Y}{X+Y}$，$Z$ 的分布函数为 $F_Z(z)$，则由分布函数法可知：
+当 $z\leqslant 0$ 时，$F_Z(z)=0$；
+当 $z\geqslant 1$ 时，$F_Z(z)=1$；
+当 $0&lt;z&lt;1$ 时，有
+$$\begin{aligned}F_Z(z)&amp;=P\left\{\frac{Y}{X+Y}\leqslant z\right\}\\&amp;=\int_0^{+\infty}\mathrm{d}x\int_0^{\frac{zx}{1-z}}\lambda^2\mathrm{e}^{-\lambda(x+y)}\mathrm{d}y=\int_0^{+\infty}\lambda\mathrm{e}^{-\lambda x}(1-\mathrm{e}^{-\frac{zx}{1-z}})\mathrm{d}x\\&amp;=\int_0^{+\infty}\lambda\mathrm{e}^{-\lambda x}\mathrm{d}x-\int_0^{+\infty}\lambda\mathrm{e}^{-\frac{\lambda x}{1-z}}\mathrm{d}x=z.\end{aligned}$$
+故
+$$f_Z(z)=F_Z'(z)=\begin{cases}1,&amp;0&lt;z&lt;1,\\0,&amp;\text{其他}.\end{cases}$$
+【注】事实上，(A)，(B)，(C) 的随机变量的取值均可能超过 1，故它们均不可能服从 $U[0,1]$．据此，本题即可选 (D)，但这种角度很少有考生考虑到.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X\sim f_X(x)=\begin{cases}2x, &amp; 0&lt;x&lt;1,\\ 0, &amp; \text{其他},\end{cases}$ 在给定 $X=x(0&lt;x&lt;1)$ 的条件下，$Y\sim U(-x,x)$.
+$(1)$ 求 $(X,Y)$ 的概率密度 $f(x,y)$；
+$(2)$ 若 $[Y]$ 表示不超过 $Y$ 的最大整数，求 $W=X+[Y]$ 的分布函数.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题意得，当 $0&lt;x&lt;1$ 时，
+$$f_{Y|X}(y|x)=\begin{cases}\dfrac{1}{2x},&amp;-x&lt;y&lt;x,\\0,&amp;\text{其他},\end{cases}$$
+则
+$$\begin{aligned}f(x,y)&amp;=f_X(x)f_{Y|X}(y|x)\\&amp;=\begin{cases}1,&amp;0&lt;x&lt;1,-x&lt;y&lt;x,\\0,&amp;\text{其他}.\end{cases}\end{aligned}$$
+(2) $F_W(w)=P\{W\leqslant w\}=P\{X+[Y]\leqslant w\}$
+$$\begin{aligned}&amp;=P\{X+[Y]\leqslant w,[Y]=-1\}+P\{X+[Y]\leqslant w,[Y]=0\}\\&amp;=P\{X\leqslant w+1,-x&lt;Y&lt;0\}+P\{X\leqslant w,0\leqslant Y&lt;X&lt;1\}.\end{aligned}$$
+若 $w&lt;-1$，则 $F_W(w)=0$；
+若 $-1\leqslant w&lt;0$，则 $F_W(w)=\displaystyle\int_0^{w+1}\mathrm{d}x\int_{-x}^0 1\,\mathrm{d}y+0=\frac{1}{2}(w+1)^2$；
+若 $0\leqslant w&lt;1$，则 $F_W(w)=\displaystyle\int_0^1\mathrm{d}x\int_{-x}^0 1\,\mathrm{d}y+\int_0^w\mathrm{d}x\int_0^x 1\,\mathrm{d}y=\frac{1}{2}+\frac{1}{2}w^2$；
+若 $w\geqslant 1$，则 $F_W(w)=1$.
+故
+$$F_W(w)=\begin{cases}0,&amp;w&lt;-1,\\\dfrac{1}{2}(w+1)^2,&amp;-1\leqslant w&lt;0,\\\dfrac{1}{2}+\dfrac{1}{2}w^2,&amp;0\leqslant w&lt;1,\\1,&amp;w\geqslant 1.\end{cases}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二维随机变量 $(X,Y)$ 在区域 $D=\{(x,y)\mid 0&lt;x&lt;1,x^2&lt;y&lt;\sqrt{x}\}$ 上服从均匀分布，令 $U=\begin{cases}1, &amp; X\leqslant Y,\\ 0, &amp; X&gt;Y.\end{cases}$
+$(1)$ 写出 $(X,Y)$ 的概率密度；
+$(2)U$ 与 $X$ 是否相互独立？说明理由；
+$(3)$ 求 $Z=U+X$ 的分布函数 $F_Z(z)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由于区域 $D$ 的面积为
+$$\iint_D\mathrm{d}\sigma=\int_0^1\mathrm{d}x\int_{x^2}^{\sqrt{x}}\mathrm{d}y=\int_0^1(\sqrt{x}-x^2)\mathrm{d}x=\left.\left(\frac{2}{3}x^{\frac{3}{2}}-\frac{1}{3}x^3\right)\right|_0^1=\frac{1}{3},$$
+故 $(X,Y)$ 的概率密度为 $f(x,y)=\begin{cases}3,&amp;(x,y)\in D,\\0,&amp;\text{其他}.\end{cases}$
+(2) 对于 $0&lt;t&lt;1$，$P\{U\leqslant 0,X\leqslant t\}=P\{X&gt;Y,X\leqslant t\}=\displaystyle\int_0^t\mathrm{d}x\int_{x^2}^x 3\,\mathrm{d}y=\frac{3}{2}t^2-t^3$，
+$$P\{U\leqslant 0\}=P\{X&gt;Y\}=\frac{1}{2},P\{X\leqslant t\}=\int_0^t\mathrm{d}x\int_{x^2}^{\sqrt{x}}3\,\mathrm{d}y=2t^{\frac{3}{2}}-t^3,$$
+由于 $P\{U\leqslant 0,X\leqslant t\}\neq P\{U\leqslant 0\}P\{X\leqslant t\}$，因此 $U$ 与 $X$ 不相互独立.
+(3) 由分布函数的定义得 $F_Z(z)=P\{Z\leqslant z\}=P\{U+X\leqslant z\}$.
+当 $z&lt;0$ 时，$F_Z(z)=0$；
+当 $0\leqslant z&lt;1$ 时，$F_Z(z)=P\{Z\leqslant z\}=P\{U+X\leqslant z\}$
+$$\qquad=P\{U=0,X\leqslant z\}=P\{X&gt;Y,X\leqslant z\}=\frac{3}{2}z^2-z^3;$$
+当 $1\leqslant z&lt;2$ 时，$F_Z(z)=P\{U+X\leqslant z\}=P\{U=0,X\leqslant z\}+P\{U=1,X\leqslant z-1\}$
+$$\begin{aligned}&amp;=P\{X&gt;Y,X\leqslant z\}+P\{X\leqslant Y,X\leqslant z-1\}\\&amp;=\int_0^1\mathrm{d}x\int_{x^2}^x 3\,\mathrm{d}y+\int_0^{z-1}\mathrm{d}x\int_x^{\sqrt{x}}3\,\mathrm{d}y\\&amp;=\frac{1}{2}+2(z-1)^{\frac{3}{2}}-\frac{3}{2}(z-1)^2;\end{aligned}$$
+当 $z\geqslant 2$ 时，$F_Z(z)=P\{U+X\leqslant z\}=1$.
+所以
+$$F_Z(z)=\begin{cases}0,&amp;z&lt;0,\\\dfrac{3}{2}z^2-z^3,&amp;0\leqslant z&lt;1,\\\dfrac{1}{2}+2(z-1)^{\frac{3}{2}}-\dfrac{3}{2}(z-1)^2,&amp;1\leqslant z&lt;2,\\1,&amp;z\geqslant 2.\end{cases}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_0,X_1,X_2,\cdots,X_n$ 是来自总体 $X$ 的简单随机样本，$Y=\dfrac{1}{\max\limits_{1\leqslant i\leqslant n}\{X_i\}}$，已知 $X$ 的概率密度为
+$$f(x)=\begin{cases}\mathrm{e}^{-x}, &amp; x&gt;0,\\ 0, &amp; x\leqslant 0.\end{cases}$$
+$(1)$ 求 $Y$ 的分布函数；
+$(2)$ 求 $P\{X_0Y-X_0-Y+1&lt;0\}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 总体 $X$ 的分布函数为
+$$F_X(x)=P\{X\leqslant x\}=\int_{-\infty}^x f(t)\,\mathrm{d}t=\begin{cases}1-\mathrm{e}^{-x},&amp;x\geqslant 0,\\0,&amp;x&lt;0.\end{cases}$$
+由分布函数的定义得
+$$F_Y(y)=P\left\{\frac{1}{\max\limits_{1\leqslant i\leqslant n}\{X_i\}}\leqslant y\right\}.$$
+当 $y\leqslant 0$ 时，$F_Y(y)=0$；
+当 $y&gt;0$ 时，
+$$\begin{aligned}F_Y(y)&amp;=P\left\{\max_{1\leqslant i\leqslant n}\{X_i\}\geqslant\frac{1}{y}\right\}\\&amp;=1-P\left\{\max\{X_1,X_2,\cdots,X_n\}&lt;\frac{1}{y}\right\}\\&amp;=1-P\left\{X_1&lt;\frac{1}{y}\right\}P\left\{X_2&lt;\frac{1}{y}\right\}\cdots P\left\{X_n&lt;\frac{1}{y}\right\}\\&amp;=1-\left(P\left\{X&lt;\frac{1}{y}\right\}\right)^n,\end{aligned}$$
+其中 $P\left\{X&lt;\dfrac{1}{y}\right\}=F_X\left(\dfrac{1}{y}\right)=1-\mathrm{e}^{-\frac{1}{y}}$，故
+$$F_Y(y)=\begin{cases}1-\left(1-\mathrm{e}^{-\frac{1}{y}}\right)^n,&amp;y&gt;0,\\0,&amp;y\leqslant 0.\end{cases}$$
+(2) 因为
+$$P\{X_0&lt;1\}=F_X(1)=1-\frac{1}{\mathrm{e}},$$
+且 $X_0$ 与 $Y$ 相互独立，所以
+$$\begin{aligned}P\{X_0Y-X_0-Y+1&lt;0\}&amp;=P\{(X_0-1)(Y-1)&lt;0\}\\&amp;=P\{X_0&lt;1,Y&gt;1\}+P\{X_0&gt;1,Y&lt;1\}\\&amp;=P\{X_0&lt;1\}P\{Y&gt;1\}+P\{X_0&gt;1\}P\{Y&lt;1\}\\&amp;=F_X(1)[1-F_Y(1)]+[1-F_X(1)]F_Y(1)\\&amp;=\left(1-\frac{1}{\mathrm{e}}\right)(1-\mathrm{e}^{-1})^n+\frac{1}{\mathrm{e}}\left[1-(1-\mathrm{e}^{-1})^n\right]\\&amp;=\left(1-\frac{1}{\mathrm{e}}\right)^n\left(1-\frac{2}{\mathrm{e}}\right)+\frac{1}{\mathrm{e}}.\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二维随机变量 $(X,Y)$ 在区域 $D$ 上服从均匀分布，其中 $D=\{(x,y)\mid\mid x\mid+\mid y\mid\leqslant 1\}$. 令 $U=X+Y,V=X-Y$. 求：
+$(1)U$ 与 $V$ 的概率密度 $f_U(u)$ 与 $f_V(v)$；
+$(2)U$ 与 $V$ 的协方差 $\mathrm{Cov}(U,V)$ 和相关系数 $\rho_{UV}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】区域 $D$ 实际上是以 $(-1,0),(1,0),(0,1),(0,-1)$ 为顶点的正方形区域，$D$ 的面积为 2，故 $(X,Y)$ 的概率密度为 $f(x,y)=\begin{cases}\dfrac{1}{2},&amp;(x,y)\in D,\\0,&amp;\text{其他},\end{cases}$ 有了 $f(x,y)$ 就可以求 $F_U(u)$ 和 $F_V(v)$. 特别地，可利用 $f(x,y)$ 的对称性.
+【解析】(1) 如图 (a) 所示，【图：平面直角坐标系中顶点为(-1,0),(1,0),(0,1),(0,-1)的正方形区域D，图中标出直线x+y=1、x+y=-1及动直线x+y=u】$U=X+Y$，$F_U(u)=P\{U\leqslant u\}=P\{X+Y\leqslant u\}=\displaystyle\iint_{x+y\leqslant u}f(x,y)\,\mathrm{d}x\,\mathrm{d}y.$
+当 $u&lt;-1$ 时，$F_U(u)=0$；
+当 $-1\leqslant u\leqslant 1$ 时，$F_U(u)=\displaystyle\iint_{\{(x,y)|x+y\leqslant u\}\cap D}\frac{1}{2}\,\mathrm{d}x\,\mathrm{d}y=\frac{u+1}{2}$；
+当 $u&gt;1$ 时，$F_U(u)=1$.
+所以 $f_U(u)=F_U'(u)=\begin{cases}\dfrac{1}{2},&amp;-1\leqslant u\leqslant 1,\\0,&amp;\text{其他},\end{cases}$ $U\sim U[-1,1]$.
+如图 (b) 所示，【图：同一正方形区域D，图中标出直线x-y=1、x-y=-1及动直线x-y=v】$V=X-Y$，$F_V(v)=P\{V\leqslant v\}=P\{X-Y\leqslant v\}=\displaystyle\iint_{x-y\leqslant v}f(x,y)\,\mathrm{d}x\,\mathrm{d}y.$
+当 $v&lt;-1$ 时，$F_V(v)=0$；
+当 $-1\leqslant v\leqslant 1$ 时，$F_V(v)=\displaystyle\iint_{\{(x,y)|x-y\leqslant v\}\cap D}\frac{1}{2}\,\mathrm{d}x\,\mathrm{d}y=\frac{v+1}{2}$；
+当 $v&gt;1$ 时，$F_V(v)=1$.
+所以 $f_V(v)=F_V'(v)=\begin{cases}\dfrac{1}{2},&amp;-1\leqslant v\leqslant 1,\\0,&amp;\text{其他},\end{cases}$ $V\sim U[-1,1]$.
+(2) $\mathrm{Cov}(U,V)=E(UV)-E(U)E(V)$.
+显然 $E(U)=E(V)=0$，而
+$$\begin{aligned}E(UV)&amp;=E[(X+Y)(X-Y)]=E(X^2-Y^2)\\&amp;=E(X^2)-E(Y^2).\end{aligned}$$
+由 $X,Y$ 的对称性得 $E(X^2)=E(Y^2)$，所以 $\mathrm{Cov}(U,V)=0$，
+$$\rho_{UV}=\frac{\mathrm{Cov}(U,V)}{\sqrt{D(U)}\sqrt{D(V)}}=0.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二维随机变量 $(U,V)$ 在以点 $(-2,0),(2,0),(0,1),(0,-1)$ 为顶点的四边形区域 $D$ 上服从均匀分布，令
+$$X=\begin{cases}-1, &amp; U\leqslant -1,\\ 1, &amp; U&gt;-1,\end{cases}\quad Y=\begin{cases}-1, &amp; V&lt;\dfrac{1}{2},\\ 1, &amp; V&gt;\dfrac{1}{2}.\end{cases}$$
+$(1)$ 求 $(X,Y)$ 的分布律；
+$(2)$ 求 $X$ 和 $Y$ 的相关系数 $\rho_{XY}$；
+$(3)$ 求 $V$ 的边缘概率密度.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) $(U,V)$ 在 $D$ 上服从均匀分布，则下列事件的概率可由面积之比得到.
+$$P\{X=-1,Y=-1\}=P\left\{U\leqslant -1,V\leqslant \frac{1}{2}\right\}=\frac{1}{8},$$
+$$P\{X=-1,Y=1\}=P\left\{U\leqslant -1,V&gt;\frac{1}{2}\right\}=0,$$
+$$P\{X=1,Y=-1\}=P\left\{U&gt;-1,V\leqslant \frac{1}{2}\right\}=\frac{3}{4},$$
+$$P\{X=1,Y=1\}=P\left\{U&gt;-1,V&gt;\frac{1}{2}\right\}=\frac{1}{8},$$
+故 $(X,Y)$ 的分布律为
+【表：$(X,Y)$ 的联合分布律，行为 $X=-1,1$，列为 $Y=-1,1$：$P\{X=-1,Y=-1\}=\frac{1}{8}$，$P\{X=-1,Y=1\}=0$，$P\{X=1,Y=-1\}=\frac{3}{4}$，$P\{X=1,Y=1\}=\frac{1}{8}$；边缘 $p_{i\cdot}$ 为 $\frac{1}{8},\frac{7}{8}$，$p_{\cdot j}$ 为 $\frac{7}{8},\frac{1}{8}$，总计 1】
+(2) 由 (1) 可知，
+$$E(X)=\frac{3}{4},E(Y)=-\frac{3}{4},$$
+$$E(XY)=\frac{1}{8}-\frac{6}{8}+\frac{1}{8}=-\frac{1}{2},$$
+$$E(X^2)=E(Y^2)=1,$$
+所以
+$$D(X)=E(X^2)-[E(X)]^2=\frac{7}{16},$$
+$$D(Y)=E(Y^2)-[E(Y)]^2=\frac{7}{16},$$
+$$\mathrm{Cov}(X,Y)=E(XY)-E(X)E(Y)=\frac{1}{16},$$
+$$\rho_{XY}=\frac{\mathrm{Cov}(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}=\frac{1}{7}.$$
+（3）由题设易知 $(U,V)$ 的概率密度为
+$$f(u,v)=\begin{cases}\dfrac{1}{4}, &amp; (u,v)\in D,\\ 0, &amp; \text{其他},\end{cases}$$
+非零区域 $D$ 如图所示，则 $V$ 的边缘概率密度为
+【图】$uOv$ 坐标系中区域 $D$ 为一菱形，上边界为 $u=-2+2v$ 与 $u=2-2v$，下边界为 $u=-2-2v$ 与 $u=2+2v$，菱形在 $v$ 轴上顶点为 $1$ 和 $-1$，在 $u$ 轴上顶点为 $-2$ 和 $2$。
+$$f_V(v)=\int_{-\infty}^{+\infty}f(u,v)\mathrm{d}u=\begin{cases}\int_{-2-2v}^{2+2v}\dfrac{1}{4}\,\mathrm{d}u, &amp; -1&lt;v\leqslant 0,\\ \int_{-2+2v}^{2-2v}\dfrac{1}{4}\,\mathrm{d}u, &amp; 0&lt;v&lt;1,\\ 0, &amp; \text{其他}\end{cases}$$
+$$=\begin{cases}1+v, &amp; -1&lt;v\leqslant 0,\\ 1-v, &amp; 0&lt;v&lt;1,\\ 0, &amp; \text{其他}.\end{cases}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X\sim B\left(2,\dfrac{1}{2}\right)$ 和随机变量 $Y\sim N(0,1)$，且 $X$ 与 $Y$ 相互独立. 令 $Z=(X-1)Y$，记 $(Y,Z)$ 的分布函数为 $F(y,z)$. 求：
+$(1)Z$ 的分布函数 $F_Z(z)$；
+$(2)F(1,1)$ 的值，已知 $\displaystyle\int_{-\infty}^{1}\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\mathrm{d}t=0.8413$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）因为 $X\sim B\left(2,\dfrac{1}{2}\right)$，所以 $X$ 的概率分布为
+
+| $X$ | $0$ | $1$ | $2$ |
+| $P$ | $\dfrac{1}{4}$ | $\dfrac{1}{2}$ | $\dfrac{1}{4}$ |
+
+又 $Y\sim N(0,1)$，且标准正态分布的分布函数为 $\Phi(x)$.
+由分布函数法，得
+$$\begin{aligned}F_Z(z)&amp;=P\{Z\leqslant z\}=P\{(X-1)Y\leqslant z\}\\&amp;=P\{(X-1)Y\leqslant z,X=0\}+P\{(X-1)Y\leqslant z,X=1\}+P\{(X-1)Y\leqslant z,X=2\}\\&amp;=P\{-Y\leqslant z,X=0\}+P\{0\leqslant z,X=1\}+P\{Y\leqslant z,X=2\}\\&amp;=P\{-Y\leqslant z\}P\{X=0\}+P\{0\leqslant z\}P\{X=1\}+P\{Y\leqslant z\}P\{X=2\}\\&amp;=\dfrac{1}{4}P\{Y\geqslant -z\}+\dfrac{1}{2}P\{0\leqslant z\}+\dfrac{1}{4}P\{Y\leqslant z\}\\&amp;=\dfrac{1}{4}\Phi(z)+\dfrac{1}{2}P\{0\leqslant z\}+\dfrac{1}{4}\Phi(z).\end{aligned}$$
+故当 $z&lt;0$ 时，$F_Z(z)=\dfrac{1}{4}\Phi(z)+\dfrac{1}{2}\cdot 0+\dfrac{1}{4}\Phi(z)=\dfrac{1}{2}\Phi(z)$；
+当 $z\geqslant 0$ 时，$F_Z(z)=\dfrac{1}{4}\Phi(z)+\dfrac{1}{2}\cdot 1+\dfrac{1}{4}\Phi(z)=\dfrac{1}{2}+\dfrac{1}{2}\Phi(z)$.
+综上，$F_Z(z)=\begin{cases}\dfrac{1}{2}\Phi(z), &amp; z&lt;0,\\[2mm] \dfrac{1}{2}+\dfrac{1}{2}\Phi(z), &amp; z\geqslant 0.\end{cases}$
+（2）$F(1,1)=P\{Y\leqslant 1,Z\leqslant 1\}=P\{Y\leqslant 1,(X-1)Y\leqslant 1\}$
+$$\begin{aligned}&amp;=P\{X=0\}P\{Y\leqslant 1,(X-1)Y\leqslant 1\mid X=0\}+\\&amp;\quad P\{X=1\}P\{Y\leqslant 1,(X-1)Y\leqslant 1\mid X=1\}+\\&amp;\quad P\{X=2\}P\{Y\leqslant 1,(X-1)Y\leqslant 1\mid X=2\}\\&amp;=\dfrac{1}{4}P\{Y\leqslant 1,-Y\leqslant 1\mid X=0\}+\dfrac{1}{2}P\{Y\leqslant 1,0\leqslant 1\mid X=1\}+\\&amp;\quad \dfrac{1}{4}P\{Y\leqslant 1,Y\leqslant 1\mid X=2\}\\&amp;=\dfrac{1}{4}P\{Y\leqslant 1,-Y\leqslant 1\}+\dfrac{1}{2}P\{Y\leqslant 1\}+\dfrac{1}{4}P\{Y\leqslant 1\}\\&amp;=\dfrac{1}{4}P\{-1\leqslant Y\leqslant 1\}+\dfrac{3}{4}\Phi(1)\\&amp;=\dfrac{1}{4}[\Phi(1)-\Phi(-1)]+\dfrac{3}{4}\Phi(1)\\&amp;=\Phi(1)-\dfrac{1}{4}\Phi(-1)=\Phi(1)-\dfrac{1}{4}[1-\Phi(1)]\\&amp;=\dfrac{5}{4}\Phi(1)-\dfrac{1}{4}=0.801\,6.\end{aligned}$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="63" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X,Y$ 独立同分布于标准正态分布 $N(0,1)$，记 $Z=\begin{cases}X, &amp; XY&gt;0,\\ 0, &amp; XY=0,\\ -X, &amp; XY&lt;0.\end{cases}$
+$(1)$ 证明 $Z$ 服从标准正态分布；
+$(2)(Y,Z)$ 是否服从二维正态分布？说明理由.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）当 $z&lt;0$ 时，
+$$\begin{aligned}P\{Z\leqslant z\}&amp;=P\{X\leqslant z,XY&gt;0\}+P\{-X\leqslant z,XY&lt;0\}\\&amp;=P\{X\leqslant z,Y&lt;0\}+P\{X\geqslant -z,Y&lt;0\}\\&amp;=P\{X\leqslant z\}P\{Y&lt;0\}+P\{X\geqslant -z\}P\{Y&lt;0\}\\&amp;=\dfrac{1}{2}(P\{X\leqslant z\}+P\{X\geqslant -z\})\\&amp;=\dfrac{1}{2}\cdot 2P\{X\leqslant z\}=P\{X\leqslant z\};\end{aligned}$$
+当 $z&gt;0$ 时，
+$$\begin{aligned}P\{Z&gt;z\}&amp;=P\{X&gt;z,XY&gt;0\}+P\{-X&gt;z,XY&lt;0\}\\&amp;=P\{X&gt;z,Y&gt;0\}+P\{X&lt;-z,Y&gt;0\}\\&amp;=P\{X&gt;z\},\end{aligned}$$
+故 $\quad P\{Z&gt;z\}=P\{X&gt;z\},P\{Z\leqslant z\}=P\{X\leqslant z\}$.
+因此，$Z$ 与 $X$ 同分布于 $N(0,1)$.
+（2）若 $Z&gt;0$，则要么 $X&gt;0$ 且 $Y&gt;0$，要么 $X&lt;0$ 且 $Y&gt;0$，于是 $Z$ 与 $Y$ 始终同号，则当 $Z&gt;0$ 时，$0&lt;Y&lt;+\infty$. 而二维正态分布的概率密度定义域为 $-\infty&lt;y&lt;+\infty$，$-\infty&lt;z&lt;+\infty$，矛盾，故 $(Y,Z)$ 不服从二维正态分布.
+【注】第（2）问的答案从定义域的角度考虑，值得学习.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-62.html">上一章：第4章 多维随机变量及其分布</a>
+      <a class="chapter-link" href="chapter-64.html">下一章：第6章 数字特征</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 63, "total": 11, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

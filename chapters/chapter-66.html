@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第8章 统计量及其分布 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第8章 统计量及其分布<span class="top-count">（7题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="66" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X\sim B\left(1,\frac{1}{2}\right)$，$X_1,X_2,X_3$ 为来自总体 $X$ 的简单随机样本，$\overline{X}$ 为样本均值，则 $P\left\{\overline{X}&gt;\frac{1}{3}\right\}=(\quad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{3}{8}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{5}{8}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{7}{8}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $X \sim B\left(1, \frac{1}{2}\right)$, $X_1, X_2, X_3$ 为来自总体 $X$ 的简单随机样本, 所以 $\sum_{i=1}^{3} X_i \sim B\left(3, \frac{1}{2}\right)$. 于是
+$$P\left\{\overline{X} &gt; \frac{1}{3}\right\} = P\left\{\sum_{i=1}^{3} X_i &gt; 1\right\} = 1 - P\left\{\sum_{i=1}^{3} X_i = 0\right\} - P\left\{\sum_{i=1}^{3} X_i = 1\right\}$$
+$$= 1 - C_3^0\left(\frac{1}{2}\right)^0\left(\frac{1}{2}\right)^3 - C_3^1\left(\frac{1}{2}\right)^1\left(\frac{1}{2}\right)^2 = \frac{1}{2}.$$
+应选 (B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="66" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X_1,X_2,X_3,X_4$ 相互独立且都服从标准正态分布 $N(0,1)$，已知 $Y=\frac{X_1^2+X_2^2}{X_3^2+X_4^2}$，对给定的 $\alpha\,(0&lt;\alpha&lt;1)$，数 $y_\alpha$ 满足 $P\{Y&gt;y_\alpha\}=\alpha$，则有（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y_\alpha y_{1-\alpha}=1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y_\alpha y_{1-\frac{\alpha}{2}}=1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y_\alpha y_{1-\alpha}=\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y_\alpha y_{1-\frac{\alpha}{2}}=\frac{1}{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">依题意可知, $X_1^2 + X_2^2$ 与 $X_3^2 + X_4^2$ 相互独立且都服从自由度为 2 的 $\chi^2$ 分布, 因此 $Y = \frac{X_1^2 + X_2^2}{X_3^2 + X_4^2} = \dfrac{\dfrac{X_1^2 + X_2^2}{2}}{\dfrac{X_3^2 + X_4^2}{2}} \sim F(2,2)$. 因为 $P\{Y &gt; y_α\} = α$, 即 $y_α = F_α(2,2)$, 又
+$$1 - α = 1 - P\{Y &gt; y_α\} = P\{Y \leqslant y_α\} = P\{Y &lt; y_α\} = P\left\{\frac{1}{Y} &gt; \frac{1}{y_α}\right\},$$
+而 $\dfrac{1}{Y} \sim F(2,2)$, 所以 $\dfrac{1}{y_α} = F_{1-α}(2,2)$, 又由 $y_α = F_α(2,2)$, 知 $y_{1-α} = F_{1-α}(2,2)$, 于是 $y_{1-α} = \dfrac{1}{y_α}$, 即 $y_α y_{1-α} = 1$.
+故应选 (A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="66" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2,\cdots,X_n$ 是来自总体 $N(0,1)$ 的简单随机样本，记 $\overline{X}=\frac{1}{n}\sum\limits_{i=1}^{n}X_i$，$S^2=\frac{1}{n-1}\sum\limits_{i=1}^{n}(X_i-\overline{X})^2$，$T=(\overline{X}+1)(S^2+1)$，则 $E(T)$ 的值为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$4$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">依题意可知 $E(\overline{X}) = 0$, $E(S^2) = 1$, 且 $\overline{X}, S^2$ 相互独立. 所以
+$$E(T) = E[(\overline{X}+1)(S^2+1)] = E(\overline{X}+1)E(S^2+1) = 1 · (1+1) = 2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="66" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2$ 是取自正态总体 $X\sim N(1,1)$ 的简单随机样本，则 $\frac{X_1-1}{|1-X_2|}$ 服从（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$N(1,1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\chi^2(1)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$t(1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$F(1,1)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $t$ 分布形式可知
+$$\frac{X_1 - 1}{\left|1 - X_2\right|} = \dfrac{\dfrac{X_1 - 1}{1}}{\sqrt{\left(\dfrac{X_2 - 1}{1}\right)^2 / 1}} \sim t(1).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="66" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X\sim N(0,4)$，若 $X_1,X_2,\cdots,X_n\,(n&gt;2)$ 是来自总体 $X$ 的简单随机样本，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{2n}\left(\sum\limits_{i=1}^{n}X_i\right)^2\sim\chi^2(1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{16}\sum\limits_{i=1}^{n}X_i^2\sim\chi^2(n)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\sqrt{\frac{(n-1)X_{n}^{2}}{\sum\limits_{i=1}^{n-1}X_i^2}}\sim t(n-1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{(n-1)X_1^2}{\sum\limits_{i=2}^{n}X_i^2}\sim F(1,n-1)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　因为 $X \sim N(0,4)$, 所以 $\dfrac{1}{2}X \sim N(0,1)$, $\dfrac{1}{2}X_i \sim N(0,1)$ $(i = 1, 2, \cdots, n)$, 从而 $\dfrac{1}{2\sqrt{n}}\sum_{i=1}^{n} X_i \sim N(0,1)$. 于是,
+$$\left(\frac{1}{2\sqrt{n}}\sum_{i=1}^{n} X_i\right)^2 = \frac{1}{4n}\left(\sum_{i=1}^{n} X_i\right)^2 \sim \chi^2(1),$$
+$$\sum_{i=1}^{n}\left(\frac{1}{2}X_i\right)^2 = \frac{1}{4}\sum_{i=1}^{n} X_i^2 \sim \chi^2(n),$$
+$$\frac{\dfrac{1}{2}X_n}{\sqrt{\dfrac{\dfrac{1}{4}\sum_{i=1}^{n-1} X_i^2}{n-1}}} = \frac{\sqrt{n-1}X_n}{\sqrt{\sum_{i=1}^{n-1} X_i^2}} \sim t(n-1).$$
+因此, 选项 (A), (B), (C) 均不正确.
+方法二　因为 $X \sim N(0,4)$, 所以 $\dfrac{1}{2}X \sim N(0,1)$, $\dfrac{1}{2}X_i \sim N(0,1)$ $(i = 1, 2, \cdots, n)$, 从而 $\left(\dfrac{1}{2}X_1\right)^2 = \dfrac{1}{4}X_1^2 \sim \chi^2(1)$, $\sum_{i=2}^{n}\left(\dfrac{1}{2}X_i\right)^2 = \dfrac{1}{4}\sum_{i=2}^{n} X_i^2 \sim \chi^2(n-1)$. 于是,
+$$\frac{(n-1)X_1^2}{\sum_{i=2}^{n} X_i^2} = \dfrac{\dfrac{1}{4}X_1^2}{\dfrac{\dfrac{1}{4}\sum_{i=2}^{n} X_i^2}{n-1}} \sim F(1, n-1).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="66" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知随机变量 $X,Y$，且 $(X,Y)$ 的概率密度为 $f(x,y)=\frac{1}{4\pi}\mathrm{e}^{-\frac{x^2}{2}-\frac{(y-1)^2}{8}}$，则 $\frac{4X^2}{(Y-1)^2}$ 服从（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\chi^2(2)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$t(1)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$N(0,2^2)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$F(1,1)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知, $f(x,y) = \dfrac{1}{2\pi · 1 · 2}\mathrm{e}^{-\frac{1}{2}\left[x^2 + \left(\frac{y-1}{2}\right)^2\right]}$, 故 $(X,Y) \sim N(0,1;1,2^2;0)$, 于是 $X \sim N(0,1)$, $Y \sim N(1,2^2)$, 且 $X, Y$ 相互独立, 则
+$$X^2 \sim \chi^2(1), \quad \frac{(Y-1)^2}{2^2} \sim \chi^2(1),$$
+故 $\dfrac{4X^2}{(Y-1)^2} \sim F(1,1)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="66" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2,\cdots,X_9$ 是来自正态总体 $X$ 的简单随机样本，记 $$Y_1=\frac{1}{6}(X_1+X_2+\cdots+X_6),$$ $$Y_2=\frac{1}{3}(X_7+X_8+X_9),$$ $$S^2=\frac{1}{2}\sum\limits_{i=7}^{9}(X_i-Y_2)^2,\,Z=\frac{\sqrt{2}(Y_1-Y_2)}{S},$$ 证明统计量 $Z$ 服从自由度为 2 的 $t$ 分布.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $\sigma^2 = D(X)$. 易见
+$$E(Y_1) = E(Y_2), D(Y_1) = \frac{\sigma^2}{6}, D(Y_2) = \frac{\sigma^2}{3}.$$
+由于随机变量 $X_1, X_2, \cdots, X_9$ 独立同分布, 可见 $Y_1$ 和 $Y_2$ 独立, 且
+$$E(Y_1 - Y_2) = 0, D(Y_1 - Y_2) = \frac{\sigma^2}{6} + \frac{\sigma^2}{3} = \frac{\sigma^2}{2},$$
+因此
+$$U = \frac{Y_1 - Y_2}{σ/\sqrt{2}} \sim N(0,1).$$
+对于正态总体的样本方差 $S^2$, 随机变量
+$$\chi^2 = \frac{2S^2}{σ^2}$$
+服从自由度为 2 的 $\chi^2$ 分布.
+容易证明, $Y_1, Y_2, S^2$ 相互独立. 事实上, 对于任意实数 $u, v, w$, 有
+$$P\{Y_1 \leqslant u, Y_2 \leqslant v, S^2 \leqslant w\}$$
+$$= P\{Y_1 \leqslant u\}P\{Y_2 \leqslant v, S^2 \leqslant w\}$$
+$$= P\{Y_1 \leqslant u\}P\{Y_2 \leqslant v\}P\{S^2 \leqslant w\},$$
+其中第一个等式成立, 因为 $X_1, X_2, \cdots, X_6$ 和 $X_7, X_8, X_9$ 相互独立; 第二个等式成立, 因为正态总体的样本均值和样本方差相互独立, 从而 $Y_1 - Y_2$ 和 $S^2$ 独立.
+于是, 由服从 $t$ 分布的随机变量的典型模式, 知统计量
+$$Z = \frac{\sqrt{2}(Y_1 - Y_2)}{S} = \dfrac{\dfrac{Y_1 - Y_2}{σ/\sqrt{2}}}{\sqrt{\dfrac{2S^2}{σ^2}\Big/ 2}} = \frac{U}{\sqrt{\chi^2/2}}$$
+服从自由度为 2 的 $t$ 分布.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-65.html">上一章：第7章 大数定律与中心极限定理</a>
+      <a class="chapter-link" href="chapter-67.html">下一章：第9章 参数估计与假设检验</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 66, "total": 7, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第17章 多元函数积分学的预备知识 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第17章 多元函数积分学的预备知识<span class="top-count">（15题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="48" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y)=\mathrm{e}^{-(x^2+y^2)}$，曲线 $y=y(x)$ 上任一点 $P$ 的切线方向始终指向 $f(x,y)$ 变化率最大的方向，且 $y(1)=2$，则 $y(x)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$2x^2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$x^2+x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\mathrm{e}^{-x^2+1}+x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2\mathrm{e}^{-x^2+1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">曲线 $y=y(x)$ 上任一点 $P(x,y)$ 处的切线方向为 $(\mathrm{d}x,\mathrm{d}y)$，且 $f(x,y)$ 变化率最大的方向为
+$$\mathbf{grad}\ f=\frac{\partial f}{\partial x}\boldsymbol{i}+\frac{\partial f}{\partial y}\boldsymbol{j}=\mathrm{e}^{-(x^2+2y^2)}\cdot(-2x\boldsymbol{i}-4y\boldsymbol{j}).$$
+由题意得，$\frac{\mathrm{d}x}{-2x}=\frac{\mathrm{d}y}{-4y}$，则 $\ln|y|=\ln C_1+\ln x^2$，解得 $y=Cx^2$. 又 $y(1)=2$，即 $C=2$，于是 $y=2x^2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="48" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求曲面 $4z=3x^2-2xy+3y^2$ 上的点到平面 $x+y-4z=1$ 的最短距离.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">曲面上的点设为 $(x,y,z)$，它到平面 $x+y-4z-1=0$ 的距离为
+$$d=\frac{\big|x+y-4z-1\big|}{\sqrt{1^2+1^2+(-4)^2}}.$$
+在约束条件 $3x^2-2xy+3y^2-4z=0$ 上求 $d$ 的最小值等价于求 $S=(x+y-4z-1)^2$ 在上述约束条件下的最小值.
+构造辅助函数
+$$F(x,y,z,\lambda)=(x+y-4z-1)^2+\lambda(3x^2-2xy+3y^2-4z),$$
+令
+$$\begin{cases}\frac{\partial F}{\partial x}=2(x+y-4z-1)+6\lambda x-2\lambda y=0,\\\frac{\partial F}{\partial y}=2(x+y-4z-1)-2\lambda x+6\lambda y=0,\\\frac{\partial F}{\partial z}=-8(x+y-4z-1)-4\lambda=0,\\\frac{\partial F}{\partial \lambda}=3x^2-2xy+3y^2-4z=0,\end{cases}$$
+解得 $x=\frac{1}{4}$，$y=\frac{1}{4}$，$z=\frac{1}{16}$.
+根据几何意义，此点到平面 $x+y-4z-1=0$ 的距离最小，即
+$$d_{\min}=\frac{\Big|\frac{1}{4}+\frac{1}{4}-\frac{1}{4}-1\Big|}{\sqrt{1^2+1^2+(-4)^2}}=\frac{\frac{3}{4}}{3\sqrt{2}}=\frac{1}{4\sqrt{2}}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">空间曲线 $L:\begin{cases}y^2=z,\\x=2(y-1)\end{cases}$ 在 $y=1$ 处的切线方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将 $L$ 写成以 $z$ 为参数的方程，则 $L:\begin{cases}x=2(\sqrt{z}-1),\\y=\sqrt{z},\\z=z,\end{cases}$ 于是 $\begin{cases}x'_z=\frac{1}{\sqrt{z}},\\y'_z=\frac{1}{2\sqrt{z}},\\z'_z=1,\end{cases}$ 当 $y=1$ 时，$x=0$，$z=1$，于是该点处切线的方向向量为 $\left(1,\frac{1}{2},1\right)$，故切线方程为 $\frac{x-0}{1}=\frac{y-1}{\frac{1}{2}}=\frac{z-1}{1}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{x-0}{1}=\frac{y-1}{\frac{1}{2}}=\frac{z-1}{1}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $\begin{cases}x^2+2y^2+3z^2=6,\\x+y+z=3\end{cases}$ 在点 $(1,1,1)$ 处的切线方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方程 $\begin{cases}x^2+2y^2+3z^2=6,\\x+y+z=3\end{cases}$ 两边对 $x$ 求导得
+$$\begin{cases}2x+4y\dfrac{\mathrm{d}y}{\mathrm{d}x}+6z\dfrac{\mathrm{d}z}{\mathrm{d}x}=0,\\[2mm]1+\dfrac{\mathrm{d}y}{\mathrm{d}x}+\dfrac{\mathrm{d}z}{\mathrm{d}x}=0,\end{cases}$$ 则 $\begin{cases}4\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{(1,1,1)}+6\dfrac{\mathrm{d}z}{\mathrm{d}x}\Big|_{(1,1,1)}=-2,\\[2mm]\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{(1,1,1)}+\dfrac{\mathrm{d}z}{\mathrm{d}x}\Big|_{(1,1,1)}=-1,\end{cases}$
+解得 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{(1,1,1)}=-2$，$\dfrac{\mathrm{d}z}{\mathrm{d}x}\Big|_{(1,1,1)}=1$. 故曲线在点 $(1,1,1)$ 处的切向量为
+$$\boldsymbol{l}=\left(1,\frac{\mathrm{d}y}{\mathrm{d}x}\Big|_{(1,1,1)},\frac{\mathrm{d}z}{\mathrm{d}x}\Big|_{(1,1,1)}\right)=(1,-2,1).$$
+于是，曲线在点 $(1,1,1)$ 处的切线方程为 $\frac{x-1}{1}=\frac{y-1}{-2}=\frac{z-1}{1}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{x-1}{1}=\frac{y-1}{-2}=\frac{z-1}{1}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="48" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求抛物面 $\Sigma:z=x^2+y^2$ 上的点到空间图形 $\Omega:x^2+y^2\leqslant z\leqslant 1$ 的形心的最短距离.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">空间图形 $\Omega$ 如图所示，可知【图】抛物面 $z=x^2+y^2$ 与平面 $z=1$ 围成的旋转体，$z$ 轴竖直向上，标注高度 1，原点为 $O$
+$$\bar{x}=\bar{y}=0,$$
+$$\bar{z}=\frac{\iiint\limits_{\Omega}z\mathrm{d}v}{\iiint\limits_{\Omega}\mathrm{d}v}=\frac{\iint\limits_{x^2+y^2\leqslant 1}\mathrm{d}\sigma\int_{x^2+y^2}^{1}z\mathrm{d}z}{\iint\limits_{x^2+y^2\leqslant 1}\mathrm{d}\sigma\int_{x^2+y^2}^{1}\mathrm{d}z}=\frac{\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}\frac{1}{2}(1-r^2)r\mathrm{d}r}{\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}(1-r^2)r\mathrm{d}r}=\frac{2}{3},$$
+故形心为 $P\left(0,0,\frac{2}{3}\right)$，因此抛物面 $\Sigma$ 上任一点 $(x,y,z)$ 到点 $P$ 的距离为
+$$d=\sqrt{(x-0)^2+(y-0)^2+\left(z-\frac{2}{3}\right)^2}=\sqrt{x^2+y^2+\left(z-\frac{2}{3}\right)^2}.$$
+故问题转化为求 $u=x^2+y^2+\left(z-\frac{2}{3}\right)^2$ 在约束条件 $x^2+y^2=z$ 下的最小值，设
+$$F(x,y,z,\lambda)=x^2+y^2+\left(z-\frac{2}{3}\right)^2+\lambda(x^2+y^2-z),$$
+令
+$$\begin{cases}F'_x=2x+2\lambda x=0,\\F'_y=2y+2\lambda y=0,\\F'_z=2\left(z-\frac{2}{3}\right)-\lambda=0,\\F'_{\lambda}=x^2+y^2-z=0,\end{cases}$$
+解得 $x^2+y^2=\frac{1}{6}$，$z=\frac{1}{6}$ 或 $x=y=z=0$. 由题设可知最短距离必存在，且
+$$d\Big|_{\substack{x^2+y^2=\frac{1}{6}\\ z=\frac{1}{6}}}=\frac{\sqrt{15}}{6}&lt;d\Big|_{(0,0,0)}=\frac{2}{3},$$
+故
+$$d_{\min}=\frac{\sqrt{15}}{6}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $z=f(x,y)$ 在点 $(0,0)$ 附近有定义，且 $f_x(0,0)=3$，则曲线 $\begin{cases}z=f(x,y),\\y=0\end{cases}$ 在点 $(0,0,f(0,0))$ 处的法平面方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">曲线 $\begin{cases}z=f(x,y),\\y=0\end{cases}$ 可写成参数式：$\begin{cases}x=t,\\y=0,\\z=f(t,0),\end{cases}$ 则
+$$\boldsymbol{\tau}=(x'_t,y'_t,z'_t)\Big|_{t=0}=(1,0,f'_x(0,0))=(1,0,3),$$
+故所求法平面方程为 $x+3z-3f(0,0)=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$x+3z-3f(0,0)=0$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲面 $\mathrm{e}^z-zx+y=3$ 在点 $(1,2,0)$ 处的切平面方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $F(x,y,z)=\mathrm{e}^z-xz+y-3$，则
+$$F'_x=-z,F'_y=1,F'_z=\mathrm{e}^z-x,$$
+代入点 $(1,2,0)$，得
+$$F'_x(1,2,0)=0,F'_y(1,2,0)=1,F'_z(1,2,0)=0,$$
+所以曲面 $\mathrm{e}^z-xz+y=3$ 在点 $(1,2,0)$ 处的切平面方程为
+$$0\cdot(x-1)+1\cdot(y-2)+0\cdot(z-0)=0,$$
+即 $y=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$y=2$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="48" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设可微函数 $f(u,v)$ 满足 $f(x-y,x+\mathrm{e}^y)=x^2-y^2$，则 $f(u,v)$ 在点 $(1,2)$ 处的方向导数的最大值等于（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sqrt{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\sqrt{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">函数 $f(u,v)$ 在点 $(1,2)$ 处的方向导数的最大值应等于 $f(u,v)$ 在点 $(1,2)$ 处梯度的模，即
+$$\sqrt{\left(\frac{\partial f}{\partial u}\Big|_{\substack{u=1\\ v=2}}\right)^2+\left(\frac{\partial f}{\partial v}\Big|_{\substack{u=1\\ v=2}}\right)^2}.$$ 为此，先计算偏导数 $\frac{\partial f}{\partial u}\Big|_{\substack{u=1\\ v=2}}$ 和 $\frac{\partial f}{\partial v}\Big|_{\substack{u=1\\ v=2}}$.
+令 $x-y=u$，$x+\mathrm{e}^y=v$，则当 $u=1$，$v=2$ 时，有 $x-y=1$，$x+\mathrm{e}^y=2$，解得 $x=1$，$y=0$.
+$f(x-y,x+\mathrm{e}^y)=x^2-y^2$ 两边分别对 $x$，$y$ 求偏导数，得
+$$\frac{\partial f}{\partial u}+\frac{\partial f}{\partial v}=2x,-\frac{\partial f}{\partial u}+\frac{\partial f}{\partial v}\mathrm{e}^y=-2y,$$
+将 $x=1$，$y=0$ 代入上式，可解得 $\frac{\partial f}{\partial u}\Big|_{\substack{u=1\\ v=2}}=\frac{\partial f}{\partial v}\Big|_{\substack{u=1\\ v=2}}=1$.
+因此，$f(u,v)$ 在点 $(1,2)$ 处的方向导数的最大值等于 $\sqrt{2}$. 故选 (B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$f(x,y,z)=x^2\int_{1}^{y}\mathrm{e}^t\mathrm{d}t+2z$ 在点 $(1,1,2)$ 处的梯度为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\mathbf{grad}\ f(x,y,z)\Big|_{(1,1,2)}=\left(2x\int_{1}^{y}\mathrm{e}^t\mathrm{d}t,x^2\mathrm{e}^y,2\right)\Big|_{(1,1,2)}=(0,\mathrm{e},2).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$(0,\mathrm{e},2)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $z=f(x,y)$ 可微，其在点 $P_0(1,2)$ 处沿从 $P_0$ 到 $P_1(2,3)$ 的方向的方向导数为 $2\sqrt{2}$，沿从 $P_0$ 到 $P_2(1,0)$ 的方向的方向导数为 $-3$，则 $z$ 在点 $P_0$ 处的最大方向导数为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">如图所示，$\boldsymbol{l}_1=\overrightarrow{P_0P_1}=(1,1)$，$\boldsymbol{l}_2=\overrightarrow{P_0P_2}=(0,-2)$，且【图】平面直角坐标系中标注点 $P_1(2,3)$、$P_0(1,2)$、$P_2(1,0)$，并画出沿 $P_0\to P_1$ 与 $P_0\to P_2$ 方向的箭头
+$$\boldsymbol{l}_1^{\circ}=(\cos\alpha_1,\cos\beta_1)=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}}\right),$$
+$$\boldsymbol{l}_2^{\circ}=(\cos\alpha_2,\cos\beta_2)=(0,-1).$$
+由方向导数计算公式，有
+$$\frac{\partial f}{\partial x}\Big|_{P_0}\cdot\frac{1}{\sqrt{2}}+\frac{\partial f}{\partial y}\Big|_{P_0}\cdot\frac{1}{\sqrt{2}}=2\sqrt{2},$$
+$$\frac{\partial f}{\partial x}\Big|_{P_0}\cdot 0+\frac{\partial f}{\partial y}\Big|_{P_0}\cdot(-1)=-3,$$
+解得 $\frac{\partial f}{\partial x}\Big|_{P_0}=1$，$\frac{\partial f}{\partial y}\Big|_{P_0}=3$，故 $z$ 在点 $P_0$ 处的最大方向导数为
+$$\Big|\mathbf{grad}\ z\big|_{P_0}\Big|=\sqrt{\left(\frac{\partial f}{\partial x}\Big|_{P_0}\right)^2+\left(\frac{\partial f}{\partial y}\Big|_{P_0}\right)^2}=\sqrt{10}.$$
+【注】本题的问题可作如下推广：设 $z=f(x,y)$ 可微，记任意一点 $P_0(x_0,y_0)$，从 $P_0$ 出发，沿两条不共线的方向 $\boldsymbol{l}_1^{\circ}=(\cos\alpha_1,\cos\beta_1)$ 与 $\boldsymbol{l}_2^{\circ}=(\cos\alpha_2,\cos\beta_2)$ 的方向导数分别为
+$$\begin{cases}\dfrac{\partial f}{\partial \boldsymbol{l}_1^{\circ}}\Big|_{P_0}=\dfrac{\partial f}{\partial x}\Big|_{P_0}\cdot\cos\alpha_1+\dfrac{\partial f}{\partial y}\Big|_{P_0}\cdot\cos\beta_1,\\[2mm]\dfrac{\partial f}{\partial \boldsymbol{l}_2^{\circ}}\Big|_{P_0}=\dfrac{\partial f}{\partial x}\Big|_{P_0}\cdot\cos\alpha_2+\dfrac{\partial f}{\partial y}\Big|_{P_0}\cdot\cos\beta_2,\end{cases}$$
+其中 $\begin{vmatrix}\cos\alpha_1&amp;\cos\beta_1\\\cos\alpha_2&amp;\cos\beta_2\end{vmatrix}\neq 0$.
+① 若 $\dfrac{\partial f}{\partial \boldsymbol{l}_1^{\circ}}\Big|_{P_0},\dfrac{\partial f}{\partial \boldsymbol{l}_2^{\circ}}\Big|_{P_0}$ 不全为 0，则该非齐次方程组有唯一解，如本题的解答过程.
+② 若 $\dfrac{\partial f}{\partial \boldsymbol{l}_1^{\circ}}\Big|_{P_0}=\dfrac{\partial f}{\partial \boldsymbol{l}_2^{\circ}}\Big|_{P_0}=0$，则该齐次方程组只有零解，即 $\dfrac{\partial f}{\partial x}\Big|_{P_0}=\dfrac{\partial f}{\partial y}\Big|_{P_0}=0$，故 $\mathrm{d}f\big|_{P_0}=\dfrac{\partial f}{\partial x}\Big|_{P_0}\mathrm{d}x+\dfrac{\partial f}{\partial y}\Big|_{P_0}\mathrm{d}y=0$. 由 $P_0$ 的任意性，有 $\mathrm{d}f=0$，故 $f(x,y)$ 为一常数.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\sqrt{10}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="48" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $u(x,y,z)=xy-2z^2$ 在点 $(1,1,-2)$ 处的最大方向导数为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">函数沿梯度方向的方向导数最大，且最大值就是梯度的模，又 $\mathbf{grad}\ u\Big|_{(1,1,-2)}=(y,x,-4z)\Big|_{(1,1,-2)}=(1,1,8)$，因此最大方向导数为 $\sqrt{1+1+8^2}=\sqrt{66}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\sqrt{66}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="48" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $f(x,y)=\begin{cases}x^2, &amp; y=0,\\xy, &amp; \text{其他},\end{cases}$ $l$ 是单位向量. 以下结论：\n①$f(x,y)$ 在原点处连续；\n②$\left.\dfrac{\partial[f(x,y)]}{\partial l}\right|_{(0,0)}=0$；\n③$\left.\mathrm{d}[f(x,y)]\right|_{(0,0)}=0$.\n所有正确结论的序号是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">①②</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">②③</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">①③</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">①②③</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $y=0$ 时，
+$$\lim_{x\to 0}f(x,0)=\lim_{x\to 0}x^2=0=f(0,0);$$
+当 $y\neq 0$ 时，
+$$\lim_{(x,y)\to(0,0)}f(x,y)=\lim_{(x,y)\to(0,0)}xy=0=f(0,0),$$
+所以 $f(x,y)$ 在原点处连续，①正确.
+设 $\boldsymbol{l}=(\cos\theta,\sin\theta)$，由方向导数的定义，
+$$\frac{\partial[f(x,y)]}{\partial \boldsymbol{l}}\Big|_{(0,0)}=\lim_{t\to 0^{+}}\frac{f(t\cos\theta,t\sin\theta)-f(0,0)}{t}=\lim_{t\to 0^{+}}\frac{f(t\cos\theta,t\sin\theta)}{t}.$$
+无论代入哪个表达式，都有 $\frac{\partial[f(x,y)]}{\partial \boldsymbol{l}}\Big|_{(0,0)}=0$，所以②正确.
+由②，特别地，$\frac{\partial[f(x,y)]}{\partial x}\Big|_{(0,0)}=\frac{\partial[f(x,y)]}{\partial y}\Big|_{(0,0)}=0$，则
+$$\lim_{(x,y)\to(0,0)}\frac{f(x,y)-f(0,0)-\frac{\partial[f(x,y)]}{\partial x}\Big|_{(0,0)}\cdot x-\frac{\partial[f(x,y)]}{\partial y}\Big|_{(0,0)}\cdot y}{\sqrt{x^2+y^2}}$$
+$$=\lim_{(x,y)\to(0,0)}\frac{f(x,y)}{\sqrt{x^2+y^2}}.$$
+当 $y=0$ 时，
+$$\lim_{x\to 0}\frac{f(x,0)}{\sqrt{x^2+0}}=\lim_{x\to 0}\frac{x^2}{\sqrt{x^2}}=0;$$
+当 $y\neq 0$ 时，
+$$\lim_{(x,y)\to(0,0)}\frac{f(x,y)}{\sqrt{x^2+y^2}}=\lim_{(x,y)\to(0,0)}\frac{xy}{\sqrt{x^2+y^2}}=0.$$
+所以总有
+$$\lim_{(x,y)\to(0,0)}\frac{f(x,y)-f(0,0)-\frac{\partial[f(x,y)]}{\partial x}\Big|_{(0,0)}\cdot x-\frac{\partial[f(x,y)]}{\partial y}\Big|_{(0,0)}\cdot y}{\sqrt{x^2+y^2}}=0,$$
+因而 $f(x,y)$ 在原点处可微且 $\mathrm{d}[f(x,y)]\big|_{(0,0)}=0$，所以③正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="48" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y)$ 可微，$p(x,y)$，$p_0(x_0,y_0)$ 为曲面 $z=f(x,y)$ 上的点，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\lim\limits_{p\to p_0}\dfrac{f(p)+\left[f(p_0)-\mathbf{grad}\, f\big|_{p_0}\cdot\overrightarrow{p_0p}\right]}{\left|\overrightarrow{p_0p}\right|}=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim\limits_{p\to p_0}\dfrac{f(p)-\left[f(p_0)-\mathbf{grad}\, f\big|_{p_0}\cdot\overrightarrow{p_0p}\right]}{\left|\overrightarrow{p_0p}\right|}=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\lim\limits_{p\to p_0}\dfrac{f(p)+\left[f(p_0)+\mathbf{grad}\, f\big|_{p_0}\cdot\overrightarrow{p_0p}\right]}{\left|\overrightarrow{p_0p}\right|}=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim\limits_{p\to p_0}\dfrac{f(p)-\left[f(p_0)+\mathbf{grad}\, f\big|_{p_0}\cdot\overrightarrow{p_0p}\right]}{\left|\overrightarrow{p_0p}\right|}=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\mathbf{grad}\ f\big|_{P_0}\cdot\overrightarrow{P_0P}=\left(\frac{\partial f}{\partial x}\Big|_{P_0},\frac{\partial f}{\partial y}\Big|_{P_0}\right)\begin{pmatrix}x-x_0\\y-y_0\end{pmatrix}=\frac{\partial f}{\partial x}\Big|_{P_0}\cdot(x-x_0)+\frac{\partial f}{\partial y}\Big|_{P_0}\cdot(y-y_0),$
+$$\big|\overrightarrow{P_0P}\big|=\sqrt{(x-x_0)^2+(y-y_0)^2},$$
+又由于 $f(x,y)$ 在点 $(x_0,y_0)$ 处可微，于是有
+$$\lim_{P\to P_0}\frac{f(x,y)-f(x_0,y_0)-\mathbf{grad}\ f\big|_{P_0}\cdot\overrightarrow{P_0P}}{\big|\overrightarrow{P_0P}\big|}=0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="48" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">在曲面 $\Sigma:x^2+2y^2+z^2=1$ 上求一点，使函数 $f(x,y,z)=2x^2+y^2+z$ 在该点沿方向 $n$ 的方向导数最大，其中 $n$ 是曲面 $\Sigma$ 在点 $P\left(\dfrac{1}{2},-\dfrac{1}{2},\dfrac{1}{2}\right)$ 的外侧法向量.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">曲面 $\Sigma$ 在点 $P\left(\frac{1}{2},-\frac{1}{2},\frac{1}{2}\right)$ 的外侧法向量为 $\boldsymbol{n}=(2x,4y,2z)\Big|_{\left(\frac{1}{2},-\frac{1}{2},\frac{1}{2}\right)}=(1,-2,1)$，其方向余弦为
+$$\cos\alpha=\frac{1}{\sqrt{6}},\cos\beta=-\frac{2}{\sqrt{6}},\cos\gamma=\frac{1}{\sqrt{6}}.$$
+函数 $f$ 沿方向 $\boldsymbol{n}$ 的方向导数为
+$$\frac{\partial f}{\partial \boldsymbol{n}}=\frac{\partial f}{\partial x}\cos\alpha+\frac{\partial f}{\partial y}\cos\beta+\frac{\partial f}{\partial z}\cos\gamma=\frac{1}{\sqrt{6}}(4x-4y+1).$$
+按照题意，即求函数 $S=\frac{1}{\sqrt{6}}(4x-4y+1)$ 在条件 $x^2+2y^2+z^2=1$ 下的最大值.
+设 $F(x,y,z,\lambda)=4x-4y+1+\lambda(x^2+2y^2+z^2-1)$，则由方程组
+$$\begin{cases}\frac{\partial F}{\partial x}=4+2\lambda x=0,\\\frac{\partial F}{\partial y}=-4+4\lambda y=0,\\\frac{\partial F}{\partial z}=2\lambda z=0,\\\frac{\partial F}{\partial \lambda}=x^2+2y^2+z^2-1=0,\end{cases}$$
+解得 $x=\frac{2}{\sqrt{6}}$，$y=-\frac{1}{\sqrt{6}}$，$z=0$ 或 $x=-\frac{2}{\sqrt{6}}$，$y=\frac{1}{\sqrt{6}}$，$z=0$，即得驻点为
+$$M_1\left(\frac{2}{\sqrt{6}},-\frac{1}{\sqrt{6}},0\right),M_2\left(-\frac{2}{\sqrt{6}},\frac{1}{\sqrt{6}},0\right).$$
+因最大值必存在，比较 $\dfrac{\partial f}{\partial \boldsymbol{n}}\Big|_{M_1}=2+\dfrac{1}{\sqrt{6}}$，$\dfrac{\partial f}{\partial \boldsymbol{n}}\Big|_{M_2}=-2+\dfrac{1}{\sqrt{6}}$ 的大小，可知 $M_1\left(\dfrac{2}{\sqrt{6}},-\dfrac{1}{\sqrt{6}},0\right)$ 即为所求.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="48" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $u=(\mathrm{e}^x\cos y+yz)\boldsymbol{i}+(xz-\mathrm{e}^x\sin y)\boldsymbol{j}+(axy+z)\boldsymbol{k}$ 是某三元函数 $f(x,y,z)$ 的梯度向量，$f(1,0,1)=\mathrm{e}$.\n（1）求 $a$ 的值；\n（2）求 $f(x,y,z)$ 的表达式.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题意，$\mathbf{rot}\ \boldsymbol{u}=\boldsymbol{0}$，即
+$$\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\[2mm]\dfrac{\partial}{\partial x}&amp;\dfrac{\partial}{\partial y}&amp;\dfrac{\partial}{\partial z}\\[2mm]\mathrm{e}^{x}\cos y+yz&amp;xz-\mathrm{e}^{x}\sin y&amp;axy+z\end{vmatrix}=\boldsymbol{0},$$
+可得 $\dfrac{\partial(axy+z)}{\partial y}=\dfrac{\partial(xz-\mathrm{e}^{x}\sin y)}{\partial z}$，则 $ax=x$，即 $a=1$.
+(2) 由于 $\frac{\partial f}{\partial x}=\mathrm{e}^{x}\cos y+yz$，则
+$$f(x,y,z)=\mathrm{e}^{x}\cos y+xyz+g(y,z).$$
+又 $\frac{\partial f}{\partial y}=xz-\mathrm{e}^{x}\sin y$，得 $-\mathrm{e}^{x}\sin y+xz+\frac{\partial\left[g(y,z)\right]}{\partial y}=xz-\mathrm{e}^{x}\sin y$. 于是
+$$\frac{\partial\left[g(y,z)\right]}{\partial y}=0,\ \text{即}\ g(y,z)=h(z).$$
+由 $\frac{\partial f}{\partial z}=xy+z$，有 $xy+\frac{\mathrm{d}\left[h(z)\right]}{\mathrm{d}z}=xy+z$，$h(z)=\frac{z^{2}}{2}+C$. 故
+$$f(x,y,z)=\mathrm{e}^{x}\cos y+xyz+\frac{z^{2}}{2}+C.$$
+又 $f(1,0,1)=\mathrm{e}$，则 $C=-\frac{1}{2}$，于是 $f(x,y,z)=\mathrm{e}^{x}\cos y+xyz+\frac{z^{2}}{2}-\frac{1}{2}$.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-47.html">上一章：第16章 无穷级数</a>
+      <a class="chapter-link" href="chapter-49.html">下一章：第18章 多元函数积分学</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 48, "total": 15, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

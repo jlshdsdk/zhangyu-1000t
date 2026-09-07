@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 一维随机变量及其分布 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第2章 一维随机变量及其分布<span class="top-count">（4题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="60" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X$ 是随机变量，$s,t$ 是正数，$m,n$ 是正整数.
+① 若 $X\sim G(p)$，则 $P\{X&gt;m+n\mid X&gt;m\}$ 与 $m$ 无关；
+② 若 $X\sim P\{X=k\}=\dfrac{1}{k(k+1)},k=1,2,\cdots$，则 $P\{X\geqslant 2n\mid X\geqslant n\}$ 与 $n$ 无关；
+③ 若 $X\sim E(\lambda)$，则 $P\{X&gt;s+t\mid X&gt;s\}$ 与 $s$ 无关；
+④ 若 $X\sim f(x)=\begin{cases}\dfrac{1}{x^2}, &amp; x&gt;1,\\ 0, &amp; \text{其他},\end{cases}$ 则当 $t&gt;1$ 时，$P\{X\geqslant 2t\mid X\geqslant t\}$ 与 $t$ 无关.
+上述结论中正确的个数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">① 和 ③ 分别是几何分布与指数分布的无记忆性，正确.
+对于②，
+$$P\{X\geqslant 2n\mid X\geqslant n\}=\frac{P\{X\geqslant 2n,X\geqslant n\}}{P\{X\geqslant n\}}=\frac{P\{X\geqslant 2n\}}{P\{X\geqslant n\}}=\frac{1-P\{X&lt;2n\}}{1-P\{X&lt;n\}}$$
+$$=\frac{1-\left[\frac{1}{1\cdot 2}+\frac{1}{2\cdot 3}+\cdots+\frac{1}{(2n-1)\cdot 2n}\right]}{1-\left[\frac{1}{1\cdot 2}+\frac{1}{2\cdot 3}+\cdots+\frac{1}{(n-1)\cdot n}\right]}$$
+$$=\frac{1-\left(1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\cdots+\frac{1}{2n-1}-\frac{1}{2n}\right)}{1-\left(1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\cdots+\frac{1}{n-1}-\frac{1}{n}\right)}=\frac{1-\left(1-\frac{1}{2n}\right)}{1-\left(1-\frac{1}{n}\right)}=\frac{1}{2},$$
+正确.
+对于④，
+$$P\{X\geqslant 2t\mid X\geqslant t\}=\frac{P\{X\geqslant 2t,X\geqslant t\}}{P\{X\geqslant t\}}=\frac{P\{X\geqslant 2t\}}{P\{X\geqslant t\}}=\frac{\int_{2t}^{+\infty}\frac{1}{x^2}\mathrm{d}x}{\int_{t}^{+\infty}\frac{1}{x^2}\mathrm{d}x}=\frac{-\frac{1}{x}\Big|_{2t}^{+\infty}}{-\frac{1}{x}\Big|_{t}^{+\infty}}=\frac{1}{2},$$
+正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="60" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X$ 服从参数为 $\lambda(\lambda&gt;0)$ 的泊松分布，$p_1,p_2,p_3$ 分别是 $X$ 取整数、偶数与奇数的概率，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$p_1=p_2=p_3$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$p_1=p_2&gt;p_3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$p_1&gt;p_2&gt;p_3$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$p_1&gt;p_2=p_3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知，$P\{X=k\}=\frac{\lambda^k\mathrm{e}^{-\lambda}}{k!},k=0,1,2,\cdots$，则
+$$\begin{aligned}
+p_2-p_3&amp;=\sum_{k=0}^{\infty}\frac{\lambda^{2k}\mathrm{e}^{-\lambda}}{(2k)!}-\sum_{k=0}^{\infty}\frac{\lambda^{2k+1}\mathrm{e}^{-\lambda}}{(2k+1)!}\\
+&amp;=\left(1-\frac{\lambda}{1!}+\frac{\lambda^2}{2!}-\frac{\lambda^3}{3!}+\cdots\right)\mathrm{e}^{-\lambda}\\
+&amp;=\sum_{n=0}^{\infty}\frac{(-\lambda)^n}{n!}\mathrm{e}^{-\lambda}=\mathrm{e}^{-2\lambda}&gt;0,
+\end{aligned}$$
+故 $p_2&gt;p_3$. 又显然 $p_1=\sum\limits_{k=0}^{\infty}\dfrac{\lambda^k\mathrm{e}^{-\lambda}}{k!}&gt;p_2$，故 $p_1&gt;p_2&gt;p_3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="60" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 的概率密度 $f(x)\neq 1(x\in\mathbf{R})$，则 $X$ 不可能服从（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$N(1,1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$N(0,2)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$E(2)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$U(-1,1)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">若 $X$ 服从正态分布 $N(\mu,\sigma^2)$，则
+$$f(x)=\frac{1}{\sqrt{2\pi}\sigma}\mathrm{e}^{-\frac{(x-\mu)^2}{2\sigma^2}},x\in\mathbf{R},$$
+故
+$$f_{\max}=f(\mu)=\frac{1}{\sqrt{2\pi}\sigma}.$$
+选项(A)，$f_{1\max}(x)=\dfrac{1}{\sqrt{2\pi}}&lt;1$；选项(B)，$f_{2\max}(x)=\dfrac{1}{\sqrt{2\pi}\sqrt{2}}&lt;1$；选项(C)，$f_{3\min}(x)&lt;1$，$f_{3\max}(x)&gt;1$；选项(D)，$f_{4\max}(x)=\dfrac{1}{2}&lt;1$. 故选(C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="60" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 的绝对值不大于 1，$P\{X=-1\}=\dfrac{1}{8},P\{X=1\}=\dfrac{1}{4}$. 在事件 $\{-1&lt;X&lt;1\}$ 发生的条件下，$X$ 在 $(-1,1)$ 内任一子区间上取值的条件概率与该子区间长度成正比，求 $X$ 的分布函数 $F(x)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知 $P\{|X|\leqslant 1\}=1,P\{X=-1\}=\dfrac{1}{8},P\{X=1\}=\dfrac{1}{4}$，记 $A=\{-1&lt;X&lt;1\}$，依题意，在 $A$ 发生的条件下，$X$ 在 $(-1,1)$ 上服从均匀分布，即在 $A$ 发生的条件下，$X$ 的条件概率密度为
+$$f_X(x\mid A)=\begin{cases}\dfrac{1}{2},&amp;-1&lt;x&lt;1,\\0,&amp;\text{其他}.\end{cases}$$
+由题设得
+$$\begin{aligned}
+P(A)&amp;=P\{-1&lt;X&lt;1\}=P\{-1\leqslant X\leqslant 1\}-P\{X=-1\}-P\{X=1\}\\
+&amp;=1-\frac{1}{8}-\frac{1}{4}=\frac{5}{8}.
+\end{aligned}$$
+记所求 $X$ 的分布函数 $F(x)=P\{X\leqslant x\}$，则
+当 $x&lt;-1$ 时，$F(x)=P\{X\leqslant x\}=0$；
+当 $-1\leqslant x&lt;1$ 时，$F(x)=P\{X\leqslant x\}=P\{X&lt;-1\}+P\{X=-1\}+P\{-1&lt;X\leqslant x\}$
+$$=0+\frac{1}{8}+P\{-1&lt;X\leqslant x,A\}+P\{-1&lt;X\leqslant x,\bar A\}$$
+$$=\frac{1}{8}+P(A)P\{-1&lt;X\leqslant x\mid A\}=\frac{1}{8}+\frac{5}{8}\int_{-1}^{x}\frac{1}{2}\,\mathrm{d}t=\frac{5x+7}{16};$$
+当 $x\geqslant 1$ 时，由于 $P\{|X|\leqslant 1\}=1$，因此 $F(x)=P\{X\leqslant x\}=1$.
+综上，
+$$F(x)=\begin{cases}0,&amp;x&lt;-1,\\\dfrac{5x+7}{16},&amp;-1\leqslant x&lt;1,\\1,&amp;x\geqslant 1.\end{cases}$$
+【注】① $P\{X\leqslant x\}=P\{X\leqslant x,\Omega\}$，这是求随机变量分布、计算概率时常用的技巧，称为“全概率分解法”.
+② 从本题可以看出，$X$ 的分布函数 $F(x)$ 既不是连续函数（$X$ 不是连续型随机变量），也不是阶梯形函数（$X$ 不是离散型随机变量）.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-59.html">上一章：第1章 随机事件和概率</a>
+      <a class="chapter-link" href="chapter-61.html">下一章：第3章 一维随机变量函数的分布</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 60, "total": 4, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

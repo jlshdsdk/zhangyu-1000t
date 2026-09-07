@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 一元函数微分学的计算 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第4章 一元函数微分学的计算<span class="top-count">（17题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 为三次多项式，且 $f(x) + 1$ 能被 $(x - 1)^2$ 整除，$f(x) - 1$ 能被 $(x + 1)^2$ 整除，则 $f(x) = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f(x)+1$ 能被 $(x-1)^2$ 整除，故可以设
+$$f(x)=(x-1)^2(ax+b)-1.$$
+又 $f(x)-1$ 能被 $(x+1)^2$ 整除，故可以设 $f(x)=(x+1)^2(cx+d)+1$，故 $f(-1)=1$，于是 $4(-a+b)-1=1$，即
+$$4(b-a)-2=0. \tag{1}$$
+且 $f'(x)=2(x+1)(cx+d)+(x+1)^2\cdot c$，故 $f'(-1)=0$，于是
+$$4a-4(b-a)=0. \tag{2}$$
+联立 ①，② 式，得 $a=\frac{1}{2}$，$b=1$，故 $f(x)=\frac{1}{2}(x-1)^2(x+2)-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{2}(x-1)^2(x+2)-1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="35" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $x = 0$ 的某邻域内具有连续导数，且 $f(0) = 1$，$f'(x) = \dfrac{1}{2}f[f(x) - 1]$，求 $f''(0)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将 $x=0$ 代入等式，得 $f'(0)=\frac{1}{2}f[f(0)-1]=\frac{1}{2}f(0)=\frac{1}{2}$.
+在 $f'(x)=\frac{1}{2}f[f(x)-1]$ 两端关于 $x$ 求导，得
+$$f''(x)=\frac{1}{2}f'[f(x)-1]\cdot f'(x),$$
+将 $f(0)=1$，$f'(0)=\frac{1}{2}$ 代入上式，得 $f''(0)=\frac{1}{8}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y = y(x)$ 是由方程 $y^3 + xy + x^2 - 2x + 1 = 0$ 确定并且满足 $y(1) = 0$ 的函数，则 $\lim_{x \to 1} \dfrac{(x - 1)^3}{\int_1^x y(t)\mathrm{d}t} = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\text{原式}\xrightarrow{\text{洛必达法则}}\lim\limits_{x \to 1}\frac{3(x-1)^2}{y(x)}\xrightarrow{\text{洛必达法则}}\lim\limits_{x \to 1}\frac{6(x-1)}{y'(x)}.$
+对隐函数求导，有 $3y^2y'+xy'+y+2x-2=0$，得
+$$y'(x)=-\frac{y+2x-2}{3y^2+x}，且 \lim\limits_{x \to 1}y'(x)=0.$$
+再用洛必达法则，
+$$\text{原式}=\lim\limits_{x \to 1}\frac{6}{y''(x)}.$$
+又
+$$y''(x)=-\frac{(3y^2+x)(y'+2)-(y+2x-2)(6yy'+1)}{(3y^2+x)^2},$$
+$$\lim\limits_{x \to 1}y''(x)=-2,$$
+所以原式 $=-3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-3$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="35" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $y = y(x)$ 由方程 $\arctan\dfrac{x}{y} = \ln\sqrt{x^2 + y^2}$ 确定，求 $\dfrac{\mathrm{d}y}{\mathrm{d}x}$ 与 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">两边求导得
+$$\frac{\dfrac{y-xy'}{y^2}}{\left(\dfrac{x}{y}\right)^2+1}=\frac{2x+2yy'}{\sqrt{x^2+y^2}\cdot 2\sqrt{x^2+y^2}}，$$
+整理得 $y'=\dfrac{y-x}{y+x}$，进而有
+$$y''=\frac{2(xy'-y)}{(x+y)^2}=-\frac{2(x^2+y^2)}{(x+y)^3}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="35" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y = 2x + \sin x$，求其反函数 $x = x(y)$ 的二阶导数 $\dfrac{\mathrm{d}^2x}{\mathrm{d}y^2}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\frac{\mathrm{d}x}{\mathrm{d}y}=\frac{1}{2+\cos x}，$$
+从而
+$$\frac{\mathrm{d}^2x}{\mathrm{d}y^2}=\frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\mathrm{d}x}{\mathrm{d}y}\right)\cdot\frac{\mathrm{d}x}{\mathrm{d}y}=\frac{\sin x}{(2+\cos x)^3}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $y = \sin(\mathrm{e}^{-\sqrt{x}})$，则 $\left.\dfrac{\mathrm{d}y}{\mathrm{d}x}\right|_{x = 1} = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $y=\sin(\mathrm{e}^{-\sqrt{x}})$，所以
+$$\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=1}=\cos(\mathrm{e}^{-\sqrt{x}})\cdot\mathrm{e}^{-\sqrt{x}}\cdot\left(-\frac{1}{2\sqrt{x}}\right)\bigg|_{x=1}=-\frac{1}{2\mathrm{e}}\cos\frac{1}{\mathrm{e}}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\frac{1}{2\mathrm{e}}\cos\frac{1}{\mathrm{e}}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y = y(x)$ 由方程 $x^2 - xy + y^2 = 1$ 确定，则 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2} = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对 $x^2-xy+y^2=1$ 两边关于 $x$ 求导，得 $2x-xy'-y+2yy'=0$，则
+$$y'=\frac{y-2x}{2y-x},$$
+$$y''=\frac{(2y-x)(y'-2)-(y-2x)(2y'-1)}{(2y-x)^2}=\frac{(2y-x)(y-2x-4y+2x)-(y-2x)(2y-4x-2y+x)}{(2y-x)^3}=\frac{-6(x^2-xy+y^2)}{(2y-x)^3}=-\frac{6}{(2y-x)^3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{-6}{(2y-x)^3}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y = y(x)$ 由方程 $x = \int_1^{y - x} \sin^2\left(\dfrac{\pi}{4}t\right)\mathrm{d}t$ 确定，则 $\left.\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\right|_{x = 0} = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $x=\displaystyle\int_1^{y-x}\sin^2\left(\frac{\pi}{4}t\right)\mathrm{d}t$，将 $x=0$ 代入，有 $y=1$. 再将所给方程两边对 $x$ 求导，得
+$$1=\sin^2\left[\frac{\pi}{4}(y-x)\right]\cdot(y'-1)，$$
+于是 $y'=\csc^2\left[\dfrac{\pi}{4}(y-x)\right]+1$. 从而
+$$y''=-2\csc^2\left[\frac{\pi}{4}(y-x)\right]\cot\left[\frac{\pi}{4}(y-x)\right]\cdot\frac{\pi}{4}(y'-1).$$
+将 $x=0$，$y=1$ 代入，得 $\left.y'\right|_{x=0}=3$，$\left.y''\right|_{x=0}=-2\pi$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-2\pi$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $y = y(x)$ 由 $\begin{cases} x = t^2 - 2t + 1, \\ \mathrm{e}^y\sin t - y + 1 = 0 \end{cases}$ 确定，则 $\left.\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\right|_{t = 0} = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">易知 $\dfrac{\mathrm{d}x}{\mathrm{d}t}=2t-2$，$\dfrac{\mathrm{d}^2x}{\mathrm{d}t^2}=2$. 对 $\mathrm{e}^y\sin t-y+1=0$ 的两边关于 $t$ 连续求导两次，得
+$$\mathrm{e}^y\sin t\,\frac{\mathrm{d}y}{\mathrm{d}t}+\mathrm{e}^y\cos t-\frac{\mathrm{d}y}{\mathrm{d}t}=0,$$
+$$\mathrm{e}^y\sin t\left(\frac{\mathrm{d}y}{\mathrm{d}t}\right)^2+2\mathrm{e}^y\cos t\,\frac{\mathrm{d}y}{\mathrm{d}t}+\mathrm{e}^y\sin t\,\frac{\mathrm{d}^2y}{\mathrm{d}t^2}-\mathrm{e}^y\sin t-\frac{\mathrm{d}^2y}{\mathrm{d}t^2}=0.$$
+注意到 $t=0$ 时，$x=y=1$，一并代入上述式子，得 $\left.\dfrac{\mathrm{d}x}{\mathrm{d}t}\right|_{t=0}=-2$，$\left.\dfrac{\mathrm{d}y}{\mathrm{d}t}\right|_{t=0}=\mathrm{e}$，$\left.\dfrac{\mathrm{d}^2y}{\mathrm{d}t^2}\right|_{t=0}=2\mathrm{e}^2$. 因此
+$$\left.\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\right|_{t=0}=\left.\frac{\dfrac{\mathrm{d}x}{\mathrm{d}t}\dfrac{\mathrm{d}^2y}{\mathrm{d}t^2}-\dfrac{\mathrm{d}^2x}{\mathrm{d}t^2}\dfrac{\mathrm{d}y}{\mathrm{d}t}}{\left(\dfrac{\mathrm{d}x}{\mathrm{d}t}\right)^3}\right|_{t=0}=\frac{2\mathrm{e}^2+\mathrm{e}}{4}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{2\mathrm{e}^2+\mathrm{e}}{4}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x = x(y)$ 由方程 $y = \int_1^{x - y} \cos^2\left(\dfrac{\pi t}{4}\right)\mathrm{d}t$ 确定，则 $\lim_{n \to \infty}\left[nx\left(\dfrac{1}{n}\right) - n\right] = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方程两边对 $y$ 求导，得
+$$1=\cos^2\left[\frac{\pi(x-y)}{4}\right]\cdot[x'(y)-1]，$$
+于是
+$$x'(y)=\frac{1}{\cos^2\left[\dfrac{\pi(x-y)}{4}\right]}+1=\sec^2\left[\frac{\pi(x-y)}{4}\right]+1，$$
+且当 $y=0$ 时，有 $0=\displaystyle\int_1^x\cos^2\left(\frac{\pi t}{4}\right)\mathrm{d}t$，故 $x=1$.
+又 $x‘(0)=\sec^2\dfrac{\pi}{4}+1=3$，于是
+$$\text{原式}=\lim\limits_{n \to \infty}\frac{x\left(0+\dfrac{1}{n}\right)-x(0)}{\dfrac{1}{n}-0}=x'(0)=3.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">3</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $x = 0$ 处存在二阶导数，且 $\lim_{x \to 0} \dfrac{f(x) + x}{1 - \cos x} = 2$，则 $f''(0) = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将带佩亚诺余项的泰勒公式 $f(x)=f(0)+f'(0)x+\dfrac{1}{2}f''(0)x^2+o(x^2)$ 代入所给极限式，有
+$$2=\lim\limits_{x \to 0}\frac{f(0)+[f'(0)+1]x+\dfrac{1}{2}f''(0)x^2+o(x^2)}{\dfrac{1}{2}x^2},$$
+所以 $f''(0)=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f'(\ln x) = x\ln x$，则 $f^{(n)}(x) = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $f'(\ln x)=x\ln x$，则 $f'(x)=x\mathrm{e}^x$. 由莱布尼茨公式，有
+$$f^{(n)}(x)=(x\mathrm{e}^x)^{(n-1)}=\mathrm{e}^x x+\mathrm{C}_{n-1}^{1}\mathrm{e}^x(x)'+0=\mathrm{e}^x(x+n-1).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\mathrm{e}^x(x+n-1)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x = t^3 + 2t + 1$，$\int_0^{y + t} \mathrm{e}^{-u^2}\mathrm{d}u = t$，则 $\left.\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\right|_{t = 0} = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\displaystyle\int_0^{y+t}\mathrm{e}^{-u^2}\mathrm{d}u=t$ 知，当 $t=0$ 时，$y=0$.
+对 $\displaystyle\int_0^{y+t}\mathrm{e}^{-u^2}\mathrm{d}u=t$ 两端关于 $t$ 求导，可得
+$$\mathrm{e}^{-(y+t)^2}\left(\frac{\mathrm{d}y}{\mathrm{d}t}+1\right)=1,$$
+所以
+$$\frac{\mathrm{d}y}{\mathrm{d}t}=\mathrm{e}^{(y+t)^2}-1.$$
+由参数方程求导法可得
+$$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\dfrac{\mathrm{d}y}{\mathrm{d}t}}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}=\frac{\mathrm{e}^{(y+t)^2}-1}{3t^2+2},$$
+$$\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=\frac{\dfrac{\mathrm{d}\left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)}{\mathrm{d}t}}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}=\frac{2(y+t)(3t^2+2)\mathrm{e}^{2(y+t)^2}-[\mathrm{e}^{(y+t)^2}-1]\cdot 6t}{(3t^2+2)^3},$$
+所以 $\left.\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\right|_{t=0}=0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="35" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x) = \arctan\dfrac{1 + x}{1 - x}$，整数 $n \geqslant 0$，则 $f^{(2n + 1)}(0) = $ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f‘(x)=\frac{1}{1+x^2}=\sum\limits_{n=0}^{\infty}(-1)^n x^{2n},$$
+$$f(x)=f(0)+\int_0^x f’(t)\,\mathrm{d}t=\frac{\pi}{4}+\int_0^x\sum\limits_{n=0}^{\infty}(-1)^n t^{2n}\,\mathrm{d}t=\frac{\pi}{4}+\sum\limits_{n=0}^{\infty}(-1)^n\int_0^x t^{2n}\,\mathrm{d}t=\frac{\pi}{4}+\sum\limits_{n=0}^{\infty}\frac{(-1)^n}{2n+1}x^{2n+1},$$
+由泰勒展开式的唯一性，有
+$$f^{(2n+1)}(0)=\frac{(-1)^n}{2n+1}(2n+1)!=(-1)^n(2n)!\quad(n=0,1,\cdots).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$(-1)^n(2n)!$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="35" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x) = \dfrac{x^2}{1 - x^2}$，则 $f^{(2n)}(0)$（$n = 1, 2, \cdots$）$= ($　$)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$n!$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(2n)!$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(2n - 1)!$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f(x)=\frac{x^2}{1-x^2}=-1+\frac{1}{1-x^2}=-1+\frac{1}{2}\left(\frac{1}{1-x}+\frac{1}{1+x}\right)，$$
+故
+$$f^{(2n)}(x)=\frac{1}{2}(2n)!(-1)^n\left[\frac{(-1)^{2n}}{(1-x)^{2n+1}}+\frac{1}{(1+x)^{2n+1}}\right]，$$
+从而 $f^{(2n)}(0)=(2n)!$.
+故应选（C）.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="35" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x) = \mid x\mid\sin^2 x$，则使 $f^{(n)}(0)$ 存在的阶数 $n$ 的最大值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $(|x|)'=\dfrac{|x|}{x}\ (x \neq 0)$，故当 $x \neq 0$ 时，
+$$f'(x)=|x|\left(\frac{\sin^2x}{x}+\sin 2x\right),$$
+$$f''(x)=|x|\left(\frac{2\sin 2x}{x}+2\cos 2x\right).$$
+于是，
+$$f'(0)=\lim\limits_{x \to 0}\frac{f(x)-f(0)}{x-0}=\lim\limits_{x \to 0}\frac{|x|\sin^2x}{x}=\lim\limits_{x \to 0}|x|x=0,$$
+$$f''(0)=\lim\limits_{x \to 0}\frac{f'(x)-f'(0)}{x-0}=\lim\limits_{x \to 0}\frac{|x|\left(\dfrac{\sin^2x}{x}+\sin 2x\right)}{x}=\lim\limits_{x \to 0}|x|\left(\frac{\sin^2x}{x^2}+\frac{\sin 2x}{x}\right)=0,$$
+而
+$$\lim\limits_{x \to 0^+}\frac{f''(x)-f''(0)}{x-0}=\lim\limits_{x \to 0^+}\frac{x\left(\dfrac{2\sin 2x}{x}+2\cos 2x\right)}{x}=\lim\limits_{x \to 0^+}\left(\frac{2\sin 2x}{x}+2\cos 2x\right)=6,$$
+$$\lim\limits_{x \to 0^-}\frac{f''(x)-f''(0)}{x-0}=\lim\limits_{x \to 0^-}\frac{-x\left(\dfrac{2\sin 2x}{x}+2\cos 2x\right)}{x}=\lim\limits_{x \to 0^-}\left(-\frac{2\sin 2x}{x}-2\cos 2x\right)=-6,$$
+故 $f'''(0)$ 不存在. 因此，使 $f^{(n)}(0)$ 存在的阶数 $n$ 的最大值为 2.
+应选(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="35" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x) = 3x^2 + x^2\mid x\mid$，使得 $f^{(n)}(0)$ 存在的最高阶数 $n$ 为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x&gt;0$ 时，$f(x)=3x^2+x^3$，从而
+$$f'(x)=6x+3x^2，f''(x)=6+6x，f'''(x)=6；$$
+当 $x&lt;0$ 时，$f(x)=3x^2-x^3$，从而
+$$f'(x)=6x-3x^2，f''(x)=6-6x，f'''(x)=-6,$$
+所以
+$$f_+'(0)=f_-'(0)=0,$$
+故
+$$f'(0)=0.$$
+由于
+$$f_+''(0)=f_-''(0)=6,$$
+故
+$$f''(0)=6.$$
+因为
+$$f_+'''(0)=6，f_-'''(0)=-6,$$
+所以 $f'''(0)$ 不存在.
+从而 $n=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-34.html">上一章：第3章 一元函数微分学的概念</a>
+      <a class="chapter-link" href="chapter-36.html">下一章：第5章 一元函数微分学的应用(一)——几何应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 35, "total": 17, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

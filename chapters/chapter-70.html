@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>测试卷三 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">综合篇 · 测试卷三<span class="top-count">（22题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $f(x)=\left|\dfrac{x}{x+1}\right|^{x+1}$ 的跳跃间断点个数为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">间断点为 $x=-1, x=0, x=1$.
+$$\lim_{x \to -1^-} f(x)=\lim_{x \to -1^-}\left(\frac{x}{x+1}\right)^{\frac{x+1}{x-1}}=\mathrm{e}^{\lim\limits_{x \to -1^-}\frac{x+1}{x-1}\ln\frac{x}{x+1}}=\mathrm{e}^{\frac{1}{2}\lim\limits_{x \to -1^-}\left[(x+1)\ln|x|-(x+1)\ln|x+1|\right]}=\mathrm{e}^{\frac{1}{2}\times 0}=1,$$
+$$\lim_{x \to -1^+} f(x)=\lim_{x \to -1^+}\left(\frac{-x}{x+1}\right)^{\frac{x+1}{x-1}}=\mathrm{e}^{\lim\limits_{x \to -1^+}\frac{x+1}{x-1}\ln\frac{-x}{x+1}}=\mathrm{e}^{\frac{1}{2}\lim\limits_{x \to -1^+}\left[(x+1)\ln(-x)-(x+1)\ln(x+1)\right]}=\mathrm{e}^{\frac{1}{2}\times 0}=1,$$
+故 $x=-1$ 为可去间断点.
+$$\lim_{x \to 0} f(x)=\lim_{x \to 0}\left|\frac{x}{x+1}\right|^{\frac{x+1}{x-1}}=\mathrm{e}^{\lim\limits_{x \to 0}\frac{x+1}{x-1}\ln\left|\frac{x}{x+1}\right|}=\mathrm{e}^{-\lim\limits_{x \to 0}\ln\left|\frac{x}{x+1}\right|}=+\infty,$$故 $x=0$ 为无穷间断点. 又
+$$\lim_{x \to 1^-} f(x)=\lim_{x \to 1^-}\left(\frac{x}{x+1}\right)^{\frac{x+1}{x-1}}=\mathrm{e}^{\lim\limits_{x \to 1^-}\frac{x+1}{x-1}\ln\frac{x}{x+1}}=\mathrm{e}^{2\lim\limits_{x \to 1^-}\frac{1}{x-1}}=+\infty,$$
+故 $x=1$ 为无穷间断点. 所以函数不存在跳跃间断点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\sum\limits_{n=1}^{\infty} n\mathrm{e}^{-n}=$（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{(\mathrm{e}-1)^2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{\mathrm{e}}{(\mathrm{e}-1)^2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{\mathrm{e}^2-1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{\mathrm{e}}{\mathrm{e}^2-1}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令
+$$S(x)=\sum_{n=1}^{\infty} n x^n,\ |x|&lt;1,\ S_1(x)=\frac{S(x)}{x},\ x \neq 0\ ,$$
+则
+$$S_1(x)=\left[\int \frac{S(x)}{x}\mathrm{d}x\right]^{\prime}=\left(\sum_{n=1}^{\infty} x^n\right)^{\prime}=\left(\frac{x}{1-x}\right)^{\prime}=\frac{1}{(1-x)^2}\ .$$
+于是
+$$S(x)=x S_1(x)=\frac{x}{(1-x)^2},\ |x|&lt;1\ .$$
+故
+$$\sum_{n=1}^{\infty} n \mathrm{e}^{-n}=S\left(\frac{1}{\mathrm{e}}\right)=\frac{\dfrac{1}{\mathrm{e}}}{\left(1-\dfrac{1}{\mathrm{e}}\right)^2}=\frac{\mathrm{e}}{(\mathrm{e}-1)^2}\ .$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y)$ 在点 $(0,0)$ 处及其附近有定义，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">当 $\lim\limits_{x \to 0 \atop y \to 0}\dfrac{f(x,y)}{\sqrt{x^2+y^2}}=0$ 时，$f(x,y)$ 在点 $(0,0)$ 处可微</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $f(x,y)$ 在点 $(0,0)$ 处可微时，$\lim\limits_{x \to 0 \atop y \to 0}\dfrac{f(x,y)}{\sqrt{x^2+y^2}}=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">当 $\lim\limits_{x \to 0 \atop y \to 0}\dfrac{f(x,y)-f(0,0)}{x^2+y^2}=0$ 时，$f(x,y)$ 在点 $(0,0)$ 处可微</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">当 $f(x,y)$ 在点 $(0,0)$ 处可微时，$\lim\limits_{x \to 0 \atop y \to 0}\dfrac{f(x,y)-f(0,0)}{x^2+y^2}=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f(x,y)$ 在点 $(0,0)$ 处可微
+$$\Leftrightarrow f(x,y)=f(0,0)+Ax+By+o\left(\sqrt{x^2+y^2}\right),\ (x,y) \to (0,0)$$
+$$\Leftrightarrow \lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y)-f(0,0)-Ax-By}{\sqrt{x^2+y^2}}=0,$$其中 $A,\ B$ 与 $x,\ y$ 无关.
+对于(A), 取 $f(x,y)=\begin{cases}x^2+y^2, &amp; (x,y)\neq(0,0),\\ 1, &amp; (x,y)=(0,0),\end{cases}$ 排除(A).
+对于(B), 取 $f(x,y)=1$, 排除(B).
+对于(C), 令 $x \to 0, y=0$, 则
+$$\lim_{x \to 0}\frac{f(x,0)-f(0,0)}{x^2}=0,$$
+于是
+$$f_x^{\prime}(0,0)=\lim_{x \to 0}\frac{f(x,0)-f(0,0)}{x-0}=\lim_{x \to 0}\frac{f(x,0)-f(0,0)}{x^2}\cdot x=0,$$
+同理 $f_y^{\prime}(0,0)=0$, 又
+$$\lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y)-f(0,0)}{x^2+y^2}=\lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y)-f(0,0)}{\sqrt{x^2+y^2}}\cdot\frac{1}{\sqrt{x^2+y^2}}=0,$$
+故
+$$\lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y)-f(0,0)}{\sqrt{x^2+y^2}}=\lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y)-f(0,0)-0\cdot x-0\cdot y}{\sqrt{x^2+y^2}}=0,$$
+即 $f(x,y)$ 在点 $(0,0)$ 处可微.
+对于(D), 取 $f(x,y)=x^2+y^2$, 排除(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $L_1$，$L_2$ 为两条均包含原点在其内部同向简单闭曲线，若 $\oint_{L_1}\dfrac{2x\mathrm{d}x+y\mathrm{d}y}{x^2+y^2}=a$、$\oint_{L_2}\dfrac{2x\mathrm{d}x+y\mathrm{d}y}{x^2+y^2}=b$，则（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a-b=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a+b=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a$，$b$ 不一定相等，且 $b$ 与 $L_2$ 的形状有关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a$，$b$ 不一定相等，且 $b$ 与 $L_2$ 的形状无关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $P=\dfrac{2x}{x^2+y^2}$, $Q=\dfrac{y}{x^2+y^2}$, 记以 $L_1,\ L_2$ 为边界的区域为 $D$, 则 $D$ 不包含原点, 故由格林公式, 得
+$$\oint_{L_1}\frac{2x\mathrm{d}x+y\mathrm{d}y}{x^2+y^2}+\oint_{L_2^{-}}\frac{2x\mathrm{d}x+y\mathrm{d}y}{x^2+y^2}=\pm\iint_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\mathrm{d}x\mathrm{d}y=\pm\iint_{D}\frac{2xy}{\left(x^2+y^2\right)^2}\mathrm{d}x\mathrm{d}y\ ,$$
+于是
+$$a-b=\pm\iint_{D}\frac{2xy}{\left(x^2+y^2\right)^2}\mathrm{d}x\mathrm{d}y\ .$$
+可见 $a-b$ 不一定为零, 且 $b=a\pm\iint_{D}\dfrac{2xy}{\left(x^2+y^2\right)^2}\mathrm{d}x\mathrm{d}y$, 与 $L_2$ 的形状有关.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha_1=\begin{bmatrix}1\\0\\0\\a\end{bmatrix}$，$\alpha_2=\begin{bmatrix}0\\0\\0\\b\end{bmatrix}$，$\alpha_3=\begin{bmatrix}1\\-1\\0\\c\end{bmatrix}$，$\alpha_4=\begin{bmatrix}-1\\1\\1\\d\end{bmatrix}$，其中 $a,b,c,d$ 为任意常数，则下列向量组线性相关的是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\alpha_1,\alpha_2,\alpha_3$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\alpha_2,\alpha_3,\alpha_4$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\alpha_1,\alpha_3,\alpha_4$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\alpha_1,\alpha_2,\alpha_4$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">首先, 当 $b=1$ 时, $\left|\alpha_1,\alpha_2,\alpha_3\right|=1$, $\left|\alpha_1,\alpha_2,\alpha_4\right|=-1$, 所以此时向量组 $\alpha_1,\alpha_2,\alpha_3$ 与 $\alpha_1,\alpha_2,\alpha_4$ 都线性无关, 即选项(A)与(D)排除.
+其次, 当 $a=0$, $c=d=1$ 时, $\left|\alpha_1,\alpha_3,\alpha_4\right|=-2$, 此时向量组 $\alpha_1,\alpha_3,\alpha_4$ 也是线性无关的, 选项(C)排除.
+当 $b=0$ 时, 知 $\alpha_2$ 为零向量, 故 $\alpha_2,\alpha_3,\alpha_4$ 线性相关; 当 $b\neq 0$ 时, 有
+$$(c+d)\alpha_2-b(\alpha_3+\alpha_4)=0\ ,$$
+所以, 对任意的常数 $b,\ c,\ d$ 而言, $\alpha_2,\alpha_3,\alpha_4$ 都是线性相关的.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A,B$ 为 $n$ 阶矩阵，且 $A$ 满足 $A^2-A=3E$，则与 $\begin{bmatrix}A\\B\end{bmatrix}x=0$ 不同解的是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{bmatrix}A-B\\A+AB\end{bmatrix}x=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{bmatrix}A+B\\A+AB-B\end{bmatrix}x=0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{bmatrix}A-B\\2A+B\end{bmatrix}x=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{bmatrix}A+B\\BA+B^2\end{bmatrix}x=0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设可知, $A+E$ 可逆, $A-2E$ 可逆.
+对于选项(A), $\begin{bmatrix}A-B\\ A+AB\end{bmatrix}=\begin{bmatrix}E &amp; -E\\ E &amp; A\end{bmatrix}\begin{bmatrix}A\\ B\end{bmatrix}$, 其中 $\begin{bmatrix}E &amp; -E\\ E &amp; A\end{bmatrix}\to\begin{bmatrix}E &amp; -E\\ O &amp; A+E\end{bmatrix}$, 由 $\begin{bmatrix}E &amp; -E\\ O &amp; A+E\end{bmatrix}$ 可逆, 得 $\begin{bmatrix}E &amp; -E\\ E &amp; A\end{bmatrix}$ 可逆, 于是 $\begin{bmatrix}A-B\\ A+AB\end{bmatrix}x=0$ 与 $\begin{bmatrix}A\\ B\end{bmatrix}x=0$ 同解.
+同理, 对于选项(B), $\begin{bmatrix}A+B\\ A+AB-B\end{bmatrix}=\begin{bmatrix}E &amp; E\\ E &amp; A-E\end{bmatrix}\begin{bmatrix}A\\ B\end{bmatrix}$, 其中 $\begin{bmatrix}E &amp; E\\ E &amp; A-E\end{bmatrix}\to\begin{bmatrix}E &amp; E\\ O &amp; A-2E\end{bmatrix}$, 由 $\begin{bmatrix}E &amp; E\\ O &amp; A-2E\end{bmatrix}$ 可逆, 可知 $\begin{bmatrix}A+B\\ A+AB-B\end{bmatrix}x=0$ 与 $\begin{bmatrix}A\\ B\end{bmatrix}x=0$ 同解.
+对于选项(C), $\begin{bmatrix}A-B\\ 2A+B\end{bmatrix}=\begin{bmatrix}E &amp; -E\\ 2E &amp; E\end{bmatrix}\begin{bmatrix}A\\ B\end{bmatrix}$, 其中 $\begin{bmatrix}E &amp; -E\\ 2E &amp; E\end{bmatrix}\to\begin{bmatrix}E &amp; -E\\ 3E &amp; O\end{bmatrix}$, 由 $\begin{bmatrix}E &amp; -E\\ 3E &amp; O\end{bmatrix}$ 可逆, 可知 $\begin{bmatrix}A-B\\ 2A+B\end{bmatrix}x=0$ 与 $\begin{bmatrix}A\\ B\end{bmatrix}x=0$ 同解.
+对于选项(D), $\begin{bmatrix}A+B\\ BA+B^2\end{bmatrix}=\begin{bmatrix}E &amp; E\\ B &amp; B\end{bmatrix}\begin{bmatrix}A\\ B\end{bmatrix}$, 其中 $\begin{bmatrix}E &amp; E\\ B &amp; B\end{bmatrix}\to\begin{bmatrix}E &amp; O\\ B &amp; O\end{bmatrix}$, 由 $\begin{bmatrix}E &amp; O\\ B &amp; O\end{bmatrix}$ 不可逆, 可知 $\begin{bmatrix}A+B\\ BA+B^2\end{bmatrix}x=0$ 与 $\begin{bmatrix}A\\ B\end{bmatrix}x=0$ 不同解.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二次型 $f(x_1,x_2,x_3)$ 在正交变换 $x=Py$ 下的标准形为 $y_1^2+y_2^2-2y_3^2$，其中 $P=[e_1,e_2,e_3]$. 若 $Q=[-e_3,e_1,e_2]$，则 $f(x_1,x_2,x_3)$ 在正交变换 $x=Qy$ 下的标准形为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-2y_1^2+y_2^2+y_3^2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$2y_1^2+y_2^2-y_3^2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-2y_1^2-y_2^2+y_3^2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2y_1^2-y_2^2+y_3^2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设二次型矩阵为 $A$, 则
+$$P^{-1}AP=P^{\mathrm{T}}AP=\begin{bmatrix}1 &amp; 0 &amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; -2\end{bmatrix},$$
+故 $e_1,\ e_2,\ e_3$ 分别是 $A$ 的对应于特征值 $1,1,-2$ 的特征向量, 于是 $-e_3$ 也是 $A$ 的对应于特征值 $-2$ 的特征向量. 因此
+$$Q^{-1}AQ=Q^{\mathrm{T}}AQ=\begin{bmatrix}-2 &amp; 0 &amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1\end{bmatrix},$$
+从而 $f(x_1,x_2,x_3)$ 在正交变换 $x=Qy$ 下的标准形为 $-2y_1^2+y_2^2+y_3^2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 与 $Y$ 相互独立且都服从正态分布 $N(1,\sigma^2)$，$\sigma&gt;0$，$\bar{X},\bar{Y}$ 是分别来自总体 $X$，$Y$ 且容量都为 $n$ 的样本的样本均值，则当 $n$ 固定时，概率 $P\{|\bar{X}-\bar{Y}|&gt;\sigma\}$ 的值随 $\sigma$ 的增大而（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">单调增大</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">单调减小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">保持不变</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">增减不定</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意 $\bar{X} \sim N\left(1,\dfrac{\sigma^2}{n}\right)$, $\bar{Y} \sim N\left(1,\dfrac{\sigma^2}{n}\right)$, 且相互独立, 故 $\bar{X}-\bar{Y} \sim N\left(0,\dfrac{2\sigma^2}{n}\right)$, 由此可知当 $n$ 固定时,
+$$P\{|\bar{X}-\bar{Y}|&gt;\sigma\}=1-P\left\{\left|\frac{\bar{X}-\bar{Y}}{\sqrt{2}\sigma/\sqrt{n}}\right|\leqslant\sqrt{\frac{n}{2}}\right\}=1-\left[\Phi\left(\sqrt{\frac{n}{2}}\right)-\Phi\left(-\sqrt{\frac{n}{2}}\right)\right]=2\left[1-\Phi\left(\sqrt{\frac{n}{2}}\right)\right],$$
+与 $\sigma$ 无关, 故所求概率的值保持不变.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的概率密度为 $f(x)=\begin{cases}\dfrac{2x}{a^2}, &amp; 0\leqslant x\leqslant a,\\ 0, &amp; \text{其他},\end{cases}$ 其中 $a\,(a&gt;1)$ 是未知参数，$X_1,X_2,\cdots,X_n$ 是来自总体 $X$ 的简单随机样本，记 $p=P\{0&lt;X&lt;\sqrt{a}\}$，$X_{(1)}=\min\{X_1,X_2,\cdots,X_n\}$，$X_{(n)}=\max\{X_1,X_2,\cdots,X_n\}$，则 $p$ 的最大似然估计量 $\hat{p}$ 为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sqrt{X_{(1)}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sqrt{X_{(n)}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{X_{(1)}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{X_{(n)}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$p=P\{0&lt;X&lt;\sqrt{\alpha}\}=\int_{0}^{\sqrt{\alpha}}f(x)\mathrm{d}x=\frac{1}{\alpha}\ .$$
+当 $0\leqslant x_1\leqslant\alpha$, $0\leqslant x_2\leqslant\alpha$, $\cdots$, $0\leqslant x_n\leqslant\alpha$ 时, 似然函数为
+$$L(\alpha)=f(x_1)f(x_2)\cdots f(x_n)=\frac{2^n}{\alpha^{2n}}x_1x_2\cdots x_n\ .$$
+显然 $L(\alpha)$ 关于 $\alpha$ 单调减少, 且 $\alpha \geqslant \max\left\{x_1,x_2,\cdots,x_n\right\}$, 则 $\alpha$ 的最大似然估计量为
+$$\hat{\alpha}=\max\left\{X_1,X_2,\cdots,X_n\right\}\ .$$
+又知 $p=\dfrac{1}{\alpha}$ 是关于 $\alpha$ 的单调函数, 根据最大似然估计量的不变性, 有 $p$ 的最大似然估计量为
+$$\hat{p}=\frac{1}{\max\left\{X_1,X_2,\cdots,X_n\right\}}=\frac{1}{X_{(n)}}\ .$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="70" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的数学期望存在且方差为 1，根据来自 $X$ 的容量为 36 的简单随机样本测得样本均值为 $a$，$\Phi(1.96)=0.975$，则 $X$ 的数学期望的置信度等于 0.95 的置信区间为（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(a-0.196,\,a+0.196)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(a-0.327,\,a+0.327)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(a-0.49,\,a+0.49)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(a-0.025,\,a+0.025)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">尽管未说明 $X$ 是否为正态总体, 但是由中心极限定理, 易得
+$$Z=\frac{\bar{X}-\mu}{1/\sqrt{36}}\ \text{近似}\ N(0,1)\ ,$$
+又由 $\Phi(1.96)=0.975$, 故 $P\{-1.96&lt;Z&lt;1.96\}=0.95$, 即 $\mu$ 的置信度等于 $0.95$ 的置信区间为
+$$\left(\bar{X}-\frac{1}{6}\times1.96,\bar{X}+\frac{1}{6}\times1.96\right),$$
+将 $\bar{X}=a$ 代入上式得置信区间为 $(a-0.327, a+0.327)$.
+【注】由中心极限定理, 若 $X_i$ 满足定理条件, 则当 $n \to \infty$ 时, $\sum\limits_{i=1}^{n}X_i$ 近似服从 $N(n\mu,n\sigma^2)$,
+故
+$$\sum_{i=1}^{36}X_i\ \text{近似}\ N(36\mu,36),\ \bar{X}=\frac{1}{36}\sum_{i=1}^{36}X_i\ \text{近似}\ N\left(\mu,\frac{1}{36}\right).$$
+已知 $\sigma^2=1$, 故 $\Delta=z_{\frac{\alpha}{2}}\dfrac{\sigma}{\sqrt{n}}=1.96\times\dfrac{1}{6}=0.327$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="70" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim\limits_{n \to \infty} n^2\ln\left(n\sin\dfrac{1}{n}\right)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">先将数列极限转换为函数极限, 然后用换元法. 令 $\dfrac{1}{x}=t$, 可得
+$$\lim_{x \to +\infty}x^2\ln\left(x\sin\frac{1}{x}\right)=\lim_{t \to 0^+}\frac{1}{t^2}\ln\frac{\sin t}{t}=\lim_{t \to 0^+}\frac{1}{t^2}\left(\frac{\sin t}{t}-1\right)=\lim_{t \to 0^+}\frac{\sin t-t}{t^3}=-\frac{1}{6}\ .$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{1}{6}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="70" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$u(x,y,z)=x^3y\,\boldsymbol{i}+z\mathrm{e}^y\,\boldsymbol{j}+z\sqrt{1+z^2}\,\boldsymbol{k}$ 在点 $(1,0,1)$ 处的散度 $\operatorname{div}u=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">按照散度计算公式可得
+$$\mathrm{div}\ u\Big|_{(1,0,1)}=\left(2xy+\mathrm{e}^y z+\frac{xz}{\sqrt{1+z^2}}\right)\Bigg|_{(1,0,1)}=1+\frac{\sqrt{2}}{2}\ .$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$1+\dfrac{\sqrt{2}}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="70" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x&gt;-2$，则微分方程 $y'-\sqrt{y+x^2}=-2x$ 满足 $y(0)=1$ 的特解为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意, 知 $y^{\prime}+2x=\sqrt{y+x^2}$, 令 $y+x^2=u$, 则 $\dfrac{\mathrm{d}u}{\mathrm{d}x}=\sqrt{u}$, 即 $\int\dfrac{1}{\sqrt{u}}\mathrm{d}u=\int\mathrm{d}x$, 有 $2\sqrt{u}=x+C$, 即 $2\sqrt{y+x^2}=x+C$, 又 $y(0)=1$, 于是 $C=2$, 得 $\sqrt{y+x^2}=\dfrac{x}{2}+1$, 整理得
+$$y=-\frac{3}{4}x^2+x+1(x\geqslant-2)\ .$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$y=-\dfrac{3}{4}x^2+x+1(x\geqslant-2)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="70" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设曲线 $\Gamma$ 为曲面 $x^2+y^2+z^2=1$ 与平面 $x+y+z=1$ 的交线，则 $\oint_{\Gamma}(x^2+2y-z)\mathrm{d}s=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由轮换对称性, 有
+$$\oint_{\Gamma}x^2\mathrm{d}s=\oint_{\Gamma}y^2\mathrm{d}s=\oint_{\Gamma}z^2\mathrm{d}s,\ \oint_{\Gamma}x\mathrm{d}s=\oint_{\Gamma}y\mathrm{d}s=\oint_{\Gamma}z\mathrm{d}s\ .$$
+故
+$$\oint_{\Gamma}(x^2+2y-z)\mathrm{d}s=\frac{1}{3}\oint_{\Gamma}(x^2+y^2+z^2)\mathrm{d}s+\frac{1}{3}\oint_{\Gamma}(x+y+z)\mathrm{d}s=\frac{2}{3}I_{\Gamma}\ .$$
+如图所示, 设球心到平面 $x+y+z=1$ 的距离为 $d$, 且
+$$d=\frac{|0+0+0-1|}{\sqrt{1^2+1^2+1^2}}=\frac{1}{\sqrt{3}},$$
+故
+$$r=\sqrt{1-\frac{1}{3}}=\sqrt{\frac{2}{3}}.$$【图】球体示意图，球心为 $O$，标注球半径 $1$ 与球心到平面的距离 $d$。
+于是
+$$l_r=2\pi\sqrt{\frac{2}{3}}.$$
+故
+$$\text{原式}=\frac{2}{3}l_r=\frac{2}{3}\cdot 2\pi\sqrt{\frac{2}{3}}=\frac{4\sqrt{6}}{9}\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{4\sqrt{6}}{9}\pi$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="70" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A=(a_{ij})$ 为 3 阶矩阵，$A_{ij}$ 为元素 $a_{ij}$ 的代数余子式. 若 $A^{-1}$ 的每行元素之和均为 2，且 $|A|=3$，则 $A_{11}+A_{21}+A_{31}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $A^{-1}\begin{pmatrix}1\\1\\1\end{pmatrix}=2\begin{pmatrix}1\\1\\1\end{pmatrix}$，得 $A^{-1}$ 的一个特征值为 $2$，故 $A$ 的一个特征值为 $\lambda=\dfrac{1}{2}$，其对应的特征向量为 $\alpha=\begin{pmatrix}1\\1\\1\end{pmatrix}$，则 $A^{*}$ 的一个特征值为 $\dfrac{|A|}{\lambda}=6$，其对应的特征向量也为 $\alpha=\begin{pmatrix}1\\1\\1\end{pmatrix}$。由 $A^{*}\alpha=\dfrac{|A|}{\lambda}\alpha$，
+$$A^{*}=\begin{pmatrix}A_{11}&amp;A_{21}&amp;A_{31}\\A_{12}&amp;A_{22}&amp;A_{32}\\A_{13}&amp;A_{23}&amp;A_{33}\end{pmatrix},$$
+得 $A^{*}\begin{pmatrix}1\\1\\1\end{pmatrix}=\begin{pmatrix}A_{11}+A_{21}+A_{31}\\A_{12}+A_{22}+A_{32}\\A_{13}+A_{23}+A_{33}\end{pmatrix}=6\begin{pmatrix}1\\1\\1\end{pmatrix}=\begin{pmatrix}6\\6\\6\end{pmatrix}$，即
+$$A_{13}+A_{23}+A_{33}=6.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">6</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="70" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X,Y$ 独立同分布于几何分布 $G(p)\,(0&lt;p&lt;1)$，则 $E(\max\{X,Y\})=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">注意到 $\min\{X,Y\}\sim G(1-(1-p)^2)$，则
+$$E(\max\{X,Y\})=E(X)+E(Y)-E(\min\{X,Y\})=\frac{1}{p}+\frac{1}{p}-\frac{1}{1-(1-p)^2}=\frac{3-2p}{p(2-p)}.$$
+【注】$\min\{X,Y\}$ 的分布函数可用定义法来求。设 $k$ 为正整数，则
+$$P\{\min\{X,Y\}\geqslant k\}=P\left(\{X\geqslant k\}\cap\{Y\geqslant k\}\right)=P\{X\geqslant k\}\cdot P\{Y\geqslant k\},$$
+$$P\{X\geqslant k\}=\sum_{i=k}^{\infty}P\{X=i\}=\sum_{i=k}^{\infty}(1-p)^{i-1}p=\frac{(1-p)^{k-1}\cdot p}{1-(1-p)}=(1-p)^{k-1},$$
+同理 $P\{Y\geqslant k\}=(1-p)^{k-1}$。故
+$$P\{\min\{X,Y\}\geqslant k\}=(1-p)^{k-1}\cdot(1-p)^{k-1}=(1-p)^{2(k-1)}.$$
+因此
+$$\begin{aligned}P\{\min\{X,Y\}=k\}&amp;=P\{\min\{X,Y\}\geqslant k\}-P\{\min\{X,Y\}\geqslant k+1\}\\&amp;=(1-p)^{2(k-1)}-(1-p)^{2(k+1-1)}\\&amp;=(1-p)^{2k-2}-(1-p)^{2k}\\&amp;=(1-p)^{2k-2}\left[1-(1-p)^2\right]\\&amp;=\left[(1-p)^2\right]^{k-1}\left[1-(1-p)^2\right]\\&amp;\xlongequal{\text{令}q=1-(1-p)^2}(1-q)^{k-1}q.\end{aligned}$$
+故 $\min\{X,Y\}\sim G(1-(1-p)^2)$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{3-2p}{p(2-p)}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="70" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">（本题满分 10 分）
+设 $f(x)=\displaystyle\int_{1}^{x}\sin t^2\mathrm{d}t$，$g(x)=\displaystyle\int_{0}^{x}f(t)\mathrm{d}t$.
+(1) 计算 $g(1)$；
+(2) 证明：存在 $\xi \in (0,1)$，使得 $\displaystyle\int_{1}^{\xi}\sin t^2\mathrm{d}t=\xi(\cos 1-1)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1)
+$$\begin{aligned}g(1)&amp;=\int_{0}^{1}f(x)\mathrm{d}x=\int_{0}^{1}\mathrm{d}x\int_{1}^{x}\sin t^2\mathrm{d}t\\&amp;=-\int_{0}^{1}\mathrm{d}x\int_{x}^{1}\sin t^2\,\mathrm{d}t=-\int_{0}^{1}\mathrm{d}t\int_{0}^{t}\sin t^2\,\mathrm{d}x\\&amp;=\frac{1}{2}\cos t^2\bigg|_{0}^{1}=\frac{1}{2}(\cos 1-1).\end{aligned}$$
+（……5分）
+(2) 令 $h(x)=x^2$，则由柯西中值定理，有
+$$\frac{g(1)-g(0)}{h(1)-h(0)}=\frac{\dfrac{1}{2}(\cos 1-1)}{1}=\frac{\displaystyle\int_{1}^{\xi}\sin t^2\mathrm{d}t}{2\xi},$$
+（……8分）
+即 $\displaystyle\int_{1}^{\xi}\sin t^2\mathrm{d}t=\xi(\cos 1-1)$，$0&lt;\xi&lt;1$。（……10分）</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="70" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">（本题满分 12 分）
+求 $f(x,y)=x^2(2+y^2)+y^2\ln y$ 的极值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f'_x(x,y)=2x(2+y^2),\ f'_y(x,y)=2x^2y+2y\ln y+y,$$
+（……2分）
+令 $\begin{cases}f'_x(x,y)=0,\\f'_y(x,y)=0,\end{cases}$ 解得唯一驻点 $\left(0,\dfrac{1}{\sqrt{\mathrm{e}}}\right)$。（……4分）
+由于
+$$A=f''_{xx}\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)=2(2+y^2)\bigg|_{\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)}=2\left(2+\frac{1}{\mathrm{e}}\right),$$
+$$B=f''_{xy}\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)=4xy\bigg|_{\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)}=0,$$
+$$C=f''_{yy}\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)=(2x^2+2\ln y+3)\bigg|_{\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)}=2,$$
+（……8分）
+因此 $AC-B^2&gt;0$。又因为 $A&gt;0$，所以 $f(x,y)$ 在驻点 $\left(0,\dfrac{1}{\sqrt{\mathrm{e}}}\right)$ 处取得极小值，极小值为
+$$f\left(0,\frac{1}{\sqrt{\mathrm{e}}}\right)=-\frac{1}{2\mathrm{e}}.$$（……12分）</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="70" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">（本题满分 12 分）
+设 $f(x,y)$ 在 $D=\left\{(x,y)\big|x^2+y^2\leqslant 1\right\}$ 上连续，$f(x,y)=\mathrm{e}^{x^2+y^2}-\displaystyle\iint_{D}\dfrac{(2x^2+1)f(x,y)}{x^2+y^2+1}\mathrm{d}x\mathrm{d}y$，求 $\displaystyle\iint_{D}f(x,y)\mathrm{d}\sigma$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $a=\iint\limits_{D}\dfrac{(2x^2+1)f(x,y)}{x^2+y^2+1}\mathrm{d}x\mathrm{d}y$，则 $f(x,y)=\mathrm{e}^{x^2+y^2}-a=f(y,x)$。（……2分）
+由轮换对称性，得
+$$\begin{aligned}a&amp;=\iint\limits_{D}\frac{(2y^2+1)f(x,y)}{y^2+x^2+1}\,\mathrm{d}x\mathrm{d}y\\&amp;=\frac{1}{2}\iint\limits_{D}2f(x,y)\,\mathrm{d}x\mathrm{d}y\\&amp;=\iint\limits_{D}f(x,y)\,\mathrm{d}x\mathrm{d}y,\end{aligned}$$
+（……6分）
+于是
+$$\begin{aligned}a&amp;=\iint\limits_{D}\left(\mathrm{e}^{x^2+y^2}-a\right)\mathrm{d}\sigma\\&amp;=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}\left(\mathrm{e}^{r^2}-a\right)r\,\mathrm{d}r\\&amp;=(\mathrm{e}-a-1)\pi,\end{aligned}$$
+（……10分）
+解得 $a=\dfrac{(\mathrm{e}-1)\pi}{\pi+1}$，故 $\iint\limits_{D}f(x,y)\mathrm{d}\sigma=\dfrac{(\mathrm{e}-1)\pi}{\pi+1}$。（……12分）</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="70" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">（本题满分 12 分）
+设 $y=f(x)\,(x&gt;0)$ 满足 $y''+\dfrac{y'}{2y^2}=0$，且曲线在点 $(1,1)$ 处的切线斜率为 $\dfrac{1}{2}$，该曲线位于 $0&lt;x\leqslant 1$ 的一段绕 $x$ 轴旋转一周所围成的曲面为 $\Sigma$，求：
+(1) $f(x)$ 的表达式；
+(2) 曲面 $\Sigma$ 的面积.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 令 $y'=p$，则 $y''=\dfrac{\mathrm{d}p}{\mathrm{d}y}\cdot p$，则 $y''+\dfrac{y'}{2y^2}=0$ 变换为 $\dfrac{\mathrm{d}p}{\mathrm{d}y}\cdot p=\dfrac{-p}{2y^2}$，两端积分 $\int\mathrm{d}p=\int\left(-\dfrac{1}{2y^2}\right)\mathrm{d}y$，得 $p=\dfrac{1}{2y}+C_1$。由于 $y'(1)=p(1)=\dfrac{1}{2}$，则 $C_1=0$，$p=\dfrac{1}{2y}$。于是 $\int 2y\,\mathrm{d}y=\int\mathrm{d}x$，有 $y^2=x+C_2$，又 $y(1)=1$，则 $C_2=0$，故 $y=f(x)=\sqrt{x}\,(x&gt;0)$。（……6分）
+(2) 方法一 由(1)知旋转曲面（抛物面）为 $x=y^2+z^2\,(0&lt;x\leqslant 1)$，如图所示，故
+$$S=\int_{0}^{1}2\pi\sqrt{x}\sqrt{1+\left(\frac{1}{2\sqrt{x}}\right)^2}\,\mathrm{d}x=\pi\int_{0}^{1}\sqrt{4x+1}\,\mathrm{d}x=\frac{\pi}{6}\left(5\sqrt{5}-1\right).$$【图】空间坐标系示意图，$z$ 轴向上，$y$ 轴向右，$x$ 轴向左下，原点为 $O$，画出沿 $x$ 轴方向开口的碗状旋转抛物面。
+（……12分）
+方法二 选择向 $yOz$ 面投影，由曲面方程 $x=y^2+z^2$，得
+$$\mathrm{d}S=\sqrt{1+(x'_y)^2+(x'_z)^2}\,\mathrm{d}y\mathrm{d}z=\sqrt{1+4y^2+4z^2}\,\mathrm{d}y\mathrm{d}z,$$
+（……8分）
+故所求曲面 $\Sigma$ 的面积为
+$$\iint\limits_{\Sigma}\mathrm{d}S=\iint\limits_{D}\sqrt{1+4y^2+4z^2}\,\mathrm{d}y\mathrm{d}z=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}\sqrt{1+4r^2}\cdot r\,\mathrm{d}r=\frac{\pi}{6}(5\sqrt{5}-1),$$
+其中 $D=\{(y,z)\mid y^2+z^2\leqslant 1\}$。（……12分）</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="70" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">（本题满分 12 分）
+设 $A=\begin{bmatrix}1 &amp; a &amp; 1\\ 2 &amp; -1 &amp; 1\\ 0 &amp; 1 &amp; b\end{bmatrix}$，$ab\neq 0$，存在非零矩阵 $B$，使得 $r[B(A+E)]&lt;r(B)$，$A^{*}=4A^{-1}$.
+(1) 求 $a$，$b$ 的值；
+(2) 求可逆矩阵 $P$，使得 $P^{-1}(A^3+A^{*})P$ 为对角矩阵.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由于存在非零矩阵 $B$，使得 $r[B(A+E)]&lt;r(B)$，即 $|A+E|=0$，因此 $A$ 有特征值 $\lambda=-1$。
+又 $A^{*}=4A^{-1}$，有 $AA^{*}=4E=|A|E$，故 $|A|=4$。
+由 $\lambda=-1$，有
+$$|-E-A|=\begin{vmatrix}-2&amp;-a&amp;-1\\-2&amp;0&amp;-1\\0&amp;-1&amp;-1-b\end{vmatrix}=0,$$
+即 $2a(1+b)=0$，由于 $ab\neq 0$，故 $a\neq 0$，解得 $b=-1$。（……3分）
+由 $|A|=4$，有
+$$|A|=\begin{vmatrix}1&amp;a&amp;1\\2&amp;-1&amp;1\\0&amp;1&amp;-1\end{vmatrix}=(-2)\cdot(-a-1)=4,$$
+解得 $a=1$。
+综上，$a=1$，$b=-1$。（……6分）
+(2) 由(1)可得
+$$A=\begin{pmatrix}1&amp;1&amp;1\\2&amp;-1&amp;1\\0&amp;1&amp;-1\end{pmatrix},$$
+则
+$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;-1&amp;-1\\-2&amp;\lambda+1&amp;-1\\0&amp;-1&amp;\lambda+1\end{vmatrix}=(\lambda-2)(\lambda+1)(\lambda+2),$$
+故 $A$ 的特征值为 $\lambda_1=2$，$\lambda_2=-1$，$\lambda_3=-2$。（……7分）
+当 $\lambda_1=2$ 时，解方程组 $(2E-A)x=0$，得特征向量 $\xi_1=\begin{pmatrix}4\\3\\1\end{pmatrix}$；
+当 $\lambda_2=-1$ 时，解方程组 $(-E-A)x=0$，得特征向量 $\xi_2=\begin{pmatrix}-1\\0\\2\end{pmatrix}$；
+当 $\lambda_3=-2$ 时，解方程组 $(-2E-A)x=0$，得特征向量 $\xi_3=\begin{pmatrix}0\\-1\\1\end{pmatrix}$。
+令
+$$P=[\xi_1,\xi_2,\xi_3]=\begin{pmatrix}4&amp;-1&amp;0\\3&amp;0&amp;-1\\1&amp;2&amp;1\end{pmatrix},\ \Lambda=\begin{pmatrix}2&amp;0&amp;0\\0&amp;-1&amp;0\\0&amp;0&amp;-2\end{pmatrix},$$
+（……10分）
+则
+$$P^{-1}AP=\Lambda=\begin{pmatrix}2&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;-2\end{pmatrix},$$
+又
+$$P^{-1}A^3P=\Lambda^3=\begin{pmatrix}8&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;-8\end{pmatrix},$$
+$$P^{-1}A^{*}P=\Lambda^{*}=\begin{pmatrix}2&amp;&amp;\\&amp;-4&amp;\\&amp;&amp;-2\end{pmatrix},$$
+于是
+$$P^{-1}\left(A^3+A^{*}\right)P=\Lambda^3+\Lambda^{*}=\begin{pmatrix}10&amp;&amp;\\&amp;-5&amp;\\&amp;&amp;-10\end{pmatrix}.$$（……12分）</div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="70" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">（本题满分 12 分）
+设水平地面上车轮半径为 1，车轮表面有一记号点 $P$，$X$ 为随机停车时点 $P$ 到水平地面的高度，求：
+(1) $X$ 的概率密度；
+(2) $D(X)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题意知，$0\leqslant X\leqslant 2$。故
+当 $x&lt;0$ 时，$F(x)=P\{X\leqslant x\}=0$。
+当 $x\geqslant 2$ 时，$F(x)=P\{X\leqslant x\}=1$。【图】两幅圆的示意图：(a) 圆内过圆心 $O$ 的水平弦，圆上取点 $P$，弦上点 $B$，圆下部两点 $C$、$A$，标注角 $\theta'$ 与 $\theta$，$P$ 到切线 $A$ 的距离记为 $x$；(b) 类似图形，点 $C$、$P$ 在圆的上部，标注角 $\theta'$ 与 $\theta$，$B'$ 为 $P$ 在水平直径上的投影，$P$ 到切线 $A$ 的距离为 $x$。
+当 $0\leqslant x&lt;1$ 时，如图(a)所示，记 $|PA|=x$，则 $|PB|=1-x$。于是 $\sin\theta=1-x$，$\theta=\arcsin(1-x)$，劣弧 $\overset{\frown}{CP}$ 的长度为
+$$\pi-2\theta=\pi-2\arcsin(1-x)=\pi+2\arcsin(x-1).$$
+当 $1\leqslant x&lt;2$ 时，如图(b)所示，记 $|PA|=x$，则 $|PB|=x-1$。于是 $\sin\theta=x-1$，$\theta=\arcsin(x-1)$，优弧 $\overset{\frown}{CP}$ 的长度为 $\pi+2\theta=\pi+2\arcsin(x-1)$，于是当 $0\leqslant x&lt;2$ 时，
+$$F(x)=P\{X\leqslant x\}=\frac{\pi+2\arcsin(x-1)}{2\pi}=\frac{1}{2}+\frac{1}{\pi}\arcsin(x-1).$$（……4分）
+故
+$$f(x)=\begin{cases}\dfrac{1}{\pi}\cdot\dfrac{1}{\sqrt{1-(x-1)^2}},&amp;0&lt;x&lt;2,\\0,&amp;\text{其他}.\end{cases}$$（……6分）
+（2）$$E(X)=\int_{0}^{2}xf(x)\mathrm{d}x=\frac{1}{\pi}\int_{0}^{2}\frac{x}{\sqrt{1-(x-1)^2}}\mathrm{d}x$$$$\xlongequal{x-1=t}\frac{1}{\pi}\int_{-1}^{1}\frac{t+1}{\sqrt{1-t^2}}\mathrm{d}t=\frac{1}{\pi}\int_{-1}^{1}\frac{1}{\sqrt{1-t^2}}\mathrm{d}t=\frac{2}{\pi}\cdot\arcsin t\Big|_{0}^{1}=1,$$……8分
+$$E(X^2)=\int_{0}^{2}x^2f(x)\mathrm{d}x=\frac{1}{\pi}\int_{0}^{2}\frac{x^2}{\sqrt{1-(x-1)^2}}\mathrm{d}x$$$$\xlongequal{x-1=t}\frac{1}{\pi}\int_{-1}^{1}\frac{t^2+2t+1}{\sqrt{1-t^2}}\mathrm{d}t=\frac{1}{\pi}\int_{-1}^{1}\frac{t^2+1}{\sqrt{1-t^2}}\mathrm{d}t$$$$=\frac{1}{\pi}\int_{-1}^{1}\frac{2}{\sqrt{1-t^2}}\mathrm{d}t-\frac{1}{\pi}\int_{-1}^{1}\sqrt{1-t^2}\,\mathrm{d}t=\frac{3}{2}.$$……10分
+故 $D(X)=E(X^2)-[E(X)]^2=\dfrac{3}{2}-1=\dfrac{1}{2}.$ ……12分</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-69.html">上一章：测试卷二</a>
+      <a class="chapter-link" href="chapter-71.html">下一章：测试卷四</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 70, "total": 22, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

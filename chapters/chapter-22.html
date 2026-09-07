@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章 向量组 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第3章 向量组<span class="top-count">（11题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A=\begin{bmatrix}a_{11}&amp;a_{12}&amp;a_{13}&amp;a_{14}\\a_{21}&amp;a_{22}&amp;a_{23}&amp;a_{24}\\a_{31}&amp;a_{32}&amp;a_{33}&amp;a_{34}\end{bmatrix}$，对 $A$ 分别以列和行分块，记为 $A=[\alpha_1,\alpha_2,\alpha_3,\alpha_4]=\begin{bmatrix}\beta_1\\\beta_2\\\beta_3\end{bmatrix}$，其中 $\begin{vmatrix}a_{12}&amp;a_{14}\\a_{32}&amp;a_{34}\end{vmatrix}\neq 0$，$\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;a_{33}\end{vmatrix}=0$，则以下结论中：①$r(A)=2$；②$\alpha_2,\alpha_4$ 线性无关；③$\beta_1,\beta_2,\beta_3$ 线性相关；④$\alpha_1,\alpha_2,\alpha_3$ 线性相关．所有正确结论的序号是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">①③</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">②③</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">①④</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">②④</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由
+$$\begin{vmatrix}a_{12} &amp; a_{14}\\ a_{32} &amp; a_{34}\end{vmatrix}\neq 0,$$
+知 $r(A)\geqslant 2$. 但
+$$\begin{vmatrix}a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23}\\ a_{31} &amp; a_{32} &amp; a_{33}\end{vmatrix}=0,$$
+不能得出 $r(A)&lt;3$, 也就得不出 $r(A)=2$, 故①错误.
+由（*）知 $\begin{bmatrix}a_{12}\\ a_{32}\end{bmatrix},\begin{bmatrix}a_{14}\\ a_{34}\end{bmatrix}$ 线性无关, 增加分量的 $\boldsymbol{\alpha}_2=\begin{bmatrix}a_{12}\\ a_{22}\\ a_{32}\end{bmatrix},\boldsymbol{\alpha}_4=\begin{bmatrix}a_{14}\\ a_{24}\\ a_{34}\end{bmatrix}$ 仍线性无关, 故②正确.
+由（**）知向量 $[a_{11},a_{12},a_{13}],[a_{21},a_{22},a_{23}],[a_{31},a_{32},a_{33}]$ 线性相关, 但不能保证增加分量得到的 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$ 线性相关, 故③错误.
+由（**）知 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性相关, 故④正确.
+故应选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设向量组 $\alpha_1,\alpha_2,\alpha_3$ 线性无关，若向量 $\beta_1$ 可由 $\alpha_1,\alpha_2,\alpha_3$ 线性表示，向量 $\beta_2$ 不能由 $\alpha_1,\alpha_2,\alpha_3$ 线性表示，则必有（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">向量组 $\alpha_1,\alpha_2,\beta_1$ 线性相关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">向量组 $\alpha_1,\alpha_2,\beta_1$ 线性无关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">向量组 $\alpha_1,\alpha_2,\beta_2$ 线性相关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">向量组 $\alpha_1,\alpha_2,\beta_2$ 线性无关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由于向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性无关, 且向量 $\boldsymbol{\beta}_2$ 不能由 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性表示, 因此向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\beta}_2$ 线性无关, 故向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\beta}_2$ 线性无关, 应选(D).
+【注】当向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\beta}_1$ 线性相关时, 向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1$ 可能线性相关, 也可能线性无关, 例如当 $\boldsymbol{\beta}_1=\boldsymbol{0}$ 时是线性相关的, 当 $\boldsymbol{\beta}_1=\boldsymbol{\alpha}_3$ 时是线性无关的.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $x_1=[1,2,2,-4]^{\mathrm{T}}$，$x_2=[1,k,-1,-4]^{\mathrm{T}}$，$x_3=[-1,-3,1,k+6]^{\mathrm{T}}$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">对任意常数 $k$，$x_1,x_2,x_3$ 线性无关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $k=3$ 时，$x_1,x_2,x_3$ 线性相关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">当 $k=-2$ 时，$x_1,x_2,x_3$ 线性相关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$k\neq 3$ 且 $k\neq -2$ 是 $x_1,x_2,x_3$ 线性无关的充要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】令 $A=[x_1,x_2,x_3]$, 则向量组 $x_1,x_2,x_3$ 线性无关 $\Leftrightarrow r(A)=3$. 对 $A$ 作初等行变换, 得
+$$A=\begin{bmatrix}1 &amp; 1 &amp; -1\\ 2 &amp; k &amp; -3\\ 2 &amp; -1 &amp; 1\\ -4 &amp; -4 &amp; k+6\end{bmatrix}\to\begin{bmatrix}1 &amp; 1 &amp; -1\\ 0 &amp; k-2 &amp; -1\\ 0 &amp; -3 &amp; 3\\ 0 &amp; 0 &amp; k+2\end{bmatrix}\to\begin{bmatrix}1 &amp; 1 &amp; -1\\ 0 &amp; 1 &amp; -1\\ 0 &amp; 0 &amp; k-3\\ 0 &amp; 0 &amp; k+2\end{bmatrix}.$$
+因为 $k-3$ 与 $k+2$ 不同时为 0, 所以对任意常数 $k$, 都有 $r(A)=3$, 向量组 $x_1,x_2,x_3$ 线性无关. 应选(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha_1=[1,1,0,-2]^{\mathrm{T}}$，$\alpha_2=[1,k,-2,0]^{\mathrm{T}}$，$\alpha_3=[-1,-3,2,k+4]^{\mathrm{T}}$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">对任意常数 $k$，$\alpha_1,\alpha_2,\alpha_3$ 线性无关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $k=3$ 时，$\alpha_1,\alpha_2,\alpha_3$ 线性相关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">当 $k=-4$ 时，$\alpha_1,\alpha_2,\alpha_3$ 线性相关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$k\neq 3$ 且 $k\neq -4$ 是 $\alpha_1,\alpha_2,\alpha_3$ 线性无关的充要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】令 $A=[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3]$, 则向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性无关 $\Leftrightarrow r(A)=3$. 对 $A$ 作初等行变换, 得
+$$A=\begin{bmatrix}1 &amp; 1 &amp; -1\\ 1 &amp; k &amp; -3\\ 0 &amp; -2 &amp; 2\\ -2 &amp; 0 &amp; k+4\end{bmatrix}\to\begin{bmatrix}1 &amp; 1 &amp; -1\\ 0 &amp; k-1 &amp; -2\\ 0 &amp; 1 &amp; -1\\ 0 &amp; 2 &amp; k+2\end{bmatrix}\to\begin{bmatrix}1 &amp; 1 &amp; -1\\ 0 &amp; 1 &amp; -1\\ 0 &amp; 0 &amp; k-3\\ 0 &amp; 0 &amp; k+4\end{bmatrix}.$$
+注意到 $k-3$ 与 $k+4$ 显然不可能同时为 0, 所以对任意常数 $k$, 恒有 $r(A)=3$, 向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性无关.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知向量组 $\alpha,\beta,\gamma$ 线性无关，则 $k\neq 1$ 是向量组 $\alpha+k\beta,\ \beta+k\gamma,\ \alpha-\gamma$ 线性无关的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">充分必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">充分非必要条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">必要非充分条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既非充分又非必要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】$[\boldsymbol{\alpha}+k\boldsymbol{\beta},\boldsymbol{\beta}+k\boldsymbol{\gamma},\boldsymbol{\alpha}-\boldsymbol{\gamma}]=[\boldsymbol{\alpha},\boldsymbol{\beta},\boldsymbol{\gamma}]\begin{bmatrix}1 &amp; 0 &amp; 1\\ k &amp; 1 &amp; 0\\ 0 &amp; k &amp; -1\end{bmatrix}.$
+设
+$$A=\begin{bmatrix}1 &amp; 0 &amp; 1\\ k &amp; 1 &amp; 0\\ 0 &amp; k &amp; -1\end{bmatrix},$$
+则 $|A|=k^2-1$.
+当向量组 $\boldsymbol{\alpha}+k\boldsymbol{\beta},\boldsymbol{\beta}+k\boldsymbol{\gamma},\boldsymbol{\alpha}-\boldsymbol{\gamma}$ 线性无关时, $|A|=k^2-1\neq 0$, 即 $k\neq\pm 1$, 所以 $k\neq 1$ 是向量组 $\boldsymbol{\alpha}+k\boldsymbol{\beta},\boldsymbol{\beta}+k\boldsymbol{\gamma},\boldsymbol{\alpha}-\boldsymbol{\gamma}$ 线性无关的必要条件.
+当 $k\neq 1$ 但 $k=-1$ 时, $|A|=0$, 向量组 $\boldsymbol{\alpha}+k\boldsymbol{\beta},\boldsymbol{\beta}+k\boldsymbol{\gamma},\boldsymbol{\alpha}-\boldsymbol{\gamma}$ 线性相关, 所以 $k\neq 1$ 不是向量组 $\boldsymbol{\alpha}+k\boldsymbol{\beta},\boldsymbol{\beta}+k\boldsymbol{\gamma},\boldsymbol{\alpha}-\boldsymbol{\gamma}$ 线性无关的充分条件.
+故正确选项为(C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若向量组 $\alpha_1=[1,0,2,a]^{\mathrm{T}}$，$\alpha_2=[2,1,a,4]^{\mathrm{T}}$，$\alpha_3=[0,a,5,-6]^{\mathrm{T}}$ 线性相关，则 $a=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-3$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$5$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】因为向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性相关, 所以向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 的秩 $r([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3])\leqslant 2$. 又因为
+$$[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3]=\begin{bmatrix}1 &amp; 2 &amp; 0\\ 0 &amp; 1 &amp; a\\ 2 &amp; a &amp; 5\\ a &amp; 4 &amp; -6\end{bmatrix}\to\begin{bmatrix}1 &amp; 2 &amp; 0\\ 0 &amp; 1 &amp; a\\ 0 &amp; a-4 &amp; 5\\ 0 &amp; 4-2a &amp; -6\end{bmatrix},$$
+所以当 $\dfrac{1}{a-4}=\dfrac{a}{5}$ 且 $\dfrac{1}{4-2a}=\dfrac{a}{-6}$, 即 $a=-1$ 时, 上述矩阵的秩为 2, 这时向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 线性相关.
+故正确选项为(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$n$ 维向量组 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 线性无关，$\beta=k_1\alpha_1+k_2\alpha_2+\cdots+k_s\alpha_s$，其中 $k_1,k_2,\cdots,k_s$ 全不为零，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">向量组 $\alpha_1,\alpha_2,\cdots,\alpha_{s-1},\beta$ 线性相关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">向量组 $\alpha_1,\alpha_2,\cdots,\alpha_s,\beta$ 线性无关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">向量组 $\alpha_2,\alpha_3,\cdots,\alpha_s,\beta$ 线性相关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">向量组 $\alpha_1,\cdots,\alpha_{s-1},\beta,\alpha_{s+1},\cdots,\alpha_s$ 线性无关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\cdots,\boldsymbol{\alpha}_s$ 线性无关, $\boldsymbol{\beta}=k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2+\cdots+k_s\boldsymbol{\alpha}_s$, 其中 $k_1,k_2,\cdots,k_s$ 全不为零, 则 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\cdots,\boldsymbol{\alpha}_s,\boldsymbol{\beta}$ 这 $s+1$ 个向量中任取 $s$ 个向量均线性无关, 故向量组 $\boldsymbol{\alpha}_1,\cdots,\boldsymbol{\alpha}_{i-1},\boldsymbol{\beta},\boldsymbol{\alpha}_{i+1},\cdots,\boldsymbol{\alpha}_s$ 线性无关.
+可用反证法, 证明如下：已知 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\cdots,\boldsymbol{\alpha}_s$ 线性无关, 故 $\boldsymbol{\alpha}_1,\cdots,\boldsymbol{\alpha}_{i-1},\boldsymbol{\alpha}_{i+1},\cdots,\boldsymbol{\alpha}_s$ 线性无关, 若 $\boldsymbol{\alpha}_1,\cdots,\boldsymbol{\alpha}_{i-1},\boldsymbol{\alpha}_{i+1},\cdots,\boldsymbol{\alpha}_s,\boldsymbol{\beta}$ 线性相关, 则 $\boldsymbol{\beta}=\lambda_1\boldsymbol{\alpha}_1+\cdots+\lambda_{i-1}\boldsymbol{\alpha}_{i-1}+\lambda_{i+1}\boldsymbol{\alpha}_{i+1}+\cdots+\lambda_s\boldsymbol{\alpha}_s$, 这和“$\boldsymbol{\beta}=k_1\boldsymbol{\alpha}_1+k_2\boldsymbol{\alpha}_2+\cdots+k_s\boldsymbol{\alpha}_s$, 其中 $k_1,\cdots,k_s$ 全不为零”矛盾.
+故应选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设向量 $\alpha_1=[1,1,2]^{\mathrm{T}}$，$\alpha_2=[2,a,4]^{\mathrm{T}}$，$\alpha_3=[a,3,0]^{\mathrm{T}}$，$\alpha_4=[0,2,2a]^{\mathrm{T}}$，若向量组 $\alpha_1,\alpha_2,\alpha_3$ 与 $\alpha_1,\alpha_2,\alpha_4$ 不等价，则 $a=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$4$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$6$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】$[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3\mid\boldsymbol{\alpha}_4]=\begin{bmatrix}1 &amp; 2 &amp; a &amp; 0\\ 1 &amp; a &amp; 3 &amp; 2\\ 2 &amp; 4 &amp; 6 &amp; 2a\end{bmatrix}\to\begin{bmatrix}1 &amp; 2 &amp; a &amp; 0\\ 0 &amp; a-2 &amp; 3-a &amp; 2\\ 0 &amp; 0 &amp; 6-2a &amp; 2a\end{bmatrix},$
+故当 $a=3$ 时, 向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4$ 秩是 3, 向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 的秩是 2, 即向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4$ 与向量组 $\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$ 不等价.
+故正确选项为(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知向量组 $\alpha_1=[1,2,-3]^{\mathrm{T}}$，$\alpha_2=[3,0,-3]^{\mathrm{T}}$，$\alpha_3=[9,0,-15]^{\mathrm{T}}$ 与向量组 $\beta_1=[0,1,-1]^{\mathrm{T}}$，$\beta_2=[3,a,1]^{\mathrm{T}}$，$\beta_3=[1,1,b]^{\mathrm{T}}$ 等价，则 $a,b$ 的值分别为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-4,2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$4,-2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-4,-2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$4,2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】两个向量组等价的充要条件是
+$$r([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3])=r([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3\mid\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3])=r([\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3]).$$
+对矩阵 $[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3\mid\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3]$ 作初等行变换, 有
+$$\begin{bmatrix}1 &amp; 3 &amp; 9 &amp; 0 &amp; 3 &amp; 1\\ 2 &amp; 0 &amp; 6 &amp; 1 &amp; a &amp; 1\\ -3 &amp; -3 &amp; -15 &amp; -1 &amp; 1 &amp; b\end{bmatrix}\to\begin{bmatrix}1 &amp; 3 &amp; 9 &amp; 0 &amp; 3 &amp; 1\\ 0 &amp; -6 &amp; -12 &amp; 1 &amp; a-6 &amp; -1\\ 0 &amp; 6 &amp; 12 &amp; -1 &amp; 10 &amp; b+3\end{bmatrix}$$
+$$\to\begin{bmatrix}1 &amp; 3 &amp; 9 &amp; 0 &amp; 3 &amp; 1\\ 0 &amp; -6 &amp; -12 &amp; 1 &amp; a-6 &amp; -1\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; a+4 &amp; b+2\end{bmatrix},$$
+可见当 $a=-4, b=-2$ 时, $r([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3])=r([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3\mid\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3])=r([\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3])=2$, 两个向量组等价.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="22" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha_1=\begin{bmatrix}1\\1\\0\end{bmatrix}$，$\alpha_2=\begin{bmatrix}1\\0\\1\end{bmatrix}$，$\alpha_3=\begin{bmatrix}-1\\0\\0\end{bmatrix}$，记 $\beta_1=\alpha_1$，$\beta_2=\alpha_2-k_1\beta_1$，$\beta_3=\alpha_3-k_2\beta_1-k_3\beta_2$，若 $\beta_1,\beta_2,\beta_3$ 为正交向量组，则 $k_1,k_2,k_3$ 依次为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-\dfrac{1}{2},\dfrac{1}{2},-\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-\dfrac{1}{2},\dfrac{1}{2},\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{2},\dfrac{1}{2},\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{2},-\dfrac{1}{2},-\dfrac{1}{3}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】因为 $\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$ 为正交向量组, 所以可借助施密特正交化方法解题.
+$$\boldsymbol{\beta}_1=\boldsymbol{\alpha}_1=\begin{bmatrix}1\\ 1\\ 0\end{bmatrix},\boldsymbol{\beta}_2=\boldsymbol{\alpha}_2-\frac{(\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}\boldsymbol{\beta}_1,\boldsymbol{\beta}_3=\boldsymbol{\alpha}_3-\frac{(\boldsymbol{\alpha}_3,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}\boldsymbol{\beta}_1-\frac{(\boldsymbol{\alpha}_3,\boldsymbol{\beta}_2)}{(\boldsymbol{\beta}_2,\boldsymbol{\beta}_2)}\boldsymbol{\beta}_2,$$
+即 $k_1=\dfrac{(\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}=\dfrac{1}{2}$, 将 $k_1=\dfrac{1}{2}$ 代入, 可得 $\boldsymbol{\beta}_2=\boldsymbol{\alpha}_2-\dfrac{1}{2}\boldsymbol{\beta}_1=\begin{bmatrix}\dfrac{1}{2}\\[2mm]-\dfrac{1}{2}\\[2mm]1\end{bmatrix}$, 故
+$$k_2=\frac{(\boldsymbol{\alpha}_3,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}=-\frac{1}{2},k_3=\frac{(\boldsymbol{\alpha}_3,\boldsymbol{\beta}_2)}{(\boldsymbol{\beta}_2,\boldsymbol{\beta}_2)}=-\frac{1}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="22" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\mathbf{R}^3$ 中的两个基：$\alpha_1=\begin{bmatrix}1\\0\\1\end{bmatrix}$，$\alpha_2=\begin{bmatrix}2\\1\\0\end{bmatrix}$，$\alpha_3=\begin{bmatrix}1\\1\\1\end{bmatrix}$；$\beta_1=\begin{bmatrix}1\\2\\-1\end{bmatrix}$，$\beta_2=\begin{bmatrix}2\\2\\-1\end{bmatrix}$，$\beta_3=\begin{bmatrix}2\\-1\\-1\end{bmatrix}$，则由 $\alpha_1,\alpha_2,\alpha_3$ 到 $\beta_1,\beta_2,\beta_3$ 的过渡矩阵为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】设过渡矩阵为 $C$, 则 $\begin{bmatrix}1 &amp; 2 &amp; 1\\ 0 &amp; 1 &amp; 1\\ 1 &amp; 0 &amp; 1\end{bmatrix}C=\begin{bmatrix}1 &amp; 2 &amp; 2\\ 2 &amp; 2 &amp; -1\\ -1 &amp; -1 &amp; -1\end{bmatrix}$, 解得
+$$C=\begin{bmatrix}-2 &amp; -\dfrac{3}{2} &amp; \dfrac{3}{2}\\[2mm]1 &amp; \dfrac{3}{2} &amp; \dfrac{3}{2}\\[2mm]1 &amp; \dfrac{1}{2} &amp; -\dfrac{5}{2}\end{bmatrix}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$$\begin{bmatrix}-2 &amp; -\dfrac{3}{2} &amp; \dfrac{3}{2}\\[2mm]1 &amp; \dfrac{3}{2} &amp; \dfrac{3}{2}\\[2mm]1 &amp; \dfrac{1}{2} &amp; -\dfrac{5}{2}\end{bmatrix}$$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-21.html">上一章：第2章 矩阵</a>
+      <a class="chapter-link" href="chapter-23.html">下一章：第4章 线性方程组</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 22, "total": 11, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 随机事件与概率 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第1章 随机事件与概率<span class="top-count">（13题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对任意事件 $A,B$, 下列结论正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$P(A)P(B) \geqslant P(A \cup B)P(AB)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$P(A) + P(B) \leqslant 2P(AB)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$P(A) + P(AB) \geqslant P(A \cup B)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$P(A) + P(B) \leqslant P(A \cup B)P(AB)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于正确选项(A)，可证明如下：
+由于
+$$A = A\Omega = A(B \cup \overline{B}) = AB \cup A\overline{B},$$
+$$B = B\Omega = B(A \cup \overline{A}) = AB \cup \overline{A}B,$$
+故
+$$P(A)P(B) = [P(AB) + P(A\overline{B})][P(AB) + P(\overline{A}B)]$$
+$$= [P(AB) + P(A\overline{B}) + P(\overline{A}B)]P(AB) + P(\overline{A}B)P(A\overline{B})$$
+$$\geqslant [P(AB) + P(A\overline{B}) + P(\overline{A}B)]P(AB) = P(A \cup B)P(AB).$$
+对于选项(B)，(C)，(D)，可取反例排除：
+设 $\Omega = \{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5, \omega_6\}$，$A = \{\omega_1, \omega_2\}$，$B = \{\omega_2, \omega_3, \omega_4\}$，且 $P(\omega_1) = P(\omega_2) = \cdots = P(\omega_6) = \frac{1}{6}$，则
+$$P(A) = \frac{1}{3}, P(B) = \frac{1}{2}, P(A \cup B) = \frac{2}{3}, P(AB) = \frac{1}{6},$$
+于是
+$$P(A) + P(B) = \frac{5}{6} &gt; 2 \times \frac{1}{6} = 2P(AB),$$
+$$P(A) + P(AB) = \frac{1}{2} &lt; \frac{2}{3} = P(A \cup B),$$
+$$P(A) + P(B) = \frac{5}{6} &gt; \frac{2}{3} \times \frac{1}{6} = P(A \cup B)P(AB).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对于任意事件 $A$, “$P(A) = P(\bar{A})$” 是 “$P(A) = \frac{1}{4} + [P(A)]^2$” 的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">充分非必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">必要非充分条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">充分必要条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既非充分又非必要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">充分性：
+由 $P(A) = P(\overline{A})$，知 $P(A) = 1 - P(A)$，得 $P(A) = \frac{1}{2}$，故
+$$P(A) = \frac{1}{2} = \frac{1}{4} + \frac{1}{4} = \frac{1}{4} + [P(A)]^2.$$
+必要性：
+由 $P(A) = \frac{1}{4} + [P(A)]^2$，解得 $P(A) = \frac{1}{2}$，故 $P(A) = P(\overline{A}) = \frac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">一平面质点从原点出发，每次走一个单位，只有向上、向右两种走法，且向上走的概率为 $p\ (0 &lt; p &lt; 1)$，现质点走到了点 $(3,2)$，则这 5 步按照：右，上，右，上，右的方式走的概率为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{3}{20}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{13}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{20}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{10}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $A = \{\text{向上走}\}$，则 $\overline{A} = \{\text{向右走}\}$，又设
+$$B = \{\text{走到}(3,2)\}, \quad B_0 = \{\text{按向右, 向上, 向右, 向上, 向右的方式走到}(3,2)\},$$
+从而有
+$$P(A) = p, P(\overline{A}) = 1 - p,$$
+$$P(B) = C_5^2 p^2 (1 - p)^3, \quad P(B_0) = (1 - p)p(1 - p)p(1 - p),$$
+且 $B_0 \subset B$，故 $B \cap B_0 = B_0$. 于是
+$$P(B_0 \mid B) = \frac{P(BB_0)}{P(B)} = \frac{P(B_0)}{P(B)} = \frac{1}{C_5^2} = \frac{1}{10}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">甲、乙两个篮球队进行比赛，假设有三种可能的结局：甲胜，乙胜与平局. 考虑事件 $A = \{$甲胜而乙负$\}$，则 $\bar{A} =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$B_1 = \{$甲负而乙胜$\}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$B_2 = \{$平局$\}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$B_3 = \{$甲胜或平局$\}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$B_4 = \{$乙胜或平局$\}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">把“甲、乙两个篮球队比赛”视为随机试验 $E$，其基本事件空间为 $\Omega = \{\omega_1, \omega_2, \omega_3\}$，其中 $\omega_1 = \{\text{甲胜}\}$，$\omega_2 = \{\text{乙胜}\}$，$\omega_3 = \{\text{平局}\}$.
+事件 $A = \{\text{甲胜而乙负}\} = \{\omega_1\}$，因此 $\overline{A} = \{\omega_2, \omega_3\}$，即表示“$\{\text{乙胜或平局}\} = B_4$”. 于是选项(D)正确.
+【注】选项中事件 $B_1, B_2, B_3, B_4$ 可以通过基本事件分别表示为
+$$B_1 = \{\omega_2\}, B_2 = \{\omega_3\}, B_3 = \{\omega_1, \omega_3\}, B_4 = \{\omega_2, \omega_3\}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="26" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设事件 $A,B$ 满足 $P(A|B) = P(B|A) = \frac{1}{3}$, $P(A - B) = \frac{1}{6}$, 则 $P(\overline{A}\,\overline{B}) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由条件 $P(A \mid B) = P(B \mid A) = \frac{1}{3}$，$P(A - B) = \frac{1}{6}$，得
+$$P(A) = P(B) = 3P(AB),$$
+$$P(A) - P(AB) = \frac{1}{6}.$$
+由此得，$P(A) = P(B) = \frac{1}{4}$，$P(AB) = \frac{1}{12}$. 于是，
+$$P(\overline{A}\,\overline{B}) = P(\overline{A \cup B}) = 1 - P(A \cup B)$$
+$$= 1 - P(A) - P(B) + P(AB)$$
+$$= 1 - \frac{1}{4} - \frac{1}{4} + \frac{1}{12} = \frac{7}{12}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{7}{12}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A,B$ 为随机事件, $0 &lt; P(A) &lt; 1$, $0 &lt; P(B) &lt; 1$, 且 $P(A - B) = 0$, 则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\bar{A} \supset \bar{B}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$P(\bar{A}) &lt; P(\bar{B})$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$P(\bar{B} \mid \bar{A}) = 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$P(\bar{A} \mid \bar{B}) = 1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$P(\overline{A} \mid \overline{B}) = 1 - P(A \mid \overline{B}) = 1 - \frac{P(A\overline{B})}{P(\overline{B})} = 1 - \frac{P(A - B)}{P(\overline{B})} = 1 - 0 = 1$，所以应选(D).
+由 $P(A - B) = 0$ 得不出 $A - B = \varnothing$，也就得不出 $A \subset B$，即选项(A)不正确.
+由选项(B)得 $P(A) &gt; P(B)$，也就有 $P(A) &gt; P(AB)$，这与题设条件 $P(A - B) = P(A) - P(AB) = 0$ 矛盾，故选项(B)也不正确.
+对于选项(C)，由 $P(\overline{B} \mid \overline{A}) = \frac{P(\overline{A}\,\overline{B})}{P(\overline{A})} = 0$，得 $P(\overline{A}\,\overline{B}) = 0$. 而实际上，
+$$P(\overline{A}\,\overline{B}) = 1 - P(A \cup B) = 1 - [P(B) + P(A - B)] = 1 - P(B) \neq 0,$$
+故选项(C)也不正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对于任意事件 $A,B,C$, 若 $\overline{A + B} \supset C$, 则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\overline{A} + \overline{B} \supset \overline{C}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\overline{A}\,\overline{B} \supset \overline{C}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$A + B \subset \overline{C}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$AB \subset C$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】本题采用直选法比较简便.
+【解析】方法一　直选法. 由 $\overline{A+B} \supset C$，可见 $A + B \subset \overline{C}$，所以选项(C)正确.
+方法二　排除法. 容易证明选项(A)，(B)和(D)不正确. 事实上，设 $A = B$，由 $\overline{A} = \overline{A+B} \supset C$，可见
+$$\overline{A} + \overline{B} = \overline{A} \supset C, \quad AB = \overline{\overline{A} + \overline{B}} = A \subset \overline{C},$$
+因此选项(A)和(D)都不正确. 其次由条件 $\overline{A+B} \supset C$，可见
+$$\overline{AB} = \overline{A} + \overline{B} \supset C,$$
+所以选项(B)不正确. 于是选项(C)正确.
+【注】该题可以用概率的语言表述. 对于任意事件 $A, B, C$，若 $\overline{A+B} \supset C$，则（　）.
+(A) $P(\overline{A} + \overline{B}) &gt; P(\overline{C})$　　(B) $P(\overline{A}\,\overline{B}) &gt; P(\overline{C})$
+(C) $P(A + B) &lt; P(\overline{C})$　　(D) $P(AB) &lt; P(C)$
+那么，利用上面的分析容易得到选项(C)正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="26" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">从数 $1,2,3,4$ 中有放回地取两次，每次取一个数，得到的两个数为 $X_1, X_2$，记 $X = \min\{X_1, X_2\}$，则 $P\{X = 2\} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$X = 2$，即两个数中较小的数为2，另一个数可能是2，也可能是3或4.
+$$P\{X = 2\} = P\{X_1 = 2, X_2 = 2\} + P\{X_1 = 2, X_2 = 3\} + P\{X_1 = 2, X_2 = 4\} +$$
+$$P\{X_1 = 3, X_2 = 2\} + P\{X_1 = 4, X_2 = 2\}$$
+$$= P\{X_1 = 2\}P\{X_2 = 2\} + P\{X_1 = 2\}P\{X_2 = 3\} +$$
+$$P\{X_1 = 2\}P\{X_2 = 4\} + P\{X_1 = 3\}P\{X_2 = 2\} +$$
+$$P\{X_1 = 4\}P\{X_2 = 2\}$$
+$$= \frac{1}{16} + \frac{1}{16} + \frac{1}{16} + \frac{1}{16} + \frac{1}{16} = \frac{5}{16}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{5}{16}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设口袋中有 10 个球，其中 6 个红球，4 个白球，每次不放回地从中任取一个，取两次，若取出的两个球中有 1 个是白球，则两个都是白球的概率为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{5}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{6}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $A_k$ 表示事件“第 $k$ 次取到白球”（$k = 1, 2$），则所求概率为
+$$P[A_1A_2 \mid (A_1 \cup \overline{A}_1A_2)] = \frac{P(A_1A_2)}{P(A_1 \cup \overline{A}_1A_2)} = \frac{P(A_1A_2)}{P(A_1) + P(\overline{A}_1A_2)}$$
+$$= \frac{\dfrac{C_4^1 C_3^1}{C_{10}^1 C_9^1}}{\dfrac{C_4^1 C_9^1 + C_6^1 C_4^1}{C_{10}^1 C_9^1}} = \frac{1}{5}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="26" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $P[A \mid (A \cup BC)] = \frac{1}{2}$, $P(B) = P(C) = \frac{1}{2}$, 其中 $A,B$ 互不相容, $B,C$ 相互独立, 则 $P(A) =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{3}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $A, B$ 互不相容，故 $P(ABC) = 0$. 又 $B, C$ 相互独立，故 $P(BC) = P(B)P(C) = \frac{1}{4}$，所以
+$$P[A \mid (A \cup BC)] = \frac{P(A \cup ABC)}{P(A \cup BC)} = \frac{P(A)}{P(A) + P(BC) - P(ABC)}$$
+$$= \frac{P(A)}{P(A) + P(B)P(C)} = \frac{P(A)}{P(A) + \frac{1}{4}} = \frac{1}{2},$$
+解得 $P(A) = \frac{1}{4}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="26" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A,B,C$ 是 3 个随机事件，其中 $A$ 与 $B$ 相互独立，$A$ 与 $C$ 互不相容，$P(A) = \frac{1}{2}$, $P(B) = \frac{1}{3}$, $P(C) = \frac{1}{4}$, $P(B \mid C) = \frac{1}{8}$, 则 $P(C \mid A \cup B) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $A$ 与 $B$ 相互独立，所以 $P(AB) = P(A)P(B)$. 因为 $A$ 与 $C$ 互不相容，所以 $P(AC) = 0$，故 $P(ABC) = 0$，则
+$$P(C \mid A \cup B) = \frac{P[C(A \cup B)]}{P(A \cup B)} = \frac{P(CA \cup CB)}{P(A \cup B)}$$
+$$= \frac{P(CA) + P(CB) - P(CAB)}{P(A) + P(B) - P(AB)} = \frac{P(CB)}{P(A) + P(B) - P(A)P(B)}$$
+$$= \frac{P(B \mid C)P(C)}{P(A) + P(B) - P(A)P(B)} = \frac{\dfrac{1}{8} \times \dfrac{1}{4}}{\dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{2} \times \dfrac{1}{3}} = \frac{3}{64}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{3}{64}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="26" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设事件 $A$ 和 $B$ 互不相容，$\bar{A}$ 和 $\bar{B}$ 也互不相容，则 $A$ 和 $B$ 为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由事件 $A$ 和 $B$ 及 $\overline{A}$ 和 $\overline{B}$ 各互不相容，知
+$$AB = \varnothing, \quad \overline{A}\,\overline{B} = \varnothing, \quad A + B = \overline{\overline{A}\,\overline{B}} = \overline{\varnothing} = \Omega,$$
+因此 $A$ 和 $B$ 互为对立事件，即 $\overline{A} = B, \overline{B} = A$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">对立事件</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="26" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A$ 和 $B$ 是概率不等于 0 和 1 的任意两个事件，且满足 $P(B \mid A) + P(\bar{B} \mid \bar{A}) = 1$，则事件 $A$ 和 $B$ 一定 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由条件知 $P(B \mid A) + P(\overline{B} \mid \overline{A}) = 1$，而由条件概率的性质，可见
+$$P(B \mid \overline{A}) + P(\overline{B} \mid \overline{A}) = 1.$$
+因此
+$$P(B \mid A) + P(\overline{B} \mid \overline{A}) = P(B \mid \overline{A}) + P(\overline{B} \mid \overline{A}),$$
+$$P(B \mid A) = P(B \mid \overline{A}).$$
+由此可见
+$$\frac{P(AB)}{P(A)} = \frac{P(\overline{A}B)}{P(\overline{A})} = \frac{P(B) - P(AB)}{1 - P(A)},$$
+$$P(AB)[1 - P(A)] = P(A)P(B) - P(A)P(AB),$$
+从而 $P(AB) = P(A)P(B)$，即 $A$ 和 $B$ 相互独立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">相互独立</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-25.html">上一章：第6章 二次型</a>
+      <a class="chapter-link" href="chapter-27.html">下一章：第2章 一维随机变量及其分布</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 26, "total": 13, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

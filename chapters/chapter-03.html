@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 数列极限 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第2章 数列极限<span class="top-count">（12题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="3" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{n \to \infty}\left(\frac{4}{\pi}\arctan\frac{n}{n+1}\right)^{n} =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\mathrm{e}^{-\frac{1}{2}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}^{-\frac{2}{\pi}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\pi}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{2}{\pi}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">首先考虑极限
+$$\lim_{x \to +\infty}\left(\frac{4}{\pi}\arctan\frac{x}{x+1}\right)^{x}=\mathrm{e}^{\lim\limits_{x \to +\infty}x\ln\left(\frac{4}{\pi}\arctan\frac{x}{x+1}\right)}\xlongequal{x=\frac{1}{t}}\mathrm{e}^{\lim\limits_{t \to 0^{+}}\frac{\ln\frac{4}{\pi}+\ln\arctan\frac{1}{1+t}}{t}}=\mathrm{e}^{\lim\limits_{t \to 0^{+}}\frac{1}{\arctan\frac{1}{1+t}}\cdot\frac{-1}{(1+t)^{2}+1}}=\mathrm{e}^{-\frac{2}{\pi}},$$
+由函数极限与数列极限关系可知$\lim\limits_{n \to \infty}\left(\frac{4}{\pi}\arctan\frac{n}{n+1}\right)^{n}=\mathrm{e}^{-\frac{2}{\pi}}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="3" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{n \to \infty}\frac{n^{100}}{n^{100}-(n-1)^{100}} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\lim_{n \to \infty}\frac{n^{99}}{n^{100}-(n-1)^{100}}=\lim_{n \to \infty}\frac{n^{99}}{n^{100}\left[1-\left(1-\frac{1}{n}\right)^{100}\right]}=-\lim_{n \to \infty}\frac{n^{99-100}}{\left(1-\frac{1}{n}\right)^{100}-1}=-\lim_{n \to \infty}\frac{\frac{1}{n}}{100\left(-\frac{1}{n}\right)}=\frac{1}{100}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{100}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="3" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$\{a_n\}$非负有界，$b_n = \sum_{k=1}^{n}\frac{k}{a_k+n^{2}}$，则$\lim_{n \to \infty}\frac{1}{b_n} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为$\{a_{n}\}$非负有界，故存在$M&gt;m\geqslant 0$，使得对任意$n\in\mathrm{N}_{+}$，有$m\leqslant a_{n}\leqslant M$，故
+$$\frac{k}{n^{2}+M}\leqslant\frac{k}{n^{2}+a_{n}}\leqslant\frac{k}{n^{2}+m},$$
+$$\frac{\frac{n(n+1)}{2}}{n^{2}+M}=\sum_{k=1}^{n}\frac{k}{n^{2}+M}\leqslant\sum_{k=1}^{n}\frac{k}{n^{2}+a_{n}}\leqslant\sum_{k=1}^{n}\frac{k}{n^{2}+m}=\frac{\frac{n(n+1)}{2}}{n^{2}+m},$$
+又$\lim\limits_{n \to \infty}\frac{\frac{n(n+1)}{2}}{n^{2}+M}=\lim\limits_{n \to \infty}\frac{\frac{n(n+1)}{2}}{n^{2}+m}=\frac{1}{2}$，故$\lim\limits_{n \to \infty}b_{n}=\frac{1}{2}$，于是$\lim\limits_{n \to \infty}\frac{1}{b_{n}}=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="3" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$x_0 &gt; 0$，$x_{n+1} = \frac{1}{2}\left(x_n + \frac{a}{x_n}\right)$（$n=0,1,2,\cdots$），且$a&gt;0$，证明$\lim_{n \to \infty}x_n$存在，并求此极限.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】根据极限存在准则，证明数列有极限，再由递推关系式求出极限值.
+【解析】由$x_{0}&gt;0$，算术平均值不小于几何平均值，有
+$$x_{n+1}=\frac{1}{2}\left(x_{n}+\frac{a}{x_{n}}\right)\geqslant\sqrt{a}\ (n=0,1,2,\cdots),$$
+则
+$$\frac{x_{n+1}}{x_{n}}=\frac{1}{2}\left(1+\frac{a}{x_{n}^{2}}\right)\leqslant 1\ (n=0,1,2,\cdots).$$
+故数列$\{x_{n}\}$单调减少且有下界，于是根据极限存在准则，知$\lim\limits_{n \to \infty}x_{n}$存在.
+记$A=\lim\limits_{n \to \infty}x_{n}$，则
+$$A=\lim_{n \to \infty}x_{n+1}=\lim_{n \to \infty}\frac{1}{2}\left(x_{n}+\frac{a}{x_{n}}\right)=\frac{1}{2}\left(A+\frac{a}{A}\right),$$
+解得$A=\sqrt{a}$，即
+$$\lim_{n \to \infty}x_{n}=\sqrt{a}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="3" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当$0 \leqslant x \leqslant \frac{\pi}{2}$时，$\lim_{n \to \infty}\sqrt[n]{\sin^{n}x + \cos^{n}x} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\lim_{n \to \infty}\sqrt[n]{\sin^{n}x+\cos^{n}x}=\begin{cases}\cos x, &amp; x\in\left[0,\frac{\pi}{4}\right),\\\sin x, &amp; x\in\left[\frac{\pi}{4},\frac{\pi}{2}\right].\end{cases}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{cases}\cos x, &amp; x\in\left[0,\frac{\pi}{4}\right),\\\sin x, &amp; x\in\left[\frac{\pi}{4},\frac{\pi}{2}\right]\end{cases}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="3" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\lim_{n \to \infty}\sqrt[n]{1+|x|^{3n}} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当$x&gt;1$时，$\lim\limits_{n \to \infty}\sqrt[n]{1+|x|^{3n}}=\lim\limits_{n \to \infty}\sqrt[n]{1+(x^{3})^{n}}=x^{3}$；
+当$|x|\leqslant 1$时，$\lim\limits_{n \to \infty}\sqrt[n]{1+|x|^{3n}}=1$；
+当$x&lt;-1$时，$\lim\limits_{n \to \infty}\sqrt[n]{1+|x|^{3n}}=-x^{3}$.
+综上，$\lim\limits_{n \to \infty}\sqrt[n]{1+|x|^{3n}}=\begin{cases}x^{3}, &amp; x&gt;1,\\1, &amp; -1\leqslant x\leqslant 1,\\-x^{3}, &amp; x&lt;-1.\end{cases}$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\begin{cases}x^{3}, &amp; x&gt;1,\\1, &amp; -1\leqslant x\leqslant 1,\\-x^{3}, &amp; x&lt;-1\end{cases}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="3" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设数列$\{x_n\}$满足$x_{n+1} = \ln x_n + 1$，$x_n &gt; 0$，$n=1,2,\cdots$，则$\{x_n\}$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">单调不减</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">单调不增</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">严格单增</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">严格单减</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当$x&gt;0$时，由$x-1\geqslant\ln x$，知$x_{n+1}=\ln x_{n}+1\leqslant x_{n}$，即$x_{n+1}\leqslant x_{n}$，则数列$\{x_{n}\}$单调不增.
+【注】若$x_{n}=1$，得到$\{x_{n}\}$为常数数列.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="3" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若对于数列$\{x_n\}$，存在常数$k(0&lt;k&lt;1)$，使得$|x_{n+1}-a| \leqslant k|x_n - a|$，$n=1,2,\cdots$. 证明$\{x_n\}$收敛于$a$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为
+$$0\leqslant|x_{n+1}-a|\leqslant k|x_{n}-a|\leqslant k^{2}|x_{n-1}-a|\leqslant\cdots\leqslant k^{n}|x_{1}-a|,$$
+由于$\lim\limits_{n \to \infty}k^{n}=0$，根据夹逼准则，有$\lim\limits_{n \to \infty}|x_{n+1}-a|=0$，即$\{x_{n}\}$收敛于$a$.
+【注】这个是简化版的压缩映射原理一.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="3" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若对于数列$\{x_n\}$，$x_{n+1} = f(x_n)$，$n=1,2,\cdots$，$f(x)$可导，$a$是$f(x)=x$的唯一解，且对任意的$x \in \mathbf{R}$，有$|f'(x)| \leqslant k &lt; 1$. 证明$\{x_n\}$收敛于$a$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$|x_{n+1}-a|=|f(x_{n})-f(a)|\xlongequal{\text{拉格朗日中值定理}}|f'(\xi)||x_{n}-a|\leqslant k|x_{n}-a|,$$
+其中$\xi$介于$a$与$x_{n}$之间.由第8题知，$\{x_{n}\}$收敛于$a$.
+【注】这个是简化版的压缩映射原理二.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="3" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$a_n &gt; 0$，$\lim_{n \to \infty}b_n = 0$，且$\mathrm{e}^{a_n} + a_n = \mathrm{e}^{b_n}$，$n=1,2,\cdots$，求$\lim_{n \to \infty}a_n$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\mathrm{e}^{b_{n}}-\mathrm{e}^{a_{n}}=a_{n}&gt;0$，又$\mathrm{e}^{x}$为单调递增函数，故$b_{n}&gt;a_{n}&gt;0$.又$\lim\limits_{n \to \infty}b_{n}=0$，根据夹逼准则，有$\lim\limits_{n \to \infty}a_{n}=0$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="3" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$c = 2\ln(1+b)$，$b &gt; a &gt; 0$，且$a$是方程$x - 2\ln(1+x) = 0$的唯一非零解，证明$c &gt; a$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由$y=2\ln(1+x)$是单调递增函数，$b&gt;a&gt;0$，得
+$$2\ln(1+b)&gt;2\ln(1+a),$$
+即$c=2\ln(1+b)&gt;2\ln(1+a)=a$，证毕.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="3" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设单调递减数列$\{x_n\}$满足$x_{n+1} = 2\ln(1+x_n)$，$n=1,2,\cdots$，$x_1 &gt; a &gt; 0$，且$a$是$x - 2\ln(1+x) = 0$的唯一非零解，证明$\{x_n\}$收敛.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">已知$x_{1}&gt;a&gt;0$，设$x_{n}&gt;a&gt;0$，则$x_{n+1}=2\ln(1+x_{n})&gt;2\ln(1+a)=a$，故$x_{n+1}&gt;a&gt;0$，即$\{x_{n}\}$有下界.
+又$\{x_{n}\}$单调递减，故由单调有界准则知，$\{x_{n}\}$收敛.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-02.html">上一章：第1章 函数极限与连续</a>
+      <a class="chapter-link" href="chapter-04.html">下一章：第3章 一元函数微分学的概念</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 3, "total": 12, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

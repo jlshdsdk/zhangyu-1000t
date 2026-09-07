@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第16章 无穷级数 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第16章 无穷级数<span class="top-count">（17题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="17" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设正项数列 $\{a_n\},\{b_n\},\{c_n\}$，则“$\sum\limits_{n=1}^{\infty}\frac{a_n}{c_n}$ 与 $\sum\limits_{n=1}^{\infty}\frac{c_n}{b_n}$ 均收敛”是“$\sum\limits_{n=1}^{\infty}\frac{a_n}{b_n}$ 收敛”的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">充分必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">充分非必要条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">必要非充分条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既非充分又非必要条件</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\frac{a_n}{c_n}+\frac{c_n}{b_n}\geqslant 2\sqrt{\frac{a_n}{b_n}}&gt;0$，知若 $\sum_{n=1}^{\infty}\frac{a_n}{c_n}$ 与 $\sum_{n=1}^{\infty}\frac{c_n}{b_n}$ 均收敛，则 $\sum_{n=1}^{\infty}\sqrt{\frac{a_n}{b_n}}$ 收敛，故 $\sum_{n=1}^{\infty}\frac{a_n}{b_n}$ 收敛。反之不能推出，可举反例，如取 $c_n=\sqrt{a_nb_n}$，则 $\frac{a_n}{c_n}=\frac{c_n}{b_n}=\sqrt{\frac{a_n}{b_n}}$，但由 $\sum_{n=1}^{\infty}\frac{a_n}{b_n}$ 收敛不能推出 $\sum_{n=1}^{\infty}\sqrt{\frac{a_n}{b_n}}$ 收敛。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="17" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">判断级数 $\sum\limits_{n=1}^{\infty}\left(\ln\frac{1}{n}-\ln\sin\frac{1}{n}\right)$ 的敛散性.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x\geqslant 0$ 时 $\sin x\leqslant x$，当且仅当 $x=0$ 时取等号，则 $\frac{1}{n}&gt;\sin\frac{1}{n}$，$\ln\frac{1}{n}-\ln\sin\frac{1}{n}&gt;0$，故原级数为正项级数。考查
+$$\lim_{x \to 0^+}\frac{\ln x-\ln\sin x}{x^2}=\lim_{x \to 0^+}\frac{\frac{1}{x}-\frac{\cos x}{\sin x}}{2x}=\lim_{x \to 0^+}\frac{\sin x-x\cos x}{2x^2\sin x}=\frac{1}{6},$$
+由归结原则，知 $\lim_{n \to \infty}\frac{\ln\frac{1}{n}-\ln\sin\frac{1}{n}}{\frac{1}{n^2}}=\frac{1}{6}$。又 $\sum_{n=1}^{\infty}\frac{1}{n^2}$ 收敛，根据正项级数比较判别法的极限形式，$\sum_{n=1}^{\infty}\left(\ln\frac{1}{n}-\ln\sin\frac{1}{n}\right)$ 收敛。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="17" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $\sum\limits_{n=1}^{\infty}nu_n$ 绝对收敛，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}(-1)^n u_n$ 条件收敛</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}(-1)^n u_n$ 绝对收敛</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}[u_n+(-1)^n]$ 条件收敛</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}[u_n+(-1)^n]$ 绝对收敛</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为对任意的正整数 $n$，有 $\left|\frac{(-1)^n}{n}\right|\leqslant 1$，所以
+$$|(-1)^n u_n|=\left|nu_n\cdot\frac{(-1)^n}{n}\right|\leqslant|nu_n|.$$
+又由已知 $\sum_{n=1}^{\infty}|nu_n|$ 收敛，根据比较判别法可得 $\sum_{n=1}^{\infty}|(-1)^n u_n|$ 收敛，即 $\sum_{n=1}^{\infty}(-1)^n u_n$ 绝对收敛，故选项(A)错误，应选(B)。
+可以举反例来排除选项(C)与选项(D)，若 $u_n=\frac{1}{n^3}$，则满足 $\sum_{n=1}^{\infty}nu_n$ 绝对收敛。此时 $\sum_{n=1}^{\infty}u_n$ 收敛，且 $\sum_{n=1}^{\infty}(-1)^n$ 发散，则 $\sum_{n=1}^{\infty}[u_n+(-1)^n]$ 发散。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="17" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">以下结论正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">若 $\sum\limits_{n=0}^{\infty}a_n^2$ 收敛，则 $\sum\limits_{n=0}^{\infty}a_n^3$ 收敛</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">若 $\sum\limits_{n=0}^{\infty}a_n^2$ 发散，则 $\sum\limits_{n=0}^{\infty}a_n^3$ 发散</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">若 $\sum\limits_{n=0}^{\infty}a_n^3$ 收敛，则 $\sum\limits_{n=0}^{\infty}a_n^4$ 收敛</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">若 $\sum\limits_{n=0}^{\infty}a_n^3$ 发散，则 $\sum\limits_{n=0}^{\infty}a_n^4$ 发散</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于选项(A)，若 $\sum_{n=0}^{\infty}a_n^2$ 收敛，则 $\lim_{n \to \infty}a_n^2=0$，当 $n$ 充分大时，$|a_n^2|&lt;1$，可得 $|a_n|&lt;1$，于是 $|a_n^3|=|a_n^2||a_n|&lt;|a_n^2|=a_n^2$，故 $\sum_{n=0}^{\infty}a_n^3$ 绝对收敛，也即 $\sum_{n=0}^{\infty}a_n^3$ 收敛。
+对于选项(B)，取 $a_n=\frac{1}{\sqrt{n+1}}$，可得 $a_n^2=\frac{1}{n+1}$，$a_n^3=\frac{1}{(n+1)^{\frac{3}{2}}}$，则 $\sum_{n=0}^{\infty}a_n^2$ 发散，但 $\sum_{n=0}^{\infty}a_n^3$ 收敛。
+对于选项(C)，取 $a_n=\frac{(-1)^{n+1}}{(n+1)^{\frac{1}{4}}}$，可得 $a_n^3=\frac{(-1)^{3(n+1)}}{(n+1)^{\frac{3}{4}}}$，$a_n^4=\frac{1}{n+1}$，则 $\sum_{n=0}^{\infty}a_n^3$ 收敛，但 $\sum_{n=0}^{\infty}a_n^4$ 发散。
+对于选项(D)，取 $a_n=\frac{1}{\sqrt[3]{n+1}}$，可得 $a_n^3=\frac{1}{n+1}$，$a_n^4=\frac{1}{(n+1)^{\frac{4}{3}}}$，则 $\sum_{n=0}^{\infty}a_n^3$ 发散，但 $\sum_{n=0}^{\infty}a_n^4$ 收敛。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="17" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $u_n=\sqrt{\arctan(n+k)-\arctan n}$，$k$ 为正常数，则 $\sum\limits_{n=1}^{\infty}(-1)^n u_n$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">绝对收敛</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">条件收敛</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">发散</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">敛散性与 $k$ 有关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令
+$$f(x)=\arctan(x+k)-\arctan x,$$
+得
+$$f'(x)=\frac{1}{1+(x+k)^2}-\frac{1}{1+x^2}&lt;0,$$
+则 $f(x)$ 单调减少，即 $u_n$ 单调减少。
+$$\lim_{n \to \infty}\frac{\sqrt{\arctan(n+k)-\arctan n}}{\frac{1}{n}}=\sqrt{k},$$
+则 $\sum_{n=1}^{\infty}u_n$ 发散，又
+$$\lim_{n \to \infty}u_n=0,$$
+由莱布尼茨判别法可知，$\sum_{n=1}^{\infty}(-1)^n u_n$ 条件收敛。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="17" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\sum\limits_{n=1}^{\infty}(u_{n+1}-u_n)$ 收敛，则下列级数中收敛的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}\frac{u_n}{n}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}(-1)^n\frac{1}{u_n}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}\left(1-\frac{u_n}{u_{n+1}}\right)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\sum\limits_{n=1}^{\infty}(u_{n+1}^2-u_n^2)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一 因为 $\sum_{k=1}^{n}(u_{k+1}-u_k)=u_{n+1}-u_1$，$\sum_{n=1}^{\infty}(u_{n+1}-u_n)$ 收敛，即有 $\lim_{n \to \infty}\sum_{k=1}^{n}(u_{k+1}-u_k)=\lim_{n \to \infty}(u_{n+1}-u_1)$ 存在，所以可以得到 $\{u_n\}$ 收敛，从而 $\{u_n^2\}$ 收敛。
+因为 $\sum_{k=1}^{n}(u_{k+1}^2-u_k^2)=u_{n+1}^2-u_1^2$，所以 $\lim_{n \to \infty}\sum_{k=1}^{n}(u_{k+1}^2-u_k^2)=\lim_{n \to \infty}(u_{n+1}^2-u_1^2)$ 存在，即 $\sum_{n=1}^{\infty}(u_{n+1}^2-u_n^2)$ 收敛。
+方法二 取 $u_n=1-\frac{1}{n}$，则 $\sum_{n=1}^{\infty}(u_{n+1}-u_n)$ 收敛，这时 $\sum_{n=1}^{\infty}\frac{u_n}{n}$ 与 $\sum_{n=1}^{\infty}(-1)^n\frac{1}{u_n}$ 均发散，故可排除(A)，(B)。
+取 $u_n=-\frac{1}{n}$，则 $\sum_{n=1}^{\infty}(u_{n+1}-u_n)$ 收敛，且 $1-\frac{u_n}{u_{n+1}}=-\frac{1}{n}$，$\sum_{n=1}^{\infty}\left(1-\frac{u_n}{u_{n+1}}\right)$ 发散，故可排除(C)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="17" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $y=y(x)$ 满足 $(1-x)y'+2y=0$，$y(0)=1$，$a_n(x)=\int_{0}^{x}y(t)\sin^n t\,\mathrm{d}t$，$n=1,2,\cdots$.\n(1) 求 $y(x)$ 的表达式；\n(2) 证明 $\sum\limits_{n=1}^{\infty}a_n(1)$ 收敛.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题 $(1-x)\frac{\mathrm{d}y}{\mathrm{d}x}+2y=0$，分离变量得
+$$\frac{1}{2y}\mathrm{d}y=\frac{1}{x-1}\mathrm{d}x,$$
+两端同时积分得
+$$\frac{1}{2}\ln|y|=\ln|x-1|+\ln C_1,$$
+$$|y|^{\frac{1}{2}}=C_1|x-1|,$$
+两端同时平方得
+$$y=C(x-1)^2,$$
+又 $y(0)=1$，代人上式，解得 $C=1$，故 $y(x)=(x-1)^2$。
+(2) 由(1)得 $y=(x-1)^2$，则
+$$0&lt;a_n(1)=\int_0^1(t-1)^2\sin^n t\mathrm{d}t\leqslant\int_0^1(t-1)^2t^n\mathrm{d}t,$$
+又
+$$\int_0^1(t-1)^2t^n\mathrm{d}t=\int_0^1(t^{n+2}-2t^{n+1}+t^n)\mathrm{d}t=\frac{1}{n+1}+\frac{1}{n+3}-\frac{2}{n+2}=\frac{2}{(n+1)(n+2)(n+3)},$$
+且 $\sum_{n=1}^{\infty}\frac{2}{(n+1)(n+2)(n+3)}$ 收敛，所以 $\sum_{n=1}^{\infty}a_n(1)$ 收敛。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="17" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设幂级数 $\sum\limits_{n=1}^{\infty}na_n(x+1)^n$ 的收敛区间为 $(-3,1)$，则 $\sum\limits_{n=1}^{\infty}a_n(x-1)^{2n}$ 的收敛区间为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知，幂级数 $\sum_{n=1}^{\infty}na_n(x+1)^n$ 的收敛区间为 $(-3,1)$，所以幂级数 $\sum_{n=1}^{\infty}na_nx^n$ 的收敛区间为 $(-2,2)$，于是 $\sum_{n=1}^{\infty}na_nx^n$ 的收敛半径 $R=2$，因为逐项积分运算不改变幂级数的收敛半径，所以 $\sum_{n=1}^{\infty}a_nx^n$ 的收敛半径 $R=2$，从而 $\sum_{n=1}^{\infty}a_n(x-1)^{2n}$ 的收敛区间内的点应满足 $(x-1)^2&lt;2$，则幂级数 $\sum_{n=1}^{\infty}a_n(x-1)^{2n}$ 的收敛区间为 $(1-\sqrt{2},1+\sqrt{2})$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$(1-\sqrt{2},1+\sqrt{2})$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="17" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">级数 $\sum\limits_{n=1}^{\infty}\frac{n!}{n^n}\mathrm{e}^{-nx}$ 的收敛域为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\lim_{n \to \infty}\left|\frac{(n+1)!}{(n+1)^{n+1}}\mathrm{e}^{-(n+1)x}\cdot\frac{n^n}{n!}\mathrm{e}^{nx}\right|=\lim_{n \to \infty}\left|\left(\frac{n}{n+1}\right)^n\mathrm{e}^{-x}\right|=\mathrm{e}^{-x-1}.$$
+令 $\mathrm{e}^{-x-1}&lt;1$，得 $x&gt;-1$，所以收敛区间为 $(-1,+\infty)$。
+当 $x=-1$ 时，原级数成为 $\sum_{n=1}^{\infty}\frac{n!}{n^n}\mathrm{e}^n$，$\frac{u_{n+1}}{u_n}=\frac{\mathrm{e}}{\left(1+\frac{1}{n}\right)^n}$，分母单调增加，且 $\left(1+\frac{1}{n}\right)^n \to \mathrm{e}\ (n \to \infty)$，进而 $\left(1+\frac{1}{n}\right)^n&lt;\mathrm{e}$，故 $\frac{u_{n+1}}{u_n}&gt;1$。由比值判别法知，当 $x=-1$ 时级数发散。故其收敛域为 $(-1,+\infty)$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$(-1,+\infty)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="17" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=\frac{x^2-x-1}{x^2(x+1)}$ 的幂级数展开式为 $\sum\limits_{n=0}^{\infty}a_n(x-1)^n$，$x\in(0,2)$，则 $\lim\limits_{n\to\infty}\frac{(-1)^n a_n}{\sqrt{n^2+1}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x\in(0,2)$ 时，由于
+$$f(x)=\frac{x^2-x-1}{x^2(x+1)}=\frac{1}{1+x}-\frac{1}{x^2}=\frac{1}{2}\cdot\frac{1}{1+\frac{x-1}{2}}+\left[\frac{1}{1+(x-1)}\right]'.$$
+$$=\sum_{n=0}^{\infty}\frac{(-1)^n}{2^{n+1}}(x-1)^n+\sum_{n=0}^{\infty}(n+1)(-1)^{n+1}(x-1)^n,$$
+故 $a_n=(-1)^n\left[\frac{1}{2^{n+1}}-(n+1)\right]$，于是
+$$\lim_{n \to \infty}\frac{(-1)^n a_n}{\sqrt{n^2+1}}=\lim_{n \to \infty}\frac{1}{2^{n+1}\cdot\sqrt{n^2+1}}-\lim_{n \to \infty}\frac{n+1}{\sqrt{n^2+1}}=-1.$$
+【注】展开点 $x_0\neq 0$ 的情形，$\frac{1}{x}=\frac{1}{x_0+(x-x_0)}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="17" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">幂级数 $\sum\limits_{n=1}^{\infty}(-1)^{n-1}\cdot\frac{x^{\frac{n}{2}}}{n}$ 在 $(0,1]$ 内的和函数 $S(x)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$S(x)=\sum_{n=1}^{\infty}(-1)^{n-1}\cdot\frac{x^{\frac{n}{2}}}{n}=\sum_{n=1}^{\infty}(-1)^{n-1}\cdot\frac{(\sqrt{x})^n}{n}$，因为 $\ln(1+x)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^n}{n}$，$-1&lt;x\leqslant 1$，所以在 $(0,1]$ 内有 $S(x)=\ln(1+\sqrt{x})$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\ln(1+\sqrt{x})$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="17" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\sum\limits_{n=1}^{\infty}\frac{1}{(n+1)2^n}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $S(x)=\sum_{n=1}^{\infty}\frac{1}{n+1}x^{n+1}\ (-1&lt;x&lt;1)$，则
+$$S'(x)=\left(\sum_{n=1}^{\infty}\frac{1}{n+1}x^{n+1}\right)'=\sum_{n=1}^{\infty}x^n=\frac{x}{1-x}.$$
+又因为 $S(0)=0$，所以
+$$S(x)=\int_0^x S'(t)\mathrm{d}t+S(0)=\int_0^x\frac{t}{1-t}\mathrm{d}t=-x-\ln(1-x),$$
+则 $S\left(\frac{1}{2}\right)=\sum_{n=1}^{\infty}\frac{1}{n+1}\left(\frac{1}{2}\right)^{n+1}=-\frac{1}{2}+\ln 2$，故
+$$\sum_{n=1}^{\infty}\frac{1}{(n+1)2^n}=2\sum_{n=1}^{\infty}\frac{1}{n+1}\left(\frac{1}{2}\right)^{n+1}=2S\left(\frac{1}{2}\right)=2\left(-\frac{1}{2}+\ln 2\right)=-1+2\ln 2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-1+2\ln 2$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="17" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求幂级数 $\sum\limits_{n=0}^{\infty}\frac{(-2)^n+2}{2^n(2n+1)}x^{2n}$ 的收敛域及和函数 $S(x)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\lim_{n \to \infty}\left|\frac{(-2)^{n+1}+2}{2^{n+1}(2n+3)}x^{2n+2}\cdot\frac{2^n(2n+1)}{(-2)^n+2}\cdot\frac{1}{x^{2n}}\right|=|x^2|,$$
+当 $|x^2|&lt;1$，即 $|x|&lt;1$ 时，幂级数收敛。代入 $x=1$，$-1$，显然收敛，则所求收敛域为 $[-1,1]$.
+$$S(x)=\sum_{n=0}^{\infty}\frac{(-2)^n+2}{2^n(2n+1)}x^{2n}=\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}x^{2n}+\sum_{n=0}^{\infty}\frac{2}{2n+1}\left(\frac{x^2}{2}\right)^n.$$
+令 $S_1(x)=\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}x^{2n}$，$S_2(x)=\sum_{n=0}^{\infty}\frac{2}{2n+1}\left(\frac{x^2}{2}\right)^n$。
+当 $x\neq 0$ 时，
+$$S_1(x)=\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}x^{2n}=\frac{1}{x}\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}x^{2n+1}=\frac{1}{x}\int_0^x\left[\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}t^{2n+1}\right]'\mathrm{d}t=\frac{1}{x}\int_0^x\sum_{n=0}^{\infty}(-1)^nt^{2n}\mathrm{d}t=\frac{1}{x}\int_0^x\frac{1}{1+t^2}\mathrm{d}t=\frac{1}{x}\arctan x,$$
+$$S_2(x)=\sum_{n=0}^{\infty}\frac{2}{2n+1}\left(\frac{x^2}{2}\right)^n=\frac{2}{x}\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2^n(2n+1)}=\frac{2}{x}\int_0^x\left[\sum_{n=0}^{\infty}\frac{t^{2n+1}}{2^n(2n+1)}\right]'\mathrm{d}t=\frac{2}{x}\int_0^x\frac{1}{1-\frac{t^2}{2}}\mathrm{d}t=\frac{\sqrt{2}}{x}\ln\left|\frac{x+\sqrt{2}}{x-\sqrt{2}}\right|,$$
+则
+$$S(x)=\frac{1}{x}\arctan x+\frac{\sqrt{2}}{x}\ln\left|\frac{x+\sqrt{2}}{x-\sqrt{2}}\right|,0&lt;|x|\leqslant 1.$$
+当 $x=0$ 时，$S(0)=3$.
+所以 $S(x)=\begin{cases}\dfrac{1}{x}\arctan x+\dfrac{\sqrt{2}}{x}\ln\left|\dfrac{x+\sqrt{2}}{x-\sqrt{2}}\right|, &amp; 0&lt;|x|\leqslant 1,\\ 3, &amp; x=0.\end{cases}$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="17" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\begin{cases}x^2, &amp; 0\leqslant x\leqslant\dfrac{1}{2},\\ x-1, &amp; \dfrac{1}{2}&lt;x&lt;1,\end{cases}$ $S(x)=\sum\limits_{n=1}^{\infty}b_n\sin n\pi x$，其中 $b_n=2\int_{0}^{1}f(x)\sin n\pi x\,\mathrm{d}x$（$n=1,2,\cdots$），则 $S\left(-\dfrac{5}{2}\right)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{8}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-\frac{1}{8}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-\frac{1}{4}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对 $f(x)$ 先作奇延拓，再作周期为 2 的周期延拓，则其在 $(-\infty,+\infty)$ 上的正弦级数展开式为 $S(x)$。由于 $S(x)$ 是周期为 2 的周期函数，又是奇函数，故由狄利克雷收敛定理，得
+$$S\left(-\frac{5}{2}\right)=-S\left(\frac{5}{2}\right)=-S\left(\frac{1}{2}\right)=-\frac{f\left(\frac{1}{2}-0\right)+f\left(\frac{1}{2}+0\right)}{2}=-\frac{\frac{1}{4}+\left(-\frac{1}{2}\right)}{2}=\frac{1}{8}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="17" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\sin x$，若 $f(x)=\dfrac{a_0}{2}+\sum\limits_{n=1}^{\infty}a_n\cos nx$，$x\in[0,\pi]$，则 $\lim\limits_{n\to\infty}n^2\ln(1+a_{2n})=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意得，
+$$a_0=\frac{2}{\pi}\int_0^{\pi}\sin x\mathrm{d}x=\frac{4}{\pi},$$
+$$a_n=\frac{2}{\pi}\int_0^{\pi}\sin x\cdot\cos nx\mathrm{d}x=\frac{1}{\pi}\int_0^{\pi}[\sin(n+1)x-\sin(n-1)x]\mathrm{d}x=\frac{1}{\pi}\left[\frac{1-(-1)^{n+1}}{n+1}+\frac{(-1)^{n-1}-1}{n-1}\right]=\frac{2[(-1)^{n-1}-1]}{\pi(n^2-1)},n=2,3,\cdots,$$
+故
+$$a_{2n}=\frac{-4}{\pi(4n^2-1)},$$
+则
+$$\lim_{n \to \infty}n^2\ln(1+a_{2n})=\lim_{n \to \infty}n^2\cdot\frac{-4}{\pi(4n^2-1)}=-\frac{1}{\pi}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{1}{\pi}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="17" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $f(x)=|\,x\,|$，$-\pi\leqslant x\leqslant\pi$.\n(1) 将 $f(x)$ 展开成余弦级数；\n(2) 求 $\sum\limits_{n=1}^{\infty}\frac{1}{(2n-1)^2}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题意，$f(x)=|x|$，$x\in[-\pi,\pi]$，$l=\pi$. 将 $f(x)$ 延拓为以 $2\pi$ 为周期的偶函数，则
+$$a_0=\frac{1}{l}\int_{-l}^{l}f(x)\mathrm{d}x=\frac{1}{\pi}\int_{-\pi}^{\pi}|x|\mathrm{d}x=\frac{2}{\pi}\int_0^{\pi}x\mathrm{d}x=\pi,$$
+$$a_n=\frac{2}{l}\int_0^{l}f(x)\cos\frac{n\pi x}{l}\mathrm{d}x=\frac{2}{\pi}\int_0^{\pi}x\cos nx\mathrm{d}x=\frac{2}{\pi}\left(\frac{x\sin nx}{n}+\frac{\cos nx}{n^2}\right)\Big|_0^{\pi}=\frac{2}{\pi}\cdot\frac{(-1)^n-1}{n^2}\ (n=1,2,\cdots).$$
+当 $n=2k-1$ 时，$a_{2k-1}=-\frac{4}{\pi}\cdot\frac{1}{(2k-1)^2}$，$k=1,2,\cdots$；
+当 $n=2k$ 时，$a_{2k}=0$，$k=1,2,\cdots$.
+故
+$$f(x)=\frac{a_0}{2}+\sum_{n=1}^{\infty}a_n\cos\frac{n\pi x}{l}=\frac{\pi}{2}-\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{\cos(2n-1)x}{(2n-1)^2}\ (-\pi\leqslant x\leqslant\pi).$$
+(2) 由(1)知
+$$f(0)=\frac{\pi}{2}-\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{1}{(2n-1)^2}=0,$$
+故 $\sum_{n=1}^{\infty}\frac{1}{(2n-1)^2}=\frac{\pi}{2}\cdot\frac{\pi}{4}=\frac{\pi^2}{8}$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="17" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设级数 $1+\sum\limits_{n=1}^{\infty}a_nx^n$ 在收敛区间 $(-R,R)$ 内的和函数是微分方程 $y'-\dfrac{y}{6}=\dfrac{xy^7}{6}$ 的一个解，求该级数的和函数.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】由题意可知，微分方程的一个解就是该级数的和函数，因此求出微分方程的一个特解就可以了。
+【解析】设 $y(x)=1+\sum_{n=1}^{\infty}a_nx^n$，则 $y(0)=1$. 方程 $\frac{\mathrm{d}y}{\mathrm{d}x}-\frac{y}{6}=\frac{xy^7}{6}$ 是伯努利方程。
+令 $z = y^{-6}$，则 $\dfrac{\mathrm{d}z}{\mathrm{d}x} = -6y^{-7}\dfrac{\mathrm{d}y}{\mathrm{d}x}$，代入方程得
+$$\frac{\mathrm{d}z}{\mathrm{d}x} + z = -x,$$
+由一阶非齐次线性微分方程的通解公式，得
+$$z = y^{-6} = \mathrm{e}^{\int \mathrm{d}x}\left(-\int x\mathrm{e}^{\int \mathrm{d}x}\,\mathrm{d}x + C\right)$$
+$$= \mathrm{e}^{-x}(-x\mathrm{e}^{x} + \mathrm{e}^{x} + C) = C\mathrm{e}^{-x} + 1 - x,$$
+将 $y(0) = 1$ 代入，得 $C = 0$，于是 $y^{-6} = 1 - x$，所以该级数的和函数
+$$y(x) = \frac{1}{\sqrt[6]{1-x}}.$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-16.html">上一章：第15章 微分方程</a>
+      <a class="chapter-link" href="chapter-18.html">下一章：第17章 多元函数积分学的预备知识</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 17, "total": 17, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

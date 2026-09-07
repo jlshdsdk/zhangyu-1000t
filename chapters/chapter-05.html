@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 一元函数微分学的计算 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第4章 一元函数微分学的计算<span class="top-count">（16题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="5" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x)=x^{2}$，$h(x)=f\left[1+g(x)\right]$，其中$g(x)$可导，且$g'(1)=h'(1)=2$，则$g(1)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $f(x)=x^2$，所以
+$$h(x)=f[1+g(x)]=[1+g(x)]^2,h'(x)=2[1+g(x)]g'(x),$$
+故 $h'(1)=2[1+g(1)]g'(1)$，即 $g(1)=\frac{h'(1)}{2g'(1)}-1=-\frac{1}{2}$.
+故正确选项为(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = (\ln x - 1)(\ln^{2}x - 2)\cdots(\ln^{n}x - n)$，$n \geqslant 2$，则$f'(\mathrm{e}) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $g(x)=(\ln^2 x-2)\cdots(\ln^n x-n)$，则 $f(x)=(\ln x-1)g(x)$. 于是
+$$f'(x)=\frac{1}{x}g(x)+(\ln x-1)g'(x).$$
+故 $f'(\mathrm{e})=\frac{1}{\mathrm{e}}g(\mathrm{e})+0=\frac{1}{\mathrm{e}}(-1)^{n-1}(n-1)!$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{1}{\mathrm{e}}(-1)^{n-1}(n-1)!</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数$f(x)$可导，$f(0)=-1$，$f'(0)=1$，若$y(x) = |f(x-1)|$，则$y'(1) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$|f(x-1)|=\sqrt{f^2(x-1)}$，故
+$$\left[|f(x-1)|\right]'=\left[\sqrt{f^2(x-1)}\right]'=\frac{1}{2\sqrt{f^2(x-1)}}\cdot 2f(x-1)f'(x-1)=\frac{f(x-1)f'(x-1)}{|f(x-1)|},$$
+则
+$$y'(1)=\left[|f(x-1)|\right]'\bigg|_{x=1}=\frac{f(0)f'(0)}{|f(0)|}=-1.$$
+【注】要学会对不易(不能)去掉绝对值的表达式求导，这里依然用到的是 $|u|=\sqrt{u^2}$. 再如当 $x\neq 0$ 时，$(\ln|x|)'=(\ln\sqrt{x^2})'=\frac{1}{\sqrt{x^2}}\cdot\frac{2x}{2\sqrt{x^2}}=\frac{2x}{2x^2}=\frac{1}{x}$，与《考研数学基础30讲·高等数学分册》中分 $x&gt;0,x&lt;0$ 讨论的结果一致，绝对值神秘地“消失”了，称为对绝对值视而不见.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="5" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数$f(x)$可导，$f(1)=f'(1)=\frac{1}{4}$，若$y(x) = \mathrm{e}^{\sqrt{f(2x-1)}}$，则$y'(1) =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sqrt{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{4}\sqrt{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{2}\sqrt{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2\sqrt{\mathrm{e}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$y'(x)=\mathrm{e}^{\sqrt{f(2x-1)}}\cdot\frac{2f'(2x-1)}{2\sqrt{f(2x-1)}}=\frac{f'(2x-1)}{\sqrt{f(2x-1)}}\mathrm{e}^{\sqrt{f(2x-1)}},$$
+故
+$$y'(1)=\frac{f'(1)}{\sqrt{f(1)}}\mathrm{e}^{\sqrt{f(1)}}=\frac{1}{2}\sqrt{\mathrm{e}}.$$
+故正确选项为(C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数$y=y(x)$满足$(x+y^{2})y' = 1$，$y(-1)=0$，则$\left.\frac{\mathrm{d}x}{\mathrm{d}y}\right|_{y=0} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $x=-1$ 时，$y=0$，得 $(-1+0)y'(-1)=1$，即 $y'(-1)=-1$.
+于是 $\frac{\mathrm{d}x}{\mathrm{d}y}\Big|_{y=0}=\frac{1}{\frac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=-1}}=\frac{1}{y'(-1)}=-1$.
+【注】本题所给关系式 $(x+y^2)y'=1$ 是一阶微分方程，可求通解，此内容要到以后才能学习到，但本题的命题恰无须解此微分方程，而利用反函数求导公式即可顺利解决.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="5" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$y=f(x)$由方程$|x|y^{3}+y-1=0$确定，求$y=f(x)$的极大值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $|x|y^3+y-1=0$，可得 $y&gt;0$，记 $F(x,y)=|x|y^3+y-1$，则
+$$F'_y=3|x|y^2+1&gt;0,$$
+$$F'_x=\begin{cases}y^3&gt;0, &amp; x&gt;0,\\-y^3&lt;0, &amp; x&lt;0.\end{cases}$$
+由 $y'=-\frac{F'_x}{F'_y}$，知当 $x&lt;0$ 时，$y'&gt;0$；当 $x&gt;0$ 时，$y'&lt;0$，又 $y=f(x)$ 在点 $x=0$ 处连续，故 $y=f(x)$ 在 $x=0$ 处取得极大值，极大值为 $f(0)=1$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$\begin{cases}x = t - t^{2}, \\ t\mathrm{e}^{y} + y + 1 = 0,\end{cases}$则$\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{t=0} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $t=0$ 时，$x=0$，$y=-1$. 又 $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}$，其中 $\frac{\mathrm{d}x}{\mathrm{d}t}=1-2t$，对于 $\frac{\mathrm{d}y}{\mathrm{d}t}$，有 $\mathrm{e}^y+t\mathrm{e}^y\frac{\mathrm{d}y}{\mathrm{d}t}+\frac{\mathrm{d}y}{\mathrm{d}t}=0$，解得 $\frac{\mathrm{d}y}{\mathrm{d}t}=-\frac{\mathrm{e}^y}{1+t\mathrm{e}^y}$，于是
+$$\frac{\mathrm{d}y}{\mathrm{d}x}\bigg|_{t=0}=-\frac{\mathrm{e}^y}{(1+t\mathrm{e}^y)(1-2t)}\bigg|_{\substack{t=0\\ y=-1}}=-\frac{1}{\mathrm{e}}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-\frac{1}{\mathrm{e}}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="5" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数$y=f(x)$由$\begin{cases}x = 2t + |t|, \\ y = |t|\tan t\end{cases}$所确定，则在$\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$内（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(x)$连续，$f'(0)$不存在</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f'(0)$存在，$f'(x)$在$x=0$处不连续</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f'(x)$连续，$f''(0)$不存在</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f''(0)$存在，$f''(x)$在$x=0$处不连续</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $t\geqslant 0$ 时，$\begin{cases}x=3t,\\y=t\tan t;\end{cases}$ 当 $t&lt;0$ 时，$\begin{cases}x=t,\\y=-t\tan t,\end{cases}$ 即当 $x\geqslant 0$ 时，$y=\frac{x}{3}\tan\frac{x}{3}$；当 $x&lt;0$ 时，$y=-x\tan x$，也即
+$$y=f(x)=\begin{cases}\dfrac{x}{3}\tan\dfrac{x}{3}, &amp; x\geqslant 0,\\-x\tan x, &amp; x&lt;0.\end{cases}$$
+故 $f(x)$ 在 $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$ 内连续.
+又
+$$f'_+(0)=\lim_{x\to 0^+}\frac{f(x)-f(0)}{x-0}=\lim_{x\to 0^+}\frac{\frac{x}{3}\tan\frac{x}{3}}{x}=0,$$
+$$f'_-(0)=\lim_{x\to 0^-}\frac{f(x)-f(0)}{x-0}=\lim_{x\to 0^-}\frac{-x\tan x}{x}=0.$$
+即 $f'_+(0)=f'_-(0)=0$，故 $f'(0)$ 存在且 $f'(0)=0$.
+因为当 $x&gt;0$ 时，
+$$f'(x)=\frac{1}{3}\tan\frac{x}{3}+\frac{x}{9}\sec^2\frac{x}{3};$$
+当 $x&lt;0$ 时，
+$$f'(x)=-\tan x-x\sec^2 x.$$
+故 $\lim_{x\to 0^+}f'(x)=\lim_{x\to 0^-}f'(x)=0=f'(0)$，则 $f'(x)$ 在 $x=0$ 处连续，故 $f'(x)$ 在 $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$ 内连续.
+又
+$$f''_+(0)=\lim_{x\to 0^+}\frac{f'(x)-f'(0)}{x-0}=\lim_{x\to 0^+}\frac{\frac{1}{3}\tan\frac{x}{3}+\frac{x}{9}\sec^2\frac{x}{3}}{x}=\frac{2}{9},$$
+$$f''_-(0)=\lim_{x\to 0^-}\frac{f'(x)-f'(0)}{x-0}=\lim_{x\to 0^-}\frac{-\tan x-x\sec^2 x}{x}=-2,$$
+故 $f''_+(0)\neq f''_-(0)$，即 $f''(0)$ 不存在.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设可导的奇函数$f(x)$满足$f'(x) = f^{2}(x)$，且$f(-1)=1$，则$f'''(1) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $f'(x)=f^2(x)$ 可得 $f''(x)=2f(x)f'(x)$，故
+$$f'''(x)=2\left[f'(x)\right]^2+2f(x)f''(x).$$
+又 $f(x)$ 为奇函数，故 $f(1)=-f(-1)=-1$，则
+$$f'(1)=f^2(1)=1,f''(1)=2f(1)f'(1)=-2,$$
+故 $f'''(1)=2\left[f'(1)\right]^2+2f(1)f''(1)=2+4=6$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">6</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="5" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设可导函数$f(x)$满足$f'(x) = f^{2}(x)$，且$f(0)=-1$，则在$x=0$处的三阶导数$f'''(0) =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-6$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-4$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$4$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$6$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $f'(x)=f^2(x)$ 可得 $f''(x)=2f(x)f'(x)$，故
+$$f'''(x)=2\left[f'(x)\right]^2+2f(x)f''(x).$$
+又 $f'(0)=f^2(0)=1$，$f''(0)=2f(0)f'(0)=-2$，故
+$$f'''(0)=2\left[f'(0)\right]^2+2f(0)f''(0)=2+4=6.$$
+故正确选项为(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数$f(x) = x^{2}\ln(1-x)$，则当$n \geqslant 3$时，$f^{(n)}(0) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f(x)=x^2\ln(1-x),$$
+其中 $\ln(1-x)=-\sum_{n=1}^{\infty}\frac{x^n}{n}$，故
+$$f(x)=-\sum_{n=1}^{\infty}\frac{x^{n+2}}{n}=-\sum_{n=3}^{\infty}\frac{1}{n-2}x^n,$$
+故
+$$f^{(n)}(0)=-\frac{n!}{n-2}\,(n\geqslant 3).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">-\frac{n!}{n-2}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(t) = \lim_{n \to \infty}\cos t \cdot \left(\frac{n+t}{n-t}\right)^{n}$，则$f’(0) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f(t)=\cos t\lim_{n\to\infty}\left(1+\frac{2t}{n-t}\right)^n=\mathrm{e}^{2t}\cos t,$$
+$$f'(t)=-\mathrm{e}^{2t}\sin t+2\mathrm{e}^{2t}\cos t=\mathrm{e}^{2t}(2\cos t-\sin t),$$
+故
+$$f'(0)=2.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \lim_{t \to \infty}x\left(1+\frac{1}{t}\right)^{t\sin x}$，则$f'(x) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\lim_{t\to\infty}x\left(1+\frac{1}{t}\right)^{t\sin x}=\lim_{t\to\infty}x\left[\left(1+\frac{1}{t}\right)^{t}\right]^{\sin x}=x\left[\lim_{t\to\infty}\left(1+\frac{1}{t}\right)^{t}\right]^{\sin x}=x\mathrm{e}^{\sin x},$$
+即
+$$f(x)=x\mathrm{e}^{\sin x},$$
+故
+$$f'(x)=\mathrm{e}^{\sin x}+x\mathrm{e}^{\sin x}\cdot\cos x=(1+x\cos x)\mathrm{e}^{\sin x}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(1+x\cos x)\mathrm{e}^{\sin x}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \max\{x, x^{2}\}$，$0 &lt; x &lt; 2$，则$f'(x) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】先把 $f(x)$ 写成分段函数，再求导.
+【解析】由题设知，
+$$f(x)=\begin{cases}x, &amp; 0&lt;x\leqslant 1,\\x^2, &amp; 1&lt;x&lt;2.\end{cases}$$
+又因 $f'_+(1)=1\neq 2=f'_-(1)$（按定义求），故 $f'(1)$ 不存在.
+故有
+$$f'(x)=\begin{cases}1, &amp; 0&lt;x&lt;1,\\2x, &amp; 1&lt;x&lt;2.\end{cases}$$
+因此，$f'(x)=\begin{cases}1, &amp; 0&lt;x&lt;1,\\不存在， &amp; x=1,\\2x, &amp; 1&lt;x&lt;2.\end{cases}$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\begin{cases}1, &amp; 0&lt;x&lt;1,\\ 不存在， &amp; x=1,\\2x, &amp; 1&lt;x&lt;2\end{cases}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="5" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线$\begin{cases}x = \mathrm{e}^{t}\sin 2t, \\ y = \mathrm{e}^{t}\cos t\end{cases}$在对应$t=0$处的点的切线方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\frac{\mathrm{e}^t\cos t-\mathrm{e}^t\sin t}{\mathrm{e}^t\sin 2t+2\mathrm{e}^t\cos 2t},$$
+当 $t=0$ 时，$x=0$，$y=1$，$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{1}{2}$，故在点 $(0,1)$ 处的切线方程为
+$$y-1=\frac{1}{2}(x-0)\text{，即 } x-2y+2=0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">x-2y+2=0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="5" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设$f(x) = \ln\frac{1+x}{1-x}$，则$f^{(n)}(x) =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(n-1)!\left[\frac{1}{(1+x)^{n}} - \frac{1}{(1-x)^{n}}\right]$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(n-1)!\left[\frac{1}{(1+x)^{n}} + \frac{1}{(1-x)^{n}}\right]$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(n-1)!\left[\frac{(-1)^{n-1}}{(1+x)^{n}} - \frac{1}{(1-x)^{n}}\right]$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(n-1)!\left[\frac{(-1)^{n-1}}{(1+x)^{n}} + \frac{1}{(1-x)^{n}}\right]$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$f(x)=\ln\frac{1+x}{1-x}=\ln(1+x)-\ln(1-x).$$
+令 $g(x)=\ln(1+x)$，$h(x)=\ln(1-x)$，则有
+$$g'(x)=\frac{1}{1+x},g''(x)=-\frac{1}{(1+x)^2},g'''(x)=\frac{2}{(1+x)^3},$$
+$$g^{(4)}(x)=-\frac{2\times 3}{(1+x)^4}=(-1)^{4-1}\frac{(4-1)!}{(1+x)^4}.$$
+……
+$$g^{(n)}(x)=(-1)^{n-1}\frac{(n-1)!}{(1+x)^n};$$
+$$h'(x)=\frac{-1}{1-x},h''(x)=\frac{-1}{(1-x)^2},h'''(x)=\frac{-2}{(1-x)^3},$$
+$$h^{(4)}(x)=\frac{-3!}{(1-x)^4}=-\frac{(4-1)!}{(1-x)^4}.$$
+……
+$$h^{(n)}(x)=-\frac{(n-1)!}{(1-x)^n}.$$
+故
+$$f^{(n)}(x)=g^{(n)}(x)-h^{(n)}(x)=(n-1)!\left[\frac{(-1)^{n-1}}{(1+x)^n}+\frac{1}{(1-x)^n}\right].$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-04.html">上一章：第3章 一元函数微分学的概念</a>
+      <a class="chapter-link" href="chapter-06.html">下一章：第5章 一元函数微分学的应用(一)——几何应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 5, "total": 16, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

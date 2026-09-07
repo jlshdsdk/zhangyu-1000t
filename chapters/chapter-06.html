@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章 一元函数微分学的应用(一)——几何应用 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第5章 一元函数微分学的应用(一)——几何应用<span class="top-count">（23题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $y=\mathrm{e}^{x}+\dfrac{\mathrm{e}^{-x}}{2}$ 的最小值为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一 $\mathrm{e}^x+\dfrac{\mathrm{e}^{-x}}{2}\geqslant 2\sqrt{\mathrm{e}^x\cdot\dfrac{\mathrm{e}^{-x}}{2}}=\sqrt{2}$，当且仅当 $x=\dfrac{1}{2}\ln\dfrac{1}{2}$ 时，等号成立，故 $y$ 的最小值为 $\sqrt{2}$.
+方法二 $y'=\mathrm{e}^x-\dfrac{1}{2}\mathrm{e}^{-x}=\dfrac{2\mathrm{e}^{2x}-1}{2\mathrm{e}^x}$，$y''=\mathrm{e}^x+\dfrac{1}{2\mathrm{e}^x}&gt;0$.
+令 $y'=0$，解得 $x=\dfrac{1}{2}\ln\dfrac{1}{2}$，且 $y'$ 为增函数，故当 $x=\dfrac{1}{2}\ln\dfrac{1}{2}$ 时，$y$ 取到最小值，最小值为
+$$y\Big|_{x=\frac{1}{2}\ln\frac{1}{2}}=\mathrm{e}^{\frac{1}{2}\ln\frac{1}{2}}+\frac{\mathrm{e}^{-\frac{1}{2}\ln\frac{1}{2}}}{2}=\sqrt{\frac{1}{2}}+\frac{1}{2}\times\frac{1}{\sqrt{\frac{1}{2}}}=\sqrt{2}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\sqrt{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若函数 $f(x)=\mathrm{e}^{-ax}-\mathrm{e}^{x}$ 的极值点小于零, 则常数 $a$ 的取值范围为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f'(x)=(-a)\cdot\mathrm{e}^{-ax}-\mathrm{e}\overset{\text{令}}{=}0$，得驻点 $x=x_0$ 满足 $-a\mathrm{e}^{-ax_0}-\mathrm{e}=0$，即 $a=-\mathrm{e}^{1+ax_0}&lt;0$，又 $x_0&lt;0$，于是 $1+ax_0&gt;1$，又因为 $-\mathrm{e}^u$ 为单调减函数，所以 $a&lt;-\mathrm{e}$. 综上，$a\in(-\infty,-\mathrm{e})$.
+【注】若命制为极值点大于零，则 $a\in(-\mathrm{e},0)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$(-\infty,-\mathrm{e})$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=\begin{cases}\cos|x|-1, &amp; x&lt;0,\\ x\ln x, &amp; x&gt;0,\end{cases}$ 则 $x=0$ 是 $f(x)$ 的(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">可导点, 极值点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">不可导点, 极值点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">可导点, 非极值点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">不可导点, 非极值点</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $x&lt;0$ 时，$f(x)=\cos(-x)-1=\cos x-1$，所以有
+$$\lim_{x\to 0^-}\frac{f(x)-f(0)}{x}=\lim_{x\to 0^-}\frac{\cos x-1}{x}=\lim_{x\to 0^-}\frac{-\frac{1}{2}x^2}{x}=0,$$
+$$\lim_{x\to 0^+}\frac{f(x)-f(0)}{x}=\lim_{x\to 0^+}\frac{x\ln x}{x}=-\infty,$$
+故 $f(x)$ 在 $x=0$ 处的右导数不存在，从而 $f(x)$ 在 $x=0$ 处不可导.
+当 $-\dfrac{\pi}{2}&lt;x&lt;0$ 时，$f'(x)=-\sin x&gt;0$，当 $0&lt;x&lt;\mathrm{e}^{-1}$ 时，$f'(x)=\ln x+1&lt;0$，且 $f(x)$ 在 $x=0$ 处连续，所以 $x=0$ 是 $f(x)$ 的极大值点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $x^{3}+ax^{-2}\geqslant\dfrac{10}{3}\,(x&gt;0)$ 恒成立, 则 $a$ 的取值范围为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由关系式，知当 $x&gt;0$ 时，$x^5+a\geqslant\dfrac{10}{3}x^3$，即 $\dfrac{10}{3}x^3-x^5\leqslant a$. 令 $f(x)=\dfrac{10}{3}x^3-x^5$，求出 $f(x)$ 在 $x&gt;0$ 时的最大值，即可得出 $a$ 的最小值. 因为
+$$f'(x)=10x^2-5x^4=5x^2(2-x^2)\overset{\text{令}}{=}0,$$
+得 $x=\sqrt{2}$，且当 $0&lt;x&lt;\sqrt{2}$ 时，$f'(x)&gt;0$，当 $x&gt;\sqrt{2}$ 时，$f'(x)&lt;0$，于是 $x=\sqrt{2}$ 是唯一极大值点，即最大值点. 又
+$$f(\sqrt{2})=\frac{10}{3}\times 2\sqrt{2}-4\sqrt{2}=\frac{8}{3}\sqrt{2},$$
+故 $a$ 的取值范围为 $\left[\dfrac{8}{3}\sqrt{2},+\infty\right)$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\left[\dfrac{8}{3}\sqrt{2},+\infty\right)$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $y=f(x)$ 连续, 其二阶导函数的图像如图所示, 则曲线 $y=f(x)$ 的拐点个数为(  ).【图】二阶导函数 $f''(x)$ 的图像: 横轴上依次标注 $x_{1}$、$O$、$x_{2}$、$x_{3}$; 曲线自左下方上升, 在 $x_{1}$ 处自下而上穿过 $x$ 轴, 在 $O$ 与 $x_{2}$ 之间达到峰值后下降, 在 $x_{2}$ 处自上而下穿过 $x$ 轴, 在 $x_{3}$ 处取得落在 $x$ 轴上的极小值(与 $x$ 轴相切), 随后上升。<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于在点 $x_1$、$x_2$ 左右两侧 $f''(x)$ 变号，知 $(x_1,f(x_1))$、$(x_2,f(x_2))$ 均为拐点，在点 $x=0$ 处，$f''(x)$ 不存在，但在点 $x=0$ 左右两侧 $f''(x)$ 变号，$(0,f(0))$ 也为拐点，共 3 个，选 (C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)&gt;0$ 且二阶可导, 曲线 $y=\sqrt{f(x)}$ 有拐点 $(1,\sqrt{2})$, $f'(1)=2$, 则 $f''(1)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知，$\sqrt{f(1)}=\sqrt{2}$，则 $f(1)=2$. 又
+$$y'=\frac{f'(x)}{2\sqrt{f(x)}}.$$
+$$y''=\frac{f''(x)\cdot\sqrt{f(x)}-f'(x)\cdot\dfrac{f'(x)}{2\sqrt{f(x)}}}{2f(x)}=\frac{2f''(x)f(x)-[f'(x)]^2}{4[f(x)]^2}.$$
+由 $(1,\sqrt{2})$ 是拐点，有 $y''(1)=0$，即 $2f''(1)f(1)-[f'(1)]^2=0$. 于是 $f''(1)=1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y(x)=\ln|\mathrm{e}^{2x}-1|$ 的斜渐近线为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=2x+\dfrac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=2x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=-2x+\dfrac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=-2x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为
+$$\lim_{x\to+\infty}\frac{\ln|\mathrm{e}^{2x}-1|}{x}=\lim_{x\to+\infty}\frac{\ln(\mathrm{e}^{2x}-1)}{x}=\lim_{x\to+\infty}\frac{2\mathrm{e}^{2x}}{\mathrm{e}^{2x}-1}=2,$$
+且
+$$\begin{aligned}\lim_{x\to+\infty}(\ln|\mathrm{e}^{2x}-1|-2x)&amp;=\lim_{x\to+\infty}\left[\ln(\mathrm{e}^{2x}-1)-\ln\mathrm{e}^{2x}\right]\\&amp;=\lim_{x\to+\infty}\ln(1-\mathrm{e}^{-2x})=0.\end{aligned}$$
+所以直线 $y=2x$ 是曲线 $y(x)$ 在 $x\to+\infty$ 方向上的一条斜渐近线.
+因为
+$$\lim_{x\to-\infty}\ln|\mathrm{e}^{2x}-1|=\ln 1=0,$$
+所以 $y=0$ 是曲线 $y(x)$ 在 $x\to-\infty$ 方向上的一条水平渐近线，曲线在此方向上没有斜渐近线.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=x\ln\left(\mathrm{e}+\dfrac{1}{x}\right)$ 的斜渐近线为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=x+\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=x-\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=x+\dfrac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=x-\dfrac{1}{\mathrm{e}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于
+$$a=\lim_{x\to\infty}\frac{y}{x}=\lim_{x\to\infty}\ln\left(\mathrm{e}+\frac{1}{x}\right)=\ln\mathrm{e}=1,$$
+$$\begin{aligned}b&amp;=\lim_{x\to\infty}(y-x)=\lim_{x\to\infty}\left[x\ln\left(\mathrm{e}+\frac{1}{x}\right)-x\right]\\&amp;=\lim_{x\to\infty}x\cdot\left[\ln\left(\mathrm{e}+\frac{1}{x}\right)-\ln\mathrm{e}\right]\\&amp;=\lim_{x\to\infty}x\cdot\ln\left(1+\frac{1}{\mathrm{e}x}\right)\\&amp;=\lim_{x\to\infty}x\cdot\frac{1}{\mathrm{e}x}=\frac{1}{\mathrm{e}},\end{aligned}$$
+故曲线的斜渐近线为 $y=x+\dfrac{1}{\mathrm{e}}$. 选 (C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $x^{2}-xy+y^{2}=1$ 在点 $(1,1)$ 处的曲率为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对 $x^2-xy+y^2=1$ 的两边关于 $x$ 求导，有
+$$2x-(y+xy')+2y\cdot y'=0,\qquad(*)$$
+代入 $x=1,y=1$ 得 $2-(1+y')+2y'=0$，故 $y'(1)=-1$.
+$(*)$ 式两边再对 $x$ 求导，有
+$$2-y'-y'-xy''+2(y')^2+2y\cdot y''=0,$$
+代入 $x=1,y=1,y'(1)=-1$，得 $4-y''+2+2y''=0$，故 $y''(1)=-6$.
+所以所求曲率为
+$$k=\frac{|y''|}{\left[1+(y')^2\right]^{\frac{3}{2}}}\Bigg|_{(1,1)}=\frac{3\sqrt{2}}{2}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{3\sqrt{2}}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知曲线 $y=f(x)$ 在其点 $(0,1)$ 处的曲率圆方程为 $(x-1)^{2}+y^{2}=2$, 且当 $x\to 0$ 时, 二阶可导函数 $f(x)$ 与 $a+bx+cx^{2}$ 的差为 $o(x^{2})$, 则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a=0, b=1, c=\dfrac{3}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a=1, b=0, c=1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a=1, b=1, c=-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a=1, b=0, c=-1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题可知，点 $(0,1)$ 在曲线上，故 $f(0)=1$.
+对曲率圆方程 $(x-1)^2+y^2=2$ 关于 $x$ 求导，得
+$$2(x-1)+2y\cdot y'=0,\qquad(*)$$
+故可得
+$$y'=\frac{-2(x-1)}{2y},$$
+即有 $f'(0)=y'\Big|_{x=0}=1$.
+对 $(*)$ 式两边关于 $x$ 求导，得
+$$2+2(y')^2+2y\cdot y''=0,$$
+代入 $f(0)=1,f'(0)=1$，可得 $f''(0)=y''\Big|_{x=0}=-2$.
+故当 $x\to 0$ 时，有
+$$f(x)=f(0)+f'(0)x+\frac{f''(0)}{2}x^2+o(x^2)=1+x-x^2+o(x^2).$$
+故由题意知，$a=1,b=1,c=-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设在 $(-\infty,+\infty)$ 内, $f''(x)&lt;0$, $f(0)\geqslant 0$, 则函数 $\dfrac{f(x)}{x}$(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">在 $(-\infty,0)$ 内单调减少, 在 $(0,+\infty)$ 内单调增加</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">在 $(-\infty,0)$ 和 $(0,+\infty)$ 内单调减少</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">在 $(-\infty,0)$ 内单调增加, 在 $(0,+\infty)$ 内单调减少</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">在 $(-\infty,0)$ 和 $(0,+\infty)$ 内单调增加</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\left[\dfrac{f(x)}{x}\right]'=\dfrac{xf'(x)-f(x)}{x^2}.$
+令 $F(x)=xf'(x)-f(x)$，
+则 $F'(x)=f'(x)+xf''(x)-f'(x)=xf''(x)$.
+因为在 $(-\infty,+\infty)$ 内，$f''(x)&lt;0$，则当 $x&gt;0$ 时，$F'(x)&lt;0$；当 $x&lt;0$ 时，$F'(x)&gt;0$. 又 $F(0)=-f(0)\leqslant 0$，故 $F(x)$ 在 $(-\infty,0)$ 和 $(0,+\infty)$ 内均小于 0.
+于是，在 $(-\infty,0)$ 和 $(0,+\infty)$ 内 $\left[\dfrac{f(x)}{x}\right]'=\dfrac{F(x)}{x^2}&lt;0$，故应选 (B).
+【注】因为 $x^2&gt;0$，所以在讨论 $\dfrac{xf'(x)-f(x)}{x^2}$ 时，只需讨论 $xf'(x)-f(x)$ 的正负.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 连续, 且 $\lim\limits_{x\to 0}\dfrac{f(x)}{x^{2}}=k\,(k&lt;0)$, 则 $f(x)$ 在点 $x=0$ 处(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">导数不存在</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">导数存在, 且 $f'(0)\neq 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">取得极小值</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">取得极大值</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设知 $\lim_{x\to 0}f(x)=0=f(0)$.
+由 $\lim_{x\to 0}\dfrac{f(x)}{x^2}=k\,(k&lt;0)$，知在点 $x=0$ 的某去心邻域内，有 $\dfrac{f(x)}{x^2}=k+\alpha$，其中，当 $x\to 0$ 时，$\alpha\to 0$，则
+$$f(x)=kx^2+\alpha x^2.$$
+于是在点 $x=0$ 的某去心邻域内，有 $f(x)-f(0)&lt;0$，即 $f(0)$ 为极大值.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $M=\max\{1,\sqrt{2},\sqrt[3]{3},\cdots,\sqrt[n]{n}\}\,(n&gt;4)$, 则 $M=(\quad)$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sqrt{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sqrt[3]{3}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\sqrt[4]{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\sqrt[n]{n}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\sqrt[x]{x}$，则 $f'(x)=\sqrt[x]{x}\cdot\dfrac{1}{x^2}(1-\ln x)$. 令 $f'(x)=0$，得唯一驻点 $x=\mathrm{e}$.
+当 $0&lt;x&lt;\mathrm{e}$ 时，$f'(x)&gt;0$，则 $f(1)&lt;f(2)$，即 $1&lt;\sqrt{2}$；
+当 $\mathrm{e}&lt;x&lt;+\infty$ 时，$f'(x)&lt;0$，则 $f(3)&gt;f(4)&gt;\cdots&gt;f(n)$，即 $\sqrt[3]{3}&gt;\sqrt[4]{4}&gt;\cdots&gt;\sqrt[n]{n}$.
+因为
+$$(\sqrt{2})^6=2^3=8&lt;(\sqrt[3]{3})^6=3^2=9,$$
+所以 $\sqrt{2}&lt;\sqrt[3]{3}$.
+故选项 (B) 正确.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)=n^{2}\mathrm{e}^{\frac{x}{n}}-(1+n)x$, 若 $f(x)$ 在 $x=\xi_{n}$ 处取得极值, 则 $\lim\limits_{n\to\infty}\xi_{n}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$f'(x)=n\mathrm{e}^{\frac{x}{n}}-(1+n)$，令 $f'(x)=0$，得驻点 $x=n\ln\dfrac{n+1}{n}$.
+又 $f''(x)=\mathrm{e}^{\frac{x}{n}}&gt;0$，故 $x=\xi_n=n\ln\dfrac{n+1}{n}$ 为极小值点，从而
+$$\lim_{n\to\infty}\xi_n=\lim_{n\to\infty}\frac{\ln\left(1+\frac{1}{n}\right)}{\frac{1}{n}}=1.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="6" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $f(x)$ 对于一切实数 $x$ 满足微分方程 $$xf''(x)+5x^{2}\left[f'(x)\right]^{2}=2\left(1-\mathrm{e}^{-x}\right).$$ (1) 若 $x=a\,(a\neq 0)$ 时, $f(x)$ 取极值, 判别其是极大值还是极小值; (2) 若 $x=0$ 时, $f(x)$ 取极值, 判别其为极大值还是极小值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由 $f(x)$ 可导，且在 $x=a$ 处取极值，故 $f'(a)=0\,(a\neq 0)$. 将 $x=\mathrm{e}$ 代入方程得到
+$$af''(a)=2(1-\mathrm{e}^{-a}).$$
+从而
+$$f''(a)=\frac{2(1-\mathrm{e}^{-a})}{a},$$
+由 $a\neq 0$，易知 $f''(a)&gt;0$，故 $f(a)$ 为 $f(x)$ 的极小值.
+(2) 由于 $f(x)$ 对一切实数 $x$ 二阶可导，$f(0)$ 为极值，故 $f'(0)=0$ 且 $\lim_{x\to 0}f''(x)=0$.
+又
+$$\begin{aligned}f''(0)&amp;=\lim_{x\to 0}\frac{f'(x)-f'(0)}{x-0}\\&amp;=\lim_{x\to 0}\frac{f'(x)}{x}=\lim_{x\to 0}f''(x)\\&amp;=\lim_{x\to 0}\left(2\cdot\frac{1-\mathrm{e}^{-x}}{x}-5x[f'(x)]^2\right)\\&amp;=\lim_{x\to 0}2\cdot\frac{1-\mathrm{e}^{-x}}{x}\\&amp;=2&gt;0,\end{aligned}$$
+故 $f(0)$ 为 $f(x)$ 的极小值.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $g(x)$ 在 $x=0$ 的某邻域内连续, $f(x)$ 具有一阶连续导数, 且满足 $\lim\limits_{x\to 0}\dfrac{g(x)}{x}=-3$, $f'(x)=\ln(1+x^{2})-x\displaystyle\int_{0}^{x}g(xt)\,\mathrm{d}t$, 则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$x=0$ 是 $f(x)$ 的极大值点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$x=0$ 是 $f(x)$ 的极小值点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(0,f(0))$ 是曲线 $y=f(x)$ 的拐点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">以上结论均不正确</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\begin{aligned}f'(x)&amp;=\ln(1+x^2)-x\int_0^x g(xt)\,\mathrm{d}t\\&amp;=\ln(1+x^2)-\int_0^x g(xt)\,\mathrm{d}(xt)\\&amp;\xlongequal{xt=u}\ln(1+x^2)-\int_0^{x^2}g(u)\,\mathrm{d}u.\end{aligned}$$
+$f''(x)=\dfrac{2x}{1+x^2}-g(x)$，等式两边同除以 $x$ 并取极限，有
+$$\lim_{x\to 0}\frac{f''(x)}{x}=\lim_{x\to 0}\left[\frac{2}{1+x^2}-\frac{g(x)}{x}\right]=2+3=5.$$
+由极限性质知 $f''(x)$ 在 $x=0$ 处左右两侧改变符号，因此 $(0,f(0))$ 是拐点，故选 (C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $y=f(x)$, 对一切 $x$ 满足 $\sqrt[3]{x}f''(x)+xf'(x)=\mathrm{e}^{-x}-1$, 若 $f'(x_{0})=0\,(x_{0}\neq 0)$, 则(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$x=x_{0}$ 是 $f(x)$ 的极小值点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$x=x_{0}$ 是 $f(x)$ 的极大值点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(x_{0},f(x_{0}))$ 是曲线 $y=f(x)$ 的拐点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">以上结论均不正确</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $f'(x_0)=0$ 知 $x=x_0$ 为驻点，将 $x=x_0$ 代入等式，有 $\sqrt[3]{x_0}f''(x_0)=\mathrm{e}^{-x_0}-1$，又 $x_0\neq 0$，从而
+$$f''(x_0)=\frac{1-\mathrm{e}^{x_0}}{\mathrm{e}^{x_0}\sqrt[3]{x_0}}.$$
+当 $x_0&gt;0$ 时，$f''(x_0)&lt;0$；
+当 $x_0&lt;0$ 时，仍有 $f''(x_0)&lt;0$.
+故 $x=x_0$ 为 $f(x)$ 的极大值点.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="6" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x)=ax^{3}+x^{2}+2$ 在 $x=0$ 和 $x=-1$ 处取得极值, 求 $f(x)$ 的增减区间、极大值、极小值和拐点.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】函数 $f(x)$ 表达式中含有未知参数 $a$，可以用已知 $f(x)$ 在 $x=0$ 和 $x=-1$ 处取得极值来确定 $a$，分析 $f'(x)$ 和 $f''(x)$ 的正负就可以定出 $f(x)$ 的增减区间、极大值、极小值和拐点.
+【解析】$f'(x)=3ax^2+2x=x(3ax+2)$.
+令其为零，得驻点为 $x_1=0,x_2=-\dfrac{2}{3a}$.
+由已知可得 $a=\dfrac{2}{3}$，于是
+$$f'(x)=2x(x+1),f''(x)=4x+2.$$
+令 $f''(x)=0$，得 $x=-\dfrac{1}{2}$，列表分析：
+【图】表格：行为 $x$、$f'(x)$、$f''(x)$、$f(x)$；$x$ 行各列依次为 $(-\infty,-1)$、$-1$、$\left(-1,-\frac{1}{2}\right)$、$-\frac{1}{2}$、$\left(-\frac{1}{2},0\right)$、$0$、$(0,+\infty)$；$f'(x)$ 行依次为 $+$、$0$、$-$、$-$、$-$、$0$、$+$；$f''(x)$ 行依次为 $-$、$-$、$-$、$0$、$+$、$+$、$+$；$f(x)$ 行依次为上升箭头、极大值、下降箭头、拐点、下降箭头、极小值、上升箭头。
+所以 $(-\infty,-1)$ 和 $(0,+\infty)$ 是 $f(x)$ 的增区间，$(-1,0)$ 是减区间；$f(-1)=\dfrac{7}{3}$ 是极大值，$f(0)=2$ 是极小值；点 $\left(-\dfrac{1}{2},\dfrac{13}{6}\right)$ 是曲线的拐点.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=nx(1-x)^{n}\,(n\in \mathbf{N}^{*})$, 且记 $M(n)=\max\limits_{x\in[0,1]}f(x)$, 则必有(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\lim\limits_{n\to\infty}M(n)=\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\lim\limits_{n\to\infty}M(n)=\dfrac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\lim\limits_{n\to\infty}M(n)=0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\lim\limits_{n\to\infty}M(n)=\infty$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，$f(x)=nx(1-x)^n$，所以
+$$f'(x)=n(1-x)^{n-1}\left[1-(n+1)x\right].$$
+令 $f'(x)=0$，得 $x_1=\dfrac{1}{n+1}$（易知其为极大值点），$x_2=1$（易知其不是极大值点）.
+于是 $f(x_1)=\dfrac{n}{n+1}\left(1-\dfrac{1}{n+1}\right)^n$（最大值），故
+$$\lim_{n\to\infty}M(n)=\lim_{n\to\infty}\frac{n}{n+1}\left(1-\frac{1}{n+1}\right)^n=\lim_{n\to\infty}\left(\frac{n}{n+1}\right)^{n+1}=\lim_{n\to\infty}\frac{1}{\left(1+\frac{1}{n}\right)^n\left(1+\frac{1}{n}\right)}=\frac{1}{\mathrm{e}}.$$
+【注】因 $f''\left(\dfrac{1}{n+1}\right)&lt;0$，故 $f\left(\dfrac{1}{n+1}\right)$ 为极大值. 而当 $0&lt;x&lt;1$ 时，$f(x)&gt;0=f(1)$，故 $f(1)$ 不是极大值.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\dfrac{x^{2}+1}{\sqrt{x^{2}-1}}$ 的渐近线的条数为(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">4</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因 $\lim_{x \to \pm 1} \dfrac{x^2+1}{\sqrt{x^2-1}}=+\infty$，故 $x=-1$ 和 $x=1$ 是曲线的两条铅直渐近线.
+又
+$$a=\lim_{x \to \infty} \frac{y}{x}=\lim_{x \to \infty} \frac{x^2+1}{x\sqrt{x^2-1}}=\lim_{x \to \infty} \frac{x^2+1}{x|x|\sqrt{1-\dfrac{1}{x^2}}}=-1,$$
+$$b=\lim_{x \to \infty}(y-ax)=\lim_{x \to \infty}\left(\frac{x^2-1}{\sqrt{x^2-1}}-x\right)=0.$$
+因此，$y=-x$ 是曲线的一条斜渐近线. 同理可求得 $y=x$ 也是曲线的一条斜渐近线.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="6" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=\dfrac{2+\mathrm{e}^{-x^{2}}}{1-\mathrm{e}^{-x^{2}}}$(  ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">仅有斜渐近线</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">仅有水平渐近线</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">仅有铅直渐近线</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既有水平渐近线, 又有铅直渐近线</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\lim_{x \to \infty} \dfrac{2+\mathrm{e}^{-x^2}}{1-\mathrm{e}^{-x^2}}=2$，得 $y=2$ 为水平渐近线，从而知曲线无斜渐近线.
+由 $\lim_{x \to 0} \dfrac{2+\mathrm{e}^{-x^2}}{1-\mathrm{e}^{-x^2}}=\infty$，得 $x=0$ 为铅直渐近线.
+故选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=(4+5x)\mathrm{e}^{-\frac{1}{x}}$ 的斜渐近线是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$a=\lim_{x \to \infty} \frac{y}{x}=\lim_{x \to \infty} \frac{4+5x}{x}\mathrm{e}^{-\frac{1}{x}}=5.$$
+$$b=\lim_{x \to \infty}(y-ax)=\lim_{x \to \infty}\left[(4+5x)\mathrm{e}^{-\frac{1}{x}}-5x\right]=\lim_{x \to \infty} 4\mathrm{e}^{-\frac{1}{x}}+5\lim_{x \to \infty} x\left(\mathrm{e}^{-\frac{1}{x}}-1\right)=4+5\lim_{x \to \infty} \frac{\mathrm{e}^{-\frac{1}{x}}-1}{\dfrac{1}{x}}=4+5\lim_{x \to \infty} \frac{-\dfrac{1}{x}}{\dfrac{1}{x}}=-1.$$
+所以斜渐近线为 $y=5x-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">y = 5x - 1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="6" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲线 $y=x^{2}+x$ 在点 $(-1,0)$ 的曲率是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">将 $y'=2x+1$，$y''=2$ 代入曲率公式 $k=\dfrac{|y''|}{\left[1+(y')^2\right]^{\frac{3}{2}}}$，得
+$$k=\dfrac{2}{\left[1+(2x+1)^2\right]^{\frac{3}{2}}}\bigg|_{x=-1}=\dfrac{\sqrt{2}}{2}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{\sqrt{2}}{2}</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-05.html">上一章：第4章 一元函数微分学的计算</a>
+      <a class="chapter-link" href="chapter-07.html">下一章：第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 6, "total": 23, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 随机事件和概率 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第1章 随机事件和概率<span class="top-count">（5题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="59" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $A,B$ 为随机事件，且 $0&lt;P(B)&lt;1$. 下列命题中为假命题的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">若 $P(A\mid B)&gt;P(A)$，则 $P(A\mid\bar{B})&gt;P(\bar{A})$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">若 $P(A\mid B)=P(A)$，则 $P(A\mid\bar{B})=P(A)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">若 $P(A\mid B)&gt;P(A\mid\bar{B})$，则 $P(A\mid B)&gt;P(A)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">若 $P(A\mid A\cup B)&gt;P(\bar{A}\mid A\cup B)$，则 $P(A)&gt;P(B)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">选项(A)，$P(A\mid B)=\frac{P(AB)}{P(B)}&gt;P(A)$，即 $P(AB)&gt;P(A)P(B)$，所以
+$$P(\bar A\mid \bar B)=\frac{P(\bar A\bar B)}{P(\bar B)}=\frac{1-P(A)-P(B)+P(AB)}{1-P(B)}
+&gt;\frac{1-P(A)-P(B)+P(A)P(B)}{1-P(B)}
+=\frac{1-P(B)-P(A)[1-P(B)]}{1-P(B)}=1-P(A)=P(\bar A),$$
+故选项(A)正确.
+选项(B)，由 $P(A\mid B)=P(A)$ 知，$A,B$ 相互独立，故选项(B) 正确.
+选项(C)，$P(A\mid B)&gt;P(A\mid\bar B)$，即 $\frac{P(AB)}{P(B)}&gt;\frac{P(A)-P(AB)}{1-P(B)}$，可得 $P(AB)-P(AB)P(B)&gt;P(A)P(B)-P(B)P(AB)$，故 $P(AB)&gt;P(A)P(B)$，因此 $P(A\mid B)=\frac{P(AB)}{P(B)}&gt;P(A)$，故选项(C) 正确.
+选项(D)，$P(A\mid A\cup B)=\frac{P[A(A\cup B)]}{P(A\cup B)}=\frac{P(A)}{P(A\cup B)}=\frac{P(A)}{P(A)+P(B)-P(AB)}$，
+$$P(\bar A\mid A\cup B)=\frac{P[\bar A(A\cup B)]}{P(A\cup B)}=\frac{P(\bar A B)}{P(A\cup B)}=\frac{P(B)-P(AB)}{P(A)+P(B)-P(AB)},$$
+则有 $P(A)&gt;P(B)-P(AB)$，不能说明 $P(A)&gt;P(B)$ 一定成立，故选项(D) 不正确. 故选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="59" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机事件 $A,B$ 满足 $0&lt;P(A)&lt;1,0&lt;P(B)&lt;1$，则 $P(AB)&gt;P(A)P(B)$ 的充要条件是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$P(A\bar{B})&gt;P(A)P(\bar{B})$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$P(\bar{A}\bar{B})&gt;P(\bar{A})P(\bar{B})$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$P(B\mid\bar{A})&gt;P(B\mid A)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$P(A\mid\bar{B})&gt;P(A\mid B)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于选项(A)，由 $P(AB)&gt;P(A)P(B)$，则 $P(A)-P(AB)&lt;P(A)-P(A)P(B)$，即 $P(A\bar B)&lt;P(A)P(\bar B)$，故选项(A) 错误.
+对于选项(B)，由
+$$P(A)=1-P(\bar A),P(B)=1-P(\bar B),$$
+$$P(AB)=1-P(\overline{AB})=1-P(\bar A\cup\bar B)=1-P(\bar A)-P(\bar B)+P(\bar A\bar B).$$
+结合 $P(AB)&gt;P(A)P(B)$，有
+$$1-P(\bar A)-P(\bar B)+P(\bar A\bar B)&gt;[1-P(\bar A)][1-P(\bar B)],$$
+即 $P(\bar A\bar B)&gt;P(\bar A)P(\bar B)$，以上过程可逆，故选项(B) 正确.
+对于选项(C)，由 $P(AB)&gt;P(A)P(B)$，有
+$$P(AB)-P(A)P(AB)&gt;P(A)P(B)-P(A)P(AB),$$
+即
+$$\frac{P(AB)}{P(A)}&gt;\frac{P(B)-P(AB)}{1-P(A)}=\frac{P(\bar A B)}{P(\bar A)},$$
+也即 $P(B\mid\bar A)&lt;P(B\mid A)$，故选项(C) 错误.
+对于选项(D)，由 $P(AB)&gt;P(A)P(B)$，有
+$$P(AB)-P(B)P(AB)&gt;P(A)P(B)-P(B)P(AB),$$
+即
+$$\frac{P(AB)}{P(B)}&gt;\frac{P(A)-P(AB)}{1-P(B)}=\frac{P(A\bar B)}{P(\bar B)},$$
+也即 $P(A\mid\bar B)&lt;P(A\mid B)$，故选项(D) 错误.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="59" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对于下列命题：
+① 若事件 $A,B$ 相互独立，且 $B,C$ 相互独立，则 $A,C$ 相互独立；
+② 若事件 $A,B$ 相互独立，且 $C\subset A,D\subset B$，则 $C,D$ 相互独立.
+说法正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">①正确，②不正确</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">②正确，①不正确</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">①②都正确</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">①②都不正确</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">① 不正确. 例如，袋中有 2 个球，1 个白球，1 个黑球，先后有放回地取两次，每次取一个球.
+记 $A=\{\text{第一次取到白球}\}$，$B=\{\text{两次取到不同颜色的球}\}$，$C=\{\text{第一次取到黑球}\}$，则样本空间为 $\{\text{白}，\text{白}\}$，$\{\text{白}，\text{黑}\}$，$\{\text{黑}，\text{白}\}$，$\{\text{黑}，\text{黑}\}$. 故
+$$P(A)=\frac{1}{2},P(B)=\frac{1}{2},P(C)=\frac{1}{2},$$
+$$P(AB)=\frac{1}{4},P(AC)=0,P(BC)=\frac{1}{4},$$
+$$P(A)P(B)=P(AB),P(B)P(C)=P(BC),$$
+但 $P(A)P(C)\neq P(AC)$，故 $A,C$ 不相互独立.
+② 不正确. 承接①，题设不变，$A,B$ 不变，令 $C=\{\text{第一次取到白球}，\text{第二次取到黑球}\}$，$D=\{\text{第一次取到黑球}，\text{第二次取到白球}\}$，则 $C\subset A,D\subset B$，且 $P(C)=\frac{1}{4},P(D)=\frac{1}{4},P(CD)=0$，$P(C)P(D)\neq P(CD)$，故 $C,D$ 不相互独立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="59" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设有两批数量相同的零件，已知有一批产品全部合格，另一批产品有 $25\%$ 不合格，从这两批产品中任取 1 只，经检验是合格品，放回原处，并从原所在批次中再取 1 只，则这只产品是不合格品的概率为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">两次抽取情况有所不同，第一次是在完全不知情的情况下等可能地从两批产品中抽取，第二次是在第一次抽取产品并检验合格后再进行抽取，这时对所要抽取的产品是第一批产品还是第二批产品的可能性已有推断，因此计算要分两步. 第一步，在已知抽取产品合格的条件下，计算抽取的是第一批产品还是第二批产品的概率，属于贝叶斯模型；第二步，以分别从两个批次抽取产品为完备事件组来计算第二次抽到不合格品的概率，属于全概率模型. 将两种模型复合，常常是该类题型的特点.
+设 $H_i(i=1,2)$ 为“第一次从第 $i$ 批产品中抽取”，$A$ 为“第一次取合格品”，则
+$$P(H_1)=P(H_2)=\frac{1}{2},P(A\mid H_1)=1,P(A\mid H_2)=\frac{3}{4},$$
+即有
+$$P(A)=P(H_1)P(A\mid H_1)+P(H_2)P(A\mid H_2)=\frac{7}{8},$$
+从而
+$$P(H_1\mid A)=\frac{P(H_1)P(A\mid H_1)}{P(A)}=\frac{4}{7},$$
+$$P(H_2\mid A)=1-P(H_1\mid A)=\frac{3}{7}.$$
+又设 $C_i(i=1,2)$ 为“第二次从第 $i$ 批产品中抽取”，$B$ 为“第二次取合格品”，则
+$$P(\bar B)=P(C_1)P(\bar B\mid C_1)+P(C_2)P(\bar B\mid C_2)=\frac{4}{7}\times 0+\frac{3}{7}\times\frac{1}{4}=\frac{3}{28}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{3}{28}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="59" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X,Y$ 为随机变量，且 $P\{X\geqslant 0,Y\geqslant 0\}=\dfrac{3}{7},P\{X\geqslant 0\}=P\{Y\geqslant 0\}=\dfrac{4}{7}$，求下列事件的概率：$(1)A=\{\max\{X,Y\}\geqslant 0\}$；$(2)B=\{\max\{X,Y\}\geqslant 0,\min\{X,Y\}&lt;0\}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由于 $A=\{\max\{X,Y\}\geqslant 0\}=\{X,Y\text{ 至少有一个大于等于 }0\}=\{X\geqslant 0\}\cup\{Y\geqslant 0\}$，故
+$$P(A)=P\{X\geqslant 0\}+P\{Y\geqslant 0\}-P\{X\geqslant 0,Y\geqslant 0\}=\frac{4}{7}+\frac{4}{7}-\frac{3}{7}=\frac{5}{7}.$$
+(2) 由全集分解法，有
+$$\begin{aligned}
+A&amp;=\{\max\{X,Y\}\geqslant 0\}\\
+&amp;=\{\max\{X,Y\}\geqslant 0,\Omega\}\\
+&amp;=\{\max\{X,Y\}\geqslant 0\}\cap(\{\min\{X,Y\}&lt;0\}\cup\{\min\{X,Y\}\geqslant 0\})\\
+&amp;=\{\max\{X,Y\}\geqslant 0,\min\{X,Y\}&lt;0\}\cup\{\max\{X,Y\}\geqslant 0,\min\{X,Y\}\geqslant 0\}\\
+&amp;=B\cup\{\min\{X,Y\}\geqslant 0\}\\
+&amp;=B\cup\{X\geqslant 0,Y\geqslant 0\},
+\end{aligned}$$
+故
+$$P(B)=P(A)-P\{X\geqslant 0,Y\geqslant 0\}=\frac{5}{7}-\frac{3}{7}=\frac{2}{7}.$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-58.html">上一章：第9章 二次型</a>
+      <a class="chapter-link" href="chapter-60.html">下一章：第2章 一维随机变量及其分布</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 59, "total": 5, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第9章 参数估计与假设检验 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第9章 参数估计与假设检验<span class="top-count">（28题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="67" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1, X_2, \cdots, X_n$ 是来自总体 $X \sim N(1, \sigma^2)$ 的简单随机样本，$\sigma &gt; 0$ 未知，记 $\sigma^2$ 的最大似然估计量为 $\hat{\sigma}^2$，则 $D(\hat{\sigma}^2) =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $x_1, x_2, \cdots, x_n$ 为样本 $X_1, X_2, \cdots, X_n$ 的观测值，则似然函数为
+$$L(\sigma^2)=\prod_{i=1}^{n}f(x_i;\sigma^2)=\prod_{i=1}^{n}\frac{1}{\sqrt{2\pi\sigma^2}}\mathrm{e}^{-\frac{(x_i-1)^2}{2\sigma^2}}$$
+$$=(2\pi)^{-\frac{n}{2}}(\sigma^2)^{-\frac{n}{2}}\exp\left(-\frac{1}{2\sigma^2}\sum_{i=1}^{n}(x_i-1)^2\right),$$
+则 $\ln L(\sigma^2)=-\frac{n}{2}\ln 2\pi-\frac{n}{2}\ln\sigma^2-\frac{1}{2\sigma^2}\sum_{i=1}^{n}(x_i-1)^2$．
+令 $\frac{\mathrm{d}[\ln L(\sigma^2)]}{\mathrm{d}(\sigma^2)}=-\frac{n}{2\sigma^2}+\frac{1}{2(\sigma^2)^2}\sum_{i=1}^{n}(x_i-1)^2=0$，得 $\hat{\sigma}^2$ 的最大似然估计量为 $\hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^{n}(X_i-1)^2$，故
+$$D(\hat{\sigma}^2)=D\left[\frac{1}{n}\sum_{i=1}^{n}(X_i-1)^2\right]=\frac{1}{n^2}D\left[\sum_{i=1}^{n}(X_i-1)^2\right]$$
+$$=\frac{1}{n^2}D\left[\sigma^2\sum_{i=1}^{n}\left(\frac{X_i-1}{\sigma}\right)^2\right]=\frac{\sigma^4}{n^2}D\left[\sum_{i=1}^{n}\left(\frac{X_i-1}{\sigma}\right)^2\right]$$
+$$=\frac{\sigma^4}{n^2}\cdot 2n=\frac{2}{n}\sigma^4.$$
+【注】因为 $\frac{X_i-1}{\sigma}\sim N(0,1)$，所以 $\sum_{i=1}^{n}\left(\frac{X_i-1}{\sigma}\right)^2\sim \chi^2(n)$，故 $D\left[\sum_{i=1}^{n}\left(\frac{X_i-1}{\sigma}\right)^2\right]=2n$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{2}{n}\sigma^4$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="67" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从均匀分布，其概率密度为 $f(x;\theta) = \begin{cases} \dfrac{1}{\theta}, &amp; 0 &lt; x \leqslant \theta, \\ 0, &amp; \text{其他}. \end{cases}$ $X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的简单随机样本，则总体 $X$ 的方差 $D(X)$ 的最大似然估计量 $\widehat{D(X)} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $x_1, x_2, \cdots, x_n$ 为样本值，则似然函数为
+$$L=\prod_{i=1}^{n}f(x_i;\theta)=\begin{cases}\dfrac{1}{\theta^n}, &amp; 0&lt;x_1,x_2,\cdots,x_n\leqslant\theta,\\0, &amp; \text{其他}.\end{cases}$$
+$L$ 关于 $\theta$ 是单调递减函数，故 $\hat{\theta}=\max_{1\leqslant i\leqslant n}\{X_i\}$ 是 $\theta$ 的最大似然估计量．
+总体 $X$ 的方差 $D(X)=\frac{\theta^2}{12}$，由于 $\theta&gt;0$，$\frac{\theta^2}{12}$ 是 $\theta$ 的单调函数，根据最大似然估计的不变性原则，有 $\widehat{D(X)}=\frac{1}{12}\hat{\theta}^2=\frac{1}{12}(\max_{1\leqslant i\leqslant n}\{X_i\})^2$．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{1}{12}(\max_{1\leqslant i\leqslant n}\{X_i\})^2$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X \sim f(x;\theta) = \begin{cases} \dfrac{x}{\theta} \mathrm{e}^{-\frac{x^2}{2\theta}}, &amp; x &gt; 0, \\ 0, &amp; x \leqslant 0, \end{cases}$ $\theta &gt; 0$ 未知，$X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的简单随机样本，记 $\hat{\theta}_M$ 与 $\hat{\theta}_L$ 分别是 $\theta$ 的矩估计量和最大似然估计量，则（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\hat{\theta}_M = \dfrac{2}{\pi} \overline{X}^2, E(\hat{\theta}_M) = \theta$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\hat{\theta}_M = \dfrac{1}{\pi} \overline{X}^2, E(\hat{\theta}_M) = \theta$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\hat{\theta}_L = \dfrac{1}{n} \sum\limits_{i=1}^{n} X_i^2, E(\hat{\theta}_L) = \theta$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\hat{\theta}_L = \dfrac{1}{2n} \sum\limits_{i=1}^{n} X_i^2, E(\hat{\theta}_L) = \theta$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\mu_1=E(X)=\int_{-\infty}^{+\infty}xf(x;\theta)\mathrm{d}x=\int_{0}^{+\infty}\frac{x^2}{\theta}\mathrm{e}^{-\frac{x^2}{2\theta}}\mathrm{d}x=-\int_{0}^{+\infty}x\mathrm{d}(\mathrm{e}^{-\frac{x^2}{2\theta}})$
+$$=-x\mathrm{e}^{-\frac{x^2}{2\theta}}\Big|_{0}^{+\infty}+\int_{0}^{+\infty}\mathrm{e}^{-\frac{x^2}{2\theta}}\mathrm{d}x=\int_{0}^{+\infty}\mathrm{e}^{-\frac{x^2}{2\theta}}\mathrm{d}x=\frac{\sqrt{2\theta\pi}}{2},$$
+$$\overline{X}=\frac{1}{n}\sum_{i=1}^{n}X_i,$$
+令 $\mu_1=\overline{X}$，即 $\frac{\sqrt{2\theta\pi}}{2}=\frac{1}{n}\sum_{i=1}^{n}X_i$，解得 $\theta$ 的矩估计量为 $\hat{\theta}_M=\frac{2}{\pi}\overline{X}^2$．
+$$E(X^2)=\int_{0}^{+\infty}x^2\cdot\frac{x}{\theta}\mathrm{e}^{-\frac{x^2}{2\theta}}\mathrm{d}x=-\int_{0}^{+\infty}x^2\mathrm{d}(\mathrm{e}^{-\frac{x^2}{2\theta}})$$
+$$=-x^2\mathrm{e}^{-\frac{x^2}{2\theta}}\Big|_{0}^{+\infty}-2\theta\int_{0}^{+\infty}\mathrm{e}^{-\frac{x^2}{2\theta}}\mathrm{d}\left(\frac{-x^2}{2\theta}\right)$$
+$$=-2\theta\mathrm{e}^{-\frac{x^2}{2\theta}}\Big|_{0}^{+\infty}=2\theta,$$
+故 $$E(\hat{\theta}_M)=\frac{2}{\pi}E(\overline{X}^2)=\frac{2}{\pi}\{D(\overline{X})+[E(\overline{X})]^2\}=\frac{2}{\pi}\left\{\frac{1}{n}D(X)+[E(X)]^2\right\}$$
+$$=\frac{2}{\pi}\left\{\frac{1}{n}E(X^2)-\frac{1}{n}[E(X)]^2+[E(X)]^2\right\}$$
+$$=\frac{2}{\pi}\left(\frac{2\theta}{n}-\frac{\theta\pi}{2n}+\frac{\theta\pi}{2}\right).$$
+设 $x_1, x_2, \cdots, x_n$ 为样本值，则似然函数为
+$$L(\theta)=\begin{cases}\dfrac{\prod\limits_{i=1}^{n}x_i}{\theta^n}\mathrm{e}^{-\frac{\sum\limits_{i=1}^{n}x_i^2}{2\theta}}, &amp; x_i&gt;0(i=1,2,\cdots,n),\\0, &amp; \text{其他},\end{cases}$$
+当 $x_i&gt;0(i=1,2,\cdots,n)$ 时，取对数得 $\ln L(\theta)=\ln\prod_{i=1}^{n}x_i-n\ln\theta-\frac{\sum\limits_{i=1}^{n}x_i^2}{2\theta}$，令
+$$\frac{\mathrm{d}[\ln L(\theta)]}{\mathrm{d}\theta}=-\frac{n}{\theta}+\frac{\sum\limits_{i=1}^{n}x_i^2}{2\theta^2}=0,$$
+解得 $\theta=\frac{\sum\limits_{i=1}^{n}x_i^2}{2n}$，故 $\theta$ 的最大似然估计量为 $\hat{\theta}_L=\frac{\sum\limits_{i=1}^{n}X_i^2}{2n}$．
+$$E(\hat{\theta}_L)=\frac{1}{2n}E\left(\sum_{i=1}^{n}X_i^2\right)=\frac{1}{2}E(X^2)=\frac{1}{2}\cdot 2\theta=\theta.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="67" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从参数为 $\lambda$（$\lambda &gt; 0$ 未知）的泊松分布，$X_1, X_2, \cdots, X_n$ 是来自总体 $X$ 的一个简单随机样本，则 $P\{X = 0\}$ 的最大似然估计量为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $X_1, X_2, \cdots, X_n$ 对应的样本值为 $x_1, x_2, \cdots, x_n$，则似然函数为
+$$L(\lambda)=P\{X_1=x_1\}P\{X_2=x_2\}\cdots P\{X_n=x_n\}$$
+$$=\frac{\lambda^{x_1}}{x_1!}\mathrm{e}^{-\lambda}\cdot\frac{\lambda^{x_2}}{x_2!}\mathrm{e}^{-\lambda}\cdot\cdots\cdot\frac{\lambda^{x_n}}{x_n!}\mathrm{e}^{-\lambda}=\frac{\mathrm{e}^{-n\lambda}}{x_1!x_2!\cdots x_n!}\lambda^{\sum\limits_{i=1}^{n}x_i},$$
+取对数得 $$\ln L(\lambda)=-n\lambda-\sum_{i=1}^{n}\ln(x_i!)+\Big(\sum_{i=1}^{n}x_i\Big)\ln\lambda.$$
+令 $\frac{\mathrm{d}[\ln L(\lambda)]}{\mathrm{d}\lambda}=0$，即 $-n+\frac{\sum\limits_{i=1}^{n}x_i}{\lambda}=0$，解得 $\lambda=\frac{1}{n}\sum_{i=1}^{n}x_i=\overline{x}$，即 $\lambda$ 的最大似然估计量为 $\frac{1}{n}\sum_{i=1}^{n}X_i=\overline{X}$．又 $P\{X=0\}=\frac{\lambda^0}{0!}\mathrm{e}^{-\lambda}=\mathrm{e}^{-\lambda}$，为 $\lambda$ 的单调函数，由最大似然估计量的不变性原则，得 $P\{X=0\}$ 的最大似然估计量为 $\mathrm{e}^{-\overline{X}}$．
+【注】常见分布的矩估计量和最大似然估计量．
+
+| $X$ 服从的分布 | 矩估计量 | 最大似然估计量 |
+|---|---|---|
+| $0$—$1$ 分布 | $\hat{p}=\overline{X}$ | $\hat{p}=\overline{X}$ |
+| $B(n,p)$ | $\hat{p}=\dfrac{\overline{X}}{n}$ | $\hat{p}=\dfrac{\overline{X}}{n}$ |
+| $G(p)$ | $\hat{p}=\dfrac{1}{\overline{X}}$ | $\hat{p}=\dfrac{1}{\overline{X}}$ |
+| $P(\lambda)$ | $\hat{\lambda}=\overline{X}$ | $\hat{\lambda}=\overline{X}$ |
+| $U(a,b)$ | $\hat{a}=\overline{X}-\sqrt{\dfrac{3}{n}\sum\limits_{i=1}^{n}(X_i-\overline{X})^2}$，$\hat{b}=\overline{X}+\sqrt{\dfrac{3}{n}\sum\limits_{i=1}^{n}(X_i-\overline{X})^2}$ | $\hat{a}=\min\{X_1,X_2,\cdots,X_n\}$，$\hat{b}=\max\{X_1,X_2,\cdots,X_n\}$ |
+| $E(\lambda)$ | $\hat{\lambda}=\dfrac{1}{\overline{X}}$ | $\hat{\lambda}=\dfrac{1}{\overline{X}}$ |
+| $N(\mu,\sigma^2)$ | $\hat{\mu}=\overline{X}$，$\hat{\sigma}^2=\dfrac{1}{n}\sum\limits_{i=1}^{n}(X_i-\overline{X})^2$ | $\hat{\mu}=\overline{X}$，$\hat{\sigma}^2=\dfrac{1}{n}\sum\limits_{i=1}^{n}(X_i-\overline{X})^2$ |</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\mathrm{e}^{-\overline{X}}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的概率密度为 $$f(x;\theta) = \begin{cases} 1, &amp; \theta - \dfrac{1}{2} \leqslant x \leqslant \theta + \dfrac{1}{2}, \\ 0, &amp; \text{其他}, \end{cases}$$ 其中 $-\infty &lt; \theta &lt; +\infty$. $X_1, X_2, \cdots, X_n$ 为取自总体 $X$ 的简单随机样本，并记 $$X_{(1)} = \min\{X_1, X_2, \cdots, X_n\}, X_{(n)} = \max\{X_1, X_2, \cdots, X_n\}.$$ 求参数 $\theta$ 的最大似然估计量 $\hat{\theta}_L$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $x_1, x_2, \cdots, x_n$ 为简单随机样本的样本值，则似然函数为
+$$L(\theta)=\prod_{i=1}^{n}f(x_i;\theta)=\begin{cases}1, &amp; \theta-\dfrac{1}{2}\leqslant x_1,x_2,\cdots,x_n\leqslant\theta+\dfrac{1}{2},\\0, &amp; \text{其他}\end{cases}$$
+$$=\begin{cases}1, &amp; \theta-\dfrac{1}{2}\leqslant\min\{x_1,x_2,\cdots,x_n\}\leqslant x_1,x_2,\cdots,x_n\leqslant\max\{x_1,x_2,\cdots,x_n\}\leqslant\theta+\dfrac{1}{2},\\0, &amp; \text{其他},\end{cases}$$
+由最大似然估计定义知，
+$$\begin{cases}\hat{\theta}_L-\dfrac{1}{2}\leqslant X_{(1)},\\[2ex]\hat{\theta}_L+\dfrac{1}{2}\geqslant X_{(n)},\end{cases}$$
+故满足 $X_{(n)}-\dfrac{1}{2}\leqslant\hat{\theta}_L\leqslant X_{(1)}+\dfrac{1}{2}$ 的统计量均为 $\theta$ 的最大似然估计量．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设某手机每天销售量 $X$（单位：万台）的概率分布为 $$X \sim \begin{pmatrix} 10 &amp; 15 &amp; 20 \\ \theta^2 &amp; \theta(1-\theta) &amp; 1-\theta \end{pmatrix},$$ 其中 $0 &lt; \theta &lt; 1$ 为未知参数，且每天的退货率为 $5\%$，现有一周的销售量：$15, 10, 10, 15, 20, 20, 15$. （1）求 $\theta$ 的最大似然估计值 $\hat{\theta}$； （2）记 $Y$ 为每天的退货量，根据（1）中的 $\hat{\theta}$，求 $E(Y)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）由题意知样本的似然函数为
+$$L(\theta)=(\theta^2)^2\cdot[\theta(1-\theta)]^3(1-\theta)^2$$
+$$=\theta^7\cdot(1-\theta)^5,$$
+取对数，有 $$\ln L(\theta)=7\ln\theta+5\ln(1-\theta),$$
+令 $$\frac{\mathrm{d}[\ln L(\theta)]}{\mathrm{d}\theta}=\frac{7}{\theta}-\frac{5}{1-\theta}=\frac{7-12\theta}{\theta(1-\theta)}=0,$$
+解得 $\theta=\dfrac{7}{12}$，故 $\theta$ 的最大似然估计值 $\hat{\theta}=\dfrac{7}{12}$．
+（2）由题设，$X$ 的可能取值为 $10,15,20$，且每天的退货率为 $5\%$，则 $Y$ 的可能取值为 $0.5,0.75,1$，则
+$$Y\sim\begin{pmatrix}0.5 &amp; 0.75 &amp; 1\\\theta^2 &amp; \theta(1-\theta) &amp; 1-\theta\end{pmatrix},$$
+又由（1）知 $\hat{\theta}=\dfrac{7}{12}$，故
+$$E(Y)=0.5\cdot\left(\frac{7}{12}\right)^2+0.75\cdot\frac{7}{12}\cdot\frac{5}{12}+1\cdot\frac{5}{12}=\frac{443}{576}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从 $\left(0, \dfrac{1}{\theta}\right]$ 上的均匀分布，$\theta &gt; 0$ 为未知参数，$X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的简单随机样本. 求： （1）$\theta$ 的最大似然估计量 $\hat{\theta}$； （2）$\hat{\theta}$ 的分布函数； （3）$P\{0 &lt; \hat{\theta} \leqslant \theta + 1\}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）由题意知，$X$ 的概率密度为 $f(x)=\begin{cases}\theta, &amp; 0&lt;x\leqslant\dfrac{1}{\theta},\\0, &amp; \text{其他}.\end{cases}$
+设 $x_1, x_2, \cdots, x_n$ 为简单随机样本的样本值，则似然函数为
+$$L(\theta)=\begin{cases}\theta^n, &amp; 0&lt;x_1,x_2,\cdots,x_n\leqslant\dfrac{1}{\theta},\\0, &amp; \text{其他},\end{cases}$$
+故 $L(\theta)$ 是 $\theta$ 的单调增加函数．
+当 $\dfrac{1}{\theta}$ 最小时，$L(\theta)$ 最大，即 $\dfrac{1}{\theta}=\max\{x_1,x_2,\cdots,x_n\}=x_{(n)}$，故 $\hat{\theta}=\dfrac{1}{X_{(n)}}$．
+（2）$\hat{\theta}$ 的分布函数为
+$$F(y)=P\{\hat{\theta}\leqslant y\}=P\left\{\frac{1}{X_{(n)}}\leqslant y\right\}=P\left\{\frac{1}{\max\{X_1,X_2,\cdots,X_n\}}\leqslant y\right\}.$$
+当 $y\leqslant 0$ 时，$F(y)=0$；
+当 $y&gt;0$ 时，
+$$F(y)=P\left\{\max\{X_1,X_2,\cdots,X_n\}\geqslant\frac{1}{y}\right\}$$
+$$=1-P\left\{\max\{X_1,X_2,\cdots,X_n\}&lt;\frac{1}{y}\right\}$$
+$$=1-P\left\{X_1&lt;\frac{1}{y},X_2&lt;\frac{1}{y},\cdots,X_n&lt;\frac{1}{y}\right\}$$
+$$=1-P\left\{X_1&lt;\frac{1}{y}\right\}P\left\{X_2&lt;\frac{1}{y}\right\}\cdots P\left\{X_n&lt;\frac{1}{y}\right\}$$
+$$=1-\left(P\left\{X&lt;\frac{1}{y}\right\}\right)^n,$$
+其中 $P\left\{X&lt;\dfrac{1}{y}\right\}=\int_{-\infty}^{\frac{1}{y}}f(x)\mathrm{d}x=\begin{cases}\displaystyle\int_{0}^{\frac{1}{y}}\theta\mathrm{d}x, &amp; \dfrac{1}{y}\leqslant\dfrac{1}{\theta},\\1, &amp; \dfrac{1}{y}&gt;\dfrac{1}{\theta}\end{cases}=\begin{cases}\dfrac{\theta}{y}, &amp; y\geqslant\theta,\\1, &amp; 0&lt;y&lt;\theta.\end{cases}$
+故 $$F(y)=\begin{cases}1-\left(\dfrac{\theta}{y}\right)^n, &amp; y\geqslant\theta,\\0, &amp; 0&lt;y&lt;\theta.\end{cases}$$
+综上所述，$\hat{\theta}$ 的分布函数为 $F(y)=\begin{cases}1-\left(\dfrac{\theta}{y}\right)^n, &amp; y\geqslant\theta,\\0, &amp; y&lt;\theta.\end{cases}$
+（3）$P\{\theta&lt;\hat{\theta}\leqslant\theta+1\}=P\{\hat{\theta}\leqslant\theta+1\}-P\{\hat{\theta}\leqslant\theta\}$
+$$=F(\theta+1)-F(\theta)=1-\left(\frac{\theta}{\theta+1}\right)^n-0$$
+$$=1-\left(\frac{\theta}{\theta+1}\right)^n.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1, X_2$ 为来自总体 $X \sim U[0, 2\theta]$ 的简单随机样本，$Y_1, Y_2, Y_3$ 为来自总体 $Y \sim U[0, 4\theta]$ 的简单随机样本，且两样本相互独立，其中 $\theta$（$\theta &gt; 0$）是未知参数. 利用样本 $X_1, X_2, Y_1, Y_2, Y_3$，求 $\theta$ 的最大似然估计量 $\hat{\theta}$，并求 $D(\hat{\theta})$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $X\sim U[0,2\theta]$，$Y\sim U[0,4\theta]$，得
+$$f_X(x)=\begin{cases}\dfrac{1}{2\theta}, &amp; 0\leqslant x\leqslant 2\theta,\\0, &amp; \text{其他},\end{cases}f_Y(y)=\begin{cases}\dfrac{1}{4\theta}, &amp; 0\leqslant y\leqslant 4\theta,\\0, &amp; \text{其他}.\end{cases}$$
+设 $x_1, x_2, y_1, y_2, y_3$ 为样本值，当 $0\leqslant x_i\leqslant 2\theta,0\leqslant y_j\leqslant 4\theta(i=1,2;j=1,2,3)$ 时，似然函数为
+$$L(\theta)=\frac{1}{2^2\theta^2}\cdot\frac{1}{4^3\cdot\theta^3}=\frac{1}{2^8\theta^5},$$
+则
+$$\ln L(\theta)=-8\ln 2-5\ln\theta,$$
+$$\frac{\mathrm{d}[\ln L(\theta)]}{\mathrm{d}\theta}=-\frac{5}{\theta}&lt;0,$$
+由此可知，$\ln L(\theta)$ 单调递减，$\theta$ 取最小值时，$L(\theta)$ 达到最大．由 $\theta\geqslant\dfrac{x_i}{2},\theta\geqslant\dfrac{y_j}{4}$，知 $\theta_{\min}=\max\left\{\dfrac{x_1}{2},\dfrac{x_2}{2},\dfrac{y_1}{4},\dfrac{y_2}{4},\dfrac{y_3}{4}\right\}$，当 $\theta=\max\left\{\dfrac{x_1}{2},\dfrac{x_2}{2},\dfrac{y_1}{4},\dfrac{y_2}{4},\dfrac{y_3}{4}\right\}$ 时，$L(\theta)$ 达到最大，故 $\theta$ 的最大似然估计量为 $\hat{\theta}=\max\left\{\dfrac{X_1}{2},\dfrac{X_2}{2},\dfrac{Y_1}{4},\dfrac{Y_2}{4},\dfrac{Y_3}{4}\right\}$．
+当 $t\leqslant 0$ 时，$P\{\hat{\theta}\leqslant t\}=0$；
+当 $0&lt;t\leqslant\theta$ 时，
+$$P\{\hat{\theta}\leqslant t\}=P\left\{\frac{X_1}{2}\leqslant t\right\}P\left\{\frac{X_2}{2}\leqslant t\right\}P\left\{\frac{Y_1}{4}\leqslant t\right\}P\left\{\frac{Y_2}{4}\leqslant t\right\}P\left\{\frac{Y_3}{4}\leqslant t\right\}$$
+$$=\left(\frac{2t}{2\theta}\right)^2\cdot\left(\frac{4t}{4\theta}\right)^3=\frac{t^5}{\theta^5};$$
+当 $t&gt;\theta$ 时，$P\{\hat{\theta}\leqslant t\}=1$．
+故 $\hat{\theta}$ 的分布函数为
+$$F_{\hat{\theta}}(t)=\begin{cases}0, &amp; t\leqslant 0,\\[1ex]\dfrac{t^5}{\theta^5}, &amp; 0&lt;t\leqslant\theta,\\[1ex]1, &amp; t&gt;\theta,\end{cases}$$
+概率密度为 $$f_{\hat{\theta}}(t)=\begin{cases}\dfrac{5t^4}{\theta^5}, &amp; 0&lt;t&lt;\theta,\\0, &amp; \text{其他}.\end{cases}$$
+故
+$$D(\hat{\theta})=\int_{0}^{\theta}t^2\cdot\frac{5t^4}{\theta^5}\mathrm{d}t-\left(\int_{0}^{\theta}t\cdot\frac{5t^4}{\theta^5}\mathrm{d}t\right)^2$$
+$$=\frac{5}{\theta^5}\int_{0}^{\theta}t^6\mathrm{d}t-\left(\frac{5}{\theta^5}\int_{0}^{\theta}t^5\mathrm{d}t\right)^2$$
+$$=\frac{5}{7}\theta^2-\frac{25}{36}\theta^2=\frac{5}{252}\theta^2.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的概率密度为 $$f(x; \alpha, \beta) = \begin{cases} \dfrac{\alpha \beta^{\alpha}}{x^{\alpha+1}}, &amp; x \geqslant \beta, \\ 0, &amp; x &lt; \beta, \end{cases}$$ $\alpha$、$\beta$ 均大于 $0$，$X_1, X_2, \cdots, X_n$ 为总体 $X$ 的简单随机样本. （1）求 $\alpha, \beta$ 的最大似然估计量 $\hat{\alpha}, \hat{\beta}$； （2）对任意的 $\varepsilon &gt; 0$，是否存在常数 $a$，使得 $\lim\limits_{n \to \infty} P\{\mid \hat{\beta} - a \mid \geqslant \varepsilon\} = 0$？ （3）求 $E(\ln X_1)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">（1）设 $x_1, x_2, \cdots, x_n$ 为简单随机样本的样本值，则似然函数为
+$$L(\alpha,\beta)=\begin{cases}\dfrac{\alpha^n\beta^{n\alpha}}{(x_1x_2\cdots x_n)^{\alpha+1}}, &amp; x_i\geqslant\beta(i=1,2,\cdots,n),\\0, &amp; \text{其他},\end{cases}$$
+当 $x_i\geqslant\beta(i=1,2,\cdots,n)$ 时，
+$$\ln L=n\ln\alpha+n\alpha\ln\beta-(\alpha+1)\sum_{i=1}^{n}\ln x_i,$$
+由于 $\dfrac{\partial(\ln L)}{\partial\beta}=\dfrac{n\alpha}{\beta}&gt;0$，因此 $\beta$ 的最大似然估计量为 $\hat{\beta}=X_{(1)}=\min_{1\leqslant i\leqslant n}\{X_i\}$.
+又 $\frac{\partial(\ln L)}{\partial \alpha}=\frac{n}{\alpha}+n\ln \beta-\sum_{i=1}^{n}\ln x_{i}\xlongequal{\text{令}}0$，则
+$$\alpha=\frac{1}{\frac{1}{n}\sum_{i=1}^{n}\ln x_{i}-\ln \beta}=\frac{1}{\frac{1}{n}\sum_{i=1}^{n}\ln \frac{x_{i}}{\beta}},$$
+故 $\hat{\alpha}=\dfrac{1}{\dfrac{1}{n}\sum_{i=1}^{n}\ln \dfrac{X_{i}}{X_{(1)}}}$．
+（2）由题意知，$X$ 的分布函数为
+$$F(x)=\int_{-\infty}^{x}f(t;\alpha,\beta)\mathrm{d}t=\begin{cases}1-\left(\dfrac{\beta}{x}\right)^{\alpha}, &amp; x\geqslant \beta,\\0, &amp; \text{其他},\end{cases}$$
+故
+$$X_{(1)}\sim F_{(1)}(x)=1-\left[1-F(x)\right]^{n}=\begin{cases}1-\left(\dfrac{\beta}{x}\right)^{n}, &amp; x\geqslant \beta,\\0, &amp; \text{其他}.\end{cases}$$
+$$P\left\{\left|\hat{\beta}-a\right|\geqslant \varepsilon\right\}=P\left\{\hat{\beta}\geqslant a+\varepsilon\right\}+P\left\{\hat{\beta}\leqslant a-\varepsilon\right\}$$
+$$=P\left\{X_{(1)}\geqslant a+\varepsilon\right\}+P\left\{X_{(1)}\leqslant a-\varepsilon\right\}$$
+$$=1-P\left\{X_{(1)}&lt;a+\varepsilon\right\}+P\left\{X_{(1)}\leqslant a-\varepsilon\right\},$$
+当 $a&gt;\beta$ 或 $a&lt;\beta$ 时，均存在 $\varepsilon&gt;0$，使 $\lim\limits_{n\to\infty}P\left\{\left|\hat{\beta}-a\right|\geqslant \varepsilon\right\}=1$，不符题意．
+当 $a=\beta$ 时，$P\left\{\left|\hat{\beta}-a\right|\geqslant \varepsilon\right\}=1-\left[1-\left(\dfrac{\beta}{\beta+\varepsilon}\right)^{n}\right]+0$，则
+$$\lim\limits_{n\to\infty}P\left\{\left|\hat{\beta}-a\right|\geqslant \varepsilon\right\}=1-1=0.$$
+（3）$$E(\ln X_{1})=\int_{\beta}^{+\infty}\ln x\cdot\frac{\alpha \beta^{\alpha}}{x^{\alpha+1}}\mathrm{d}x=\alpha \beta^{\alpha}\int_{\beta}^{+\infty}\ln x\,\mathrm{d}\left(-\frac{1}{\alpha}x^{-\alpha}\right)$$
+$$=\ln \beta+\frac{1}{\alpha}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从区间 $[-\theta, \theta]$ 上的均匀分布，$X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的简单随机样本，则参数 $\theta$（$\theta &gt; 0$）的最大似然估计量 $\hat{\theta} = $（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\max\limits_{1 \leqslant i \leqslant n} \{X_i\}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-\min\limits_{1 \leqslant i \leqslant n} \{X_i\}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\max\limits_{1 \leqslant i \leqslant n} \{\mid X_i \mid\}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\min\limits_{1 \leqslant i \leqslant n} \{\mid X_i \mid\}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由于 $X\sim U[-\theta,\theta]$，因此 $X$ 的概率密度为 $f(x;\theta)=\begin{cases}\dfrac{1}{2\theta}, &amp; -\theta\leqslant x\leqslant \theta,\\0, &amp; \text{其他},\end{cases}$ 似然函数为
+$$L(\theta)=\prod_{i=1}^{n}f(x_{i};\theta)=\begin{cases}\left(\dfrac{1}{2\theta}\right)^{n}, &amp; -\theta\leqslant x_{1},x_{2},\cdots,x_{n}\leqslant \theta,\\0, &amp; \text{其他}.\end{cases}$$
+显然 $L(\theta)$ 关于 $\theta$ 单调减少，由于 $-\theta\leqslant x_{1},x_{2},\cdots,x_{n}\leqslant \theta$ 等价于 $\left|x_{1}\right|,\left|x_{2}\right|,\cdots,\left|x_{n}\right|\leqslant \theta$，即 $\theta\geqslant \max\limits_{1\leqslant i\leqslant n}\left\{\left|x_{i}\right|\right\}$．因此，$\theta$ 取满足条件 $-\theta\leqslant x_{1},x_{2},\cdots,x_{n}\leqslant \theta$ 的最小值时，$L(\theta)$ 取最大值，故 $\theta$ 的最大似然估计量为 $\hat{\theta}=\max\limits_{1\leqslant i\leqslant n}\left\{\left|X_{i}\right|\right\}$．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="67" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从区间 $(-\theta, \theta)$（$\theta &gt; 0$）上的均匀分布，$X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的简单随机样本，则参数 $\theta$ 的矩估计量 $\hat{\theta} =$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由于 $E(X)=\dfrac{-\theta+\theta}{2}=0$，$E(X)$ 中不含参数 $\theta$，因此采用总体二阶矩．
+总体二阶矩为 $E(X^{2})=D(X)+\left[E(X)\right]^{2}=\dfrac{(2\theta)^{2}}{12}+0=\dfrac{1}{3}\theta^{2}$，样本二阶矩为 $\dfrac{1}{n}\sum_{i=1}^{n}X_{i}^{2}$．令 $\dfrac{1}{n}\sum_{i=1}^{n}X_{i}^{2}=E(X^{2})$，即 $\dfrac{1}{n}\sum_{i=1}^{n}X_{i}^{2}=\dfrac{1}{3}\theta^{2}$，解得 $\theta$ 的矩估计量为 $\hat{\theta}=\sqrt{\dfrac{3}{n}\sum_{i=1}^{n}X_{i}^{2}}$．</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\sqrt{\dfrac{3}{n}\sum_{i=1}^{n}X_{i}^{2}}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X \sim \begin{pmatrix} 0 &amp; 1 &amp; 2 \\ \dfrac{\theta}{4N} &amp; \dfrac{\theta}{2N} &amp; \dfrac{4N - 3\theta}{4N} \end{pmatrix}$，其中 $N &gt; 0$ 已知，$\theta &gt; 0$ 未知，设 $X_1, X_2, \cdots, X_n$ 是来自总体 $X$ 的简单随机样本，取到 $0$ 的个数为 $n_0$，取到 $1$ 的个数为 $n_1$，取到 $2$ 的个数为 $n_2$，即 $n_0 + n_1 + n_2 = n$. （1）求 $\theta$ 的矩估计量 $\hat{\theta}_1$ 和最大似然估计量 $\hat{\theta}_2$； （2）求 $\hat{\theta}_1$ 和 $\hat{\theta}_2$ 的数学期望； （3）求 $\hat{\theta}_1$ 和 $\hat{\theta}_2$ 的方差.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）由 $\overline{X}=E(X)=0\cdot\dfrac{\theta}{4N}+1\cdot\dfrac{\theta}{2N}+2\cdot\dfrac{4N-3\theta}{4N}=\dfrac{2N-\theta}{N}$，解得 $\theta$ 的矩估计量为
+$$\hat{\theta}_{1}=N(2-\overline{X}).$$
+又 $\overline{X}=\dfrac{0\cdot n_{0}+1\cdot n_{1}+2\cdot n_{2}}{n}=\dfrac{n_{1}+2n_{2}}{n}$，代入得
+$$\hat{\theta}_{1}=N(2-\overline{X})=N\left[2-\frac{1}{n}(n_{1}+2n_{2})\right]=\frac{N}{n}(2n-n_{1}-2n_{2})=\frac{N}{n}(2n_{0}+n_{1}).$$
+似然函数为
+$$L(\theta)=\left(\frac{\theta}{4N}\right)^{n_{0}}\left(\frac{\theta}{2N}\right)^{n_{1}}\left(\frac{4N-3\theta}{4N}\right)^{n_{2}},$$
+两边取对数，得
+$$\ln L(\theta)=n_{0}(\ln \theta-\ln 4N)+n_{1}(\ln \theta-\ln 2N)+n_{2}\left[\ln(4N-3\theta)-\ln 4N\right],$$
+令
+$$\frac{\mathrm{d}\left[\ln L(\theta)\right]}{\mathrm{d}\theta}=\frac{n_{0}}{\theta}+\frac{n_{1}}{\theta}-\frac{3n_{2}}{4N-3\theta}=0,$$
+得 $\theta$ 的最大似然估计量为
+$$\hat{\theta}_{2}=\frac{4N}{3n}(n_{0}+n_{1}).$$
+（2）由 $n_{0}\sim B\left(n,\dfrac{\theta}{4N}\right)$，$n_{1}\sim B\left(n,\dfrac{\theta}{2N}\right)$，$n_{2}\sim B\left(n,\dfrac{4N-3\theta}{4N}\right)$，得
+$$E(\hat{\theta}_{1})=E\left[\frac{N}{n}(2n_{0}+n_{1})\right]=\frac{N}{n}\left[2E(n_{0})+E(n_{1})\right]=\frac{N}{n}\left(2n\frac{\theta}{4N}+n\frac{\theta}{2N}\right)=\theta,$$
+$$E(\hat{\theta}_{2})=E\left[\frac{4N}{3n}(n_{0}+n_{1})\right]=\frac{4N}{3n}\left[E(n_{0})+E(n_{1})\right]=\frac{4N}{3n}\left(n\frac{\theta}{4N}+n\frac{\theta}{2N}\right)=\theta.$$
+注意，$E(\hat{\theta}_{1})$ 也可以这样求：
+$$E(\hat{\theta}_{1})=E\left[N(2-\overline{X})\right]=N\left[2-E(\overline{X})\right]=N\left[2-E(X)\right]=N\left(2-\frac{2N-\theta}{N}\right)=\theta.$$
+（3）$$D(\hat{\theta}_{1})=D\left[N(2-\overline{X})\right]=N^{2}D(\overline{X})=N^{2}\cdot\frac{D(X)}{n},$$
+又 $E(X)=\dfrac{2N-\theta}{N}$，$E(X^{2})=0^{2}\times\dfrac{\theta}{4N}+1^{2}\times\dfrac{\theta}{2N}+2^{2}\times\dfrac{4N-3\theta}{4N}=\dfrac{8N-5\theta}{2N}$，所以
+$$D(X)=E(X^{2})-\left[E(X)\right]^{2}=\frac{8N-5\theta}{2N}-\left(\frac{2N-\theta}{N}\right)^{2},$$
+于是 $D(\hat{\theta}_{1})=N^{2}\cdot\dfrac{1}{n}\cdot\left[\dfrac{8N-5\theta}{2N}-\left(\dfrac{2N-\theta}{N}\right)^{2}\right]=\dfrac{\theta}{2n}(3N-2\theta).$
+$$D(\hat{\theta}_{2})=D\left[\frac{4N}{3n}(n_{0}+n_{1})\right]=\left(\frac{4N}{3n}\right)^{2}D(n_{0}+n_{1})=\left(\frac{4N}{3n}\right)^{2}D(n-n_{2})$$
+$$=\left(\frac{4N}{3n}\right)^{2}D(n_{2})=\left(\frac{4N}{3n}\right)^{2}\cdot n\cdot\frac{4N-3\theta}{4N}\cdot\frac{3\theta}{4N}=\frac{\theta}{3n}(4N-3\theta).$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X \sim U[\theta_0, \theta_0 + \theta]$，其中 $\theta_0$ 是已知常数，$\theta &gt; 0$ 是未知参数，$X_1, X_2, \cdots, X_n$ 是来自总体 $X$ 的简单随机样本，求： （1）$\theta$ 的矩估计量 $\hat{\theta}_1$ 及 $E(\hat{\theta}_1)$； （2）$\theta$ 的最大似然估计量 $\hat{\theta}_2$ 及 $E(\hat{\theta}_2)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）$E(X)=\dfrac{\theta_{0}+\theta_{0}+\theta}{2}=\theta_{0}+\dfrac{\theta}{2}$，令 $E(X)=\overline{X}$，得 $\hat{\theta}_{1}=2(\overline{X}-\theta_{0})$，且
+$$E(\hat{\theta}_{1})=2\left[E(\overline{X})-\theta_{0}\right]=2\left[E(X)-\theta_{0}\right]=\theta.$$
+（2）当 $\theta_{0}\leqslant x_{1}\leqslant \theta_{0}+\theta,\theta_{0}\leqslant x_{2}\leqslant \theta_{0}+\theta,\cdots,\theta_{0}\leqslant x_{n}\leqslant \theta_{0}+\theta$ 时，似然函数
+$$L(\theta)=f(x_{1})f(x_{2})\cdots f(x_{n})=\left(\frac{1}{\theta}\right)^{n},$$
+显然 $L(\theta)$ 关于 $\theta$ 单调递减，且 $\theta_{0}+\theta\geqslant \max\{x_{1},x_{2},\cdots,x_{n}\}$，即 $\theta\geqslant \max\{x_{1},x_{2},\cdots,x_{n}\}-\theta_{0}$，所以 $\theta=\max\{x_{1},x_{2},\cdots,x_{n}\}-\theta_{0}$ 时，似然函数 $L(\theta)$ 达到最大，故 $\hat{\theta}_{2}=\max\{X_{1},X_{2},\cdots,X_{n}\}-\theta_{0}$．
+记 $T=\max\{X_{1},X_{2},\cdots,X_{n}\}$，则有
+$$F_{T}(t)=F_{X_{1}}(t)F_{X_{2}}(t)\cdots F_{X_{n}}(t)=\left[F_{X}(t)\right]^{n}=\begin{cases}0, &amp; t&lt;\theta_{0},\\\left(\dfrac{t-\theta_{0}}{\theta}\right)^{n}, &amp; \theta_{0}\leqslant t&lt;\theta_{0}+\theta,\\1, &amp; t\geqslant \theta_{0}+\theta,\end{cases}$$
+所以
+$$f_{T}(t)=F_{T}'(t)=\begin{cases}\dfrac{n}{\theta}\left(\dfrac{t-\theta_{0}}{\theta}\right)^{n-1}, &amp; \theta_{0}&lt;t&lt;\theta_{0}+\theta,\\0, &amp; \text{其他}.\end{cases}$$
+于是 $E(T)=\displaystyle\int_{\theta_{0}}^{\theta_{0}+\theta}tf_{T}(t)\mathrm{d}t=\frac{n}{n+1}\theta+\theta_{0}$，故 $E(\hat{\theta}_{2})=E(T)-\theta_{0}=\dfrac{n}{n+1}\theta.$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从 $(0, \theta]$ 上的均匀分布，$\theta &gt; 0$，$X_1, X_2, \cdots, X_n$ 为来自总体 $X$ 的简单随机样本. （1）求 $\theta$ 的最大似然估计量 $\hat{\theta}$； （2）求 $Z = \dfrac{\hat{\theta}}{\theta}$ 的分布函数； （3）若 $P\{\hat{\theta} &lt; \theta &lt; \theta_0\} = 1 - \alpha$，$0 &lt; \alpha &lt; 1$，求 $\theta_0$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）由题意得，$X$ 的概率密度为
+$$f(x;\theta)=\begin{cases}\dfrac{1}{\theta}, &amp; 0&lt;x\leqslant \theta,\\0, &amp; \text{其他}.\end{cases}$$
+设 $x_{1},x_{2},\cdots,x_{n}$ 为样本值，则似然函数为
+$$L(\theta)=\prod_{i=1}^{n}f(x_{i};\theta)=\begin{cases}\dfrac{1}{\theta^{n}}, &amp; 0&lt;x_{i}\leqslant \theta,i=1,2,\cdots,n,\\0, &amp; \text{其他},\end{cases}$$
+当 $0&lt;x_{i}\leqslant \theta(i=1,2,\cdots,n)$ 时，$L(\theta)$ 是 $\theta$ 的单调减少函数，故
+$$\hat{\theta}=\max\{X_{1},X_{2},\cdots,X_{n}\}=X_{(n)}.$$
+（2）由题意得，总体 $X$ 的分布函数为
+$$F_{X}(x)=\begin{cases}0, &amp; x&lt;0,\\\dfrac{x}{\theta}, &amp; 0\leqslant x&lt;\theta,\\1, &amp; x\geqslant \theta,\end{cases}$$
+则 $X_{(n)}$ 的分布函数为
+$$F_{(n)}(t)=\left[F_{X}(t)\right]^{n}=\begin{cases}0, &amp; t&lt;0,\\\dfrac{t^{n}}{\theta^{n}}, &amp; 0\leqslant t&lt;\theta,\\1, &amp; t\geqslant \theta,\end{cases}$$
+于是 $Z=\dfrac{\hat{\theta}}{\theta}$ 的分布函数为
+$$F_{Z}(z)=P\{Z\leqslant z\}=P\left\{\frac{\hat{\theta}}{\theta}\leqslant z\right\}=P\left\{\frac{X_{(n)}}{\theta}\leqslant z\right\}$$
+$$=P\left\{X_{(n)}\leqslant \theta z\right\}=F_{(n)}(\theta z)=\begin{cases}0, &amp; \theta z&lt;0,\\\dfrac{(\theta z)^{n}}{\theta^{n}}, &amp; 0\leqslant \theta z&lt;\theta,\\1, &amp; \theta z\geqslant \theta\end{cases}$$
+$$=\begin{cases}0, &amp; z&lt;0,\\z^{n}, &amp; 0\leqslant z&lt;1,\\1, &amp; z\geqslant 1.\end{cases}$$
+（3）$$P\{\hat{\theta}&lt;\theta&lt;\theta_{0}\}=P\left\{\dfrac{\hat{\theta}}{\theta_{0}}&lt;\dfrac{\hat{\theta}}{\theta}&lt;1\right\}=1-\alpha,$$
+即
+$$F_{Z}(1)-F_{Z}\left(\frac{\hat{\theta}}{\theta_{0}}\right)=1-\frac{(\hat{\theta})^{n}}{\theta_{0}^{n}}=1-\alpha,$$
+整理得 $\dfrac{(\hat{\theta})^{n}}{\theta_{0}^{n}}=\alpha$，解得
+$$\theta_{0}=\sqrt[n]{\frac{(\hat{\theta})^{n}}{\alpha}}=\frac{\hat{\theta}}{\sqrt[n]{\alpha}}=\frac{X_{(n)}}{\sqrt[n]{\alpha}}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 与 $Y$ 相互独立，且分别服从正态分布 $N(\mu, \sigma^2)$ 与 $N(\mu, 2\sigma^2)$，其中 $\sigma$ 是未知参数且 $\sigma &gt; 0$. 记 $Z = X - Y$. （1）求 $Z$ 的概率密度 $f(z; \sigma^2)$； （2）设 $Z_1, Z_2, \cdots, Z_n$ 为来自总体 $Z$ 的简单随机样本，求 $\sigma^2$ 的最大似然估计量 $\hat{\sigma}^2$； （3）是否存在实数 $a$，使得对任意的 $\varepsilon &gt; 0$，都有 $\lim\limits_{n \to \infty} P\{\mid \hat{\sigma}^2 - a \mid \geqslant \varepsilon\} = 0$？</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）因为 $X$ 与 $Y$ 相互独立，所以 $Z=X-Y$ 服从正态分布，且 $E(Z)=0,D(Z)=D(X)+D(Y)=3\sigma^{2}$，故
+$$f(z;\sigma^{2})=\frac{1}{\sqrt{6\pi}\sigma}\mathrm{e}^{-\frac{z^{2}}{6\sigma^{2}}},-\infty&lt;z&lt;+\infty.$$
+（2）设 $z_{1},z_{2},\cdots,z_{n}$ 为样本 $Z_{1},Z_{2},\cdots,Z_{n}$ 的观测值，则似然函数为
+$$L(\sigma^{2})=\prod_{i=1}^{n}f(z_{i};\sigma^{2})=(6\pi\sigma^{2})^{-\frac{n}{2}}\exp\left(-\frac{1}{6\sigma^{2}}\sum_{i=1}^{n}z_{i}^{2}\right),$$
+$$\ln L(\sigma^{2})=-\frac{n}{2}\ln(6\pi\sigma^{2})-\frac{1}{6\sigma^{2}}\sum_{i=1}^{n}z_{i}^{2}.$$
+令 $\dfrac{\mathrm{d}\left[\ln L(\sigma^{2})\right]}{\mathrm{d}(\sigma^{2})}=-\dfrac{n}{2\sigma^{2}}+\dfrac{1}{6\sigma^{4}}\displaystyle\sum_{i=1}^{n}z_{i}^{2}=0$，解得 $\sigma^{2}=\dfrac{1}{3n}\displaystyle\sum_{i=1}^{n}z_{i}^{2}$，故 $\sigma^{2}$ 的最大似然估计量为
+$$\hat{\sigma}^{2}=\frac{1}{3n}\sum_{i=1}^{n}Z_{i}^{2}.$$
+（3）$$E(\hat{\sigma}^{2})=E\left(\frac{1}{3n}\sum_{i=1}^{n}Z_{i}^{2}\right)=\frac{1}{3}E(Z^{2})=\frac{1}{3}\left(\left[E(Z)\right]^{2}+D(Z)\right)=\sigma^{2},$$
+$$D(\hat{\sigma}^{2})=D\left(\frac{1}{3n}\sum_{i=1}^{n}Z_{i}^{2}\right)=\frac{1}{9n}D(Z^{2}),$$
+注意，$Z\sim N(0,3\sigma^{2})$，于是 $\dfrac{Z}{\sqrt{3}\sigma}\sim N(0,1)$，进而 $\left(\dfrac{Z}{\sqrt{3}\sigma}\right)^{2}=\dfrac{Z^{2}}{3\sigma^{2}}\sim \chi^{2}(1)$，所以 $D\left(\dfrac{Z^{2}}{3\sigma^{2}}\right)=2$，故 $D(Z^{2})=18\sigma^{4}$．因此
+$$D(\hat{\sigma}^{2})=\frac{2\sigma^{4}}{n}.$$
+根据切比雪夫不等式，对任意的 $\varepsilon&gt;0$，有 $P\left\{\left|\hat{\sigma}^{2}-\sigma^{2}\right|\geqslant \varepsilon\right\}\leqslant \dfrac{\dfrac{2\sigma^{4}}{n}}{\varepsilon^{2}}\to 0\ (n\to\infty)$，而 $P\left\{\left|\hat{\sigma}^{2}-\sigma^{2}\right|\geqslant \varepsilon\right\}\geqslant 0$，于是 $\lim\limits_{n\to\infty}P\left\{\left|\hat{\sigma}^{2}-\sigma^{2}\right|\geqslant \varepsilon\right\}=0$，所以 $a=\hat{\sigma}^{2}$．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的概率分布为 $$\begin{array}{c|ccc} X &amp; 1 &amp; 2 &amp; 3 \\ \hline P &amp; 1-\theta &amp; \theta - \theta^2 &amp; \theta^2 \end{array}$$ 其中参数 $\theta \in (0,1)$ 未知. 以 $N_i$ 表示来自总体 $X$ 的简单随机样本（样本容量为 $n$）中等于 $i$ 的个数（$i = 1, 2, 3$）. 求常数 $a_1, a_2, a_3$，使 $T = \sum\limits_{i=1}^{3} a_i N_i$ 为 $\theta$ 的无偏估计量，并求 $T$ 的方差.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】记 $p_{1}=1-\theta,p_{2}=\theta-\theta^{2},p_{3}=\theta^{2}$．由于 $N_{i}\sim B(n,p_{i}),i=1,2,3$，故
+$$E(N_{i})=np_{i},$$
+于是
+$$E(T)=a_{1}E(N_{1})+a_{2}E(N_{2})+a_{3}E(N_{3})=n\left[a_{1}(1-\theta)+a_{2}(\theta-\theta^{2})+a_{3}\theta^{2}\right].$$
+为使 $T$ 是 $\theta$ 的无偏估计量，必有
+$$n\left[a_{1}(1-\theta)+a_{2}(\theta-\theta^{2})+a_{3}\theta^{2}\right]=\theta,$$
+因此
+$$a_{1}=0,a_{2}-a_{1}=\frac{1}{n},a_{3}-a_{2}=0,$$
+由此得
+$$a_{1}=0,a_{2}=a_{3}=\frac{1}{n}.$$
+由于 $N_{1}+N_{2}+N_{3}=n$，因此
+$$T=\frac{1}{n}(N_{2}+N_{3})=\frac{1}{n}(n-N_{1})=1-\frac{N_{1}}{n}.$$
+注意到 $N_{1}\sim B(n,1-\theta)$，故
+$$D(T)=\frac{1}{n^{2}}D(N_{1})=\frac{n(1-\theta)\theta}{n^{2}}=\frac{(1-\theta)\theta}{n}.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的概率分布为 $$\begin{array}{c|cc} X &amp; 0 &amp; 1 \\ \hline P &amp; 1-p &amp; p \end{array}$$ 其中 $0 &lt; p &lt; 1$，是未知参数，又设 $x_1, x_2, \cdots, x_n$ 是 $X$ 的一组样本观测值. （1）求参数 $p$ 的矩估计量和最大似然估计量； （2）验证相应两个估计量的无偏性.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】$E(X)=p$，$\overline{x}=\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}x_{i}$，不难求出矩估计．
+对最大似然估计，关键是写出似然函数．由于 $x_{i}$ 是取自总体 $X$ 的样本观测值，故 $x_{i}$ 不是取 $0$ 就是取 $1$．因此，$X_{i}$ 的分布可表示成 $p^{x_{i}}(1-p)^{1-x_{i}}$，似然函数为 $L(p)=\displaystyle\prod_{i=1}^{n}p^{x_{i}}(1-p)^{1-x_{i}}$．
+【解析】（1）矩估计：$\overline{x}=p$，矩估计量：$\hat{p}_{1}=\overline{X}$．
+最大似然估计：似然函数
+$$L(p)=p^{\sum\limits_{i=1}^{n}x_{i}}(1-p)^{n-\sum\limits_{i=1}^{n}x_{i}}=p^{n\overline{x}}(1-p)^{n-n\overline{x}},$$
+$$\ln L(p)=n\overline{x}\ln p+n(1-\overline{x})\ln(1-p),$$
+$$\frac{\mathrm{d}\left[\ln L(p)\right]}{\mathrm{d}p}=\frac{n\overline{x}}{p}-\frac{n(1-\overline{x})}{1-p}=0,$$
+解得 $\hat{p}_{2}=\overline{X}$．
+（2）由于 $\hat{p}_{1}=\hat{p}_{2}=\overline{X}$，要证无偏性只要验证
+$$E(\overline{X})=\frac{1}{n}\sum_{i=1}^{n}E(X_{i})=\frac{1}{n}\sum_{i=1}^{n}p=p,$$
+即相应的估计量均为无偏估计量．</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的分布函数 $$F(x) = \begin{cases} 0, &amp; x &lt; 0, \\ \theta, &amp; 0 \leqslant x &lt; 1, \\ 1 - 2\theta, &amp; 1 \leqslant x &lt; \dfrac{3}{2}, \\ 1, &amp; x \geqslant \dfrac{3}{2}, \end{cases}$$ $X_1, X_2, \cdots, X_n$ 是来自总体 $X$ 的简单随机样本. （1）求 $\theta$ 的矩估计量 $\hat{\theta}_M$，并验证其是否有无偏性、一致性； （2）若 $n$ 个样本中有 $n_1$ 个观测值为 $1$，$n_2$ 个观测值为 $0$，求 $\theta$ 的最大似然估计值 $\hat{\theta}_L$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】（1）由 $F(x)$ 可知，$X\sim \begin{pmatrix}0 &amp; 1 &amp; \dfrac{3}{2}\\ \theta &amp; 1-3\theta &amp; 2\theta\end{pmatrix}$，则 $E(X)=0\cdot\theta+1\cdot(1-3\theta)+\dfrac{3}{2}\cdot 2\theta=1$，不能使用 $E(X)=\overline{X}$ 来估计 $\theta$，故用
+$$E(X^{2})=0^{2}\cdot\theta+1^{2}\cdot(1-3\theta)+\left(\frac{3}{2}\right)^{2}\cdot 2\theta=1+\frac{3}{2}\theta.$$
+令 $E(X^{2})=\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}X_{i}^{2}$，即 $1+\dfrac{3}{2}\theta=\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}X_{i}^{2}$，得 $\hat{\theta}_{M}=\dfrac{2}{3}\left(\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}X_{i}^{2}-1\right).$
+由于 $E(\hat{\theta}_{M})=E\left[\dfrac{2}{3}\left(\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}X_{i}^{2}-1\right)\right]=\dfrac{2}{3}E(X_{i}^{2})-\dfrac{2}{3}=\dfrac{2}{3}\left(1+\dfrac{3}{2}\theta\right)-\dfrac{2}{3}=\theta$，故 $\hat{\theta}_{M}$ 为 $\theta$ 的无偏估计量．
+又 $D(\hat{\theta}_{M})=D\left[\dfrac{2}{3}\left(\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}X_{i}^{2}-1\right)\right]=\dfrac{4}{9n}D(X_{i}^{2})$，其中 $D(X_{i}^{2})$ 是与 $n$ 无关，关于 $\theta$ 的常数，用切比雪夫不等式，对任意实数 $\varepsilon&gt;0$，有 $0\leqslant P\left\{\left|\hat{\theta}_{M}-\theta\right|\geqslant \varepsilon\right\}\leqslant \dfrac{D(\hat{\theta}_{M})}{\varepsilon^{2}}=\dfrac{4D(X_{i}^{2})}{9n\varepsilon^{2}}\to 0\ (n\to\infty)$，故 $\hat{\theta}_{M}\xrightarrow{P}\theta$，有一致性．
+（2）由题意，似然函数为
+$$L(\theta)=\left(P\{X=1\}\right)^{n_{1}}\left(P\{X=0\}\right)^{n_{2}}\left(P\left\{X=\frac{3}{2}\right\}\right)^{n-n_{1}-n_{2}}$$
+$$=(1-3\theta)^{n_{1}}\cdot\theta^{n_{2}}\cdot(2\theta)^{n-n_{1}-n_{2}}$$
+$$=(1-3\theta)^{n_1}\cdot\theta^{n-n_1}\cdot 2^{n-n_1-n_2},$$ 取对数，$$\ln L(\theta)=n_1\ln(1-3\theta)+(n-n_1)\ln\theta+(n-n_1-n_2)\ln 2,$$ $$\frac{\mathrm{d}[\ln L(\theta)]}{\mathrm{d}\theta}=\frac{-3n_1}{1-3\theta}+\frac{n-n_1}{\theta}\xlongequal{\text{令}}0,$$ 得 $\hat{\theta}_L=\dfrac{1}{3}-\dfrac{n_1}{3n}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X \sim U[\theta, 2\theta]$，其中 $\theta$（$&gt;0$）是未知参数，$X_1, X_2, \cdots, X_n$ 是来自总体 $X$ 的一个简单随机样本，$\overline{X}$ 为样本均值. （1）求参数 $\theta$ 的矩估计量，并判断它是否是无偏估计和相合估计； （2）求参数 $\theta$ 的最大似然估计量，并判断它是否是无偏估计.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由于总体 $X\sim U[0,2\theta]$，由矩估计方程 $$\overline{X}=E(X)=\frac{\theta+2\theta}{2}=\frac{3}{2}\theta,$$ 得参数 $\theta$ 的矩估计量为 $\hat{\theta}=\dfrac{2}{3}\overline{X}$。 因为 $$E(\hat{\theta})=E\left(\frac{2}{3}\overline{X}\right)=\frac{2}{3}E(X)=\theta,$$ 所以 $\hat{\theta}=\dfrac{2}{3}\overline{X}$ 是参数 $\theta$ 的无偏估计。 又因为 $$D(\hat{\theta})=D\left(\frac{2}{3}\overline{X}\right)=\frac{4}{9n}D(X)=\frac{\theta^2}{27n}\to 0\ (n\to\infty),$$ 即对于任意 $\varepsilon&gt;0$，有 $$\lim_{n\to\infty}P\{\mid\hat{\theta}-\theta\mid&lt;\varepsilon\}=\lim_{n\to\infty}P\{\mid\hat{\theta}-E(\hat{\theta})\mid&lt;\varepsilon\}\geqslant\lim_{n\to\infty}\left[1-\frac{D(\hat{\theta})}{\varepsilon^2}\right]=1,$$ 所以 $\hat{\theta}=\dfrac{2}{3}\overline{X}$ 是参数 $\theta$ 的相合估计。 (2) 设 $x_1,x_2,\cdots,x_n$ 为样本观测值，似然函数为 $L(\theta)=\prod_{i=1}^{n}\dfrac{1}{\theta}=\dfrac{1}{\theta^n}$，令 $$x_{(1)}=\min\{x_1,x_2,\cdots,x_n\},x_{(n)}=\max\{x_1,x_2,\cdots,x_n\},$$ 则 $\theta\leqslant x_{(1)}\leqslant x_{(n)}\leqslant 2\theta$，即 $\dfrac{x_{(n)}}{2}\leqslant\theta\leqslant x_{(1)}$，又由于 $\dfrac{1}{\theta^n}$ 关于 $\theta$ 是单调递减的，则当 $\theta=\dfrac{1}{2}x_{(n)}$ 时，$L(\theta)$ 达到最大，因此参数 $\theta$ 的最大似然估计量为 $$\hat{\theta}=\frac{1}{2}X_{(n)},$$ 其中 $X_{(n)}=\max\{X_1,X_2,\cdots,X_n\}$。 由于 $X_{(n)}$ 的概率密度为 $f_{X_{(n)}}(x)=\dfrac{n}{\theta^n}(x-\theta)^{n-1},\theta\leqslant x\leqslant 2\theta$，因此 $$E[X_{(n)}]=\int_{\theta}^{2\theta}x\,\frac{n}{\theta^n}(x-\theta)^{n-1}\mathrm{d}x=\frac{2n+1}{n+1}\theta,$$ 从而可得 $$E(\hat{\theta})=E\left[\frac{1}{2}X_{(n)}\right]=\frac{2n+1}{2(n+1)}\theta,$$ 所以 $\hat{\theta}=\dfrac{1}{2}X_{(n)}$ 不是参数 $\theta$ 的无偏估计。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">对总体 $X$ 进行简单随机抽样，得如下统计资料： $$\begin{array}{c|ccccc} k &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline X = k \text{ 的次数} &amp; 12 &amp; 20 &amp; 24 &amp; 24 &amp; 20 \end{array}$$ （1）求总体 $X$ 的数学期望 $a$ 和方差 $b$ 的无偏估计值； （2）根据以上计算结果，分析能否用泊松分布描述总体 $X$ 的概率分布.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由于样本均值 $\overline{X}$ 和样本方差 $S^2$ 相应为数学期望 $a$ 和方差 $b$ 的无偏估计，故计算 $\overline{x}$ 和 $s^2$ 即可。 $$\overline{x}=\frac{1}{100}(1\times 12+2\times 20+\cdots+5\times 20)=3.2,$$ $$s_n^2=\frac{1}{100}(1^2\times 12+2^2\times 20+\cdots+5^2\times 20)-3.2^2=1.68,$$ $$s^2=\frac{100}{99}s_n^2=1.\overset{\cdot}{6}\overset{\cdot}{9}\approx 1.70.$$ 于是，$a$ 和 $b$ 的无偏估计值相应为 3.2 和 1.70。 (2) 因为对于泊松分布 $a=b$，所以数学期望 $a$ 和方差 $b$ 的无偏估计值应近似相等；$\overline{x}\approx s^2$。但是，计算结果表明 $\overline{x}=3.2$ 和 $s^2\approx 1.70$ 差异十分明显，故不宜用泊松分布描述总体 $X$ 的概率分布。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从参数为 $\lambda$（$\lambda &gt; 0$）的泊松分布，取容量为 $1$ 的简单随机样本 $X_1$，其样本值 $x_1 = 3$，则 $\mathrm{e}^{-2\lambda}$ 的无偏估计量与无偏估计值分别为（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\mathrm{e}^{-2X_1}, \mathrm{e}^{-6}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}^{-X_1}, \mathrm{e}^{-3}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1, 1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(-1)^{X_1}, -1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $\mathrm{e}^{-2\lambda}$ 的无偏估计量为 $g(X_1)$，则有 $E[g(X_1)]=\mathrm{e}^{-2\lambda}$，即 $$\sum_{k=0}^{\infty}g(k)\cdot\frac{\lambda^k}{k!}\mathrm{e}^{-\lambda}=\mathrm{e}^{-2\lambda},$$ 得 $\sum_{k=0}^{\infty}g(k)\dfrac{\lambda^k}{k!}=\mathrm{e}^{-\lambda}=\sum_{k=0}^{\infty}(-1)^k\dfrac{\lambda^k}{k!}$，则 $g(k)=(-1)^k$。 于是 $g(X_1)=(-1)^{X_1}$，$g(3)=-1$，故无偏估计量为 $(-1)^{X_1}$，无偏估计值为 $-1$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的未知参数 $\theta$ 有两个相互独立的无偏估计量 $\hat{\theta}_1$ 与 $\hat{\theta}_2$，且 $D(\hat{\theta}_2) = 2D(\hat{\theta}_1)$，记 $\hat{\theta} = a\hat{\theta}_1 + b\hat{\theta}_2$，则以下使得 $\hat{\theta}$ 最有效的是（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a = \dfrac{1}{3}, b = \dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a = \dfrac{2}{3}, b = \dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a = \dfrac{1}{3}, b = \dfrac{2}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a = \dfrac{2}{3}, b = \dfrac{2}{3}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">有效的前提是无偏，故 $$E(\hat{\theta})=aE(\hat{\theta}_1)+bE(\hat{\theta}_2)=a\theta+b\theta=\theta,$$ 得 $a+b=1$，排除 (A)，(D) 选项。 方法一 $D(\hat{\theta})=a^2D(\hat{\theta}_1)+b^2D(\hat{\theta}_2)=(a^2+2b^2)D(\hat{\theta}_1)=\left[a^2+2(1-a)^2\right]D(\hat{\theta}_1)$，令 $f(a)=a^2+2(1-a)^2$，则 $f'(a)=2a-4(1-a)$，令 $f'(a)=0$，解得 $a=\dfrac{2}{3}$，又 $f''\left(\dfrac{2}{3}\right)=6&gt;0$，故 $a=\dfrac{2}{3}$ 为 $f(a)$ 的极小值点，即最小值点，此时 $f_{\min}=f\left(\dfrac{2}{3}\right)$，故当 $a=\dfrac{2}{3},b=\dfrac{1}{3}$ 时，$\hat{\theta}$ 最有效。 方法二 (B) 选项，$D(\hat{\theta})=D\left(\dfrac{2}{3}\hat{\theta}_1+\dfrac{1}{3}\hat{\theta}_2\right)=\dfrac{4}{9}D(\hat{\theta}_1)+\dfrac{1}{9}D(\hat{\theta}_2)=\dfrac{2}{3}D(\hat{\theta}_1)$； (C) 选项，$D(\hat{\theta})=D\left(\dfrac{1}{3}\hat{\theta}_1+\dfrac{2}{3}\hat{\theta}_2\right)=\dfrac{1}{9}D(\hat{\theta}_1)+\dfrac{4}{9}D(\hat{\theta}_2)=D(\hat{\theta}_1)$。 故 (B) 选项使得 $\hat{\theta}$ 最有效。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X \sim N(\mu, 2^2)$，其中 $\mu$ 为未知参数，$X_1, X_2, \cdots, X_9$ 是来自总体 $X$ 的简单随机样本，记关于 $\mu$ 的置信度为 $0.95$ 的置信区间长度为 $L$，则 $L$ 的数学期望 $E(L) = $（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{2}{3} z_{0.025}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{4}{3} z_{0.025}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{2}{3} z_{0.05}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{4}{3} z_{0.05}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">正态总体下，在 $\sigma^2$ 已知时，关于 $\mu$ 的置信度 $1-\alpha$ 的置信区间为 $$\left(\overline{X}-\frac{\sigma}{\sqrt{n}}z_{\frac{\alpha}{2}},\overline{X}+\frac{\sigma}{\sqrt{n}}z_{\frac{\alpha}{2}}\right).$$ 于是置信区间长度 $L=2\dfrac{\sigma}{\sqrt{n}}z_{\frac{\alpha}{2}}$，则 $$E(L)=2\,\frac{\sigma}{\sqrt{n}}\cdot z_{\frac{\alpha}{2}}=2\cdot\frac{2}{3}\cdot z_{0.025}=\frac{4}{3}z_{0.025}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1, X_2, \cdots, X_{25}$ 是来自总体 $N(\mu, \sigma^2)$（$\sigma &gt; 0$）的简单随机样本，$\Phi(x)$ 表示标准正态分布函数，考虑假设检验问题：$H_0: \mu \leqslant 10, H_1: \mu &gt; 10$，若该检验问题的拒绝域为 $W = \{\overline{X} &gt; 20\}$，其中 $\overline{X} = \dfrac{1}{25} \sum\limits_{i=1}^{25} X_i$，则 $\mu = 20.5$ 时，该检验犯第二类错误的概率为 $1 - \Phi\left(\dfrac{1}{2}\right)$，则 $\sigma = $（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">5</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">6</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">7</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">8</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">假设检验犯第二类错误的概率为 $H_0$ 为假时却接受 $H_0$，即在 $\mu&gt;10$ 的情况下，接受 $H_0$ 的概率，由题意知 $$P\{\overline{X}\leqslant 20\mid\mu=20.5\}=P\left\{\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\leqslant\frac{20-20.5}{\sigma/5}\right\}=1-\Phi\left(\frac{1}{2}\right)=\Phi\left(-\frac{1}{2}\right),$$ 有 $\dfrac{-\dfrac{1}{2}}{\sigma/5}=-\dfrac{1}{2}$，则 $\sigma=5$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q25" data-no="25">
+  <header class="q-head">
+    <span class="q-no">【25】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="25" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X \sim N(\mu_1, \sigma_1^2)$ 和 $Y \sim N(\mu_2, \sigma_2^2)$，现检验总体 $X$ 的均值是否大于 $Y$ 的均值，则应检验假设（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$H_0: \mu_1 \leqslant \mu_2; H_1: \mu_1 &gt; \mu_2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$H_0: \mu_1 \geqslant \mu_2; H_1: \mu_1 &lt; \mu_2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$H_0: \mu_1 &lt; \mu_2; H_1: \mu_1 \geqslant \mu_2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$H_0: \mu_1 &gt; \mu_2; H_1: \mu_1 \leqslant \mu_2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">要检验的是 $X$ 的均值是否大于 $Y$ 的均值，即 $\mu_1&gt;\mu_2$。 假设检验要求原假设中含等号，以便在原假设成立时，统计量有一个确定的分布。选项 (C) 和 (D) 中的 $H_0$ 不含等号，故不能选作原假设。选项 (B) 也不能选，因为它是 $\mu_1&lt;\mu_2$ 或 $\mu_1\geqslant\mu_2$，而需要检验的是 $\mu_1&gt;\mu_2$，即选 (A)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q26" data-no="26">
+  <header class="q-head">
+    <span class="q-no">【26】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="26" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">关于总体 $X$ 的假设 $H$ 属于简单假设的是（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">已知 $X$ 服从正态分布，$H: E(X) = 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">已知 $X$ 服从指数分布，$H: E(X) \geqslant 1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">已知 $X$ 服从二项分布，$H: D(X) = 5$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">已知 $X$ 服从泊松分布，$H: D(X) = 3$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">可以完全决定总体分布的假设称为简单假设，否则称为复合假设。 方法一 直接法。泊松分布完全决定于其唯一分布参数 $\lambda&gt;0$，并且其数学期望和方差都等于分布参数 $\lambda$。由选项 (D) 知 $\lambda=3$，即总体 $X$ 服从参数为 $\lambda=3$ 的泊松分布。于是，选项 (D) 正确。 方法二 排除法。选项 (A) 只给出数学期望的值，但是另一个参数——方差仍然是未知的；二项分布取决于 $n$（试验的次数）和 $p$（试验成功的概率），而选项 (C) 只给出了 $np(1-p)=5$，显然不能唯一决定分布参数 $n$ 和 $p$。因此选项 (A) 和 (C) 中的假设都不是简单假设。最后，虽然指数分布完全取决于唯一分布参数 $\lambda$，但是由选项 (B) 仅知道 $E(X)=\lambda^{-1}&gt;1$，即 $0&lt;\lambda&lt;1$，不能完全决定总体的分布，因此选项 (B) 中的假设也不是简单假设。于是，(A)，(B) 和 (C) 都是错误选项，从而 (D) 是唯一正确选项。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q27" data-no="27">
+  <header class="q-head">
+    <span class="q-no">【27】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="67" data-no="27" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1, X_2, \cdots, X_n$ 是来自均匀分布总体 $U(0, \theta)$（$\theta &gt; 0$）的简单随机样本，原假设 $H_0: \theta \geqslant 2$，备择假设 $H_1: \theta &lt; 2$，拒绝域为 $W = \{X_{(n)} \leqslant a\}$，其中 $a &gt; 0$，$X_{(n)} = \max\{X_1, X_2, \cdots, X_n\}$，若犯第一类错误的概率的最大值为 $\dfrac{1}{3^n}$，则 $a = $（  ）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{4}{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{2}{3}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{3}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{3}{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$X_{(n)}\sim F_{(n)}(x)=[F(x)]^n=\begin{cases}0, &amp; x&lt;0,\\ \left(\dfrac{x}{\theta}\right)^n, &amp; 0\leqslant x&lt;\theta,\\ 1, &amp; x\geqslant\theta,\end{cases}$ 故 $\alpha(\theta)=P\{X_{(n)}\leqslant a\mid\theta\geqslant 2\}=\left(\dfrac{a}{\theta}\right)^n$，$\theta\geqslant 2$，$\alpha_{\max}=\alpha(2)=\left(\dfrac{a}{2}\right)^n=\left(\dfrac{1}{3}\right)^n$，于是 $a=\dfrac{2}{3}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q28" data-no="28">
+  <header class="q-head">
+    <span class="q-no">【28】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="67" data-no="28" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 的概率密度为 $$f(x;\theta) = \begin{cases} \dfrac{\theta}{x^2}, &amp; x \geqslant \theta, \\ 0, &amp; x &lt; \theta, \end{cases}$$ 其中 $\theta &gt; 0$ 为未知参数，$X_1, X_2, \cdots, X_n$（$n &gt; 1$）为来自总体 $X$ 的简单随机样本，$X_{(1)} = \min\{X_1, X_2, \cdots, X_n\}$. （1）求 $\theta$ 的最大似然估计量 $\hat{\theta}$，并求常数 $a$，使得 $a\hat{\theta}$ 为 $\theta$ 的无偏估计； （2）对于原假设 $H_0: \theta = 2$ 与备择假设 $H_1: \theta &gt; 2$，若 $H_0$ 的拒绝域为 $V = \{X_{(1)} \geqslant 3\}$，求犯第一类错误的概率 $\alpha$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 设 $x_1,x_2,\cdots,x_n$ 为样本值，则似然函数为 $$L(\theta)=\begin{cases}\dfrac{\theta^n}{\prod\limits_{i=1}^{n}x_i^2}, &amp; x_1,x_2,\cdots,x_n\geqslant\theta,\\ 0, &amp; \text{其他}.\end{cases}$$ 当 $x_1,x_2,\cdots,x_n\geqslant\theta$ 时，取对数 $$\ln L(\theta)=n\ln\theta-2\sum_{i=1}^{n}\ln x_i,$$ 由于 $\dfrac{\mathrm{d}[\ln L(\theta)]}{\mathrm{d}\theta}=\dfrac{n}{\theta}&gt;0$，故 $\ln L(\theta)$ 是 $\theta$ 的单调递增函数，于是 $\theta$ 的最大似然估计量为 $$\hat{\theta}=X_{(1)}=\min\{X_1,X_2,\cdots,X_n\},$$ 且 $$E(\hat{\theta})=E[X_{(1)}]\xlongequal{(\ast)}\int_{\theta}^{+\infty}x\cdot n\cdot\left(\frac{\theta}{x}\right)^{n-1}\cdot\frac{\theta}{x^2}\mathrm{d}x=\int_{\theta}^{+\infty}n\cdot\frac{\theta^n}{x^n}\mathrm{d}x=n\cdot\theta^n\cdot\frac{1}{-n+1}x^{-n+1}\Bigg|_{\theta}^{+\infty}=\frac{n}{n-1}\theta.$$ 若 $E(a\hat{\theta})=\theta$，则 $a\dfrac{n}{n-1}\theta=\theta$，所以 $a=\dfrac{n-1}{n}$。 (2) $\alpha=P\{X_{(1)}\geqslant 3\mid\theta=2\}=\int_{3}^{+\infty}n\cdot\left(\dfrac{2}{x}\right)^{n-1}\cdot\dfrac{2}{x^2}\mathrm{d}x=\int_{3}^{+\infty}n\cdot\dfrac{2^n}{x^{n+1}}\mathrm{d}x=\left(\dfrac{2}{3}\right)^n.$ 【注】$(\ast)$ 处来自公式 $E[X_{(1)}]=\int_{-\infty}^{+\infty}x\cdot n[1-F(x)]^{n-1}f(x)\mathrm{d}x$.</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-66.html">上一章：第8章 统计量及其分布</a>
+      <a class="chapter-link" href="chapter-68.html">下一章：测试卷一</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 67, "total": 28, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

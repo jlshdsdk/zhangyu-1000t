@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 大数定律与中心极限定理 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第7章 大数定律与中心极限定理<span class="top-count">（3题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="65" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2,\cdots,X_n$ 是来自总体 $X\sim\begin{pmatrix}0 &amp; 1 &amp; 2 &amp; 3\\ \frac{1}{16} &amp; \frac{3}{8} &amp; \frac{1}{16} &amp; \frac{1}{2}\end{pmatrix}$ 的简单随机样本，若取值为 2 的样本个数 $K$ 满足 $\lim\limits_{n\to\infty}P\left\{\frac{K-a}{b}\leqslant x\right\}=\Phi(x)$，其中 $\Phi(x)$ 为标准正态分布函数，则 $a,b$ 分别是（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{16},\frac{\sqrt{15}}{16}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{n}{16},\frac{\sqrt{15n}}{16}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{16},\frac{\sqrt{15n}}{16}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{n}{16},\frac{\sqrt{15}}{16}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">本题中，若认为取到 2 视为成功，则不难看出在 $n$ 次取值中取到 2 的个数 $K$ 服从二项分布，即 $K\sim B\left(n,\dfrac{1}{16}\right)$，则当 $n$ 充分大时，有 $K\overset{\text{近似地}}{\sim}N\left(\dfrac{n}{16},\dfrac{15n}{16^2}\right)$，进而 $\dfrac{K-\dfrac{n}{16}}{\dfrac{\sqrt{15n}}{16}}\overset{\text{近似地}}{\sim}N(0,1)$. 结合题干极限式，可知 $a=\dfrac{n}{16},b=\dfrac{\sqrt{15n}}{16}$，选 (B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="65" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X\sim N(0,1)$，在 $X=x$ 的条件下，总体 $Y\sim N(x,1)$，记 $Y_1,Y_2,\cdots,Y_n,\cdots$ 为取自总体 $Y$ 的简单随机样本，则 $\frac{1}{n}\sum\limits_{i=1}^{n}Y_i^2$ 依概率收敛于 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　由 $E(X)=0,D(X)=1$，且 $(X,Y)$ 的概率密度为
+$$f(x,y)=f_X(x)f_{Y|X}(y\mid x)=\frac{1}{2\pi}\mathrm{e}^{-\frac{x^2}{2}}\cdot\mathrm{e}^{-\frac{(y-x)^2}{2}},\ -\infty&lt;x&lt;+\infty,\ -\infty&lt;y&lt;+\infty,$$
+从而
+$$\begin{aligned}E(Y^2)&amp;=\frac{1}{2\pi}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}y^2\mathrm{e}^{-\frac{x^2}{2}}\cdot\mathrm{e}^{-\frac{(y-x)^2}{2}}\,\mathrm{d}x\mathrm{d}y\\&amp;=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}\mathrm{e}^{-\frac{x^2}{2}}\,\mathrm{d}x\int_{-\infty}^{+\infty}y^2\cdot\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{(y-x)^2}{2}}\,\mathrm{d}y\\&amp;=\int_{-\infty}^{+\infty}(x^2+1)\cdot\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{x^2}{2}}\,\mathrm{d}x\\&amp;=2,\end{aligned}$$
+其中，
+$$\begin{aligned}\int_{-\infty}^{+\infty}y^2\cdot\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{(y-x)^2}{2}}\,\mathrm{d}y&amp;\xlongequal{\ y-x=t\ }\int_{-\infty}^{+\infty}(x+t)^2\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\,\mathrm{d}t\\&amp;=\int_{-\infty}^{+\infty}x^2\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\,\mathrm{d}t+\int_{-\infty}^{+\infty}2xt\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\,\mathrm{d}t+\int_{-\infty}^{+\infty}t^2\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{t^2}{2}}\,\mathrm{d}t\\&amp;=x^2+0+1=x^2+1.\end{aligned}$$
+根据辛钦大数定律，有 $\dfrac{1}{n}\sum\limits_{i=1}^{n}Y_i^2\xrightarrow{P}E(Y_i^2)=E(Y^2)=2$.
+方法二　利用亚当夏娃公式，由 $E(X)=0,D(X)=1$，又
+$$E(Y\mid X=x)=x, D(Y\mid X=x)=1,$$
+故
+$$E(Y)=E[E(Y\mid X)]=E(X)=0,$$
+$$D(Y)=E[D(Y\mid X)]+D[E(Y\mid X)]=1+D(X)=2,$$
+于是 $E(Y^2)=[E(Y)]^2+D(Y)=2$，根据辛钦大数定律，有 $\dfrac{1}{n}\sum\limits_{i=1}^{n}Y_i^2\xrightarrow{P}E(Y_i^2)=E(Y^2)=2$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="65" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从参数为 1 的泊松分布，$X_1,X_2,\cdots,X_n,\cdots$ 为来自总体 $X$ 的简单随机样本. 记 $\nu_n(1)$ 为 $n$ 个观测值中不大于 1 的个数，则 $\frac{\nu_n(1)}{n}$ 依概率收敛于（　　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{2}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1-\frac{1}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$1-\frac{2}{\mathrm{e}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">依题意知，$P\{X=k\}=\dfrac{\mathrm{e}^{-1}}{k!},P\{X\leqslant 1\}=P\{X=0\}+P\{X=1\}=2\mathrm{e}^{-1}$.
+于是 $\dfrac{\nu_n(1)}{n}$ 为事件 $\{X\leqslant 1\}$ 在 $n$ 个观测值中出现的频率，$P\{X\leqslant 1\}$ 为事件 $\{X\leqslant 1\}$ 发生的概率. 由伯努利大数定律，知
+$$\frac{\nu_n(1)}{n}\xrightarrow{P}P\{X\leqslant 1\}=2\mathrm{e}^{-1}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-64.html">上一章：第6章 数字特征</a>
+      <a class="chapter-link" href="chapter-66.html">下一章：第8章 统计量及其分布</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 65, "total": 3, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

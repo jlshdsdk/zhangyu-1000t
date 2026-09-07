@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 多维随机变量及其分布 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第4章 多维随机变量及其分布<span class="top-count">（6题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="62" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X,Y$ 独立同分布，$P\{X=k\}=\dfrac{1}{a^k},k=1,2,\cdots$，则 $P\{X&gt;Y\}=（　）$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{2a}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{3a}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知 $a&gt;1$，再由概率分布的归一性，有 $\sum\limits_{k=1}^{\infty}\frac{1}{a^k}=\frac{\frac{1}{a}}{1-\frac{1}{a}}=\frac{1}{a-1}=1$，得 $a=2$。又 $P\{X&gt;Y\}+P\{X=Y\}+P\{X&lt;Y\}=1$，且显然 $P\{X&gt;Y\}=P\{X&lt;Y\}$，由
+$$P\{X=Y\}=\sum_{k=1}^{\infty}P\{X=k,Y=k\}=\sum_{k=1}^{\infty}\frac{1}{2^k}\cdot\frac{1}{2^k}=\sum_{k=1}^{\infty}\frac{1}{4^k}=\frac{\frac{1}{4}}{1-\frac{1}{4}}=\frac{1}{3},$$
+故
+$$P\{X&gt;Y\}=\frac{1}{2}(1-P\{X=Y\})=\frac{1}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="62" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X,Y$ 相互独立，且 $X\sim U(-2,4),Y\sim\begin{pmatrix}-2 &amp; 2\\ \dfrac{3}{4} &amp; \dfrac{1}{4}\end{pmatrix}$，则 $P\{XY&gt;2\}=（　）$.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{6}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $X\sim U(-2,4)$，因此 $X$ 的概率密度为 $f(x)=\begin{cases}\frac{1}{6}, &amp; -2&lt;x&lt;4,\\ 0, &amp; \text{其他}.\end{cases}$ 又随机变量 $X$，$Y$ 相互独立，故
+$$\begin{aligned}P\{XY&gt;2\}&amp;=P\{Y=-2\}P\{XY&gt;2\,|\,Y=-2\}+P\{Y=2\}P\{XY&gt;2\,|\,Y=2\}\\&amp;=P\{Y=-2\}P\{X&lt;-1\}+P\{Y=2\}P\{X&gt;1\}\\&amp;=\frac{3}{4}\int_{-2}^{-1}\frac{1}{6}\mathrm{d}x+\frac{1}{4}\int_{1}^{4}\frac{1}{6}\mathrm{d}x=\frac{3}{4}\times\frac{1}{6}+\frac{1}{4}\times\frac{3}{6}=\frac{1}{4}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="62" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二维随机变量 $(X,Y)$ 的概率密度为 $f(x,y)=\begin{cases}\dfrac{1}{4}, &amp; -1\leqslant x&lt;1,0\leqslant y&lt;2,\\ 0, &amp; \text{其他},\end{cases}$ 则二次型 $g(x_1,x_2,x_3)=x_1^2+2x_2^2+Yx_3^2+2x_1x_2+2Xx_1x_3$ 正定的概率为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{2}{3}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{4}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">题设二次型 $g(x_1,x_2,x_3)$ 对应的矩阵为
+$$A=\begin{pmatrix}1&amp;1&amp;X\\1&amp;2&amp;0\\X&amp;0&amp;Y\end{pmatrix}.$$\n注意到 $A$ 的顺序主子式：$\Delta_1=1&gt;0$，$\Delta_2=\begin{vmatrix}1&amp;1\\1&amp;2\end{vmatrix}=1&gt;0$，$\Delta_3=|A|$，故若要 $A$ 正定，当且仅当
+$$|A|=\begin{vmatrix}1&amp;1&amp;X\\1&amp;2&amp;0\\X&amp;0&amp;Y\end{vmatrix}=Y-2X^2&gt;0.$$\n故 $g(x_1,x_2,x_3)$ 正定的概率为
+$$P\{Y-2X^2&gt;0\}=\int_{-1}^{1}\mathrm{d}x\int_{2x^2}^{2}\frac{1}{4}\mathrm{d}y=\frac{2}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="62" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2,\cdots,X_n$ 是来自总体 $X$ 的简单随机样本，$Y=\max\limits_{2\leqslant i\leqslant n}\{X_i\}$，已知 $X$ 的概率密度为 $f(x)=\begin{cases}\mathrm{e}^{-x}, &amp; x&gt;0,\\ 0, &amp; x\leqslant 0,\end{cases}$ 则 $P\{X_1Y-Y&lt;0\}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">总体 $X$ 的分布函数为 $F(x)=P\{X\leqslant x\}=\int_{-\infty}^{x}f(t)\mathrm{d}t=\begin{cases}1-\mathrm{e}^{-x}, &amp; x\geqslant 0,\\ 0, &amp; x&lt;0,\end{cases}$ 所以 $Y$ 的分布函数为
+$$\begin{aligned}F_Y(y)&amp;=P\{Y\leqslant y\}=P\{X_2\leqslant y,X_3\leqslant y,\cdots,X_n\leqslant y\}\\&amp;=P\{X_2\leqslant y\}P\{X_3\leqslant y\}\cdots P\{X_n\leqslant y\}=[F(y)]^{n-1}\\&amp;=\begin{cases}(1-\mathrm{e}^{-y})^{n-1}, &amp; y\geqslant 0,\\ 0, &amp; y&lt;0.\end{cases}\end{aligned}$$\n因为 $P\{X_1&lt;1\}=F(1)=1-\frac{1}{\mathrm{e}}$，且 $X_1$ 与 $Y$ 相互独立，所以
+$$\begin{aligned}P\{X_1Y-Y&lt;0\}&amp;=P\{X_1&lt;1,Y&gt;0\}+P\{X_1&gt;1,Y&lt;0\}\\&amp;=P\{X_1&lt;1\}P\{Y&gt;0\}+P\{X_1&gt;1\}P\{Y&lt;0\}\\&amp;=F(1)[1-F_Y(0)]+[1-F(1)]F_Y(0)\\&amp;=1-\frac{1}{\mathrm{e}}.\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1-\frac{1}{e}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="62" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X$ 在 $[0,2]$ 上服从均匀分布，$Y$ 服从参数为 $\lambda=2$ 的指数分布，且 $X,Y$ 相互独立，则关于 $a$ 的方程 $a^2+Xa+Y=0$ 有实根的概率为 ______（答案用标准正态分布的分布函数 $\Phi(x)$ 表示）.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f_X(x)=\begin{cases}\frac{1}{2}, &amp; 0\leqslant x\leqslant 2,\\ 0, &amp; \text{其他},\end{cases}$ $f_Y(y)=\begin{cases}2\mathrm{e}^{-2y}, &amp; y&gt;0,\\ 0, &amp; \text{其他},\end{cases}$ 且 $X,Y$ 相互独立，故
+$$f(x,y)=\begin{cases}\mathrm{e}^{-2y}, &amp; 0\leqslant x\leqslant 2,y&gt;0,\\ 0, &amp; \text{其他}.\end{cases}$$\n方程 $a^2+Xa+Y=0$ 有实根，则需要 $X^2-4Y\geqslant 0$，即 $Y\leqslant\frac{X^2}{4}$。如图所示，故方程有实根的概率为
+【图】平面直角坐标系中第一象限内曲线 $y=\frac{x^2}{4}$ 自原点上升，$x$ 轴上标注 $2$，曲线下方与 $0\leqslant x\leqslant 2$ 之间的区域为阴影。
+$$P\left\{Y\leqslant\frac{X^2}{4}\right\}=\iint\limits_{y\leqslant\frac{x^2}{4}}f(x,y)\,\mathrm{d}x\mathrm{d}y=\iint\limits_{\substack{0\leqslant x\leqslant 2\\0\leqslant y\leqslant\frac{x^2}{4}}}\mathrm{e}^{-2y}\,\mathrm{d}x\mathrm{d}y$$
+$$\begin{aligned}&amp;=\int_{0}^{2}\mathrm{d}x\int_{0}^{\frac{x^2}{4}}\mathrm{e}^{-2y}\mathrm{d}y=-\frac{1}{2}\int_{0}^{2}\left(\mathrm{e}^{-2y}\Big|_{0}^{\frac{x^2}{4}}\right)\mathrm{d}x\\&amp;=-\frac{1}{2}\int_{0}^{2}(\mathrm{e}^{-\frac{x^2}{2}}-1)\,\mathrm{d}x=1-\frac{1}{2}\int_{0}^{2}\mathrm{e}^{-\frac{x^2}{2}}\,\mathrm{d}x\\&amp;=1-\frac{\sqrt{2\pi}}{2}\int_{0}^{2}\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{x^2}{2}}\,\mathrm{d}x\\&amp;=1-\frac{\sqrt{2\pi}}{2}[\Phi(2)-\Phi(0)]\\&amp;=1+\frac{\sqrt{2\pi}}{4}-\frac{\sqrt{2\pi}}{2}\Phi(2)\\&amp;=\frac{4+\sqrt{2\pi}}{4}-\frac{\sqrt{2\pi}}{2}\Phi(2).\end{aligned}$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{4+\sqrt{2\pi}}{4}-\frac{\sqrt{2\pi}}{2}\Phi(2)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="62" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设二维正态随机变量 $(X,Y)$ 的概率密度为 $f(x,y)$，已知条件概率密度 $f_{X\mid Y}(x\mid y)=A\mathrm{e}^{-\frac{2}{3}\left(x-\frac{y}{2}\right)^2}$ 和 $f_{Y\mid X}(y\mid x)=B\mathrm{e}^{-\frac{2}{3}\left(y-\frac{x}{2}\right)^2}$. 求：
+$(1)$ 常数 $A$ 和 $B$；
+$(2)$ 边缘概率密度 $f_X(x)$ 和 $f_Y(y)$；
+$(3)f(x,y)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】(1) 由性质 $\int_{-\infty}^{+\infty}f_{X|Y}(x\,|\,y)\,\mathrm{d}x=1$ 可以定出常数 $A$。\n也可以更简单地把 $A\mathrm{e}^{-\frac{2}{3}\left(x-\frac{y}{2}\right)^2}$ 看成形式 $\frac{1}{\sqrt{2\pi}\sigma}\mathrm{e}^{-\frac{(x-\mu)^2}{2\sigma^2}}$，$-\infty&lt;x&lt;+\infty$。再由 $-\frac{2}{3}\left(x-\frac{y}{2}\right)^2=-\frac{(x-\mu)^2}{2\sigma^2}$ 求出 $\sigma$，然后求出 $A=\frac{1}{\sqrt{2\pi}\sigma}$。同理可得常数 $B$。\n(2) $f_{X|Y}(x\,|\,y)=\frac{f(x,y)}{f_Y(y)}$，$f_{Y|X}(y\,|\,x)=\frac{f(x,y)}{f_X(x)}$，故 $\frac{f_{X|Y}(x\,|\,y)}{f_{Y|X}(y\,|\,x)}=\frac{f_X(x)}{f_Y(y)}$，从而将 $x,y$ 的函数分离。\n(3) $f(x,y)=f_{X|Y}(x\,|\,y)\cdot f_Y(y)$。\n【解析】(1) 令 $A\mathrm{e}^{-\frac{2}{3}\left(x-\frac{y}{2}\right)^2}=\frac{1}{\sqrt{2\pi}\sigma}\mathrm{e}^{-\frac{(x-\mu)^2}{2\sigma^2}}$，即 $\begin{cases}-\frac{2}{3}\left(x-\frac{y}{2}\right)^2=-\frac{(x-\mu)^2}{2\sigma^2},\\ A=\frac{1}{\sqrt{2\pi}\sigma},\end{cases}$ 解得
+$$\mu=\frac{y}{2},\sigma=\frac{\sqrt{3}}{2},A=\sqrt{\frac{2}{3\pi}}.$$\n同理得 $B=\sqrt{\frac{2}{3\pi}}$。\n(2) $\frac{f_{X|Y}(x\,|\,y)}{f_{Y|X}(y\,|\,x)}=\frac{f_X(x)}{f_Y(y)}=\mathrm{e}^{-\frac{2}{3}\left[\left(x^2-xy+\frac{y^2}{4}\right)-\left(y^2-xy+\frac{x^2}{4}\right)\right]}=\mathrm{e}^{-\frac{x^2-y^2}{2}}=\frac{\mathrm{e}^{-\frac{x^2}{2}}}{\mathrm{e}^{-\frac{y^2}{2}}}$，故 $f_X(x)=C\mathrm{e}^{-\frac{x^2}{2}}$，$f_Y(y)=C\mathrm{e}^{-\frac{y^2}{2}}$，显然 $C=\frac{1}{\sqrt{2\pi}}$，即
+$$f_X(x)=\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{x^2}{2}},-\infty&lt;x&lt;+\infty,$$
+$$f_Y(y)=\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{y^2}{2}},-\infty&lt;y&lt;+\infty.$$\n(3) $f(x,y)=f_{X|Y}(x\,|\,y)\cdot f_Y(y)=\sqrt{\frac{2}{3\pi}}\,\mathrm{e}^{-\frac{2}{3}\left(x-\frac{y}{2}\right)^2}\cdot\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-\frac{y^2}{2}}$
+$$=\frac{1}{\sqrt{3\pi}}\mathrm{e}^{-\frac{2}{3}(x^2-xy+y^2)}\ (-\infty&lt;x&lt;+\infty,-\infty&lt;y&lt;+\infty).$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-61.html">上一章：第3章 一维随机变量函数的分布</a>
+      <a class="chapter-link" href="chapter-63.html">下一章：第5章 多维随机变量函数的分布</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 62, "total": 6, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

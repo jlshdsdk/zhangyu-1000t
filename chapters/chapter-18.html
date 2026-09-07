@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第17章 多元函数积分学的预备知识 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第17章 多元函数积分学的预备知识<span class="top-count">（14题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x,y)$ 在点 $(0,0)$ 处可微，$f(0,0)=0$，$f'_x(0,0)=1$，$f'_y(0,0)=-1$，且 $\boldsymbol{n}=(-1,1,1)$，则 $\lim\limits_{\substack{x\to 0\\ y\to 0}}\dfrac{(x,y,f(x,y))\cdot\boldsymbol{n}}{\mathrm{e}^{\sqrt{x^2+y^2}}-1}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式 $= \lim\limits_{\substack{x \to 0\\ y \to 0}}\dfrac{-x + y + f(x,y)}{\sqrt{x^2 + y^2}}$
+$$= \lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y) - f(0,0) - (x - 0) - (-1)(y - 0)}{\sqrt{x^2 + y^2}}$$
+$$= \lim_{\substack{x \to 0\\ y \to 0}}\frac{f(x,y) - f(0,0) - f'_x(0,0)(x - 0) - f'_y(0,0)(y - 0)}{\sqrt{x^2 + y^2}}.$$
+由于函数 $f(x,y)$ 在点 $(0,0)$ 处可微，故原式为 0.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设可微函数 $z=f(x,y)$ 的图形与 $xOy$ 面的交线方程为 $y=\int_{0}^{x}\mathrm{e}^{t^2}\,\mathrm{d}t+x$，且 $f'_x(0,0)=1$，则 $f'_y(0,0)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知，$f\left(x, \int_{0}^{x}\mathrm{e}^{t^2}\,\mathrm{d}t + x\right) = 0$，对 $x$ 求导得 $f'_x + f'_y\cdot(\mathrm{e}^{x^2} + 1) = 0$，又因为 $f'_x(0,0) = 1$，故 $f'_y(0,0) = -\dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{1}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">过点 $(1,0,1)$ 与 $(0,1,1)$ 且与曲面 $z=1+x^2+y^2$ 相切的平面为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设切点为 $(x_0, y_0, z_0)$，法向量为 $(-2x_0, -2y_0, 1)$，则
+$$\begin{cases} z_0 = 1 + x_0^2 + y_0^2, \\ -2x_0(x_0 - 0) - 2y_0(y_0 - 1) + (z_0 - 1) = 0, \\ -2x_0(1 - 0) - 2y_0(0 - 1) + (1 - 1) = 0, \end{cases}$$
+解得 $\begin{cases} x_0 = 0, \\ y_0 = 0, \\ z_0 = 1 \end{cases}$ 或 $\begin{cases} x_0 = 1, \\ y_0 = 1, \\ z_0 = 3. \end{cases}$ 故法向量为 $(0,0,1)$ 或 $(-2,-2,1)$，所以平面方程为
+$$z = 1\ \text{或}\ z - 2x - 2y + 1 = 0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$z = 1$ 或 $z - 2x - 2y + 1 = 0$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲面 $z=2x+y+\ln(1+x^2+y^2)$ 在点 $(0,0,0)$ 处的切平面方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x,y,z) = 2x + y + \ln(1 + x^2 + y^2) - z$，则
+$$F'_x = 2 + \frac{2x}{1 + x^2 + y^2}, F'_y = 1 + \frac{2y}{1 + x^2 + y^2}, F'_z = -1.$$
+因为 $F'_x\big|_{(0,0,0)} = 2, F'_y\big|_{(0,0,0)} = 1, F'_z\big|_{(0,0,0)} = -1$，故所求切平面方程为 $2x + y - z = 0$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$2x + y - z = 0$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">曲面 $z=4-x^2-y^2$ 在点 $P(1,1,2)$ 处的切平面方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x,y,z) = 4 - x^2 - y^2 - z$，则
+$$F'_x = -2x, F'_y = -2y, F'_z = -1,$$
+因为 $F'_x\big|_{(1,1,2)} = F'_y\big|_{(1,1,2)} = -2, F'_z\big|_{(1,1,2)} = -1$，故所求切平面方程为 $-2(x - 1) - 2(y - 1) - (z - 2) = 0$，整理可得 $2x + 2y + z = 6$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$2x + 2y + z = 6$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知曲面 $z=f(x,y)$ 由方程 $z-x\ln(1+z^2)+\mathrm{e}^y=0$ 所确定，则该曲面在点 $(0,0,-1)$ 处的切平面方程为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意，有
+$$\frac{\partial z}{\partial x} - \ln(1 + z^2) - x\cdot\frac{2z}{1 + z^2}\cdot\frac{\partial z}{\partial x} = 0,$$
+$$\frac{\partial z}{\partial y} - x\cdot\frac{2z}{1 + z^2}\cdot\frac{\partial z}{\partial y} + \mathrm{e}^y = 0,$$
+故 $\dfrac{\partial z}{\partial x}\bigg|_{(0,0,-1)} = \ln 2, \dfrac{\partial z}{\partial y}\bigg|_{(0,0,-1)} = -1.$
+令 $F(x,y,z) = f(x,y) - z$，则在点 $(0,0,-1)$ 处的法向量为 $\boldsymbol{n} = (\ln 2, -1, -1)$，于是所求切平面方程为 $\ln 2(x - 0) - (y - 0) - (z + 1) = 0$，即
+$$x\ln 2 - y - z - 1 = 0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$x\ln 2 - y - z - 1 = 0$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="18" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求以 $M_0(1,1,1)$ 为顶点，以曲线 $C$（$C$ 是平面 $z=0$ 上 $y^2=x$ 被 $x=1$ 截下的有限部分）为准线的锥面方程.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $M(x,y,z)$ 是所求锥面上任意一点，母线 $MM_0$ 与 $C$ 相交于点 $M_1(x_1, y_1, z_1)$，则当 $x \leqslant 1$ 时，
+$$\begin{cases} y_1^2 = x_1, \\ z_1 = 0, \\ x_1 = 1 + (x - 1)t, \\ y_1 = 1 + (y - 1)t, \\ z_1 = 1 + (z - 1)t, \end{cases}$$
+消去 $x_1, y_1, z_1, t$，得到关于 $x, y, z$ 的方程，即所求的锥面方程为
+$$(z - y)^2 = (z - x)(z - 1).$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x,y)=\begin{cases}\dfrac{x^2\,|\,y\,|}{x^2+y^2}, &amp; (x,y)\neq(0,0),\\ 0, &amp; (x,y)=(0,0),\end{cases}$ 则 $f(x,y)$ 在点 $(0,0)$ 处沿 $\boldsymbol{l}=(1,1)$ 的方向导数是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设可得，
+$$\frac{\partial f}{\partial l}\bigg|_{(0,0)} = \lim_{t \to 0^+}\frac{f\left(0 + \dfrac{t}{\sqrt{2}}, 0 + \dfrac{t}{\sqrt{2}}\right) - f(0,0)}{t} = \lim_{t \to 0^+}\frac{\dfrac{t^2}{2}\cdot\dfrac{t}{\sqrt{2}}}{\left(\dfrac{t^2}{2} + \dfrac{t^2}{2}\right)t} = \dfrac{\sqrt{2}}{4}.$$
+【注】由于 $t \to 0^+$，则 $|y| = \dfrac{|t|}{\sqrt{2}} = \dfrac{t}{\sqrt{2}}$，这是要注意的.
+若认为 $t \to 0$，则会得出方向导数不存在的错误结果.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\sqrt{2}}{4}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">函数 $f(x,y)=2x^2+y^2$ 在点 $(0,1)$ 的最大方向导数为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">沿着梯度方向的方向导数最大，最大值为梯度的模. 因为
+$$\frac{\partial f}{\partial x}\bigg|_{(0,1)} = 0, \frac{\partial f}{\partial y}\bigg|_{(0,1)} = 2,$$
+所以 $\operatorname{grad} f\big|_{(0,1)} = 0\boldsymbol{i} + 2\boldsymbol{j}$，故最大方向导数为 2.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">2</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x,y,z)=x^2\mathrm{e}^{yz^2}$，则 $f(x,y,z)$ 在点 $(-1,0,1)$ 处的方向导数的最小值为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\operatorname{grad} f\Big|_{(-1,0,1)} = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}\right)\Big|_{(-1,0,1)}$$
+$$= (2x\mathrm{e}^{yz^2}, x^2z^2\mathrm{e}^{yz^2}, 2x^2yz\mathrm{e}^{yz^2})\Big|_{(-1,0,1)} = (-2, 1, 0),$$
+所以 $f(x,y,z)$ 在 $(-1,0,1)$ 处方向导数的最小值为 $-\left|\operatorname{grad} f\Big|_{(-1,0,1)}\right| = -\sqrt{5}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\sqrt{5}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="18" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a,b$ 为实数，函数 $z=2+ax^2+by^2$ 在点 $(1,2)$ 处的方向导数中，沿方向 $\boldsymbol{l}=\boldsymbol{i}+2\boldsymbol{j}$ 的方向导数最大，最大值为 10. 求 $a,b$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">函数 $z = 2 + ax^2 + by^2$ 在点 $(1,2)$ 处的梯度为
+$$\operatorname{grad} z = (2a, 4b).$$
+由题设条件，知 $\begin{cases} 2a = k, \\ 4b = 2k, \\ \sqrt{4a^2 + 16b^2} = 10, \end{cases}$ 其中 $k &gt; 0$. 解得 $a = \sqrt{5}, b = \sqrt{5}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="18" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $g(x,y)$ 是函数 $f(x,y)=x+2y+xy$ 在点 $(x,y)$ 处的最大方向导数.\n(1) 求 $g(x,y)$ 的表达式；\n(2) 求 $g(x,y)$ 在曲线 $C:x^2+y^2=5$ 上的最大值.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 因为 $\operatorname{grad} f(x,y) = (1 + y, 2 + x)$，所以
+$$g(x,y) = |\operatorname{grad} f(x,y)| = \sqrt{(2 + x)^2 + (1 + y)^2}.$$
+(2) 求 $g(x,y)$ 在曲线 $C$ 上的最大值等价于求 $(2 + x)^2 + (1 + y)^2$ 在条件 $x^2 + y^2 = 5$ 下的最大值.
+令 $F(x,y,\lambda) = (2 + x)^2 + (1 + y)^2 + \lambda(x^2 + y^2 - 5)$，建立方程
+$$\begin{cases} F'_x = 2(2 + x) + 2\lambda x = 0, \\ F'_y = 2(1 + y) + 2\lambda y = 0, \\ F'_\lambda = x^2 + y^2 - 5 = 0, \end{cases}$$
+解得 $\begin{cases} x = 2, \\ y = 1 \end{cases}$ 或 $\begin{cases} x = -2, \\ y = -1. \end{cases}$
+因为 $g(2,1) = 2\sqrt{5}$，$g(-2,-1) = 0$，所以 $g(x,y)$ 在曲线 $C$ 上的最大值为 $2\sqrt{5}$.
+【注】不要忘记 $g(x,y)$ 的表达式需要开根号. 本题的约束条件相对简单，也可以直接消元，转化成一元函数问题，即令 $x = \sqrt{5}\cos t, y = \sqrt{5}\sin t\ (0 \leqslant t \leqslant 2\pi)$，考虑一元函数 $h(t) = g(\sqrt{5}\cos t, \sqrt{5}\sin t)$ 的最大值即可，在此方法下只用基本的函数关系就可以解决最值问题.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="18" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设可微函数 $z=z(x,y)$ 在平面上任一点 $(x,y)$ 处沿 $x$ 轴正向 $\boldsymbol{i}$ 与 $y$ 轴正向 $\boldsymbol{j}$ 的方向导数分别为 $[\mathrm{e}^{-x}-f(x)]y$ 与 $f(x)$，其中 $f(x)$ 的一阶导数连续，且 $f(0)=1$.\n(1) 求 $z(x,y)$ 的表达式；\n(2) 判断 $z(x,y)$ 是否有极值，若有，求之，若无，说明理由.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 由题意知 $z'_x = [\mathrm{e}^{-x} - f(x)]y, z'_y = f(x)$，故
+$$z(x,y) = \left[-\mathrm{e}^{-x} - \int f(x)\,\mathrm{d}x\right]y + \varphi(y) = yf(x) + \psi(x),$$
+令 $y = 0$，可得 $\psi(x) = \varphi(0)\stackrel{\text{记}}{=} C_0$，又 $z'_x = [\mathrm{e}^{-x} - f(x)]y = yf'(x)$，消去 $y$，即
+$$f'(x) + f(x) = \mathrm{e}^{-x},$$
+解微分方程，得
+$$f(x) = x\mathrm{e}^{-x} + C\mathrm{e}^{-x},$$
+又 $f(0) = 1$，所以 $C = 1$，故 $f(x) = (x + 1)\mathrm{e}^{-x}$，即
+$$z(x,y) = yf(x) + C_0 = y(x + 1)\mathrm{e}^{-x} + C_0\ (C_0\ \text{为任意常数}).$$
+(2) 由(1)知 $z(x,y) = y(x + 1)\mathrm{e}^{-x} + C_0$，则
+$$z'_x = y\mathrm{e}^{-x} - y(x + 1)\mathrm{e}^{-x} = -yx\mathrm{e}^{-x}, z'_y = (x + 1)\mathrm{e}^{-x},$$
+令 $z'_x = 0, z'_y = 0$，得 $x = -1, y = 0$. 又
+$$A = z''_{xx} = -y\mathrm{e}^{-x} + yx\mathrm{e}^{-x} = y(x - 1)\mathrm{e}^{-x},$$
+$$B = z''_{xy} = -x\mathrm{e}^{-x}, C = z''_{yy} = 0,$$
+代入 $x = -1, y = 0$，得 $A = 0, B = \mathrm{e}, C = 0$，则 $\Delta = AC - B^2 = -\mathrm{e}^2 &lt; 0$，故 $z(x,y)$ 无极值.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="18" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\boldsymbol{F}(x,y,z)=xy\boldsymbol{i}-y\cos z\,\boldsymbol{j}+z\sin x\,\boldsymbol{k}$，则 $\left.\operatorname{rot}\boldsymbol{F}\right|_{(1,1,0)}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\operatorname{rot}\boldsymbol{F}(x,y,z) = \begin{vmatrix} \boldsymbol{i} &amp; \boldsymbol{j} &amp; \boldsymbol{k} \\ \dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial}{\partial z} \\ xy &amp; -y\cos z &amp; z\sin x \end{vmatrix} = -y\sin z\,\boldsymbol{i} - z\cos x\,\boldsymbol{j} - x\boldsymbol{k}$，故
+$$\operatorname{rot}\boldsymbol{F}\Big|_{(1,1,0)} = -\boldsymbol{k}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-k$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-17.html">上一章：第16章 无穷级数</a>
+      <a class="chapter-link" href="chapter-19.html">下一章：第18章 多元函数积分学</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 18, "total": 14, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

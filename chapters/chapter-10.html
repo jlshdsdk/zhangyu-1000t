@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第9章 一元函数积分学的计算 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第9章 一元函数积分学的计算<span class="top-count">（36题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="10" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算下列不定积分.（1）$\int\cos^{3}x\,\mathrm{d}x$；（2）$\int\sin^{3}x\,\mathrm{d}x$；（3）$\int\sec x\,\mathrm{d}x$；（4）$\int\sec^{3}x\,\mathrm{d}x$；（5）$\int\frac{1}{a^{2}-x^{2}}\,\mathrm{d}x\ (a\neq 0)$；（6）$\int\frac{1}{x^{2}-a^{2}}\,\mathrm{d}x\ (a\neq 0)$；（7）$\int\frac{1}{a^{2}+x^{2}}\,\mathrm{d}x\ (a\neq 0)$；（8）$\int\frac{1}{a^{2}+(x+b)^{2}}\,\mathrm{d}x\ (a\neq 0)$；（9）$\int\frac{1}{a^{2}-(x+b)^{2}}\,\mathrm{d}x\ (a&gt;0)$；（10）$\int\frac{1}{(x+b)^{2}-a^{2}}\,\mathrm{d}x\ (a&gt;0)$；（11）$\int\frac{1}{\sqrt{x^{2}-a^{2}}}\,\mathrm{d}x\ (a&gt;0)$；（12）$\int\frac{1}{\sqrt{a^{2}-x^{2}}}\,\mathrm{d}x\ (a&gt;0)$；（13）$\int\frac{1}{\sqrt{x^{2}+a^{2}}}\,\mathrm{d}x\ (a&gt;0)$；（14）$\int\csc^{3}x\,\mathrm{d}x$；（15）$\int\tan^{2}x\,\mathrm{d}x$；（16）$\int\tan^{3}x\,\mathrm{d}x$；（17）$\int\tan^{4}x\,\mathrm{d}x$；（18）$\int\cot^{3}x\,\mathrm{d}x$；（19）$\int\frac{\cos x}{1+\sin x}\,\mathrm{d}x$；（20）$\int\frac{1}{a^{2}\sin^{2}x+b^{2}\cos^{2}x}\,\mathrm{d}x$；（21）$\int\frac{1}{\sin 2x}\,\mathrm{d}x$；（22）$\int\frac{1}{\cos 2x}\,\mathrm{d}x$；（23）$\int\frac{1}{a+b\cos x}\,\mathrm{d}x\ (a&gt;0,b&gt;0)$；（24）$\int\frac{1}{a+b\sin x}\,\mathrm{d}x\ (a&gt;0,b&gt;0)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 方法一 $\int \cos^3 x\mathrm{d}x = \int (1-\sin^2 x)\mathrm{d}(\sin x) = \sin x - \frac{1}{3}\sin^3 x + C.$
+
+方法二 $\int \cos^3 x\mathrm{d}x = \int \frac{3\cos x + \cos 3x}{4}\mathrm{d}x = \frac{3}{4}\sin x + \frac{1}{12}\sin 3x + C.$
+
+(2) 方法一 $\int \sin^3 x\mathrm{d}x = -\int (1-\cos^2 x)\mathrm{d}(\cos x) = -\cos x + \frac{1}{3}\cos^3 x + C.$
+
+方法二 $\int \sin^3 x\mathrm{d}x = \int \frac{3\sin x - \sin 3x}{4}\mathrm{d}x = -\frac{3}{4}\cos x + \frac{1}{12}\cos 3x + C.$
+
+(3) 方法一 $\int \sec x\mathrm{d}x = \int \frac{\sec x(\sec x + \tan x)}{\sec x + \tan x}\mathrm{d}x = \int \frac{\mathrm{d}(\sec x + \tan x)}{\sec x + \tan x} = \ln \mid \sec x + \tan x \mid + C.$
+
+方法二 $\int \sec x\mathrm{d}x = \int \frac{\mathrm{d}x}{\cos x} = \int \frac{\mathrm{d}\left(x + \frac{\pi}{2}\right)}{\sin \left(x + \frac{\pi}{2}\right)} = \int \frac{\mathrm{d}\left(x + \frac{\pi}{2}\right)}{2\sin \left(\frac{x}{2} + \frac{\pi}{4}\right)\cos \left(\frac{x}{2} + \frac{\pi}{4}\right)}$
+
+$$= \int \frac{\sec^2 \left(\frac{x}{2} + \frac{\pi}{4}\right)\mathrm{d}\left(\frac{x}{2} + \frac{\pi}{4}\right)}{\tan \left(\frac{x}{2} + \frac{\pi}{4}\right)} = \ln \left| \tan \left(\frac{x}{2} + \frac{\pi}{4}\right) \right| + C.$$
+
+(4) $\int \sec^3 x\mathrm{d}x = \int \sec x\mathrm{d}(\tan x) = \sec x\tan x - \int \tan^2 x\sec x\mathrm{d}x$
+
+$$= \sec x\tan x - \int (\sec^3 x - \sec x)\mathrm{d}x = \sec x\tan x - \int \sec^3 x\mathrm{d}x + \int \sec x\mathrm{d}x,$$
+
+又由(3)，得
+
+$$\int \sec^3 x\mathrm{d}x = \frac{1}{2}\left[ \sec x\tan x + \ln \left| \tan \left(\frac{x}{2} + \frac{\pi}{4}\right) \right| \right] + C.$$
+
+(5) $\int \frac{1}{a^2 - x^2}\mathrm{d}x = \int \frac{1}{2a}\left( \frac{1}{a+x} + \frac{1}{a-x} \right)\mathrm{d}x = \frac{1}{2a}(\ln \mid a+x \mid - \ln \mid a-x \mid) + C$
+
+$$= \frac{1}{2a}\ln \left| \frac{a+x}{a-x} \right| + C.$$
+
+(6) $\int \frac{1}{x^2 - a^2}\mathrm{d}x = -\frac{1}{2a}\int \left( \frac{1}{a+x} + \frac{1}{a-x} \right)\mathrm{d}x \xlongequal{\text{由(5)}} -\frac{1}{2a}\ln \left| \frac{a+x}{a-x} \right| + C.$
+
+(7) $\int \frac{1}{a^2 + x^2}\mathrm{d}x = \int \frac{1}{a^2} \cdot \frac{1}{1 + \left(\frac{x}{a}\right)^2}\mathrm{d}x = \frac{1}{a}\int \frac{1}{1 + \left(\frac{x}{a}\right)^2}\mathrm{d}\left(\frac{x}{a}\right) = \frac{1}{a}\arctan \frac{x}{a} + C.$
+
+(8) $\int \frac{1}{a^2 + (x+b)^2}\mathrm{d}x = \int \frac{1}{a^2 + (x+b)^2}\mathrm{d}(x+b) \xlongequal{\text{由(7)}} \frac{1}{a}\arctan \frac{x+b}{a} + C.$
+
+(9) $\int \frac{1}{a^2 - (x+b)^2}\mathrm{d}x = \int \frac{1}{a^2 - (x+b)^2}\mathrm{d}(x+b)$
+
+$$\xlongequal{\text{由(5)}} \frac{1}{2a}\ln \left| \frac{a + (x+b)}{a - (x+b)} \right| + C = \frac{1}{2a}\ln \left| \frac{x + a + b}{-x + a - b} \right| + C.$$
+
+(10) $\int \frac{1}{(x+b)^2 - a^2}\mathrm{d}x = -\int \frac{1}{a^2 - (x+b)^2}\mathrm{d}x \xlongequal{\text{由(9)}} -\frac{1}{2a}\ln \left| \frac{x + a + b}{-x + a - b} \right| + C.$
+
+(11) 设 $x = a\sec t$，有 $\mathrm{d}x = a\sec t\tan t\,\mathrm{d}t$. 当 $0 &lt; t &lt; \frac{\pi}{2}$ 时，$x = a\sec t &gt; 0$，且存在反函数.
+
+$$\int \frac{\mathrm{d}x}{\sqrt{x^2 - a^2}} = \int \frac{a\sec t\tan t}{a\tan t}\mathrm{d}t = \int \sec t\,\mathrm{d}t = \ln(\sec t + \tan t) + C_1 = \ln(x + \sqrt{x^2 - a^2}) + C.$$
+
+当 $\frac{\pi}{2} &lt; t &lt; \pi$ 时，$x = a\sec t &lt; 0$，且存在反函数.
+
+$$\int \frac{\mathrm{d}x}{\sqrt{x^2 - a^2}} = -\int \sec t\,\mathrm{d}t = -\ln(-\sec t - \tan t) + C_2$$
+
+$$= -\ln(-x + \sqrt{x^2 - a^2}) + C_3 = \ln(-x - \sqrt{x^2 - a^2}) + C.$$
+
+综上，$\int \frac{\mathrm{d}x}{\sqrt{x^2 - a^2}} = \ln \mid x + \sqrt{x^2 - a^2} \mid + C.$
+
+(12) $\int \frac{1}{\sqrt{a^2 - x^2}}\mathrm{d}x = \int \frac{1}{a} \cdot \frac{\mathrm{d}x}{\sqrt{1 - \left(\frac{x}{a}\right)^2}} = \int \frac{\mathrm{d}\left(\frac{x}{a}\right)}{\sqrt{1 - \left(\frac{x}{a}\right)^2}} = \arcsin \frac{x}{a} + C.$
+
+(13) 设 $x = a\tan t$，则 $\mathrm{d}x = a\sec^2 t\,\mathrm{d}t$，当 $-\frac{\pi}{2} &lt; t &lt; \frac{\pi}{2}$ 时，$x = a\tan t$ 存在反函数.
+
+所以
+
+$$\int \frac{\mathrm{d}x}{\sqrt{x^2 + a^2}} = \int \frac{a\sec^2 t\,\mathrm{d}t}{a\sqrt{\tan^2 t + 1}} = \int \frac{\sec^2 t}{\sec t}\mathrm{d}t = \int \sec t\,\mathrm{d}t = \ln \mid \sec t + \tan t \mid + C_1.$$
+
+由 $\tan t = \frac{x}{a}$ 得 $\sec t = \frac{\sqrt{a^2 + x^2}}{a}$，所以
+
+$$\int \frac{\mathrm{d}x}{\sqrt{x^2 + a^2}} = \ln \mid \sec t + \tan t \mid + C_1 = \ln \left( \frac{\sqrt{x^2 + a^2}}{a} + \frac{x}{a} \right) + C_1$$
+
+$$= \ln(\sqrt{x^2 + a^2} + x) + C.$$
+
+(14) $\int \csc^3 x\mathrm{d}x = \int \csc^2 x\csc x\mathrm{d}x = -\int \csc x\mathrm{d}(\cot x)$
+
+$$= -\csc x\cot x + \int \cot x\mathrm{d}(\csc x) = -\csc x\cot x - \int \cot^2 x\csc x\mathrm{d}x$$
+
+$$= -\csc x\cot x - \int \csc x(\csc^2 x - 1)\mathrm{d}x = -\csc x\cot x - \int \csc^3 x\mathrm{d}x + \int \csc x\mathrm{d}x,$$
+
+$$\int \csc x\mathrm{d}x = \int \frac{\csc x(\csc x - \cot x)}{\csc x - \cot x}\mathrm{d}x = \int \frac{\mathrm{d}(\csc x - \cot x)}{\csc x - \cot x} = \ln \mid \csc x - \cot x \mid + C_1,$$
+
+故
+
+$$\int \csc^3 x\mathrm{d}x = \frac{1}{2}(-\csc x\cot x + \ln \mid \csc x - \cot x \mid + C_1) = -\frac{1}{2}\csc x\cot x + \frac{1}{2}\ln \mid \csc x - \cot x \mid + C.$$
+
+(15) $\int \tan^2 x\mathrm{d}x = \int \frac{\sin^2 x}{\cos^2 x}\mathrm{d}x = \int \frac{1 - \cos^2 x}{\cos^2 x}\mathrm{d}x = \int \sec^2 x\mathrm{d}x - \int 1\mathrm{d}x = \tan x - x + C.$
+
+(16) $\int \tan^3 x\mathrm{d}x = \int \tan x(\sec^2 x - 1)\mathrm{d}x$
+
+$$= \int \tan x\mathrm{d}(\tan x) - \int \tan x\mathrm{d}x = \frac{1}{2}\tan^2 x + \ln \mid \cos x \mid + C.$$
+
+【注】由上式可知 $n$ 次方的递推公式，即
+
+$$\int \tan^n x\mathrm{d}x = \int \tan^{n-2} x(\sec^2 x - 1)\mathrm{d}x = \int \tan^{n-2} x\mathrm{d}(\tan x) - \int \tan^{n-2} x\mathrm{d}x = \frac{\tan^{n-1} x}{n-1} - \int \tan^{n-2} x\mathrm{d}x.$$
+
+(17) $\int \tan^4 x\mathrm{d}x \xlongequal{\text{由(16)的注}} \frac{\tan^3 x}{3} - \int \tan^2 x\mathrm{d}x \xlongequal{\text{由(15)}} \frac{\tan^3 x}{3} - \tan x + x + C.$
+
+(18) $\int \cot^3 x\mathrm{d}x = \int \frac{\cos^3 x}{\sin^3 x}\mathrm{d}x = \int \frac{1 - \sin^2 x}{\sin^3 x}\mathrm{d}(\sin x) = \int \frac{1}{\sin^3 x}\mathrm{d}(\sin x) - \int \frac{1}{\sin x}\mathrm{d}(\sin x) = -\frac{\csc^2 x}{2} + \ln \mid \csc x \mid + C.$
+
+(19) 令 $\sin x = \frac{2t}{1+t^2}$，$\cos x = \frac{1-t^2}{1+t^2}$，其中 $t = \tan \frac{x}{2}$，则 $\mathrm{d}x = \frac{2\mathrm{d}t}{1+t^2}$，故
+
+$$\int \frac{\cos x}{1 + \sin x}\mathrm{d}x = \int \frac{\frac{1-t^2}{1+t^2}}{1 + \frac{2t}{1+t^2}} \cdot \frac{2\mathrm{d}t}{1+t^2} = \int \frac{1-t^2}{1+t^2} \cdot \frac{1+t^2}{(1+t)^2} \cdot \frac{2}{1+t^2}\mathrm{d}t$$
+
+$$= 2\int \frac{1-t}{(1+t)(1+t^2)}\mathrm{d}t = 2\int \left( \frac{1}{1+t} - \frac{t}{1+t^2} \right)\mathrm{d}t = \ln \frac{(1+t)^2}{1+t^2} + C = \ln \frac{\left(1 + \tan \frac{x}{2}\right)^2}{1 + \tan^2 \frac{x}{2}} + C.$$
+
+(20) $\int \frac{1}{a^2\sin^2 x + b^2\cos^2 x}\mathrm{d}x = \int \frac{\mathrm{d}x}{b^2\cos^2 x\left( \frac{a^2}{b^2}\tan^2 x + 1 \right)}$
+
+$$= \frac{1}{b^2}\int \frac{\mathrm{d}(\tan x)}{\left( \frac{a}{b}\tan x \right)^2 + 1} = \frac{1}{ab}\arctan \left( \frac{a}{b}\tan x \right) + C.$$
+
+(21) $\int \frac{1}{\sin 2x}\mathrm{d}x = \int \frac{\mathrm{d}x}{2\sin x\cos x} = \frac{1}{2}\int \frac{\mathrm{d}x}{\frac{\sin x}{\cos x} \cdot \cos^2 x}$
+
+$$= \frac{1}{2}\int \frac{\mathrm{d}(\tan x)}{\tan x} = \frac{1}{2}\ln \mid \tan x \mid + C.$$
+
+(22) $\int \frac{1}{\cos 2x}\mathrm{d}x = \frac{1}{2}\int \frac{\mathrm{d}(\sin 2x)}{\cos^2 2x} = \frac{1}{2}\int \frac{\mathrm{d}(\sin 2x)}{1 - \sin^2 2x}$
+
+$$= \frac{1}{2}\int \frac{\mathrm{d}(\sin 2x)}{(1 - \sin 2x)(1 + \sin 2x)} = \frac{1}{4}\int \left( \frac{1}{1 - \sin 2x} + \frac{1}{1 + \sin 2x} \right)\mathrm{d}(\sin 2x)$$
+
+$$= \frac{1}{4}\left[ \int \frac{\mathrm{d}(1 + \sin 2x)}{1 + \sin 2x} - \int \frac{\mathrm{d}(1 - \sin 2x)}{1 - \sin 2x} \right] = \frac{1}{4}\ln \frac{1 + \sin 2x}{1 - \sin 2x} + C.$$
+
+(23) 令 $\sin x = \frac{2t}{1+t^2}$，$\cos x = \frac{1-t^2}{1+t^2}$，其中 $t = \tan \frac{x}{2}$，则 $\mathrm{d}x = \frac{2\mathrm{d}t}{1+t^2}$，
+
+$$\int \frac{\mathrm{d}x}{a + b\cos x} = \int \frac{\frac{2\mathrm{d}t}{1+t^2}}{a + b\frac{1-t^2}{1+t^2}} = 2\int \frac{\mathrm{d}t}{a(1+t^2) + b(1-t^2)} = 2\int \frac{\mathrm{d}t}{a + b + at^2 - bt^2}.$$
+
+当 $a &lt; b$ 时，
+
+$$\text{原式} = \frac{2}{a-b}\int \frac{\mathrm{d}t}{\frac{a+b}{a-b} + t^2} = \frac{2}{a-b}\int \frac{\mathrm{d}t}{\left( t - \sqrt{\frac{a+b}{b-a}} \right)\left( t + \sqrt{\frac{a+b}{b-a}} \right)}$$
+
+$$= \frac{2}{2(a-b)\sqrt{\frac{a+b}{b-a}}}\left[ \int \frac{\mathrm{d}\left( t - \sqrt{\frac{a+b}{b-a}} \right)}{\left( t - \sqrt{\frac{a+b}{b-a}} \right)} - \int \frac{\mathrm{d}\left( t + \sqrt{\frac{a+b}{b-a}} \right)}{\left( t + \sqrt{\frac{a+b}{b-a}} \right)} \right]$$
+
+$$= -\frac{1}{\sqrt{b^2 - a^2}}\ln \left| \frac{t - \sqrt{\frac{a+b}{b-a}}}{t + \sqrt{\frac{a+b}{b-a}}} \right| + C = -\frac{1}{\sqrt{b^2 - a^2}}\ln \left| \frac{\tan \frac{x}{2} - \sqrt{\frac{a+b}{b-a}}}{\tan \frac{x}{2} + \sqrt{\frac{a+b}{b-a}}} \right| + C.$$
+
+当 $a = b$ 时，
+
+$$\text{原式} = 2\int \frac{\mathrm{d}t}{a + at^2} = \frac{1}{a}\tan \frac{x}{2} + C.$$
+
+当 $a &gt; b$ 时，
+
+$$\text{原式} = 2\int \frac{\mathrm{d}t}{a + b + (a-b)t^2} = \frac{2}{a+b}\int \frac{\mathrm{d}t}{1 + \frac{a-b}{a+b}t^2}$$
+
+$$= \frac{2}{a+b}\sqrt{\frac{a+b}{a-b}}\int \frac{\mathrm{d}\left( \sqrt{\frac{a-b}{a+b}}t \right)}{1 + \left( \sqrt{\frac{a-b}{a+b}}t \right)^2} = \frac{2}{\sqrt{a^2 - b^2}}\int \frac{\mathrm{d}\left( \sqrt{\frac{a-b}{a+b}}t \right)}{1 + \left( \sqrt{\frac{a-b}{a+b}}t \right)^2}$$
+
+$$= \frac{2}{\sqrt{a^2 - b^2}}\arctan \left( \sqrt{\frac{a-b}{a+b}}\tan \frac{x}{2} \right) + C.$$
+
+(24) 令 $\sin x = \frac{2t}{1+t^2}$，$\cos x = \frac{1-t^2}{1+t^2}$，其中 $t = \tan \frac{x}{2}$，则 $\mathrm{d}x = \frac{2\mathrm{d}t}{1+t^2}$，
+
+$$\int \frac{\mathrm{d}x}{a + b\sin x} = \int \frac{\frac{2\mathrm{d}t}{1+t^2}}{a + b\frac{2t}{1+t^2}} = 2\int \frac{\mathrm{d}t}{a(1+t^2) + 2bt} = 2\int \frac{\mathrm{d}t}{a + at^2 + 2bt}.$$
+
+当 $a &lt; b$ 时，
+$$\text{原式}=\frac{2}{\sqrt{a}}\int\frac{\mathrm{d}\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)}{\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)^2-\frac{b^2-a^2}{a}}=\frac{2}{\sqrt{a}}\int\frac{\mathrm{d}\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)}{\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)^2-\left(\sqrt{\frac{b^2-a^2}{a}}\right)^2}$$
+$$=\frac{2}{\sqrt{a}}\int\frac{\mathrm{d}\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)}{\left(\sqrt{a}t+\frac{b}{\sqrt{a}}-\sqrt{\frac{b^2-a^2}{a}}\right)\left(\sqrt{a}t+\frac{b}{\sqrt{a}}+\sqrt{\frac{b^2-a^2}{a}}\right)}$$
+$$=\frac{2}{\sqrt{a}}\cdot\frac{1}{2\sqrt{\frac{b^2-a^2}{a}}}\int\left[\frac{1}{\sqrt{a}t+\frac{b}{\sqrt{a}}-\sqrt{\frac{b^2-a^2}{a}}}-\frac{1}{\sqrt{a}t+\frac{b}{\sqrt{a}}+\sqrt{\frac{b^2-a^2}{a}}}\right]\mathrm{d}\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)$$
+$$=\frac{1}{\sqrt{b^2-a^2}}\ln\left|\frac{at+b-\sqrt{b^2-a^2}}{at+b+\sqrt{b^2-a^2}}\right|+C$$
+$$=\frac{1}{\sqrt{b^2-a^2}}\ln\left|\frac{a\tan\frac{x}{2}+b-\sqrt{b^2-a^2}}{a\tan\frac{x}{2}+b+\sqrt{b^2-a^2}}\right|+C.$$
+当 $a=b$ 时，
+$$\text{原式}=\frac{2}{a}\int\frac{\mathrm{d}t}{1+t^2+2t}=\frac{2}{a}\int\frac{\mathrm{d}(1+t)}{(1+t)^2}=-\frac{2}{a}\cdot\frac{1}{1+t}+C=-\frac{2}{a\left(1+\tan\frac{x}{2}\right)}+C.$$
+当 $a&gt;b$ 时，
+$$\text{原式}=2\int\frac{\mathrm{d}t}{\left(\sqrt{a}t+\frac{b}{\sqrt{a}}\right)^2+\frac{a^2-b^2}{a}}$$
+$$=2\int\frac{\mathrm{d}t}{\frac{a^2-b^2}{a}\left[\left(\sqrt{a}\sqrt{\frac{a}{a^2-b^2}}t+\sqrt{\frac{a}{a^2-b^2}}\frac{b}{\sqrt{a}}\right)^2+1\right]}$$
+$$=\frac{2a}{a^2-b^2}\int\frac{\mathrm{d}t}{\left(\sqrt{a}\sqrt{\frac{a}{a^2-b^2}}t+\sqrt{\frac{a}{a^2-b^2}}\frac{b}{\sqrt{a}}\right)^2+1}$$
+$$=\frac{2a}{a^2-b^2}\cdot\frac{\sqrt{a^2-b^2}}{a}\int\frac{\mathrm{d}\left(\frac{a}{\sqrt{a^2-b^2}}t+\frac{b}{\sqrt{a^2-b^2}}\right)}{\left(\frac{a}{\sqrt{a^2-b^2}}t+\frac{b}{\sqrt{a^2-b^2}}\right)^2+1}$$
+$$=\frac{2}{\sqrt{a^2-b^2}}\int\frac{\mathrm{d}\left(\frac{a}{\sqrt{a^2-b^2}}t+\frac{b}{\sqrt{a^2-b^2}}\right)}{\left(\frac{a}{\sqrt{a^2-b^2}}t+\frac{b}{\sqrt{a^2-b^2}}\right)^2+1}$$
+$$=\frac{2}{\sqrt{a^2-b^2}}\arctan\left(\frac{a}{\sqrt{a^2-b^2}}t+\frac{b}{\sqrt{a^2-b^2}}\right)+C$$
+$$=\frac{2}{\sqrt{a^2-b^2}}\arctan\left(\frac{a}{\sqrt{a^2-b^2}}\tan\frac{x}{2}+\frac{b}{\sqrt{a^2-b^2}}\right)+C.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="10" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算不定积分 $\int\frac{\mathrm{e}^{2x}}{\sqrt{\mathrm{e}^{x}-1}}\,\mathrm{d}x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一 $\int\frac{\mathrm{e}^{2x}}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}x=\int\frac{\mathrm{e}^x}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}(\mathrm{e}^x)=\int\frac{\mathrm{e}^x-1+1}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}(\mathrm{e}^x)$
+$$=\int\left(\sqrt{\mathrm{e}^x-1}+\frac{1}{\sqrt{\mathrm{e}^x-1}}\right)\mathrm{d}(\mathrm{e}^x-1)$$
+$$=\frac{2}{3}(\mathrm{e}^x-1)^{\frac{3}{2}}+2\sqrt{\mathrm{e}^x-1}+C.$$
+方法二 令 $t=\sqrt{\mathrm{e}^x-1}$，则 $t^2=\mathrm{e}^x-1$，$x=\ln(t^2+1)$，$\mathrm{e}^{2x}=(t^2+1)^2$，故
+$$\text{原式}=\int\frac{(t^2+1)^2}{t}\cdot\frac{2t}{t^2+1}\mathrm{d}t=\int(2t^2+2)\mathrm{d}t=\frac{2}{3}t^3+2t+C$$
+$$=\frac{2}{3}(\mathrm{e}^x-1)^{\frac{3}{2}}+2\sqrt{\mathrm{e}^x-1}+C.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="10" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算不定积分 $\int\ln\left(1+\sqrt{\frac{1+x}{x}}\right)\mathrm{d}x\ (x&gt;0)$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\sqrt{\frac{1+x}{x}}=t$，则 $x=\frac{1}{t^2-1}$，于是
+$$\int\ln\left(1+\sqrt{\frac{1+x}{x}}\right)\mathrm{d}x=\int\ln(1+t)\,\mathrm{d}\left(\frac{1}{t^2-1}\right)=\frac{\ln(1+t)}{t^2-1}-\int\frac{1}{t^2-1}\cdot\frac{1}{t+1}\mathrm{d}t,$$
+又
+$$\int\frac{1}{(t^2-1)(t+1)}\mathrm{d}t=\frac{1}{4}\int\left[\frac{1}{t-1}-\frac{1}{t+1}-\frac{2}{(t+1)^2}\right]\mathrm{d}t$$
+$$=\frac{1}{4}\ln(t-1)-\frac{1}{4}\ln(t+1)+\frac{1}{2(t+1)}+C_1,$$
+所以
+$$\int\ln\left(1+\sqrt{\frac{1+x}{x}}\right)\mathrm{d}x=\frac{\ln(1+t)}{t^2-1}+\frac{1}{4}\ln\frac{t+1}{t-1}-\frac{1}{2(t+1)}+C$$
+$$=x\ln\left(1+\sqrt{\frac{1+x}{x}}\right)+\frac{1}{2}\ln(\sqrt{1+x}+\sqrt{x})-\frac{\sqrt{x}}{2(\sqrt{1+x}+\sqrt{x})}+C.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="10" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">计算不定积分 $\int \mathrm{e}^{2x}\arctan\sqrt{\mathrm{e}^{x}-1}\,\mathrm{d}x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int \mathrm{e}^{2x}\arctan\sqrt{\mathrm{e}^x-1}\,\mathrm{d}x=\frac{1}{2}\int\arctan\sqrt{\mathrm{e}^x-1}\,\mathrm{d}(\mathrm{e}^{2x})$$
+$$=\frac{1}{2}\mathrm{e}^{2x}\arctan\sqrt{\mathrm{e}^x-1}-\frac{1}{4}\int\frac{\mathrm{e}^{2x}}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}x.$$
+又
+$$\int\frac{\mathrm{e}^{2x}}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}x=\int\frac{\mathrm{e}^x}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}(\mathrm{e}^x)=\int\frac{(\mathrm{e}^x-1)+1}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}(\mathrm{e}^x)$$
+$$=\int\sqrt{\mathrm{e}^x-1}\,\mathrm{d}(\mathrm{e}^x)+\int\frac{1}{\sqrt{\mathrm{e}^x-1}}\mathrm{d}(\mathrm{e}^x)$$
+$$=\frac{2}{3}(\mathrm{e}^x-1)\sqrt{\mathrm{e}^x-1}+2\sqrt{\mathrm{e}^x-1}+C_1,$$
+所以 $\int \mathrm{e}^{2x}\arctan\sqrt{\mathrm{e}^x-1}\,\mathrm{d}x=\frac{1}{2}\mathrm{e}^{2x}\arctan\sqrt{\mathrm{e}^x-1}-\frac{1}{6}(\mathrm{e}^x+2)\sqrt{\mathrm{e}^x-1}+C.$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">定积分 $\int_{0}^{1}\mathrm{e}^{-\sqrt{x}}\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$2-\frac{4}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1-\frac{2}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$1-\frac{1}{\mathrm{e}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\sqrt{x}=t$，则 $x=t^{2}$，$\mathrm{d}x=2t\,\mathrm{d}t$，且当 $x=0$ 时，$t=0$；当 $x=1$ 时，$t=1.$ 所以
+$$\int_0^1 \mathrm{e}^{-\sqrt{x}}\mathrm{d}x=2\int_0^1 t\mathrm{e}^{-t}\mathrm{d}t=-2t\mathrm{e}^{-t}\Big|_0^1+2\int_0^1 \mathrm{e}^{-t}\mathrm{d}t=-\frac{2}{\mathrm{e}}-2\mathrm{e}^{-t}\Big|_0^1=-\frac{2}{\mathrm{e}}-2(\mathrm{e}^{-1}-1)=2-\frac{4}{\mathrm{e}},$$
+故正确选项为(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{0}^{1}\frac{4x-3}{x^{2}-x+1}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_0^1\frac{4x-3}{x^2-x+1}\mathrm{d}x=\int_0^1\frac{2(2x-1)-1}{x^2-x+1}\mathrm{d}x=2\int_0^1\frac{\mathrm{d}(x^2-x+1)}{x^2-x+1}-\int_0^1\frac{1}{x^2-x+1}\mathrm{d}x$$
+$$=2\ln(x^2-x+1)\Big|_0^1-\int_0^1\frac{1}{\left(x-\frac{1}{2}\right)^2+\left(\frac{\sqrt{3}}{2}\right)^2}\mathrm{d}x$$
+$$=-\frac{2}{\sqrt{3}}\arctan\frac{x-\frac{1}{2}}{\frac{\sqrt{3}}{2}}\Big|_0^1=-\frac{2}{\sqrt{3}}\left(\frac{\pi}{6}+\frac{\pi}{6}\right)$$
+$$=-\frac{2\sqrt{3}}{9}\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{2\sqrt{3}}{9}\pi$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{0}^{1}\frac{\arctan\sqrt{x}}{\sqrt{x}(1+x)}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\text{原式}=2\int_0^1\arctan\sqrt{x}\,\mathrm{d}(\arctan\sqrt{x})$$
+$$=\left(\arctan\sqrt{x}\right)^2\Big|_0^1$$
+$$=\left(\frac{\pi}{4}\right)^2=\frac{\pi^2}{16}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\pi^2}{16}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{0}^{\frac{\pi}{4}}\sec^{3}\theta\,\mathrm{d}\theta=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由
+$$\int_0^{\frac{\pi}{4}}\sec^3\theta\,\mathrm{d}\theta=\int_0^{\frac{\pi}{4}}\sec\theta\,\mathrm{d}(\tan\theta)$$
+$$=\sec\theta\tan\theta\Big|_0^{\frac{\pi}{4}}-\int_0^{\frac{\pi}{4}}\sec\theta\tan^2\theta\,\mathrm{d}\theta$$
+$$=\sqrt{2}-\int_0^{\frac{\pi}{4}}(\sec^3\theta-\sec\theta)\,\mathrm{d}\theta,$$
+得
+$$\int_0^{\frac{\pi}{4}}\sec^3\theta\,\mathrm{d}\theta=\frac{1}{2}\left(\sqrt{2}+\int_0^{\frac{\pi}{4}}\sec\theta\,\mathrm{d}\theta\right)$$
+$$=\frac{1}{2}\left(\sqrt{2}+\ln\left|\sec\theta+\tan\theta\right|\Big|_0^{\frac{\pi}{4}}\right)$$
+$$=\frac{1}{2}[\sqrt{2}+\ln(\sqrt{2}+1)].$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{2}[\sqrt{2}+\ln(\sqrt{2}+1)]$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设连续函数 $f(x)$ 满足：$f(x+1)-f(x)=x\ln x$，$\int_{0}^{1}f(x)\,\mathrm{d}x=0$，则 $\int_{1}^{2}f(x)\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $x=t+1$，则
+$$\int_1^2 f(x)\mathrm{d}x=\int_0^1 f(t+1)\,\mathrm{d}t=\int_0^1\left[f(t)+t\ln t\right]\mathrm{d}t$$
+$$=\int_0^1 f(t)\mathrm{d}t+\int_0^1 t\ln t\,\mathrm{d}t,$$
+其中
+$$\int_0^1 t\ln t\,\mathrm{d}t\xlongequal{t=\mathrm{e}^u}\int_{-\infty}^{0}u\mathrm{e}^{2u}\mathrm{d}u$$
+$$=\frac{1}{2}\int_{-\infty}^{0}u\,\mathrm{d}(\mathrm{e}^{2u})$$
+$$=\frac{1}{2}u\mathrm{e}^{2u}\Big|_{-\infty}^{0}-\frac{1}{2}\int_{-\infty}^{0}\mathrm{e}^{2u}\mathrm{d}u$$
+$$=-\frac{1}{4}\mathrm{e}^{2u}\Big|_{-\infty}^{0}=-\frac{1}{4},$$
+故原式 $=-\dfrac{1}{4}.$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{1}{4}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $y=\frac{x}{\sqrt{1+x^{2}}}$，则 $\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}xy\,\mathrm{d}y=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $y^2=\dfrac{x^2}{1+x^2}$，得 $x=\dfrac{y}{\sqrt{1-y^2}}$，故
+$$\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}xy\,\mathrm{d}y=\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}\frac{y^2}{\sqrt{1-y^2}}\mathrm{d}y\xlongequal{y=\sin t}\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\frac{\sin^2 t}{\cos t}\cdot\cos t\,\mathrm{d}t$$
+$$=\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\sin^2 t\,\mathrm{d}t=\frac{\pi}{12}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\pi}{12}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $\mathrm{e}^{-x}$ 是 $f(x)$ 的一个原函数，则 $\int_{1}^{\sqrt{2}}\frac{1}{x^{2}}f(\ln x)\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $f(x)=(\mathrm{e}^{-x})'=-\mathrm{e}^{-x}$，因此 $f(\ln x)=-\mathrm{e}^{-\ln x}=-\dfrac{1}{x}$，从而
+$$\int_1^{\sqrt{2}}\frac{1}{x^2}f(\ln x)\mathrm{d}x=-\int_1^{\sqrt{2}}\frac{1}{x^3}\mathrm{d}x=\frac{1}{2}\cdot\frac{1}{x^2}\Big|_1^{\sqrt{2}}=\frac{1}{4}-\frac{1}{2}=-\frac{1}{4}.$$
+故正确选项为(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若函数 $f(x)$ 在 $[0,+\infty)$ 上连续，$g(x)=\int_{0}^{2x}f\left(x+\frac{t}{2}\right)\mathrm{d}t$，则当 $x\to 0^{+}$ 时，$g(x)$ 是 $\sqrt{x}$ 的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">高阶无穷小</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">低阶无穷小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">等价无穷小</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">同阶但非等价无穷小</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">在 $g(x)=\displaystyle\int_0^{2x}f\left(x+\frac{t}{2}\right)\mathrm{d}t$ 中，令 $x+\dfrac{t}{2}=u$，则
+$$g(x)=\int_0^{2x}f\left(x+\frac{t}{2}\right)\mathrm{d}t=2\int_x^{2x}f(u)\,\mathrm{d}u,$$
+$$\lim_{x\to 0^+}\frac{g(x)}{\sqrt{x}}=\lim_{x\to 0^+}\frac{2\displaystyle\int_x^{2x}f(u)\,\mathrm{d}u}{\sqrt{x}}$$
+$$\xlongequal{\text{洛必达法则}}2\lim_{x\to 0^+}\frac{2f(2x)-f(x)}{\dfrac{1}{2\sqrt{x}}}$$
+$$=4\lim_{x\to 0^+}\sqrt{x}\left[2f(2x)-f(x)\right]=0,$$
+这表明当 $x\to 0^+$ 时，$g(x)$ 是 $\sqrt{x}$ 的高阶无穷小，
+故正确选项为(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $x=0$ 的某邻域内连续，在 $x=0$ 处可导，且 $f(0)=0$，$\varphi(x)=\begin{cases}\dfrac{1}{x^{2}}\displaystyle\int_{0}^{x}tf(t)\,\mathrm{d}t, &amp; x\neq 0,\\ 0, &amp; x=0,\end{cases}$ 则 $\varphi(x)$ 在 $x=0$ 处（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不连续</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">连续但不可导</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">可导但 $\varphi'(x)$ 在 $x=0$ 处不连续</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">可导且 $\varphi'(x)$ 在 $x=0$ 处连续</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$\lim_{x\to 0}\varphi(x)=\lim_{x\to 0}\dfrac{\displaystyle\int_0^x tf(t)\,\mathrm{d}t}{x^2}\xlongequal{\text{洛必达法则}}\lim_{x\to 0}\dfrac{xf(x)}{2x}=\dfrac{1}{2}f(0)=0=\varphi(0)$，
+因此 $\varphi(x)$ 在 $x=0$ 处连续.
+当 $x\neq 0$ 时，
+$$\varphi'(x)=\frac{x^3f(x)-2x\displaystyle\int_0^x tf(t)\,\mathrm{d}t}{x^4}=\frac{f(x)}{x}-\frac{2\displaystyle\int_0^x tf(t)\,\mathrm{d}t}{x^3};$$
+当 $x=0$ 时，
+$$\varphi'(0)=\lim_{x\to 0}\frac{\varphi(x)-\varphi(0)}{x-0}=\lim_{x\to 0}\frac{\displaystyle\int_0^x tf(t)\,\mathrm{d}t}{x^3}=\lim_{x\to 0}\frac{xf(x)}{3x^2}$$
+$$=\frac{1}{3}\lim_{x\to 0}\frac{f(x)}{x}=\frac{1}{3}\lim_{x\to 0}\frac{f(x)-f(0)}{x}=\frac{1}{3}f'(0).$$
+$$\lim_{x\to 0}\varphi'(x)=\lim_{x\to 0}\frac{f(x)}{x}-\lim_{x\to 0}\frac{2\displaystyle\int_0^x tf(t)\,\mathrm{d}t}{x^3}$$
+$$=f'(0)-\frac{2}{3}f'(0)=\frac{1}{3}f'(0)=\varphi'(0),$$
+这表明 $\varphi'(x)$ 在 $x=0$ 处连续，故选(D).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若连续周期函数 $y=f(x)$（不恒为常数），对任何 $x$ 恒有 $\int_{-1}^{x+6}f(t)\,\mathrm{d}t+\int_{x-3}^{4}f(t)\,\mathrm{d}t=14$ 成立，则 $f(x)$ 的周期是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">7</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">8</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">9</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">10</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\displaystyle\int_{-1}^{x+6}f(t)\,\mathrm{d}t+\int_{x-3}^{4}f(t)\,\mathrm{d}t=14$ 求导，得
+$$f(x+6)-f(x-3)=0,$$
+即 $f(x+6)=f(x-3)$，令 $x-3=t$，则 $x=t+3$，代入 $f(x+6)=f(x-3)$ 中得 $f(t+9)=f(t)$，
+所以 $f(x)$ 以 9 为周期.
+故正确选项为(C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $[-a,a]$ 上是连续的偶函数，$a&gt;0$，$g(x)=\int_{-a}^{a}\left|x-t\right|\cdot f(t)\,\mathrm{d}t$，则在 $[-a,a]$ 上（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$g(x)$ 是单调递增函数</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$g(x)$ 是单调递减函数</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$g(x)$ 是偶函数</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$g(x)$ 是奇函数</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$g(x)=\int_{-a}^{a}|x-t|f(t)\,\mathrm{d}t=\int_{-a}^{x}(x-t)f(t)\,\mathrm{d}t+\int_{x}^{a}(t-x)f(t)\,\mathrm{d}t$$
+$$=x\int_{-a}^{x}f(t)\,\mathrm{d}t-\int_{-a}^{x}tf(t)\,\mathrm{d}t+\int_{x}^{a}tf(t)\,\mathrm{d}t-x\int_{x}^{a}f(t)\,\mathrm{d}t.$$
+因为 $f(x)$ 连续，故上式中的变限积分函数均可导，求导得
+$$g'(x)=\int_{-a}^{x}f(t)\,\mathrm{d}t+xf(x)-xf(x)-xf(x)-\int_{x}^{a}f(t)\,\mathrm{d}t+xf(x)$$
+$$=\int_{-a}^{x}f(t)\,\mathrm{d}t-\int_{x}^{a}f(t)\,\mathrm{d}t,$$
+其中，$\displaystyle\int_{-a}^{x}f(t)\,\mathrm{d}t\xlongequal{t=-u}\int_{-x}^{a}f(-u)\,\mathrm{d}u\xlongequal{f(x)\text{为偶函数}}\int_{-x}^{a}f(u)\,\mathrm{d}u=\int_{-x}^{a}f(t)\,\mathrm{d}t.$
+故
+$$g'(x)=\int_{-x}^{a}f(t)\,\mathrm{d}t-\int_{x}^{a}f(t)\,\mathrm{d}t=\int_{-x}^{x}f(t)\,\mathrm{d}t+\int_{a}^{x}f(t)\,\mathrm{d}t$$
+$$=\int_{-x}^{x}f(t)\,\mathrm{d}t,$$
+因无法确定 $f(x)$ 在 $(-x,x)$ 上的正负，故 $g(x)$ 的单调性未知.
+$$g(-x)=\int_{-a}^{a}|-x-t|f(t)\,\mathrm{d}t=\int_{-a}^{a}|x+t|f(t)\,\mathrm{d}t$$
+$$\xlongequal{\text{令 }t=-u}\int_{a}^{-a}|x-u|f(-u)\,\mathrm{d}(-u)$$
+$$=\int_{-a}^{a}\left|x-u\right|f(u)\mathrm{d}u=g(x),$$故可知 $g(x)$ 是偶函数，所以选(C).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $F(x)=\int_{-\pi}^{\pi}\left|x-t\right|\sin t\,\mathrm{d}t$，则 $F'(0)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-4$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为
+$$F(x)=\int_{-\pi}^{\pi}\left|x-t\right|\sin t\,\mathrm{d}t=\int_{-\pi}^{x}(x-t)\sin t\,\mathrm{d}t+\int_{x}^{\pi}(t-x)\sin t\,\mathrm{d}t$$
+$$=x\int_{-\pi}^{x}\sin t\,\mathrm{d}t-\int_{-\pi}^{x}t\sin t\,\mathrm{d}t+\int_{x}^{\pi}t\sin t\,\mathrm{d}t-x\int_{x}^{\pi}\sin t\,\mathrm{d}t,$$
+所以
+$$F'(x)=\int_{-\pi}^{x}\sin t\,\mathrm{d}t+x\sin x-x\sin x-x\sin x-\int_{x}^{\pi}\sin t\,\mathrm{d}t+x\sin x$$
+$$=\int_{-\pi}^{x}\sin t\,\mathrm{d}t-\int_{x}^{\pi}\sin t\,\mathrm{d}t,$$
+即
+$$F'(0)=\int_{-\pi}^{0}\sin t\,\mathrm{d}t-\int_{0}^{\pi}\sin t\,\mathrm{d}t=-\cos t\Big|_{-\pi}^{0}+\cos t\Big|_{0}^{\pi}=-4.$$
+故正确选项为(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若函数 $y(x)=\int_{2}^{x^{2}}\mathrm{e}^{-\sqrt{t}}\,\mathrm{d}t$，则 $\left.\dfrac{\mathrm{d}^{2}\left[y(x)\right]}{\mathrm{d}x^{2}}\right|_{x=-1}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$4\mathrm{e}^{-1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$4\mathrm{e}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由于本题是求在 $x=-1$ 处的二阶导数值，不妨设 $x&lt;0$.
+$$\frac{\mathrm{d}\left[y(x)\right]}{\mathrm{d}x}=\mathrm{e}^{-\sqrt{x^2}}(x^2)'=2x\mathrm{e}^{-\sqrt{x^2}}=2x\mathrm{e}^{x},$$
+$$\frac{\mathrm{d}^2\left[y(x)\right]}{\mathrm{d}x^2}=(2x\mathrm{e}^{x})'=2\mathrm{e}^{x}+2x\mathrm{e}^{x}=2(1+x)\mathrm{e}^{x},$$
+所以
+$$\frac{\mathrm{d}^2\left[y(x)\right]}{\mathrm{d}x^2}\bigg|_{x=-1}=2(1+x)\mathrm{e}^{x}\Big|_{x=-1}=0.$$
+故正确选项为(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x)=\int_{1}^{x}\sqrt{1+t^{3}}\,\mathrm{d}t$，则 $\int_{0}^{1}xf(x)\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】方法一　由 $f(x)=\int_{1}^{x}\sqrt{1+t^3}\,\mathrm{d}t$，可得 $f'(x)=\sqrt{1+x^3}$，且 $f(1)=0$，从而
+$$\int_{0}^{1}xf(x)\mathrm{d}x=\frac{1}{2}\int_{0}^{1}f(x)\mathrm{d}(x^2)=\frac{1}{2}\left[x^2f(x)\Big|_{0}^{1}-\int_{0}^{1}x^2f'(x)\mathrm{d}x\right]$$
+$$=-\frac{1}{2}\int_{0}^{1}x^2\sqrt{1+x^3}\,\mathrm{d}x=-\frac{1}{2}\cdot\frac{2}{9}(1+x^3)^{\frac{3}{2}}\Big|_{0}^{1}$$
+$$=\frac{1}{9}(1-2\sqrt{2}).$$
+方法二　将 $f(x)=\int_{1}^{x}\sqrt{1+t^3}\,\mathrm{d}t$ 代入所求表达式，有
+$$\int_{0}^{1}xf(x)\mathrm{d}x=-\int_{0}^{1}x\mathrm{d}x\int_{x}^{1}\sqrt{1+t^3}\,\mathrm{d}t,$$
+交换积分次序并计算得
+$$\int_{0}^{1}xf(x)\mathrm{d}x=-\int_{0}^{1}\sqrt{1+t^3}\,\mathrm{d}t\int_{0}^{t}x\,\mathrm{d}x$$
+$$=-\frac{1}{2}\int_{0}^{1}t^2\sqrt{1+t^3}\,\mathrm{d}t=-\frac{1}{2}\cdot\frac{2}{9}(1+t^3)^{\frac{3}{2}}\Big|_{0}^{1}$$
+$$=\frac{1}{9}(1-2\sqrt{2}).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{1}{9}(1-2\sqrt{2})</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设连续函数 $f(x)$ 满足 $\int_{0}^{x}f(t)\,\mathrm{d}t=x\mathrm{e}^{x}$，则 $\int_{1}^{\mathrm{e}}\frac{f(\ln x)}{x}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】令 $F(x)=\int_{0}^{x}f(t)\,\mathrm{d}t=x\mathrm{e}^{x}$，则
+$$\int_{1}^{\mathrm{e}}\frac{f(\ln x)}{x}\mathrm{d}x=\int_{1}^{\mathrm{e}}f(\ln x)\,\mathrm{d}(\ln x)=F(\ln x)\Big|_{1}^{\mathrm{e}}$$
+$$=F(1)-F(0)$$
+$$=\mathrm{e}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">e</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q20" data-no="20">
+  <header class="q-head">
+    <span class="q-no">【20】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="20" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a_{n}=\int_{0}^{1}x^{n}\sqrt{1-x^{2}}\,\mathrm{d}x\ (n=0,1,2,\cdots)$，则 $\lim_{n \to \infty}\left(\frac{a_{n}}{a_{n-2}}\right)^{n}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】当 $n\geqslant 2$ 时，因为
+$$a_n=\int_{0}^{1}x^n\sqrt{1-x^2}\,\mathrm{d}x$$
+$$=-\frac{1}{3}x^{n-1}(1-x^2)^{\frac{3}{2}}\Big|_{0}^{1}+\frac{n-1}{3}\int_{0}^{1}x^{n-2}(1-x^2)^{\frac{3}{2}}\,\mathrm{d}x$$
+$$=\frac{n-1}{3}\int_{0}^{1}x^{n-2}\sqrt{1-x^2}\,\mathrm{d}x-\frac{n-1}{3}\int_{0}^{1}x^{n}\sqrt{1-x^2}\,\mathrm{d}x$$
+$$=\frac{n-1}{3}a_{n-2}-\frac{n-1}{3}a_n,$$
+所以 $a_n=\dfrac{n-1}{n+2}a_{n-2}$（$n=2,3,\cdots$），故
+$$\lim_{n\to\infty}\left(\frac{a_n}{a_{n-2}}\right)^{n}=\lim_{n\to\infty}\left(\frac{n-1}{n+2}\right)^{n}=\lim_{n\to\infty}\left(1+\frac{-3}{n+2}\right)^{n}=\mathrm{e}^{-3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\mathrm{e}^{-3}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q21" data-no="21">
+  <header class="q-head">
+    <span class="q-no">【21】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="21" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{\sqrt{5}}^{5}\frac{1}{\sqrt{\left|x^{2}-9\right|}}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】
+$$\int_{\sqrt{5}}^{5}\frac{1}{\sqrt{\left|x^2-9\right|}}\mathrm{d}x=\int_{\sqrt{5}}^{3}\frac{1}{\sqrt{9-x^2}}\mathrm{d}x+\int_{3}^{5}\frac{1}{\sqrt{x^2-9}}\mathrm{d}x$$
+$$=\arcsin\frac{x}{3}\Big|_{\sqrt{5}}^{3}+\ln\left|x+\sqrt{x^2-9}\right|\Big|_{3}^{5}$$
+$$=\frac{\pi}{2}-\arcsin\frac{\sqrt{5}}{3}+\ln 3.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{\pi}{2}-\arcsin\frac{\sqrt{5}}{3}+\ln 3</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q22" data-no="22">
+  <header class="q-head">
+    <span class="q-no">【22】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="22" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{-\infty}^{+\infty}\left|x\right|\mathrm{e}^{-x^{2}}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】$\displaystyle\int_{-\infty}^{+\infty}\left|x\right|\mathrm{e}^{-x^2}\mathrm{d}x=2\int_{0}^{+\infty}x\mathrm{e}^{-x^2}\mathrm{d}x=-\int_{0}^{+\infty}\mathrm{e}^{-x^2}\mathrm{d}(-x^2)=-\mathrm{e}^{-x^2}\Big|_{0}^{+\infty}=1.$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">1</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q23" data-no="23">
+  <header class="q-head">
+    <span class="q-no">【23】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="23" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\lim_{n \to \infty}\frac{1-x^{2n}}{1+x^{2n}}x$，且 $\int_{0}^{2}f(x)\,\mathrm{d}x=a$，则 $a$ 等于（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】由题可知，
+$$f(x)=\begin{cases}x, &amp; |x|&lt;1,\\0, &amp; |x|=1,\\-x, &amp; |x|&gt;1,\end{cases}$$
+于是有
+$$\int_{0}^{2}f(x)\mathrm{d}x=\int_{0}^{1}x\,\mathrm{d}x+\int_{1}^{2}(-x)\,\mathrm{d}x=-1.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q24" data-no="24">
+  <header class="q-head">
+    <span class="q-no">【24】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="24" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{-1}^{1}\left(\frac{1}{1+2^{\frac{1}{x}}}\right)'\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】
+$$\text{原式}=\int_{-1}^{0^{-}}\left(\frac{1}{1+2^{\frac{1}{x}}}\right)'\mathrm{d}x+\int_{0^{+}}^{1}\left(\frac{1}{1+2^{\frac{1}{x}}}\right)'\mathrm{d}x$$
+$$=\frac{1}{1+2^{\frac{1}{x}}}\bigg|_{-1}^{0^{-}}+\frac{1}{1+2^{\frac{1}{x}}}\bigg|_{0^{+}}^{1}$$
+$$=1-\frac{2}{3}+\frac{1}{3}-0=\frac{2}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{2}{3}</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q25" data-no="25">
+  <header class="q-head">
+    <span class="q-no">【25】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="25" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{-\frac{1}{2}}^{\frac{1}{2}}\frac{\left|x\right|\left(\arcsin x+\arccos x\right)}{\sqrt{1-x^{2}}}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】方法一　由于 $\arcsin x+\arccos x=\dfrac{\pi}{2}$，故
+$$\text{原式}=\pi\int_{0}^{\frac{1}{2}}\frac{x}{\sqrt{1-x^2}}\mathrm{d}x=\pi\left(-\sqrt{1-x^2}\right)\Big|_{0}^{\frac{1}{2}}$$
+$$=\pi\left(1-\frac{\sqrt{3}}{2}\right).$$
+方法二　原式$=\displaystyle\int_{-\frac{1}{2}}^{\frac{1}{2}}\frac{\left|x\right|\arccos x}{\sqrt{1-x^2}}\mathrm{d}x$
+$$=\int_{-\frac{1}{2}}^{0}\frac{-x\arccos x}{\sqrt{1-x^2}}\mathrm{d}x+\int_{0}^{\frac{1}{2}}\frac{x\arccos x}{\sqrt{1-x^2}}\mathrm{d}x$$
+$$=\sqrt{1-x^2}\arccos x\Big|_{-\frac{1}{2}}^{0}+\int_{-\frac{1}{2}}^{0}\mathrm{d}x-\sqrt{1-x^2}\arccos x\Big|_{0}^{\frac{1}{2}}-\int_{0}^{\frac{1}{2}}\mathrm{d}x$$
+$$=\frac{\pi}{2}-\frac{\sqrt{3}}{2}\cdot\frac{2}{3}\pi-\frac{\sqrt{3}}{2}\cdot\frac{\pi}{3}+\frac{\pi}{2}$$
+$$=\pi-\frac{\sqrt{3}}{2}\pi=\pi\left(1-\frac{\sqrt{3}}{2}\right).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\pi\left(1-\frac{\sqrt{3}}{2}\right)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q26" data-no="26">
+  <header class="q-head">
+    <span class="q-no">【26】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="26" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">积分 $I=\int_{1}^{\frac{3}{2}}\frac{(1-x)\arcsin(1-x)}{\sqrt{2x-x^{2}}}\,\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】令 $u=1-x$，则
+$$I=\int_{-\frac{1}{2}}^{0}\frac{u\arcsin u}{\sqrt{1-u^2}}\mathrm{d}u$$
+$$=\int_{0}^{-\frac{1}{2}}\arcsin u\,\mathrm{d}(\sqrt{1-u^2})$$
+$$=\sqrt{1-u^2}\arcsin u\Big|_{0}^{-\frac{1}{2}}-\int_{0}^{-\frac{1}{2}}\mathrm{d}u$$
+$$=\frac{\sqrt{3}}{2}\cdot\left(-\frac{\pi}{6}\right)+\frac{1}{2}=\frac{1}{2}-\frac{\sqrt{3}}{12}\pi.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{1}{2}-\frac{\sqrt{3}}{12}\pi</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q27" data-no="27">
+  <header class="q-head">
+    <span class="q-no">【27】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="27" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若 $f(x)=\frac{1}{1+x^{2}}+x^{3}\int_{0}^{1}f(x)\,\mathrm{d}x$，则 $f(x)=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】定积分$\displaystyle\int_{0}^{1}f(x)\mathrm{d}x$是一个常数，所以等式两端同时在 $[0,1]$ 上对 $x$ 进行积分得
+$$\int_{0}^{1}f(x)\mathrm{d}x=\int_{0}^{1}\frac{1}{1+x^2}\mathrm{d}x+\int_{0}^{1}\left[x^3\int_{0}^{1}f(x)\mathrm{d}x\right]\mathrm{d}x,$$
+即
+$$\int_{0}^{1}f(x)\mathrm{d}x=\arctan x\Big|_{0}^{1}+\int_{0}^{1}f(x)\,\mathrm{d}x\int_{0}^{1}x^3\,\mathrm{d}x$$
+$$=\frac{\pi}{4}+\frac{1}{4}\int_{0}^{1}f(x)\,\mathrm{d}x,$$
+解得$\displaystyle\int_{0}^{1}f(x)\mathrm{d}x=\frac{\pi}{3}$，故 $f(x)=\dfrac{1}{1+x^2}+\dfrac{\pi}{3}x^3$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">\frac{1}{1+x^2}+\frac{\pi}{3}x^3</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q28" data-no="28">
+  <header class="q-head">
+    <span class="q-no">【28】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="28" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{-1}^{1}\left[x^{3}\cos x+\ln\left(x+\sqrt{x^{2}+1}\right)\right]\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】方法一　显然，被积函数中第一项为奇函数. 判断被积函数中第二项也为奇函数，令 $f(x)=\ln(x+\sqrt{x^2+1})$，易知
+$$f(-x)=\ln(\sqrt{x^2+1}-x)=\ln\frac{1}{\sqrt{x^2+1}+x}=-f(x),x\in\left[-1,1\right].$$
+由定积分性质可得，原式 $=0$.
+方法二　由定积分性质，知第一项积分为 0. 利用分部积分法计算第二项积分.
+$$\text{原式}=x\ln\left(x+\sqrt{x^2+1}\right)\Big|_{-1}^{1}-\int_{-1}^{1}\frac{x}{\sqrt{x^2+1}}\mathrm{d}x$$
+$$=\ln(1+\sqrt{2})+\ln(-1+\sqrt{2})-0=0.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q29" data-no="29">
+  <header class="q-head">
+    <span class="q-no">【29】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="29" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\int_{0}^{x}\frac{\cos t}{1+\sin^{2}t}\,\mathrm{d}t$，则 $\int_{0}^{\frac{\pi}{2}}\frac{f'(x)}{1+f^{2}(x)}\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-\arctan\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\arctan\frac{\pi}{4}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】先求出 $f(x)$ 的表达式，再由定积分算出结果.
+$$f(x)=\int_{0}^{x}\frac{\cos t}{1+\sin^2t}\mathrm{d}t=\int_{0}^{x}\frac{\mathrm{d}(\sin t)}{1+\sin^2t}=\arctan(\sin x).$$
+$$\int_{0}^{\frac{\pi}{2}}\frac{f'(x)}{1+f^2(x)}\mathrm{d}x=\int_{0}^{\frac{\pi}{2}}\frac{\mathrm{d}\left[f(x)\right]}{1+f^2(x)}=\arctan f(x)\Big|_{0}^{\frac{\pi}{2}}$$
+$$=\arctan f\left(\frac{\pi}{2}\right)-\arctan f(0)=\arctan\frac{\pi}{4}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q30" data-no="30">
+  <header class="q-head">
+    <span class="q-no">【30】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="30" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\int_{1}^{+\infty}f(x)\,\mathrm{d}x$ 收敛，$f(x)=x^{3}\mathrm{e}^{-x^{2}}+\frac{1}{x(1+x)}\int_{1}^{+\infty}f(x)\,\mathrm{d}x$，则 $\int_{1}^{+\infty}f(x)\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{1-\ln 2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{\ln 2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\mathrm{e}}{1-\ln 2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{(1-\ln 2)\mathrm{e}}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】$\quad I=\displaystyle\int_{1}^{+\infty}f(x)\,\mathrm{d}x=\int_{1}^{+\infty}x^3\mathrm{e}^{-x^2}\mathrm{d}x+\int_{1}^{+\infty}f(x)\,\mathrm{d}x\cdot\int_{1}^{+\infty}\frac{\mathrm{d}x}{x(1+x)},$
+$$I=-\frac{1}{2}\int_{1}^{+\infty}x^2\,\mathrm{d}(\mathrm{e}^{-x^2})+I\cdot\int_{1}^{+\infty}\left(\frac{1}{x}-\frac{1}{1+x}\right)\mathrm{d}x$$
+$$=-\frac{1}{2}x^2\mathrm{e}^{-x^2}\Big|_{1}^{+\infty}+\int_{1}^{+\infty}x\mathrm{e}^{-x^2}\,\mathrm{d}x+I\ln 2,$$
+故
+$$(1-\ln 2)I=\frac{1}{2}\mathrm{e}^{-1}-\frac{1}{2}\mathrm{e}^{-x^2}\Big|_{1}^{+\infty}=\mathrm{e}^{-1},$$
+所以 $I=\dfrac{1}{(1-\ln 2)\mathrm{e}}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q31" data-no="31">
+  <header class="q-head">
+    <span class="q-no">【31】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="31" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $\alpha(x)=\int_{0}^{x}tf(t)\,\mathrm{d}t$，$\beta(x)=\int_{0}^{x}xf(t)\,\mathrm{d}t$，$f(x)&gt;0$，且 $f'(x)=o(x)\ (x\to 0^{+})$，则当 $x\to 0^{+}$ 时，$\alpha(x)$ 是 $\beta(x)$ 的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">高阶无穷小</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">低阶无穷小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">等价无穷小</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">同阶但非等价无穷小</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】因
+$$\lim_{x\to 0^{+}}\frac{\alpha(x)}{\beta(x)}=\lim_{x\to 0^{+}}\frac{\displaystyle\int_{0}^{x}tf(t)\,\mathrm{d}t}{\displaystyle x\int_{0}^{x}f(t)\,\mathrm{d}t}$$
+$$=\lim_{x\to 0^{+}}\frac{xf(x)}{\displaystyle\int_{0}^{x}f(t)\,\mathrm{d}t+xf(x)}$$
+$$=\lim_{x\to 0^{+}}\frac{f(x)+xf'(x)}{2f(x)+xf'(x)}=\frac{1}{2},$$
+故当 $x\to 0^{+}$ 时，$\alpha(x)$ 是 $\beta(x)$ 的同阶但非等价无穷小.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q32" data-no="32">
+  <header class="q-head">
+    <span class="q-no">【32】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="32" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设函数 $f(x)$ 及其反函数 $f^{-1}(x)$ 都可导，且有 $\int_{2}^{f(x)}f^{-1}(t)\,\mathrm{d}t=\frac{1}{3}x^{\frac{3}{2}}-9$，则 $f(x)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sqrt{x}-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sqrt{x}+1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$2\sqrt{x}-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2\sqrt{x}+1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】
+$$\int_{2}^{f(x)}f^{-1}(t)\,\mathrm{d}t=\frac{1}{3}x^{\frac{3}{2}}-9,$$
+对上式两端求导，得
+$$f^{-1}\left[f(x)\right]\cdot f'(x)=\frac{1}{2}x^{\frac{1}{2}},$$
+$$xf'(x)=\frac{1}{2}x^{\frac{1}{2}},$$
+$$f'(x)=\frac{1}{2}x^{-\frac{1}{2}},$$
+解得
+$$f(x)=\sqrt{x}+C.$$
+当 $f(x)=2$ 时，有 $\dfrac{1}{3}x^{\frac{3}{2}}-9=0$，则 $x=9$，于是有 $C=-1$，故 $f(x)=\sqrt{x}-1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q33" data-no="33">
+  <header class="q-head">
+    <span class="q-no">【33】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="10" data-no="33" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 上有连续的导数，则 $\lim_{a \to 0^{+}}\frac{1}{4a^{2}}\int_{-a}^{a}\left[f(t+a)-f(t-a)\right]\mathrm{d}t=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f'(0)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{4}f'(0)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">不存在</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】
+$$\lim_{a\to 0^{+}}\frac{1}{4a^2}\int_{-a}^{a}\left[f(t+a)-f(t-a)\right]\mathrm{d}t$$
+$$=\lim_{a\to 0^{+}}\frac{1}{4a^2}\left[\int_{-a}^{a}f(t+a)\,\mathrm{d}t-\int_{-a}^{a}f(t-a)\,\mathrm{d}t\right]$$
+$$=\lim_{a\to 0^{+}}\frac{1}{4a^2}\left[\int_{0}^{2a}f(t)\,\mathrm{d}t-\int_{-2a}^{0}f(t)\,\mathrm{d}t\right]$$
+$$=\lim_{a\to 0^{+}}\frac{2f(2a)-2f(-2a)}{8a}$$
+$$=\lim_{a\to 0^{+}}\frac{4f'(2a)+4f'(-2a)}{8}$$
+$$=f'(0).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q34" data-no="34">
+  <header class="q-head">
+    <span class="q-no">【34】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="10" data-no="34" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\int_{1}^{\sqrt{x}}\mathrm{e}^{-t^{2}}\,\mathrm{d}t$，求 $I=\int_{0}^{1}\frac{f(x)}{\sqrt{x}}\,\mathrm{d}x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【解析】方法一　将 $f(x)$ 代入积分 $I$ 中，得到二重积分，
+$$I=\int_{0}^{1}\frac{\displaystyle\int_{1}^{\sqrt{x}}\mathrm{e}^{-t^2}\,\mathrm{d}t}{\sqrt{x}}\,\mathrm{d}x$$
+$$=\int_{0}^{1}\left(x^{-\frac{1}{2}}\int_{1}^{\sqrt{x}}\mathrm{e}^{-t^2}\,\mathrm{d}t\right)\mathrm{d}x$$
+$$=-\int_{0}^{1}\left(x^{-\frac{1}{2}}\int_{\sqrt{x}}^{1}\mathrm{e}^{-t^2}\,\mathrm{d}t\right)\mathrm{d}x,$$
+积分区域如图所示，交换积分次序，得
+【图】$t$ 轴（纵）与 $x$ 轴（横）坐标系中画出曲线 $x=t^2$，曲线过原点，标注点 $(1,1)$，由虚线分别连至两轴，曲线与 $t$ 轴及 $t=1$ 围成积分区域.
+$$I=-\int_{0}^{1}\mathrm{e}^{-t^2}\,\mathrm{d}t\int_{0}^{t^2}\frac{\mathrm{d}x}{\sqrt{x}}$$
+$$=-2\int_{0}^{1}\mathrm{e}^{-t^2}\left(\sqrt{x}\Big|_{x=0}^{x=t^2}\right)\mathrm{d}t$$
+$$=-2\int_{0}^{1}t\mathrm{e}^{-t^2}\,\mathrm{d}t=\mathrm{e}^{-t^2}\Big|_{0}^{1}=\mathrm{e}^{-1}-1.$$
+方法二　用分部积分法.
+$$I=2\int_{0}^{1}f(x)\,\mathrm{d}(\sqrt{x})$$
+$$=2\sqrt{x}f(x)\Big|_{0}^{1}-2\int_{0}^{1}\sqrt{x}f'(x)\,\mathrm{d}x$$
+$$=-2\int_{0}^{1}\sqrt{x}\mathrm{e}^{-x}\frac{1}{2\sqrt{x}}\mathrm{d}x=-\int_{0}^{1}\mathrm{e}^{-x}\mathrm{d}x=\mathrm{e}^{-x}\Big|_{0}^{1}=\mathrm{e}^{-1}-1.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q35" data-no="35">
+  <header class="q-head">
+    <span class="q-no">【35】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="35" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{1}^{+\infty}\frac{\mathrm{d}x}{x\sqrt{x^{2}+2x-1}}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">作变换 $t=\dfrac{1}{x}$，故
+$$\text{原积分}=-\int_{1}^{0}\frac{\mathrm{d}t}{\sqrt{1+2t-t^{2}}}=\int_{0}^{1}\frac{\mathrm{d}t}{\sqrt{2-(1-t)^{2}}}=-\arcsin\frac{1-t}{\sqrt{2}}\Big|_{0}^{1}=\arcsin\frac{1}{\sqrt{2}}=\frac{\pi}{4}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{\pi}{4}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q36" data-no="36">
+  <header class="q-head">
+    <span class="q-no">【36】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="10" data-no="36" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">$\int_{0}^{+\infty}\left(\sqrt{x^{2}+1}-x\right)^{2}\mathrm{d}x=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_{0}^{+\infty}\left(\sqrt{x^{2}+1}-x\right)^{2}\mathrm{d}x=\int_{0}^{+\infty}\frac{\mathrm{d}x}{\left(\sqrt{x^{2}+1}+x\right)^{2}}$$
+$$\xlongequal{x=\tan t}\int_{0}^{\frac{\pi}{2}}\frac{\mathrm{d}t}{(1+\sin t)^{2}}\xlongequal{u=\tan\frac{t}{2}}\int_{0}^{1}\frac{\dfrac{2}{1+u^{2}}\mathrm{d}u}{\left(1+\dfrac{2u}{1+u^{2}}\right)^{2}}$$
+$$=2\int_{0}^{1}\frac{1+u^{2}}{(1+u)^{4}}\mathrm{d}u=2\int_{0}^{1}\frac{(1+u)^{2}-2u}{(1+u)^{4}}\mathrm{d}u$$
+$$=2\left[\int_{0}^{1}\frac{\mathrm{d}u}{(1+u)^{2}}-2\int_{0}^{1}\frac{u+1-1}{(1+u)^{4}}\mathrm{d}u\right]$$
+$$=2\left\{\int_{0}^{1}\frac{\mathrm{d}u}{(1+u)^{2}}-2\int_{0}^{1}\left[\frac{1}{(1+u)^{3}}-\frac{1}{(1+u)^{4}}\right]\mathrm{d}u\right\}$$
+$$=2\left\{-\frac{1}{1+u}\Big|_{0}^{1}-2\left[-\frac{1}{2(1+u)^{2}}\Big|_{0}^{1}+\frac{1}{3(1+u)^{3}}\Big|_{0}^{1}\right]\right\}$$
+$$=\frac{2}{3}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{2}{3}$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-09.html">上一章：第8章 一元函数积分学的概念与性质</a>
+      <a class="chapter-link" href="chapter-11.html">下一章：第10章 一元函数积分学的应用(一)——几何应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 10, "total": 36, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

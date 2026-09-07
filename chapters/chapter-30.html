@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章 大数定律与中心极限定理 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第5章 大数定律与中心极限定理<span class="top-count">（6题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="30" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设总体 $X$ 服从参数为 $\lambda$ 的指数分布，$X_1,X_2,\cdots,X_n,\cdots$ 为来自总体 $X$ 的简单随机样本，则 $Y_n=\dfrac{1}{n}\sum\limits_{i=1}^{n}X_i^2$ 依概率收敛于 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">本题主要考查辛钦大数定律. 由题设，$X_i\ (i=1,2,\cdots,n,\cdots)$ 均服从参数为 2 的指数分布，因此，
+$$E(X_i^{2})=D(X_i)+[E(X_i)]^{2}=\frac{2}{\lambda^{2}}=\frac{1}{2}.$$
+根据辛钦大数定律，若 $X_1,X_2,\cdots,X_n,\cdots$ 独立同分布且具有相同的数学期望，即 $E(X_i)=\mu$，则对任意的正数 $\varepsilon$，有
+$$\lim_{n\to\infty}P\left\{\left|\frac{1}{n}\sum_{i=1}^{n}X_i-\mu\right|&lt;\varepsilon\right\}=1,$$
+从而，有
+$$\lim_{n\to\infty}P\left\{\left|\frac{1}{n}\sum_{i=1}^{n}X_i^{2}-\frac{1}{2}\right|&lt;\varepsilon\right\}=1,$$
+即 $Y_n=\dfrac{1}{n}\sum\limits_{i=1}^{n}X_i^{2}$ 依概率收敛于 $\dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="30" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2,\cdots,X_n,\cdots$ 是来自总体 $X$ 的简单随机样本，$X$ 服从 $[-\pi,\pi]$ 上的均匀分布，记 $Y_k=\cos(kX)$，$k=1,2,\cdots,n$，则 $\dfrac{1}{n}\sum\limits_{k=1}^{n}Y_k^2$ 依概率收敛于 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意知，$X_1,X_2,\cdots,X_n,\cdots$ 相互独立且同分布，故 $Y_k=\cos(kX_k)\ (k=1,2,\cdots,n,\cdots)$ 也相互独立，方差存在且一致有界. 又
+$$\begin{aligned}E(Y_k^{2})&amp;=\int_{-\pi}^{\pi}[\cos(kx)]^{2}\frac{1}{2\pi}\,\mathrm{d}x=\frac{1}{2k\pi}\int_{-k\pi}^{k\pi}\cos^{2}t\,\mathrm{d}t\\&amp;=\frac{2k\cdot 2}{2k\pi}\int_{0}^{\frac{\pi}{2}}\cos^{2}t\,\mathrm{d}t=\frac{2}{\pi}\cdot\frac{1}{2}\cdot\frac{\pi}{2}=\frac{1}{2},\end{aligned}$$
+故由切比雪夫大数定律知，$\dfrac{1}{n}\sum\limits_{k=1}^{n}Y_k^{2}$ 依概率收敛于 $\dfrac{1}{n}\sum\limits_{k=1}^{n}E(Y_k^{2})$，即 $\dfrac{1}{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{1}{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="30" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X_1,X_2,\cdots,X_n,\cdots$ 相互独立且均服从 $[1,4]$ 上的均匀分布，$\Phi(x)$ 是标准正态分布的分布函数，则
+$$\lim_{n \to \infty}P\left\{\frac{2\sum\limits_{i=1}^{n}X_i-5n}{\sqrt{n}}\leqslant x\right\}=(\quad).$$<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">\Phi(x)</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">\Phi(\sqrt{3}x)</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">\Phi\left(\frac{x}{\sqrt{3}}\right)</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">\Phi\left(\frac{2x}{\sqrt{3}}\right)</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $X_i\sim U[1,4]$，故 $E(X_i)=\dfrac{5}{2},D(X_i)=\dfrac{3}{4}\ (i=1,2,\cdots,n,\cdots)$. 由中心极限定理知
+$$\lim_{n\to\infty}P\left\{\frac{\sum\limits_{i=1}^{n}X_i-n\cdot\dfrac{5}{2}}{\sqrt{n}\cdot\dfrac{\sqrt{3}}{2}}\leqslant t\right\}=\Phi(t),$$
+即
+$$\lim_{n\to\infty}P\left\{\frac{2\sum\limits_{i=1}^{n}X_i-5n}{\sqrt{n}}\leqslant\sqrt{3}t\right\}=\Phi(t).$$
+令 $\sqrt{3}t=x$，则 $t=\dfrac{x}{\sqrt{3}}$，从而
+$$\lim_{n\to\infty}P\left\{\frac{2\sum\limits_{i=1}^{n}X_i-5n}{\sqrt{n}}\leqslant x\right\}=\Phi\left(\frac{x}{\sqrt{3}}\right).$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="30" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设随机变量 $X_1,X_2,\cdots,X_{2n},\cdots$ 相互独立，且均服从二项分布 $B\left(1,\dfrac{1}{2}\right)$. 若根据中心极限定理，有
+$$\lim_{n \to \infty}P\left\{a\sum_{i=1}^{n}(X_{2i}-X_{2i-1})\leqslant \sqrt{n}x\right\}=\Phi(x),$$
+其中 $\Phi(x)$ 为标准正态分布函数，则 $a=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题意，记 $Y_i=X_{2i}-X_{2i-1}$，$i=1,2,\cdots,n,\cdots$，显然 $Y_i$ 独立同分布.
+又 $E(X_i)=\dfrac{1}{2},D(X_i)=E(X_i^{2})-[E(X_i)]^{2}=\dfrac{1}{2}-\dfrac{1}{4}=\dfrac{1}{4}$，故
+$$E(Y_i)=E(X_{2i}-X_{2i-1})=E(X_{2i})-E(X_{2i-1})=0,$$
+$$D(Y_i)=D(X_{2i}-X_{2i-1})=D(X_{2i})+D(X_{2i-1})=\frac{1}{2}.$$
+由中心极限定理知
+$$\lim_{n\to\infty}P\left\{\frac{\sum\limits_{i=1}^{n}Y_i-E\left(\sum\limits_{i=1}^{n}Y_i\right)}{\sqrt{D\left(\sum\limits_{i=1}^{n}Y_i\right)}}\leqslant x\right\}=\lim_{n\to\infty}P\left\{\frac{\sum\limits_{i=1}^{n}Y_i}{\sqrt{\dfrac{n}{2}}}\leqslant x\right\}=\Phi(x),$$
+于是 $a=\sqrt{2}$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\sqrt{2}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="30" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">某保险公司接受了 10 000 辆汽车的保险，每辆汽车每年的保费为 1.2 万元. 若汽车丢失，则车主获得赔偿 100 万元. 设汽车的丢失率为 0.006，对于此项业务，利用中心极限定理，则保险公司一年所获利润不少于 6 000 万元的概率为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $X$ 为“需要赔偿的车主人数”，则需要赔偿的金额为 $Y=100X$ 万元，保费总收入 $C=12\,000$ 万元. 易见，随机变量 $X$ 服从参数为 $(n,p)$ 的二项分布，其中 $n=10\,000$，$p=0.006$，且
+$$E(X)=np=60, D(X)=np(1-p)=59.64.$$
+由棣莫弗-拉普拉斯定理知，随机变量 $X$ 近似服从正态分布 $N(60,59.64)$，则随机变量 $Y$ 近似服从正态分布 $N(6\,000,596\,400)$.
+保险公司一年所获利润不少于 $6\,000$ 万元的概率为
+$$P\{12\,000-Y\geqslant 6\,000\}=P\{Y\leqslant 6\,000\}=P\left\{\frac{Y-6\,000}{\sqrt{596\,400}}\leqslant 0\right\}\approx\Phi(0)=0.5.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">0.5</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="30" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $X_1,X_2,\cdots,X_n\ (n&gt;2)$ 是来自总体 $X\sim N(0,1)$ 的简单随机样本，由切比雪夫不等式得
+$$P\left\{0&lt;\sum_{i=1}^{n}X_i^2&lt;2n\right\}\text{不小于}$$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由于 $\sum\limits_{i=1}^{n}X_i^{2}\sim\chi^{2}(n)$，故 $E\left(\sum\limits_{i=1}^{n}X_i^{2}\right)=n, D\left(\sum\limits_{i=1}^{n}X_i^{2}\right)=2n$，由切比雪夫不等式得
+$$P\left\{0&lt;\sum_{i=1}^{n}X_i^{2}&lt;2n\right\}=P\left\{\left|\sum_{i=1}^{n}X_i^{2}-n\right|&lt;n\right\}\geqslant 1-\frac{1}{n^{2}}D\left(\sum_{i=1}^{n}X_i^{2}\right)=1-\frac{2n}{n^{2}}=1-\frac{2}{n}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$1-\dfrac{2}{n}$</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-29.html">上一章：第4章 随机变量的数字特征</a>
+      <a class="chapter-link" href="chapter-31.html">下一章：第6章 数理统计</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 30, "total": 6, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

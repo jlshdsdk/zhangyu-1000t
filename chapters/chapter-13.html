@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第12章 一元函数积分学的应用(三)——物理应用 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第12章 一元函数积分学的应用(三)——物理应用<span class="top-count">（8题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="13" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设沿 $y$ 轴上的区间 $[0,1]$ 放置一长度为 1 且线密度为 $\rho$ 的均匀细杆，在 $x$ 轴上 $x=1$ 处有一单位质点，则该细杆对此质点的引力（$G$ 为引力常量）沿 $x$ 轴正向的分力为 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">依题意画出直角坐标系如图所示，用微元法. 取 $y$ 轴上的 $[y, y+\mathrm{d}y] \subset [0,1]$，此微段细杆对质点的引力大小为 $\mathrm{d}F = G \cdot \dfrac{\rho\,\mathrm{d}y}{1+y^2}$，其在 $x$ 轴正向的分力为
+$$\mathrm{d}F_x = \frac{-1}{\sqrt{1+y^2}}\,\mathrm{d}F = -\frac{G\rho\,\mathrm{d}y}{(1+y^2)^{\frac{3}{2}}},$$
+于是该细杆对此质点的引力沿 $x$ 轴正向的分力为
+$$F_x = \int_0^1 \left[-\frac{G\rho}{(1+y^2)^{\frac{3}{2}}}\right]\mathrm{d}y \xlongequal{\令 y = \tan t} -G\rho\int_0^{\frac{\pi}{4}} \cos t\,\mathrm{d}t = -\frac{\sqrt{2}}{2}G\rho.$$
+【图】直角坐标系中，$y$ 轴上 $[0,1]$ 为细杆，标注 $y$、$y+\mathrm{d}y$ 两点，质点位于 $x$ 轴上点 $1$ 处，引力 $F$ 指向质点，距离标注 $\sqrt{1+y^2}$。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$-\dfrac{\sqrt{2}}{2}G\rho$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="13" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">边长为 $a$ 的正方形平板置于水面下，且一个顶点与水面相齐，其中一条对角线与水面垂直，如图所示，记水的密度为 $\rho$，重力加速度为 $g$，则其一侧所受的静水压力为 ______.【图】水面线，其下正方形以对角线竖直放置，上顶点在水面，左右两侧顶点深度相同，各边长标 $a$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">建立如图所示坐标系，设压力微元为 $\mathrm{d}P$，则当 $y&gt;0$ 时，
+$$\mathrm{d}P = \rho g \cdot \left(\frac{a}{\sqrt{2}} - y\right) \cdot 2\left(\frac{a}{\sqrt{2}} - y\right)\mathrm{d}y,$$
+则
+$$P_1 = \int_0^{\frac{a}{\sqrt{2}}} 2\rho g\left(\frac{a}{\sqrt{2}} - y\right)^2 \mathrm{d}y = -2\rho g \cdot \frac{1}{3}\left(\frac{a}{\sqrt{2}} - y\right)^3 \bigg|_0^{\frac{a}{\sqrt{2}}} = \frac{\sqrt{2}}{6}\rho g a^3.$$
+当 $y&lt;0$ 时，$\mathrm{d}P = \rho g \cdot \left(\dfrac{a}{\sqrt{2}} - y\right) \cdot 2\left(\dfrac{a}{\sqrt{2}} + y\right)\mathrm{d}y$，则
+$$P_2 = \int_{-\frac{a}{\sqrt{2}}}^0 2\rho g\left(\frac{a^2}{2} - y^2\right)\mathrm{d}y = 2\rho g \cdot \frac{a^2}{2} \cdot \frac{a}{\sqrt{2}} - 2\rho g \cdot \left(\frac{1}{3}y^3 \bigg|_{-\frac{a}{\sqrt{2}}}^0\right)$$
+$$= 2\rho g\left(\frac{a^3}{2\sqrt{2}} - \frac{1}{3} \cdot \frac{a^3}{2\sqrt{2}}\right) = \frac{4}{3} \cdot \frac{1}{2\sqrt{2}} \rho g a^3 = \frac{\sqrt{2}}{3}\rho g a^3.$$
+故 $P = P_1 + P_2 = \left(\dfrac{\sqrt{2}}{6} + \dfrac{\sqrt{2}}{3}\right)\rho g a^3 = \dfrac{\sqrt{2}}{2}\rho g a^3.$
+【图】菱形（正方形旋转 $45^\circ$）薄板置于水中，上顶点在水面下深度 $\dfrac{a}{\sqrt{2}}$ 处，四条边方程为 $x+y=\dfrac{a}{\sqrt{2}}$、$x-y=\dfrac{a}{\sqrt{2}}$ 等，边长标注 $a$，$y$ 轴向下为正。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{\sqrt{2}}{2}\rho g a^3$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="13" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">将地面上质量为 1 的物体铅直向上举高，记地球半径为 $R$，质量为 $M$，引力常数为 $G$，则物体摆脱地球引力至少需做功 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设举高至 $a$，则 $W(a) = \int_R^{+\infty} G\dfrac{M}{x^2}\,\mathrm{d}x$，故
+$$W = \lim_{a \to +\infty} W(a) = \int_R^{+\infty} G\frac{M}{x^2}\,\mathrm{d}x = GM\left.\left(-\frac{1}{x}\right)\right|_R^{+\infty} = \frac{GM}{R}.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\dfrac{GM}{R}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="13" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">有一内表面为旋转抛物面的水缸，其深度为 $a$（单位：米），缸口直径为 $2a$（单位：米），缸内盛满了水，设水的密度为 $\rho$（单位：千克/立方米）.若以每秒 $Q$ 立方米的速率将缸中的水全部抽出，问：
+(1) 共需多少时间？
+(2) 需做多少功？</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 以旋转抛物面顶点为原点，对称轴为 $y$ 轴，在轴截面上建立如图所示的平面直角坐标系，则可设容器内表面（旋转抛物面）是由抛物线 $y = kx^2$ 绕 $y$ 轴旋转而成的. 根据题意，$y(a)=a$，故 $k = \dfrac{1}{a}$，即抛物线方程为 $y = \dfrac{1}{a}x^2$.
+【图】轴截面图中抛物线开口向上，顶点在原点 $O$，标注点 $(a,a)$、液面高度 $y$ 与薄层 $y+\mathrm{d}y$。
+于是，容器容积为
+$$V = \pi\int_0^a x^2\,\mathrm{d}y = \pi\int_0^a ay\,\mathrm{d}y = \frac{\pi a^3}{2} \ (\text{立方米}).$$
+因此，若以每秒 $Q$ 立方米的速率将缸中的水全部抽出，则需要的时间为
+$$t = \frac{V}{Q} = \frac{\dfrac{\pi a^3}{2}}{Q} = \frac{\pi a^3}{2Q} \ (\text{秒}).$$
+(2) 取 $y$ 为积分变量，其取值范围为 $[0,a]$. 在 $y$ 轴上的区间 $[0,a]$ 内任取一个典型小区间 $[y, y+\mathrm{d}y]$. 现在该典型小区间上需做功的微元为
+$$\mathrm{d}W = \rho g \pi x^2\,\mathrm{d}y \cdot (a - y) = \rho g \pi ay(a-y)\,\mathrm{d}y = \rho g \pi (ay - y^2)\,\mathrm{d}y.$$
+于是，所求功为
+$$W = \int_0^a \rho g \pi (ay - y^2)\,\mathrm{d}y = \rho g \pi \left(\frac{1}{2}ay^2 - \frac{1}{3}y^3\right)\bigg|_0^a = \frac{1}{6}\rho g \pi a^4 \ (\text{焦耳}).$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="13" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">在一个高为 $1\ \mathrm{m}$ 的圆柱形容器内储存某种液体，并将容器横放.底面圆的方程为 $x^{2}+y^{2}=1$（单位：m）.如果容器内存满了液体后，以 $0.2\ \mathrm{m}^{3}/\mathrm{min}$ 的速率将液体从容器顶端抽出.
+(1) 当液面在 $y=0$ 时，求液面下降的速率；
+(2) 如果 $1\ \mathrm{m}^{3}$ 液体所受重力为 $1\ \mathrm{N}$，求抽完全部液体需做多少功？</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 如图所示，当液面在 $y(-1 \leqslant y \leqslant 1)$ 处时，容器内液体的体积为 $V = 2\int_{-1}^y \sqrt{1-u^2}\,\mathrm{d}u$.
+【图】单位圆与水平液面，标注 $x=-\sqrt{1-y^2}$、$x=\sqrt{1-y^2}$，$y$ 轴上液面高度 $y$，圆与轴交于 $-1$、$1$。
+设 $t$ 时刻液体的体积为 $V = V(t)$，则
+$$\frac{\mathrm{d}V}{\mathrm{d}t} = \frac{\mathrm{d}V}{\mathrm{d}y} \cdot \frac{\mathrm{d}y}{\mathrm{d}t} = 2\sqrt{1-y^2}\,\frac{\mathrm{d}y}{\mathrm{d}t},$$
+令 $y = 0$，并由条件 $\dfrac{\mathrm{d}V}{\mathrm{d}t} = 0.2$ 得 $\dfrac{\mathrm{d}y}{\mathrm{d}t} = 0.1$，故液面在 $y=0$ 时，液面下降的速率为 $0.1$ m/min.
+(2) $$W = \int_{-1}^1 2\sqrt{1-y^2}\,(1-y)\,\mathrm{d}y$$
+$$= \int_{-1}^1 2\sqrt{1-y^2}\,\mathrm{d}y - \int_{-1}^1 2y\sqrt{1-y^2}\,\mathrm{d}y$$
+$$= 4\int_0^1 \sqrt{1-y^2}\,\mathrm{d}y \xlongequal{\ y = \sin t\ } 4\int_0^{\frac{\pi}{2}} \cos^2 t\,\mathrm{d}t$$
+$$= 4 \times \frac{\pi}{4} = \pi \ (\mathrm{J}),$$
+其中，由于 $2y\sqrt{1-y^2}$ 为奇函数，故 $\displaystyle\int_{-1}^1 2y\sqrt{1-y^2}\,\mathrm{d}y = 0.$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="13" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设有一个内表面为旋转抛物面的容器，其深为 $a$ 米，容器口直径为 $2a$ 米，若以每秒 $Q$ 立方米的速率往容器内注水，求：
+(1) 容器的容积及内表面的面积；
+(2) 当容器中水深为 $\dfrac{1}{2}a$ 米时，水面上升的速率.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 以容器底中心为原点，对称轴为 $y$ 轴，在轴截面上建立如图所示的平面直角坐标系，则可设容器内表面（旋转抛物面）是由抛物线 $y = kx^2$ 绕 $y$ 轴旋转而成的. 根据题意，$y(a)=a$，故 $k = \dfrac{1}{a}$，即抛物线方程为 $y = \dfrac{1}{a}x^2$，于是，容器的容积为
+$$V = \pi\int_0^a x^2\,\mathrm{d}y = \pi\int_0^a ay\,\mathrm{d}y = \frac{\pi a^3}{2} \ (\text{立方米}).$$
+【图】轴截面图中抛物线开口向上，顶点在原点 $O$，虚线标注高度 $a$ 与点 $(a,a)$。
+容器内表曲面的面积为
+$$S = 2\pi\int_0^a \sqrt{ay}\sqrt{1+\left(\frac{\mathrm{d}x}{\mathrm{d}y}\right)^2}\,\mathrm{d}y = 2\pi\int_0^a \sqrt{ay}\sqrt{1+\left[\frac{\sqrt{a}}{2\sqrt{y}}\right]^2}\,\mathrm{d}y$$
+$$= \sqrt{a}\,\pi\int_0^a \sqrt{4y+a}\,\mathrm{d}y = \frac{(5\sqrt{5}-1)\pi a^2}{6} \ (\text{平方米}).$$
+(2) 当容器中水深为 $h$ 米时，容器中水的体积为 $V(h) = \pi\displaystyle\int_0^h ay\,\mathrm{d}y = \dfrac{\pi a}{2}h^2$. 由于
+$$Q = \frac{\mathrm{d}V}{\mathrm{d}t} = \frac{\mathrm{d}V}{\mathrm{d}h} \cdot \frac{\mathrm{d}h}{\mathrm{d}t} = \pi ah\,\frac{\mathrm{d}h}{\mathrm{d}t},$$
+故 $\dfrac{\mathrm{d}h}{\mathrm{d}t} = \dfrac{Q}{\pi ah}$，$\left.\dfrac{\mathrm{d}h}{\mathrm{d}t}\right|_{h=\frac{1}{2}a} = \dfrac{2Q}{\pi a^2}$. 于是，当容器中水深为 $\dfrac{1}{2}a$ 米时，水面上升的速率为每秒 $\dfrac{2Q}{\pi a^2}$ 米.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="13" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">以 $yOz$ 面上的平面曲线段 $y=f(z)\ (z\geqslant 0)$ 绕 $z$ 轴旋转一周所成旋转曲面与 $xOy$ 面围成一个无上盖容器（见图），现以 $3\ \mathrm{cm}^{3}/\mathrm{s}$ 的速率把水注入容器内，水面的面积以 $\pi\ \mathrm{cm}^{2}/\mathrm{s}$ 的速率增大.已知容器底面积为 $16\pi\ \mathrm{cm}^{2}$，求曲线 $y=f(z)$ 的方程.【图】无上盖旋转曲面容器，$z$ 轴竖直向上为对称轴，$x$、$y$ 轴在底部，水面处标注 $y=f(z)$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">记 $t$ 时刻容器的水深为 $z(t)$，则注入的水的体积为
+$$V(t) = \int_0^{z(t)} \pi f^2(u)\,\mathrm{d}u,$$
+水面的面积
+$$S(t) = \pi f^2(z).$$
+由题意
+$$\frac{\mathrm{d}[V(t)]}{\mathrm{d}t} = \pi f^2[z(t)] \cdot \frac{\mathrm{d}z}{\mathrm{d}t} = 3,$$
+$$\frac{\mathrm{d}[S(t)]}{\mathrm{d}t} = \pi \cdot 2f[z(t)]\,\frac{\mathrm{d}\{f[z(t)]\}}{\mathrm{d}z} \cdot \frac{\mathrm{d}z}{\mathrm{d}t} = \pi,$$
+故
+$$\frac{\mathrm{d}[f(z)]}{\mathrm{d}z} \cdot \frac{2}{f(z)} = \frac{\pi}{3},$$
+分离变量，得
+$$\frac{\mathrm{d}[f(z)]}{f(z)} = \frac{\pi}{6}\,\mathrm{d}z,$$
+于是 $\displaystyle\int\frac{\mathrm{d}[f(z)]}{f(z)} = \frac{\pi}{6}\int \mathrm{d}z$，得
+$$\ln|f(z)| = \frac{\pi}{6}z + \ln C_1,\quad f(z) = \pm C_1 \mathrm{e}^{\frac{\pi}{6}z} = C\mathrm{e}^{\frac{\pi}{6}z}\ (z \geqslant 0),$$
+其中 $C$ 为任意常数，又底面积为 $16\pi\ \mathrm{cm}^2$，即 $f(0) = \pm 4$，得 $C = \pm 4$，即 $f(z) = \pm 4\mathrm{e}^{\frac{\pi}{6}z}\ (z \geqslant 0)$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="13" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设长轴与短轴分别为 $2a$ 及 $2b$ 的半椭圆形薄板铅直沉入水中，其短轴与水面平行且位于水面下 $c$ 处，记水的密度为 $\rho$，重力加速度为 $g$.求水对薄板的压力.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">取 $x$ 轴在短轴上建立如图所示的平面直角坐标系，则半椭圆方程为
+$$\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1.$$
+【图】半椭圆位于水面下方，水面处标注 $c$（水面到椭圆顶的距离）、原点 $O$ 与 $b$，$y$ 轴向下，薄条标注 $\mathrm{d}S$，椭圆下顶点标注 $a$。
+因
+$$\mathrm{d}S = 2|x|\,\mathrm{d}y = 2b\sqrt{1-\frac{y^2}{a^2}}\,\mathrm{d}y,$$
+所以压力微元
+$$\mathrm{d}P = \rho g(y+c)\,\mathrm{d}S = 2\rho gb\,(y+c)\sqrt{1-\frac{y^2}{a^2}}\,\mathrm{d}y,$$
+故
+$$P = \int_0^a 2\rho gb\,(y+c)\sqrt{1-\frac{y^2}{a^2}}\,\mathrm{d}y = \frac{2\rho g}{3}a^2b + \frac{\rho g \pi}{2}abc.$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-12.html">上一章：第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a>
+      <a class="chapter-link" href="chapter-14.html">下一章：第13章 多元函数微分学</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 13, "total": 8, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

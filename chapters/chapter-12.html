@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第11章 一元函数积分学的应用(二)——积分等式与积分不等式 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">基础篇 · 第11章 一元函数积分学的应用(二)——积分等式与积分不等式<span class="top-count">（11题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="12" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $a&gt;0$，则在 $[0,a]$ 上方程 $\int_{0}^{x}\sqrt{4a^{2}-t^{2}}\,\mathrm{d}t+\int_{a}^{x}\dfrac{1}{\sqrt{4a^{2}-t^{2}}}\,\mathrm{d}t=0$ 根的个数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">设 $F(x)=\int_{0}^{x}\sqrt{4a^2-t^2}\,\mathrm{d}t+\int_{a}^{x}\frac{1}{\sqrt{4a^2-t^2}}\,\mathrm{d}t$，则
+$$F(0)=\int_{a}^{0}\frac{1}{\sqrt{4a^2-t^2}}\,\mathrm{d}t&lt;0,\quad F(a)=\int_{0}^{a}\sqrt{4a^2-t^2}\,\mathrm{d}t&gt;0,$$
+又 $F(x)$ 在 $[0,a]$ 上连续，由连续函数的零点定理知，存在 $\xi\in(0,a)$，使得 $F(\xi)=0$.
+又 $F'(x)=\sqrt{4a^2-x^2}+\frac{1}{\sqrt{4a^2-x^2}}&gt;0$，所以 $F(x)$ 在 $[0,a]$ 上至多有一个零点.
+综上所述，$F(x)$ 在 $[0,a]$ 上只有一个零点，即方程 $\int_{0}^{x}\sqrt{4a^2-t^2}\,\mathrm{d}t+\int_{a}^{x}\frac{1}{\sqrt{4a^2-t^2}}\,\mathrm{d}t=0$ 在 $[0,a]$ 上只有一个根.
+故正确选项为(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="12" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">当 $x\geqslant 0$ 时，函数 $f(x)$ 可导，有反函数 $g(x)$，且恒等式 $\int_{1}^{f(x)}g(t)\,\mathrm{d}t=x^{2}-1$ 成立，则函数 $f(x)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$2x+1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$2x-1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$x^{2}+1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$x^{2}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $\int_{1}^{f(x)}g(t)\,\mathrm{d}t=x^2-1$，得 $f'(x)g[f(x)]=2x$，又 $g[f(x)]=x$，所以 $f'(x)=2$，即 $f(x)=2x+C$.
+又由 $\int_{1}^{f(x)}g(t)\,\mathrm{d}t=x^2-1$ 知 $\int_{1}^{f(1)}g(t)\,\mathrm{d}t=1^2-1=0$，因 $g(x)$ 的值域为 $f(x)$ 的定义域，即 $g(x)\geqslant 0$，且仅在 $x=f(0)$ 处等号成立，故 $f(1)=1$，所以 $C=-1$，故 $f(x)=2x-1$.
+故正确选项为(B).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $S(x)=\int_{0}^{x}f(t)\,\mathrm{d}t$，其中 $f(x)=\left|\arcsin(\sin x)\right|$.
+(1) 写出 $f(x)$ 在 $[0,\pi]$ 上的表达式；
+(2) 计算 $\lim\limits_{x\to+\infty}\dfrac{S(x)}{\sqrt{1+x^{2}}}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1) 当 $x\in\left[0,\frac{\pi}{2}\right)$ 时，$f(x)=|\arcsin(\sin x)|=|x|=x$；
+当 $x\in\left[\frac{\pi}{2},\pi\right]$ 时，
+$$f(x)=|\arcsin(\sin x)|=|\arcsin[\sin(\pi-x)]|=|\pi-x|=\pi-x.$$
+故当 $x\in[0,\pi]$ 时，$f(x)=\begin{cases}x, &amp; x\in\left[0,\frac{\pi}{2}\right),\\ \pi-x, &amp; x\in\left[\frac{\pi}{2},\pi\right].\end{cases}$
+(2) 因为 $f(x+\pi)=|\arcsin[\sin(x+\pi)]|=|\arcsin(\sin x)|=f(x)$，所以 $f(x)$ 以 $\pi$ 为周期. 故可画出函数 $f(x)=|\arcsin(\sin x)|$ 的图形，如图所示.
+【图】周期为 $\pi$ 的三角折线波形曲线，在 $[0,\pi]$ 上从原点升至 $x=\frac{\pi}{2}$ 处的最大值 $\frac{\pi}{2}$ 再降回 $0$，横轴标注 $-2\pi$，$-\pi$，$O$，$\pi$，$2\pi$.
+当 $x\in[n\pi,(n+1)\pi)$ 时，$S(x)$ 为增函数，有 $S(n\pi)\leqslant S(x)&lt;S[(n+1)\pi]$，即
+$$\frac{S(n\pi)}{(n+1)\pi}&lt;\frac{S(x)}{x}&lt;\frac{S[(n+1)\pi]}{n\pi}.$$
+又
+$$S(n\pi)=\int_{0}^{n\pi}f(x)\,\mathrm{d}x=n\int_{0}^{\pi}f(x)\,\mathrm{d}x=n\left[\int_{0}^{\frac{\pi}{2}}x\,\mathrm{d}x+\int_{\frac{\pi}{2}}^{\pi}(\pi-x)\,\mathrm{d}x\right]=\frac{n}{4}\pi^2,$$
+$$S[(n+1)\pi]=\int_{0}^{(n+1)\pi}f(x)\,\mathrm{d}x=(n+1)\int_{0}^{\pi}f(x)\,\mathrm{d}x=(n+1)\left[\int_{0}^{\frac{\pi}{2}}x\,\mathrm{d}x+\int_{\frac{\pi}{2}}^{\pi}(\pi-x)\,\mathrm{d}x\right]=\frac{n+1}{4}\pi^2,$$
+故有
+$$\frac{\frac{n}{4}\pi^2}{(n+1)\pi}&lt;\frac{S(x)}{x}&lt;\frac{\frac{n+1}{4}\pi^2}{n\pi}.$$
+由于
+$$\lim_{n\to\infty}\frac{\frac{n}{4}\pi^2}{(n+1)\pi}=\lim_{n\to\infty}\frac{\frac{n+1}{4}\pi^2}{n\pi}=\frac{\pi}{4},$$
+由夹逼准则得
+$$\lim_{x\to+\infty}\frac{S(x)}{x}=\frac{\pi}{4},$$
+故 $\lim\limits_{x\to+\infty}\frac{S(x)}{\sqrt{1+x^2}}=\lim\limits_{x\to+\infty}\frac{S(x)}{x}=\frac{\pi}{4}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 连续，证明：$\int_{0}^{x}\left[\int_{0}^{t}f(u)\,\mathrm{d}u\right]\mathrm{d}t=\int_{0}^{x}f(t)(x-t)\,\mathrm{d}t$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】本题可视为证明两个函数相等（等式两端看作两个函数）.
+【解析】记
+$$\varphi(x)=\int_{0}^{x}\left[\int_{0}^{t}f(u)\,\mathrm{d}u\right]\mathrm{d}t,$$
+$$\psi(x)=\int_{0}^{x}f(t)(x-t)\,\mathrm{d}t,$$
+又由 $f(x)$ 连续，于是
+$$\varphi'(x)=\int_{0}^{x}f(u)\,\mathrm{d}u=\int_{0}^{x}f(t)\,\mathrm{d}t,$$
+$$\psi'(x)=\left[x\int_{0}^{x}f(t)\,\mathrm{d}t-\int_{0}^{x}tf(t)\,\mathrm{d}t\right]'=\int_{0}^{x}f(t)\,\mathrm{d}t+xf(x)-xf(x)=\int_{0}^{x}f(t)\,\mathrm{d}t,$$
+故 $\varphi'(x)=\psi'(x)$，又 $\varphi(0)=\psi(0)=0$，从而 $\varphi(x)=\psi(x)$.
+【注】本题也可利用分部积分法直接证明.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x),g(x)$ 连续，$x\in[a,b]$，证明至少存在一点 $\xi\in(a,b)$，使
+$$f(\xi)\int_{\xi}^{b}g(x)\,\mathrm{d}x=g(\xi)\int_{a}^{\xi}f(x)\,\mathrm{d}x.$$</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】由欲证结论出发，构造出辅助函数，再对其应用微分中值定理，即可得证.
+由欲证结论 $f(\xi)\int_{\xi}^{b}g(x)\,\mathrm{d}x=g(\xi)\int_{a}^{\xi}f(x)\,\mathrm{d}x$ 可得
+$$f(\xi)\int_{\xi}^{b}g(x)\,\mathrm{d}x-g(\xi)\int_{a}^{\xi}f(x)\,\mathrm{d}x=0,$$
+所以
+$$f(x)\int_{x}^{b}g(t)\,\mathrm{d}t-g(x)\int_{a}^{x}f(t)\,\mathrm{d}t=0,$$
+即
+$$\left[\int_{a}^{x}f(t)\,\mathrm{d}t\int_{x}^{b}g(t)\,\mathrm{d}t\right]'=0.$$
+记 $F(x)=\int_{a}^{x}f(t)\,\mathrm{d}t\int_{x}^{b}g(t)\,\mathrm{d}t$.
+【解析】由题设知，辅助函数 $F(x)=\int_{a}^{x}f(t)\,\mathrm{d}t\int_{x}^{b}g(t)\,\mathrm{d}t$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且有 $F(a)=F(b)=0$，于是由罗尔定理，知存在 $\xi\in(a,b)$，使 $F'(\xi)=0$，即
+$$\left.\left[\int_{a}^{x}f(t)\,\mathrm{d}t\int_{x}^{b}g(t)\,\mathrm{d}t\right]'\right|_{x=\xi}=0,$$
+所以
+$$f(\xi)\int_{\xi}^{b}g(x)\,\mathrm{d}x=g(\xi)\int_{a}^{\xi}f(x)\,\mathrm{d}x.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">证明：$\int_{0}^{+\infty}\dfrac{\mathrm{d}x}{1+x^{4}}=\int_{0}^{+\infty}\dfrac{x^{2}}{1+x^{4}}\,\mathrm{d}x=\dfrac{\sqrt{2}}{4}\pi$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】对第一个积分作倒代换，可变为第二个积分，因而二者相等，再从两个积分的和积分出发，选择适当变换，即可得证.
+【解析】令 $x=\frac{1}{t}$，则有
+$$\int_{0}^{+\infty}\frac{\mathrm{d}x}{1+x^4}=\int_{+\infty}^{0}\frac{-\frac{1}{t^2}}{1+\frac{1}{t^4}}\,\mathrm{d}t=\int_{0}^{+\infty}\frac{t^2}{1+t^4}\,\mathrm{d}t,$$
+于是
+$$\int_{0}^{+\infty}\frac{\mathrm{d}x}{1+x^4}=\int_{0}^{+\infty}\frac{x^2}{1+x^4}\,\mathrm{d}x=\frac{1}{2}\int_{0}^{+\infty}\frac{1+x^2}{1+x^4}\,\mathrm{d}x,$$
+$$\int_{0}^{+\infty}\frac{1+x^2}{1+x^4}\,\mathrm{d}x=\int_{0}^{+\infty}\frac{1+\frac{1}{x^2}}{\frac{1}{x^2}+x^2}\,\mathrm{d}x=\int_{0}^{+\infty}\frac{\mathrm{d}\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^2+2}$$
+$$\xlongequal{\text{令 } u=x-\frac{1}{x}}\int_{-\infty}^{+\infty}\frac{\mathrm{d}u}{u^2+2}=2\int_{0}^{+\infty}\frac{\mathrm{d}u}{2+u^2}$$
+$$=\sqrt{2}\int_{0}^{+\infty}\frac{\mathrm{d}\left(\frac{u}{\sqrt{2}}\right)}{1+\left(\frac{u}{\sqrt{2}}\right)^2}=\sqrt{2}\arctan\frac{u}{\sqrt{2}}\bigg|_{0}^{+\infty}=\frac{\sqrt{2}}{2}\pi,$$
+故
+$$\int_{0}^{+\infty}\frac{\mathrm{d}x}{1+x^4}=\int_{0}^{+\infty}\frac{x^2}{1+x^4}\,\mathrm{d}x=\frac{\sqrt{2}}{4}\pi.$$</div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="12" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知函数 $f(x),g(x)$ 可导，且 $f'(x)&gt;0,g'(x)&lt;0$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_{-1}^{0}f(x)g(x)\,\mathrm{d}x&gt;\int_{0}^{1}f(x)g(x)\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_{-1}^{0}\left|f(x)g(x)\right|\mathrm{d}x&gt;\int_{0}^{1}\left|f(x)g(x)\right|\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_{-1}^{0}f[g(x)]\,\mathrm{d}x&gt;\int_{0}^{1}f[g(x)]\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{-1}^{0}f[f(x)]\,\mathrm{d}x&gt;\int_{0}^{1}g[g(x)]\,\mathrm{d}x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f(x)=\mathrm{e}^{x}$，$g(x)=\mathrm{e}^{-x}$，满足题干条件，但
+$$\int_{-1}^{0}f(x)g(x)\,\mathrm{d}x=\int_{-1}^{0}\mathrm{e}^{x}\cdot\mathrm{e}^{-x}\,\mathrm{d}x=\int_{0}^{1}\mathrm{e}^{x}\cdot\mathrm{e}^{-x}\,\mathrm{d}x=\int_{0}^{1}f(x)g(x)\,\mathrm{d}x,$$
+且
+$$\int_{-1}^{0}|f(x)g(x)|\,\mathrm{d}x=\int_{-1}^{0}|\mathrm{e}^{x}\cdot\mathrm{e}^{-x}|\,\mathrm{d}x=\int_{0}^{1}|\mathrm{e}^{x}\cdot\mathrm{e}^{-x}|\,\mathrm{d}x=\int_{0}^{1}|f(x)g(x)|\,\mathrm{d}x,$$
+所以选项(A)(B)错误.
+令 $f(x)=x$，$g(x)=-x$，也满足题干条件，但
+$$\int_{-1}^{0}f[f(x)]\,\mathrm{d}x=\int_{-1}^{0}x\,\mathrm{d}x=\frac{1}{2}x^2\bigg|_{-1}^{0}=-\frac{1}{2},$$
+$$\int_{0}^{1}g[g(x)]\,\mathrm{d}x=\int_{0}^{1}x\,\mathrm{d}x=\frac{1}{2}x^2\bigg|_{0}^{1}=\frac{1}{2},$$
+所以选项(D)错误.
+对于选项(C)，
+$$\int_{-1}^{0}f[g(x)]\,\mathrm{d}x-\int_{0}^{1}f[g(x)]\,\mathrm{d}x=\int_{0}^{1}f[g(-x)]\,\mathrm{d}x-\int_{0}^{1}f[g(x)]\,\mathrm{d}x=\int_{0}^{1}\{f[g(-x)]-f[g(x)]\}\,\mathrm{d}x.$$
+因为 $f'(x)&gt;0$，$g'(x)&lt;0$，所以 $f(x)$ 单调增加，$g(x)$ 单调减少，所以当 $x&gt;0$ 时，
+$g(-x)&gt;g(x)$，$f[g(-x)]&gt;f[g(x)]$，
+故
+$$\int_{-1}^{0}f[g(x)]\,\mathrm{d}x-\int_{0}^{1}f[g(x)]\,\mathrm{d}x&gt;0,$$
+即
+$$\int_{-1}^{0}f[g(x)]\,\mathrm{d}x&gt;\int_{0}^{1}f[g(x)]\,\mathrm{d}x.$$</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="12" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x),g(x)$ 在 $[0,1]$ 上连续，则使得 $\int_{0}^{1}f(x)\,\mathrm{d}x\int_{0}^{1}g(x)\,\mathrm{d}x\geqslant\int_{0}^{1}f(x)g(x)\,\mathrm{d}x$ 成立的条件是在 $[0,1]$ 上（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(x),g(x)$ 均为增函数</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(x),g(x)$ 均为减函数</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(x)$ 为减函数，$g(x)$ 为增函数</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(x)$ 为奇函数，$g(x)$ 为偶函数</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $F(x)=x\int_{0}^{x}f(t)g(t)\,\mathrm{d}t-\int_{0}^{x}f(t)\,\mathrm{d}t\int_{0}^{x}g(t)\,\mathrm{d}t$，$x\geqslant 0$，则
+$$F(0)=0,$$
+$$F'(x)=\int_{0}^{x}f(t)g(t)\,\mathrm{d}t+xf(x)g(x)-f(x)\int_{0}^{x}g(t)\,\mathrm{d}t-g(x)\int_{0}^{x}f(t)\,\mathrm{d}t$$
+$$=\int_{0}^{x}[f(t)g(t)+f(x)g(x)-f(x)g(t)-g(x)f(t)]\,\mathrm{d}t$$
+$$=\int_{0}^{x}[f(x)-f(t)][g(x)-g(t)]\,\mathrm{d}t.$$
+当 $f(x)$，$g(x)$ 单调性相同时，$[f(x)-f(t)][g(x)-g(t)]\geqslant 0$，$F'(x)\geqslant 0$，有 $F(x)\geqslant 0$，故 $F(1)\geqslant 0$.
+当 $f(x)$，$g(x)$ 单调性相反时，$[f(x)-f(t)][g(x)-g(t)]\leqslant 0$，$F'(x)\leqslant 0$，有 $F(x)\leqslant 0$，故 $F(1)\leqslant 0$.
+【注】命制辅助函数时，为了前后统一量纲，令 $F(x)=x\int_{0}^{x}f(t)g(t)\,\mathrm{d}t-\int_{0}^{x}f(t)\,\mathrm{d}t\int_{0}^{x}g(t)\,\mathrm{d}t$，而不命制为 $F(x)=\int_{0}^{x}f(t)g(t)\,\mathrm{d}t-\int_{0}^{x}f(t)\,\mathrm{d}t\int_{0}^{x}g(t)\,\mathrm{d}t$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f'(x)$ 在 $[a,b]$ 上连续，$f(a)=f(b)=0$，证明：当 $x\in(a,b)$ 时，$\left|f(x)\right|\leqslant\dfrac{1}{2}\int_{a}^{b}\left|f'(x)\right|\mathrm{d}x$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由已知条件 $f(a)=f(b)=0$，得
+$$f(x)=f(x)-f(a)=\int_{a}^{x}f'(t)\,\mathrm{d}t,$$
+$$f(x)=f(x)-f(b)=-\int_{x}^{b}f'(t)\,\mathrm{d}t,$$
+故
+$$2|f(x)|=\left|\int_{a}^{x}f'(t)\,\mathrm{d}t\right|+\left|-\int_{x}^{b}f'(t)\,\mathrm{d}t\right|\leqslant\int_{a}^{x}|f'(t)|\,\mathrm{d}t+\int_{x}^{b}|f'(t)|\,\mathrm{d}t=\int_{a}^{b}|f'(t)|\,\mathrm{d}t,$$
+所以当 $x\in(a,b)$ 时，$|f(x)|\leqslant\frac{1}{2}\int_{a}^{b}|f'(x)|\,\mathrm{d}x$，得证.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f'(x)$ 在 $[0,1]$ 上连续，且 $f(0)=0$，证明：
+$$\left|\int_{0}^{1}f(x)\,\mathrm{d}x\right|\leqslant\dfrac{M}{2},$$
+其中 $M=\max\limits_{0\leqslant x\leqslant 1}\left|f'(x)\right|$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">方法一　任取 $x\in(0,1]$，由微分中值定理有
+$$f(x)-f(0)=f'(\xi)x,\ \xi\in(0,x).$$
+又因 $f(0)=0$，故 $f(x)=f'(\xi)x$，$x\in(0,1]$，于是
+$$\left|\int_{0}^{1}f(x)\,\mathrm{d}x\right|=\left|\int_{0}^{1}f'(\xi)x\,\mathrm{d}x\right|\leqslant\int_{0}^{1}|f'(\xi)|x\,\mathrm{d}x\leqslant M\int_{0}^{1}x\,\mathrm{d}x=\frac{M}{2}.$$
+方法二　设 $x\in[0,1]$，由 $f(0)=0$ 知
+$$\int_{0}^{x}f'(t)\,\mathrm{d}t=f(x)-f(0)=f(x),$$
+于是
+$$|f(x)|=\left|\int_{0}^{x}f'(t)\,\mathrm{d}t\right|\leqslant\int_{0}^{x}|f'(t)|\,\mathrm{d}t\leqslant\int_{0}^{x}M\,\mathrm{d}t=Mx,$$
+故
+$$\left|\int_{0}^{1}f(x)\,\mathrm{d}x\right|\leqslant\int_{0}^{1}|f(x)|\,\mathrm{d}x\leqslant\int_{0}^{1}Mx\,\mathrm{d}x=\frac{M}{2}.$$
+【注】对积分 $\left|\int_{0}^{1}f(x)\,\mathrm{d}x\right|$ 作估计，只要对被积函数 $f(x)$ 作估计即可. 条件中给出导数 $f'(x)$ 及 $f(0)=0$ 的信息，自然想办法把 $f(x)$ 和 $f'(x)$ 联系起来. 在高等数学中，联系 $f(x)$ 和 $f'(x)$ 有两种常用的办法：一是微分学中的拉格朗日中值定理（见方法一），二是积分学中的牛顿—莱布尼茨公式（见方法二）.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="12" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\int_{x}^{x+1}\sin u^{2}\,\mathrm{d}u$，证明：当 $x&gt;0$ 时，有 $\left|f(x)\right|\leqslant\dfrac{1}{x}$.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $u^2=t$，则
+$$f(x)=\int_{x^2}^{(x+1)^2}\sin u^2\,\mathrm{d}u=\int_{x^2}^{(x+1)^2}\frac{\sin t}{2\sqrt{t}}\,\mathrm{d}t=\int_{x^2}^{(x+1)^2}\frac{-1}{2\sqrt{t}}\,\mathrm{d}(\cos t)$$
+$$=\frac{\cos x^2}{2x}-\frac{\cos(x+1)^2}{2(x+1)}-\frac{1}{4}\int_{x^2}^{(x+1)^2}t^{-\frac{3}{2}}\cos t\,\mathrm{d}t.$$
+故当 $x&gt;0$ 时，
+$$|f(x)|\leqslant\frac{1}{2x}+\frac{1}{2(x+1)}+\frac{1}{4}\int_{x^2}^{(x+1)^2}t^{-\frac{3}{2}}\,\mathrm{d}t$$
+$$=\frac{1}{2x}+\frac{1}{2(x+1)}+\frac{1}{2}\left(\frac{1}{x}-\frac{1}{x+1}\right)=\frac{1}{x},$$</div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-11.html">上一章：第10章 一元函数积分学的应用(一)——几何应用</a>
+      <a class="chapter-link" href="chapter-13.html">下一章：第12章 一元函数积分学的应用(三)——物理应用</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 12, "total": 11, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>

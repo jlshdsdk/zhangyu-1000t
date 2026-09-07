@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第8章 一元函数积分学的概念与性质 · 2026张宇考研数学1000题 刷题版</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="chapter">
+<header class="topbar">
+  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <div class="top-title">强化篇 · 第8章 一元函数积分学的概念与性质<span class="top-count">（19题）</span></div>
+  <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">题目导航</div>
+    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a></nav>
+  </aside>
+  <main class="content" id="content">
+
+<article class="question" id="q1" data-no="1">
+  <header class="q-head">
+    <span class="q-no">【1】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="39" data-no="1" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">极限 $\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n}\dfrac{i-\frac{1}{2}}{n^4}\sqrt{n^4-\left(i-\frac{1}{2}\right)^4}=$ ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原式$=\lim_{n \to \infty}\sum_{i=1}^{n}\sqrt{1-\left(\frac{i-\frac{1}{2}}{n}\right)^4}\cdot\frac{i-\frac{1}{2}}{n}\cdot\frac{1}{n}$
+$$=\lim_{n \to \infty}\sum_{i=1}^{n}\sqrt{1-\left(\frac{2i-1}{2n}\right)^4}\cdot\frac{2i-1}{2n}\cdot\frac{1}{n}=\int_{0}^{1}\sqrt{1-x^4}\cdot x\,\mathrm{d}x$$
+$$=\frac{1}{2}\int_{0}^{1}\sqrt{1-x^4}\,\mathrm{d}(x^2)=\frac{1}{2}\int_{0}^{1}\sqrt{1-x^2}\,\mathrm{d}x=\frac{\pi}{8}.$$
+
+【注】$\frac{2i-1}{2n}=\dfrac{\frac{i-1}{n}+\frac{i}{n}}{2}$，这在考研题中出现过，变个样子，写成$\frac{i-\frac{1}{2}}{n}$，也要认识.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$\frac{\pi}{8}$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q2" data-no="2">
+  <header class="q-head">
+    <span class="q-no">【2】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="2" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是以 $T$ 为周期的连续奇函数，则 $\int_{a+(b+1)T}^{a+(b+2)T}f(x)\mathrm{d}x$ 的取值（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">与 $a,b,T$ 均有关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">与 $a,b,T$ 均无关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">只与 $T$ 有关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">只与 $a,T$ 有关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_{a+(b+1)T}^{a+(b+2)T}f(x)\,\mathrm{d}x=\int_{a+(b+1)T}^{a+(b+1)T+T}f(x)\,\mathrm{d}x=\int_{0}^{T}f(x)\,\mathrm{d}x$$
+$$=\int_{-\frac{T}{2}}^{\frac{T}{2}}f(x)\,\mathrm{d}x=0,$$
+所以与 $a,b,T$ 均无关.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q3" data-no="3">
+  <header class="q-head">
+    <span class="q-no">【3】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="3" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $I_1=\int_0^{2\pi}x\sin x\,\mathrm{d}x$，$I_2=\int_0^{2\pi}\dfrac{\sin x}{x}\,\mathrm{d}x$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$I_1&lt;0,I_2&gt;0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$I_1&lt;0,I_2&lt;0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$I_1&gt;0,I_2&gt;0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$I_1&gt;0,I_2&lt;0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$I_1=\int_{0}^{2\pi}x\sin x\,\mathrm{d}x=\int_{0}^{\pi}x\sin x\,\mathrm{d}x+\int_{\pi}^{2\pi}x\sin x\,\mathrm{d}x$$
+$$=\int_{0}^{\pi}x\sin x\,\mathrm{d}x+\int_{0}^{\pi}(2\pi-t)\sin(2\pi-t)\,\mathrm{d}t$$
+$$=\int_{0}^{\pi}x\sin x\,\mathrm{d}x+\int_{0}^{\pi}(2\pi-t)(-\sin t)\,\mathrm{d}t$$
+$$=\int_{0}^{\pi}x\sin x\,\mathrm{d}x-2\pi\int_{0}^{\pi}\sin t\,\mathrm{d}t+\int_{0}^{\pi}t\sin t\,\mathrm{d}t$$
+$$=2\int_{0}^{\pi}(x-\pi)\sin x\,\mathrm{d}x.$$
+当 $x\in(0,\pi)$ 时，$(x-\pi)\sin x&lt;0$，故 $I_1&lt;0$.
+$$I_2=\int_{0}^{2\pi}\frac{\sin x}{x}\,\mathrm{d}x=\int_{0}^{\pi}\frac{\sin x}{x}\,\mathrm{d}x+\int_{\pi}^{2\pi}\frac{\sin(2\pi-t)}{2\pi-t}\,\mathrm{d}t$$
+$$=\int_{0}^{\pi}\left(\frac{1}{x}+\frac{1}{x-2\pi}\right)\sin x\,\mathrm{d}x=\int_{0}^{\pi}\frac{2(x-\pi)}{x(x-2\pi)}\sin x\,\mathrm{d}x.$$
+当 $x\in(0,\pi)$ 时，$\frac{2(x-\pi)}{x(x-2\pi)}\sin x&gt;0$，故 $I_2&gt;0$.
+故应选(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q4" data-no="4">
+  <header class="q-head">
+    <span class="q-no">【4】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="4" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列各式不成立的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_0^1\mathrm{e}^{-x}\,\mathrm{d}x\leqslant\int_0^1\mathrm{e}^{-x^2}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_0^{\frac{\pi}{2}}\sin^{12}x\,\mathrm{d}x\leqslant\int_0^{\frac{\pi}{2}}\sin^2x\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_0^{\pi}\mathrm{e}^{-x^2}\cos^2x\,\mathrm{d}x\leqslant\int_{\pi}^{2\pi}\mathrm{e}^{-x^2}\cos^2x\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_{\frac{1}{2}}^1 x^2\ln x\,\mathrm{d}x&lt;\int_{-2}^2 x^3 2^x\,\mathrm{d}x$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由 $0\leqslant x\leqslant 1$，得 $x\geqslant x^2$，$-x\leqslant -x^2$，$\mathrm{e}^{-x}\leqslant \mathrm{e}^{-x^2}$，故$\int_{0}^{1}\mathrm{e}^{-x}\,\mathrm{d}x\leqslant\int_{0}^{1}\mathrm{e}^{-x^2}\,\mathrm{d}x$，即选项(A)成立.
+
+由 $0\leqslant x\leqslant\frac{\pi}{2}$，得 $\sin^{12}x\leqslant\sin^2 x$，故$\int_{0}^{\frac{\pi}{2}}\sin^{12}x\,\mathrm{d}x\leqslant\int_{0}^{\frac{\pi}{2}}\sin^2 x\,\mathrm{d}x$，即选项(B)成立.
+
+当 $x\in\left(\frac{1}{2},1\right)$ 时，$x^2\ln x&lt;0$，于是有$\int_{\frac{1}{2}}^{1}x^2\ln x\,\mathrm{d}x&lt;0$.
+
+$\int_{-2}^{2}x^3 2^x\,\mathrm{d}x=\int_{-2}^{0}x^3 2^x\,\mathrm{d}x+\int_{0}^{2}x^3 2^x\,\mathrm{d}x=\int_{0}^{2}x^3 2^x\,\mathrm{d}x+\int_{0}^{2}(-t)^3 2^{-t}\,\mathrm{d}t=\int_{0}^{2}x^3(2^x-2^{-x})\,\mathrm{d}x&gt;0$，即选项(D)也成立.
+
+因 $$\int_{\pi}^{2\pi}\mathrm{e}^{-x^2}\cos^2 x\,\mathrm{d}x\xlongequal{\text{令 }x=\pi+t}\int_{0}^{\pi}\mathrm{e}^{-(\pi+t)^2}\cos^2(\pi+t)\,\mathrm{d}t$$
+$$=\int_{0}^{\pi}\mathrm{e}^{-(\pi+t)^2}\cos^2 t\,\mathrm{d}t=\int_{0}^{\pi}\mathrm{e}^{-(\pi+x)^2}\cos^2 x\,\mathrm{d}x,$$
+
+当 $0\leqslant x\leqslant\pi$ 时，有 $\mathrm{e}^{-x^2}&gt;\mathrm{e}^{-(\pi+x)^2}$，故$\int_{0}^{\pi}\mathrm{e}^{-x^2}\cos^2 x\,\mathrm{d}x&gt;\int_{0}^{\pi}\mathrm{e}^{-(\pi+x)^2}\cos^2 x\,\mathrm{d}x$，即$\int_{0}^{\pi}\mathrm{e}^{-x^2}\cos^2 x\,\mathrm{d}x&gt;\int_{\pi}^{2\pi}\mathrm{e}^{-x^2}\cos^2 x\,\mathrm{d}x$. 因此，选项(C)不成立.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q5" data-no="5">
+  <header class="q-head">
+    <span class="q-no">【5】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="5" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $I_1=\int_0^{\sqrt{2\pi}}\sin x^2\,\mathrm{d}x$，$I_2=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\dfrac{\mathrm{d}x}{1+\sin x}$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$I_1&gt;0,I_2&gt;0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$I_1&lt;0,I_2&lt;0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$I_1&gt;0,I_2&lt;0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$I_1&lt;0,I_2&gt;0$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$I_1\xlongequal{t=x^2}\int_{0}^{2\pi}\frac{\sin t}{2\sqrt{t}}\,\mathrm{d}t=\int_{0}^{\pi}\frac{\sin t}{2\sqrt{t}}\,\mathrm{d}t+\int_{\pi}^{2\pi}\frac{\sin t}{2\sqrt{t}}\,\mathrm{d}t$$
+$$=\int_{0}^{\pi}\sin u\cdot\left(\frac{1}{2\sqrt{u}}-\frac{1}{2\sqrt{u+\pi}}\right)\mathrm{d}u\overset{(*)}{&gt;}0,$$
+$$I_2=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\frac{\mathrm{d}x}{1+\sin x}=\int_{0}^{\frac{\pi}{4}}\left[\frac{1}{1+\sin x}+\frac{1}{1+\sin(-x)}\right]\mathrm{d}x$$
+$$=\int_{0}^{\frac{\pi}{4}}\frac{2}{\cos^2 x}\,\mathrm{d}x=2\tan x\Big|_{0}^{\frac{\pi}{4}}=2&gt;0.$$
+
+【注】①$(*)$ 处，除区间端点外，$I_1$ 的被积函数严格大于 0.
+
+② 因 $$\int_{-a}^{a}f(x)\,\mathrm{d}x=\int_{-a}^{a}\left[\frac{f(x)+f(-x)}{2}+\frac{f(x)-f(-x)}{2}\right]\mathrm{d}x$$
+$$=\frac{1}{2}\int_{-a}^{a}\left[f(x)+f(-x)\right]\mathrm{d}x=\int_{0}^{a}\left[f(x)+f(-x)\right]\mathrm{d}x\ (a&gt;0).$$
+
+故 $I_2=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\frac{\mathrm{d}x}{1+\sin x}=\int_{0}^{\frac{\pi}{4}}\left[\frac{1}{1+\sin x}+\frac{1}{1+\sin(-x)}\right]\mathrm{d}x$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q6" data-no="6">
+  <header class="q-head">
+    <span class="q-no">【6】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="6" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)$ 是以 $2\pi$ 为周期的偶函数，且 $f(x)$ 在 $(-\infty,+\infty)$ 内连续，令 $F(x)=\int_0^x\sin(x-t)f(t)\,\mathrm{d}t$，则 $F(x)$ 一定为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">偶函数</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">奇函数</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">以 $\pi$ 为最小正周期的周期函数</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">以 $2\pi$ 为最小正周期的周期函数</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">因为 $$F(-x)=\int_{0}^{-x}\sin(-x-t)f(t)\,\mathrm{d}t$$
+$$\xlongequal{\text{令 }u=-t}\int_{0}^{x}\sin(-x+u)f(-u)\,\mathrm{d}(-u)$$
+$$=\int_{0}^{x}\sin(x-u)f(u)\,\mathrm{d}u$$
+$$=F(x),$$
+所以(A)正确，(B)不正确.
+
+对于(C)，(D) 选项，不妨设 $f(x)=\cos x$，则 $f(x)$ 满足题设条件.
+
+将 $f(x)=\cos x$ 代人 $F(x)$ 中，得
+
+$$F(x)=\int_{0}^{x}\sin(x-t)\cos t\,\mathrm{d}t$$
+$$=\int_{0}^{x}\sin u\cos(x-u)\,\mathrm{d}u$$
+$$=\frac{1}{2}\int_{0}^{x}\left[\sin(x-t)\cos t+\sin t\cos(x-t)\right]\mathrm{d}t$$
+$$=\frac{1}{2}\int_{0}^{x}\sin x\,\mathrm{d}t$$
+$$=\frac{1}{2}x\sin x,$$
+
+$F(x)$ 显然不是周期函数.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q7" data-no="7">
+  <header class="q-head">
+    <span class="q-no">【7】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="7" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\int_0^{|\sin x|}\mathrm{e}^{t^2}\,\mathrm{d}t$，$g(x)=\int_0^{|x|}\sin t^2\,\mathrm{d}t$，则在 $(-\pi,\pi)$ 内（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(x)$ 是可导的奇函数</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$g(x)$ 是可导的偶函数</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f(x)$ 是奇函数且 $f'(0)$ 不存在</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$g(x)$ 是偶函数且 $g'(0)$ 不存在</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $f_1(x)=\int_{0}^{x}\mathrm{e}^{t^2}\,\mathrm{d}t$，$g_1(x)=|\sin x|$，则 $f(x)=f_1\left[g_1(x)\right]$，
+
+$$\frac{f_1\left[g_1(x)\right]-f_1\left[g_1(0)\right]}{x-0}=\frac{\int_{0}^{\sin x}\mathrm{e}^{t^2}\,\mathrm{d}t}{x},$$
+
+$$f_+'(0)=\lim_{x\to 0^+}\frac{\int_{0}^{\sin x}\mathrm{e}^{t^2}\,\mathrm{d}t}{x}=\lim_{x\to 0^+}\mathrm{e}^{(\sin x)^2}\cdot\cos x=1,$$
+
+$$f_-'(0)=\lim_{x\to 0^-}\frac{\int_{0}^{-\sin x}\mathrm{e}^{t^2}\,\mathrm{d}t}{x}=\lim_{x\to 0^-}\mathrm{e}^{(-\sin x)^2}\cdot(-\cos x)=-1.$$
+
+故 $f'(0)$ 不存在，又显然，在 $(-\pi,\pi)$ 内，当 $x\neq 0$ 时，$f'(x)$ 存在，且 $g_1(x)$ 是偶函数，$f_1(x)$ 是奇函数，故 $f(x)$ 是偶函数.
+
+令 $f_2(x)=\int_{0}^{x}\sin t^2\,\mathrm{d}t$，$g_2(x)=|x|$，则 $g(x)=f_2\left[g_2(x)\right]$，
+
+$$g_+'(0)=\lim_{x\to 0^+}\frac{\int_{0}^{x}\sin t^2\,\mathrm{d}t}{x}=\lim_{x\to 0^+}\sin x^2=0,$$
+
+$$g_-'(0)=\lim_{x\to 0^-}\frac{\int_{0}^{-x}\sin t^2\,\mathrm{d}t}{x}=\lim_{x\to 0^-}\sin(-x)^2\cdot(-1)=0.$$
+
+故 $g'(0)$ 存在，又显然，在 $(-\pi,\pi)$ 内，当 $x\neq 0$ 时，$g'(x)$ 存在，且 $g_1(x)$ 是偶函数，$f_1(x)$ 是奇函数，故 $g(x)$ 是偶函数.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q8" data-no="8">
+  <header class="q-head">
+    <span class="q-no">【8】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="39" data-no="8" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=3x-\sqrt{1-x^2}\int_0^1 f^2(x)\,\mathrm{d}x$，求 $f(x)$ 的表达式.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">【分析】将 $\int_{0}^{1}f^2(x)\,\mathrm{d}x=A$ 视为待定常数，再将 $f(x)$ 的表达式代人，作积分，解出 $A$，即得 $f(x)$.
+
+【解析】设 $\int_{0}^{1}f^2(x)\,\mathrm{d}x=A$，则 $f(x)=3x-A\sqrt{1-x^2}$，于是
+
+$$A=\int_{0}^{1}f^2(x)\,\mathrm{d}x=\int_{0}^{1}\left(3x-A\sqrt{1-x^2}\right)^2\mathrm{d}x$$
+$$=\int_{0}^{1}\left[9x^2-6Ax\sqrt{1-x^2}+A^2(1-x^2)\right]\mathrm{d}x$$
+$$=\left[3x^3+2A(1-x^2)^{\frac{3}{2}}+\left(x-\frac{1}{3}x^3\right)A^2\right]\Bigg|_{x=0}^{x=1}$$
+$$=3-2A+\frac{2}{3}A^2,$$
+
+从而 $2A^2-9A+9=0$，得 $A_1=3$，$A_2=\frac{3}{2}$，故 $f(x)=3x-3\sqrt{1-x^2}$ 或 $f(x)=3x-\frac{3}{2}\sqrt{1-x^2}$.</div></div></div>
+  </section>
+</article>
+<article class="question" id="q9" data-no="9">
+  <header class="q-head">
+    <span class="q-no">【9】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="9" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设常数 $m&gt;0$，$n&gt;0$，则 $\int_0^n\sqrt{x}\left[\dfrac{m}{x}\right]\mathrm{d}x$（$[\cdot]$ 是取整符号）的敛散性（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">仅与 $m$ 有关</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">仅与 $n$ 有关</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">与 $m,n$ 均有关</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">与 $m,n$ 均无关</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">令 $\frac{m}{x}=y$，则 $x=\frac{m}{y}$，$\mathrm{d}x=-\frac{m}{y^2}\,\mathrm{d}y$，故
+
+$$\int_{0}^{n}\sqrt{x}\left[\frac{m}{x}\right]\mathrm{d}x=\int_{+\infty}^{\frac{m}{n}}\sqrt{\frac{m}{y}}[y]\left(-\frac{m}{y^2}\right)\mathrm{d}y$$
+$$=m^{\frac{3}{2}}\int_{\frac{m}{n}}^{+\infty}\frac{[y]}{y^{\frac{5}{2}}}\,\mathrm{d}y.$$
+
+由于 $[y]\leqslant y$，故 $\frac{[y]}{y^{\frac{5}{2}}}\leqslant\frac{1}{y^{\frac{3}{2}}}$，又 $\int_{\frac{m}{n}}^{+\infty}\frac{1}{y^{\frac{3}{2}}}\,\mathrm{d}y$ 收敛，由比较判别法，有 $\int_{\frac{m}{n}}^{+\infty}\frac{[y]}{y^{\frac{5}{2}}}\,\mathrm{d}y$ 收敛，故 $\int_{0}^{n}\sqrt{x}\left[\frac{m}{x}\right]\mathrm{d}x$ 的敛散性与 $m,n$ 均无关.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(D)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q10" data-no="10">
+  <header class="q-head">
+    <span class="q-no">【10】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="10" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $a&gt;0$，则对于反常积分 $\int_0^1\dfrac{\ln x}{x^a}\,\mathrm{d}x$ 的敛散性的判别，下列选项中正确的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">当 $a\geqslant 1$ 时，积分收敛</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $a&lt;1$ 时，积分收敛</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">敛散性与 $a$ 的取值无关，必收敛</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">敛散性与 $a$ 的取值无关，必发散</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">当 $a&lt;1$ 时，取充分小的正数 $\varepsilon$，使得 $a+\varepsilon&lt;1$，由于
+
+$$\lim_{x\to 0^+}x^{a+\varepsilon}\frac{\ln x}{x^a}=\lim_{x\to 0^+}x^{\varepsilon}\ln x=\lim_{x\to 0^+}\frac{\ln x}{x^{-\varepsilon}}=\lim_{x\to 0^+}\frac{\frac{1}{x}}{-\varepsilon x^{-\varepsilon-1}}=\lim_{x\to 0^+}\left(-\frac{1}{\varepsilon}x^{\varepsilon}\right)=0,$$
+
+故当 $x\to 0^+$ 时，$\frac{1}{x^{a+\varepsilon}}$ 是比 $\frac{\ln x}{x^a}$ 高阶的无穷大量，因为当 $a+\varepsilon&lt;1$ 时，$\int_{0}^{1}\frac{1}{x^{a+\varepsilon}}\,\mathrm{d}x$ 收敛，于是根据比较判别法的极限形式知，$\int_{0}^{1}\frac{\ln x}{x^a}\,\mathrm{d}x$ 收敛，选项(B)正确；
+
+当 $a\geqslant 1$ 时，由于 $\lim_{x\to 0^+}x^a\frac{\ln x}{x^a}=\infty$，故当 $x\to 0^+$ 时，$\frac{1}{x^a}$ 是比 $\frac{\ln x}{x^a}$ 低阶的无穷大量，因为当 $a\geqslant 1$ 时，$\int_{0}^{1}\frac{1}{x^a}\,\mathrm{d}x$ 发散，于是根据比较判别法的极限形式知，$\int_{0}^{1}\frac{\ln x}{x^a}\,\mathrm{d}x$ 发散.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q11" data-no="11">
+  <header class="q-head">
+    <span class="q-no">【11】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="11" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\int_1^{+\infty}\dfrac{1}{x^a+x^b}\,\mathrm{d}x$ 收敛，且 $a&gt;b&gt;0$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a\leqslant 1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$b\leqslant 1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a&gt;1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$b&gt;1$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">只傍盯着 $x\to+\infty$ 看，又由于 $a&gt;b&gt;0$，因此原积分与 $\int_{1}^{+\infty}\frac{1}{x^a}\,\mathrm{d}x$ 同敛散，则 $a&gt;1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q12" data-no="12">
+  <header class="q-head">
+    <span class="q-no">【12】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="12" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $p$ 为常数，若反常积分 $\int_0^1\dfrac{\ln x}{x^p(1-x)^{1-p}}\,\mathrm{d}x$ 收敛，则 $p$ 的取值范围是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(-1,1)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(-1,2)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(-\infty,1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(-\infty,2)$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">原反常积分可写为 $\int_{0}^{\frac{1}{2}}\frac{\ln x}{x^p(1-x)^{1-p}}\,\mathrm{d}x+\int_{\frac{1}{2}}^{1}\frac{\ln x}{x^p(1-x)^{1-p}}\,\mathrm{d}x$. 若 $p&lt;1$，则存在 $\varepsilon&gt;0$，使 $p+\varepsilon&lt;1$，且
+
+$$\lim_{x\to 0^+}\frac{\dfrac{\ln x}{x^p(1-x)^{1-p}}}{\dfrac{1}{x^{p+\varepsilon}}}=\lim_{x\to 0^+}x^{\varepsilon}\cdot\ln x=0.$$
+
+由 $\int_{0}^{\frac{1}{2}}\frac{1}{x^{p+\varepsilon}}\,\mathrm{d}x$ 收敛，可知 $\int_{0}^{\frac{1}{2}}\frac{\ln x}{x^p(1-x)^{1-p}}\,\mathrm{d}x$ 也收敛.
+
+由 $\lim_{x\to 1^-}\dfrac{\dfrac{\ln x}{x^p(1-x)^{1-p}}}{\dfrac{1}{(1-x)^{-p}}}=-1\neq 0$，知若 $\int_{\frac{1}{2}}^{1}\frac{1}{(1-x)^{-p}}\,\mathrm{d}x$ 收敛，即 $p&gt;-1$，则 $\int_{\frac{1}{2}}^{1}\frac{\ln x}{x^p(1-x)^{1-p}}\,\mathrm{d}x$ 也收敛. 故选(A).</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q13" data-no="13">
+  <header class="q-head">
+    <span class="q-no">【13】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="13" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">已知 $\int_0^2\dfrac{1}{|\ln x|^a}\,\mathrm{d}x$ 收敛，$a$ 为常数，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$1&lt;a\leqslant 2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a&lt;1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1\leqslant a&lt;2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a&gt;2$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">$$\int_{0}^{2}\frac{1}{|\ln x|^a}\,\mathrm{d}x\xlongequal{\ln x=t}\int_{-\infty}^{\ln 2}\frac{\mathrm{e}^t}{|t|^a}\,\mathrm{d}t,$$
+
+其奇点为 $-\infty,0$，为混合型反常积分.
+
+因此拆分原式为
+
+$$\underbrace{\int_{-\infty}^{-1}\frac{\mathrm{e}^t}{|t|^a}\,\mathrm{d}t}_{I_1}+\underbrace{\int_{-1}^{0}\frac{\mathrm{e}^t}{|t|^a}\,\mathrm{d}t}_{I_2}+\underbrace{\int_{0}^{\ln 2}\frac{\mathrm{e}^t}{|t|^a}\,\mathrm{d}t}_{I_3}.$$
+
+对于 $I_1$：盯着 $t\to-\infty$ 看，当 $a&lt;0$ 时，$\mathrm{e}^t\to 0^+$ 且速度远远快于 $|t|^a\to 0^+$，因此 $I_1$ 收敛；当 $a\geqslant 0$ 时，显然 $I_1$ 收敛.
+
+对于 $I_2$：盯着 $t\to 0^-$ 看，$\dfrac{\mathrm{e}^t}{|t|^a}\sim\dfrac{1}{|t|^a}$，于是 $a&lt;1$ 时，$I_2$ 收敛.
+
+对于 $I_3$：盯着 $t\to 0^+$ 看，$\dfrac{\mathrm{e}^t}{|t|^a}\sim\dfrac{1}{|t|^a}=\dfrac{1}{t^a}$，于是 $a&lt;1$ 时，$I_3$ 收敛.
+
+综上，$a$ 的取值范围为 $a&lt;1$.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(B)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q14" data-no="14">
+  <header class="q-head">
+    <span class="q-no">【14】</span>
+    <span class="q-kind">填空题</span>
+    <button class="done-btn" data-cid="39" data-no="14" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">若反常积分 $\int_1^{+\infty}\left(\mathrm{e}^{-\cos\frac{1}{x}}-\mathrm{e}^{-1}\right)x^k\,\mathrm{d}x$ 收敛，则 $k$ 的取值范围是 ______.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">盯着 $x\to+\infty$ 看，由 $\mathrm{e}^{-\cos\frac{1}{x}}-\mathrm{e}^{-1}=\mathrm{e}^{-1}\left(\mathrm{e}^{-\cos\frac{1}{x}+1}-1\right)$，知当 $x\to+\infty$ 时，
+
+$$\mathrm{e}^{-\cos\frac{1}{x}+1}-1\sim 1-\cos\frac{1}{x}\sim\frac{1}{2}\cdot\frac{1}{x^2},$$
+
+即原反常积分与 $\int_{1}^{+\infty}\frac{1}{x^{2-k}}\,\mathrm{d}x$ 同敛散，故当 $2-k&gt;1$，即 $k&lt;1$ 时，原反常积分收敛.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">$k&lt;1$</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q15" data-no="15">
+  <header class="q-head">
+    <span class="q-no">【15】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="15" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列反常积分中发散的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_0^{+\infty}\dfrac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_0^{+\infty}x^2\mathrm{e}^{-x^2}\,\mathrm{d}x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_0^{+\infty}\dfrac{\mathrm{d}x}{x\ln^2 x}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_0^{+\infty}\dfrac{\mathrm{d}x}{(x+2)\ln^2(x+2)}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于(A) 选项，$$\int_{0}^{+\infty}\frac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x=\int_{0}^{1}\frac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x+\int_{1}^{+\infty}\frac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x.$$
+
+因为 $\lim_{x\to 0^+}(x-0)^{\frac{1}{2}}\dfrac{\mathrm{e}^{-x}}{\sqrt{x}}=\lim_{x\to 0^+}\mathrm{e}^{-x}=1$，其中 $\dfrac{1}{2}&lt;1$，则 $\int_{0}^{1}\dfrac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x$ 收敛；
+
+因为 $\lim_{x\to+\infty}x^{\frac{3}{2}}\dfrac{\mathrm{e}^{-x}}{\sqrt{x}}=\lim_{x\to+\infty}\dfrac{x}{\mathrm{e}^x}=0$，其中 $\dfrac{3}{2}&gt;1$，则 $\int_{1}^{+\infty}\dfrac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x$ 收敛.
+
+综上，$\int_{0}^{+\infty}\dfrac{\mathrm{e}^{-x}}{\sqrt{x}}\,\mathrm{d}x$ 收敛.
+
+对于(B) 选项，$\lim_{x\to+\infty}x^2\cdot x^2\mathrm{e}^{-x^2}=\lim_{x\to+\infty}\dfrac{x^4}{\mathrm{e}^{x^2}}=0$，其中 $2&gt;1$，所以 $\int_{0}^{+\infty}x^2\mathrm{e}^{-x^2}\,\mathrm{d}x$ 收敛.
+
+对于(C) 选项，$\int_{0}^{+\infty}\dfrac{\mathrm{d}x}{x\ln^2 x}=\int_{0}^{\frac{1}{2}}\dfrac{\mathrm{d}x}{x\ln^2 x}+\int_{\frac{1}{2}}^{1}\dfrac{\mathrm{d}x}{x\ln^2 x}+\int_{1}^{2}\dfrac{\mathrm{d}x}{x\ln^2 x}+\int_{2}^{+\infty}\dfrac{\mathrm{d}x}{x\ln^2 x}$. 而 $\int_{\frac{1}{2}}^{1}\dfrac{\mathrm{d}x}{x\ln^2 x}=-\dfrac{1}{\ln x}\Big|_{\frac{1}{2}}^{1}$，所以 $\int_{0}^{+\infty}\dfrac{\mathrm{d}x}{x\ln^2 x}$ 发散.
+
+对于(D) 选项，$\int_{0}^{+\infty}\dfrac{\mathrm{d}x}{(x+2)\ln^2(x+2)}=\int_{0}^{+\infty}\dfrac{\mathrm{d}\left[\ln(x+2)\right]}{\ln^2(x+2)}=-\dfrac{1}{\ln(x+2)}\Bigg|_{0}^{+\infty}=\dfrac{1}{\ln 2}$，显然收敛.</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q16" data-no="16">
+  <header class="q-head">
+    <span class="q-no">【16】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="16" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">下列反常积分中收敛的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\int_1^{+\infty}\dfrac{\mathrm{d}x}{\sqrt{x^2-1}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\int_1^{+\infty}\dfrac{\mathrm{d}x}{\sqrt{x(x-1)}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\int_1^{+\infty}\dfrac{\mathrm{d}x}{x^2\sqrt{x^2-1}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\int_1^{+\infty}\dfrac{\mathrm{d}x}{x(x^2-1)}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">对于(A) 选项，因为 $\lim_{x\to 1^+}(x-1)^{\frac{1}{2}}\dfrac{1}{\sqrt{x^2-1}}=\lim_{x\to 1^+}\dfrac{1}{\sqrt{x+1}}=\dfrac{1}{\sqrt{2}}$，$\lim_{x\to+\infty}x\dfrac{1}{\sqrt{x^2-1}}=1$，
+
+所以反常积分 $\int_{1}^{2}\dfrac{1}{\sqrt{x^2-1}}\,\mathrm{d}x$ 收敛，反常积分 $\int_{2}^{+\infty}\dfrac{1}{\sqrt{x^2-1}}\,\mathrm{d}x$ 发散，从而反常积分 $\int_{1}^{+\infty}\dfrac{1}{\sqrt{x^2-1}}\,\mathrm{d}x$ 发散.
+
+对于(B) 选项，因为 $\lim_{x\to 1^+}(x-1)^{\frac{1}{2}}\dfrac{1}{\sqrt{x(x-1)}}=\lim_{x\to 1^+}\dfrac{1}{\sqrt{x}}=1$，$\lim_{x\to+\infty}x\dfrac{1}{\sqrt{x(x-1)}}=1$，所以反常
+积分$\int_1^2\frac{\mathrm{d}x}{\sqrt{x(x-1)}}$收敛，反常积分$\int_2^{+\infty}\frac{\mathrm{d}x}{\sqrt{x(x-1)}}$发散，从而反常积分$\int_1^{+\infty}\frac{\mathrm{d}x}{\sqrt{x(x-1)}}$发散。对于(C)选项，$$\int_1^{+\infty}\frac{\mathrm{d}x}{x^2\sqrt{x^2-1}}=\int_1^{+\infty}\frac{\mathrm{d}x}{x^3\sqrt{1-\frac{1}{x^2}}}=\frac{1}{2}\int_1^{+\infty}\frac{1}{\sqrt{1-\frac{1}{x^2}}}\,\mathrm{d}\left(1-\frac{1}{x^2}\right)=\sqrt{1-\frac{1}{x^2}}\Bigg|_1^{+\infty}=1,$$从而反常积分$\int_1^{+\infty}\frac{\mathrm{d}x}{x^2\sqrt{x^2-1}}$收敛。对于(D)选项，$\lim\limits_{x\to 1^+}(x-1)\cdot\frac{1}{x(x^2-1)}=\lim\limits_{x\to 1^+}\frac{1}{x(x+1)}=\frac{1}{2}$，$\lim\limits_{x\to+\infty}x^3\cdot\frac{1}{x(x^2-1)}=1$，所以反常积分$\int_1^2\frac{\mathrm{d}x}{x(x^2-1)}$发散，反常积分$\int_2^{+\infty}\frac{\mathrm{d}x}{x(x^2-1)}$收敛，从而反常积分$\int_1^{+\infty}\frac{\mathrm{d}x}{x(x^2-1)}$发散。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(C)</span></div></div></div>
+  </section>
+</article>
+<article class="question" id="q17" data-no="17">
+  <header class="q-head">
+    <span class="q-no">【17】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="39" data-no="17" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">求 $p$ 的取值范围，使得 $\int_1^{+\infty}\sin\dfrac{\pi}{x}\cdot\dfrac{\mathrm{d}x}{\ln^p x}$ 收敛.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">盯着$x\to 1^+$看，$\sin\dfrac{\pi}{x}\cdot\dfrac{1}{\ln^p x}$与$\dfrac{\pi}{x(x-1)^{p-1}}$为等价无穷大量，当且仅当$p&lt;2$时，$\int_1^2\sin\dfrac{\pi}{x}\cdot\dfrac{\mathrm{d}x}{\ln^p x}$收敛。盯着$x\to+\infty$看，$\sin\dfrac{\pi}{x}\cdot\dfrac{1}{\ln^p x}\sim\dfrac{\pi}{x\ln^p x}$，而$\int_2^{+\infty}\dfrac{\mathrm{d}x}{x\ln^p x}\xlongequal{t=\ln x}\int_{\ln 2}^{+\infty}\dfrac{\mathrm{d}t}{t^p}$，故当且仅当$p&gt;1$时，$\int_2^{+\infty}\sin\dfrac{\pi}{x}\cdot\dfrac{\mathrm{d}x}{\ln^p x}$收敛。综上，$p$的取值范围是$(1,2)$。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q18" data-no="18">
+  <header class="q-head">
+    <span class="q-no">【18】</span>
+    <span class="q-kind">解答题</span>
+    <button class="done-btn" data-cid="39" data-no="18" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=\lim\limits_{n\to\infty}\dfrac{x}{n}\left(\mathrm{e}^{\frac{x^2}{n^2}}+\mathrm{e}^{\frac{4x^2}{n^2}}+\cdots+\mathrm{e}^{-x^2}\right)$，求：
+(1) $f(x)$ 的表达式；
+(2) 曲线 $y=\mathrm{e}^{x^2}f(x)$ 的拐点.</div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">(1)由定积分的定义可得$$f(x)=\lim_{n\to\infty}\frac{x}{n}\sum_{i=1}^{n}\mathrm{e}^{-\left(\frac{ix}{n}\right)^2}=\int_0^x\mathrm{e}^{-t^2}\,\mathrm{d}t.$$(2)由(1)可知，$$y=\mathrm{e}^{x^2}f(x)=\mathrm{e}^{x^2}\int_0^x\mathrm{e}^{-t^2}\,\mathrm{d}t,$$则$$y'=2x\mathrm{e}^{x^2}\int_0^x\mathrm{e}^{-t^2}\,\mathrm{d}t+1,$$$$y''=2\left(\mathrm{e}^{x^2}\int_0^x\mathrm{e}^{-t^2}\,\mathrm{d}t+2x^2\mathrm{e}^{x^2}\int_0^x\mathrm{e}^{-t^2}\,\mathrm{d}t+x\right)=2\left[(1+2x^2)\mathrm{e}^{x^2}\int_0^x\mathrm{e}^{-t^2}\,\mathrm{d}t+x\right].$$因为对任意的$x$，有$1+2x^2&gt;0$，$\mathrm{e}^{x^2}&gt;0$，故当$x&lt;0$时，$y''&lt;0$；当$x=0$时，$y''=0$；当$x&gt;0$时，$y''&gt;0$。又$y(0)=f(0)=0$，故$(0,0)$是曲线$y=\mathrm{e}^{x^2}f(x)$的拐点。</div></div></div>
+  </section>
+</article>
+<article class="question" id="q19" data-no="19">
+  <header class="q-head">
+    <span class="q-no">【19】</span>
+    <span class="q-kind">选择题</span>
+    <button class="done-btn" data-cid="39" data-no="19" title="标记本题已做">已做</button>
+  </header>
+  <div class="q-stem">设 $f(x)=x^2$，$f[\varphi(x)]=-x^2+2x+3$ 且 $\varphi(x)\geqslant 0$，则 $\lim\limits_{n\to\infty}\dfrac{1}{n^3}\sum\limits_{i=1}^{n}i^2(n-i)\cdot\dfrac{1}{n+\varphi(x)}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{12}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{6}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{2}{3}$</span></span></div></div>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="analysis" data-open="true">
+    <button class="fold-btn" aria-expanded="true">【解析】<span class="fold-text">收起解析</span></button>
+    <div class="analysis-wrap"><div class="analysis-inner"><div class="analysis-body">由题设，$f[\varphi(x)]=\varphi(x)=-x^2+2x+3$，且$\varphi(x)\geqslant 0$，则$$\varphi(x)=\sqrt{-x^2+2x+3},$$其中$-x^2+2x+3\geqslant 0$，即$(x-3)(x+1)\leqslant 0$，解得$-1\leqslant x\leqslant 3$，即$[-1,3]$为$\varphi(x)$的定义域。又$(-x^2+2x+3)'=-2x+2\xlongequal{\text{令}}0$，解得$x=1$，故当$-1\leqslant x&lt;1$时，导数大于0；当$1&lt;x\leqslant 3$时，导数小于0。所以$\varphi(1)=2$为最大值，$\varphi(-1)=\varphi(3)=0$为最小值，即$[0,2]$为$\varphi(x)$的值域。又$$\sum_{i=1}^{n}\left(\frac{i}{n}\right)^2\left(1-\frac{i}{n}\right)\frac{1}{n+2}\leqslant\frac{1}{n^3}\sum_{i=1}^{n}i^2(n-i)\cdot\frac{1}{n+\varphi(x)}\leqslant\sum_{i=1}^{n}\left(\frac{i}{n}\right)^2\left(1-\frac{i}{n}\right)\frac{1}{n},$$且$$\lim_{n\to\infty}\sum_{i=1}^{n}\left(\frac{i}{n}\right)^2\left(1-\frac{i}{n}\right)\frac{1}{n}=\int_0^1 x^2(1-x)\,\mathrm{d}x=\frac{1}{12},$$$$\lim_{n\to\infty}\frac{n}{n+2}\cdot\sum_{i=1}^{n}\left(\frac{i}{n}\right)^2\left(1-\frac{i}{n}\right)\frac{1}{n}=1\cdot\int_0^1 x^2(1-x)\,\mathrm{d}x=\frac{1}{12},$$故由夹逼准则得，$\lim\limits_{n\to\infty}\dfrac{1}{n^3}\sum\limits_{i=1}^{n}i^2(n-i)\cdot\dfrac{1}{n+\varphi(x)}=\dfrac{1}{12}$，选(A)。</div><div class="answer-line"><span class="answer-label">最终答案</span><span class="answer-body">(A)</span></div></div></div>
+  </section>
+</article>
+    <div class="chapter-footer">
+      <a class="chapter-link" href="chapter-38.html">上一章：第7章 一元函数微分学的应用(三)——物理应用</a>
+      <a class="chapter-link" href="chapter-40.html">下一章：第9章 一元函数积分学的计算</a>
+    </div>
+    <button id="to-top" title="回到顶部">↑</button>
+  </main>
+</div>
+<script>window.CHAPTER_META = {"cid": 39, "total": 19, "lazy": false};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</body>
+</html>
