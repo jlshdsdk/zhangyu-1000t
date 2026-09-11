@@ -141,9 +141,40 @@
   var meta = window.CHAPTER_META || {};
   var content = document.getElementById('content');
 
-  /* 左侧全书目录：当前章滚到可视区 + 移动端抽屉 */
+  /* 左侧多级目录：折叠交互（记忆状态）+ 当前章滚到可视区 + 移动端抽屉 */
   var sidebar = document.getElementById('sidebar');
-  var curToc = document.querySelector('.toc-item.cur');
+  var TOC_KEY = 'zy_toc_open';
+
+  function toggleToc(head) {
+    var body = document.getElementById(head.dataset.target);
+    if (!body) return;
+    var open = body.style.display !== 'none';
+    body.style.display = open ? 'none' : '';
+    head.classList.toggle('closed', open);
+    var st = {};
+    try { st = JSON.parse(localStorage.getItem(TOC_KEY)) || {}; } catch (e) {}
+    st[head.dataset.target] = !open;
+    try { localStorage.setItem(TOC_KEY, JSON.stringify(st)); } catch (e) {}
+  }
+  document.querySelectorAll('.toc-l1, .toc-l2').forEach(function (head) {
+    head.addEventListener('click', function () { toggleToc(head); });
+    head.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleToc(head); }
+    });
+  });
+  /* 恢复用户上次的手动折叠状态（覆盖默认） */
+  try {
+    var st = JSON.parse(localStorage.getItem(TOC_KEY)) || {};
+    Object.keys(st).forEach(function (id) {
+      var body = document.getElementById(id);
+      var head = document.querySelector('[data-target="' + id + '"]');
+      if (!body || !head) return;
+      body.style.display = st[id] ? '' : 'none';
+      head.classList.toggle('closed', !st[id]);
+    });
+  } catch (e) {}
+
+  var curToc = document.querySelector('.toc-l3.cur');
   if (sidebar && curToc && sidebar.scrollHeight > sidebar.clientHeight) {
     sidebar.scrollTop = curToc.offsetTop - 80;
   }
