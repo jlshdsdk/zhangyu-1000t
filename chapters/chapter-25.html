@@ -9,14 +9,16 @@
 </head>
 <body data-page="chapter">
 <header class="topbar">
-  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <button id="menu-toggle" class="menu-btn" title="打开目录">☰ 目录</button>
+  <a class="back-home" href="../index.html">← 总目录</a>
   <div class="top-title">基础篇 · 第6章 二次型<span class="top-count">（24题）</span></div>
+  <a class="lib-link" href="../collections.html">📚 收藏库</a>
   <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="side-title">题目导航</div>
-    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a></nav>
+    <div class="side-title">📖 全书目录</div>
+    <nav class="toc-nav"><div class="toc-part">基础篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-01.html">零基础</a><a class="toc-item" href="chapter-02.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-03.html">第2章 数列极限</a><a class="toc-item" href="chapter-04.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-05.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-06.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-07.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-08.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-09.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-10.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-11.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-12.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-13.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-14.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-15.html">第14章 二重积分</a><a class="toc-item" href="chapter-16.html">第15章 微分方程</a><a class="toc-item" href="chapter-17.html">第16章 无穷级数</a><a class="toc-item" href="chapter-18.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-19.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-20.html">第1章 行列式</a><a class="toc-item" href="chapter-21.html">第2章 矩阵</a><a class="toc-item" href="chapter-22.html">第3章 向量组</a><a class="toc-item" href="chapter-23.html">第4章 线性方程组</a><a class="toc-item" href="chapter-24.html">第5章 特征值与特征向量</a><a class="toc-item cur" href="chapter-25.html" aria-current="page">第6章 二次型</a><div class="toc-qs"><span class="toc-qs-label">本章题目</span><div class="toc-qs-grid"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a></div></div><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-26.html">第1章 随机事件与概率</a><a class="toc-item" href="chapter-27.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-28.html">第3章 多维随机变量及其分布</a><a class="toc-item" href="chapter-29.html">第4章 随机变量的数字特征</a><a class="toc-item" href="chapter-30.html">第5章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-31.html">第6章 数理统计</a><div class="toc-part">强化篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-32.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-33.html">第2章 数列极限</a><a class="toc-item" href="chapter-34.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-35.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-36.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-37.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-38.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-39.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-40.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-41.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-42.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-43.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-44.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-45.html">第14章 二重积分</a><a class="toc-item" href="chapter-46.html">第15章 微分方程</a><a class="toc-item" href="chapter-47.html">第16章 无穷级数</a><a class="toc-item" href="chapter-48.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-49.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-50.html">第1章 行列式</a><a class="toc-item" href="chapter-51.html">第2章 余子式和代数余子式的计算</a><a class="toc-item" href="chapter-52.html">第3章 矩阵运算</a><a class="toc-item" href="chapter-53.html">第4章 矩阵的秩</a><a class="toc-item" href="chapter-54.html">第5章 线性方程组</a><a class="toc-item" href="chapter-55.html">第6章 向量组</a><a class="toc-item" href="chapter-56.html">第7章 特征值与特征向量</a><a class="toc-item" href="chapter-57.html">第8章 相似理论</a><a class="toc-item" href="chapter-58.html">第9章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-59.html">第1章 随机事件和概率</a><a class="toc-item" href="chapter-60.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-61.html">第3章 一维随机变量函数的分布</a><a class="toc-item" href="chapter-62.html">第4章 多维随机变量及其分布</a><a class="toc-item" href="chapter-63.html">第5章 多维随机变量函数的分布</a><a class="toc-item" href="chapter-64.html">第6章 数字特征</a><a class="toc-item" href="chapter-65.html">第7章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-66.html">第8章 统计量及其分布</a><a class="toc-item" href="chapter-67.html">第9章 参数估计与假设检验</a><div class="toc-part">综合篇</div><a class="toc-item" href="chapter-68.html">测试卷一</a><a class="toc-item" href="chapter-69.html">测试卷二</a><a class="toc-item" href="chapter-70.html">测试卷三</a><a class="toc-item" href="chapter-71.html">测试卷四</a></nav>
   </aside>
   <main class="content" id="content">
 
@@ -24,6 +26,10 @@
   <header class="q-head">
     <span class="q-no">【1】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="1" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="1" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="1" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$f(x_1, x_2, x_3) = -2x_1x_2 - 2x_1x_3 + 6x_2x_3$ 的正惯性指数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">0</span></span></div></div>
@@ -39,6 +45,10 @@ $$f = -2y_1^2 + 2y_2^2 + 4y_1y_3 - 8y_2y_3 = -2(y_1 - y_3)^2 + 2(y_2 - 2y_3)^2 -
   <header class="q-head">
     <span class="q-no">【2】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="2" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="2" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="2" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = (x_1 - x_2 + x_3)^2 + (x_2 - ax_3)^2 + (ax_3 + x_1)^2$ 的秩为 2，则 $a =$ ______.</div>
@@ -58,6 +68,10 @@ $$\begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 1 &amp; 0 &amp; a 
   <header class="q-head">
     <span class="q-no">【3】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="3" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="3" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="3" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设二次型 $f(x_1, x_2, x_3) = a(x_1^2 + x_2^2 + x_3^2) + 4(x_1x_2 + x_1x_3 + x_2x_3)$ 经正交变换可化为标准形 $f = 5y_1^2 - y_2^2 - y_3^2$，则 $a = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
@@ -71,6 +85,10 @@ $$\begin{bmatrix} 1 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; -a \\ 1 &amp; 0 &amp; a 
   <header class="q-head">
     <span class="q-no">【4】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="4" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="4" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="4" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x_1, x_2, x_3) = [x_1 + (a-2)x_2 - 2x_3]^2 + (x_1 + ax_2 + x_3)^2 + [x_1 + ax_2 + (a-2)x_3]^2$. 求：(1) 方程 $f(x_1, x_2, x_3) = 0$ 的解；(2) 二次型 $f(x_1, x_2, x_3)$ 的规范形.</div>
@@ -94,6 +112,10 @@ $$\begin{aligned} |\lambda \boldsymbol{E} - \boldsymbol{B}| &amp;= \begin{vmatri
   <header class="q-head">
     <span class="q-no">【5】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="5" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="5" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="5" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = ax_1^2 + ax_2^2 + ax_3^2 + 2x_1x_2 + 2x_1x_3 - 2x_2x_3$ 对应的矩阵为 $A$，且其在正交变换 $x = Qy$ 下的标准形为 $y_1^2 + y_2^2 - 2y_3^2$. (1) 求 $a$ 的值和正交矩阵 $Q$. (2) 设矩阵 $B = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ c &amp; b &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{pmatrix}$，若 $A$ 与 $B$ 相似，求 $b, c$ 的值. 在此情形下，是否存在正交矩阵 $P$，使 $P^{\mathrm{T}}AP = B$？若存在，求 $P$；若不存在，请说明理由.</div>
@@ -124,6 +146,10 @@ $$r \left( \begin{bmatrix} 0 &amp; &amp; \\ &amp; 0 &amp; \\ &amp; &amp; -3 \end
   <header class="q-head">
     <span class="q-no">【6】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="6" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="6" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="6" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A = \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix}$，$B = \begin{pmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{pmatrix}$，则 $A$ 和 $B$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不相似但不合同</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">相似但不合同</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">不相似但合同</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">相似且合同</span></span></div></div>
@@ -141,6 +167,10 @@ $$= \begin{vmatrix} \lambda - 1 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; \lambda - 1 
   <header class="q-head">
     <span class="q-no">【7】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="7" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="7" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="7" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 为 $n(n &gt; 1)$ 阶方阵，$i, j = 1, 2, \cdots, n$，$i \neq j$，互换 $A$ 的第 $i$ 行与第 $j$ 行得到矩阵 $B$，再互换 $B$ 的第 $i$ 列与第 $j$ 列得到矩阵 $C$，则 $A$ 与 $C$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">等价，相似且合同</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">等价，合同但不相似</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">合同，相似但不等价</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">等价，相似但不合同</span></span></div></div>
@@ -155,6 +185,10 @@ $$= \begin{vmatrix} \lambda - 1 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; \lambda - 1 
   <header class="q-head">
     <span class="q-no">【8】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="8" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="8" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="8" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">下列矩阵中的正定矩阵是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$A = \begin{pmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 1 &amp; 2 \\ 1 &amp; 2 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$B = \begin{pmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 2 &amp; 2 \\ 1 &amp; 2 &amp; 5 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$C = \begin{pmatrix} 1 &amp; 1 &amp; 2 \\ 1 &amp; 3 &amp; 1 \\ 2 &amp; 1 &amp; -1 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$D = \begin{pmatrix} 1 &amp; 2 &amp; -1 \\ 2 &amp; 5 &amp; -3 \\ -1 &amp; -3 &amp; 2 \end{pmatrix}$</span></span></div></div>
@@ -176,6 +210,10 @@ $$|\boldsymbol{B}| = \begin{vmatrix} 2 &amp; -1 &amp; 1 \\ -1 &amp; 2 &amp; 2 \\
   <header class="q-head">
     <span class="q-no">【9】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="9" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="9" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="9" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $A$ 为 3 阶矩阵，$E$ 为 3 阶单位矩阵，且 $(aE + A)^2 = \begin{pmatrix} 1 &amp; 0 &amp; 1 \\ 0 &amp; 2 &amp; 0 \\ 1 &amp; 0 &amp; 1 \end{pmatrix}$，$\mathrm{tr}(A) = 2\sqrt{2} - 3a$，$a$ 为常数. (1) 求矩阵 $A$；(2) 若 $A$ 正定，求 $a$ 的取值范围.</div>
@@ -200,6 +238,10 @@ $$= \begin{bmatrix} \dfrac{\sqrt{2}}{2} - a &amp; 0 &amp; \dfrac{\sqrt{2}}{2} \\
   <header class="q-head">
     <span class="q-no">【10】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="10" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="10" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="10" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设矩阵 $A = \begin{pmatrix} 1 &amp; 1 &amp; a \\ 1 &amp; a &amp; 1 \\ a &amp; 1 &amp; 1 \end{pmatrix}$，向量 $\beta = \begin{pmatrix} 1 \\ 1 \\ a \end{pmatrix}$，若齐次线性方程组 $Ax = 0$ 的解空间的维数为 1. (1) 求常数 $a$ 的值及非齐次线性方程组 $Ax = \beta$ 的解；(2) 求一个正交变换 $x = Qy$，将二次型 $f(x) = x^{\mathrm{T}}Ax$ 化为标准形，并写出该标准形.</div>
@@ -232,6 +274,10 @@ $$\boldsymbol{\eta}_1=\frac{1}{\sqrt{2}}\begin{pmatrix}-1\\0\\1\end{pmatrix},\bo
   <header class="q-head">
     <span class="q-no">【11】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="11" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="11" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="11" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A = \begin{pmatrix} -3 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 2 \\ 0 &amp; 2 &amp; 2 \end{pmatrix}$，$B = \begin{pmatrix} 0 &amp; 3 &amp; 0 \\ 3 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; k \end{pmatrix}$，若 $A$ 与 $B$ 合同但不相似，则常数 $k$ 的取值范围为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$k &gt; 0$ 且 $k \neq 2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$k &gt; 0$ 且 $k \neq 3$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$k &lt; 0$ 且 $k \neq -2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$k &lt; 0$ 且 $k \neq -3$</span></span></div></div>
@@ -245,6 +291,10 @@ $$\boldsymbol{\eta}_1=\frac{1}{\sqrt{2}}\begin{pmatrix}-1\\0\\1\end{pmatrix},\bo
   <header class="q-head">
     <span class="q-no">【12】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="12" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="12" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="12" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 3 阶实对称矩阵 $A$ 的各行元素之和均为 2，其主对角线元素之和为 5，$r(A) = 2$，则二次型 $f(x_1, x_2, x_3) = x^{\mathrm{T}}Ax$ 满足条件 $x_1^2 + x_2^2 + x_3^2 = 1$ 的最大值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{1}{5}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
@@ -265,6 +315,10 @@ $$\begin{aligned}f(x_1,x_2,x_3)&amp;=x^{\mathrm{T}}Ax=[y_1,y_2,y_3]\begin{pmatri
   <header class="q-head">
     <span class="q-no">【13】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="13" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="13" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="13" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A = \begin{pmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; a+2 &amp; 1 \\ 1 &amp; 1 &amp; a \end{pmatrix}$，若二次型 $f(x_1, x_2, x_3) = x^{\mathrm{T}}Ax$ 的规范形为 $z_1^2 + z_2^2$，求 $a$ 的值与将其化为规范形的可逆线性变换.</div>
@@ -300,6 +354,10 @@ $$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;-1&amp;-1\\-1&amp;\lambda-3&amp;-1\
   <header class="q-head">
     <span class="q-no">【14】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="14" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="14" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="14" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $\alpha, \beta$ 为 $n$ 维列向量，$P = [\alpha, \beta]$，$Q = [\alpha + \beta, 2\alpha]$. 若矩阵 $A$ 使得 $P^{\mathrm{T}}AP = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}$，则 $Q^{\mathrm{T}}AQ = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{pmatrix} 1 &amp; 4 \\ 4 &amp; 2 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{pmatrix} 4 &amp; 2 \\ 2 &amp; 1 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{pmatrix} 1 &amp; 2 \\ 2 &amp; 4 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{pmatrix} 2 &amp; 1 \\ 1 &amp; 4 \end{pmatrix}$</span></span></div></div>
@@ -314,6 +372,10 @@ $$\begin{aligned}Q^{\mathrm{T}}AQ&amp;=\begin{pmatrix}1&amp;2\\1&amp;0\end{pmatr
   <header class="q-head">
     <span class="q-no">【15】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="15" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="15" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="15" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $A = \begin{pmatrix} 3 &amp; 2 &amp; 1 \\ 2 &amp; 2 &amp; 1 \\ 1 &amp; 1 &amp; 1 \end{pmatrix}$，$\Lambda = \begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}$，求可逆矩阵 $C$，使得 $C^{\mathrm{T}}AC = \Lambda$.</div>
@@ -338,6 +400,10 @@ $$\to\begin{pmatrix}3&amp;0&amp;0&amp;\vline&amp;1&amp;0&amp;0\\0&amp;\dfrac{2}{
   <header class="q-head">
     <span class="q-no">【16】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="16" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="16" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="16" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = x_1^2 + ax_2^2 + bx_3^2 + 4x_1x_2 + 4x_1x_3 + 2cx_2x_3$ 经正交变换 $x = Qy$ 可化为标准形 $-y_1^2 - y_2^2 + 5y_3^2$，求：(1) 常数 $a, b, c$ 的值；(2) 所用正交变换.</div>
@@ -364,6 +430,10 @@ $$e_1=\Big[-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0\Big]^{\mathrm{T}},e_2=\Big[-
   <header class="q-head">
     <span class="q-no">【17】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="17" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="17" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="17" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 3 维列向量 $\alpha = [1, 1, 1]^{\mathrm{T}}$，矩阵 $A = \alpha\alpha^{\mathrm{T}}$. (1) 求 $A$ 的特征值与全部特征向量；(2) 求方程组 $(A + kE)x = 0$（$k$ 为常数）的通解；(3) 求一个正交变换 $x = Qy$，将二次型 $f = x^{\mathrm{T}}Ax$ 化为标准形.</div>
@@ -396,6 +466,10 @@ $$e_{1}=\left[\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\right]^{\
   <header class="q-head">
     <span class="q-no">【18】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="18" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="18" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="18" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设二次型 $f(x_1, x_2, x_3) = x_1^2 + x_2^2 + 2x_3^2 - 2x_1x_2$ 的矩阵为 $A$，则与 $A^2$ 既相似又合同的矩阵是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{pmatrix} 4 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{pmatrix} 4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{pmatrix} 3 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix}$</span></span></div></div>
@@ -414,6 +488,10 @@ $$Q^{-1}A^{2}Q=Q^{\mathrm{T}}A^{2}Q=\begin{bmatrix}4&amp;0&amp;0\\0&amp;4&amp;0\
   <header class="q-head">
     <span class="q-no">【19】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="19" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="19" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="19" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">下列二次型中，是正定二次型的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f_1(x_1, x_2, x_3, x_4) = (x_1 - x_2)^2 + (x_2 - x_3)^2 + (x_3 - x_4)^2 + (x_4 - x_1)^2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f_2(x_1, x_2, x_3, x_4) = (x_1 + x_2)^2 + (x_2 + x_3)^2 + (x_3 + x_4)^2 + (x_4 + x_1)^2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f_3(x_1, x_2, x_3, x_4) = (x_1 - x_2)^2 + (x_2 + x_3)^2 + (x_3 - x_4)^2 + (x_4 + x_1)^2$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f_4(x_1, x_2, x_3, x_4) = (x_1 - x_2)^2 + (x_2 + x_3)^2 + (x_3 + x_4)^2 + (x_4 + x_1)^2$</span></span></div></div>
@@ -447,6 +525,10 @@ $$=x^{\mathrm{T}}D^{\mathrm{T}}Dx=x^{\mathrm{T}}Ax,$$
   <header class="q-head">
     <span class="q-no">【20】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="20" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="20" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="20" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">(1) 设二次型 $f(x, y, z) = y^2 + 2zx$，用正交变换 $x = Qy$ 将其化为标准形，并写出 $Q$；(2) 求函数 $g(x, y, z) = \dfrac{y^2 + 2zx}{x^2 + y^2 + z^2}$（$x^2 + y^2 + z^2 \neq 0$）的最大值，并求出一个最大值点.</div>
@@ -482,6 +564,10 @@ $$\begin{bmatrix}x\\y\\z\end{bmatrix}=Q\begin{bmatrix}0\\1\\0\end{bmatrix}=\begi
   <header class="q-head">
     <span class="q-no">【21】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="21" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="21" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="21" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">二次型 $f(x_1, x_2, x_3) = x^{\mathrm{T}}Ax$ 通过正交变换化成 $2y_1^2 + 2y_2^2$，方程组 $Ax = 0$ 有解 $\xi = [1, 0, 1]^{\mathrm{T}}$，求正交变换及二次型矩阵 $A$.</div>
@@ -509,6 +595,10 @@ $$=\begin{bmatrix}1&amp;0&amp;-1\\0&amp;2&amp;0\\-1&amp;0&amp;1\end{bmatrix}.$$<
   <header class="q-head">
     <span class="q-no">【22】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="22" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="22" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="22" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A = \begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 \\ 1 &amp; 2 &amp; 3 &amp; \cdots &amp; s \\ 1 &amp; 2^2 &amp; 3^2 &amp; \cdots &amp; s^2 \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 1 &amp; 2^{n-1} &amp; 3^{n-1} &amp; \cdots &amp; s^{n-1} \end{pmatrix}$，其中 $s, n$ 是正整数，证明 $A^{\mathrm{T}}A$ 是实对称矩阵，并就正整数 $s, n$ 的情况讨论矩阵 $A^{\mathrm{T}}A$ 的正定性.</div>
@@ -526,6 +616,10 @@ $$=\begin{bmatrix}1&amp;0&amp;-1\\0&amp;2&amp;0\\-1&amp;0&amp;1\end{bmatrix}.$$<
   <header class="q-head">
     <span class="q-no">【23】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="23" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="23" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="23" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$f(x_1, x_2, x_3) = -2x_1x_2 - 2x_1x_3 + 6x_2x_3 = 0$ 是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">柱面</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">单叶双曲面</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">双叶双曲面</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">锥面</span></span></div></div>
@@ -544,6 +638,10 @@ $$f=-2z_{1}^{2}+2z_{2}^{2}-6z_{3}^{2}=0,$$
   <header class="q-head">
     <span class="q-no">【24】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="25" data-no="24" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="25" data-no="24" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="25" data-no="24" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知二次型 $f(x_1, x_2, x_3) = x_1^2 + x_2^2 + ax_3^2 - 2x_1x_3$，且二次曲面 $f(x_1, x_2, x_3) = 1$ 是柱面. (1) 求 $a$ 的值；(2) 用正交变换将二次型 $f$ 化为标准形，并求所用的正交变换；(3) 求此柱面母线的方向向量.</div>

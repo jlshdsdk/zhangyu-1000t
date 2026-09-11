@@ -9,14 +9,16 @@
 </head>
 <body data-page="chapter">
 <header class="topbar">
-  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <button id="menu-toggle" class="menu-btn" title="打开目录">☰ 目录</button>
+  <a class="back-home" href="../index.html">← 总目录</a>
   <div class="top-title">基础篇 · 第5章 特征值与特征向量<span class="top-count">（22题）</span></div>
+  <a class="lib-link" href="../collections.html">📚 收藏库</a>
   <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="side-title">题目导航</div>
-    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a></nav>
+    <div class="side-title">📖 全书目录</div>
+    <nav class="toc-nav"><div class="toc-part">基础篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-01.html">零基础</a><a class="toc-item" href="chapter-02.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-03.html">第2章 数列极限</a><a class="toc-item" href="chapter-04.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-05.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-06.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-07.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-08.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-09.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-10.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-11.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-12.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-13.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-14.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-15.html">第14章 二重积分</a><a class="toc-item" href="chapter-16.html">第15章 微分方程</a><a class="toc-item" href="chapter-17.html">第16章 无穷级数</a><a class="toc-item" href="chapter-18.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-19.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-20.html">第1章 行列式</a><a class="toc-item" href="chapter-21.html">第2章 矩阵</a><a class="toc-item" href="chapter-22.html">第3章 向量组</a><a class="toc-item" href="chapter-23.html">第4章 线性方程组</a><a class="toc-item cur" href="chapter-24.html" aria-current="page">第5章 特征值与特征向量</a><div class="toc-qs"><span class="toc-qs-label">本章题目</span><div class="toc-qs-grid"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a></div></div><a class="toc-item" href="chapter-25.html">第6章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-26.html">第1章 随机事件与概率</a><a class="toc-item" href="chapter-27.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-28.html">第3章 多维随机变量及其分布</a><a class="toc-item" href="chapter-29.html">第4章 随机变量的数字特征</a><a class="toc-item" href="chapter-30.html">第5章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-31.html">第6章 数理统计</a><div class="toc-part">强化篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-32.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-33.html">第2章 数列极限</a><a class="toc-item" href="chapter-34.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-35.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-36.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-37.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-38.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-39.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-40.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-41.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-42.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-43.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-44.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-45.html">第14章 二重积分</a><a class="toc-item" href="chapter-46.html">第15章 微分方程</a><a class="toc-item" href="chapter-47.html">第16章 无穷级数</a><a class="toc-item" href="chapter-48.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-49.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-50.html">第1章 行列式</a><a class="toc-item" href="chapter-51.html">第2章 余子式和代数余子式的计算</a><a class="toc-item" href="chapter-52.html">第3章 矩阵运算</a><a class="toc-item" href="chapter-53.html">第4章 矩阵的秩</a><a class="toc-item" href="chapter-54.html">第5章 线性方程组</a><a class="toc-item" href="chapter-55.html">第6章 向量组</a><a class="toc-item" href="chapter-56.html">第7章 特征值与特征向量</a><a class="toc-item" href="chapter-57.html">第8章 相似理论</a><a class="toc-item" href="chapter-58.html">第9章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-59.html">第1章 随机事件和概率</a><a class="toc-item" href="chapter-60.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-61.html">第3章 一维随机变量函数的分布</a><a class="toc-item" href="chapter-62.html">第4章 多维随机变量及其分布</a><a class="toc-item" href="chapter-63.html">第5章 多维随机变量函数的分布</a><a class="toc-item" href="chapter-64.html">第6章 数字特征</a><a class="toc-item" href="chapter-65.html">第7章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-66.html">第8章 统计量及其分布</a><a class="toc-item" href="chapter-67.html">第9章 参数估计与假设检验</a><div class="toc-part">综合篇</div><a class="toc-item" href="chapter-68.html">测试卷一</a><a class="toc-item" href="chapter-69.html">测试卷二</a><a class="toc-item" href="chapter-70.html">测试卷三</a><a class="toc-item" href="chapter-71.html">测试卷四</a></nav>
   </aside>
   <main class="content" id="content">
 
@@ -24,6 +26,10 @@
   <header class="q-head">
     <span class="q-no">【1】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="1" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="1" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="1" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $n$ 阶矩阵 $A$ 有特征值 $\lambda_1 = 1, \lambda_2 = -1$，对应的特征向量分别是 $\xi_1, \xi_2$，$k$ 是任意常数，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$k\xi_1$ 仍是 $A$ 对应 $\lambda = 1$ 的特征向量</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\xi_1 + \xi_2$ 是 $A$ 对应 $\lambda = 0$ 的特征向量</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\xi_1 - \xi_2$ 是 $A$ 对应 $\lambda = 2$ 的特征向量</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\xi_1 + \xi_2$ 是 $A^2$ 对应 $\lambda = 1$ 的特征向量</span></span></div></div>
@@ -42,6 +48,10 @@ $$A^2\xi_1=A\xi_1=\xi_1, A^2\xi_2=A(-\xi_2)=-A\xi_2=\xi_2,$$
   <header class="q-head">
     <span class="q-no">【2】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="2" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="2" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="2" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $$A = \begin{pmatrix} 3 &amp; -4 &amp; 0 \\ 4 &amp; -5 &amp; 0 \\ a &amp; 2 &amp; -1 \end{pmatrix},$$ 若 $A$ 的三重特征值 $\lambda$ 对应两个线性无关的特征向量，则 $a = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-2$</span></span></div></div>
@@ -59,6 +69,10 @@ $$-1-\lambda=0, -4a=2(3-\lambda), (3-\lambda)(-5-\lambda)=-16,$$
   <header class="q-head">
     <span class="q-no">【3】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="3" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="3" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="3" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $P^{-1}AP = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{pmatrix}$，$\alpha_1$ 是矩阵 $A$ 属于特征值 $\lambda = 1$ 的特征向量，$\alpha_2, \alpha_3$ 是矩阵 $A$ 属于特征值 $\lambda = 3$ 的线性无关的特征向量，则矩阵 $P$ 不可以是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$[\alpha_1, -2\alpha_2, \alpha_3]$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$[\alpha_1, \alpha_2 + \alpha_3, \alpha_2 - 2\alpha_3]$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$[\alpha_1, \alpha_3, \alpha_2]$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$[\alpha_1 + \alpha_2, \alpha_1 - \alpha_2, \alpha_3]$</span></span></div></div>
@@ -80,6 +94,10 @@ $$[A\alpha_1,A\alpha_2,A\alpha_3]=[\alpha_1,3\alpha_2,3\alpha_3].$$
   <header class="q-head">
     <span class="q-no">【4】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="4" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="4" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="4" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\lambda = -1$ 是 $A$ 的特征值的充分必要条件为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$A^2 = E$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$r(A + E) &lt; n$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$A$ 中每行元素之和为 $-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$A^{\mathrm{T}} = -A$，$|E - A| = 0$</span></span></div></div>
@@ -96,6 +114,10 @@ $$(A+E)\xi=0\Leftrightarrow|A+E|=0\Leftrightarrow r(A+E)&lt;n.$$
   <header class="q-head">
     <span class="q-no">【5】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="5" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="5" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="5" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A, P$ 都是 $n$ 阶可逆矩阵，$\lambda, \xi$ 分别是 $A$ 的特征值和对应的特征向量，则 $P^{-1}A^*P$ 的特征值和对应的特征向量分别是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\dfrac{|A|}{\lambda}, P^{-1}\xi$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\dfrac{|A|}{\lambda}, \xi$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\dfrac{1}{\lambda}, P\xi$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\dfrac{1}{\lambda}, P^{-1}\xi$</span></span></div></div>
@@ -118,6 +140,10 @@ $$P^{-1}A^*\xi=P^{-1}A^*P(P^{-1}\xi)=\frac{|A|}{\lambda}P^{-1}\xi.$$
   <header class="q-head">
     <span class="q-no">【6】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="6" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="6" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="6" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 是 3 阶矩阵，将 $A$ 的第 2 列加到第 3 列得矩阵 $B$，再将 $B$ 的第 3 行的 $-1$ 倍加到第 2 行得 $\begin{pmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 2 &amp; a \end{pmatrix}$，其中 $a$ 为常数，则 $A$ 的特征值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1, 2, $a$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1, 2, $-2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1, $-1$, 2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1, $a$, $-a$</span></span></div></div>
@@ -131,6 +157,10 @@ $$P^{-1}A^*\xi=P^{-1}A^*P(P^{-1}\xi)=\frac{|A|}{\lambda}P^{-1}\xi.$$
   <header class="q-head">
     <span class="q-no">【7】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="7" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="7" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="7" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">下列矩阵中，不能相似对角化的是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\begin{pmatrix} 1 &amp; 2 &amp; -1 \\ 2 &amp; 0 &amp; 1 \\ -1 &amp; 1 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\begin{pmatrix} 3 &amp; 2 &amp; 1 \\ 0 &amp; 2 &amp; 1 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 1 &amp; 0 &amp; 1 \end{pmatrix}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 1 &amp; 2 &amp; 0 \\ 0 &amp; 1 &amp; 2 \end{pmatrix}$</span></span></div></div>
@@ -144,6 +174,10 @@ $$P^{-1}A^*\xi=P^{-1}A^*P(P^{-1}\xi)=\frac{|A|}{\lambda}P^{-1}\xi.$$
   <header class="q-head">
     <span class="q-no">【8】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="8" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="8" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="8" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 为 2 阶矩阵，$\alpha = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ 是方程组 $Ax = 0$ 的解，$\beta = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ 是方程组 $Ax = \beta$ 的解，则矩阵 $A =$ ______.</div>
@@ -158,6 +192,10 @@ $$A=P\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}P^{-1}=\begin{bmatrix}1&amp;1\\
   <header class="q-head">
     <span class="q-no">【9】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="9" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="9" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="9" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $A$ 为 2 阶方阵，可逆矩阵 $P = [\alpha, \beta]$ 使得 $P^{-1}AP = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 2 \end{pmatrix}$，$Q = [\beta, \alpha]$，则 $Q^{-1}A^*Q =$ ______.</div>
@@ -174,6 +212,10 @@ $$A^*Q=Q\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix}, Q^{-1}A^*Q=\begin{bmatrix}
   <header class="q-head">
     <span class="q-no">【10】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="10" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="10" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="10" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 1 与 $-1$ 是矩阵 $$A = \begin{pmatrix} 3 &amp; 1 &amp; -2 \\ -a &amp; -1 &amp; a \\ 4 &amp; 1 &amp; -3 \end{pmatrix}$$ 的特征值，若矩阵 $A$ 可相似对角化，则 $a = ($　).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">2</span></span></div></div>
@@ -190,6 +232,10 @@ $$-E-A\to\begin{bmatrix}-4&amp;-1&amp;2\\ a&amp;0&amp;-a\\ -4&amp;-1&amp;2\end{b
   <header class="q-head">
     <span class="q-no">【11】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="11" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="11" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="11" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $A = \begin{pmatrix} 1 &amp; -1 &amp; -a \\ 2 &amp; a &amp; -2 \\ -a &amp; -1 &amp; 1 \end{pmatrix}$，求 $A$ 的特征值，并讨论 $A$ 是否可相似对角化.</div>
@@ -216,6 +262,10 @@ $$r(E-A)=r\left(\begin{bmatrix}0&amp;1&amp;0\\ -2&amp;1&amp;2\\ 0&amp;1&amp;0\en
   <header class="q-head">
     <span class="q-no">【12】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="12" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="12" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="12" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 是 3 阶实对称矩阵，已知 $A$ 的每行元素之和为 3，且有二重特征值 $\lambda_1 = \lambda_2 = 1$. 求 $A$ 的全部特征值、特征向量，并求 $A^n$.</div>
@@ -259,6 +309,10 @@ $$Q^{-1}AQ=Q^{\mathrm{T}}AQ=\Lambda.$$
   <header class="q-head">
     <span class="q-no">【13】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="13" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="13" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="13" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 是 3 阶实对称矩阵，满足 $A + A^2 + \dfrac{1}{2}A^3 = O$，则 $r(A) =$ ______.</div>
@@ -273,6 +327,10 @@ $$\begin{bmatrix}0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;0\end{bmatrix}, \text
   <header class="q-head">
     <span class="q-no">【14】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="14" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="14" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="14" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">(1) 设 $A, B$ 是 $n$ 阶矩阵，$A$ 有特征值 $\lambda = 1, 2, \cdots, n$. 证明 $AB$ 和 $BA$ 有相同的特征值且 $AB \sim BA$；(2) 对一般的 $n$ 阶矩阵 $A, B$，是否必有 $AB \sim BA$，说明理由.</div>
@@ -301,6 +359,10 @@ $$BA=\begin{bmatrix}1&amp;-1\\ -1&amp;1\end{bmatrix}\begin{bmatrix}1&amp;1\\ -1&
   <header class="q-head">
     <span class="q-no">【15】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="15" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="15" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="15" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $A = \begin{pmatrix} 3 &amp; a &amp; 4 \\ 2 &amp; -1 &amp; 2 \\ -2 &amp; -a &amp; -3 \end{pmatrix}$，求 $A$ 的特征值，问 $a$ 为何值时，$A$ 不能相似于对角矩阵；$a$ 为何值时，$A$ 相似于对角矩阵，并求可逆矩阵 $P$，使得 $P^{-1}AP = \Lambda$.</div>
@@ -326,6 +388,10 @@ $$P^{-1}AP=\begin{bmatrix}-1&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;1\end{bmatrix}.$
   <header class="q-head">
     <span class="q-no">【16】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="16" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="16" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="16" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 3 阶矩阵 $A$ 有三个特征值 $-1, 2, \dfrac{1}{3}$，对应的特征向量分别是 $\xi_1, \xi_2, \xi_3$，取 $P = [2\xi_2, -\xi_1, 3\xi_3]$，则 $P^{-1}AP =$ ______.</div>
@@ -345,6 +411,10 @@ $$P^{-1}AP=\begin{bmatrix}2&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;\frac{1}{3}\end{b
   <header class="q-head">
     <span class="q-no">【17】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="17" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="17" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="17" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $A$ 是 3 阶矩阵，$r(A) = 1$，则 $\lambda = 0$ 是 $A$ 的特征值，其重数（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">必为 2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">可能为 2 或 3</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">可能为 1 或 2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">可能为 1, 2 或 3</span></span></div></div>
@@ -358,6 +428,10 @@ $$P^{-1}AP=\begin{bmatrix}2&amp;&amp;\\&amp;-1&amp;\\&amp;&amp;\frac{1}{3}\end{b
   <header class="q-head">
     <span class="q-no">【18】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="18" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="18" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="18" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 是 2 阶矩阵，有特征值 $\lambda_1 = 1, \lambda_2 = 2$，$f(x) = x^2 - 3x + 3$，则 $f(A) =$ ______.</div>
@@ -375,6 +449,10 @@ $$\begin{aligned}f(A)&amp;=A^2-3A+3E=(P\Lambda P^{-1})^2-3P\Lambda P^{-1}+3PP^{-
   <header class="q-head">
     <span class="q-no">【19】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="19" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="19" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="19" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A, B$ 是 $n$ 阶可逆矩阵，且 $A \sim B$，则以下结论中：①$A^{-1} \sim B^{-1}$；②$A^{\mathrm{T}} \sim B^{\mathrm{T}}$；③$A^* \sim B^*$；④$AB \sim BA$. 正确结论的个数是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
@@ -400,6 +478,10 @@ $$BA=EBA=A^{-1}ABA=A^{-1}(AB)A,$$
   <header class="q-head">
     <span class="q-no">【20】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="20" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="20" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="20" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A = E - \dfrac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}$，其中 $E$ 是 $n$ 阶单位矩阵，$\alpha = [a_1, a_2, \cdots, a_n]^{\mathrm{T}} \neq 0$. (1) 计算 $A^2$，并求 $A^{-1}$；(2) 验证 $\alpha$ 是 $A$ 的特征向量，并求 $A$ 的对应于 $\alpha$ 的特征值.</div>
@@ -421,6 +503,10 @@ $$A\alpha=\left(E-\frac{3}{\alpha^{\mathrm{T}}\alpha}\alpha\alpha^{\mathrm{T}}\r
   <header class="q-head">
     <span class="q-no">【21】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="21" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="21" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="21" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 是 3 阶矩阵，$\lambda_0$ 是 $A$ 的特征值，对应的特征向量为 $\xi = [1, 1, 1]^{\mathrm{T}}$，且 $|A| = 1$，$A^*$ 是 $A$ 的伴随矩阵，$A^* = \begin{pmatrix} -a &amp; 1 &amp; -2 \\ -1 &amp; b &amp; -\dfrac{7}{2} \\ 2 &amp; -3 &amp; a \end{pmatrix}$，求参数 $a, b$ 及 $\lambda_0$.</div>
@@ -442,6 +528,10 @@ $$\begin{cases}\lambda_0(-a+1-2)=1,\\\lambda_0\left(-1+b-\dfrac{7}{2}\right)=1,\
   <header class="q-head">
     <span class="q-no">【22】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="24" data-no="22" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="24" data-no="22" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="24" data-no="22" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $A$ 是 3 阶矩阵，$\lambda_1, \lambda_2, \lambda_3$ 是 $A$ 的三个不同的特征值，对应的特征向量分别是 $\xi_1, \xi_2, \xi_3$，令 $\beta = \xi_1 + \xi_2 + \xi_3$. 证明：(1) $\beta$ 不是 $A$ 的特征向量；(2) 向量组 $\beta, A\beta, A^2\beta$ 线性无关.</div>

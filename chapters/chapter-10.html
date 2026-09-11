@@ -9,14 +9,16 @@
 </head>
 <body data-page="chapter">
 <header class="topbar">
-  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <button id="menu-toggle" class="menu-btn" title="打开目录">☰ 目录</button>
+  <a class="back-home" href="../index.html">← 总目录</a>
   <div class="top-title">基础篇 · 第9章 一元函数积分学的计算<span class="top-count">（36题）</span></div>
+  <a class="lib-link" href="../collections.html">📚 收藏库</a>
   <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="side-title">题目导航</div>
-    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a></nav>
+    <div class="side-title">📖 全书目录</div>
+    <nav class="toc-nav"><div class="toc-part">基础篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-01.html">零基础</a><a class="toc-item" href="chapter-02.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-03.html">第2章 数列极限</a><a class="toc-item" href="chapter-04.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-05.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-06.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-07.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-08.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-09.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item cur" href="chapter-10.html" aria-current="page">第9章 一元函数积分学的计算</a><div class="toc-qs"><span class="toc-qs-label">本章题目</span><div class="toc-qs-grid"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a></div></div><a class="toc-item" href="chapter-11.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-12.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-13.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-14.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-15.html">第14章 二重积分</a><a class="toc-item" href="chapter-16.html">第15章 微分方程</a><a class="toc-item" href="chapter-17.html">第16章 无穷级数</a><a class="toc-item" href="chapter-18.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-19.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-20.html">第1章 行列式</a><a class="toc-item" href="chapter-21.html">第2章 矩阵</a><a class="toc-item" href="chapter-22.html">第3章 向量组</a><a class="toc-item" href="chapter-23.html">第4章 线性方程组</a><a class="toc-item" href="chapter-24.html">第5章 特征值与特征向量</a><a class="toc-item" href="chapter-25.html">第6章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-26.html">第1章 随机事件与概率</a><a class="toc-item" href="chapter-27.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-28.html">第3章 多维随机变量及其分布</a><a class="toc-item" href="chapter-29.html">第4章 随机变量的数字特征</a><a class="toc-item" href="chapter-30.html">第5章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-31.html">第6章 数理统计</a><div class="toc-part">强化篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-32.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-33.html">第2章 数列极限</a><a class="toc-item" href="chapter-34.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-35.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-36.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-37.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-38.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-39.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-40.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-41.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-42.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-43.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-44.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-45.html">第14章 二重积分</a><a class="toc-item" href="chapter-46.html">第15章 微分方程</a><a class="toc-item" href="chapter-47.html">第16章 无穷级数</a><a class="toc-item" href="chapter-48.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-49.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-50.html">第1章 行列式</a><a class="toc-item" href="chapter-51.html">第2章 余子式和代数余子式的计算</a><a class="toc-item" href="chapter-52.html">第3章 矩阵运算</a><a class="toc-item" href="chapter-53.html">第4章 矩阵的秩</a><a class="toc-item" href="chapter-54.html">第5章 线性方程组</a><a class="toc-item" href="chapter-55.html">第6章 向量组</a><a class="toc-item" href="chapter-56.html">第7章 特征值与特征向量</a><a class="toc-item" href="chapter-57.html">第8章 相似理论</a><a class="toc-item" href="chapter-58.html">第9章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-59.html">第1章 随机事件和概率</a><a class="toc-item" href="chapter-60.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-61.html">第3章 一维随机变量函数的分布</a><a class="toc-item" href="chapter-62.html">第4章 多维随机变量及其分布</a><a class="toc-item" href="chapter-63.html">第5章 多维随机变量函数的分布</a><a class="toc-item" href="chapter-64.html">第6章 数字特征</a><a class="toc-item" href="chapter-65.html">第7章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-66.html">第8章 统计量及其分布</a><a class="toc-item" href="chapter-67.html">第9章 参数估计与假设检验</a><div class="toc-part">综合篇</div><a class="toc-item" href="chapter-68.html">测试卷一</a><a class="toc-item" href="chapter-69.html">测试卷二</a><a class="toc-item" href="chapter-70.html">测试卷三</a><a class="toc-item" href="chapter-71.html">测试卷四</a></nav>
   </aside>
   <main class="content" id="content">
 
@@ -24,6 +26,10 @@
   <header class="q-head">
     <span class="q-no">【1】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="1" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="1" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="1" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">计算下列不定积分.（1）$\int\cos^{3}x\,\mathrm{d}x$；（2）$\int\sin^{3}x\,\mathrm{d}x$；（3）$\int\sec x\,\mathrm{d}x$；（4）$\int\sec^{3}x\,\mathrm{d}x$；（5）$\int\frac{1}{a^{2}-x^{2}}\,\mathrm{d}x\ (a\neq 0)$；（6）$\int\frac{1}{x^{2}-a^{2}}\,\mathrm{d}x\ (a\neq 0)$；（7）$\int\frac{1}{a^{2}+x^{2}}\,\mathrm{d}x\ (a\neq 0)$；（8）$\int\frac{1}{a^{2}+(x+b)^{2}}\,\mathrm{d}x\ (a\neq 0)$；（9）$\int\frac{1}{a^{2}-(x+b)^{2}}\,\mathrm{d}x\ (a&gt;0)$；（10）$\int\frac{1}{(x+b)^{2}-a^{2}}\,\mathrm{d}x\ (a&gt;0)$；（11）$\int\frac{1}{\sqrt{x^{2}-a^{2}}}\,\mathrm{d}x\ (a&gt;0)$；（12）$\int\frac{1}{\sqrt{a^{2}-x^{2}}}\,\mathrm{d}x\ (a&gt;0)$；（13）$\int\frac{1}{\sqrt{x^{2}+a^{2}}}\,\mathrm{d}x\ (a&gt;0)$；（14）$\int\csc^{3}x\,\mathrm{d}x$；（15）$\int\tan^{2}x\,\mathrm{d}x$；（16）$\int\tan^{3}x\,\mathrm{d}x$；（17）$\int\tan^{4}x\,\mathrm{d}x$；（18）$\int\cot^{3}x\,\mathrm{d}x$；（19）$\int\frac{\cos x}{1+\sin x}\,\mathrm{d}x$；（20）$\int\frac{1}{a^{2}\sin^{2}x+b^{2}\cos^{2}x}\,\mathrm{d}x$；（21）$\int\frac{1}{\sin 2x}\,\mathrm{d}x$；（22）$\int\frac{1}{\cos 2x}\,\mathrm{d}x$；（23）$\int\frac{1}{a+b\cos x}\,\mathrm{d}x\ (a&gt;0,b&gt;0)$；（24）$\int\frac{1}{a+b\sin x}\,\mathrm{d}x\ (a&gt;0,b&gt;0)$.</div>
@@ -190,6 +196,10 @@ $$=\frac{2}{\sqrt{a^2-b^2}}\arctan\left(\frac{a}{\sqrt{a^2-b^2}}\tan\frac{x}{2}+
   <header class="q-head">
     <span class="q-no">【2】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="2" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="2" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="2" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">计算不定积分 $\int\frac{\mathrm{e}^{2x}}{\sqrt{\mathrm{e}^{x}-1}}\,\mathrm{d}x$.</div>
@@ -208,6 +218,10 @@ $$=\frac{2}{3}(\mathrm{e}^x-1)^{\frac{3}{2}}+2\sqrt{\mathrm{e}^x-1}+C.$$</div></
   <header class="q-head">
     <span class="q-no">【3】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="3" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="3" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="3" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">计算不定积分 $\int\ln\left(1+\sqrt{\frac{1+x}{x}}\right)\mathrm{d}x\ (x&gt;0)$.</div>
@@ -228,6 +242,10 @@ $$=x\ln\left(1+\sqrt{\frac{1+x}{x}}\right)+\frac{1}{2}\ln(\sqrt{1+x}+\sqrt{x})-\
   <header class="q-head">
     <span class="q-no">【4】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="4" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="4" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="4" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">计算不定积分 $\int \mathrm{e}^{2x}\arctan\sqrt{\mathrm{e}^{x}-1}\,\mathrm{d}x$.</div>
@@ -247,6 +265,10 @@ $$=\frac{2}{3}(\mathrm{e}^x-1)\sqrt{\mathrm{e}^x-1}+2\sqrt{\mathrm{e}^x-1}+C_1,$
   <header class="q-head">
     <span class="q-no">【5】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="5" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="5" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="5" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">定积分 $\int_{0}^{1}\mathrm{e}^{-\sqrt{x}}\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$2-\frac{4}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$1-\frac{2}{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$1-\frac{1}{\mathrm{e}}$</span></span></div></div>
@@ -262,6 +284,10 @@ $$\int_0^1 \mathrm{e}^{-\sqrt{x}}\mathrm{d}x=2\int_0^1 t\mathrm{e}^{-t}\mathrm{d
   <header class="q-head">
     <span class="q-no">【6】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="6" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="6" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="6" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{0}^{1}\frac{4x-3}{x^{2}-x+1}\,\mathrm{d}x=$ ______.</div>
@@ -278,6 +304,10 @@ $$=-\frac{2\sqrt{3}}{9}\pi.$$</div><div class="answer-line"><span class="answer-
   <header class="q-head">
     <span class="q-no">【7】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="7" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="7" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="7" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{0}^{1}\frac{\arctan\sqrt{x}}{\sqrt{x}(1+x)}\,\mathrm{d}x=$ ______.</div>
@@ -293,6 +323,10 @@ $$=\left(\frac{\pi}{4}\right)^2=\frac{\pi^2}{16}.$$</div><div class="answer-line
   <header class="q-head">
     <span class="q-no">【8】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="8" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="8" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="8" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{0}^{\frac{\pi}{4}}\sec^{3}\theta\,\mathrm{d}\theta=$ ______.</div>
@@ -313,6 +347,10 @@ $$=\frac{1}{2}[\sqrt{2}+\ln(\sqrt{2}+1)].$$</div><div class="answer-line"><span 
   <header class="q-head">
     <span class="q-no">【9】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="9" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="9" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="9" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设连续函数 $f(x)$ 满足：$f(x+1)-f(x)=x\ln x$，$\int_{0}^{1}f(x)\,\mathrm{d}x=0$，则 $\int_{1}^{2}f(x)\,\mathrm{d}x=$ ______.</div>
@@ -334,6 +372,10 @@ $$=-\frac{1}{4}\mathrm{e}^{2u}\Big|_{-\infty}^{0}=-\frac{1}{4},$$
   <header class="q-head">
     <span class="q-no">【10】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="10" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="10" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="10" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y=\frac{x}{\sqrt{1+x^{2}}}$，则 $\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}xy\,\mathrm{d}y=$ ______.</div>
@@ -349,6 +391,10 @@ $$=\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\sin^2 t\,\mathrm{d}t=\frac{\pi}{12}.$$</
   <header class="q-head">
     <span class="q-no">【11】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="11" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="11" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="11" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若 $\mathrm{e}^{-x}$ 是 $f(x)$ 的一个原函数，则 $\int_{1}^{\sqrt{2}}\frac{1}{x^{2}}f(\ln x)\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1</span></span></div></div>
@@ -364,6 +410,10 @@ $$\int_1^{\sqrt{2}}\frac{1}{x^2}f(\ln x)\mathrm{d}x=-\int_1^{\sqrt{2}}\frac{1}{x
   <header class="q-head">
     <span class="q-no">【12】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="12" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="12" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="12" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若函数 $f(x)$ 在 $[0,+\infty)$ 上连续，$g(x)=\int_{0}^{2x}f\left(x+\frac{t}{2}\right)\mathrm{d}t$，则当 $x\to 0^{+}$ 时，$g(x)$ 是 $\sqrt{x}$ 的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">高阶无穷小</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">低阶无穷小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">等价无穷小</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">同阶但非等价无穷小</span></span></div></div>
@@ -383,6 +433,10 @@ $$=4\lim_{x\to 0^+}\sqrt{x}\left[2f(2x)-f(x)\right]=0,$$
   <header class="q-head">
     <span class="q-no">【13】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="13" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="13" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="13" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $x=0$ 的某邻域内连续，在 $x=0$ 处可导，且 $f(0)=0$，$\varphi(x)=\begin{cases}\dfrac{1}{x^{2}}\displaystyle\int_{0}^{x}tf(t)\,\mathrm{d}t, &amp; x\neq 0,\\ 0, &amp; x=0,\end{cases}$ 则 $\varphi(x)$ 在 $x=0$ 处（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不连续</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">连续但不可导</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">可导但 $\varphi'(x)$ 在 $x=0$ 处不连续</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">可导且 $\varphi'(x)$ 在 $x=0$ 处连续</span></span></div></div>
@@ -405,6 +459,10 @@ $$=f'(0)-\frac{2}{3}f'(0)=\frac{1}{3}f'(0)=\varphi'(0),$$
   <header class="q-head">
     <span class="q-no">【14】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="14" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="14" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="14" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若连续周期函数 $y=f(x)$（不恒为常数），对任何 $x$ 恒有 $\int_{-1}^{x+6}f(t)\,\mathrm{d}t+\int_{x-3}^{4}f(t)\,\mathrm{d}t=14$ 成立，则 $f(x)$ 的周期是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">7</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">8</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">9</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">10</span></span></div></div>
@@ -422,6 +480,10 @@ $$f(x+6)-f(x-3)=0,$$
   <header class="q-head">
     <span class="q-no">【15】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="15" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="15" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="15" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $[-a,a]$ 上是连续的偶函数，$a&gt;0$，$g(x)=\int_{-a}^{a}\left|x-t\right|\cdot f(t)\,\mathrm{d}t$，则在 $[-a,a]$ 上（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$g(x)$ 是单调递增函数</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$g(x)$ 是单调递减函数</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$g(x)$ 是偶函数</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$g(x)$ 是奇函数</span></span></div></div>
@@ -447,6 +509,10 @@ $$=\int_{-a}^{a}\left|x-u\right|f(u)\mathrm{d}u=g(x),$$故可知 $g(x)$ 是偶�
   <header class="q-head">
     <span class="q-no">【16】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="16" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="16" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="16" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若 $F(x)=\int_{-\pi}^{\pi}\left|x-t\right|\sin t\,\mathrm{d}t$，则 $F'(0)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-4$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-2$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
@@ -468,6 +534,10 @@ $$F'(0)=\int_{-\pi}^{0}\sin t\,\mathrm{d}t-\int_{0}^{\pi}\sin t\,\mathrm{d}t=-\c
   <header class="q-head">
     <span class="q-no">【17】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="17" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="17" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="17" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若函数 $y(x)=\int_{2}^{x^{2}}\mathrm{e}^{-\sqrt{t}}\,\mathrm{d}t$，则 $\left.\dfrac{\mathrm{d}^{2}\left[y(x)\right]}{\mathrm{d}x^{2}}\right|_{x=-1}=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$4\mathrm{e}^{-1}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$4\mathrm{e}$</span></span></div></div>
@@ -486,6 +556,10 @@ $$\frac{\mathrm{d}^2\left[y(x)\right]}{\mathrm{d}x^2}\bigg|_{x=-1}=2(1+x)\mathrm
   <header class="q-head">
     <span class="q-no">【18】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="18" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="18" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="18" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $f(x)=\int_{1}^{x}\sqrt{1+t^{3}}\,\mathrm{d}t$，则 $\int_{0}^{1}xf(x)\,\mathrm{d}x=$ ______.</div>
@@ -508,6 +582,10 @@ $$=\frac{1}{9}(1-2\sqrt{2}).$$</div><div class="answer-line"><span class="answer
   <header class="q-head">
     <span class="q-no">【19】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="19" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="19" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="19" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设连续函数 $f(x)$ 满足 $\int_{0}^{x}f(t)\,\mathrm{d}t=x\mathrm{e}^{x}$，则 $\int_{1}^{\mathrm{e}}\frac{f(\ln x)}{x}\,\mathrm{d}x=$ ______.</div>
@@ -524,6 +602,10 @@ $$=\mathrm{e}.$$</div><div class="answer-line"><span class="answer-label">最终
   <header class="q-head">
     <span class="q-no">【20】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="20" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="20" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="20" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $a_{n}=\int_{0}^{1}x^{n}\sqrt{1-x^{2}}\,\mathrm{d}x\ (n=0,1,2,\cdots)$，则 $\lim_{n \to \infty}\left(\frac{a_{n}}{a_{n-2}}\right)^{n}=$ ______.</div>
@@ -543,6 +625,10 @@ $$\lim_{n\to\infty}\left(\frac{a_n}{a_{n-2}}\right)^{n}=\lim_{n\to\infty}\left(\
   <header class="q-head">
     <span class="q-no">【21】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="21" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="21" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="21" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{\sqrt{5}}^{5}\frac{1}{\sqrt{\left|x^{2}-9\right|}}\,\mathrm{d}x=$ ______.</div>
@@ -559,6 +645,10 @@ $$=\frac{\pi}{2}-\arcsin\frac{\sqrt{5}}{3}+\ln 3.$$</div><div class="answer-line
   <header class="q-head">
     <span class="q-no">【22】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="22" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="22" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="22" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{-\infty}^{+\infty}\left|x\right|\mathrm{e}^{-x^{2}}\,\mathrm{d}x=$ ______.</div>
@@ -572,6 +662,10 @@ $$=\frac{\pi}{2}-\arcsin\frac{\sqrt{5}}{3}+\ln 3.$$</div><div class="answer-line
   <header class="q-head">
     <span class="q-no">【23】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="23" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="23" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="23" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)=\lim_{n \to \infty}\frac{1-x^{2n}}{1+x^{2n}}x$，且 $\int_{0}^{2}f(x)\,\mathrm{d}x=a$，则 $a$ 等于（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$-1$</span></span></div></div>
@@ -588,6 +682,10 @@ $$\int_{0}^{2}f(x)\mathrm{d}x=\int_{0}^{1}x\,\mathrm{d}x+\int_{1}^{2}(-x)\,\math
   <header class="q-head">
     <span class="q-no">【24】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="24" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="24" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="24" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{-1}^{1}\left(\frac{1}{1+2^{\frac{1}{x}}}\right)'\mathrm{d}x=$ ______.</div>
@@ -604,6 +702,10 @@ $$=1-\frac{2}{3}+\frac{1}{3}-0=\frac{2}{3}.$$</div><div class="answer-line"><spa
   <header class="q-head">
     <span class="q-no">【25】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="25" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="25" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="25" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{-\frac{1}{2}}^{\frac{1}{2}}\frac{\left|x\right|\left(\arcsin x+\arccos x\right)}{\sqrt{1-x^{2}}}\,\mathrm{d}x=$ ______.</div>
@@ -624,6 +726,10 @@ $$=\pi-\frac{\sqrt{3}}{2}\pi=\pi\left(1-\frac{\sqrt{3}}{2}\right).$$</div><div c
   <header class="q-head">
     <span class="q-no">【26】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="26" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="26" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="26" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">积分 $I=\int_{1}^{\frac{3}{2}}\frac{(1-x)\arcsin(1-x)}{\sqrt{2x-x^{2}}}\,\mathrm{d}x=$ ______.</div>
@@ -641,6 +747,10 @@ $$=\frac{\sqrt{3}}{2}\cdot\left(-\frac{\pi}{6}\right)+\frac{1}{2}=\frac{1}{2}-\f
   <header class="q-head">
     <span class="q-no">【27】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="27" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="27" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="27" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若 $f(x)=\frac{1}{1+x^{2}}+x^{3}\int_{0}^{1}f(x)\,\mathrm{d}x$，则 $f(x)=$ ______.</div>
@@ -659,6 +769,10 @@ $$=\frac{\pi}{4}+\frac{1}{4}\int_{0}^{1}f(x)\,\mathrm{d}x,$$
   <header class="q-head">
     <span class="q-no">【28】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="28" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="28" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="28" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{-1}^{1}\left[x^{3}\cos x+\ln\left(x+\sqrt{x^{2}+1}\right)\right]\mathrm{d}x=$ ______.</div>
@@ -677,6 +791,10 @@ $$=\ln(1+\sqrt{2})+\ln(-1+\sqrt{2})-0=0.$$</div><div class="answer-line"><span c
   <header class="q-head">
     <span class="q-no">【29】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="29" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="29" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="29" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)=\int_{0}^{x}\frac{\cos t}{1+\sin^{2}t}\,\mathrm{d}t$，则 $\int_{0}^{\frac{\pi}{2}}\frac{f'(x)}{1+f^{2}(x)}\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$-\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$-\arctan\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\pi}{4}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\arctan\frac{\pi}{4}$</span></span></div></div>
@@ -693,6 +811,10 @@ $$=\arctan f\left(\frac{\pi}{2}\right)-\arctan f(0)=\arctan\frac{\pi}{4}.$$</div
   <header class="q-head">
     <span class="q-no">【30】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="30" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="30" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="30" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $\int_{1}^{+\infty}f(x)\,\mathrm{d}x$ 收敛，$f(x)=x^{3}\mathrm{e}^{-x^{2}}+\frac{1}{x(1+x)}\int_{1}^{+\infty}f(x)\,\mathrm{d}x$，则 $\int_{1}^{+\infty}f(x)\,\mathrm{d}x=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1}{1-\ln 2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{1}{\ln 2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{\mathrm{e}}{1-\ln 2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{1}{(1-\ln 2)\mathrm{e}}$</span></span></div></div>
@@ -711,6 +833,10 @@ $$(1-\ln 2)I=\frac{1}{2}\mathrm{e}^{-1}-\frac{1}{2}\mathrm{e}^{-x^2}\Big|_{1}^{+
   <header class="q-head">
     <span class="q-no">【31】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="31" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="31" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="31" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $\alpha(x)=\int_{0}^{x}tf(t)\,\mathrm{d}t$，$\beta(x)=\int_{0}^{x}xf(t)\,\mathrm{d}t$，$f(x)&gt;0$，且 $f'(x)=o(x)\ (x\to 0^{+})$，则当 $x\to 0^{+}$ 时，$\alpha(x)$ 是 $\beta(x)$ 的（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">高阶无穷小</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">低阶无穷小</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">等价无穷小</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">同阶但非等价无穷小</span></span></div></div>
@@ -728,6 +854,10 @@ $$=\lim_{x\to 0^{+}}\frac{f(x)+xf'(x)}{2f(x)+xf'(x)}=\frac{1}{2},$$
   <header class="q-head">
     <span class="q-no">【32】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="32" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="32" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="32" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 及其反函数 $f^{-1}(x)$ 都可导，且有 $\int_{2}^{f(x)}f^{-1}(t)\,\mathrm{d}t=\frac{1}{3}x^{\frac{3}{2}}-9$，则 $f(x)=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\sqrt{x}-1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sqrt{x}+1$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$2\sqrt{x}-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2\sqrt{x}+1$</span></span></div></div>
@@ -749,6 +879,10 @@ $$f(x)=\sqrt{x}+C.$$
   <header class="q-head">
     <span class="q-no">【33】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="33" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="33" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="33" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 上有连续的导数，则 $\lim_{a \to 0^{+}}\frac{1}{4a^{2}}\int_{-a}^{a}\left[f(t+a)-f(t-a)\right]\mathrm{d}t=$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f'(0)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1}{4}f'(0)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">不存在</span></span></div></div>
@@ -768,6 +902,10 @@ $$=f'(0).$$</div><div class="answer-line"><span class="answer-label">最终答�
   <header class="q-head">
     <span class="q-no">【34】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="34" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="34" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="34" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)=\int_{1}^{\sqrt{x}}\mathrm{e}^{-t^{2}}\,\mathrm{d}t$，求 $I=\int_{0}^{1}\frac{f(x)}{\sqrt{x}}\,\mathrm{d}x$.</div>
@@ -793,6 +931,10 @@ $$=-2\int_{0}^{1}\sqrt{x}\mathrm{e}^{-x}\frac{1}{2\sqrt{x}}\mathrm{d}x=-\int_{0}
   <header class="q-head">
     <span class="q-no">【35】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="35" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="35" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="35" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{1}^{+\infty}\frac{\mathrm{d}x}{x\sqrt{x^{2}+2x-1}}=$ ______.</div>
@@ -807,6 +949,10 @@ $$\text{原积分}=-\int_{1}^{0}\frac{\mathrm{d}t}{\sqrt{1+2t-t^{2}}}=\int_{0}^{
   <header class="q-head">
     <span class="q-no">【36】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="10" data-no="36" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="10" data-no="36" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="10" data-no="36" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$\int_{0}^{+\infty}\left(\sqrt{x^{2}+1}-x\right)^{2}\mathrm{d}x=$ ______.</div>

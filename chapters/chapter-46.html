@@ -9,14 +9,16 @@
 </head>
 <body data-page="chapter">
 <header class="topbar">
-  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <button id="menu-toggle" class="menu-btn" title="打开目录">☰ 目录</button>
+  <a class="back-home" href="../index.html">← 总目录</a>
   <div class="top-title">强化篇 · 第15章 微分方程<span class="top-count">（52题）</span></div>
+  <a class="lib-link" href="../collections.html">📚 收藏库</a>
   <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="side-title">题目导航</div>
-    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a><a class="nav-no" href="#q37">37</a><a class="nav-no" href="#q38">38</a><a class="nav-no" href="#q39">39</a><a class="nav-no" href="#q40">40</a><a class="nav-no" href="#q41">41</a><a class="nav-no" href="#q42">42</a><a class="nav-no" href="#q43">43</a><a class="nav-no" href="#q44">44</a><a class="nav-no" href="#q45">45</a><a class="nav-no" href="#q46">46</a><a class="nav-no" href="#q47">47</a><a class="nav-no" href="#q48">48</a><a class="nav-no" href="#q49">49</a><a class="nav-no" href="#q50">50</a><a class="nav-no" href="#q51">51</a><a class="nav-no" href="#q52">52</a></nav>
+    <div class="side-title">📖 全书目录</div>
+    <nav class="toc-nav"><div class="toc-part">基础篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-01.html">零基础</a><a class="toc-item" href="chapter-02.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-03.html">第2章 数列极限</a><a class="toc-item" href="chapter-04.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-05.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-06.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-07.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-08.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-09.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-10.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-11.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-12.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-13.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-14.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-15.html">第14章 二重积分</a><a class="toc-item" href="chapter-16.html">第15章 微分方程</a><a class="toc-item" href="chapter-17.html">第16章 无穷级数</a><a class="toc-item" href="chapter-18.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-19.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-20.html">第1章 行列式</a><a class="toc-item" href="chapter-21.html">第2章 矩阵</a><a class="toc-item" href="chapter-22.html">第3章 向量组</a><a class="toc-item" href="chapter-23.html">第4章 线性方程组</a><a class="toc-item" href="chapter-24.html">第5章 特征值与特征向量</a><a class="toc-item" href="chapter-25.html">第6章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-26.html">第1章 随机事件与概率</a><a class="toc-item" href="chapter-27.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-28.html">第3章 多维随机变量及其分布</a><a class="toc-item" href="chapter-29.html">第4章 随机变量的数字特征</a><a class="toc-item" href="chapter-30.html">第5章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-31.html">第6章 数理统计</a><div class="toc-part">强化篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-32.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-33.html">第2章 数列极限</a><a class="toc-item" href="chapter-34.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-35.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-36.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-37.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-38.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-39.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-40.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-41.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-42.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-43.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-44.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-45.html">第14章 二重积分</a><a class="toc-item cur" href="chapter-46.html" aria-current="page">第15章 微分方程</a><div class="toc-qs"><span class="toc-qs-label">本章题目</span><div class="toc-qs-grid"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a><a class="nav-no" href="#q37">37</a><a class="nav-no" href="#q38">38</a><a class="nav-no" href="#q39">39</a><a class="nav-no" href="#q40">40</a><a class="nav-no" href="#q41">41</a><a class="nav-no" href="#q42">42</a><a class="nav-no" href="#q43">43</a><a class="nav-no" href="#q44">44</a><a class="nav-no" href="#q45">45</a><a class="nav-no" href="#q46">46</a><a class="nav-no" href="#q47">47</a><a class="nav-no" href="#q48">48</a><a class="nav-no" href="#q49">49</a><a class="nav-no" href="#q50">50</a><a class="nav-no" href="#q51">51</a><a class="nav-no" href="#q52">52</a></div></div><a class="toc-item" href="chapter-47.html">第16章 无穷级数</a><a class="toc-item" href="chapter-48.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-49.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-50.html">第1章 行列式</a><a class="toc-item" href="chapter-51.html">第2章 余子式和代数余子式的计算</a><a class="toc-item" href="chapter-52.html">第3章 矩阵运算</a><a class="toc-item" href="chapter-53.html">第4章 矩阵的秩</a><a class="toc-item" href="chapter-54.html">第5章 线性方程组</a><a class="toc-item" href="chapter-55.html">第6章 向量组</a><a class="toc-item" href="chapter-56.html">第7章 特征值与特征向量</a><a class="toc-item" href="chapter-57.html">第8章 相似理论</a><a class="toc-item" href="chapter-58.html">第9章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-59.html">第1章 随机事件和概率</a><a class="toc-item" href="chapter-60.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-61.html">第3章 一维随机变量函数的分布</a><a class="toc-item" href="chapter-62.html">第4章 多维随机变量及其分布</a><a class="toc-item" href="chapter-63.html">第5章 多维随机变量函数的分布</a><a class="toc-item" href="chapter-64.html">第6章 数字特征</a><a class="toc-item" href="chapter-65.html">第7章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-66.html">第8章 统计量及其分布</a><a class="toc-item" href="chapter-67.html">第9章 参数估计与假设检验</a><div class="toc-part">综合篇</div><a class="toc-item" href="chapter-68.html">测试卷一</a><a class="toc-item" href="chapter-69.html">测试卷二</a><a class="toc-item" href="chapter-70.html">测试卷三</a><a class="toc-item" href="chapter-71.html">测试卷四</a></nav>
   </aside>
   <main class="content" id="content">
 
@@ -24,6 +26,10 @@
   <header class="q-head">
     <span class="q-no">【1】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="1" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="1" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="1" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">以 $y_1 = x^2$ 和 $y_2 = x^2 - \mathrm{e}^{2x}$ 为特解的一阶非齐次线性微分方程为________.</div>
@@ -38,6 +44,10 @@
   <header class="q-head">
     <span class="q-no">【2】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="2" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="2" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="2" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知微分方程 $y' + y = \mathrm{e}^{\sin x}$，证明方程存在唯一的以 $2\pi$ 为周期的解.</div>
@@ -66,6 +76,10 @@ $$=\mathrm{e}^{-x}\left[\left(\frac{1}{\mathrm{e}^{2\pi}}-1\right)C+\frac{1}{\ma
   <header class="q-head">
     <span class="q-no">【3】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="3" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="3" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="3" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(u,v)$ 具有连续偏导数，且满足 $f'_u(u,v) + f'_v(u,v) = uv$，则函数 $y = \mathrm{e}^{-2x}f(x,x)$ 满足条件 $y\big|_{x=0} = 1$ 的表达式为________.</div>
@@ -82,6 +96,10 @@ $$y=\mathrm{e}^{-\int 2\mathrm{d}x}\left(\int x^2\mathrm{e}^{-2x}\mathrm{e}^{\in
   <header class="q-head">
     <span class="q-no">【4】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="4" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="4" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="4" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $[0, +\infty)$ 上连续且有水平渐近线 $y = b \neq 0$，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">当 $a &gt; 0$ 时，$y' + ay = f(x)$ 的任意解都满足 $\lim\limits_{x \to +\infty} y(x) = \frac{b}{a}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">当 $a &gt; 0$ 时，$y' + ay = f(x)$ 的任意解都满足 $\lim\limits_{x \to +\infty} y(x) = \frac{a}{b}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">当 $a &lt; 0$ 时，$y' + ay = f(x)$ 的任意解都满足 $\lim\limits_{x \to +\infty} y(x) = \frac{b}{a}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">当 $a &lt; 0$ 时，$y' + ay = f(x)$ 的任意解都满足 $\lim\limits_{x \to +\infty} y(x) = \frac{a}{b}$</span></span></div></div>
@@ -107,6 +125,10 @@ $$\lim_{x \to +\infty}y(x)\xlongequal{(\ast)}\lim_{x \to +\infty}\frac{-\int_{x}
   <header class="q-head">
     <span class="q-no">【5】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="5" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="5" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="5" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若二阶常系数齐次微分方程 $y'' + ay' + by = 0$ 的解在 $(-\infty, +\infty)$ 上均有周期性，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$a &lt; 0, b &lt; 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$a &gt; 0, b &gt; 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$a = 0, b &lt; 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$a = 0, b &gt; 0$</span></span></div></div>
@@ -130,6 +152,10 @@ $$y=\mathrm{e}^{\alpha x}(C_1\cos \beta x+C_2\sin \beta x),$$
   <header class="q-head">
     <span class="q-no">【6】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="6" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="6" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="6" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $x + yy' = y - xy'$ 的通解为________.</div>
@@ -149,6 +175,10 @@ $$\arctan u+\frac{1}{2}\ln(1+u^2)=-\ln|x|+C,$$
   <header class="q-head">
     <span class="q-no">【7】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="7" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="7" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="7" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">以 $y = x$ 与 $y = x\mathrm{e}^{-2x}$ 为特解的最低阶常系数齐次线性微分方程为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y''' + 2y'' = 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y''' + 4y'' + 4y' - 4y = 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y^{(4)} + 2y''' = 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y^{(4)} + 4y''' + 4y'' = 0$</span></span></div></div>
@@ -162,6 +192,10 @@ $$\arctan u+\frac{1}{2}\ln(1+u^2)=-\ln|x|+C,$$
   <header class="q-head">
     <span class="q-no">【8】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="8" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="8" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="8" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $y = y(x)$ 在任意点 $x$ 处的增量 $\Delta y = \frac{xy}{1 + x^2}\Delta x + o(\Delta x)$，且 $y(0) = 1$，则 $y'(1) =$（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{\sqrt{2}}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\sqrt{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$2\sqrt{2}$</span></span></div></div>
@@ -179,6 +213,10 @@ $$y'(1)=\frac{\sqrt{2}}{2}.$$
   <header class="q-head">
     <span class="q-no">【9】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="9" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="9" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="9" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $(x + y)\mathrm{d}y + (y + 1)\mathrm{d}x = 0$ 满足 $y\big|_{x=1} = 2$ 的特解是________.</div>
@@ -195,6 +233,10 @@ $$=\frac{1}{y+1}\left(-\frac{y^2}{2}+C\right)=-\frac{y^2}{2(y+1)}+\frac{C}{y+1}.
   <header class="q-head">
     <span class="q-no">【10】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="10" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="10" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="10" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $\frac{\mathrm{d}y}{\mathrm{d}x} = \frac{y}{x + y^2}$ 满足初始条件 $y\big|_{x=2} = 1$ 的特解是________.</div>
@@ -214,6 +256,10 @@ $$=y\left(\int \mathrm{d}y+C\right)=y(y+C).$$
   <header class="q-head">
     <span class="q-no">【11】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="11" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="11" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="11" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设当 $x \geqslant 0$ 时，$f(x)$ 有连续的一阶导数，并且满足 $f(x) = -1 + x + 2\int_{0}^{x}(x - t)f(t)f'(t)\mathrm{d}t$，则 $f(x) =$ ________.</div>
@@ -233,6 +279,10 @@ $$f'(x)=f^2(x)+1-f^2(0).$$
   <header class="q-head">
     <span class="q-no">【12】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="12" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="12" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="12" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 是 $(0, +\infty)$ 上的连续函数，且对任意 $x &gt; 0$ 满足 $x\int_{0}^{1}f(xt)\mathrm{d}t = -2\int_{0}^{x}f(t)\mathrm{d}t + xf(x) + x^4$，$f(1) = 0$. 求函数 $f(x)$.</div>
@@ -250,6 +300,10 @@ $$f'(x)-\frac{2}{x}f(x)=-4x^2,$$
   <header class="q-head">
     <span class="q-no">【13】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="13" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="13" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="13" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $y = f(x)$ 满足 $$f'(x) + 2f(x) + 2x\int_{0}^{1}f(xt)\mathrm{d}t + \mathrm{e}^{-x} = 0,$$ 且 $f(x) - x$ 在 $x = 0$ 处取得极值，求 $f(x)$ 的表达式.</div>
@@ -269,6 +323,10 @@ $$f(x)=-2\mathrm{e}^{-x}\cos x+\mathrm{e}^{-x}.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【14】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="14" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="14" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="14" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $y = y(x)$ 满足 $y' + 2\sqrt{2}x\sqrt{y} = 0$，且其积分曲线的拐点的横坐标为 $-2$，则 $y(x) =$ ________.</div>
@@ -288,6 +346,10 @@ $$y=\frac{(-\sqrt{2}x^2+12\sqrt{2})^2}{4}=\frac{(x^2-12)^2}{2}.$$</div><div clas
   <header class="q-head">
     <span class="q-no">【15】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="15" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="15" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="15" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若函数 $f(x)$ 满足关系式 $f'(x) + af(x) = \int_{x}^{0}f(t)\mathrm{d}t$，$a &gt; 0$，求 $\int_{0}^{+\infty}f(x)\mathrm{d}x$.</div>
@@ -309,6 +371,10 @@ $$\int_{0}^{+\infty}f(x)\mathrm{d}x=-\lim_{x \to +\infty}\left[f'(x)+af(x)\right
   <header class="q-head">
     <span class="q-no">【16】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="16" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="16" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="16" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $y = y(x)$ 满足 $$x(\ln x - 1)y'(x) + (3 - \ln x^2)y(x) = 0, x &gt; \mathrm{e},$$ 且 $y(\mathrm{e}^2) = \frac{\mathrm{e}^4}{2}$，求 $y = y(x)$ 的最小值.</div>
@@ -334,6 +400,10 @@ $$y'=\frac{x(2\ln x-3)}{2(\ln x-1)^2}.$$
   <header class="q-head">
     <span class="q-no">【17】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="17" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="17" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="17" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y = y(x)$ 满足 $y' + 2(\ln x + 1)y = 0$，$y(1) = 1$，则 $y(x)$ 在 $(0, 1]$ 上的最大值为________.</div>
@@ -358,6 +428,10 @@ $$y_{\max}=x^{-2x}\Big|_{x=\mathrm{e}^{-1}}=(\mathrm{e}^{-1})^{-2\mathrm{e}^{-1}
   <header class="q-head">
     <span class="q-no">【18】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="18" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="18" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="18" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若微分方程 $\frac{\mathrm{d}y}{\mathrm{d}x} + (a + \sin^2 x)y = 0$ 的所有解都以 $\pi$ 为周期，则 $a =$ ________.</div>
@@ -371,6 +445,10 @@ $$y_{\max}=x^{-2x}\Big|_{x=\mathrm{e}^{-1}}=(\mathrm{e}^{-1})^{-2\mathrm{e}^{-1}
   <header class="q-head">
     <span class="q-no">【19】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="19" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="19" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="19" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">当 $x &gt; 0$ 时，函数 $f(x)$ 满足关系式 $x^2 f'(x) + (-1 + \ln x)f(x) = 0$，且 $f(1) = 1$，则 $f(x)$ 的最大值为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\mathrm{e}^{-\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}^{\mathrm{e}}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\mathrm{e}^{-\frac{1}{\mathrm{e}}}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\mathrm{e}^{\frac{1}{\mathrm{e}}}$</span></span></div></div>
@@ -389,6 +467,10 @@ $$f(x)=x^{\frac{1}{x}},\quad f'(x)=\frac{x^{\frac{1}{x}}(1-\ln x)}{x^2},$$
   <header class="q-head">
     <span class="q-no">【20】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="20" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="20" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="20" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 在 $(-\infty, +\infty)$ 上连续，且满足 $f(x) - \int_{0}^{x}f(t)\mathrm{d}t = -\frac{1}{2} + \sin x$. （1）求 $f(x)$ 的表达式；（2）求曲线 $y = f(x)$ 与 $y = 0$ 在 $\left[\frac{\pi}{4}, \frac{5\pi}{4}\right]$ 上围成的图形绕 $x$ 轴旋转一周所成旋转体的体积.</div>
@@ -412,6 +494,10 @@ $$V=\pi\int_{\frac{\pi}{4}}^{\frac{5\pi}{4}}\frac{1}{4}(\sin x-\cos x)^2\mathrm{
   <header class="q-head">
     <span class="q-no">【21】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="21" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="21" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="21" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $f(x), g(x)$ 满足方程 $f'(x) - g(x) = \mathrm{e}^x$ 及 $g'(x) - f(x) = 0$，$f(0) = g(0) = 0$，计算 $\int_{0}^{1}\mathrm{e}^{-x^2}[f'(x) - 2xg'(x)]\mathrm{d}x$.</div>
@@ -435,6 +521,10 @@ $$\int_{0}^{1}\mathrm{e}^{-x^2}\left[f'(x)-2xg'(x)\right]\mathrm{d}x=\mathrm{e}^
   <header class="q-head">
     <span class="q-no">【22】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="22" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="22" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="22" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设连续函数 $f(x)$ 满足方程 $f(x) = x\mathrm{e}^x - \int_{0}^{x}tf(x - t)\mathrm{d}t$，求函数 $f(x)$ 的解析式.</div>
@@ -461,6 +551,10 @@ $$f(x)=\frac{1}{2}(x+1)\mathrm{e}^{x}-\frac{1}{2}\cos x.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【23】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="23" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="23" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="23" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设下列 $A, B, C$ 为任意常数，则微分方程 $y'' + 4y = \sin^2 x$ 有特解形如（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$A\sin^2 x$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$A\cos^2 x$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$x(A + B\cos 2x + C\sin 2x)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$A + x(B\cos 2x + C\sin 2x)$</span></span></div></div>
@@ -474,6 +568,10 @@ $$f(x)=\frac{1}{2}(x+1)\mathrm{e}^{x}-\frac{1}{2}\cos x.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【24】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="24" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="24" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="24" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">求微分方程 $y'' - 2y' - 3y = -3x - 5$ 满足条件 $y(0) = 1$，$y'(0) = 5$ 的特解.</div>
@@ -487,6 +585,10 @@ $$f(x)=\frac{1}{2}(x+1)\mathrm{e}^{x}-\frac{1}{2}\cos x.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【25】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="25" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="25" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="25" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">求微分方程 $y'' + 2y' + y = (3x + 2)\mathrm{e}^{-x}$ 的通解.</div>
@@ -500,6 +602,10 @@ $$f(x)=\frac{1}{2}(x+1)\mathrm{e}^{x}-\frac{1}{2}\cos x.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【26】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="26" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="26" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="26" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $y'' - 3y' + 2y = x\mathrm{e}^x$ 的通解为________.</div>
@@ -513,6 +619,10 @@ $$f(x)=\frac{1}{2}(x+1)\mathrm{e}^{x}-\frac{1}{2}\cos x.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【27】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="27" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="27" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="27" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $y'' - 4y' = x$ 的通解为________.</div>
@@ -528,6 +638,10 @@ $$y=C_1+C_2\mathrm{e}^{4x}-\frac{1}{8}x^2-\frac{1}{16}x\;(C_1,C_2\text{ 为任�
   <header class="q-head">
     <span class="q-no">【28】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="28" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="28" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="28" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y = 1$，$y = \mathrm{e}^{-x}$，$y = 2\mathrm{e}^{-x}$ 为某二阶常系数线性微分方程的解，则该微分方程为________.</div>
@@ -543,6 +657,10 @@ $$f(x)=b,\;\mathrm{e}^{-x}-a\mathrm{e}^{-x}+b\mathrm{e}^{-x}=f(x),\;2\mathrm{e}^
   <header class="q-head">
     <span class="q-no">【29】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="29" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="29" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="29" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设三阶常系数齐次线性微分方程有特解 $\cos x$ 与 $\mathrm{e}^{2x}$，则该微分方程为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y''' + 2y'' + y' + 2y = 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y''' - 2y'' + y' - 2y = 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y''' + 2y'' - y' + 2y = 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y''' - 2y'' - y' + 2y = 0$</span></span></div></div>
@@ -556,6 +674,10 @@ $$f(x)=b,\;\mathrm{e}^{-x}-a\mathrm{e}^{-x}+b\mathrm{e}^{-x}=f(x),\;2\mathrm{e}^
   <header class="q-head">
     <span class="q-no">【30】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="30" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="30" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="30" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">以函数 $y_1 = x\mathrm{e}^x$，$y_2 = \mathrm{e}^x\sin x$ 为特解的最低阶常系数齐次线性微分方程是（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y''' - 3y'' + 4y' - 2y = 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y''' + y'' - y' + y = 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y^{(4)} - 2y''' + y'' + 2y' - 2y = 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y^{(4)} - 4y''' + 7y'' - 6y' + 2y = 0$</span></span></div></div>
@@ -573,6 +695,10 @@ $$y^{(4)}-4y'''+7y''-6y'+2y=0.$$
   <header class="q-head">
     <span class="q-no">【31】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="31" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="31" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="31" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $y(x)$ 满足微分方程 $y^{(4)} - y'' = 0$，且当 $x \to 0$ 时 $y(x) \sim x^3$. 求 $y(x)$.</div>
@@ -591,6 +717,10 @@ $$y=(C_1+C_3+C_4)+(C_2+C_3-C_1)x+\frac{C_3+C_4}{2}x^2+\frac{C_3-C_4}{6}x^3+o(x^3
   <header class="q-head">
     <span class="q-no">【32】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="32" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="32" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="32" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $y = y(x)$ 满足方程 $y'' - 2y' + y = 0$，且在 $x = 0$ 处取得极值 $-1$，则曲线 $y = y(x)$ 的拐点坐标为________.</div>
@@ -604,6 +734,10 @@ $$y=(C_1+C_3+C_4)+(C_2+C_3-C_1)x+\frac{C_3+C_4}{2}x^2+\frac{C_3-C_4}{6}x^3+o(x^3
   <header class="q-head">
     <span class="q-no">【33】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="33" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="33" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="33" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">将以 $y = y(x)$ 为未知函数的微分方程 $y'' + (x + \mathrm{e}^y + \sin y)(y')^3 = 0$ 化为以 $x = x(y)$ 为未知函数的形式，并求其通解.</div>
@@ -625,6 +759,10 @@ $$x=C_1\mathrm{e}^{y}+C_2\mathrm{e}^{-y}+\frac{1}{2}y\mathrm{e}^{y}-\frac{1}{2}\
   <header class="q-head">
     <span class="q-no">【34】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="34" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="34" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="34" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y = y(x)$ 满足关系式 $\mathrm{e}^{2x}(y'' + y') + y = \mathrm{e}^{-x}$，且 $x = -\ln t$，$t &gt; 0$，$y\left(\ln \frac{2}{\pi}\right) = \frac{\pi}{2}$，则 $y(x) =$ ________.</div>
@@ -641,6 +779,10 @@ $$\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=\frac{\mathrm{d}\left(\dfrac{\mathrm{d}y}{
   <header class="q-head">
     <span class="q-no">【35】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="35" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="35" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="35" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知某三阶常系数齐次线性微分方程有两个特解，分别为 $\mathrm{e}^{-\frac{x}{2}}\cos\frac{\sqrt{3}}{2}x$ 与 $\mathrm{e}^x$，则该微分方程为________.</div>
@@ -654,6 +796,10 @@ $$\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=\frac{\mathrm{d}\left(\dfrac{\mathrm{d}y}{
   <header class="q-head">
     <span class="q-no">【36】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="36" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="36" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="36" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若某三阶常系数齐次线性微分方程具有特解 $y = 2x\mathrm{e}^x$ 与 $y = 3\mathrm{e}^{-2x}$，则该微分方程为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y''' - y'' - 4y' + 4y = 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y''' + 3y'' - 4y = 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y''' + 2y'' - y' - 2y = 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y''' - 3y' + 2y = 0$</span></span></div></div>
@@ -668,6 +814,10 @@ $$\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=\frac{\mathrm{d}\left(\dfrac{\mathrm{d}y}{
   <header class="q-head">
     <span class="q-no">【37】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="37" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="37" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="37" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 在 $[0, +\infty)$ 上连续，在 $(0, +\infty)$ 上可导，$f(0) = 0$，且存在反函数，其反函数为 $g(x)$. 若 $\int_{0}^{f(x)}g(t)\mathrm{d}t + \int_{0}^{x}f(t)\mathrm{d}t = x\mathrm{e}^x - \mathrm{e}^x + 1$. 求 $f(x)$.</div>
@@ -696,6 +846,10 @@ $$f'(x)+\frac{1}{x}f(x)=\mathrm{e}^{x}\;(x&gt;0),$$
   <header class="q-head">
     <span class="q-no">【38】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="38" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="38" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="38" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $y' + xy = \mathrm{e}^{-\frac{x^2}{2}}$ 满足 $y(0) = 0$ 的积分曲线的拐点个数为（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
@@ -717,6 +871,10 @@ $y''(x)$ 在这 3 点两侧都异号，故拐点有 3 个.</div><div class="answ
   <header class="q-head">
     <span class="q-no">【39】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="39" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="39" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="39" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">若微分方程 $y' + py = \mathrm{e}^{qx}$ 的任何积分曲线均有拐点，则（　）.<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$p + q &gt; 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$p + q &lt; 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$p = -q \neq 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$p + q \neq 0, pq \neq 0$</span></span></div></div>
@@ -734,6 +892,10 @@ $$y=\mathrm{e}^{-\int p\mathrm{d}x}\left(\int \mathrm{e}^{qx}\mathrm{e}^{\int p\
   <header class="q-head">
     <span class="q-no">【40】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="40" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="40" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="40" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">求微分方程 $y'(x) + y(x) = \frac{(-x)^{n-1}}{3^n \mathrm{e}^x}$ 的通解，其中 $n$ 为任意正整数.</div>
@@ -751,6 +913,10 @@ $$=\mathrm{e}^x\left[\frac{(-1)^{n-1}}{n}\left(\frac{x}{3}\right)^n+C\right],$$
   <header class="q-head">
     <span class="q-no">【41】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="41" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="41" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="41" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $\frac{\mathrm{d}y}{\mathrm{d}x} - \frac{1}{x} = \mathrm{e}^{-y}$ 的通解为________.</div>
@@ -766,6 +932,10 @@ $$\mathrm{e}^y=\mathrm{e}^{\int \frac{1}{x}\mathrm{d}x}\left[\int \mathrm{e}^{\i
   <header class="q-head">
     <span class="q-no">【42】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="42" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="42" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="42" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设曲线 $y = y(x)$ 过原点且在原点处与曲线 $y = \sin x$ 有公共切线，且函数 $y(x)$ 满足方程 $y'' + 4y' + 4y = 0$，则 $\int_{0}^{+\infty}y(x)\mathrm{d}x =$ ________.</div>
@@ -780,6 +950,10 @@ $$\int_0^{+\infty}y(x)\,\mathrm{d}x=\int_0^{+\infty}x\mathrm{e}^{-2x}\,\mathrm{d
   <header class="q-head">
     <span class="q-no">【43】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="43" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="43" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="43" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 可微，且满足方程 $f(x) - 1 = \int_{1}^{x}\left[f^2(t)\ln t - \frac{f(t)}{t}\right]\mathrm{d}t$，求 $f(x)$.</div>
@@ -801,6 +975,10 @@ $$f(x)=\frac{1}{x\left(1-\dfrac{1}{2}\ln^2 x\right)}.$$</div></div></div>
   <header class="q-head">
     <span class="q-no">【44】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="44" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="44" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="44" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 满足 $f'(x) = f\left(\frac{2}{x}\right)(x &gt; 0)$. （1）证明 $x^2 f''(x) + 2f(x) = 0$（$x &gt; 0$）；（2）令 $x = \mathrm{e}^t$，化（1）中方程为常系数线性微分方程，并求 $f(x)$.</div>
@@ -826,6 +1004,10 @@ $$=\sqrt{x}\left[C_1\cos\left(\frac{\sqrt{7}}{2}\ln x\right)+C_2\sin\left(\frac{
   <header class="q-head">
     <span class="q-no">【45】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="45" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="45" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="45" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知过点 $(a, 1)$（$a &gt; 0$）的单调递减曲线 $y = f(x)$，其上任意一点的切线在 $x$ 轴上的截距与该点横坐标的距离恒为 $a$，则 $f(x) =$ ________.</div>
@@ -839,6 +1021,10 @@ $$=\sqrt{x}\left[C_1\cos\left(\frac{\sqrt{7}}{2}\ln x\right)+C_2\sin\left(\frac{
   <header class="q-head">
     <span class="q-no">【46】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="46" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="46" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="46" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设可导函数 $y = f(x)$ 单调增加且在 $y$ 轴上的截距为 2，其弧长 $s(x) = \int_{0}^{x}\sqrt{3t + 5}\,\mathrm{d}t$，则 $f(x)$ 的表达式为________.</div>
@@ -856,6 +1042,10 @@ $$f(x)=\frac{2}{9}(3x+4)^{\frac{3}{2}}+\frac{2}{9}.$$</div><div class="answer-li
   <header class="q-head">
     <span class="q-no">【47】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="47" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="47" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="47" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">微分方程 $2y'' = 3y^2$ 满足初始条件 $y(-2) = 1$，$y'(-2) = 1$ 的特解为________.</div>
@@ -875,6 +1065,10 @@ $$\frac{\mathrm{d}y}{\mathrm{d}x}=y^{\frac{3}{2}},-2y^{-\frac{1}{2}}=x+C_2.$$
   <header class="q-head">
     <span class="q-no">【48】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="48" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="48" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="48" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设平面曲线 $y = y(x)$ 满足 $y(0) = 1$，$y'(0) = 0$，且对曲线上任意点 $P(x, y)$（$x &gt; 0$），沿曲线从点 $(0, 1)$ 到点 $P(x, y)$ 的弧长等于该曲线在点 $P(x, y)$ 的切线斜率. （1）求 $y(x)$（$x &gt; 0$）；（2）求 $y(x)$ 与 $x = \ln 2$ 及坐标轴所围平面区域 $D$ 的形心.</div>
@@ -904,6 +1098,10 @@ $$\overline{y}=\frac{\dfrac{1}{2}\displaystyle\int_0^{\ln 2}y^2\,\mathrm{d}x}{\d
   <header class="q-head">
     <span class="q-no">【49】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="49" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="49" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="49" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设曲线 $L: r = r(\theta)$，$P(r, \theta)$ 为 $L$ 上任意一点，$P_0(2, 0)$ 为 $L$ 上的一定点，且曲线 $L$ 与极径 $OP_0$，$OP$ 所围成的曲边扇形面积值等于曲线 $L$ 上 $P_0$，$P$ 两点间弧长值的一半，求曲线 $L$ 的方程.</div>
@@ -933,6 +1131,10 @@ $$r\cos\left(\frac{\pi}{3}\pm\theta\right)=1,$$
   <header class="q-head">
     <span class="q-no">【50】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="50" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="50" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="50" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设第一象限中有一光滑凹曲线 $y = f(x)$ 与 $x$ 轴相切于 $(1, 0)$，其上任意两点 $A, B$ 之间的弧长等于曲线在 $A, B$ 点的切线在 $y$ 轴上的截距之间的距离，求 $f(x)$ 的表达式.</div>
@@ -975,6 +1177,10 @@ $$f'(x)=\frac{\mathrm{e}^{\ln C_1x}-\mathrm{e}^{-\ln C_1x}}{2}.$$</div></div></d
   <header class="q-head">
     <span class="q-no">【51】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="51" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="51" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="51" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 具有二阶连续导数，$f(0) = 0$，$f'(0) = 1$，且微分方程 $$[xy(x + y) - f(x)y]\mathrm{d}x + [f'(x) + x^2 y]\mathrm{d}y = 0$$ 为全微分方程. （1）求 $f(x)$；（2）求该全微分方程的通解.</div>
@@ -999,6 +1205,10 @@ $$=(-2\sin x+\cos x)y+2xy+\frac{1}{2}x^2y^2,$$
   <header class="q-head">
     <span class="q-no">【52】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="46" data-no="52" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="46" data-no="52" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="46" data-no="52" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">欧拉方程 $x^2\frac{\mathrm{d}^2 y}{\mathrm{d}x^2} + 4x\frac{\mathrm{d}y}{\mathrm{d}x} + 2y = 0$（$x &gt; 0$）的通解为________.</div>

@@ -9,14 +9,16 @@
 </head>
 <body data-page="chapter">
 <header class="topbar">
-  <a class="back-home" href="../index.html">← 返回总目录</a>
+  <button id="menu-toggle" class="menu-btn" title="打开目录">☰ 目录</button>
+  <a class="back-home" href="../index.html">← 总目录</a>
   <div class="top-title">强化篇 · 第5章 一元函数微分学的应用(一)——几何应用<span class="top-count">（43题）</span></div>
+  <a class="lib-link" href="../collections.html">📚 收藏库</a>
   <button id="theme-toggle" class="theme-btn" title="切换夜间模式">🌙</button>
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="side-title">题目导航</div>
-    <nav class="side-nav"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a><a class="nav-no" href="#q37">37</a><a class="nav-no" href="#q38">38</a><a class="nav-no" href="#q39">39</a><a class="nav-no" href="#q40">40</a><a class="nav-no" href="#q41">41</a><a class="nav-no" href="#q42">42</a><a class="nav-no" href="#q43">43</a></nav>
+    <div class="side-title">📖 全书目录</div>
+    <nav class="toc-nav"><div class="toc-part">基础篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-01.html">零基础</a><a class="toc-item" href="chapter-02.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-03.html">第2章 数列极限</a><a class="toc-item" href="chapter-04.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-05.html">第4章 一元函数微分学的计算</a><a class="toc-item" href="chapter-06.html">第5章 一元函数微分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-07.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-08.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-09.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-10.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-11.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-12.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-13.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-14.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-15.html">第14章 二重积分</a><a class="toc-item" href="chapter-16.html">第15章 微分方程</a><a class="toc-item" href="chapter-17.html">第16章 无穷级数</a><a class="toc-item" href="chapter-18.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-19.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-20.html">第1章 行列式</a><a class="toc-item" href="chapter-21.html">第2章 矩阵</a><a class="toc-item" href="chapter-22.html">第3章 向量组</a><a class="toc-item" href="chapter-23.html">第4章 线性方程组</a><a class="toc-item" href="chapter-24.html">第5章 特征值与特征向量</a><a class="toc-item" href="chapter-25.html">第6章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-26.html">第1章 随机事件与概率</a><a class="toc-item" href="chapter-27.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-28.html">第3章 多维随机变量及其分布</a><a class="toc-item" href="chapter-29.html">第4章 随机变量的数字特征</a><a class="toc-item" href="chapter-30.html">第5章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-31.html">第6章 数理统计</a><div class="toc-part">强化篇</div><div class="toc-subject">高等数学</div><a class="toc-item" href="chapter-32.html">第1章 函数极限与连续</a><a class="toc-item" href="chapter-33.html">第2章 数列极限</a><a class="toc-item" href="chapter-34.html">第3章 一元函数微分学的概念</a><a class="toc-item" href="chapter-35.html">第4章 一元函数微分学的计算</a><a class="toc-item cur" href="chapter-36.html" aria-current="page">第5章 一元函数微分学的应用(一)——几何应用</a><div class="toc-qs"><span class="toc-qs-label">本章题目</span><div class="toc-qs-grid"><a class="nav-no" href="#q1">1</a><a class="nav-no" href="#q2">2</a><a class="nav-no" href="#q3">3</a><a class="nav-no" href="#q4">4</a><a class="nav-no" href="#q5">5</a><a class="nav-no" href="#q6">6</a><a class="nav-no" href="#q7">7</a><a class="nav-no" href="#q8">8</a><a class="nav-no" href="#q9">9</a><a class="nav-no" href="#q10">10</a><a class="nav-no" href="#q11">11</a><a class="nav-no" href="#q12">12</a><a class="nav-no" href="#q13">13</a><a class="nav-no" href="#q14">14</a><a class="nav-no" href="#q15">15</a><a class="nav-no" href="#q16">16</a><a class="nav-no" href="#q17">17</a><a class="nav-no" href="#q18">18</a><a class="nav-no" href="#q19">19</a><a class="nav-no" href="#q20">20</a><a class="nav-no" href="#q21">21</a><a class="nav-no" href="#q22">22</a><a class="nav-no" href="#q23">23</a><a class="nav-no" href="#q24">24</a><a class="nav-no" href="#q25">25</a><a class="nav-no" href="#q26">26</a><a class="nav-no" href="#q27">27</a><a class="nav-no" href="#q28">28</a><a class="nav-no" href="#q29">29</a><a class="nav-no" href="#q30">30</a><a class="nav-no" href="#q31">31</a><a class="nav-no" href="#q32">32</a><a class="nav-no" href="#q33">33</a><a class="nav-no" href="#q34">34</a><a class="nav-no" href="#q35">35</a><a class="nav-no" href="#q36">36</a><a class="nav-no" href="#q37">37</a><a class="nav-no" href="#q38">38</a><a class="nav-no" href="#q39">39</a><a class="nav-no" href="#q40">40</a><a class="nav-no" href="#q41">41</a><a class="nav-no" href="#q42">42</a><a class="nav-no" href="#q43">43</a></div></div><a class="toc-item" href="chapter-37.html">第6章 一元函数微分学的应用(二)——中值定理、微分等式与微分不等式</a><a class="toc-item" href="chapter-38.html">第7章 一元函数微分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-39.html">第8章 一元函数积分学的概念与性质</a><a class="toc-item" href="chapter-40.html">第9章 一元函数积分学的计算</a><a class="toc-item" href="chapter-41.html">第10章 一元函数积分学的应用(一)——几何应用</a><a class="toc-item" href="chapter-42.html">第11章 一元函数积分学的应用(二)——积分等式与积分不等式</a><a class="toc-item" href="chapter-43.html">第12章 一元函数积分学的应用(三)——物理应用</a><a class="toc-item" href="chapter-44.html">第13章 多元函数微分学</a><a class="toc-item" href="chapter-45.html">第14章 二重积分</a><a class="toc-item" href="chapter-46.html">第15章 微分方程</a><a class="toc-item" href="chapter-47.html">第16章 无穷级数</a><a class="toc-item" href="chapter-48.html">第17章 多元函数积分学的预备知识</a><a class="toc-item" href="chapter-49.html">第18章 多元函数积分学</a><div class="toc-subject">线性代数</div><a class="toc-item" href="chapter-50.html">第1章 行列式</a><a class="toc-item" href="chapter-51.html">第2章 余子式和代数余子式的计算</a><a class="toc-item" href="chapter-52.html">第3章 矩阵运算</a><a class="toc-item" href="chapter-53.html">第4章 矩阵的秩</a><a class="toc-item" href="chapter-54.html">第5章 线性方程组</a><a class="toc-item" href="chapter-55.html">第6章 向量组</a><a class="toc-item" href="chapter-56.html">第7章 特征值与特征向量</a><a class="toc-item" href="chapter-57.html">第8章 相似理论</a><a class="toc-item" href="chapter-58.html">第9章 二次型</a><div class="toc-subject">概率论与数理统计</div><a class="toc-item" href="chapter-59.html">第1章 随机事件和概率</a><a class="toc-item" href="chapter-60.html">第2章 一维随机变量及其分布</a><a class="toc-item" href="chapter-61.html">第3章 一维随机变量函数的分布</a><a class="toc-item" href="chapter-62.html">第4章 多维随机变量及其分布</a><a class="toc-item" href="chapter-63.html">第5章 多维随机变量函数的分布</a><a class="toc-item" href="chapter-64.html">第6章 数字特征</a><a class="toc-item" href="chapter-65.html">第7章 大数定律与中心极限定理</a><a class="toc-item" href="chapter-66.html">第8章 统计量及其分布</a><a class="toc-item" href="chapter-67.html">第9章 参数估计与假设检验</a><div class="toc-part">综合篇</div><a class="toc-item" href="chapter-68.html">测试卷一</a><a class="toc-item" href="chapter-69.html">测试卷二</a><a class="toc-item" href="chapter-70.html">测试卷三</a><a class="toc-item" href="chapter-71.html">测试卷四</a></nav>
   </aside>
   <main class="content" id="content">
 
@@ -24,6 +26,10 @@
   <header class="q-head">
     <span class="q-no">【1】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="1" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="1" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="1" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 是可导函数, 且 $f(1+x)+2f(1-x)=\int_0^x (1+t)^{\frac{1}{t}}\mathrm{d}t+\sin^2 x$, 则曲线 $f(x)$ 在 $x=1$ 处的切线方程为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=-ex+\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=ex-\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=ex+\mathrm{e}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=-ex-\mathrm{e}$</span></span></div></div>
@@ -42,6 +48,10 @@ $$=f'(1)-2f'(1)=-f'(1),$$
   <header class="q-head">
     <span class="q-no">【2】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="2" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="2" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="2" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $x=0$ 处连续, 且 $\lim\limits_{x \to 0}\frac{[f(x)+1]x^2}{x-\sin x}=2$, 则曲线 $y=f(x)$ 在点 $(0,f(0))$ 处的切线方程为 ______.</div>
@@ -77,6 +87,10 @@ $$=\lim_{x \to 0}\left[\frac{f(x)+1}{\dfrac{1}{6}x+o(x)}\cdot\frac{\dfrac{1}{6}x
   <header class="q-head">
     <span class="q-no">【3】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="3" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="3" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="3" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上可导, 且在点 $x=a$ 处取最小值, 在点 $x=b$ 处取最大值, 则( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f'_+(a)\leqslant 0, f'_-(b)\leqslant 0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f'_+(a)\leqslant 0, f'_-(b)\geqslant 0$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$f'_+(a)\geqslant 0, f'_-(b)\leqslant 0$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f'_+(a)\geqslant 0, f'_-(b)\geqslant 0$</span></span></div></div>
@@ -102,6 +116,10 @@ $$f'_-(b)=\lim_{x \to b^-}\frac{f(x)-f(b)}{x-b}\geqslant 0.$$
   <header class="q-head">
     <span class="q-no">【4】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="4" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="4" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="4" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 是连续的奇函数, 若 $x=-1$ 是 $f(x)$ 在 $(-\infty,0)$ 上的唯一零点, 且 $f'(-1)=1$, 则 $\int_0^x f(t)\mathrm{d}t$ 的严格单调增区间为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$(-\infty,0)$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$(0,+\infty)$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(-\infty,-1),(0,1)$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$(-1,0),(1,+\infty)$</span></span></div></div>
@@ -116,6 +134,10 @@ $$f'_-(b)=\lim_{x \to b^-}\frac{f(x)-f(b)}{x-b}\geqslant 0.$$
   <header class="q-head">
     <span class="q-no">【5】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="5" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="5" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="5" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知 $x^2-2ax+1-\mathrm{e}^x\geqslant 0\ (x&lt;0)$ 恒成立, 则 $a$ 的取值范围是 ______.</div>
@@ -137,6 +159,10 @@ $$g(x)&lt;\lim_{x \to 0^-}\frac{x^2+1-\mathrm{e}^x}{2x}=-\frac{1}{2}.$$
   <header class="q-head">
     <span class="q-no">【6】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="6" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="6" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="6" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">求常数 $a$ 的取值范围, 使不等式 $\ln x\leqslant a(x-1)$ 对于任何 $x&gt;0$ 都成立.</div>
@@ -153,6 +179,10 @@ $$g(x)&lt;\lim_{x \to 0^-}\frac{x^2+1-\mathrm{e}^x}{2x}=-\frac{1}{2}.$$
   <header class="q-head">
     <span class="q-no">【7】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="7" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="7" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="7" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)=\int_0^1 \left|t(t-x)\right|\mathrm{d}t\ (0&lt;x&lt;1)$, 则 $f(x)$ 的单调区间及曲线 $y=f(x)$ 的凹凸区间分别为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">单调增区间 $\left(\frac{\sqrt{2}}{2},1\right)$; 单调减区间 $\left(0,\frac{\sqrt{2}}{2}\right)$; 在 $(0,1)$ 内曲线为凹</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">单调减区间 $\left(\frac{\sqrt{2}}{2},1\right)$; 单调增区间 $\left(0,\frac{\sqrt{2}}{2}\right)$; 在 $(0,1)$ 内曲线为凹</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">单调增区间 $\left(\frac{\sqrt{2}}{2},1\right)$; 单调减区间 $\left(0,\frac{\sqrt{2}}{2}\right)$; 在 $(0,1)$ 内曲线为凸</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">单调减区间 $\left(\frac{\sqrt{2}}{2},1\right)$; 单调增区间 $\left(0,\frac{\sqrt{2}}{2}\right)$; 在 $(0,1)$ 内曲线为凸</span></span></div></div>
@@ -171,6 +201,10 @@ $$f'(x)=x^2-\frac{1}{2}=\left(x-\frac{\sqrt{2}}{2}\right)\left(x+\frac{\sqrt{2}}
   <header class="q-head">
     <span class="q-no">【8】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="8" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="8" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="8" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">求函数 $f(x)=\int_1^x (x^2-t^2)\ln(1+t^2)\,\mathrm{d}t$ 的极值.</div>
@@ -193,6 +227,10 @@ $$=\frac{1}{3}\ln 2-\frac{2}{3}\left(\frac{\pi}{4}-\frac{2}{3}\right)=\frac{1}{3
   <header class="q-head">
     <span class="q-no">【9】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="9" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="9" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="9" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 在 $x=0$ 的某邻域内有定义, 则以下结论正确的是( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">若 $f(0)=0, f'(0)=0$, 则 $x=0$ 必不是极值点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">若 $f'(0)=0, f''(0)=0$, 则 $x=0$ 必是极值点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">若 $f(0)=0, f'(0)&gt;0$, 则存在 $\delta&gt;0$, 使得 $f(x)$ 在 $(0,\delta)$ 内单调递增</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">若 $f'(0)=0, f''(0)&gt;0$, 则存在 $\delta&gt;0$, 使得 $f(x)$ 在 $(-\delta,0)$ 内单调递减</span></span></div></div>
@@ -209,6 +247,10 @@ $$=\frac{1}{3}\ln 2-\frac{2}{3}\left(\frac{\pi}{4}-\frac{2}{3}\right)=\frac{1}{3
   <header class="q-head">
     <span class="q-no">【10】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="10" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="10" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="10" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 连续, 当 $x \to 0$ 时, $\mathrm{e}^{f(x)}-1$ 与 $x-\ln(1+x)$ 是等价无穷小量, 以下结论: ① $f(x)$ 在 $x=0$ 处取得极大值; ② $(0,f(0))$ 是曲线 $f(x)$ 的拐点; ③ $f(x)$ 在 $x=0$ 处的 2 次泰勒多项式为 $\frac{1}{2}x^2$. 正确结论的个数为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">3</span></span></div></div>
@@ -226,6 +268,10 @@ $$\lim_{x \to 0}\frac{\mathrm{e}^{f(x)}-1}{\dfrac{1}{2}x^2}=\lim_{x \to 0}\frac{
   <header class="q-head">
     <span class="q-no">【11】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="11" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="11" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="11" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上单调增加, $f(0)=f'(0)=0$, 则在 $[0,1]$ 上( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\mathrm{e}^x f(x)$ 单调增加, $\mathrm{e}^{-x}f(x)$ 单调减少</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\mathrm{e}^x f(x)$ 单调增加, $\mathrm{e}^{-x}f(x)$ 单调增加</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\mathrm{e}^x f(x)$ 单调减少, $\mathrm{e}^{-x}f(x)$ 单调增加</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\mathrm{e}^x f(x)$ 单调减少, $\mathrm{e}^{-x}f(x)$ 单调减少</span></span></div></div>
@@ -243,6 +289,10 @@ $$g'(x)=\frac{f'(x)-f'(\xi)\cdot x}{\mathrm{e}^x},$$
   <header class="q-head">
     <span class="q-no">【12】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="12" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="12" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="12" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $y=f(x)$ 对一切 $x$ 满足 $xf''(x)+3x[f'(x)]^2=1-\mathrm{e}^{-x}$. 若 $f'(x_0)=0\ (x_0 \neq 0)$, 则( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$f(x_0)$ 是函数 $f(x)$ 的极大值</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$f(x_0)$ 是函数 $f(x)$ 的极小值</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$(x_0,f(x_0))$ 是曲线 $y=f(x)$ 的拐点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$f(x_0)$ 不是函数 $f(x)$ 的极值, $(x_0,f(x_0))$ 也不是曲线 $y=f(x)$ 的拐点</span></span></div></div>
@@ -260,6 +310,10 @@ $$f''(x_0)=\frac{1-\mathrm{e}^{-x_0}}{x_0}.$$
   <header class="q-head">
     <span class="q-no">【13】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="13" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="13" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="13" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">由 $\int_0^y \mathrm{e}^{-\frac{t^2}{2}}\mathrm{d}t=\frac{1}{3}(\sqrt{x}-2)^2$ 所确定的函数 $y=y(x)$( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">只有极大值点 $x=4$, 极大值为 0</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">只有极小值点 $x=4$, 极小值为 0</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">只有极大值点 $x=0$, 极大值为 $\frac{4}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">有极大值点和极小值点分别为 $x=0, x=4$, 其值分别为 $\frac{4}{3}, 0$</span></span></div></div>
@@ -278,6 +332,10 @@ $$y'=\frac{1}{3\sqrt{x}}(\sqrt{x}-2)\mathrm{e}^{\frac{y^2}{2}}.$$
   <header class="q-head">
     <span class="q-no">【14】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="14" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="14" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="14" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x), g(x)$ 在 $[a,b]$ 上连续, 在 $(a,b)$ 内可导, $g'(x)&gt;0$, 则在 $(a,b)$ 上, "$\frac{f'(x)}{g'(x)}$ 严格单调递增"是 "$\frac{f(x)-f(a)}{g(x)-g(a)}$ 严格单调递增"的( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">充分非必要条件</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">必要非充分条件</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">充分必要条件</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">既非充分又非必要条件</span></span></div></div>
@@ -307,6 +365,10 @@ $$h'_-(0)=\lim_{x \to 0^-}\frac{h(x)-h(0)}{x}=\lim_{x \to 0^-}\frac{x-1+1}{x}=1.
   <header class="q-head">
     <span class="q-no">【15】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="15" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="15" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="15" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=(5x-3)\mathrm{e}^{-\frac{1}{x}}$ 有渐近线( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$x=0, y=5x+2$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$x=0, y=5x-8$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$x=0, y=5x-3$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$x=0, y=5x-2$</span></span></div></div>
@@ -325,6 +387,10 @@ $$b = \lim_{x \to \infty}[(5x - 3)\mathrm{e}^{-\frac{1}{x}} - 5x] = \lim_{x \to 
   <header class="q-head">
     <span class="q-no">【16】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="16" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="16" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="16" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=\frac{\sqrt{x^2-x+1}}{\mathrm{e}^x-1}$ 的渐近线共有( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1 条</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2 条</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3 条</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4 条或 4 条以上</span></span></div></div>
@@ -342,6 +408,10 @@ $$b = \lim_{x \to -\infty}[y(x) - ax] = \lim_{x \to -\infty}\left(\frac{\sqrt{x^
   <header class="q-head">
     <span class="q-no">【17】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="17" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="17" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="17" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $r(3\theta-\pi)=1$ 的斜渐近线为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=\sqrt{2}x-\frac{3}{2}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=\sqrt{2}x+\frac{3}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=\sqrt{3}x-\frac{2}{3}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=\sqrt{3}x+\frac{2}{3}$</span></span></div></div>
@@ -358,6 +428,10 @@ $$b = \lim_{x \to \infty}(y - \sqrt{3}x) = \lim_{\theta \to \frac{\pi}{3}}\frac{
   <header class="q-head">
     <span class="q-no">【18】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="18" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="18" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="18" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=x^2\ln\left(\sin\frac{1}{x}+\cos\frac{1}{x}\right)$ 的斜渐近线为 ______.</div>
@@ -373,6 +447,10 @@ $$b = \lim_{x \to \infty}\left[x^2\ln\left(\sin\frac{1}{x} + \cos\frac{1}{x}\rig
   <header class="q-head">
     <span class="q-no">【19】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="19" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="19" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="19" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">求曲线 $y=x^2\left[\frac{\left(1+\frac{1}{x}\right)^x}{\mathrm{e}}-1\right]\ (x&gt;0)$ 的斜渐近线.</div>
@@ -388,6 +466,10 @@ $$b = \lim_{x \to +\infty}\left(y + \frac{1}{2}x\right) \xlongequal{x = \frac{1}
   <header class="q-head">
     <span class="q-no">【20】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="20" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="20" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="20" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $y=y(x)$ 由方程 $\mathrm{e}^y+4xy+x^2=1$ 确定. (1) $y(x)$ 在 $x=0$ 处是否取得极值? 说明理由; (2) 证明: $y(x)$ 在 $(0,+\infty)$ 内是单调递减函数.</div>
@@ -410,6 +492,10 @@ $$y' = -\frac{2(2y + x)}{\mathrm{e}^y + 4x} &lt; 0,$$
   <header class="q-head">
     <span class="q-no">【21】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="21" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="21" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="21" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 在 $(-\infty,+\infty)$ 内连续, 其一阶导函数 $f'(x)$ 的图形如图所示, 并设在 $f'(x)$ 存在处 $f''(x)$ 也存在, 则曲线 $y=f(x)$ 的拐点个数为( ). 【图】平面直角坐标系中画出 $f'(x)$ 的曲线: 在 $y$ 轴左侧, 曲线由上方向下穿过 $x$ 轴形成一个先减后增再减的波谷并再次上升穿过 $x$ 轴; 在 $y$ 轴右侧附近曲线有一极大值, 随后下降穿过 $x$ 轴并继续下降。<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
@@ -424,6 +510,10 @@ $$y' = -\frac{2(2y + x)}{\mathrm{e}^y + 4x} &lt; 0,$$
   <header class="q-head">
     <span class="q-no">【22】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="22" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="22" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="22" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y=y(x)$ 满足 $y'+y=\mathrm{e}^{-x}\cos x$, 且 $y(0)=0$, 求 $y(x^2)$ 的值域.</div>
@@ -442,6 +532,10 @@ $$g(t_k) = \mathrm{e}^{-\left(k\pi + \frac{\pi}{4}\right)}\sin\left(k\pi + \frac
   <header class="q-head">
     <span class="q-no">【23】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="23" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="23" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="23" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">函数 $f(x)=\int_0^x \mathrm{e}^{-t}\cos t\,\mathrm{d}t$ 在 $[0,\pi]$ 上的最大值为 ______.</div>
@@ -459,6 +553,10 @@ $$f\left(\frac{\pi}{2}\right) = \int_{0}^{\frac{\pi}{2}}\mathrm{e}^{-t}\cos t\,\
   <header class="q-head">
     <span class="q-no">【24】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="24" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="24" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="24" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f'(x)$ 在区间 $[0,4]$ 上连续, 曲线 $y=f'(x)$ 与直线 $x=0, x=4, y=0$ 围成如图所示的三个区域, 其面积分别为 $S_1=3, S_2=4, S_3=2$, 且 $f(0)=1$, 则 $f(x)$ 在 $[0,4]$ 上的最大值与最小值分别为( ). 【图】平面直角坐标系中画出 $y=f'(x)$ 的曲线: 在 $x=1$ 前位于 $x$ 轴下方(区域 $S_1$), 在 $x=1$ 与 $x=3$ 之间位于 $x$ 轴上方形成峰(区域 $S_2$, 峰顶标注 2), 在 $x=3$ 到 $x=4$ 位于 $x$ 轴下方(区域 $S_3$)。<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">2, -3</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">4, -3</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">2, -2</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4, -2</span></span></div></div>
@@ -477,6 +575,10 @@ $$f(4) = f(3) + \int_{3}^{4}f'(x)\,\mathrm{d}x = 2 + (-2) = 0.$$
   <header class="q-head">
     <span class="q-no">【25】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="25" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="25" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="25" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y=\tan^n x$ 在 $x=\frac{\pi}{4}$ 处的切线在 $x$ 轴上的截距为 $x_n$, 则 $\lim\limits_{n \to \infty}y(x_n)=$ ______.</div>
@@ -496,6 +598,10 @@ $$\lim_{n \to \infty}y(x_n) = \lim_{n \to \infty}\tan^n\left(\frac{\pi}{4} - \fr
   <header class="q-head">
     <span class="q-no">【26】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="26" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="26" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="26" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=x\mathrm{e}^{-\frac{x^2}{2}}$ 的拐点个数为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">2</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">4</span></span></div></div>
@@ -515,6 +621,10 @@ $y''$：$-$，$+$，$-$，$+$.
   <header class="q-head">
     <span class="q-no">【27】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="27" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="27" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="27" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=\mathrm{e}^x+x^3$ 的极值点与拐点个数分别为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">0, 1</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">1, 1</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">0, 3</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">1, 5</span></span></div></div>
@@ -535,6 +645,10 @@ $$y''' = \mathrm{e}^x + 60x^2,$$
   <header class="q-head">
     <span class="q-no">【28】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="28" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="28" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="28" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=x\ln\left(2+\frac{1}{x-1}\right)$ 的斜渐近线方程为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$y=x\ln 2+1$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$y=x\ln 2+\frac{1}{2}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$y=x\ln 2-1$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$y=x\ln 2-\frac{1}{2}$</span></span></div></div>
@@ -550,6 +664,10 @@ $$\lim_{x \to \infty}(y - x\ln 2) = \lim_{x \to \infty}\left[x\ln\left(2 + \frac
   <header class="q-head">
     <span class="q-no">【29】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="29" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="29" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="29" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $\sin x+y+\mathrm{e}^{2xy}=0$ 在点 $(0,-1)$ 处的切线方程为 ______.</div>
@@ -565,6 +683,10 @@ $$\cos x + y' + \mathrm{e}^{2y}(2y + 2xy') = 0,$$
   <header class="q-head">
     <span class="q-no">【30】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="30" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="30" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="30" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知函数 $y=y(x)$ 由方程 $x^3+xy+y^3=8$ 确定, 判断曲线 $y=y(x)$ 在点 $(1,1)$ 附近的凹凸性.</div>
@@ -583,6 +705,10 @@ $$2 + y' + xy'' + y' + 6y \cdot (y')^2 + 3y^2 \cdot y'' = 0,$$
   <header class="q-head">
     <span class="q-no">【31】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="31" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="31" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="31" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">已知曲线 $y=x^2+a\ln x\ (a&gt;0)$ 在其拐点处的切线方程是 $y=4x-3$, 则 $a=$ ______.</div>
@@ -598,6 +724,10 @@ $$2 + y' + xy'' + y' + 6y \cdot (y')^2 + 3y^2 \cdot y'' = 0,$$
   <header class="q-head">
     <span class="q-no">【32】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="32" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="32" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="32" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">函数 $y=x\cos x-\sin x\left(-\frac{\pi}{2}&lt;x&lt;2\pi\right)$ 的极值点是( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$x=0$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$x=\pi$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$x=\frac{\pi}{2}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$x=\frac{3}{2}\pi$</span></span></div></div>
@@ -611,6 +741,10 @@ $$2 + y' + xy'' + y' + 6y \cdot (y')^2 + 3y^2 \cdot y'' = 0,$$
   <header class="q-head">
     <span class="q-no">【33】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="33" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="33" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="33" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">曲线 $y=\ln^2 x-\frac{4x}{\mathrm{e}^2}$ 的拐点为 ______.</div>
@@ -627,6 +761,10 @@ $$y'' = 2 \cdot \frac{1}{x^2} - \frac{2}{x^2}\ln x = \frac{2}{x^2}(1 - \ln x).$$
   <header class="q-head">
     <span class="q-no">【34】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="34" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="34" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="34" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">根据正整数 $n$ 奇偶性的不同情况, 分别讨论函数 $f(x)=x^n\mathrm{e}^{-x}$ 的单调性, 求函数在实数范围内的最值.</div>
@@ -643,6 +781,10 @@ $$y'' = 2 \cdot \frac{1}{x^2} - \frac{2}{x^2}\ln x = \frac{2}{x^2}(1 - \ln x).$$
   <header class="q-head">
     <span class="q-no">【35】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="35" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="35" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="35" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $f(x)$ 在 $[0,+\infty)$ 上连续, $f(0)=0$, 在 $(0,+\infty)$ 上 $f'(x)$ 存在且单调递增. 证明: 当 $x&gt;0$ 时, $\frac{f(x)}{x}$ 单调递增.</div>
@@ -658,6 +800,10 @@ $$y'' = 2 \cdot \frac{1}{x^2} - \frac{2}{x^2}\ln x = \frac{2}{x^2}(1 - \ln x).$$
   <header class="q-head">
     <span class="q-no">【36】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="36" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="36" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="36" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">(1) 设 $f(x)=x\cdot a^x(1-a), x&gt;0$, 当 $0&lt;a&lt;1$ 时, 求 $f(x)$ 的最大值; (2) 当 $x&gt;0, 0&lt;y&lt;1$ 时, 证明: $xy^x(1-y)\leqslant \frac{1}{\mathrm{e}}$.</div>
@@ -676,6 +822,10 @@ $$g(x,y)=x \cdot y^{x}(1-y),x&gt;0,0&lt;y&lt;1.$$
   <header class="q-head">
     <span class="q-no">【37】</span>
     <span class="q-kind">解答题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="37" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="37" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="37" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">确定函数 $f(x)=\ln(1+x^2)$ 的单调区间、极值, 以及该函数图形的凹凸区间和拐点.</div>
@@ -689,6 +839,10 @@ $$g(x,y)=x \cdot y^{x}(1-y),x&gt;0,0&lt;y&lt;1.$$
   <header class="q-head">
     <span class="q-no">【38】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="38" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="38" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="38" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 在 $x=2$ 的某邻域内连续, 且有 $\lim\limits_{x \to 0}\frac{\ln\left[f(x+2)+\mathrm{e}^{x^2}\right]}{1-\cos x}=4$, 则 $x=2$ 是 $f(x)$ 的( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">不可导点</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">驻点且是极大值点</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">驻点且是极小值点</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">可导点但不是驻点</span></span></div></div>
@@ -706,6 +860,10 @@ $$f'(2)=\lim_{x \to 0}\frac{f(x+2)-f(2)}{x}=\lim_{x \to 0}\frac{f(x+2)}{x}=\lim_
   <header class="q-head">
     <span class="q-no">【39】</span>
     <span class="q-kind">选择题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="39" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="39" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="39" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">$f(x)=\frac{1}{1+|x|}+\frac{1}{1+|x-a|}\ (a&gt;0)$ 的最大值为( ).<div class="options"><span class="opt"><b class="opt-key">(A)</b><span class="opt-val">$\frac{1+a}{2+a}$</span></span><span class="opt"><b class="opt-key">(B)</b><span class="opt-val">$\frac{2+a}{1+a}$</span></span><span class="opt"><b class="opt-key">(C)</b><span class="opt-val">$\frac{1+2a}{2+a}$</span></span><span class="opt"><b class="opt-key">(D)</b><span class="opt-val">$\frac{2+a}{1+2a}$</span></span></div></div>
@@ -723,6 +881,10 @@ $$f'(x)=\begin{cases}\dfrac{1}{(1-x)^{2}}+\dfrac{1}{(1+a-x)^{2}}, &amp; x&lt;0,\
   <header class="q-head">
     <span class="q-no">【40】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="40" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="40" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="40" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $f(x)$ 可导, 曲线 $y=f(x)$ 在任一点 $x$ 处的切线斜率为 $(x^2-3x+a)\mathrm{e}^x$, 且曲线 $y=f(x)$ 无极值点, 有拐点, 则 $a$ 的取值范围是 ______.</div>
@@ -740,6 +902,10 @@ $$f''(x)=(2x-3)\mathrm{e}^{x}+(x^{2}-3x+a)\mathrm{e}^{x}=(x^{2}-x+a-3)\mathrm{e}
   <header class="q-head">
     <span class="q-no">【41】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="41" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="41" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="41" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设函数 $y=y(x)$ 由参数方程 $\begin{cases}x=2\mathrm{e}^t+t+1, \\ y=4(t-1)\mathrm{e}^t+t^2\end{cases}$ 确定, 则曲线 $y=y(x)$ 在 $t=0$ 对应点处的曲率为 ______.</div>
@@ -760,6 +926,10 @@ $$k=\frac{|y''|}{\left[1+(y')^{2}\right]^{\frac{3}{2}}}\Bigg|_{t=0}=\frac{2}{3}.
   <header class="q-head">
     <span class="q-no">【42】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="42" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="42" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="42" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设 $y=f(x)$ 是由方程 $x(1+y)-\mathrm{e}^y+1=0$ 确定的隐函数, 则曲线 $y=f(x)$ 在点 $(0,0)$ 处的曲率为 ______.</div>
@@ -778,6 +948,10 @@ $$k=\frac{\left|y''(0)\right|}{\sqrt{\left[1+\left(y'(0)\right)^{2}\right]^{3}}}
   <header class="q-head">
     <span class="q-no">【43】</span>
     <span class="q-kind">填空题</span>
+    <span class="star-group">
+      <button class="star-btn wrong-btn" data-cid="36" data-no="43" data-type="wrong" title="收录进错题库">✗</button>
+      <button class="star-btn good-btn" data-cid="36" data-no="43" data-type="good" title="收录进好题库">★</button>
+    </span>
     <button class="done-btn" data-cid="36" data-no="43" title="标记本题已做">已做</button>
   </header>
   <div class="q-stem">设圆与曲线 $x=y^2$ 在 $(0,0)$ 处有公切线且它们关于 $y$ 的二阶导数值相同, 则该圆的方程为 ______.</div>
