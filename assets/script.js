@@ -148,8 +148,8 @@
   function toggleToc(head) {
     var body = document.getElementById(head.dataset.target);
     if (!body) return;
-    var open = body.style.display !== 'none';
-    body.style.display = open ? 'none' : '';
+    var open = body.classList.contains('open');
+    body.classList.toggle('open', !open);
     head.classList.toggle('closed', open);
     var st = {};
     try { st = JSON.parse(localStorage.getItem(TOC_KEY)) || {}; } catch (e) {}
@@ -169,7 +169,7 @@
       var body = document.getElementById(id);
       var head = document.querySelector('[data-target="' + id + '"]');
       if (!body || !head) return;
-      body.style.display = st[id] ? '' : 'none';
+      body.classList.toggle('open', !!st[id]);
       head.classList.toggle('closed', !st[id]);
     });
   } catch (e) {}
